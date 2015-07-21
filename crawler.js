@@ -1,20 +1,26 @@
 var $ = require('jQuery');
 var fs = require('fs');
 
-var BASE_URL = 'http://api.yandex.ru/maps/doc/jsapi/2.x/ref/reference/';
+var BASE_URL = 'https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/';
+
+var hrefExp = /\/maps\/doc\/jsapi\/2\.1\/ref\/reference\/([A-Za-z\.]+)\-docpage\//;
 
 var docs = [];
 load('packages.xml', function(data) {
   var dom = $(data);
-  var links = $(".l-page__left-i a:contains('Справочник по программному интерфейсу')", dom).parent().next().find('a');
+  var links = $("a.docmenu__link", dom);
   links.each(function() {
     var link = $(this);
     var name = link.html();
     var url = link.attr('href');
-    if (url) {
-      url = url.split('/');
-      url = url[url.length - 1];
+    
+    var matches = hrefExp.test(url);
+    if(!matches) {
+      return;
     }
+    
+    url = matches[1];
+    
     if (url == 'packages.xml') {
       return;
     }
@@ -231,7 +237,7 @@ function load(url, callback) {
       callback(data.toString());
     });
   } else {
-    $.get(BASE_URL + url, function(data) {
+    $.get((BASE_URL + url, function(data) {
       console.log('Loaded: ' + url);
       fs.writeFile(cachedPath, data, function(err) {
           if(err) {
