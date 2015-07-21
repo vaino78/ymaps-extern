@@ -6,7 +6,7 @@ var BASE_URL = 'https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/';
 var hrefExp = /\/maps\/doc\/jsapi\/2\.1\/ref\/reference\/([A-Za-z\.]+)\-docpage\//;
 
 var docs = [];
-load('packages.xml', function(data) {
+load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', function(data) {
   var dom = $(data);
   var links = $("a.docmenu__link", dom);
   links.each(function() {
@@ -41,7 +41,7 @@ load('packages.xml', function(data) {
 
   var ret = [];
   docs.forEach(function(d) {
-    load(d.url, function(data) {
+    loadDoc(d.url, function(data) {
       counter--;
       var dom = $(data);
 
@@ -227,23 +227,34 @@ function parseTable(table) {
 };
 
 function load(url, callback) {
-  var cachedPath = __dirname + '/cache/' + url;
+  if(!url.match(/^http/)) {
+    return loadDoc(url, callback);
+  }
+  
+  $.get(url, function(data) {
+    console.log('Loaded url:', url);
+    callback(data);
+  });
+};
+
+function loadDoc(docPage, callback) {
+  var cachedPath = __dirname + '/cache/' + docPage;
   if (fs.existsSync(cachedPath)) {
     fs.readFile(cachedPath, 'utf8', function(err, data) {
-      console.log('From cache: ' + url);
+      console.log('From cache: ' + docPage);
       if (err) {
         throw err;
       }
       callback(data.toString());
     });
   } else {
-    $.get((BASE_URL + url, function(data) {
-      console.log('Loaded: ' + url);
+    $.get((BASE_URL + docPage + '-docpage/'), function(data) {
+      console.log('Loaded docpage: ' + docPage);
       fs.writeFile(cachedPath, data, function(err) {
           if(err) {
               console.log(err);
           } else {
-              console.log(url + " put into cache");
+              console.log(docPage + " put into cache");
           }
       });
 
