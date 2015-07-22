@@ -7,19 +7,21 @@ var hrefExp = /\/maps\/doc\/jsapi\/2\.1\/ref\/reference\/([A-Za-z\.]+)\-docpage\
 
 var docs = [];
 load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', function(data) {
+
   var dom = $(data);
   var links = $("a.docmenu__link", dom);
+  
   links.each(function() {
     var link = $(this);
-    var name = link.html();
+    var name;
     var url = link.attr('href');
     
-    var matches = hrefExp.test(url);
+    var matches = hrefExp.exec(url);
     if(!matches) {
-      return;
+      return true;
     }
     
-    url = matches[1];
+    url = name = matches[1];
     
     if (url == 'packages.xml') {
       return;
