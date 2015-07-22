@@ -46,11 +46,12 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
     loadDoc(d.url, function(data) {
       counter--;
       var dom = $(data);
+      var content = $('.b-dita-text', dom);
 
       d.def = {};
 
       // NAME
-      d.def.name = $('.b-page-title__title', dom).html();
+      d.def.name = $('h1', content).html();
 
 
       // CTOR
@@ -228,6 +229,12 @@ function parseTable(table) {
   return ret;
 };
 
+/**
+ * Loads url if it is given or loading docpage if `url` is name of doc item.
+ * 
+ * @param {string} url
+ * @param {function(string)} callback
+ */
 function load(url, callback) {
   if(!url.match(/^http/)) {
     return loadDoc(url, callback);
@@ -239,6 +246,10 @@ function load(url, callback) {
   });
 };
 
+/**
+ * @param {string} docPage Name of documentation item
+ * @param {function(string)} callback
+ */
 function loadDoc(docPage, callback) {
   var cachedPath = __dirname + '/cache/' + docPage;
   if (fs.existsSync(cachedPath)) {
@@ -263,4 +274,12 @@ function loadDoc(docPage, callback) {
       callback(data);
     });
   }
+};
+
+/**
+ * @param {string} str
+ * @returns {string}
+ */
+function stripTags(str) {
+  return str.replace(/<[^>]+>/gi, '');
 };
