@@ -53,6 +53,31 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
       // NAME
       d.def.name = $('h1', content).html();
 
+      /**
+       * @todo Разобрать страницу по тэгам <h2>, сформировать хэш,
+       *       ключами которого будут являться наименования разделов,
+       *       а значениями -- контент до следующего <h2> или конца
+       *       документа. Кроме того, вычленить часть от начала документа 
+       *       до первого <h2>, (возможно, удалить из нее <h1>) использовать
+       *       ее для разбора @extends и @inherits
+       *       
+       *       Затем -- тестировать `parseTable` для таблиц, находящихся
+       *       внутри <h2>. Если возвращаемой информации будет недостаточно,
+       *       разбирать контент некоторых разделов (напр., "Описание полей",
+       *       "Описание методов") по <h3>, и брать сигнатуру метода/поля из 
+       *       `div.codeblock:first-child > pre > code.javascript` (для разбора
+       *       понадобится новый метод; не первый div.codeblock -- пример 
+       *       использования).
+       */
+
+      var m;
+      var regexp = /<a id\="(\S+)\-summary"><\/a>([\s\S]+?)(?=(<a id\="\S+\-summary"><\/a>||($(?!\s))))/gm;
+      var contents = content.html();
+      while((m = regexp.exec(contents)) != null) {
+        console.error(matches[1], matches[2]);
+        console.error('====================');
+      }
+      process.exit(1);
 
       // CTOR
       var paramsTable;
