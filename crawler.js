@@ -45,7 +45,13 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
   docs.forEach(function(d) {
     loadDoc(d.url, function(data) {
       counter--;
+      /**
+       * Страница целиком
+       */
       var dom = $(data);
+      /**
+       * Только контент справки, работать необходимо с этим элементом
+       */
       var content = $('.b-dita-text', dom);
 
       d.def = {};
@@ -71,17 +77,33 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
        */
 
       var m;
-      var regexp = /<a id\="(\S+)\-summary"><\/a>([\s\S]+?)(?=(<a id\="\S+\-summary"><\/a>||($(?!\s))))/gm;
-      var contents = content.html();
+      var contents = content.html(),
+        i = 0,
+        regexp = /<h2>(.+)<\/h2>([\s\S]+?)(?=(<h2>.+<\/h2>|($(?!\s))))/gm,
+        summary = {};
+
       while((m = regexp.exec(contents)) != null) {
-        console.error(matches[1], matches[2]);
-        console.error('====================');
+        if(i === 0) {
+          summary['_preface_'] = contents.substring(0, m.index);
+        }
+        
+        summary[ m[1].toLowerCase() ] = m[2];
+        i++;
       }
-      process.exit(1);
 
       // CTOR
       var paramsTable;
-      var ctorAnchor = $("#constructor-summary", dom);
+      if(summary['конструктор']) {
+        var $cont = $(summary['конструктор']);
+        paramsTable = $('table', $cont);
+        
+        d.def.ctorParams = parseTable(paramsTable);
+      }
+      
+      console.error(summary['конструктор']);
+      process.exit(1);
+      
+      /*var ctorAnchor = $("#constructor-summary", dom);
       d.def.hasCtor = !!ctorAnchor.length;
       if (d.def.hasCtor) {
         var ctorEl = ctorAnchor.next();
@@ -94,7 +116,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
       } else {
         paramsTable = $('.b-static-text table');
         d.def.params = parseTable(paramsTable);
-      }
+      }*/
 
       // INHERITS
       var inherits = [];
@@ -252,6 +274,116 @@ function parseTable(table) {
   });
 
   return ret;
+};
+
+/**
+ * Разбирает таблицу описания аргументов метода (используется для методов и 
+ * конструкторов), состоящую из трех столбцов: "Параметр", "Значение 
+ * по умолчанию", "Описание".
+ * 
+ * Данные столбца "Параметр" используются для получения наименования переменной
+ * аргумента, обязательности.
+ * 
+ * Данные столбца "Описание" используются для получения типа передаваемых данных
+ * и текстового описания параметра.
+ * 
+ * Столбец "Значение по умолчанию" не используется. Игнорируются аргументы,
+ * содержащие в наименовании переменной точку (т.е. расшифровка свойств 
+ * передаваемого аргумента типа {Object}).
+ * 
+ * @param {jQuery} table
+ * @returns {Array}
+ */
+function parseParamTable(table) {
+  
+  var cols = {};
+  $('th', table).each(function(i) {
+    cols[$(this).html().toLowerCase()] = i;
+  });
+  
+  if(typeof(cols['параметр']) === 'undefined' || 
+      typeof(!cols['описание']) === 'undefind') {
+    
+    throw Error('Can not find columns of param or description');
+  }
+  
+  var res = [];
+  
+  $('tr', table).each(function() {
+    var tds = $('td', this);
+    var paramTd = tds.eq(cols['параметр']);
+    var descTd = tds.eq(cols['описание']);
+    
+    var p = {};
+    
+    $.extend(p, parseParamCell(paramTd));
+    if(typeof(p.param) === 'undefined') {
+      return true;
+    }
+    
+    $.extend(p, parseParamDescCell(descTd));
+    if(typeof(p.type) === 'undefined') {
+      return true;
+    }
+    
+    res.push(p);
+  });
+  
+  return res;
+};
+
+/**
+ * @param {jQuery} cell
+ * @returns {Object.<param,isRequired>}
+ */
+function parseParamCell(cell) {
+  var res = {};
+  
+  var name = $('span.tag', cell);
+  if(!name.size()) {
+    throw Error('Can not find span.tag of argument name');
+  }
+  
+  var argName = name.html();
+  if(argName.indexOf('.') >= 0) {
+    return res;
+  }
+  var req = $('span.b-doc-pseudo-link', cell);
+  
+  res.isRequired = !!req.size();
+  res.param = argName;
+  
+  return res;
+};
+
+/**
+ * @param {jQuery} cell
+ * @returns {Object.<type,description>}
+ */
+function parseParamDescCell(cell) {
+  var res = {};
+  
+  var pType = $('p:contains("Тип:")', cell);
+  if(!pType.size()) {
+    return res;
+  }
+  
+  var typeStr = stripTags(pType.html());
+  typeStr = $.trim(typeStr.replace('Тип:', ''));
+  typeStr = typeStr.replace(/\s+\|\s+/gi, '|');
+  
+  res.type = typeStr;
+  
+  var pDesc = pType.next();
+  if(pDesc.size()) {
+    res.description = stripTags(pDesc.html());
+  }
+  
+  return res;
+};
+
+function parsePropertyCodeblock(codeblock) {
+  
 };
 
 /**
