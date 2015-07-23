@@ -87,7 +87,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
           summary['_preface_'] = contents.substring(0, m.index);
         }
         
-        summary[ m[1].toLowerCase() ] = m[2];
+        summary[ m[1].toLowerCase() ] = '<div>' + m[2] + '</div>';
         i++;
       }
 
@@ -97,10 +97,10 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
         var $cont = $(summary['конструктор']);
         paramsTable = $('table', $cont);
         
-        d.def.ctorParams = parseTable(paramsTable);
+        d.def.ctorParams = parseParamTable(paramsTable);
       }
       
-      console.error(summary['конструктор']);
+      console.error(d.def.ctorParams);
       process.exit(1);
       
       /*var ctorAnchor = $("#constructor-summary", dom);
@@ -295,7 +295,7 @@ function parseTable(table) {
  * @returns {Array}
  */
 function parseParamTable(table) {
-  
+
   var cols = {};
   $('th', table).each(function(i) {
     cols[$(this).html().toLowerCase()] = i;
@@ -311,6 +311,10 @@ function parseParamTable(table) {
   
   $('tr', table).each(function() {
     var tds = $('td', this);
+    if(!tds.size()) {
+      return;
+    }
+    
     var paramTd = tds.eq(cols['параметр']);
     var descTd = tds.eq(cols['описание']);
     
@@ -370,11 +374,11 @@ function parseParamDescCell(cell) {
   
   var typeStr = stripTags(pType.html());
   typeStr = $.trim(typeStr.replace('Тип:', ''));
-  typeStr = typeStr.replace(/\s+\|\s+/gi, '|');
+  typeStr = typeStr.replace(/\s*\|\s*/gi, '|');
   
   res.type = typeStr;
   
-  var pDesc = pType.next();
+  var pDesc = $('p', cell).not(pType).not(':empty').eq(0);
   if(pDesc.size()) {
     res.description = stripTags(pDesc.html());
   }
