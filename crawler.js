@@ -84,7 +84,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
 
       while((m = regexp.exec(contents)) != null) {
         if(i === 0) {
-          summary['_preface_'] = contents.substring(0, m.index);
+          summary['_preface_'] = '<div>' + contents.substring(0, m.index) + '</div>';
         }
         
         summary[ m[1].toLowerCase() ] = '<div>' + m[2] + '</div>';
@@ -96,12 +96,10 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
       if(summary['конструктор']) {
         var $cont = $(summary['конструктор']);
         paramsTable = $('table', $cont);
-        
-        d.def.ctorParams = parseParamTable(paramsTable);
+        if(paramsTable.size()) {
+          d.def.ctorParams = parseParamTable(paramsTable);
+        }
       }
-      
-      console.error(d.def.ctorParams);
-      process.exit(1);
       
       /*var ctorAnchor = $("#constructor-summary", dom);
       d.def.hasCtor = !!ctorAnchor.length;
@@ -120,16 +118,29 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
 
       // INHERITS
       var inherits = [];
-      var inheritLinks = $('.b-dita-text > div > p:contains("Расширяет") > a', dom);
+      var inheritLinks = $('p:contains("Расширяет") > a', $(summary['_preface_']));
       inheritLinks.each(function() {
         inherits.push($.trim($(this).text()));
       });
       if (inherits.length) {
         d.def.inherits = inherits;
       }
-
+      
       // METHODS
-      var methodsAnchor = $("#methods-summary", dom);
+      if(summary['описание методов']) {
+        var methodContents = explodeByHeaders(summary['описание методов']);
+        d.def.methods = [];
+        for(var methodName in methodContents) {
+          var m = parseMethod(methodName, methodContents);
+          if(m['name']) {
+            d.def.methods.push(m);
+          }
+        }
+        
+        console.error(d.def.methods);
+        process.exit(1);
+      }
+      /*var methodsAnchor = $("#methods-summary", dom);
       if (!!methodsAnchor.length) {
         var methodsEl = methodsAnchor.next();
         var methodsTable = $('table', methodsEl);
@@ -145,7 +156,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
             }
           });
         }
-      }
+      }*/
 
       // PROPERTIES
       var propAnchor = $("#properties-summary", dom);
@@ -374,7 +385,7 @@ function parseParamDescCell(cell) {
   
   var typeStr = stripTags(pType.html());
   typeStr = $.trim(typeStr.replace('Тип:', ''));
-  typeStr = typeStr.replace(/\s*\|\s*/gi, '|');
+  typeStr = formatTypeString(typeStr);
   
   res.type = typeStr;
   
@@ -386,8 +397,60 @@ function parseParamDescCell(cell) {
   return res;
 };
 
+/**
+ * @param {string} methodName
+ * @param {string} methodContents
+ * @returns {Object}
+ */
+function parseMethod(methodName, methodContents) {
+  var $cont = $(methodContents);
+  
+  var res = {};
+  var $codeblock = $('div.codeblock:eq(0) > pre > code.javascript', $cont);
+  if($codeblock.size()) {
+    var codeblockContents = stripTags($codeblock.html());
+    $.extend(res, parseMethodCodeblock(methodName, codeblockContents));
+  }
+ 
+  var $table = $('table', $cont);
+  if($table.size()) {
+    var p = parseParamTable($table);
+    if(p.length > 0) {
+      res['params'] = p;
+    }
+  }
+  
+  res['name'] = methodName;
+  
+  return res;
+};
+
+/**
+ * @param {string} methodName
+ * @param {string} methodCodeblockContents
+ * @returns {Object.<return>}
+ */
+function parseMethodCodeblock(methodName, methodCodeblockContents) {
+  var res = {};
+  
+  var m = methodCodeblockContents.match(/\{([^\}]+)\}/i);
+  if(m) {
+    res['return'] = formatTypeString(m[1]);
+  }
+  
+  return res;
+};
+
 function parsePropertyCodeblock(codeblock) {
   
+};
+
+/**
+ * @param {string} typeStr
+ * @returns {string}
+ */
+function formatTypeString(typeStr) {
+  return typeStr.replace(/\s*\|\s*/gi, '|');
 };
 
 /**
@@ -443,4 +506,24 @@ function loadDoc(docPage, callback) {
  */
 function stripTags(str) {
   return str.replace(/<[^>]+>/gi, '');
+};
+
+/**
+ * @param {string} htmlString
+ * @param {string=} opt_headerTag Default h3
+ * @returns {Object.<string, string>}
+ */
+function explodeByHeaders(htmlString, opt_headerTag) {
+  
+  var tag = opt_headerTag || 'h3';
+  var exp = new RegExp(('<' + tag + '>(.+)<\/' + tag + '>([\\s\\S]+?)(?=(<' + 
+    tag + '>.+<\/' + tag + '>|($(?!\\s))))'), 'gim');
+  var res = {};
+  var m;
+    
+  while((m = exp.exec(htmlString)) != null) {
+    res[ m[1] ] = '<div>' + m[2] + '</div>';
+  }
+  
+  return res;
 };
