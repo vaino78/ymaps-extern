@@ -409,6 +409,7 @@ function parseMethod(methodName, methodContents) {
   var $codeblock = $('div.codeblock:eq(0) > pre > code.javascript', $cont);
   if($codeblock.size()) {
     var codeblockContents = stripTags($codeblock.html());
+    console.error(codeblockContents);
     $.extend(res, parseMethodCodeblock(methodName, codeblockContents));
   }
  
