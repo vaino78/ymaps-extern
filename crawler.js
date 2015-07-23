@@ -10,41 +10,39 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
 
   var dom = $(data);
   var links = $("a.docmenu__link", dom);
+  var toParse = {};
   
   links.each(function() {
     var link = $(this);
-    var name;
     var url = link.attr('href');
     
     var matches = hrefExp.exec(url);
     if(!matches) {
-      return true;
+      return;
     }
     
-    url = name = matches[1];
+    url = matches[1];
     
     if (url == 'packages.xml') {
       return;
     }
-    if (name || url) {
-      var alreadyHasDoc = docs.some(function(doc) {
-        return doc.url == url;
-      });
-      if (!alreadyHasDoc) {
-        docs.push({
-          name: name,
-          url: url
-        });
-      }
+    if (url) {
+      toParse[url] = true;
     }
   });
 
-  var counter = docs.length;
-
   var ret = [];
-  docs.forEach(function(d) {
-    loadDoc(d.url, function(data) {
-      counter--;
+  var urls = Object.keys(toParse);
+  
+  urls.forEach(function(url) {
+    /** @type {Object} */
+    var doc = {
+      "name": url,
+      "url": url
+    };
+    docs.push(doc);
+    
+    loadDoc(url, function(data) {
       /**
        * Страница целиком
        */
@@ -54,10 +52,10 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
        */
       var content = $('.b-dita-text', dom);
 
-      d.def = {};
+      doc.def = {};
 
       // NAME
-      d.def.name = $('h1', content).html();
+      doc.def.name = $('h1', content).html();
 
       /**
        * @todo Разобрать страницу по тэгам <h2>, сформировать хэш,
@@ -97,7 +95,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
         var $cont = $(summary['конструктор']);
         paramsTable = $('table', $cont);
         if(paramsTable.size()) {
-          d.def.ctorParams = parseParamTable(paramsTable);
+          doc.def.ctorParams = parseParamTable(paramsTable);
         }
       }
       
@@ -123,17 +121,17 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
         inherits.push($.trim($(this).text()));
       });
       if (inherits.length) {
-        d.def.inherits = inherits;
+        doc.def.inherits = inherits;
       }
       
       // METHODS
       if(summary['описание методов']) {
         var methodContents = explodeByHeaders(summary['описание методов']);
-        d.def.methods = [];
+        doc.def.methods = [];
         for(var methodName in methodContents) {
           var m = parseMethod(methodName, methodContents[methodName]);
           if(m['name']) {
-            d.def.methods.push(m);
+            doc.def.methods.push(m);
           }
         }
       }
@@ -158,11 +156,11 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
       // PROPERTIES
       if(summary['описание полей']) {
         var propertyContents = explodeByHeaders(summary['описание полей']);
-        d.def.props = [];
+        doc.def.props = [];
         for(var propertyName in propertyContents) {
           var p = parseProperty(propertyName, propertyContents[propertyName]);
           if(p['name']) {
-            d.def.props.push(p);
+            doc.def.props.push(p);
           }
         }
       }
@@ -175,14 +173,17 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
       }
       */
 
-      ret.push(d);
+      ret.push(doc);
+      delete toParse[doc.url];
+      
+      var counter = Object.keys(toParse).length;
       if (counter == 0) {
         save(ret);
       }
     });
-
+    
   });
-
+  
 });
 
 function contains(text, selector, context) {
@@ -197,13 +198,14 @@ function contains(text, selector, context) {
 }
 
 function save(object) {
+
   var data = JSON.stringify(object, null, 2);
   if (fs.existsSync("data.json")) {
     fs.unlinkSync("data.json");
   }
   fs.writeFile("data.json", data, function(err) {
       if(err) {
-          console.log(err);
+          console.error(err);
       } else {
           console.log("The file was saved!");
       }
@@ -558,22 +560,31 @@ function loadDoc(docPage, callback) {
     fs.readFile(cachedPath, 'utf8', function(err, data) {
       console.log('From cache: ' + docPage);
       if (err) {
+        console.error('Error reading file from cache', err);
         throw err;
       }
       callback(data.toString());
     });
   } else {
-    $.get((BASE_URL + docPage + '-docpage/'), function(data) {
-      console.log('Loaded docpage: ' + docPage);
-      fs.writeFile(cachedPath, data, function(err) {
+    $.ajax({
+      "dataType": "html",
+      "error": function(jqXhr, textStatus, e) {
+        console.error('Error loading', docPage, e);
+      },
+      "method": "GET",
+      "success": function(data) {
+        console.log('Loaded docpage: ' + docPage);
+        fs.writeFile(cachedPath, data, function(err) {
           if(err) {
-              console.log(err);
+              console.error(err);
           } else {
               console.log(docPage + " put into cache");
           }
-      });
+        });
 
-      callback(data);
+        callback(data);
+      },
+      "url": (BASE_URL + docPage + '-docpage/')
     });
   }
 };
