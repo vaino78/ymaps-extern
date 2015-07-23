@@ -159,12 +159,24 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
       }*/
 
       // PROPERTIES
+      if(summary['описание полей']) {
+        var propertyContents = explodeByHeaders(summary['описание полей']);
+        d.def.props = [];
+        for(var propertyName in propertyContents) {
+          var p = parseProperty(propertyContents[propertyName]);
+          if(p['name']) {
+            d.def.props.push(p);
+          }
+        }
+      }
+      /*
       var propAnchor = $("#properties-summary", dom);
       if (!!propAnchor.length) {
         var propEl = propAnchor.next();
         var propTable = $('table', propEl);
         d.def.props = parseTable(propTable);
       }
+      */
 
       ret.push(d);
       if (counter == 0) {
@@ -420,21 +432,9 @@ function parseMethod(methodName, methodContents) {
     }
   }
   
-  var desc = [];
-  $cont.find('p:not(:empty)').each(function() {
-    var $this = $(this);
-    if($this.is(':has(div.codeblock)')) {
-      return;
-    }
-    
-    if($this.is(':contains("Параметры:")')) {
-      return false;
-    }
-    
-    desc.push(stripTags($this.html()));
-  });
-  if(desc.length > 0) {
-    res['desciption'] = desc.join("\n\n");
+  var desc = parseDescription($cont);
+  if(desc) {
+    res['desciption'] = desc;
   }
   
   res['name'] = methodName;
@@ -458,8 +458,72 @@ function parseMethodCodeblock(methodName, methodCodeblockContents) {
   return res;
 };
 
-function parsePropertyCodeblock(codeblock) {
+/**
+ * 
+ * @param {string} propName
+ * @param {string} propertyContents
+ * @returns {Object}
+ */
+function parseProperty(propName, propertyContents) {
+  var $cont = $(propertyContents);
+  var res = {};
   
+  var $codeblock = $('div.codeblock:eq(0) > pre > code.javascript', $cont);
+  if($codeblock.size()) {
+    var codeblockContents = stripTags($codeblock.html());
+    $.extend(res, parsePropertyCodeblock(propName, codeblockContents));
+  }
+  
+  var desc = parseDescription($cont);
+  if(desc) {
+    res['description'] = desc;
+  }
+  
+  res['name'] = propName;
+  
+  return res;
+};
+
+/**
+ * @param {string} propName
+ * @param {string} codeblock
+ * @returns {Object.<type>}
+ */
+function parsePropertyCodeblock(propName, codeblock) {
+  var res = {};
+  
+  var s = codeblock.split(propName);
+  var type = $.trim(s[0]);
+  if(type) {
+    res['type'] = formatTypeString(type);
+  }
+  
+  return res;
+};
+
+/**
+ * @param {jQuery} $content
+ * @returns {string}
+ */
+function parseDescription($content) {
+  var desc = [];
+  $content.find('p:not(:empty)').each(function() {
+    var $this = $(this);
+    if($this.is(':has(div.codeblock)')) {
+      return;
+    }
+    
+    if($this.is(':contains("Параметры:")') || $this.is(':contains("Пример:")')) {
+      return false;
+    }
+    
+    desc.push(stripTags($this.html()));
+  });
+  if(desc.length > 0) {
+    return desc.join("\n\n");
+  }
+  
+  return '';
 };
 
 /**
