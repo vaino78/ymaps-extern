@@ -131,7 +131,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
         var methodContents = explodeByHeaders(summary['описание методов']);
         d.def.methods = [];
         for(var methodName in methodContents) {
-          var m = parseMethod(methodName, methodContents);
+          var m = parseMethod(methodName, methodContents[methodName]);
           if(m['name']) {
             d.def.methods.push(m);
           }
@@ -409,7 +409,6 @@ function parseMethod(methodName, methodContents) {
   var $codeblock = $('div.codeblock:eq(0) > pre > code.javascript', $cont);
   if($codeblock.size()) {
     var codeblockContents = stripTags($codeblock.html());
-    console.error(codeblockContents);
     $.extend(res, parseMethodCodeblock(methodName, codeblockContents));
   }
  
@@ -419,6 +418,23 @@ function parseMethod(methodName, methodContents) {
     if(p.length > 0) {
       res['params'] = p;
     }
+  }
+  
+  var desc = [];
+  $cont.find('p:not(:empty)').each(function() {
+    var $this = $(this);
+    if($this.is(':has(div.codeblock)')) {
+      return;
+    }
+    
+    if($this.is(':contains("Параметры:")')) {
+      return false;
+    }
+    
+    desc.push(stripTags($this.html()));
+  });
+  if(desc.length > 0) {
+    res['desciption'] = desc.join("\n\n");
   }
   
   res['name'] = methodName;
