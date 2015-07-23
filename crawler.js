@@ -89,7 +89,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
         i++;
       }
       
-      var $preface = $(summary['_preface_']);
+      var $preface = (summary['_preface_']) ? $(summary['_preface_']) : content;
 
       // CTOR
       var paramsTable;
@@ -185,7 +185,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
       if(!doc.def.hasCtor && !doc.def.inherits && !doc.def.methods && 
           !doc.def.props) {
         
-        var $table = $('p:contains("Параметры:")', $preface).next('table');
+        var $table = $("strong:contains('Параметры:')", $preface).parent().next('table');
         if($table.size()) {
           try {
             doc.def.params = parseParamTable($table);
@@ -205,9 +205,9 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
         }
         
         if(!doc.def.params && !doc.def['return']) {
-          var $instance = $('p:contains("Экземпляр класса") > a');
+          var $instance = $('p:contains("Экземпляр класса") > a', $preface);
           if($instance.size()) {
-            doc.def.type = $instance.html();
+            doc.def.type = stripTags($instance.html());
           }
         }
       }
