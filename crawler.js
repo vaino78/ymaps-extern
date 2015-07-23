@@ -136,9 +136,6 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
             d.def.methods.push(m);
           }
         }
-        
-        console.error(d.def.methods);
-        process.exit(1);
       }
       /*var methodsAnchor = $("#methods-summary", dom);
       if (!!methodsAnchor.length) {
@@ -163,7 +160,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
         var propertyContents = explodeByHeaders(summary['описание полей']);
         d.def.props = [];
         for(var propertyName in propertyContents) {
-          var p = parseProperty(propertyContents[propertyName]);
+          var p = parseProperty(propertyName, propertyContents[propertyName]);
           if(p['name']) {
             d.def.props.push(p);
           }
@@ -492,8 +489,8 @@ function parseProperty(propName, propertyContents) {
 function parsePropertyCodeblock(propName, codeblock) {
   var res = {};
   
-  var s = codeblock.split(propName);
-  var type = $.trim(s[0]);
+  var exp = new RegExp(('\\s+' + propName + '$'), 'i');
+  var type = $.trim(codeblock.replace(exp, ''));
   if(type) {
     res['type'] = formatTypeString(type);
   }
