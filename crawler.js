@@ -88,15 +88,20 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
         summary[ m[1].toLowerCase() ] = '<div>' + m[2] + '</div>';
         i++;
       }
+      
+      var $preface = $(summary['_preface_']);
 
       // CTOR
       var paramsTable;
       if(summary['конструктор']) {
         var $cont = $(summary['конструктор']);
         paramsTable = $('table', $cont);
+        doc.def.hasCtor = true;
         if(paramsTable.size()) {
           doc.def.ctorParams = parseParamTable(paramsTable);
         }
+      } else {
+        doc.def.hasCtor = false;
       }
       
       /*var ctorAnchor = $("#constructor-summary", dom);
@@ -116,7 +121,7 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
 
       // INHERITS
       var inherits = [];
-      var inheritLinks = $('p:contains("Расширяет") > a', $(summary['_preface_']));
+      var inheritLinks = $('p:contains("Расширяет") > a', $preface);
       inheritLinks.each(function() {
         inherits.push($.trim($(this).text()));
       });
@@ -172,6 +177,45 @@ load('https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/concepts/About-docpage/', fu
         d.def.props = parseTable(propTable);
       }
       */
+     
+     /**
+      * Если нет информации о конструкторе, наследовании, методах и свойствах
+      * -- это функция или экземлпяр класса
+      */
+      if(!doc.def.hasCtor && !doc.def.inherits && !doc.def.methods && 
+          !doc.def.props) {
+        
+        var $table = $('p:contains("Параметры:")', $preface).next('table');
+        if($table.size()) {
+          try {
+            doc.def.params = parseParamTable($table);
+          } catch(e) {
+            console.error(e.message, doc, $table.html());
+            throw e;
+          }
+        }
+        
+        var $returns = $('p:contains("Возвращает")', $preface);
+        if($returns.size()) {
+          var returnsContent = stripTags($returns.eq(0).html());
+          var m = returnsContent.match(/\(тип\s+([^\)]+)\)/i);
+          if(m && m[1]) {
+            doc.def['return'] = $.trim(m[1]);
+          }
+        }
+        
+        if(!doc.def.params && !doc.def['return']) {
+          var $instance = $('p:contains("Экземпляр класса") > a');
+          if($instance.size()) {
+            doc.def.type = $instance.html();
+          }
+        }
+      }
+      
+      var desc = parseDescription($preface);
+      if(desc) {
+        doc.def.description = desc;
+      }
 
       ret.push(doc);
       delete toParse[doc.url];
