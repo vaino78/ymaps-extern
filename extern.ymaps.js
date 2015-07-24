@@ -127,6 +127,9 @@ ymaps.Balloon.prototype.options;
  */
 ymaps.Balloon.prototype.events;
 
+
+ymaps.behavior = {};
+
 /**
  * 
  * Расширяет
@@ -744,6 +747,9 @@ ymaps.Circle.prototype.editor;
  */
 ymaps.Circle.prototype.geometry;
 
+
+ymaps.clusterer = {};
+
 /**
  * 
  * Расширяет
@@ -1223,6 +1229,9 @@ ymaps.Collection.prototype.removeAll = function() {};
  */
 ymaps.Collection.prototype.events;
 
+
+ymaps.collection = {};
+
 /**
  * 
  * Расширяет
@@ -1288,6 +1297,9 @@ ymaps.collection.Item.prototype.events;
  * @type {ymaps.IOptionManager}
  */
 ymaps.collection.Item.prototype.options;
+
+
+ymaps.control = {};
 
 /**
  * 
@@ -2236,6 +2248,9 @@ ymaps.control.ZoomControl.prototype.options;
  */
 ymaps.control.ZoomControl.prototype.events;
 
+
+ymaps.coordSystem = {};
+
 /**
  * 
  * Статический объект.
@@ -2264,6 +2279,9 @@ ymaps.coordSystem.cartesian = function(scale) {};
  * @type {ymaps.ICoordSystem}
  */
 ymaps.coordSystem.geo;
+
+
+ymaps.data = {};
 
 /**
  * 
@@ -2448,6 +2466,9 @@ ymaps.DomEvent.prototype.isMapEventAllowed = function() {};
  * @return {Boolean}
  */
 ymaps.DomEvent.prototype.isPropagationStopped = function() {};
+
+
+ymaps.domEvent = {};
 
 /**
  * 
@@ -2719,6 +2740,9 @@ ymaps.domEvent.Touch = function(originalEvent, type) {};
  */
 ymaps.domEvent.Touch.prototype.get = function(name) {};
 
+
+ymaps.error = {};
+
 /**
  * 
  * Расширяет Error.
@@ -2935,6 +2959,9 @@ ymaps.error.StorageItemAccessError = function() {};
  * 
  */
 ymaps.error.Warning = function() {};
+
+
+ymaps.event = {};
 
 /**
  * 
@@ -3261,6 +3288,12 @@ ymaps.formatter.duration = function(value, significantDigits) {};
  */
 ymaps.geocode = function(request, options) {};
 
+
+ymaps.geometry = {};
+
+
+ymaps.geometry.base = {};
+
 /**
  * 
  * Расширяет
@@ -3385,6 +3418,9 @@ ymaps.geometry.base.Circle.prototype.events;
  */
 ymaps.error.RequestError = function() {};
 
+
+ymaps.geometry.base.LinearRing = {};
+
 /**
  * 
  * Статическая функция.
@@ -3410,21 +3446,8 @@ ymaps.geometry.base.LinearRing.fromEncodedCoordinates = function(encodedCoordina
  * @constructor
  * @implements {ymaps.IBaseLinearRingGeometry}
  * 
- * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
- * @param {String=} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
- *                           Может принимать одно из двух значений:
- *                           
- *                               evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                               до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
- *                               пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
- *                               nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                               до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
- *                               нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
- *                               раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
- *                               находится снаружи контура. В противном случае она находится внутри.
- *                           
  */
-ymaps.geometry.base.LinearRing = function(coordinates, fillRule) {};
+ymaps.geometry.base.LinearRing = function() {};
 
 
 /**
@@ -4149,6 +4172,9 @@ ymaps.geometry.base.Rectangle.prototype.unfreeze = function() {};
  */
 ymaps.geometry.base.Rectangle.prototype.events;
 
+
+ymaps.geometry.json = {};
+
 /**
  * 
  * Расширяет
@@ -4482,6 +4508,9 @@ ymaps.geometry.Circle.prototype.events;
  */
 ymaps.geometry.Circle.prototype.options;
 
+
+ymaps.geometry.LineString = {};
+
 /**
  * 
  * Статическая функция.
@@ -4494,6 +4523,9 @@ ymaps.geometry.Circle.prototype.options;
  * @returns {String}
  */
 ymaps.geometry.LineString.toEncodedCoordinates = function(geometry) {};
+
+
+ymaps.geometry.pixel = {};
 
 /**
  * 
@@ -5502,6 +5534,9 @@ ymaps.geometry.Rectangle.prototype.events;
  */
 ymaps.geometry.Rectangle.prototype.options;
 
+
+ymaps.geometryEditor = {};
+
 /**
  * 
  * Расширяет
@@ -5704,6 +5739,9 @@ ymaps.geometry.pixel.Circle.prototype.getType = function() {};
  */
 ymaps.geometry.pixel.Circle.prototype.events;
 
+
+ymaps.geometryEditor.model = {};
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса geometryEditor.model.ChildLinearRing скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -5732,10 +5770,8 @@ ymaps.geometryEditor.model.ChildLinearRing = function() {};
  * @constructor
  * @implements {ymaps.ILineStringGeometry}
  * 
- * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
- * @param {Object=} options Опции геометрии.
  */
-ymaps.geometry.LineString = function(coordinates, options) {};
+ymaps.geometry.LineString = function() {};
 
 
 /**
@@ -6291,6 +6327,9 @@ ymaps.geometryEditor.Point.prototype.options;
  */
 ymaps.geometryEditor.Point.prototype.events;
 
+
+ymaps.geometryEditor.view = {};
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса geometryEditor.view.Edge скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -6497,6 +6536,12 @@ ymaps.geometryEditor.view.Vertex = {};
  * @return {ymaps.GeoObject}
  */
 ymaps.geometryEditor.view.Vertex.getPlacemark = function() {};
+
+
+ymaps.geoObject = {};
+
+
+ymaps.geoObject.addon = {};
 
 /**
  * 
@@ -7347,6 +7392,9 @@ ymaps.GeoObjectCollection.prototype.events;
  */
 ymaps.GeoObjectCollection.prototype.options;
 
+
+ymaps.geoXml = {};
+
 /**
  * 
  * Статическая функция.
@@ -7395,6 +7443,12 @@ ymaps.geoXml.load = function(url) {};
  *                                                Опции объекта будут учитываться при получении результата.
  */
 ymaps.getZoomRange = function(mapType, coords, customizable) {};
+
+
+ymaps.graphics = {};
+
+
+ymaps.graphics.style = {};
 
 /**
  * 
@@ -8167,6 +8221,12 @@ ymaps.Hotspot.prototype.setZIndex = function() {};
  */
 ymaps.Hotspot.prototype.events;
 
+
+ymaps.hotspot = {};
+
+
+ymaps.hotspot.layer = {};
+
 /**
  * 
  * Расширяет
@@ -8593,6 +8653,9 @@ ymaps.hotspot.Layer.prototype.events;
  */
 ymaps.hotspot.Layer.prototype.options;
 
+
+ymaps.interactivityModel = {};
+
 /**
  * 
  * Статический объект.
@@ -8734,6 +8797,9 @@ ymaps.hotspot.ObjectSource.prototype.requestObjects = function(layer, tileNumber
  */
 ymaps.hotspot.ObjectSource.prototype.options;
 
+
+ymaps.layer = {};
+
 /**
  * 
  * Статический объект.
@@ -8744,6 +8810,9 @@ ymaps.hotspot.ObjectSource.prototype.options;
  * @type {ymaps.util.Storage}
  */
 ymaps.layer.storage;
+
+
+ymaps.layer.tile = {};
 
 /**
  * 
@@ -8831,6 +8900,9 @@ ymaps.layer.tile.DomTile.prototype.renderAt = function(context, clientBounds, an
  * @type {ymaps.IEventManager}
  */
 ymaps.layer.tile.DomTile.prototype.events;
+
+
+ymaps.layer.tileContainer = {};
 
 /**
  * 
@@ -9219,6 +9291,9 @@ ymaps.LayerCollection.prototype.events;
  */
 ymaps.LayerCollection.prototype.options;
 
+
+ymaps.layout = {};
+
 /**
  * 
  * Расширяет
@@ -9310,6 +9385,9 @@ ymaps.layout.ImageWithContent = function(data) {};
  * @type {ymaps.util.AsyncStorage}
  */
 ymaps.layout.storage;
+
+
+ymaps.layout.templateBased = {};
 
 /**
  * 
@@ -9566,6 +9644,12 @@ ymaps.LoadingObjectManager.prototype.properties;
  * @type {ymaps.IDataManager}
  */
 ymaps.LoadingObjectManager.prototype.state;
+
+
+ymaps.map = {};
+
+
+ymaps.map.action = {};
 
 /**
  * 
@@ -9973,6 +10057,9 @@ ymaps.map.action.Manager.prototype.stop = function() {};
  */
 ymaps.map.action.Manager.prototype.events;
 
+
+ymaps.map.addon = {};
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса map.addon.balloon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -10156,6 +10243,9 @@ ymaps.map.Balloon.prototype.setPosition = function(position) {};
  * @type {ymaps.IEventManager}
  */
 ymaps.map.Balloon.prototype.events;
+
+
+ymaps.map.behavior = {};
 
 /**
  * 
@@ -10657,6 +10747,9 @@ ymaps.map.Hint.prototype.setPosition = function(position) {};
  */
 ymaps.map.Hint.prototype.events;
 
+
+ymaps.map.layer = {};
+
 /**
  * 
  * Расширяет
@@ -10777,6 +10870,9 @@ ymaps.map.layer.Manager.prototype.events;
  * @type {ymaps.IOptionManager}
  */
 ymaps.map.layer.Manager.prototype.options;
+
+
+ymaps.map.pane = {};
 
 /**
  * 
@@ -10944,6 +11040,9 @@ ymaps.MapType.prototype.getLayers = function() {};
  */
 ymaps.MapType.prototype.getName = function(map) {};
 
+
+ymaps.mapType = {};
+
 /**
  * 
  * Статический объект.
@@ -11037,6 +11136,9 @@ ymaps.meta.version;
  */
 ymaps.modules;
 
+
+ymaps.modules = {};
+
 /**
  * 
  * Статическая функция.
@@ -11119,6 +11221,12 @@ ymaps.Monitor.prototype.remove = function(name) {};
  * @return {ymaps.Monitor}
  */
 ymaps.Monitor.prototype.removeAll = function() {};
+
+
+ymaps.multiRouter = {};
+
+
+ymaps.multiRouter.driving = {};
 
 /**
  * 
@@ -11882,6 +11990,9 @@ ymaps.multiRouter.EditorAddon.prototype.options;
  * @type {ymaps.IEventManager}
  */
 ymaps.multiRouter.EditorAddon.prototype.events;
+
+
+ymaps.multiRouter.masstransit = {};
 
 /**
  * 
@@ -13883,6 +13994,9 @@ ymaps.ObjectManager.prototype.properties;
  */
 ymaps.ObjectManager.prototype.state;
 
+
+ymaps.objectManager = {};
+
 /**
  * 
  * Расширяет
@@ -14467,6 +14581,9 @@ ymaps.objectManager.OverlayCollection.prototype.options;
  */
 ymaps.objectManager.OverlayCollection.prototype.events;
 
+
+ymaps.option = {};
+
 /**
  * 
  * Расширяет
@@ -14755,6 +14872,12 @@ ymaps.option.Manager.prototype.events;
  */
 ymaps.option.presetStorage;
 
+
+ymaps.overlay = {};
+
+
+ymaps.overlay.hotspot = {};
+
 /**
  * 
  * Расширяет
@@ -14925,6 +15048,9 @@ ymaps.overlay.hotspot.Polyline = function(geometry, data, options) {};
  * @param {Object=} options Опции.
  */
 ymaps.overlay.hotspot.Rectangle = function(geometry, data, options) {};
+
+
+ymaps.overlay.html = {};
 
 /**
  * 
@@ -15936,6 +16062,9 @@ ymaps.overlay.Rectangle.prototype.events;
  */
 ymaps.overlay.storage;
 
+
+ymaps.pane = {};
+
 /**
  * 
  * Расширяет
@@ -16445,6 +16574,9 @@ ymaps.Popup.prototype.options;
  */
 ymaps.Popup.prototype.events;
 
+
+ymaps.projection = {};
+
 /**
  * 
  * Расширяет
@@ -16577,6 +16709,9 @@ ymaps.Rectangle.prototype.editor;
  * @type {ymaps.geometry.Rectangle}
  */
 ymaps.Rectangle.prototype.geometry;
+
+
+ymaps.regions = {};
 
 /**
  * 
@@ -16821,6 +16956,9 @@ ymaps.RemoteObjectManager.prototype.state;
  * @returns {ymaps.vow.Promise}
  */
 ymaps.route = function(points, params) {};
+
+
+ymaps.router = {};
 
 /**
  * 
@@ -17267,6 +17405,9 @@ ymaps.router.WayPoint.prototype.properties;
  */
 ymaps.search = function(request, options) {};
 
+
+ymaps.shape = {};
+
 /**
  * 
  * Расширяет
@@ -17659,6 +17800,9 @@ ymaps.SuggestView.prototype.options;
  */
 ymaps.SuggestView.prototype.events;
 
+
+ymaps.template = {};
+
 /**
  * 
  * Статический объект.
@@ -17744,6 +17888,12 @@ ymaps.templateLayoutFactory = {};
  * @return {Function}
  */
 ymaps.templateLayoutFactory.createClass = function(template, overrides, staticMethods) {};
+
+
+ymaps.traffic = {};
+
+
+ymaps.traffic.provider = {};
 
 /**
  * 
@@ -18188,6 +18338,9 @@ ymaps.traffic.provider.Forecast.prototype.events;
  */
 ymaps.traffic.provider.storage;
 
+
+ymaps.util = {};
+
 /**
  * 
  * Расширяет
@@ -18368,6 +18521,9 @@ ymaps.util.bounds.getIntersections = function(bounds1, bounds2, projection) {};
  */
 ymaps.util.bounds.getSize = function(bounds, projection) {};
 
+
+ymaps.util.cursor = {};
+
 /**
  * 
  * Объект, предоставляющий доступ к добавленному на карту курсору.
@@ -18516,6 +18672,9 @@ ymaps.util.Dragger.prototype.stop = function() {};
  * @type {ymaps.IEventManager}
  */
 ymaps.util.Dragger.prototype.events;
+
+
+ymaps.util.math = {};
 
 /**
  * 
@@ -18774,6 +18933,9 @@ ymaps.vow.reject = function(reason) {};
  * @return {ymaps.vow.Promise}
  */
 ymaps.vow.resolve = function(value) {};
+
+
+ymaps.vow = {};
 
 /**
  * 

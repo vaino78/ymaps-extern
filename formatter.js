@@ -16,6 +16,7 @@ ret += [
 ].join("\n");
 
 var rendered = {};
+rendered['__ctor__' + 'ymaps'] = true;
 
 var names = [];
 data.forEach(function(item) {
@@ -103,6 +104,20 @@ Object.keys(interf).forEach(function(i) {
 
 data.forEach(function(item) {
   var r = [];
+  
+  var nameParts = item.name.split('.');
+  nameParts.pop();
+  var namePart = '';
+  nameParts.forEach(function(np) {
+    if(namePart != '') {
+      namePart += '.';
+    }
+    namePart += np;
+    if(!rendered['__ctor__' + namePart]) {
+      r.push('', (NS_PREFIX + namePart + ' = {};'), '');
+      rendered['__ctor__' + namePart] = true;
+    }
+  });
 
   r.push('/**');
   
