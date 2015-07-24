@@ -173,10 +173,42 @@ data.forEach(function(item) {
   r.push(' */');
   r.push(NS_PREFIX + item.name + finish + ';');
   r.push('', '');
+  
+  var fMethods = [], fProps = [];
 
   // METHODS
   if (item.def.methods) {
     item.def.methods.forEach(function(p) {
+      fMethods.push(p);
+    });
+  }
+  
+  // PROPERTIES
+  if (item.def.props) {
+    item.def.props.forEach(function(p) {
+      fProps.push(p);
+    });
+  }
+  
+  if(interfacesToPad) {
+    interfacesToPad.forEach(function(ip) {
+      if(interf[ip]) {
+        if(interf[ip].methods) {
+          interf[ip].methods.forEach(function(ipm) {
+            fMethods.push(ipm);
+          });
+        }
+        if(interf[ip].props) {
+          interf[ip].props.forEach(function(ipp) {
+            fProps.push(ipp);
+          });
+        }
+      }
+    });
+  }
+  
+  if(fMethods.length > 0) {
+    fMethods.forEach(function(p) {
       if (rendered['__param__' + item.name + '.' + p.name]) {
         return;
       }
@@ -187,6 +219,11 @@ data.forEach(function(item) {
       if (p.description) {
         r.push((' * ' + parseDescription(p.description)), ' * ');
       }
+      
+      if(p.inheritsFrom) {
+        r.push((' * @see ' + normilizeType(p.inheritsFrom, true)), ' * ');
+      }
+      
       if (p.params) {
         p.params.forEach(function(p) {
           paramsList.push(p.param);
@@ -209,9 +246,9 @@ data.forEach(function(item) {
       r.push('', '');
     });
   }
-  // PROPERTIES
-  if (item.def.props) {
-    item.def.props.forEach(function(p) {
+
+  if (fProps.length) {
+    fProps.forEach(function(p) {
       if (rendered['__prop__' + item.name + '.' + p.name]) {
         return;
       }
@@ -221,6 +258,9 @@ data.forEach(function(item) {
       r.push('/**');
       if (p.description) {
         r.push((' * ' + parseDescription(p.description)), ' * ');
+      }
+      if(p.inheritsFrom) {
+        r.push((' * @see ' + normilizeType(p.inheritsFrom, true)), ' * ');
       }
       if (p.type) {
         r.push(' * @type {' + normilizeType(p.type, true) + '}');

@@ -26,6 +26,107 @@ var ymaps = {};
  */
 ymaps.Balloon = function(map, options) {};
 
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ */
+ymaps.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ */
+ymaps.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @return {Boolean}
+ */
+ymaps.Balloon.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @param {Array.<Number>=} position Точка, где необходимо расположить балун.
+ * @param {Object|String|HTMLElement=} data Данные оверлея.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Balloon.prototype.open = function(position, data) {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.Balloon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.Balloon.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -39,6 +140,59 @@ ymaps.Balloon = function(map, options) {};
  * @param {Object=} options Опции.
  */
 ymaps.behavior.DblClickZoom = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.DblClickZoom.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.DblClickZoom.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.DblClickZoom.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.DblClickZoom.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.DblClickZoom.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.DblClickZoom.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.DblClickZoom.prototype.options;
 
 /**
  * 
@@ -54,6 +208,59 @@ ymaps.behavior.DblClickZoom = function(options) {};
  */
 ymaps.behavior.LeftMouseButtonMagnifier = function(options) {};
 
+
+/**
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.options;
+
 /**
  * 
  * Расширяет
@@ -67,6 +274,59 @@ ymaps.behavior.LeftMouseButtonMagnifier = function(options) {};
  * @param {Object=} options Опции.
  */
 ymaps.behavior.MultiTouch = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.MultiTouch.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.MultiTouch.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.MultiTouch.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.MultiTouch.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.MultiTouch.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.MultiTouch.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.MultiTouch.prototype.options;
 
 /**
  * 
@@ -82,6 +342,59 @@ ymaps.behavior.MultiTouch = function(options) {};
  */
 ymaps.behavior.RightMouseButtonMagnifier = function(options) {};
 
+
+/**
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.options;
+
 /**
  * 
  * Расширяет
@@ -94,6 +407,59 @@ ymaps.behavior.RightMouseButtonMagnifier = function(options) {};
  * 
  */
 ymaps.behavior.RouteEditor = function() {};
+
+
+/**
+ */
+ymaps.behavior.RouteEditor.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.RouteEditor.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.RouteEditor.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.RouteEditor.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.RouteEditor.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.RouteEditor.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.RouteEditor.prototype.options;
 
 /**
  * 
@@ -108,6 +474,59 @@ ymaps.behavior.RouteEditor = function() {};
  * @param {Object=} options Опции.
  */
 ymaps.behavior.ScrollZoom = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.ScrollZoom.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.ScrollZoom.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.ScrollZoom.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.ScrollZoom.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.ScrollZoom.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.ScrollZoom.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.ScrollZoom.prototype.options;
 
 /**
  * 
@@ -143,11 +562,64 @@ ymaps.behavior.Ruler.prototype.setState = function(state) {};
 
 
 /**
+ */
+ymaps.behavior.Ruler.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.Ruler.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.Ruler.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.Ruler.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.Ruler.prototype.setParent = function(parent) {};
+
+
+/**
  * Геометрия поведения "Линейка".
  * 
  * @type {ymaps.geometry.LineString}
  */
 ymaps.behavior.Ruler.prototype.geometry;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.Ruler.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.Ruler.prototype.options;
 
 /**
  * 
@@ -162,6 +634,59 @@ ymaps.behavior.Ruler.prototype.geometry;
  * @param {Object=} options Опции.
  */
 ymaps.behavior.Drag = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.Drag.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.Drag.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.Drag.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.Drag.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.Drag.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.Drag.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.Drag.prototype.options;
 
 /**
  * 
@@ -237,6 +762,122 @@ ymaps.Circle.prototype.geometry;
  * @param {ymaps.Clusterer} clusterer Кластеризатор.
  */
 ymaps.clusterer.Balloon = function(clusterer) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.clusterer.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.clusterer.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.clusterer.Balloon.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.clusterer.Balloon.prototype.events;
 
 /**
  * 
@@ -318,6 +959,25 @@ ymaps.Clusterer.prototype.removeAll = function() {};
 
 
 /**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.Clusterer.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.Clusterer.prototype.setParent = function(parent) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.Clusterer.prototype.getMap = function() {};
+
+
+/**
  * Балун кластеризатора.
  * 
  * @type {ymaps.clusterer.Balloon}
@@ -331,6 +991,24 @@ ymaps.Clusterer.prototype.balloon;
  * @type {clusterer.hint}
  */
 ymaps.Clusterer.prototype.hint;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.Clusterer.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.Clusterer.prototype.options;
 
 /**
  * 
@@ -367,6 +1045,43 @@ ymaps.ClusterPlacemark.prototype.getGeoObjects = function() {};
 
 
 /**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.ClusterPlacemark.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.ClusterPlacemark.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.ClusterPlacemark.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.ClusterPlacemark.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.ClusterPlacemark.prototype.getMap = function() {};
+
+
+/**
  * Состояние кластера. Определяется следующими полями:
  * 
  * activeObject - Cсылка на активный объект кластера.
@@ -377,6 +1092,42 @@ ymaps.ClusterPlacemark.prototype.getGeoObjects = function() {};
  * @type {ymaps.data.Manager}
  */
 ymaps.ClusterPlacemark.prototype.state;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.ClusterPlacemark.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.ClusterPlacemark.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ClusterPlacemark.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.ClusterPlacemark.prototype.options;
 
 /**
  * 
@@ -462,6 +1213,16 @@ ymaps.Collection.prototype.remove = function(child) {};
  */
 ymaps.Collection.prototype.removeAll = function() {};
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.Collection.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -510,6 +1271,24 @@ ymaps.collection.Item.prototype.onRemoveFromMap = function(oldMap) {};
  */
 ymaps.collection.Item.prototype.setParent = function(parent) {};
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.collection.Item.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.collection.Item.prototype.options;
+
 /**
  * 
  * Расширяет
@@ -538,6 +1317,55 @@ ymaps.control.Button.prototype.getMap = function() {};
 
 
 /**
+ */
+ymaps.control.Button.prototype.deselect = function() {};
+
+
+/**
+ */
+ymaps.control.Button.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.control.Button.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.Button.prototype.isEnabled = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.Button.prototype.isSelected = function() {};
+
+
+/**
+ */
+ymaps.control.Button.prototype.select = function() {};
+
+
+/**
+ * @see ymaps.IControl
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.Button.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IControl
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.Button.prototype.setParent = function(parent) {};
+
+
+/**
  * Данные кнопки.
  * Имена полей, доступных через метод data.Manager.get:
  * 
@@ -563,6 +1391,24 @@ ymaps.control.Button.prototype.data;
  * @type {ymaps.data.Manager}
  */
 ymaps.control.Button.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.Button.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.Button.prototype.events;
 
 /**
  * 
@@ -689,6 +1535,39 @@ ymaps.control.ListBox.prototype.isExpanded = function() {};
 
 
 /**
+ * @param {Object} object Добавляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.control.ListBox.prototype.add = function(object) {};
+
+
+/**
+ * @return {ymaps.IIterator}
+ */
+ymaps.control.ListBox.prototype.getIterator = function() {};
+
+
+/**
+ * @param {Object} object Удаляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.control.ListBox.prototype.remove = function(object) {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.ListBox.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.ListBox.prototype.setParent = function(parent) {};
+
+
+/**
  * Данные выпадающего списка.
  * Имена полей, доступных через метод data.Manager.get:
  * 
@@ -713,6 +1592,24 @@ ymaps.control.ListBox.prototype.data;
  */
 ymaps.control.ListBox.prototype.state;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.ListBox.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.ListBox.prototype.options;
+
 /**
  * 
  * Расширяет
@@ -731,6 +1628,116 @@ ymaps.control.ListBox.prototype.state;
  * @param {ymaps.Clusterer} clusterer Кластеризатор.
  */
 ymaps.clusterer.Hint = function(clusterer) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Hint.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.clusterer.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.clusterer.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.clusterer.Hint.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.clusterer.Hint.prototype.events;
 
 /**
  * 
@@ -935,6 +1942,19 @@ ymaps.control.SearchControl.prototype.showResult = function(index) {};
 
 
 /**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.SearchControl.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.SearchControl.prototype.setParent = function(parent) {};
+
+
+/**
  * Состояние элемента управления.
  * Имена полей, доступных через метод data.Manager.get:
  * 
@@ -950,6 +1970,24 @@ ymaps.control.SearchControl.prototype.showResult = function(index) {};
  * @type {ymaps.data.Manager}
  */
 ymaps.control.SearchControl.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.SearchControl.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.SearchControl.prototype.events;
 
 /**
  * 
@@ -1093,6 +2131,19 @@ ymaps.control.TrafficControl.prototype.showTraffic = function() {};
 
 
 /**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.TrafficControl.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.TrafficControl.prototype.setParent = function(parent) {};
+
+
+/**
  * Данные панели.
  * 
  * @type {ymaps.data.Manager}
@@ -1113,6 +2164,24 @@ ymaps.control.TrafficControl.prototype.data;
  * @type {ymaps.data.Manager}
  */
 ymaps.control.TrafficControl.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.TrafficControl.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.TrafficControl.prototype.events;
 
 /**
  * 
@@ -1135,6 +2204,37 @@ ymaps.control.ZoomControl = function(parameters) {};
  * @return {ymaps.Map}
  */
 ymaps.control.ZoomControl.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.ZoomControl.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.ZoomControl.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.ZoomControl.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.ZoomControl.prototype.events;
 
 /**
  * 
@@ -1222,6 +2322,34 @@ ymaps.data.Manager.prototype.unset = function(path) {};
  */
 ymaps.data.Manager.prototype.unsetAll = function() {};
 
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.data.Manager.prototype.freeze = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.data.Manager.prototype.isFrozen = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.data.Manager.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.data.Manager.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -1239,6 +2367,87 @@ ymaps.data.Manager.prototype.unsetAll = function() {};
  * @param {Object=} type Тип события. Если не указан, берётся из originalEvent.type.
  */
 ymaps.DomEvent = function(originalEvent, type) {};
+
+
+/**
+ * @param {String} name Имя свойства.
+ *                      Поддерживаются дополнительные свойства:
+ *                      
+ *                           'propagatedData' - данные события, которые сохраняются при его пропагировании
+ *                          (распространении по DOM-дереву); 
+ *                           'position' - необязательное поле, которое содержит координаты события относительно документа.
+ *                      
+ * @return {Object}
+ */
+ymaps.DomEvent.prototype.get = function(name) {};
+
+
+/**
+ * @return {ymaps.IDomEvent}
+ */
+ymaps.DomEvent.prototype.getSourceEvent = function() {};
+
+
+/**
+ */
+ymaps.DomEvent.prototype.preventDefault = function() {};
+
+
+/**
+ */
+ymaps.DomEvent.prototype.stopImmediatePropagation = function() {};
+
+
+/**
+ */
+ymaps.DomEvent.prototype.stopPropagation = function() {};
+
+
+/**
+ * @see ymaps.IEvent
+ * 
+ */
+ymaps.DomEvent.prototype.allowMapEvent = function() {};
+
+
+/**
+ * @see ymaps.IEvent
+ * 
+ * @param {String} name Имя метода.
+ */
+ymaps.DomEvent.prototype.callMethod = function(name) {};
+
+
+/**
+ * @see ymaps.IEvent
+ * 
+ * @return {Boolean}
+ */
+ymaps.DomEvent.prototype.isDefaultPrevented = function() {};
+
+
+/**
+ * @see ymaps.IEvent
+ * 
+ * @return {Boolean}
+ */
+ymaps.DomEvent.prototype.isImmediatePropagationStopped = function() {};
+
+
+/**
+ * @see ymaps.IEvent
+ * 
+ * @return {Boolean}
+ */
+ymaps.DomEvent.prototype.isMapEventAllowed = function() {};
+
+
+/**
+ * @see ymaps.IEvent
+ * 
+ * @return {Boolean}
+ */
+ymaps.DomEvent.prototype.isPropagationStopped = function() {};
 
 /**
  * 
@@ -1335,6 +2544,55 @@ ymaps.control.ListBoxItem.prototype.getMap = function() {};
 
 
 /**
+ */
+ymaps.control.ListBoxItem.prototype.deselect = function() {};
+
+
+/**
+ */
+ymaps.control.ListBoxItem.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.control.ListBoxItem.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.ListBoxItem.prototype.isEnabled = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.ListBoxItem.prototype.isSelected = function() {};
+
+
+/**
+ */
+ymaps.control.ListBoxItem.prototype.select = function() {};
+
+
+/**
+ * @see ymaps.IControl
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.ListBoxItem.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IControl
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.ListBoxItem.prototype.setParent = function(parent) {};
+
+
+/**
  * Данные элемента списка.
  * Имена полей, доступных через метод data.Manager.get:
  * 
@@ -1358,6 +2616,24 @@ ymaps.control.ListBoxItem.prototype.data;
  * @type {ymaps.data.Manager}
  */
 ymaps.control.ListBoxItem.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.ListBoxItem.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.ListBoxItem.prototype.events;
 
 /**
  * 
@@ -1676,6 +2952,34 @@ ymaps.event.Group = function(events) {};
 
 
 /**
+ * @param {String|Array.<String>} types Тип события или массив типов.
+ * @param {Function} callback Функция-обработчик. В качестве параметра в функцию передается
+ *                            объект события.
+ * @param {Object=} context Контекст исполнения функции-обработчика.
+ * @param {number=} priority Приоритет подписки.
+ * @return {ymaps.IEventGroup}
+ */
+ymaps.event.Group.prototype.add = function(types, callback, context, priority) {};
+
+
+/**
+ * @param {String|Array.<String>} types Тип или массив типов событий.
+ * @param {Function} callback Функция-обработчик. В качестве параметра в функцию передается
+ *                            объект события.
+ * @param {Object=} context Контекст исполнения функции-обработчика.
+ * @param {number=} priority Приоритет подписки.
+ * @return {ymaps.IEventGroup}
+ */
+ymaps.event.Group.prototype.remove = function(types, callback, context, priority) {};
+
+
+/**
+ * @return {ymaps.IEventGroup}
+ */
+ymaps.event.Group.prototype.removeAll = function() {};
+
+
+/**
  * Менеджер событий, для которого создана группа.
  * 
  * @type {ymaps.IEventManager}
@@ -1749,6 +3053,40 @@ ymaps.event.Manager.prototype.once = function(types, callback, context, priority
  */
 ymaps.event.Manager.prototype.setParent = function(parent) {};
 
+
+/**
+ * @param {String|Array.<String>} types Тип или массив типов события.
+ * @param {Function} callback Функция-обработчик события. В качестве параметра в функцию передается
+ *                            объект, описывающий событие. Может быть либо произвольным объектом, либо реализовывать интерфейс IEvent.
+ * @param {Object=} context Контекст исполнения обработчика.
+ * @param {number=} priority Приоритет подписки.
+ * @return {ymaps.IEventManager}
+ */
+ymaps.event.Manager.prototype.add = function(types, callback, context, priority) {};
+
+
+/**
+ * @return {ymaps.IEventManager|null}
+ */
+ymaps.event.Manager.prototype.getParent = function() {};
+
+
+/**
+ * @return {ymaps.IEventGroup}
+ */
+ymaps.event.Manager.prototype.group = function() {};
+
+
+/**
+ * @param {String|Array.<String>} types Тип события или массив типов.
+ * @param {Function} callback Функция-обработчик события. В качестве параметра в функцию передается
+ *                            объект события IEvent.
+ * @param {Object=} context Контекст исполнения обработчика.
+ * @param {number=} priority Приоритет подписки.
+ * @return {ymaps.IEventManager}
+ */
+ymaps.event.Manager.prototype.remove = function(types, callback, context, priority) {};
+
 /**
  * 
  * Расширяет
@@ -1774,6 +3112,17 @@ ymaps.event.Manager.prototype.setParent = function(parent) {};
  *                              Дополнительно в таблице доступен ключ "*" для правила обработки по умолчанию.
  */
 ymaps.event.Mapper = function(targetEventManager, mappingTable) {};
+
+
+/**
+ * @param {String} type Тип события.
+ * @param {Object|ymaps.IEvent=} eventObject Объект, описывающий событие. Может быть
+ *                                           либо произвольным объектом, либо реализовывать интерфейс IEvent. Во втором случае
+ *                                           после вызова каждого обработчика будет проверяться значение метода isImmediatePropagationStopped() -
+ *                                           если оно истинно, оповещение о событии немедленно прекращается.
+ * @return {ymaps.IEventTrigger}
+ */
+ymaps.event.Mapper.prototype.fire = function(type, eventObject) {};
 
 /**
  * 
@@ -1837,6 +3186,23 @@ ymaps.Event.prototype.stopImmediatePropagation = function() {};
 /**
  */
 ymaps.Event.prototype.stopPropagation = function() {};
+
+
+/**
+ */
+ymaps.Event.prototype.allowMapEvent = function() {};
+
+
+/**
+ * @return {ymaps.IEvent|null}
+ */
+ymaps.Event.prototype.getSourceEvent = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.Event.prototype.isMapEventAllowed = function() {};
 
 /**
  * 
@@ -1912,6 +3278,96 @@ ymaps.geometry.base.Circle = function(coordinates, radius) {};
 
 
 /**
+ * @return {String}
+ */
+ymaps.geometry.base.Circle.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.Circle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Circle.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на окружности.
+ * @return {Object}
+ */
+ymaps.geometry.base.Circle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @return {Array.<Number>|null}
+ */
+ymaps.geometry.base.Circle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @return {Number}
+ */
+ymaps.geometry.base.Circle.prototype.getRadius = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>|null} coordinates Координаты центра круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.geometry.base.Circle.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Number} radius Радиус круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.geometry.base.Circle.prototype.setRadius = function(radius) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Circle.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Circle.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Circle.prototype.unfreeze = function() {};
+
+
+/**
  * Менеджер событий геометрии.
  * 
  * @type {ymaps.event.Manager}
@@ -1972,6 +3428,161 @@ ymaps.geometry.base.LinearRing = function(coordinates, fillRule) {};
 
 
 /**
+ * @return {String}
+ */
+ymaps.geometry.base.LinearRing.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.LinearRing.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.base.LinearRing.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.base.LinearRing.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс вершины контура.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре.
+ * @return {Object}
+ */
+ymaps.geometry.base.LinearRing.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.LinearRing.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @return {String}
+ */
+ymaps.geometry.base.LinearRing.prototype.getFillRule = function() {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.base.LinearRing.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.base.LinearRing.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.LinearRing.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.LinearRing.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.LinearRing.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.LinearRing.prototype.unfreeze = function() {};
+
+
+/**
  * Менеджер событий геометрии.
  * 
  * @type {ymaps.event.Manager}
@@ -1991,6 +3602,135 @@ ymaps.geometry.base.LinearRing.prototype.events;
  * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
  */
 ymaps.geometry.base.LineString = function(coordinates) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.LineString.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.LineString.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.base.LineString.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс вершины.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.base.LineString.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
+ * @return {Object}
+ */
+ymaps.geometry.base.LineString.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.LineString.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.base.LineString.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.base.LineString.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.base.LineString.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.base.LineString.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.base.LineString.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.LineString.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.LineString.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.LineString.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.LineString.prototype.unfreeze = function() {};
 
 
 /**
@@ -2028,6 +3768,37 @@ ymaps.geometry.base.LineString.fromEncodedCoordinates = function(encodedCoordina
  * @param {Array.<Number>|null=} coordinates Координаты точки.
  */
 ymaps.geometry.base.Point = function(coordinates) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.Point.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.Point.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IPointGeometryAccess
+ * 
+ * @return {Array.<Number>|null}
+ */
+ymaps.geometry.base.Point.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPointGeometryAccess
+ * 
+ * @param {Array.<Number>|null} coordinates Координаты точки.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.base.Point.prototype.setCoordinates = function(coordinates) {};
 
 
 /**
@@ -2075,6 +3846,161 @@ ymaps.geometry.base.LineString.toEncodedCoordinates = function(geometry) {};
  *                           
  */
 ymaps.geometry.base.Polygon = function(coordinates, fillRule) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.Polygon.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.Polygon.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Polygon.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.Polygon.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.geometry.base.Polygon.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.geometry.base.Polygon.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {String}
+ */
+ymaps.geometry.base.Polygon.prototype.getFillRule = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.base.Polygon.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.insert = function(index, path) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.set = function(index, path) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты геометрии.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление контуров.
+ * @param {number} number Количество удаляемых контуров.
+ * @return {Array.<ymaps.ILinearRingGeometryAccess>}
+ */
+ymaps.geometry.base.Polygon.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Polygon.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Polygon.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Polygon.prototype.unfreeze = function() {};
 
 
 /**
@@ -2141,6 +4067,79 @@ ymaps.geometry.base.Polygon.toEncodedCoordinates = function(geometry) {};
  * @param {Array.<Array.<Number>>|null=} coordinates Массив, содержащий координаты двух противоположных углов прямоугольника.
  */
 ymaps.geometry.base.Rectangle = function(coordinates) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.Rectangle.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.Rectangle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Rectangle.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
+ * @return {Object}
+ */
+ymaps.geometry.base.Rectangle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.Rectangle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты углов.
+ * @return {ymaps.IRectangleGeometryAccess}
+ */
+ymaps.geometry.base.Rectangle.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Rectangle.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Rectangle.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Rectangle.prototype.unfreeze = function() {};
 
 
 /**
@@ -2258,6 +4257,14 @@ ymaps.geometry.json.polygon.prototype.coordinates;
  */
 ymaps.geometry.json.polygon.prototype.fillRule;
 
+
+/**
+ * Идентификатор типа геометрии.
+ * 
+ * @type {String}
+ */
+ymaps.geometry.json.polygon.prototype.type;
+
 /**
  * 
  * Статическая функция.
@@ -2314,6 +4321,14 @@ ymaps.geometry.json.rectangle.prototype.type;
  */
 ymaps.geometry.json.Point = function() {};
 
+
+/**
+ * Идентификатор типа геометрии.
+ * 
+ * @type {String}
+ */
+ymaps.geometry.json.Point.prototype.type;
+
 /**
  * 
  * Расширяет
@@ -2331,6 +4346,141 @@ ymaps.geometry.json.Point = function() {};
  * @param {Object=} options Опции геометрии.
  */
 ymaps.geometry.Circle = function(coordinates, radius, options) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.Circle.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.Circle.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на окружности.
+ * @return {Object}
+ */
+ymaps.geometry.Circle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @return {Array.<Number>|null}
+ */
+ymaps.geometry.Circle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @return {Number}
+ */
+ymaps.geometry.Circle.prototype.getRadius = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>|null} coordinates Координаты центра круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.geometry.Circle.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Number} radius Радиус круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.geometry.Circle.prototype.setRadius = function(radius) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Circle.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.Circle.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Circle.prototype.unfreeze = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.Circle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.Circle.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.Circle.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.Circle.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер событий объекта.
+ * 
+ * @see ymaps.IFreezable
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.Circle.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.Circle.prototype.options;
 
 /**
  * 
@@ -2359,6 +4509,86 @@ ymaps.geometry.LineString.toEncodedCoordinates = function(geometry) {};
  * @param {Object=} metaData Метаданные.
  */
 ymaps.geometry.pixel.LineString = function(coordinates, metaData) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
+ * @return {Object}
+ */
+ymaps.geometry.pixel.LineString.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.pixel.LineString.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometry.pixel.LineString.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.LineString.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.LineString.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.LineString.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.LineString.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.LineString.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.LineString.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.LineString.prototype.events;
 
 /**
  * 
@@ -2390,6 +4620,73 @@ ymaps.geometry.LineString.fromEncodedCoordinates = function(encodedCoordinates) 
  */
 ymaps.geometry.pixel.Point = function(position, metaData) {};
 
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.pixel.Point.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Point.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Point.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Point.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Point.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.Point.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.Point.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.Point.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -2416,6 +4713,99 @@ ymaps.geometry.pixel.Point = function(position, metaData) {};
  * @param {Object=} metaData Метаданные.
  */
 ymaps.geometry.pixel.MultiPolygon = function(coordinates, fillRule, metaData) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.contains = function(position) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Array.<Array.<Number>>>>}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getFillRule = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.events;
 
 /**
  * 
@@ -2444,6 +4834,99 @@ ymaps.geometry.pixel.MultiPolygon = function(coordinates, fillRule, metaData) {}
  */
 ymaps.geometry.pixel.Polygon = function(coordinates, fillRule, metaData) {};
 
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Polygon.prototype.contains = function(position) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getFillRule = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Polygon.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Polygon.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Polygon.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.Polygon.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -2458,6 +4941,80 @@ ymaps.geometry.pixel.Polygon = function(coordinates, fillRule, metaData) {};
  * @param {Object=} metaData Метаданные.
  */
 ymaps.geometry.pixel.Rectangle = function(coordinates, metaData) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.events;
 
 /**
  * 
@@ -2475,6 +5032,82 @@ ymaps.geometry.pixel.Rectangle = function(coordinates, metaData) {};
  * @param {Object=} options Опции геометрии.
  */
 ymaps.geometry.Point = function(position, options) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.Point.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.Point.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.Point.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.Point.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.Point.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.IPointGeometryAccess
+ * 
+ * @return {Array.<Number>|null}
+ */
+ymaps.geometry.Point.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPointGeometryAccess
+ * 
+ * @param {Array.<Number>|null} coordinates Координаты точки.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.Point.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.Point.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.Point.prototype.options;
 
 /**
  * 
@@ -2505,6 +5138,206 @@ ymaps.geometry.Point = function(position, options) {};
  * @param {Object=} options Опции геометрии.
  */
 ymaps.geometry.Polygon = function(coordinates, fillRule, options) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.Polygon.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.Polygon.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.Polygon.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.Polygon.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.Polygon.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.Polygon.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.Polygon.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.geometry.Polygon.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.geometry.Polygon.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {String}
+ */
+ymaps.geometry.Polygon.prototype.getFillRule = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.Polygon.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.insert = function(index, path) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.set = function(index, path) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты геометрии.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление контуров.
+ * @param {number} number Количество удаляемых контуров.
+ * @return {Array.<ymaps.ILinearRingGeometryAccess>}
+ */
+ymaps.geometry.Polygon.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Polygon.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.Polygon.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Polygon.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.Polygon.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.Polygon.prototype.options;
 
 /**
  * 
@@ -2550,6 +5383,124 @@ ymaps.geometry.Polygon.toEncodedCoordinates = function(geometry) {};
  * @param {Object=} options Опции геометрии.
  */
 ymaps.geometry.Rectangle = function(coordinates, options) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.Rectangle.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.Rectangle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.Rectangle.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.Rectangle.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.Rectangle.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.Rectangle.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
+ * @return {Object}
+ */
+ymaps.geometry.Rectangle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.Rectangle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты углов.
+ * @return {ymaps.IRectangleGeometryAccess}
+ */
+ymaps.geometry.Rectangle.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Rectangle.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.Rectangle.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Rectangle.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.Rectangle.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.Rectangle.prototype.options;
 
 /**
  * 
@@ -2636,6 +5587,34 @@ ymaps.geometryEditor.LineString.prototype.stopFraming = function() {};
  */
 ymaps.geometryEditor.LineString.prototype.state;
 
+
+/**
+ * Редактируемая геометрия.
+ * 
+ * @type {ymaps.IGeometry}
+ */
+ymaps.geometryEditor.LineString.prototype.geometry;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometryEditor.LineString.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.LineString.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -2651,6 +5630,79 @@ ymaps.geometryEditor.LineString.prototype.state;
  * @param {Object=} metaData Метаданные.
  */
 ymaps.geometry.pixel.Circle = function(coordinates, radius, metaData) {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.pixel.Circle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.geometry.pixel.Circle.prototype.getRadius = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Circle.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Circle.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Circle.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Circle.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.Circle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.Circle.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.Circle.prototype.events;
 
 /**
  * 
@@ -2693,6 +5745,180 @@ ymaps.geometry.LineString = function(coordinates, options) {};
  */
 ymaps.geometry.LineString.prototype.getDistance = function(from, to) {};
 
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.LineString.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.LineString.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.LineString.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.LineString.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.LineString.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.LineString.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс вершины.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.LineString.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
+ * @return {Object}
+ */
+ymaps.geometry.LineString.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.LineString.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.LineString.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.LineString.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.LineString.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.LineString.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.LineString.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.LineString.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.LineString.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.LineString.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.LineString.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.LineString.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.LineString.prototype.options;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса geometryEditor.model.Edge скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -2733,6 +5959,31 @@ ymaps.geometryEditor.model.Edge.prototype.setNextVertex = function(nextVertex) {
  */
 ymaps.geometryEditor.model.Edge.prototype.setPrevVertex = function(prevVertex) {};
 
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.Edge.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.Edge.prototype.getPixels = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.Edge.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса geometryEditor.model.RootLineString скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -2768,6 +6019,31 @@ ymaps.geometryEditor.model.RootLineString.prototype.getVertexModels = function()
  * @return {Array.<Array.<Number>>}
  */
 ymaps.geometryEditor.model.RootLineString.prototype.spliceVertices = function(start, deleteCount) {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.RootLineString.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.RootLineString.prototype.getPixels = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.RootLineString.prototype.events;
 
 /**
  * 
@@ -2823,6 +6099,59 @@ ymaps.geometryEditor.model.ChildLineString.prototype.setIndex = function(index) 
  */
 ymaps.geometryEditor.model.ChildLineString.prototype.spliceVertices = function(start, deleteCount) {};
 
+
+/**
+ * @return {ymaps.IGeometryEditorModel}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.getParent = function() {};
+
+
+/**
+ * @param {Array.<Number>} pixels Пиксельные данные.
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.setPixels = function(pixels) {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.getPixels = function() {};
+
+
+/**
+ * Редактор геометрии.
+ * 
+ * @type {ymaps.IGeometryEditor}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.editor;
+
+
+/**
+ * Геометрия модели.
+ * 
+ * @type {ymaps.IBaseGeometry}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.geometry;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса geometryEditor.model.RootPolygon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -2859,6 +6188,31 @@ ymaps.geometryEditor.model.RootPolygon.prototype.getPathModels = function() {};
  */
 ymaps.geometryEditor.model.RootPolygon.prototype.splicePaths = function(start, deleteCount) {};
 
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.RootPolygon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.RootPolygon.prototype.getPixels = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.RootPolygon.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -2892,12 +6246,50 @@ ymaps.geometryEditor.Point.prototype.stopDrawing = function() {};
 
 
 /**
+ */
+ymaps.geometryEditor.Point.prototype.startEditing = function() {};
+
+
+/**
+ */
+ymaps.geometryEditor.Point.prototype.stopEditing = function() {};
+
+
+/**
  * Менеджер состояния редактора геометрии.
  * Поля данных, доступные посредством методов get и set:
  * 
  * @type {ymaps.IDataManager}
  */
 ymaps.geometryEditor.Point.prototype.state;
+
+
+/**
+ * Редактируемая геометрия.
+ * 
+ * @type {ymaps.IGeometry}
+ */
+ymaps.geometryEditor.Point.prototype.geometry;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometryEditor.Point.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.Point.prototype.events;
 
 /**
  * 
@@ -2999,6 +6391,34 @@ ymaps.geometryEditor.Polygon.prototype.stopFraming = function() {};
  * @type {ymaps.IDataManager}
  */
 ymaps.geometryEditor.Polygon.prototype.state;
+
+
+/**
+ * Редактируемая геометрия.
+ * 
+ * @type {ymaps.IGeometry}
+ */
+ymaps.geometryEditor.Polygon.prototype.geometry;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometryEditor.Polygon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.Polygon.prototype.events;
 
 /**
  * 
@@ -3193,6 +6613,102 @@ ymaps.geoObject.Balloon.prototype.open = function(position, data, options) {};
  */
 ymaps.geoObject.Balloon.prototype.setData = function(data) {};
 
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.geoObject.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.geoObject.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.geoObject.Balloon.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geoObject.Balloon.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -3230,6 +6746,96 @@ ymaps.geoObject.Hint.prototype.open = function(position, data, options) {};
  */
 ymaps.geoObject.Hint.prototype.setData = function(data) {};
 
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Hint.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.geoObject.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.geoObject.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.geoObject.Hint.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geoObject.Hint.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -3249,6 +6855,132 @@ ymaps.geoObject.Hint.prototype.setData = function(data) {};
  *                          дочерним объектам, если для них данные опции не определены.
  */
 ymaps.geoObject.Sequence = function(feature, options) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Sequence.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.geoObject.Sequence.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.geoObject.Sequence.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.geoObject.Sequence.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.geoObject.Sequence.prototype.getMap = function() {};
+
+
+/**
+ * @param {Function} callback Функция-обработчик.
+ * @param {Object=} context Контекст выполнения функции-обработчика.
+ */
+ymaps.geoObject.Sequence.prototype.each = function(callback, context) {};
+
+
+/**
+ * @param {number} index Индекс.
+ * @return {ymaps.IGeoObject}
+ */
+ymaps.geoObject.Sequence.prototype.get = function(index) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geoObject.Sequence.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IIterator}
+ */
+ymaps.geoObject.Sequence.prototype.getIterator = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geoObject.Sequence.prototype.getLength = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geoObject.Sequence.prototype.getPixelBounds = function() {};
+
+
+/**
+ * @param {ymaps.IGeoObject} object Дочерний геообъект.
+ * @return {number}
+ */
+ymaps.geoObject.Sequence.prototype.indexOf = function(object) {};
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.geoObject.Sequence.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.geoObject.Sequence.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.geoObject.Sequence.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geoObject.Sequence.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geoObject.Sequence.prototype.options;
 
 /**
  * 
@@ -3277,6 +7009,43 @@ ymaps.geoObject.Sequence = function(feature, options) {};
  *                          
  */
 ymaps.GeoObject = function(feature, options) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.GeoObject.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.GeoObject.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.GeoObject.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.GeoObject.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.GeoObject.prototype.getMap = function() {};
 
 
 /**
@@ -3482,6 +7251,101 @@ ymaps.GeoObjectCollection.prototype.splice = function(index, number) {};
  * @return {Array.<ymaps.IGeoObject>}
  */
 ymaps.GeoObjectCollection.prototype.toArray = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.GeoObjectCollection.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.GeoObjectCollection.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.GeoObjectCollection.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.GeoObjectCollection.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.GeoObjectCollection.prototype.getMap = function() {};
+
+
+/**
+ * @param {number} index Индекс.
+ * @return {ymaps.IGeoObject}
+ */
+ymaps.GeoObjectCollection.prototype.get = function(index) {};
+
+
+/**
+ * @param {Object} object Дочерний геообъект.
+ * @return {number}
+ */
+ymaps.GeoObjectCollection.prototype.indexOf = function(object) {};
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.GeoObjectCollection.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.GeoObjectCollection.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.GeoObjectCollection.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.GeoObjectCollection.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.GeoObjectCollection.prototype.options;
 
 /**
  * 
@@ -4058,6 +7922,101 @@ ymaps.GeoQueryResult.prototype.unsetProperties = function(path) {};
  */
 ymaps.Hint = function(map, options) {};
 
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ */
+ymaps.Hint.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ */
+ymaps.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @return {Boolean}
+ */
+ymaps.Hint.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @param {Array.<Number>=} position Точка, где необходимо расположить балун.
+ * @param {Object|String|HTMLElement=} data Данные оверлея.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Hint.prototype.open = function(position, data) {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopup
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.Hint.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.Hint.prototype.events;
+
 /**
  * 
  * Статический объект.
@@ -4175,6 +8134,39 @@ ymaps.graphics.style.stroke.solid;
  */
 ymaps.Hotspot = function(shape, zIndex) {};
 
+
+/**
+ * @return {ymaps.IShape}
+ */
+ymaps.Hotspot.prototype.getShape = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.Hotspot.prototype.getZIndex = function() {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура.
+ */
+ymaps.Hotspot.prototype.setShape = function(shape) {};
+
+
+/**
+ */
+ymaps.Hotspot.prototype.setZIndex = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.Hotspot.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -4202,6 +8194,111 @@ ymaps.hotspot.layer.Balloon = function(hotspotLayer) {};
  * @return {ymaps.vow.Promise}
  */
 ymaps.hotspot.layer.Balloon.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.hotspot.layer.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.hotspot.layer.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.hotspot.layer.Balloon.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.hotspot.layer.Balloon.prototype.events;
 
 /**
  * 
@@ -4231,6 +8328,105 @@ ymaps.hotspot.layer.Hint = function(hotspotLayer) {};
  */
 ymaps.hotspot.layer.Hint.prototype.open = function(position, data, options) {};
 
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Hint.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.hotspot.layer.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.hotspot.layer.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.hotspot.layer.Hint.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.hotspot.layer.Hint.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -4246,6 +8442,68 @@ ymaps.hotspot.layer.Hint.prototype.open = function(position, data, options) {};
  * @param {Object} options Опции объекта.
  */
 ymaps.hotspot.layer.Object = function(shape, feature, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.hotspot.layer.Object.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.IHotspot}
+ */
+ymaps.hotspot.layer.Object.prototype.getHotspot = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.hotspot.layer.Object.prototype.getId = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.hotspot.layer.Object.prototype.getProperties = function() {};
+
+
+/**
+ * @param {Object} geometry Реальная геометрия объекта.
+ */
+ymaps.hotspot.layer.Object.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {Number} id Идентификатор объекта.
+ */
+ymaps.hotspot.layer.Object.prototype.setId = function(id) {};
+
+
+/**
+ * @param {Object} properties Данные объекта.
+ */
+ymaps.hotspot.layer.Object.prototype.setProperties = function(properties) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.hotspot.layer.Object.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.hotspot.layer.Object.prototype.events;
 
 /**
  * 
@@ -4290,6 +8548,19 @@ ymaps.hotspot.Layer.prototype.update = function() {};
 
 
 /**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.hotspot.Layer.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.hotspot.Layer.prototype.setParent = function(parent) {};
+
+
+/**
  * Балун хотспотного слоя.
  * 
  * @type {ymaps.hotspot.layer.Balloon}
@@ -4303,6 +8574,24 @@ ymaps.hotspot.Layer.prototype.balloon;
  * @type {ymaps.hotspot.layer.Hint}
  */
 ymaps.hotspot.Layer.prototype.hint;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.hotspot.Layer.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.hotspot.Layer.prototype.options;
 
 /**
  * 
@@ -4421,6 +8710,30 @@ ymaps.hotspot.ObjectSource.prototype.setKeyTemplate = function(template) {};
  */
 ymaps.hotspot.ObjectSource.prototype.setTileUrlTemplate = function(template) {};
 
+
+/**
+ */
+ymaps.hotspot.ObjectSource.prototype.cancelLastRequest = function() {};
+
+
+/**
+ * @param {ymaps.hotspot.Layer} layer Слой активных областей.
+ * @param {Array.<Number>} tileNumber Тайловые координаты.
+ * @param {Number} zoom Коэффициент масштабирования.
+ * @param {Function} callback Функция-обработчик.
+ */
+ymaps.hotspot.ObjectSource.prototype.requestObjects = function(layer, tileNumber, zoom, callback) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.hotspot.ObjectSource.prototype.options;
+
 /**
  * 
  * Статический объект.
@@ -4448,6 +8761,34 @@ ymaps.layer.storage;
  */
 ymaps.layer.tile.CanvasTile = function(url, options) {};
 
+
+/**
+ */
+ymaps.layer.tile.CanvasTile.prototype.destroy = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.layer.tile.CanvasTile.prototype.isReady = function() {};
+
+
+/**
+ * @param {Object} context 2d-контекст объекта canvas.
+ * @param {Array.<Number>} canvasSize размеры HTML-элемента canvas.
+ * @param {Array.<Array.<Number>>} bounds Область в клиентских координатах, в которой нужно отрисовать тайл.
+ * @param {Boolean=} animate true - анимировать рендеринг, false - нет.
+ */
+ymaps.layer.tile.CanvasTile.prototype.renderAt = function(context, canvasSize, bounds, animate) {};
+
+
+/**
+ * Менеджер событий тайла.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layer.tile.CanvasTile.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -4463,6 +8804,33 @@ ymaps.layer.tile.CanvasTile = function(url, options) {};
  * @param {Object=} options Опции.
  */
 ymaps.layer.tile.DomTile = function(url, options) {};
+
+
+/**
+ */
+ymaps.layer.tile.DomTile.prototype.destroy = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.layer.tile.DomTile.prototype.isReady = function() {};
+
+
+/**
+ * @param {HTMLElement} context Родительский HTML-элемент
+ * @param {Array.<Array.<Number>>} clientBounds Область в клиентских координатах, которую должен занять тайл.
+ * @param {Boolean} animate true - анимировать рендеринг, false - нет.
+ */
+ymaps.layer.tile.DomTile.prototype.renderAt = function(context, clientBounds, animate) {};
+
+
+/**
+ * Менеджер событий тайла.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layer.tile.DomTile.prototype.events;
 
 /**
  * 
@@ -4494,6 +8862,29 @@ ymaps.layer.tileContainer.CanvasContainer.prototype.getMap = function() {};
  */
 ymaps.layer.tileContainer.CanvasContainer.prototype.getTile = function(tileNumber, tileZoom, priority) {};
 
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.layer.tileContainer.CanvasContainer.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.layer.tileContainer.CanvasContainer.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layer.tileContainer.CanvasContainer.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -4523,6 +8914,29 @@ ymaps.layer.tileContainer.DomContainer.prototype.getMap = function() {};
  * @return {ymaps.IDomTile}
  */
 ymaps.layer.tileContainer.DomContainer.prototype.getTile = function(tileNumber, tileZoom, priority) {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.layer.tileContainer.DomContainer.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.layer.tileContainer.DomContainer.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layer.tileContainer.DomContainer.prototype.events;
 
 /**
  * 
@@ -4608,6 +9022,92 @@ ymaps.Layer.prototype.setTileUrlTemplate = function(tileUrlTemplate) {};
  */
 ymaps.Layer.prototype.update = function(updateBounds) {};
 
+
+/**
+ * @return {Number}
+ */
+ymaps.Layer.prototype.getBrightness = function() {};
+
+
+/**
+ * @param {Array.<Number>} coords Точка на карте, для которой запрашивается
+ *                                информация об авторских правах.
+ * @param {Number} zoom Уровень масштабирования, для которого запрашивается
+ *                      информация об авторских правах.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Layer.prototype.getCopyrights = function(coords, zoom) {};
+
+
+/**
+ * @param {Array.<Number>} point Точка
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Layer.prototype.getZoomRange = function(point) {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.Layer.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.Layer.prototype.setParent = function(parent) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.Layer.prototype.getMap = function() {};
+
+
+/**
+ * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.Layer.prototype.fromClientPixels = function(clientPixelPoint) {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.Layer.prototype.getZoom = function() {};
+
+
+/**
+ * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.Layer.prototype.toClientPixels = function(globalPixelPoint) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.Layer.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.Layer.prototype.options;
+
 /**
  * 
  * Расширяет
@@ -4666,6 +9166,59 @@ ymaps.LayerCollection.prototype.getZoomRange = function(coords) {};
  */
 ymaps.LayerCollection.prototype.remove = function(child) {};
 
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.LayerCollection.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.LayerCollection.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.ICollection
+ * 
+ * @return {ymaps.IIterator}
+ */
+ymaps.LayerCollection.prototype.getIterator = function() {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.LayerCollection.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.LayerCollection.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.LayerCollection.prototype.options;
+
 /**
  * 
  * Расширяет
@@ -4679,6 +9232,59 @@ ymaps.LayerCollection.prototype.remove = function(child) {};
  * @param {ymaps.ILayout} data Данные макета.
  */
 ymaps.layout.Image = function(data) {};
+
+
+/**
+ */
+ymaps.layout.Image.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.layout.Image.prototype.getData = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.layout.Image.prototype.getParentElement = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.layout.Image.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.layout.Image.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные макета.
+ */
+ymaps.layout.Image.prototype.setData = function(data) {};
+
+
+/**
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.layout.Image.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layout.Image.prototype.events;
 
 /**
  * 
@@ -4742,6 +9348,53 @@ ymaps.layout.templateBased.Base.prototype.getShape = function() {};
 /**
  */
 ymaps.layout.templateBased.Base.prototype.rebuild = function() {};
+
+
+/**
+ */
+ymaps.layout.templateBased.Base.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.layout.templateBased.Base.prototype.getData = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.layout.templateBased.Base.prototype.getParentElement = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.layout.templateBased.Base.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные макета.
+ */
+ymaps.layout.templateBased.Base.prototype.setData = function(data) {};
+
+
+/**
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.layout.templateBased.Base.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layout.templateBased.Base.prototype.events;
 
 /**
  * 
@@ -4823,6 +9476,43 @@ ymaps.LoadingObjectManager.prototype.setUrlTemplate = function(urlTemplate) {};
 
 
 /**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.LoadingObjectManager.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.LoadingObjectManager.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.LoadingObjectManager.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.LoadingObjectManager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.LoadingObjectManager.prototype.getMap = function() {};
+
+
+/**
  * Коллекция кластеров, сгенерированных менеджером.
  * 
  * @type {ymaps.objectManager.ClusterCollection}
@@ -4836,6 +9526,46 @@ ymaps.LoadingObjectManager.prototype.clusters;
  * @type {ymaps.objectManager.ObjectCollection}
  */
 ymaps.LoadingObjectManager.prototype.objects;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.LoadingObjectManager.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.LoadingObjectManager.prototype.events;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.LoadingObjectManager.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.LoadingObjectManager.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.LoadingObjectManager.prototype.state;
 
 /**
  * 
@@ -4863,6 +9593,27 @@ ymaps.map.action.Continuous.prototype.isActive = function() {};
  * @return {ymaps.map.action.Continuous}
  */
 ymaps.map.action.Continuous.prototype.tick = function(tick) {};
+
+
+/**
+ * @param {ymaps.map.action.Manager} mapActionManager Менеджер действий карты, на которой исполняется движение.
+ */
+ymaps.map.action.Continuous.prototype.begin = function(mapActionManager) {};
+
+
+/**
+ */
+ymaps.map.action.Continuous.prototype.end = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.action.Continuous.prototype.events;
 
 /**
  * 
@@ -5140,6 +9891,27 @@ ymaps.map.action.Single = function(tick) {};
  */
 ymaps.map.action.Single.prototype.isActive = function() {};
 
+
+/**
+ * @param {ymaps.map.action.Manager} mapActionManager Менеджер действий карты, на которой исполняется движение.
+ */
+ymaps.map.action.Single.prototype.begin = function(mapActionManager) {};
+
+
+/**
+ */
+ymaps.map.action.Single.prototype.end = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.action.Single.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -5192,6 +9964,14 @@ ymaps.map.action.Manager.prototype.setCorrection = function(userFunction) {};
 /**
  */
 ymaps.map.action.Manager.prototype.stop = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.action.Manager.prototype.events;
 
 /**
  * 
@@ -5261,6 +10041,122 @@ ymaps.map.addon.hint.get = function() {};
  */
 ymaps.map.Balloon = function(map) {};
 
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.map.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.map.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.map.Balloon.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.Balloon.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -5323,6 +10219,28 @@ ymaps.map.behavior.Manager.prototype.get = function(behaviorName) {};
  */
 ymaps.map.behavior.Manager.prototype.isEnabled = function(behaviorName) {};
 
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.map.behavior.Manager.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.map.behavior.Manager.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.behavior.Manager.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -5380,6 +10298,14 @@ ymaps.map.Container.prototype.getSize = function() {};
  * @return {Boolean}
  */
 ymaps.map.Container.prototype.isFullscreen = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.Container.prototype.events;
 
 /**
  * 
@@ -5575,6 +10501,34 @@ ymaps.map.GeoObjects.prototype.set = function(index, child) {};
  */
 ymaps.map.GeoObjects.prototype.splice = function(index, number) {};
 
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.map.GeoObjects.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.map.GeoObjects.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.GeoObjects.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -5592,6 +10546,116 @@ ymaps.map.GeoObjects.prototype.splice = function(index, number) {};
  * @param {ymaps.Map} map Ссылка на объект карты.
  */
 ymaps.map.Hint = function(map) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Hint.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.map.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.map.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.map.Hint.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.Hint.prototype.events;
 
 /**
  * 
@@ -5619,6 +10683,100 @@ ymaps.map.layer.Manager = function(map, options) {};
  * @param {Object=} context Контекст выполнения функции.
  */
 ymaps.map.layer.Manager.prototype.each = function(callback, context) {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.map.layer.Manager.prototype.getBrightness = function() {};
+
+
+/**
+ * @param {Array.<Number>} coords Точка на карте, для которой запрашивается
+ *                                информация об авторских правах.
+ * @param {Number} zoom Уровень масштабирования, для которого запрашивается
+ *                      информация об авторских правах.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.layer.Manager.prototype.getCopyrights = function(coords, zoom) {};
+
+
+/**
+ * @param {Array.<Number>} point Точка
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.layer.Manager.prototype.getZoomRange = function(point) {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.map.layer.Manager.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.map.layer.Manager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.ICollection
+ * 
+ * @param {Object} object Добавляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.map.layer.Manager.prototype.add = function(object) {};
+
+
+/**
+ * @see ymaps.ICollection
+ * 
+ * @return {ymaps.IIterator}
+ */
+ymaps.map.layer.Manager.prototype.getIterator = function() {};
+
+
+/**
+ * @see ymaps.ICollection
+ * 
+ * @param {Object} object Удаляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.map.layer.Manager.prototype.remove = function(object) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.map.layer.Manager.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.layer.Manager.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.map.layer.Manager.prototype.options;
 
 /**
  * 
@@ -5728,6 +10886,14 @@ ymaps.map.ZoomRange.prototype.get = function(coords) {};
  * @return {Array.<Number>}
  */
 ymaps.map.ZoomRange.prototype.getCurrent = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.ZoomRange.prototype.events;
 
 /**
  * 
@@ -5978,6 +11144,43 @@ ymaps.multiRouter.driving.Path.prototype.getSegments = function() {};
 
 
 /**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.driving.Path.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.driving.Path.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.driving.Path.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.driving.Path.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.driving.Path.prototype.getMap = function() {};
+
+
+/**
  * Модель данных пути мультимаршрута.
  * 
  * @type {ymaps.multiRouter.driving.PathModel}
@@ -6007,6 +11210,42 @@ ymaps.multiRouter.driving.Path.prototype.model;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.driving.Path.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.driving.Path.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.driving.Path.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.Path.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.driving.Path.prototype.options;
 
 /**
  * 
@@ -6079,6 +11318,14 @@ ymaps.multiRouter.driving.PathModel.prototype.properties;
  */
 ymaps.multiRouter.driving.PathModel.prototype.route;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.PathModel.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.driving.Route скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -6100,6 +11347,43 @@ ymaps.multiRouter.driving.Route = function() {};
  * @return {ymaps.GeoObjectCollection}
  */
 ymaps.multiRouter.driving.Route.prototype.getPaths = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.driving.Route.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.driving.Route.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.driving.Route.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.driving.Route.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.driving.Route.prototype.getMap = function() {};
 
 
 /**
@@ -6131,6 +11415,42 @@ ymaps.multiRouter.driving.Route.prototype.model;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.driving.Route.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.driving.Route.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.driving.Route.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.Route.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.driving.Route.prototype.options;
 
 /**
  * 
@@ -6202,6 +11522,14 @@ ymaps.multiRouter.driving.RouteModel.prototype.multiRoute;
  */
 ymaps.multiRouter.driving.RouteModel.prototype.properties;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.RouteModel.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.driving.Segment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -6217,6 +11545,43 @@ ymaps.multiRouter.driving.RouteModel.prototype.properties;
  * 
  */
 ymaps.multiRouter.driving.Segment = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.driving.Segment.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.driving.Segment.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.driving.Segment.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.driving.Segment.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.driving.Segment.prototype.getMap = function() {};
 
 
 /**
@@ -6253,6 +11618,42 @@ ymaps.multiRouter.driving.Segment.prototype.model;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.driving.Segment.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.driving.Segment.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.driving.Segment.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.Segment.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.driving.Segment.prototype.options;
 
 /**
  * 
@@ -6363,6 +11764,14 @@ ymaps.multiRouter.driving.SegmentModel.prototype.path;
  */
 ymaps.multiRouter.driving.SegmentModel.prototype.properties;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.SegmentModel.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -6400,6 +11809,22 @@ ymaps.multiRouter.Editor.prototype.getMultiRoute = function() {};
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.Editor.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.Editor.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.Editor.prototype.events;
 
 /**
  * 
@@ -6442,6 +11867,22 @@ ymaps.multiRouter.EditorAddon.prototype.stop = function() {};
  */
 ymaps.multiRouter.EditorAddon.prototype.state;
 
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.EditorAddon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.EditorAddon.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.Path скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -6472,6 +11913,43 @@ ymaps.multiRouter.masstransit.Path.prototype.getSegments = function() {};
 
 
 /**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getMap = function() {};
+
+
+/**
  * Модель данных пути мультимаршрута.
  * 
  * @type {ymaps.multiRouter.masstransit.PathModel}
@@ -6499,6 +11977,42 @@ ymaps.multiRouter.masstransit.Path.prototype.model;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.masstransit.Path.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.options;
 
 /**
  * 
@@ -6569,6 +12083,14 @@ ymaps.multiRouter.masstransit.PathModel.prototype.properties;
  */
 ymaps.multiRouter.masstransit.PathModel.prototype.route;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.PathModel.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.Route скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -6590,6 +12112,43 @@ ymaps.multiRouter.masstransit.Route = function() {};
  * @return {ymaps.GeoObjectCollection}
  */
 ymaps.multiRouter.masstransit.Route.prototype.getPaths = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.getMap = function() {};
 
 
 /**
@@ -6618,6 +12177,42 @@ ymaps.multiRouter.masstransit.Route.prototype.model;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.masstransit.Route.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.options;
 
 /**
  * 
@@ -6686,6 +12281,14 @@ ymaps.multiRouter.masstransit.RouteModel.prototype.multiRoute;
  */
 ymaps.multiRouter.masstransit.RouteModel.prototype.properties;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.RouteModel.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.StopModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -6734,6 +12337,14 @@ ymaps.multiRouter.masstransit.StopModel.prototype.properties;
  */
 ymaps.multiRouter.masstransit.StopModel.prototype.segment;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.StopModel.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.TransferSegment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -6750,6 +12361,43 @@ ymaps.multiRouter.masstransit.StopModel.prototype.segment;
  * 
  */
 ymaps.multiRouter.masstransit.TransferSegment = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.getMap = function() {};
 
 
 /**
@@ -6780,6 +12428,42 @@ ymaps.multiRouter.masstransit.TransferSegment.prototype.model;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.masstransit.TransferSegment.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.options;
 
 /**
  * 
@@ -6848,6 +12532,14 @@ ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.path;
  */
 ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.properties;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.events;
+
 /**
  * 
  * Данный класс не имеет конструктора и предназначен для описания объекта данных
@@ -6910,6 +12602,43 @@ ymaps.multiRouter.masstransit.TransportSegment = function() {};
 
 
 /**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.getMap = function() {};
+
+
+/**
  * Модель данных сегмента.
  * 
  * @type {ymaps.multiRouter.masstransit.TransportSegmentModel}
@@ -6941,6 +12670,42 @@ ymaps.multiRouter.masstransit.TransportSegment.prototype.model;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.masstransit.TransportSegment.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.options;
 
 /**
  * 
@@ -7024,6 +12789,14 @@ ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.path;
  */
 ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.properties;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.WalkSegment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -7040,6 +12813,43 @@ ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.properties;
  * 
  */
 ymaps.multiRouter.masstransit.WalkSegment = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.getMap = function() {};
 
 
 /**
@@ -7070,6 +12880,42 @@ ymaps.multiRouter.masstransit.WalkSegment.prototype.model;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.masstransit.WalkSegment.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.options;
 
 /**
  * 
@@ -7136,6 +12982,14 @@ ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.path;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.events;
 
 /**
  * 
@@ -7228,6 +13082,43 @@ ymaps.multiRouter.MultiRoute.prototype.setActiveRoute = function(route) {};
 
 
 /**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.MultiRoute.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getMap = function() {};
+
+
+/**
  * Редактор мультимаршрута.
  * 
  * @type {ymaps.multiRouter.EditorAddon}
@@ -7241,6 +13132,50 @@ ymaps.multiRouter.MultiRoute.prototype.editor;
  * @type {ymaps.multiRouter.MultiRouteModel}
  */
 ymaps.multiRouter.MultiRoute.prototype.model;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.MultiRoute.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.MultiRoute.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.MultiRoute.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.MultiRoute.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.MultiRoute.prototype.options;
 
 /**
  * 
@@ -7341,6 +13276,14 @@ ymaps.multiRouter.MultiRouteModel.prototype.setReferencePoints = function(refere
  */
 ymaps.multiRouter.MultiRouteModel.prototype.properties;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.ViaPointModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -7417,6 +13360,14 @@ ymaps.multiRouter.ViaPointModel.prototype.multiRoute;
  */
 ymaps.multiRouter.ViaPointModel.prototype.properties;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.ViaPointModel.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.ViaPoint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -7432,6 +13383,43 @@ ymaps.multiRouter.ViaPointModel.prototype.properties;
  * 
  */
 ymaps.multiRouter.ViaPoint = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.ViaPoint.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.ViaPoint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.ViaPoint.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.ViaPoint.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.ViaPoint.prototype.getMap = function() {};
 
 
 /**
@@ -7455,6 +13443,42 @@ ymaps.multiRouter.ViaPoint.prototype.model;
  */
 ymaps.multiRouter.ViaPoint.prototype.properties;
 
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.ViaPoint.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.ViaPoint.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.ViaPoint.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.ViaPoint.prototype.options;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса multiRouter.WayPoint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -7470,6 +13494,43 @@ ymaps.multiRouter.ViaPoint.prototype.properties;
  * 
  */
 ymaps.multiRouter.WayPoint = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.WayPoint.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.WayPoint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.WayPoint.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.WayPoint.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.WayPoint.prototype.getMap = function() {};
 
 
 /**
@@ -7494,6 +13555,42 @@ ymaps.multiRouter.WayPoint.prototype.model;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.WayPoint.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.WayPoint.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.WayPoint.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.WayPoint.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.WayPoint.prototype.options;
 
 /**
  * 
@@ -7571,6 +13668,14 @@ ymaps.multiRouter.WayPointModel.prototype.multiRoute;
  * @type {ymaps.data.Manager}
  */
 ymaps.multiRouter.WayPointModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.WayPointModel.prototype.events;
 
 /**
  * 
@@ -7687,6 +13792,43 @@ ymaps.ObjectManager.prototype.setFilter = function(filterFunction) {};
 
 
 /**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.ObjectManager.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.ObjectManager.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.ObjectManager.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.ObjectManager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.ObjectManager.prototype.getMap = function() {};
+
+
+/**
  * Коллекция кластеров, сгенерированных менеджером.
  * 
  * @type {ymaps.objectManager.ClusterCollection}
@@ -7700,6 +13842,46 @@ ymaps.ObjectManager.prototype.clusters;
  * @type {ymaps.objectManager.ObjectCollection}
  */
 ymaps.ObjectManager.prototype.objects;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.ObjectManager.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ObjectManager.prototype.events;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.ObjectManager.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.ObjectManager.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.ObjectManager.prototype.state;
 
 /**
  * 
@@ -7757,6 +13939,78 @@ ymaps.objectManager.Balloon.prototype.open = function(objectId, anchorPixelPosit
  */
 ymaps.objectManager.Balloon.prototype.setData = function(objectData) {};
 
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.objectManager.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.objectManager.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.objectManager.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.objectManager.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.Balloon.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -7813,6 +14067,72 @@ ymaps.objectManager.Hint.prototype.open = function(objectId, position) {};
  * @return {ymaps.vow.Promise}
  */
 ymaps.objectManager.Hint.prototype.setData = function(objectData) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.objectManager.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.objectManager.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.objectManager.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.objectManager.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.Hint.prototype.events;
 
 /**
  * 
@@ -7935,6 +14255,14 @@ ymaps.objectManager.ClusterCollection.prototype.overlays;
  */
 ymaps.objectManager.ClusterCollection.prototype.state;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.ClusterCollection.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8011,6 +14339,12 @@ ymaps.objectManager.ObjectCollection.prototype.setObjectOptions = function(objec
 
 
 /**
+ * @return {ymaps.IIterator}
+ */
+ymaps.objectManager.ObjectCollection.prototype.getIterator = function() {};
+
+
+/**
  * Балун объекта в составе менеджера.
  * 
  * @type {ymaps.objectManager.Balloon}
@@ -8053,6 +14387,16 @@ ymaps.objectManager.ObjectCollection.prototype.options;
  * @type {ymaps.objectManager.OverlayCollection}
  */
 ymaps.objectManager.ObjectCollection.prototype.overlays;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.ObjectCollection.prototype.events;
 
 /**
  * 
@@ -8107,6 +14451,22 @@ ymaps.objectManager.OverlayCollection.prototype.getIterator = function() {};
  */
 ymaps.objectManager.OverlayCollection.prototype.getLength = function() {};
 
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.objectManager.OverlayCollection.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.OverlayCollection.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8152,6 +14512,93 @@ ymaps.option.Manager.prototype.unset = function(keys) {};
  * @return {ymaps.option.Manager}
  */
 ymaps.option.Manager.prototype.unsetAll = function() {};
+
+
+/**
+ * @param {String} key Имя опции.
+ * @param {Object=} defaultValue Значение по умолчанию.
+ */
+ymaps.option.Manager.prototype.get = function(key, defaultValue) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.option.Manager.prototype.getAll = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.option.Manager.prototype.getName = function() {};
+
+
+/**
+ * @param {String} key Имя опции.
+ * @return {Object}
+ */
+ymaps.option.Manager.prototype.getNative = function(key) {};
+
+
+/**
+ * @return {ymaps.IOptionManager|null}
+ */
+ymaps.option.Manager.prototype.getParent = function() {};
+
+
+/**
+ * @param {String} key Имя опции.
+ * @param {String=} name Имя дочернего менеджера опций.
+ * @return {Object}
+ */
+ymaps.option.Manager.prototype.resolve = function(key, name) {};
+
+
+/**
+ * @param {String} name Имя менеджера опций.
+ */
+ymaps.option.Manager.prototype.setName = function(name) {};
+
+
+/**
+ * @param {ymaps.IOptionManager|null} parent Родительский менеджер опций.
+ * @return {ymaps.IChild}
+ */
+ymaps.option.Manager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.option.Manager.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.option.Manager.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.option.Manager.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.option.Manager.prototype.events;
 
 /**
  * 
@@ -8343,6 +14790,74 @@ ymaps.overlay.hotspot.Circle = function(geometry, data, options) {};
  */
 ymaps.overlay.Circle = function(geometry, data, options) {};
 
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Circle.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Circle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Circle.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Circle.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Circle.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Circle.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Circle.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Circle.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Circle.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Circle.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8495,6 +15010,68 @@ ymaps.overlay.html.Balloon.prototype.getShadowLayoutSync = function() {};
  */
 ymaps.overlay.html.Balloon.prototype.isEmpty = function() {};
 
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.html.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.html.Balloon.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.html.Balloon.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.html.Balloon.prototype.getShape = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.html.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.html.Balloon.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.html.Balloon.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.html.Balloon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.html.Balloon.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8536,6 +15113,68 @@ ymaps.overlay.html.Hint.prototype.getLayoutSync = function() {};
  * @return {Boolean}
  */
 ymaps.overlay.html.Hint.prototype.isEmpty = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.html.Hint.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.html.Hint.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.html.Hint.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.html.Hint.prototype.getShape = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.html.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.html.Hint.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.html.Hint.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.html.Hint.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.html.Hint.prototype.events;
 
 /**
  * 
@@ -8609,6 +15248,74 @@ ymaps.overlay.html.Placemark.prototype.getShadowLayout = function() {};
  */
 ymaps.overlay.html.Placemark.prototype.getShadowLayoutSync = function() {};
 
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.html.Placemark.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.html.Placemark.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.html.Placemark.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.html.Placemark.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.html.Placemark.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.html.Placemark.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.html.Placemark.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.html.Placemark.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.html.Placemark.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.html.Placemark.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8646,6 +15353,74 @@ ymaps.overlay.html.Rectangle.prototype.getLayout = function() {};
  */
 ymaps.overlay.html.Rectangle.prototype.getLayoutSync = function() {};
 
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.html.Rectangle.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.html.Rectangle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.html.Rectangle.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.html.Rectangle.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.html.Rectangle.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.html.Rectangle.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.html.Rectangle.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.html.Rectangle.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.html.Rectangle.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.html.Rectangle.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8663,6 +15438,74 @@ ymaps.overlay.html.Rectangle.prototype.getLayoutSync = function() {};
  * @param {Object=} options Опции.
  */
 ymaps.overlay.Pin = function(geometry, data, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Pin.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Pin.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Pin.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Pin.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Pin.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Pin.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Pin.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Pin.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Pin.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Pin.prototype.events;
 
 /**
  * 
@@ -8736,6 +15579,74 @@ ymaps.overlay.Placemark.prototype.getShadowLayout = function() {};
  */
 ymaps.overlay.Placemark.prototype.getShadowLayoutSync = function() {};
 
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Placemark.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Placemark.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Placemark.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Placemark.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Placemark.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Placemark.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Placemark.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Placemark.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Placemark.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Placemark.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8751,6 +15662,74 @@ ymaps.overlay.Placemark.prototype.getShadowLayoutSync = function() {};
  * @param {Object=} options Опции.
  */
 ymaps.overlay.Polygon = function(geometry, data, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Polygon.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Polygon.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Polygon.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Polygon.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Polygon.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Polygon.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Polygon.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Polygon.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Polygon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Polygon.prototype.events;
 
 /**
  * 
@@ -8770,6 +15749,74 @@ ymaps.overlay.Polygon = function(geometry, data, options) {};
  */
 ymaps.overlay.Polyline = function(geometry, data, options) {};
 
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Polyline.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Polyline.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Polyline.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Polyline.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Polyline.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Polyline.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Polyline.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Polyline.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Polyline.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Polyline.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8787,6 +15834,74 @@ ymaps.overlay.Polyline = function(geometry, data, options) {};
  * @param {Object=} options Опции.
  */
 ymaps.overlay.Rectangle = function(geometry, data, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Rectangle.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Rectangle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Rectangle.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Rectangle.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Rectangle.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Rectangle.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Rectangle.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Rectangle.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Rectangle.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Rectangle.prototype.events;
 
 /**
  * 
@@ -8836,6 +15951,55 @@ ymaps.overlay.storage;
  */
 ymaps.pane.EventsPane = function(map, params) {};
 
+
+/**
+ * @see ymaps.IPane
+ * 
+ */
+ymaps.pane.EventsPane.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {HTMLElement}
+ */
+ymaps.pane.EventsPane.prototype.getElement = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.pane.EventsPane.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {String}
+ */
+ymaps.pane.EventsPane.prototype.getOverflow = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {Number}
+ */
+ymaps.pane.EventsPane.prototype.getZIndex = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.pane.EventsPane.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8851,6 +16015,87 @@ ymaps.pane.EventsPane = function(map, params) {};
  */
 ymaps.pane.MovablePane = function(map, params) {};
 
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.pane.MovablePane.prototype.getViewport = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ */
+ymaps.pane.MovablePane.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {HTMLElement}
+ */
+ymaps.pane.MovablePane.prototype.getElement = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.pane.MovablePane.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {String}
+ */
+ymaps.pane.MovablePane.prototype.getOverflow = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {Number}
+ */
+ymaps.pane.MovablePane.prototype.getZIndex = function() {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.pane.MovablePane.prototype.fromClientPixels = function(clientPixelPoint) {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @return {Number}
+ */
+ymaps.pane.MovablePane.prototype.getZoom = function() {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.pane.MovablePane.prototype.toClientPixels = function(globalPixelPoint) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.pane.MovablePane.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -8865,6 +16110,87 @@ ymaps.pane.MovablePane = function(map, params) {};
  * @param {Object} params Параметры.
  */
 ymaps.pane.StaticPane = function(map, params) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.pane.StaticPane.prototype.getViewport = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ */
+ymaps.pane.StaticPane.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {HTMLElement}
+ */
+ymaps.pane.StaticPane.prototype.getElement = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.pane.StaticPane.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {String}
+ */
+ymaps.pane.StaticPane.prototype.getOverflow = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {Number}
+ */
+ymaps.pane.StaticPane.prototype.getZIndex = function() {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.pane.StaticPane.prototype.fromClientPixels = function(clientPixelPoint) {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @return {Number}
+ */
+ymaps.pane.StaticPane.prototype.getZoom = function() {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.pane.StaticPane.prototype.toClientPixels = function(globalPixelPoint) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.pane.StaticPane.prototype.events;
 
 /**
  * 
@@ -9042,6 +16368,83 @@ ymaps.Polyline.prototype.geometry;
  */
 ymaps.Popup = function(map, options) {};
 
+
+/**
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.close = function(force) {};
+
+
+/**
+ */
+ymaps.Popup.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay}
+ */
+ymaps.Popup.prototype.getOverlaySync = function() {};
+
+
+/**
+ */
+ymaps.Popup.prototype.getPosition = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.Popup.prototype.isOpen = function() {};
+
+
+/**
+ * @param {Array.<Number>=} position Точка, где необходимо расположить балун.
+ * @param {Object|String|HTMLElement=} data Данные оверлея.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.open = function(position, data) {};
+
+
+/**
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.setData = function(data) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.Popup.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.Popup.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -9060,6 +16463,34 @@ ymaps.Popup = function(map, options) {};
  * @param {Number|Array.<Number>=} scale Масштаб одного деления на оси. Может быть числом или парой чисел для каждой из осей.
  */
 ymaps.projection.Cartesian = function(bounds, cycled, scale) {};
+
+
+/**
+ * @param {Array.<Number>} globalPixelPoint Точка в пиксельных координатах.
+ * @param {Number} zoom Уровень масштабирования.
+ * @return {Array.<Number>}
+ */
+ymaps.projection.Cartesian.prototype.fromGlobalPixels = function(globalPixelPoint, zoom) {};
+
+
+/**
+ * @return {ymaps.ICoordSystem}
+ */
+ymaps.projection.Cartesian.prototype.getCoordSystem = function() {};
+
+
+/**
+ * @return {Array.<Boolean>}
+ */
+ymaps.projection.Cartesian.prototype.isCycled = function() {};
+
+
+/**
+ * @param {Array.<Number>} coordPoint Точка в координатах проекции.
+ * @param {Number} zoom Уровень масштабирования.
+ * @return {Array.<Number>}
+ */
+ymaps.projection.Cartesian.prototype.toGlobalPixels = function(coordPoint, zoom) {};
 
 /**
  * 
@@ -9272,6 +16703,43 @@ ymaps.RemoteObjectManager.prototype.setUrlTemplate = function(urlTemplate) {};
 
 
 /**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.RemoteObjectManager.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.RemoteObjectManager.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.RemoteObjectManager.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.RemoteObjectManager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.RemoteObjectManager.prototype.getMap = function() {};
+
+
+/**
  * Коллекция кластеров, сгенерированных менеджером.
  * 
  * @type {ymaps.objectManager.ClusterCollection}
@@ -9285,6 +16753,46 @@ ymaps.RemoteObjectManager.prototype.clusters;
  * @type {ymaps.objectManager.ObjectCollection}
  */
 ymaps.RemoteObjectManager.prototype.objects;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.RemoteObjectManager.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.RemoteObjectManager.prototype.events;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.RemoteObjectManager.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.RemoteObjectManager.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.RemoteObjectManager.prototype.state;
 
 /**
  * 
@@ -9350,6 +16858,22 @@ ymaps.router.Editor.prototype.stop = function() {};
  * @type {ymaps.IDataManager}
  */
 ymaps.router.Editor.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.router.Editor.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.router.Editor.prototype.events;
 
 /**
  * 
@@ -9491,11 +17015,92 @@ ymaps.router.Route.prototype.getWayPoints = function() {};
 
 
 /**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.router.Route.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.router.Route.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.router.Route.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.router.Route.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.router.Route.prototype.getMap = function() {};
+
+
+/**
  * Редактор маршрутов.
  * 
  * @type {ymaps.router.Editor}
  */
 ymaps.router.Route.prototype.editor;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.router.Route.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.router.Route.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.router.Route.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.router.Route.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.router.Route.prototype.options;
 
 /**
  * 
@@ -9677,6 +17282,52 @@ ymaps.search = function(request, options) {};
  */
 ymaps.shape.Circle = function(pixelGeometry, params) {};
 
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.Circle.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.Circle.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.Circle.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.Circle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.Circle.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Circle.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Circle.prototype.shift = function(offset) {};
+
 /**
  * 
  * Расширяет
@@ -9691,6 +17342,52 @@ ymaps.shape.Circle = function(pixelGeometry, params) {};
  * @param {Object=} params Параметры фигуры.
  */
 ymaps.shape.LineString = function(pixelGeometry, params) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.LineString.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.LineString.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.LineString.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.LineString.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.LineString.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.LineString.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.LineString.prototype.shift = function(offset) {};
 
 /**
  * 
@@ -9707,6 +17404,52 @@ ymaps.shape.LineString = function(pixelGeometry, params) {};
  */
 ymaps.shape.MultiPolygon = function(pixelGeometry, params) {};
 
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.MultiPolygon.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.MultiPolygon.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.MultiPolygon.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.MultiPolygon.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.MultiPolygon.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.MultiPolygon.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.MultiPolygon.prototype.shift = function(offset) {};
+
 /**
  * 
  * Расширяет
@@ -9722,6 +17465,52 @@ ymaps.shape.MultiPolygon = function(pixelGeometry, params) {};
  */
 ymaps.shape.Polygon = function(pixelGeometry, params) {};
 
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.Polygon.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.Polygon.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.Polygon.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.Polygon.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.Polygon.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Polygon.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Polygon.prototype.shift = function(offset) {};
+
 /**
  * 
  * Расширяет
@@ -9736,6 +17525,52 @@ ymaps.shape.Polygon = function(pixelGeometry, params) {};
  * @param {Object=} params Параметры фигуры.
  */
 ymaps.shape.Rectangle = function(pixelGeometry, params) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.Rectangle.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.Rectangle.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.Rectangle.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.Rectangle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.Rectangle.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Rectangle.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Rectangle.prototype.shift = function(offset) {};
 
 /**
  * 
@@ -9807,6 +17642,22 @@ ymaps.SuggestView.prototype.destroy = function() {};
  * @type {ymaps.data.Manager}
  */
 ymaps.SuggestView.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.SuggestView.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.SuggestView.prototype.events;
 
 /**
  * 
@@ -9926,6 +17777,18 @@ ymaps.traffic.provider.Actual.prototype.update = function() {};
 
 
 /**
+ * @return {ymaps.Map|null}
+ */
+ymaps.traffic.provider.Actual.prototype.getMap = function() {};
+
+
+/**
+ * @param {ymaps.Map|null} Ссылка на карту.
+ */
+ymaps.traffic.provider.Actual.prototype.setMap = function(Ссылка) {};
+
+
+/**
  * Состояние провайдера.
  * Имена полей, доступных через метод data.Manager.get:
  * 
@@ -9941,6 +17804,26 @@ ymaps.traffic.provider.Actual.prototype.update = function() {};
  * @type {ymaps.data.Manager}
  */
 ymaps.traffic.provider.Actual.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.traffic.provider.Actual.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.traffic.provider.Actual.prototype.events;
 
 /**
  * 
@@ -9981,6 +17864,18 @@ ymaps.traffic.provider.Archive.prototype.setTime = function(time, callback) {};
 
 
 /**
+ * @return {ymaps.Map|null}
+ */
+ymaps.traffic.provider.Archive.prototype.getMap = function() {};
+
+
+/**
+ * @param {ymaps.Map|null} Ссылка на карту.
+ */
+ymaps.traffic.provider.Archive.prototype.setMap = function(Ссылка) {};
+
+
+/**
  * Состояние провайдера.
  * Имена полей, доступных через метод data.Manager.get:
  * 
@@ -9996,6 +17891,26 @@ ymaps.traffic.provider.Archive.prototype.setTime = function(time, callback) {};
  * @type {ymaps.data.Manager}
  */
 ymaps.traffic.provider.Archive.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.traffic.provider.Archive.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.traffic.provider.Archive.prototype.events;
 
 /**
  * 
@@ -10061,6 +17976,59 @@ ymaps.geometryEditor.model.ChildVertex.prototype.setNextVertex = function(nextVe
  */
 ymaps.geometryEditor.model.ChildVertex.prototype.setPrevVertex = function(prevVertex) {};
 
+
+/**
+ * @return {ymaps.IGeometryEditorModel}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.getParent = function() {};
+
+
+/**
+ * @param {Array.<Number>} pixels Пиксельные данные.
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.setPixels = function(pixels) {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.getPixels = function() {};
+
+
+/**
+ * Редактор геометрии.
+ * 
+ * @type {ymaps.IGeometryEditor}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.editor;
+
+
+/**
+ * Геометрия модели.
+ * 
+ * @type {ymaps.IBaseGeometry}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.geometry;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.events;
+
 /**
  * 
  * Примечание.&nbsp;Конструктор класса geometryEditor.model.EdgeGeometry скрыт, так как данный класс не предназначен для самостоятельной инициализации.
@@ -10076,6 +18044,59 @@ ymaps.geometryEditor.model.ChildVertex.prototype.setPrevVertex = function(prevVe
  * 
  */
 ymaps.geometryEditor.model.EdgeGeometry = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.getMap = function() {};
+
+
+/**
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.options;
 
 /**
  * 
@@ -10107,6 +18128,18 @@ ymaps.traffic.provider.Forecast.prototype.getTime = function() {};
 
 
 /**
+ * @return {ymaps.Map|null}
+ */
+ymaps.traffic.provider.Forecast.prototype.getMap = function() {};
+
+
+/**
+ * @param {ymaps.Map|null} Ссылка на карту.
+ */
+ymaps.traffic.provider.Forecast.prototype.setMap = function(Ссылка) {};
+
+
+/**
  * Состояние провайдера.
  * Имена полей, доступных через метод data.Manager.get:
  * 
@@ -10123,6 +18156,26 @@ ymaps.traffic.provider.Forecast.prototype.getTime = function() {};
  * @type {ymaps.data.Manager}
  */
 ymaps.traffic.provider.Forecast.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.traffic.provider.Forecast.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.traffic.provider.Forecast.prototype.events;
 
 /**
  * 
@@ -10455,6 +18508,14 @@ ymaps.util.Dragger.prototype.start = function(event) {};
 /**
  */
 ymaps.util.Dragger.prototype.stop = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.util.Dragger.prototype.events;
 
 /**
  * 
@@ -10834,6 +18895,83 @@ ymaps.IBalloon = function() {};
  */
 ymaps.IBalloon.prototype.autoPan = function() {};
 
+
+/**
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloon.prototype.close = function(force) {};
+
+
+/**
+ */
+ymaps.IBalloon.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay}
+ */
+ymaps.IBalloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ */
+ymaps.IBalloon.prototype.getPosition = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IBalloon.prototype.isOpen = function() {};
+
+
+/**
+ * @param {Array.<Number>=} position Точка, где необходимо расположить балун.
+ * @param {Object|String|HTMLElement=} data Данные оверлея.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloon.prototype.open = function(position, data) {};
+
+
+/**
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloon.prototype.setData = function(data) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IBalloon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBalloon.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -10846,6 +18984,59 @@ ymaps.IBalloon.prototype.autoPan = function() {};
  * 
  */
 ymaps.IBalloonLayout = function() {};
+
+
+/**
+ */
+ymaps.IBalloonLayout.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IBalloonLayout.prototype.getData = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.IBalloonLayout.prototype.getParentElement = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.IBalloonLayout.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IBalloonLayout.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные макета.
+ */
+ymaps.IBalloonLayout.prototype.setData = function(data) {};
+
+
+/**
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.IBalloonLayout.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBalloonLayout.prototype.events;
 
 /**
  * 
@@ -10865,6 +19056,92 @@ ymaps.IBalloonManager = function() {};
  * @return {ymaps.vow.Promise}
  */
 ymaps.IBalloonManager.prototype.autoPan = function() {};
+
+
+/**
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloonManager.prototype.close = function(force) {};
+
+
+/**
+ */
+ymaps.IBalloonManager.prototype.destroy = function() {};
+
+
+/**
+ */
+ymaps.IBalloonManager.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.IBalloonManager.prototype.getOptions = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloonManager.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay}
+ */
+ymaps.IBalloonManager.prototype.getOverlaySync = function() {};
+
+
+/**
+ */
+ymaps.IBalloonManager.prototype.getPosition = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IBalloonManager.prototype.isOpen = function() {};
+
+
+/**
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloonManager.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloonManager.prototype.setData = function(data) {};
+
+
+/**
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloonManager.prototype.setOptions = function(options) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IBalloonManager.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBalloonManager.prototype.events;
 
 /**
  * 
@@ -10903,6 +19180,86 @@ ymaps.IBaseCircleGeometry = function() {};
  */
 ymaps.IBaseCircleGeometry.prototype.getType = function() {};
 
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IBaseCircleGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.IBaseCircleGeometry.prototype.contains = function(position) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на окружности.
+ * @return {Object}
+ */
+ymaps.IBaseCircleGeometry.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Number>|null}
+ */
+ymaps.IBaseCircleGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.IBaseCircleGeometry.prototype.getRadius = function() {};
+
+
+/**
+ * @param {Array.<Number>|null} coordinates Координаты центра круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.IBaseCircleGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @param {Number} radius Радиус круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.IBaseCircleGeometry.prototype.setRadius = function(radius) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBaseCircleGeometry.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.IBaseCircleGeometry.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBaseCircleGeometry.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBaseCircleGeometry.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -10928,6 +19285,14 @@ ymaps.IBaseGeometry.prototype.getBounds = function() {};
  */
 ymaps.IBaseGeometry.prototype.getType = function() {};
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBaseGeometry.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -10947,6 +19312,117 @@ ymaps.IBaseLineStringGeometry = function() {};
  * @return {String}
  */
 ymaps.IBaseLineStringGeometry.prototype.getType = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IBaseLineStringGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.IBaseLineStringGeometry.prototype.get = function(index) {};
+
+
+/**
+ * @param {number} index Индекс вершины.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.IBaseLineStringGeometry.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
+ * @return {Object}
+ */
+ymaps.IBaseLineStringGeometry.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.IBaseLineStringGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.IBaseLineStringGeometry.prototype.getLength = function() {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.IBaseLineStringGeometry.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.IBaseLineStringGeometry.prototype.remove = function(index) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.IBaseLineStringGeometry.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.IBaseLineStringGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.IBaseLineStringGeometry.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBaseLineStringGeometry.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.IBaseLineStringGeometry.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBaseLineStringGeometry.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBaseLineStringGeometry.prototype.events;
 
 /**
  * 
@@ -10968,6 +19444,137 @@ ymaps.IBaseLinearRingGeometry = function() {};
  */
 ymaps.IBaseLinearRingGeometry.prototype.getType = function() {};
 
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.contains = function(position) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.get = function(index) {};
+
+
+/**
+ * @param {number} index Индекс вершины контура.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре.
+ * @return {Object}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.getFillRule = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.getLength = function() {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.remove = function(index) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBaseLinearRingGeometry.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -10987,6 +19594,35 @@ ymaps.IBasePointGeometry = function() {};
  * @return {String}
  */
 ymaps.IBasePointGeometry.prototype.getType = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IBasePointGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {Array.<Number>|null}
+ */
+ymaps.IBasePointGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @param {Array.<Number>|null} coordinates Координаты точки.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.IBasePointGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBasePointGeometry.prototype.events;
 
 /**
  * 
@@ -11008,6 +19644,137 @@ ymaps.IBasePolygonGeometry = function() {};
  */
 ymaps.IBasePolygonGeometry.prototype.getType = function() {};
 
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IBasePolygonGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.IBasePolygonGeometry.prototype.contains = function(position) {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.IBasePolygonGeometry.prototype.get = function(index) {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.IBasePolygonGeometry.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.IBasePolygonGeometry.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.IBasePolygonGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.IBasePolygonGeometry.prototype.getFillRule = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.IBasePolygonGeometry.prototype.getLength = function() {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.IBasePolygonGeometry.prototype.insert = function(index, path) {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.IBasePolygonGeometry.prototype.remove = function(index) {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.IBasePolygonGeometry.prototype.set = function(index, path) {};
+
+
+/**
+ * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты геометрии.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.IBasePolygonGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.IBasePolygonGeometry.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление контуров.
+ * @param {number} number Количество удаляемых контуров.
+ * @return {Array.<ymaps.ILinearRingGeometryAccess>}
+ */
+ymaps.IBasePolygonGeometry.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBasePolygonGeometry.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.IBasePolygonGeometry.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBasePolygonGeometry.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBasePolygonGeometry.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -11027,6 +19794,73 @@ ymaps.IBaseRectangleGeometry = function() {};
  * @return {String}
  */
 ymaps.IBaseRectangleGeometry.prototype.getType = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IBaseRectangleGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.IBaseRectangleGeometry.prototype.contains = function(position) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
+ * @return {Object}
+ */
+ymaps.IBaseRectangleGeometry.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.IBaseRectangleGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} coordinates Координаты углов.
+ * @return {ymaps.IRectangleGeometryAccess}
+ */
+ymaps.IBaseRectangleGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBaseRectangleGeometry.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.IBaseRectangleGeometry.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IBaseRectangleGeometry.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBaseRectangleGeometry.prototype.events;
 
 /**
  * 
@@ -11060,6 +19894,37 @@ ymaps.IBehavior.prototype.enable = function() {};
  * @return {Boolean}
  */
 ymaps.IBehavior.prototype.isEnabled = function() {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.IBehavior.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.IBehavior.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IBehavior.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IBehavior.prototype.options;
 
 /**
  * 
@@ -11125,6 +19990,14 @@ ymaps.IChild.prototype.getParent = function() {};
  */
 ymaps.IChild.prototype.setParent = function(parent) {};
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IChild.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -11151,6 +20024,16 @@ ymaps.IChildOnMap.prototype.getParent = function() {};
  */
 ymaps.IChildOnMap.prototype.setParent = function(parent) {};
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IChildOnMap.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -11170,6 +20053,115 @@ ymaps.ICircleGeometry = function() {};
  * @return {String}
  */
 ymaps.ICircleGeometry.prototype.getType = function() {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.ICircleGeometry.prototype.contains = function(position) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на окружности.
+ * @return {Object}
+ */
+ymaps.ICircleGeometry.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Number>|null}
+ */
+ymaps.ICircleGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.ICircleGeometry.prototype.getRadius = function() {};
+
+
+/**
+ * @param {Array.<Number>|null} coordinates Координаты центра круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.ICircleGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @param {Number} radius Радиус круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.ICircleGeometry.prototype.setRadius = function(radius) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ICircleGeometry.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.ICircleGeometry.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ICircleGeometry.prototype.unfreeze = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.ICircleGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.ICircleGeometry.prototype.getMap = function() {};
+
+
+/**
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.ICircleGeometry.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.ICircleGeometry.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер событий объекта.
+ * 
+ * @see ymaps.IFreezable
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ICircleGeometry.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.ICircleGeometry.prototype.options;
 
 /**
  * 
@@ -11224,6 +20216,32 @@ ymaps.ICircleGeometryAccess.prototype.setCoordinates = function(coordinates) {};
  */
 ymaps.ICircleGeometryAccess.prototype.setRadius = function(radius) {};
 
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ICircleGeometryAccess.prototype.freeze = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.ICircleGeometryAccess.prototype.isFrozen = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ICircleGeometryAccess.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий объекта.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ICircleGeometryAccess.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -11257,6 +20275,14 @@ ymaps.ICollection.prototype.getIterator = function() {};
  */
 ymaps.ICollection.prototype.remove = function(object) {};
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ICollection.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -11280,6 +20306,65 @@ ymaps.IContainerPane = function() {};
  * @return {Array.<Array.<Number>>}
  */
 ymaps.IContainerPane.prototype.getViewport = function() {};
+
+
+/**
+ */
+ymaps.IContainerPane.prototype.destroy = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.IContainerPane.prototype.getElement = function() {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.IContainerPane.prototype.getMap = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.IContainerPane.prototype.getOverflow = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.IContainerPane.prototype.getZIndex = function() {};
+
+
+/**
+ * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.IContainerPane.prototype.fromClientPixels = function(clientPixelPoint) {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.IContainerPane.prototype.getZoom = function() {};
+
+
+/**
+ * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.IContainerPane.prototype.toClientPixels = function(globalPixelPoint) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IContainerPane.prototype.events;
 
 /**
  * 
@@ -11316,6 +20401,16 @@ ymaps.IControl.prototype.setParent = function(parent) {};
  */
 ymaps.IControl.prototype.options;
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IControl.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -11335,6 +20430,12 @@ ymaps.IControlParent = function() {};
  * @return {ymaps.vow.Promise}
  */
 ymaps.IControlParent.prototype.getChildElement = function(child) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.IControlParent.prototype.getMap = function() {};
 
 
 /**
@@ -11407,6 +20508,37 @@ ymaps.ICoordSystem.prototype.solveInverseProblem = function(startPoint, endPoint
  */
 ymaps.ICopyrightsAccessor = function() {};
 
+
+/**
+ * @param {Array.<Number>} coords Точка на карте, для которой запрашивается
+ *                                информация об авторских правах.
+ * @param {Number} zoom Уровень масштабирования, для которого запрашивается
+ *                      информация об авторских правах.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.ICopyrightsAccessor.prototype.getCopyrights = function(coords, zoom) {};
+
+
+/**
+ */
+ymaps.ICopyrightsAccessor.prototype.remove = function() {};
+
+
+/**
+ * @param {String|HTMLElement|Array.<String>|Array.<HTMLElement>} copyrights Информация об авторских правах.
+ */
+ymaps.ICopyrightsAccessor.prototype.setCopyrights = function(copyrights) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ICopyrightsAccessor.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -11440,6 +20572,14 @@ ymaps.ICopyrightsProvider.prototype.remove = function() {};
  * @param {String|HTMLElement|Array.<String>|Array.<HTMLElement>} copyrights Информация об авторских правах.
  */
 ymaps.ICopyrightsProvider.prototype.setCopyrights = function(copyrights) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ICopyrightsProvider.prototype.events;
 
 /**
  * 
@@ -11478,6 +20618,14 @@ ymaps.IDataManager = function() {};
  * @return {Object}
  */
 ymaps.IDataManager.prototype.get = function(path, defaultValue) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IDataManager.prototype.events;
 
 /**
  * 
@@ -11532,6 +20680,41 @@ ymaps.IDomEvent.prototype.stopImmediatePropagation = function() {};
 /**
  */
 ymaps.IDomEvent.prototype.stopPropagation = function() {};
+
+
+/**
+ */
+ymaps.IDomEvent.prototype.allowMapEvent = function() {};
+
+
+/**
+ * @param {String} name Имя метода.
+ */
+ymaps.IDomEvent.prototype.callMethod = function(name) {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IDomEvent.prototype.isDefaultPrevented = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IDomEvent.prototype.isImmediatePropagationStopped = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IDomEvent.prototype.isMapEventAllowed = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IDomEvent.prototype.isPropagationStopped = function() {};
 
 /**
  * 
@@ -11824,6 +21007,43 @@ ymaps.IEventManager.prototype.setParent = function(parent) {};
  */
 ymaps.IEventPane = function() {};
 
+
+/**
+ */
+ymaps.IEventPane.prototype.destroy = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.IEventPane.prototype.getElement = function() {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.IEventPane.prototype.getMap = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.IEventPane.prototype.getOverflow = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.IEventPane.prototype.getZIndex = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IEventPane.prototype.events;
+
 /**
  * 
  * Объект инициирующий события.
@@ -11856,6 +21076,59 @@ ymaps.IEventTrigger.prototype.fire = function(type, eventObject) {};
  * 
  */
 ymaps.IExpandableControlLayout = function() {};
+
+
+/**
+ */
+ymaps.IExpandableControlLayout.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IExpandableControlLayout.prototype.getData = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.IExpandableControlLayout.prototype.getParentElement = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.IExpandableControlLayout.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IExpandableControlLayout.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные макета.
+ */
+ymaps.IExpandableControlLayout.prototype.setData = function(data) {};
+
+
+/**
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.IExpandableControlLayout.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IExpandableControlLayout.prototype.events;
 
 /**
  * 
@@ -11963,6 +21236,30 @@ ymaps.IGeometry.prototype.getPixelGeometry = function(options) {};
  */
 ymaps.IGeometry.prototype.setMap = function(map) {};
 
+
+/**
+ * @return {String}
+ */
+ymaps.IGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometry.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IGeometry.prototype.options;
+
 /**
  * 
  * Расширяет
@@ -12003,6 +21300,22 @@ ymaps.IGeometryEditor.prototype.geometry;
  */
 ymaps.IGeometryEditor.prototype.state;
 
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IGeometryEditor.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometryEditor.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -12035,6 +21348,17 @@ ymaps.IGeometryEditorChildModel.prototype.setPixels = function(pixels) {};
 
 
 /**
+ */
+ymaps.IGeometryEditorChildModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.IGeometryEditorChildModel.prototype.getPixels = function() {};
+
+
+/**
  * Редактор геометрии.
  * 
  * @type {ymaps.IGeometryEditor}
@@ -12048,6 +21372,16 @@ ymaps.IGeometryEditorChildModel.prototype.editor;
  * @type {ymaps.IBaseGeometry}
  */
 ymaps.IGeometryEditorChildModel.prototype.geometry;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometryEditorChildModel.prototype.events;
 
 /**
  * 
@@ -12075,6 +21409,14 @@ ymaps.IGeometryEditorModel.prototype.destroy = function() {};
  */
 ymaps.IGeometryEditorModel.prototype.getPixels = function() {};
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometryEditorModel.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -12089,6 +21431,27 @@ ymaps.IGeometryEditorModel.prototype.getPixels = function() {};
  * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
  */
 ymaps.IGeometryEditorRootModel = function(geometry, editor) {};
+
+
+/**
+ */
+ymaps.IGeometryEditorRootModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.IGeometryEditorRootModel.prototype.getPixels = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometryEditorRootModel.prototype.events;
 
 /**
  * 
@@ -12137,6 +21500,25 @@ ymaps.IGeoObject.prototype.getOverlaySync = function() {};
 
 
 /**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.IGeoObject.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.IGeoObject.prototype.setParent = function(parent) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.IGeoObject.prototype.getMap = function() {};
+
+
+/**
  * Геометрия геообъекта.
  * 
  * @type {ymaps.IGeometry|null}
@@ -12158,6 +21540,24 @@ ymaps.IGeoObject.prototype.properties;
  * @type {ymaps.IDataManager}
  */
 ymaps.IGeoObject.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeoObject.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IGeoObject.prototype.options;
 
 /**
  * 
@@ -12256,6 +21656,28 @@ ymaps.IGeoObjectCollection.prototype.set = function(index, child) {};
  * @return {ymaps.IGeoObjectCollection}
  */
 ymaps.IGeoObjectCollection.prototype.splice = function(index, number) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.IGeoObjectCollection.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IGeoObjectCollection.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeoObjectCollection.prototype.events;
 
 /**
  * 
@@ -12358,6 +21780,28 @@ ymaps.IGeoObjectSequence.prototype.getPixelBounds = function() {};
  */
 ymaps.IGeoObjectSequence.prototype.indexOf = function(object) {};
 
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.IGeoObjectSequence.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IGeoObjectSequence.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeoObjectSequence.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -12378,6 +21822,59 @@ ymaps.IGroupControlLayout = function(data) {};
  */
 ymaps.IGroupControlLayout.prototype.getChildContainerElement = function() {};
 
+
+/**
+ */
+ymaps.IGroupControlLayout.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IGroupControlLayout.prototype.getData = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.IGroupControlLayout.prototype.getParentElement = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.IGroupControlLayout.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IGroupControlLayout.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные макета.
+ */
+ymaps.IGroupControlLayout.prototype.setData = function(data) {};
+
+
+/**
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.IGroupControlLayout.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGroupControlLayout.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -12391,6 +21888,83 @@ ymaps.IGroupControlLayout.prototype.getChildContainerElement = function() {};
  */
 ymaps.IHint = function() {};
 
+
+/**
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHint.prototype.close = function(force) {};
+
+
+/**
+ */
+ymaps.IHint.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHint.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay}
+ */
+ymaps.IHint.prototype.getOverlaySync = function() {};
+
+
+/**
+ */
+ymaps.IHint.prototype.getPosition = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IHint.prototype.isOpen = function() {};
+
+
+/**
+ * @param {Array.<Number>=} position Точка, где необходимо расположить балун.
+ * @param {Object|String|HTMLElement=} data Данные оверлея.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHint.prototype.open = function(position, data) {};
+
+
+/**
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHint.prototype.setData = function(data) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IHint.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IHint.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -12403,6 +21977,92 @@ ymaps.IHint = function() {};
  * 
  */
 ymaps.IHintManager = function() {};
+
+
+/**
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHintManager.prototype.close = function(force) {};
+
+
+/**
+ */
+ymaps.IHintManager.prototype.destroy = function() {};
+
+
+/**
+ */
+ymaps.IHintManager.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.IHintManager.prototype.getOptions = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHintManager.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay}
+ */
+ymaps.IHintManager.prototype.getOverlaySync = function() {};
+
+
+/**
+ */
+ymaps.IHintManager.prototype.getPosition = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IHintManager.prototype.isOpen = function() {};
+
+
+/**
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHintManager.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHintManager.prototype.setData = function(data) {};
+
+
+/**
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHintManager.prototype.setOptions = function(options) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IHintManager.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IHintManager.prototype.events;
 
 /**
  * 
@@ -12457,6 +22117,14 @@ ymaps.IHotspot.prototype.setShape = function(shape) {};
 /**
  */
 ymaps.IHotspot.prototype.setZIndex = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IHotspot.prototype.events;
 
 /**
  * 
@@ -12515,6 +22183,22 @@ ymaps.IHotspotLayerObject.prototype.setId = function(id) {};
  */
 ymaps.IHotspotLayerObject.prototype.setProperties = function(properties) {};
 
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IHotspotLayerObject.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IHotspotLayerObject.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -12541,6 +22225,14 @@ ymaps.IHotspotObjectSource.prototype.cancelLastRequest = function() {};
  * @param {Function} callback Функция-обработчик.
  */
 ymaps.IHotspotObjectSource.prototype.requestObjects = function(layer, tileNumber, zoom, callback) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IHotspotObjectSource.prototype.options;
 
 /**
  * 
@@ -12617,6 +22309,22 @@ ymaps.IHotspotShape.prototype.setProperties = function(properties) {};
  */
 ymaps.IHotspotShape.prototype.setShape = function(shape) {};
 
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IHotspotShape.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IHotspotShape.prototype.events;
+
 /**
  * 
  * Интерфейс итератора.
@@ -12679,6 +22387,37 @@ ymaps.ILayer.prototype.getCopyrights = function(coords, zoom) {};
  */
 ymaps.ILayer.prototype.getZoomRange = function(point) {};
 
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.ILayer.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.ILayer.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ILayer.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.ILayer.prototype.options;
+
 /**
  * 
  * Расширяет
@@ -12735,6 +22474,14 @@ ymaps.ILayout.prototype.setData = function(data) {};
  *                                  Если передан null, то элемент удаляется из DOM-дерева.
  */
 ymaps.ILayout.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ILayout.prototype.events;
 
 /**
  * 
@@ -12840,6 +22587,32 @@ ymaps.ILinearRingGeometryAccess.prototype.setFillRule = function(fillRule) {};
  */
 ymaps.ILinearRingGeometryAccess.prototype.splice = function(index, number) {};
 
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.freeze = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.isFrozen = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий объекта.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -12859,6 +22632,146 @@ ymaps.ILineStringGeometry = function() {};
  * @return {String}
  */
 ymaps.ILineStringGeometry.prototype.getType = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.ILineStringGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.ILineStringGeometry.prototype.getMap = function() {};
+
+
+/**
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.ILineStringGeometry.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.ILineStringGeometry.prototype.setMap = function(map) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.ILineStringGeometry.prototype.get = function(index) {};
+
+
+/**
+ * @param {number} index Индекс вершины.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.ILineStringGeometry.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
+ * @return {Object}
+ */
+ymaps.ILineStringGeometry.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.ILineStringGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.ILineStringGeometry.prototype.getLength = function() {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.ILineStringGeometry.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.ILineStringGeometry.prototype.remove = function(index) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.ILineStringGeometry.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.ILineStringGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.ILineStringGeometry.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ILineStringGeometry.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.ILineStringGeometry.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ILineStringGeometry.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ILineStringGeometry.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.ILineStringGeometry.prototype.options;
 
 /**
  * 
@@ -12944,6 +22857,32 @@ ymaps.ILineStringGeometryAccess.prototype.setCoordinates = function(coordinates)
  */
 ymaps.ILineStringGeometryAccess.prototype.splice = function(index, number) {};
 
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ILineStringGeometryAccess.prototype.freeze = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.ILineStringGeometryAccess.prototype.isFrozen = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ILineStringGeometryAccess.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий объекта.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ILineStringGeometryAccess.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -12968,6 +22907,14 @@ ymaps.IMapAction.prototype.begin = function(mapActionManager) {};
  */
 ymaps.IMapAction.prototype.end = function() {};
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IMapAction.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -12982,6 +22929,50 @@ ymaps.IMapAction.prototype.end = function() {};
  * 
  */
 ymaps.IMapObjectCollection = function() {};
+
+
+/**
+ * @param {Object} object Добавляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.IMapObjectCollection.prototype.add = function(object) {};
+
+
+/**
+ * @return {ymaps.IIterator}
+ */
+ymaps.IMapObjectCollection.prototype.getIterator = function() {};
+
+
+/**
+ * @param {Object} object Удаляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.IMapObjectCollection.prototype.remove = function(object) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.IMapObjectCollection.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IMapObjectCollection.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IMapObjectCollection.prototype.options;
 
 /**
  * 
@@ -13167,6 +23158,34 @@ ymaps.IOptionManager.prototype.setName = function(name) {};
  */
 ymaps.IOptionManager.prototype.setParent = function(parent) {};
 
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IOptionManager.prototype.freeze = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IOptionManager.prototype.isFrozen = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IOptionManager.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IOptionManager.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -13229,6 +23248,22 @@ ymaps.IOverlay.prototype.setGeometry = function(geometry) {};
  */
 ymaps.IOverlay.prototype.setMap = function(map) {};
 
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IOverlay.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IOverlay.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -13275,6 +23310,14 @@ ymaps.IPane.prototype.getOverflow = function() {};
  */
 ymaps.IPane.prototype.getZIndex = function() {};
 
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPane.prototype.events;
+
 /**
  * 
  * Интерфейс родительского объекта, относящегося к определенному объекту карты.
@@ -13314,6 +23357,59 @@ ymaps.IPixelCircleGeometry.prototype.getCoordinates = function() {};
  * @return {Number}
  */
 ymaps.IPixelCircleGeometry.prototype.getRadius = function() {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.IPixelCircleGeometry.prototype.equals = function(geometry) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IPixelCircleGeometry.prototype.getMetaData = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelCircleGeometry.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelCircleGeometry.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IPixelCircleGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.IPixelCircleGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPixelCircleGeometry.prototype.events;
 
 /**
  * 
@@ -13355,6 +23451,28 @@ ymaps.IPixelGeometry.prototype.scale = function(factor) {};
  */
 ymaps.IPixelGeometry.prototype.shift = function(offset) {};
 
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IPixelGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.IPixelGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPixelGeometry.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -13386,6 +23504,59 @@ ymaps.IPixelLineStringGeometry.prototype.getCoordinates = function() {};
  * @return {number}
  */
 ymaps.IPixelLineStringGeometry.prototype.getLength = function() {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.IPixelLineStringGeometry.prototype.equals = function(geometry) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IPixelLineStringGeometry.prototype.getMetaData = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelLineStringGeometry.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelLineStringGeometry.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IPixelLineStringGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.IPixelLineStringGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPixelLineStringGeometry.prototype.events;
 
 /**
  * 
@@ -13432,6 +23603,59 @@ ymaps.IPixelMultiPolygonGeometry.prototype.getFillRule = function() {};
  */
 ymaps.IPixelMultiPolygonGeometry.prototype.getLength = function() {};
 
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.IPixelMultiPolygonGeometry.prototype.equals = function(geometry) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IPixelMultiPolygonGeometry.prototype.getMetaData = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelMultiPolygonGeometry.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelMultiPolygonGeometry.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IPixelMultiPolygonGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.IPixelMultiPolygonGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPixelMultiPolygonGeometry.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -13450,6 +23674,59 @@ ymaps.IPixelPointGeometry = function() {};
  * @return {Array.<Number>}
  */
 ymaps.IPixelPointGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.IPixelPointGeometry.prototype.equals = function(geometry) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IPixelPointGeometry.prototype.getMetaData = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelPointGeometry.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelPointGeometry.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IPixelPointGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.IPixelPointGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPixelPointGeometry.prototype.events;
 
 /**
  * 
@@ -13496,6 +23773,59 @@ ymaps.IPixelPolygonGeometry.prototype.getFillRule = function() {};
  */
 ymaps.IPixelPolygonGeometry.prototype.getLength = function() {};
 
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.IPixelPolygonGeometry.prototype.equals = function(geometry) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IPixelPolygonGeometry.prototype.getMetaData = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelPolygonGeometry.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelPolygonGeometry.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IPixelPolygonGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.IPixelPolygonGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPixelPolygonGeometry.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -13522,6 +23852,59 @@ ymaps.IPixelRectangleGeometry.prototype.getClosest = function(anchorPosition) {}
  */
 ymaps.IPixelRectangleGeometry.prototype.getCoordinates = function() {};
 
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.IPixelRectangleGeometry.prototype.equals = function(geometry) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IPixelRectangleGeometry.prototype.getMetaData = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelRectangleGeometry.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPixelRectangleGeometry.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IPixelRectangleGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.IPixelRectangleGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPixelRectangleGeometry.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -13541,6 +23924,64 @@ ymaps.IPointGeometry = function() {};
  * @return {String}
  */
 ymaps.IPointGeometry.prototype.getType = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IPointGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.IPointGeometry.prototype.getMap = function() {};
+
+
+/**
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPointGeometry.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.IPointGeometry.prototype.setMap = function(map) {};
+
+
+/**
+ * @return {Array.<Number>|null}
+ */
+ymaps.IPointGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @param {Array.<Number>|null} coordinates Координаты точки.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.IPointGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPointGeometry.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IPointGeometry.prototype.options;
 
 /**
  * 
@@ -13583,6 +24024,166 @@ ymaps.IPolygonGeometry = function() {};
  * @return {String}
  */
 ymaps.IPolygonGeometry.prototype.getType = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IPolygonGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.IPolygonGeometry.prototype.getMap = function() {};
+
+
+/**
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IPolygonGeometry.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.IPolygonGeometry.prototype.setMap = function(map) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.IPolygonGeometry.prototype.contains = function(position) {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.IPolygonGeometry.prototype.get = function(index) {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.IPolygonGeometry.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.IPolygonGeometry.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.IPolygonGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.IPolygonGeometry.prototype.getFillRule = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.IPolygonGeometry.prototype.getLength = function() {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.IPolygonGeometry.prototype.insert = function(index, path) {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.IPolygonGeometry.prototype.remove = function(index) {};
+
+
+/**
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.IPolygonGeometry.prototype.set = function(index, path) {};
+
+
+/**
+ * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты геометрии.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.IPolygonGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.IPolygonGeometry.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление контуров.
+ * @param {number} number Количество удаляемых контуров.
+ * @return {Array.<ymaps.ILinearRingGeometryAccess>}
+ */
+ymaps.IPolygonGeometry.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IPolygonGeometry.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.IPolygonGeometry.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IPolygonGeometry.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPolygonGeometry.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IPolygonGeometry.prototype.options;
 
 /**
  * 
@@ -13688,6 +24289,32 @@ ymaps.IPolygonGeometryAccess.prototype.setFillRule = function(fillRule) {};
  */
 ymaps.IPolygonGeometryAccess.prototype.splice = function(index, number) {};
 
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IPolygonGeometryAccess.prototype.freeze = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IPolygonGeometryAccess.prototype.isFrozen = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IPolygonGeometryAccess.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий объекта.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPolygonGeometryAccess.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -13758,6 +24385,22 @@ ymaps.IPopup.prototype.setData = function(data) {};
  * @return {ymaps.vow.Promise}
  */
 ymaps.IPopup.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IPopup.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPopup.prototype.events;
 
 /**
  * 
@@ -13847,6 +24490,14 @@ ymaps.IPopupManager.prototype.setOptions = function(options) {};
  * @return {ymaps.vow.Promise}
  */
 ymaps.IPopupManager.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IPopupManager.prototype.events;
 
 /**
  * 
@@ -13971,6 +24622,102 @@ ymaps.IRectangleGeometry = function() {};
  */
 ymaps.IRectangleGeometry.prototype.getType = function() {};
 
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IRectangleGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.IRectangleGeometry.prototype.getMap = function() {};
+
+
+/**
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IRectangleGeometry.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.IRectangleGeometry.prototype.setMap = function(map) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.IRectangleGeometry.prototype.contains = function(position) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
+ * @return {Object}
+ */
+ymaps.IRectangleGeometry.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.IRectangleGeometry.prototype.getCoordinates = function() {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} coordinates Координаты углов.
+ * @return {ymaps.IRectangleGeometryAccess}
+ */
+ymaps.IRectangleGeometry.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IRectangleGeometry.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.IRectangleGeometry.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IRectangleGeometry.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IRectangleGeometry.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IRectangleGeometry.prototype.options;
+
 /**
  * 
  * Расширяет
@@ -14011,6 +24758,32 @@ ymaps.IRectangleGeometryAccess.prototype.getCoordinates = function() {};
  */
 ymaps.IRectangleGeometryAccess.prototype.setCoordinates = function(coordinates) {};
 
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IRectangleGeometryAccess.prototype.freeze = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IRectangleGeometryAccess.prototype.isFrozen = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.IRectangleGeometryAccess.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий объекта.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IRectangleGeometryAccess.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -14023,6 +24796,73 @@ ymaps.IRectangleGeometryAccess.prototype.setCoordinates = function(coordinates) 
  * 
  */
 ymaps.ISearchControlLayout = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ */
+ymaps.ISearchControlLayout.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @return {Object}
+ */
+ymaps.ISearchControlLayout.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @return {HTMLElement}
+ */
+ymaps.ISearchControlLayout.prototype.getParentElement = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @return {ymaps.IShape|null}
+ */
+ymaps.ISearchControlLayout.prototype.getShape = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @return {Boolean}
+ */
+ymaps.ISearchControlLayout.prototype.isEmpty = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @param {Object} data Данные макета.
+ */
+ymaps.ISearchControlLayout.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.ISearchControlLayout.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ISearchControlLayout.prototype.events;
 
 /**
  * 
@@ -14094,6 +24934,37 @@ ymaps.ISelectableControl.prototype.isSelected = function() {};
  */
 ymaps.ISelectableControl.prototype.select = function() {};
 
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.ISelectableControl.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.ISelectableControl.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.ISelectableControl.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ISelectableControl.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -14106,6 +24977,59 @@ ymaps.ISelectableControl.prototype.select = function() {};
  * 
  */
 ymaps.ISelectableControlLayout = function() {};
+
+
+/**
+ */
+ymaps.ISelectableControlLayout.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.ISelectableControlLayout.prototype.getData = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.ISelectableControlLayout.prototype.getParentElement = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.ISelectableControlLayout.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.ISelectableControlLayout.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные макета.
+ */
+ymaps.ISelectableControlLayout.prototype.setData = function(data) {};
+
+
+/**
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.ISelectableControlLayout.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ISelectableControlLayout.prototype.events;
 
 /**
  * 
@@ -14203,6 +25127,73 @@ ymaps.ISuggestViewLayout = function() {};
  */
 ymaps.ITrafficControlLayout = function() {};
 
+
+/**
+ * @see ymaps.ILayout
+ * 
+ */
+ymaps.ITrafficControlLayout.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @return {Object}
+ */
+ymaps.ITrafficControlLayout.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @return {HTMLElement}
+ */
+ymaps.ITrafficControlLayout.prototype.getParentElement = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @return {ymaps.IShape|null}
+ */
+ymaps.ITrafficControlLayout.prototype.getShape = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @return {Boolean}
+ */
+ymaps.ITrafficControlLayout.prototype.isEmpty = function() {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @param {Object} data Данные макета.
+ */
+ymaps.ITrafficControlLayout.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.ILayout
+ * 
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.ITrafficControlLayout.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ITrafficControlLayout.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -14229,6 +25220,22 @@ ymaps.ITrafficProvider.prototype.getMap = function() {};
  */
 ymaps.ITrafficProvider.prototype.setMap = function(Ссылка) {};
 
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.ITrafficProvider.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ITrafficProvider.prototype.events;
+
 /**
  * 
  * Расширяет
@@ -14241,6 +25248,59 @@ ymaps.ITrafficProvider.prototype.setMap = function(Ссылка) {};
  * 
  */
 ymaps.IZoomControlLayout = function() {};
+
+
+/**
+ */
+ymaps.IZoomControlLayout.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.IZoomControlLayout.prototype.getData = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.IZoomControlLayout.prototype.getParentElement = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.IZoomControlLayout.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.IZoomControlLayout.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные макета.
+ */
+ymaps.IZoomControlLayout.prototype.setData = function(data) {};
+
+
+/**
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.IZoomControlLayout.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IZoomControlLayout.prototype.events;
 
 /**
  * 
@@ -14292,4 +25352,18 @@ ymaps.IEventWorkflowController.prototype.onAfterEventFiring = function(events, t
  * @param {ymaps.IEvent=} event Событие.
  */
 ymaps.IEventWorkflowController.prototype.onBeforeEventFiring = function(events, type, event) {};
+
+
+/**
+ * @param {ymaps.IEventManager} events Менеджер событий.
+ * @param {String} type Тип события.
+ */
+ymaps.IEventWorkflowController.prototype.onStartListening = function(events, type) {};
+
+
+/**
+ * @param {ymaps.IEventManager} events Менеджер событий.
+ * @param {String} type Тип события.
+ */
+ymaps.IEventWorkflowController.prototype.onStopListening = function(events, type) {};
 
