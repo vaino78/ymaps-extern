@@ -17,11 +17,12 @@ var ymaps = {};
  * слоёв активных областей и т.д.).
  * Не создавайте их самостоятельно, если в этом нет необходимости.
  * 
- * @param {ymaps.Map} map Ссылка на объект карты.
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IBalloon}
  * @extends {ymaps.Popup}
+ * 
+ * @param {ymaps.Map} map Ссылка на объект карты.
+ * @param {Object=} options Опции.
  */
 ymaps.Balloon = function(map, options) {};
 
@@ -32,9 +33,10 @@ ymaps.Balloon = function(map, options) {};
  * 
  * Поведение "масштабирование карты двойным щелчком кнопки мыши".
  * 
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
  */
 ymaps.behavior.DblClickZoom = function(options) {};
 
@@ -45,9 +47,10 @@ ymaps.behavior.DblClickZoom = function(options) {};
  * 
  * Поведение "масштабирование карты при выделении области левой кнопкой мыши".
  * 
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
  */
 ymaps.behavior.LeftMouseButtonMagnifier = function(options) {};
 
@@ -58,9 +61,10 @@ ymaps.behavior.LeftMouseButtonMagnifier = function(options) {};
  * 
  * Поведение "масштабирование карты мультисенсорным касанием".
  * 
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
  */
 ymaps.behavior.MultiTouch = function(options) {};
 
@@ -71,9 +75,10 @@ ymaps.behavior.MultiTouch = function(options) {};
  * 
  * Поведение "масштабирование карты при выделении области правой кнопкой мыши".
  * 
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
  */
 ymaps.behavior.RightMouseButtonMagnifier = function(options) {};
 
@@ -86,6 +91,7 @@ ymaps.behavior.RightMouseButtonMagnifier = function(options) {};
  * 
  * @constructor
  * @implements {ymaps.IBehavior}
+ * 
  */
 ymaps.behavior.RouteEditor = function() {};
 
@@ -96,9 +102,10 @@ ymaps.behavior.RouteEditor = function() {};
  * 
  * Поведение "масштабирование карты колесом мыши".
  * 
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
  */
 ymaps.behavior.ScrollZoom = function(options) {};
 
@@ -112,6 +119,7 @@ ymaps.behavior.ScrollZoom = function(options) {};
  * 
  * @constructor
  * @implements {ymaps.IBehavior}
+ * 
  */
 ymaps.behavior.Ruler = function() {};
 
@@ -148,9 +156,10 @@ ymaps.behavior.Ruler.prototype.geometry;
  * 
  * Поведение "перетаскивание карты с помощью мыши либо одиночного касания".
  * 
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
  */
 ymaps.behavior.Drag = function(options) {};
 
@@ -162,6 +171,9 @@ ymaps.behavior.Drag = function(options) {};
  * Круг. Представляет собой геообъект с геометрией geometry.Circle.
  * 
  * См.: GeoObject geometry.Circle 
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
  * 
  * @param {ymaps.ICircleGeometry|Array.<Array.<Number>>|Object} geometry Ссылка на объект геометрии точки
  *                                                                       или массив, первый элемент которого координаты центра круга, второй - радиус в метрах,
@@ -188,8 +200,6 @@ ymaps.behavior.Drag = function(options) {};
  *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии
  *                              geometry.Circle.
  *                          
- * @constructor
- * @extends {ymaps.GeoObject}
  */
 ymaps.Circle = function(geometry, properties, options) {};
 
@@ -221,9 +231,10 @@ ymaps.Circle.prototype.geometry;
  * 
  * См.: Balloon 
  * 
- * @param {ymaps.Clusterer} clusterer Кластеризатор.
  * @constructor
  * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {ymaps.Clusterer} clusterer Кластеризатор.
  */
 ymaps.clusterer.Balloon = function(clusterer) {};
 
@@ -241,13 +252,14 @@ ymaps.clusterer.Balloon = function(clusterer) {};
  * 
  * См.: ClusterPlacemark 
  * 
- * @param {Object=} options Опции.
- *                          Опции для дочерних объектов-кластеров задаются с префиксом "cluster". См. ClusterPlacemark.
  * @constructor
  * @implements {ymaps.IChildOnMap}
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
  * @implements {ymaps.IParentOnMap}
+ * 
+ * @param {Object=} options Опции.
+ *                          Опции для дочерних объектов-кластеров задаются с префиксом "cluster". См. ClusterPlacemark.
  */
 ymaps.Clusterer = function(options) {};
 
@@ -328,15 +340,16 @@ ymaps.Clusterer.prototype.hint;
  * Кластер геообъектов.
  * Используется по умолчанию в Clusterer.
  * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * @extends {ymaps.collection.Item}
+ * 
  * @param {Array.<Number>|Object|ymaps.IPointGeometry} geometry Координаты метки или хэш с описанием
  *                                                              геометрии или ссылка на объект точечной геометрии.
  * @param {ymaps.IDataManager} properties Данные кластера.
  * @param {Object=} options Опции кластера.
  *                          Помимо частных опций, балун кластера поддерживает те же опции, что и Balloon.
  *                          Опции для балуна кластера указываются с префикcом 'balloon'.
- * @constructor
- * @implements {ymaps.IGeoObject}
- * @extends {ymaps.collection.Item}
  */
 ymaps.ClusterPlacemark = function(geometry, properties, options) {};
 
@@ -372,10 +385,11 @@ ymaps.ClusterPlacemark.prototype.state;
  * 
  * Базовая реализация коллекции объектов на карте.
  * 
- * @param {Object=} options Опции коллекции.
  * @constructor
  * @implements {ymaps.ICollection}
  * @extends {ymaps.collection.Item}
+ * 
+ * @param {Object=} options Опции коллекции.
  */
 ymaps.Collection = function(options) {};
 
@@ -455,12 +469,13 @@ ymaps.Collection.prototype.removeAll = function() {};
  * 
  * Базовый класс элемента коллекции объектов карты.
  * 
- * @param {Object=} options Опции обьекта.
  * @constructor
  * @implements {ymaps.IChildOnMap}
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
  * @implements {ymaps.IParentOnMap}
+ * 
+ * @param {Object=} options Опции обьекта.
  */
 ymaps.collection.Item = function(options) {};
 
@@ -507,10 +522,11 @@ ymaps.collection.Item.prototype.setParent = function(parent) {};
  * Если карта небольшого размера, то в макете кнопки отображается только иконка.
  * Если для кнопки не задана иконка, то во всех состояниях будет отображаться текст и наоборот.
  * 
- * @param {Object|String=} parameters Параметры кнопки или строка - содержимое кнопки в виде HTML.
  * @constructor
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.ISelectableControl}
+ * 
+ * @param {Object|String=} parameters Параметры кнопки или строка - содержимое кнопки в виде HTML.
  */
 ymaps.control.Button = function(parameters) {};
 
@@ -558,9 +574,10 @@ ymaps.control.Button.prototype.state;
  * можно с помощью опции Map.options.fullscreenZIndex.
  * Ключ элемента управления в хранилище control.storage —&nbsp;"fullscreenControl".
  * 
- * @param {Object=} parameters Параметры элемента управления.
  * @constructor
  * @extends {ymaps.control.Button}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
  */
 ymaps.control.FullscreenControl = function(parameters) {};
 
@@ -603,8 +620,10 @@ ymaps.control.FullscreenControl.prototype.state;
  *         "routeEditor" - редактор маршрутов behavior.RouteEditor;
  * 
  * 
+ * 
+ * @type {ymaps.util.Storage}
  */
-ymaps.behavior.storage = function() {};
+ymaps.behavior.storage;
 
 /**
  * 
@@ -617,9 +636,10 @@ ymaps.behavior.storage = function() {};
  * 
  * См.: geolocation 
  * 
- * @param {Object=} parameters Параметры элемента управления.
  * @constructor
  * @extends {ymaps.control.Button}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
  */
 ymaps.control.GeolocationControl = function(parameters) {};
 
@@ -634,11 +654,12 @@ ymaps.control.GeolocationControl = function(parameters) {};
  * Если карта небольшого размера, то в заголовке списка отображается только иконка.
  * Если для кнопки не задана иконка, то во всех состояниях будет отображаться текст и наоборот.
  * 
- * @param {Object=} parameters Параметры выпадающего списка.
  * @constructor
  * @implements {ymaps.ICollection}
  * @implements {ymaps.IControl}
  * @implements {ymaps.ICustomizable}
+ * 
+ * @param {Object=} parameters Параметры выпадающего списка.
  */
 ymaps.control.ListBox = function(parameters) {};
 
@@ -704,9 +725,10 @@ ymaps.control.ListBox.prototype.state;
  * 
  * См.: Hint 
  * 
- * @param {ymaps.Clusterer} clusterer Кластеризатор.
  * @constructor
  * @implements {ymaps.IHintManager}
+ * 
+ * @param {ymaps.Clusterer} clusterer Кластеризатор.
  */
 ymaps.clusterer.Hint = function(clusterer) {};
 
@@ -714,10 +736,11 @@ ymaps.clusterer.Hint = function(clusterer) {};
  * 
  * Менеджер элементов управления.
  * 
+ * @constructor
+ * 
  * @param {ymaps.Map} map Экземпляр карты.
  * @param {Array.<String>|Array.<ymaps.IControl>=} controls Элементы управления, которые требуется разместить на карте изначально.
  * @param {Object=} options Опции менеджера.
- * @constructor
  */
 ymaps.control.Manager = function(map, controls, options) {};
 
@@ -816,9 +839,10 @@ ymaps.control.Manager.prototype.state;
  * Элемент управления "Редактор маршрутов".
  * Ключ элемента управления в хранилище control.storage —&nbsp;"routeEditor".
  * 
- * @param {Object=} parameters Параметры элемента управления.
  * @constructor
  * @extends {ymaps.control.Button}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
  */
 ymaps.control.RouteEditor = function(parameters) {};
 
@@ -839,10 +863,11 @@ ymaps.control.RouteEditor.prototype.getRoute = function() {};
  * двухстрочного блока. Для формирования блока используются поля name и description
  * объекта-результата геокодирования.
  * 
- * @param {Object=} parameters Параметры элемента управления.
  * @constructor
  * @implements {ymaps.IControl}
  * @implements {ymaps.ICustomizable}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
  */
 ymaps.control.SearchControl = function(parameters) {};
 
@@ -934,8 +959,10 @@ ymaps.control.SearchControl.prototype.state;
  * соответствие ключей элементов управления и их конструкторов.
  * По умолчанию в хранилище добавлены следующие элементы управления:
  * 
+ * 
+ * @type {ymaps.util.Storage}
  */
-ymaps.control.storage = function() {};
+ymaps.control.storage;
 
 /**
  * 
@@ -946,10 +973,11 @@ ymaps.control.storage = function() {};
  * элементы списка, которые описывают типы карты, а также дополнительные элементы.
  * Ключ элемента управления в хранилище control.storage —&nbsp;"typeSelector".
  * 
- * @param {Array.<String>|Array.<ymaps.MapType>|Object=} parameters Объект с описаниями параметров элемента управления.
- *                                                                  Если передан массив, то он трактуется как массив типов карты.
  * @constructor
  * @extends {ymaps.control.ListBox}
+ * 
+ * @param {Array.<String>|Array.<ymaps.MapType>|Object=} parameters Объект с описаниями параметров элемента управления.
+ *                                                                  Если передан массив, то он трактуется как массив типов карты.
  */
 ymaps.control.TypeSelector = function(parameters) {};
 
@@ -1004,10 +1032,11 @@ ymaps.control.TypeSelector.prototype.data;
  * 
  * Панель управления пробками на карте.
  * 
- * @param {Object=} parameters Параметры элемента управления.
  * @constructor
  * @implements {ymaps.IControl}
  * @implements {ymaps.ICustomizable}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
  */
 ymaps.control.TrafficControl = function(parameters) {};
 
@@ -1093,10 +1122,11 @@ ymaps.control.TrafficControl.prototype.state;
  * Элемент управления масштабом карты.
  * Ключ элемента управления в хранилище control.storage —&nbsp;"zoomControl".
  * 
- * @param {Object=} parameters Параметры элемента управления.
  * @constructor
  * @implements {ymaps.IControl}
  * @implements {ymaps.ICustomizable}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
  */
 ymaps.control.ZoomControl = function(parameters) {};
 
@@ -1130,8 +1160,10 @@ ymaps.coordSystem.cartesian = function(scale) {};
  * 
  * 
  * 
+ * 
+ * @type {ymaps.ICoordSystem}
  */
-ymaps.coordSystem.geo = function() {};
+ymaps.coordSystem.geo;
 
 /**
  * 
@@ -1140,10 +1172,11 @@ ymaps.coordSystem.geo = function() {};
  * 
  * Менеджер произвольных данных.
  * 
- * @param {Object} data Данные.
  * @constructor
  * @implements {ymaps.IDataManager}
  * @implements {ymaps.IFreezable}
+ * 
+ * @param {Object} data Данные.
  */
 ymaps.data.Manager = function(data) {};
 
@@ -1199,10 +1232,11 @@ ymaps.data.Manager.prototype.unsetAll = function() {};
  * Возвращаемые значения нормализованы с учётом особенностей различных браузеров.
  * Также переопределено свойство position, возвращается массив вида [pageX, pageY].
  * 
- * @param {ymaps.DomEvent} originalEvent DOM-событие.
- * @param {Object=} type Тип события. Если не указан, берётся из originalEvent.type.
  * @constructor
  * @implements {ymaps.IDomEvent}
+ * 
+ * @param {ymaps.DomEvent} originalEvent DOM-событие.
+ * @param {Object=} type Тип события. Если не указан, берётся из originalEvent.type.
  */
 ymaps.DomEvent = function(originalEvent, type) {};
 
@@ -1245,7 +1279,7 @@ ymaps.DomEvent = function(originalEvent, type) {};
  * 4.
  * 
  */
-ymaps.domEvent.manager = function() {};
+ymaps.domEvent.manager = {};
 
 
 /**
@@ -1285,10 +1319,11 @@ ymaps.domEvent.manager.remove = function(htmlElement, types, callback, context, 
  * 
  * Элемент раскрывающегося списка.
  * 
- * @param {Object|String=} parameters Параметры элемента либо строка - HTML-содержимое элемента.
  * @constructor
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.ISelectableControl}
+ * 
+ * @param {Object|String=} parameters Параметры элемента либо строка - HTML-содержимое элемента.
  */
 ymaps.control.ListBoxItem = function(parameters) {};
 
@@ -1333,9 +1368,10 @@ ymaps.control.ListBoxItem.prototype.state;
  * несколькими событиями PointerEvent. Предоставляет прокси-методы для
  * доступа к полям и методам DOM-события.
  * 
+ * @constructor
+ * 
  * @param {Object} originalEvent pointer-событие.
  * @param {String=} type Тип события. Если не указан, считается равным 'multi' + originalEvent.type.
- * @constructor
  */
 ymaps.domEvent.MultiPointer = function(originalEvent, type) {};
 
@@ -1354,9 +1390,10 @@ ymaps.domEvent.MultiPointer.prototype.get = function(name) {};
  * Элемент управления "Линейка".
  * Ключ элемента управления в хранилище control.storage —&nbsp;"rulerControl".
  * 
- * @param {Object=} parameters Параметры элемента управления.
  * @constructor
  * @extends {ymaps.control.Button}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
  */
 ymaps.control.RulerControl = function(parameters) {};
 
@@ -1369,9 +1406,10 @@ ymaps.control.RulerControl = function(parameters) {};
  * доступа к полям и методам DOM-события. Возвращаемые
  * значения нормализованы с учётом особенностей различных браузеров.
  * 
+ * @constructor
+ * 
  * @param {Object} originalEvent multitouch-событие.
  * @param {String=} type Тип события. Если не указан, считается равным 'multi' + originalEvent.type.
- * @constructor
  */
 ymaps.domEvent.MultiTouch = function(originalEvent, type) {};
 
@@ -1391,9 +1429,10 @@ ymaps.domEvent.MultiTouch.prototype.get = function(name) {};
  * доступа к полям и методам DOM-события. Возвращаемые
  * значения нормализованы с учётом особенностей различных браузеров.
  * 
+ * @constructor
+ * 
  * @param {Object} originalEvent DOM-событие.
  * @param {String=} type Тип события. Если не указан, берётся из originalEvent.type.
- * @constructor
  */
 ymaps.domEvent.Touch = function(originalEvent, type) {};
 
@@ -1410,6 +1449,7 @@ ymaps.domEvent.Touch.prototype.get = function(name) {};
  * 
  * @constructor
  * @extends {ymaps.Error}
+ * 
  */
 ymaps.error.ClientError = function() {};
 
@@ -1432,6 +1472,7 @@ ymaps.error.create = function(errorType, message) {};
  * 
  * @constructor
  * @extends {ymaps.error.ExternalError}
+ * 
  */
 ymaps.error.DataProcessingError = function() {};
 
@@ -1442,6 +1483,7 @@ ymaps.error.DataProcessingError = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.Warning}
+ * 
  */
 ymaps.error.DeprecationWarning = function() {};
 
@@ -1452,6 +1494,7 @@ ymaps.error.DeprecationWarning = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.Reject}
+ * 
  */
 ymaps.error.EmptyResultReject = function() {};
 
@@ -1461,6 +1504,7 @@ ymaps.error.EmptyResultReject = function() {};
  * 
  * @constructor
  * @extends {ymaps.Error}
+ * 
  */
 ymaps.error.ExternalError = function() {};
 
@@ -1471,6 +1515,7 @@ ymaps.error.ExternalError = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.ClientError}
+ * 
  */
 ymaps.error.InputError = function() {};
 
@@ -1481,6 +1526,7 @@ ymaps.error.InputError = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.ClientError}
+ * 
  */
 ymaps.error.FeatureRemovedError = function() {};
 
@@ -1491,6 +1537,7 @@ ymaps.error.FeatureRemovedError = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.ExternalError}
+ * 
  */
 ymaps.error.NotSupportedError = function() {};
 
@@ -1501,6 +1548,7 @@ ymaps.error.NotSupportedError = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.Reject}
+ * 
  */
 ymaps.error.OperationCanceledReject = function() {};
 
@@ -1512,9 +1560,10 @@ ymaps.error.OperationCanceledReject = function() {};
  * Объект-событие. Предоставляет прокси-методы для
  * доступа к полям и методам DOM-события (одиночное касание экрана).
  * 
+ * @constructor
+ * 
  * @param {Object} originalEvent DOM-событие.
  * @param {String=} type Тип события. Если не указан, берётся из originalEvent.type.
- * @constructor
  */
 ymaps.domEvent.Pointer = function(originalEvent, type) {};
 
@@ -1532,6 +1581,7 @@ ymaps.domEvent.Pointer.prototype.get = function(name) {};
  * 
  * @constructor
  * @extends {ymaps.error.Reject}
+ * 
  */
 ymaps.error.OperationUnallowedReject = function() {};
 
@@ -1542,6 +1592,7 @@ ymaps.error.OperationUnallowedReject = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.ClientError}
+ * 
  */
 ymaps.error.ProcessError = function() {};
 
@@ -1552,6 +1603,7 @@ ymaps.error.ProcessError = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.ExternalError}
+ * 
  */
 ymaps.error.AccessError = function() {};
 
@@ -1562,6 +1614,7 @@ ymaps.error.AccessError = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.Reject}
+ * 
  */
 ymaps.error.OperationUnawailableReject = function() {};
 
@@ -1572,6 +1625,7 @@ ymaps.error.OperationUnawailableReject = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.ClientError}
+ * 
  */
 ymaps.error.StateError = function() {};
 
@@ -1581,6 +1635,7 @@ ymaps.error.StateError = function() {};
  * 
  * @constructor
  * @extends {ymaps.Error}
+ * 
  */
 ymaps.error.Reject = function() {};
 
@@ -1591,6 +1646,7 @@ ymaps.error.Reject = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.ClientError}
+ * 
  */
 ymaps.error.StorageItemAccessError = function() {};
 
@@ -1600,6 +1656,7 @@ ymaps.error.StorageItemAccessError = function() {};
  * 
  * @constructor
  * @extends {ymaps.Error}
+ * 
  */
 ymaps.error.Warning = function() {};
 
@@ -1610,9 +1667,10 @@ ymaps.error.Warning = function() {};
  * 
  * Группа слушателей событий.
  * 
- * @param {ymaps.IEventManager} events Менеджер событий, для которого создается группа.
  * @constructor
  * @implements {ymaps.IEventGroup}
+ * 
+ * @param {ymaps.IEventManager} events Менеджер событий, для которого создается группа.
  */
 ymaps.event.Group = function(events) {};
 
@@ -1647,9 +1705,10 @@ ymaps.event.Group.prototype.events;
  * разными. При удалении подписки необходимо указывать тот же приоритет, что и при
  * добавлении.
  * 
- * @param {Object=} params Параметры менеджера событий.
  * @constructor
  * @implements {ymaps.IEventManager}
+ * 
+ * @param {Object=} params Параметры менеджера событий.
  */
 ymaps.event.Manager = function(params) {};
 
@@ -1697,6 +1756,9 @@ ymaps.event.Manager.prototype.setParent = function(parent) {};
  * 
  * Маппер событий. Позволяет управлять распространением событий по иерархии менеджеров событий.
  * 
+ * @constructor
+ * @implements {ymaps.IEventTrigger}
+ * 
  * @param {ymaps.IEventManager} targetEventManager Менеджер событий, на который маппер распространяет инициируемые на
  *                                                 нем события.
  * @param {Object} mappingTable Таблица правил маппинга. Представляет собой хэш, ключами которого являются типы
@@ -1710,8 +1772,6 @@ ymaps.event.Manager.prototype.setParent = function(parent) {};
  *                                  false - события данного типа по иерархии не распространяются.
  *                              
  *                              Дополнительно в таблице доступен ключ "*" для правила обработки по умолчанию.
- * @constructor
- * @implements {ymaps.IEventTrigger}
  */
 ymaps.event.Mapper = function(targetEventManager, mappingTable) {};
 
@@ -1723,10 +1783,11 @@ ymaps.event.Mapper = function(targetEventManager, mappingTable) {};
  * Событие. Предоставляет методы для доступа к полям и методам объекта originalEvent с возможностью
  * их переопределения.
  * 
- * @param {Object} originalEvent Исходные данные.
- * @param {ymaps.IEvent=} sourceEvent Исходное событие.
  * @constructor
  * @implements {ymaps.IEvent}
+ * 
+ * @param {Object} originalEvent Исходные данные.
+ * @param {ymaps.IEvent=} sourceEvent Исходное событие.
  */
 ymaps.Event = function(originalEvent, sourceEvent) {};
 
@@ -1784,6 +1845,7 @@ ymaps.Event.prototype.stopPropagation = function() {};
  * 
  * @constructor
  * @extends {ymaps.error.Warning}
+ * 
  */
 ymaps.error.OveruseWarning = function() {};
 
@@ -1795,7 +1857,7 @@ ymaps.error.OveruseWarning = function() {};
  * измерения с учётом текущего языка.
  * 
  */
-ymaps.formatter = function() {};
+ymaps.formatter = {};
 
 
 /**
@@ -1828,6 +1890,8 @@ ymaps.formatter.duration = function(value, significantDigits) {};
  * @param {String|Array.<Number>} request Адрес, для которого необходимо определить координаты (прямое геокодирование)
  *                                        или координаты, для которых необходимо определить адрес (обратное геокодирование).
  * @param {Object=} options Опции.
+ * 
+ * @returns {ymaps.vow.Promise}
  */
 ymaps.geocode = function(request, options) {};
 
@@ -1838,10 +1902,11 @@ ymaps.geocode = function(request, options) {};
  * 
  * Базовая геометрия "Круг".
  * 
- * @param {Array.<Number>|null=} coordinates Координаты центра круга.
- * @param {Number=} radius Радиус круга.
  * @constructor
  * @implements {ymaps.IBaseCircleGeometry}
+ * 
+ * @param {Array.<Number>|null=} coordinates Координаты центра круга.
+ * @param {Number=} radius Радиус круга.
  */
 ymaps.geometry.base.Circle = function(coordinates, radius) {};
 
@@ -1860,6 +1925,7 @@ ymaps.geometry.base.Circle.prototype.events;
  * 
  * @constructor
  * @extends {ymaps.error.ExternalError}
+ * 
  */
 ymaps.error.RequestError = function() {};
 
@@ -1873,6 +1939,8 @@ ymaps.error.RequestError = function() {};
  *         (тип geometry.base.LinearRing).
  * 
  * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин контура.
+ * 
+ * @returns {ymaps.geometry.base.LinearRing}
  */
 ymaps.geometry.base.LinearRing.fromEncodedCoordinates = function(encodedCoordinates) {};
 
@@ -1882,6 +1950,9 @@ ymaps.geometry.base.LinearRing.fromEncodedCoordinates = function(encodedCoordina
  *             IBaseLinearRingGeometry.
  * 
  * Базовая геометрия "Замкнутый контур".
+ * 
+ * @constructor
+ * @implements {ymaps.IBaseLinearRingGeometry}
  * 
  * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
  * @param {String=} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
@@ -1896,8 +1967,6 @@ ymaps.geometry.base.LinearRing.fromEncodedCoordinates = function(encodedCoordina
  *                               раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
  *                               находится снаружи контура. В противном случае она находится внутри.
  *                           
- * @constructor
- * @implements {ymaps.IBaseLinearRingGeometry}
  */
 ymaps.geometry.base.LinearRing = function(coordinates, fillRule) {};
 
@@ -1916,9 +1985,10 @@ ymaps.geometry.base.LinearRing.prototype.events;
  * 
  * Базовая геометрия "Ломаная линия".
  * 
- * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
  * @constructor
  * @implements {ymaps.IBaseLineStringGeometry}
+ * 
+ * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
  */
 ymaps.geometry.base.LineString = function(coordinates) {};
 
@@ -1940,6 +2010,8 @@ ymaps.geometry.base.LineString.prototype.events;
  *         (тип geometry.base.LineString).
  * 
  * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
+ * 
+ * @returns {ymaps.geometry.base.LineString}
  */
 ymaps.geometry.base.LineString.fromEncodedCoordinates = function(encodedCoordinates) {};
 
@@ -1950,9 +2022,10 @@ ymaps.geometry.base.LineString.fromEncodedCoordinates = function(encodedCoordina
  * 
  * Базовая геометрия "Точка".
  * 
- * @param {Array.<Number>|null=} coordinates Координаты точки.
  * @constructor
  * @implements {ymaps.IBasePointGeometry}
+ * 
+ * @param {Array.<Number>|null=} coordinates Координаты точки.
  */
 ymaps.geometry.base.Point = function(coordinates) {};
 
@@ -1972,6 +2045,8 @@ ymaps.geometry.base.Point.prototype.events;
  *         (тип String).
  * 
  * @param {ymaps.geometry.base.LineString} geometry Геометрия.
+ * 
+ * @returns {String}
  */
 ymaps.geometry.base.LineString.toEncodedCoordinates = function(geometry) {};
 
@@ -1981,6 +2056,9 @@ ymaps.geometry.base.LineString.toEncodedCoordinates = function(geometry) {};
  *             IBasePolygonGeometry.
  * 
  * Базовая геометрия "Многоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IBasePolygonGeometry}
  * 
  * @param {Array.<Array.<Array.<Number>>>=} coordinates Координаты геометрии.
  * @param {String=} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
@@ -1995,8 +2073,6 @@ ymaps.geometry.base.LineString.toEncodedCoordinates = function(geometry) {};
  *                               раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
  *                               находится снаружи контура. В противном случае она находится внутри.
  *                           
- * @constructor
- * @implements {ymaps.IBasePolygonGeometry}
  */
 ymaps.geometry.base.Polygon = function(coordinates, fillRule) {};
 
@@ -2018,6 +2094,8 @@ ymaps.geometry.base.Polygon.prototype.events;
  *         (тип geometry.base.Polygon).
  * 
  * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин многоугольника.
+ * 
+ * @returns {ymaps.geometry.base.Polygon}
  */
 ymaps.geometry.base.Polygon.fromEncodedCoordinates = function(encodedCoordinates) {};
 
@@ -2028,7 +2106,7 @@ ymaps.geometry.base.Polygon.fromEncodedCoordinates = function(encodedCoordinates
  * Предоставляет информацию о местоположении пользователя.
  * 
  */
-ymaps.geolocation = function() {};
+ymaps.geolocation = {};
 
 
 /**
@@ -2045,6 +2123,8 @@ ymaps.geolocation.get = function(options) {};
  *         (тип String).
  * 
  * @param {ymaps.geometry.base.Polygon} geometry Геометрия.
+ * 
+ * @returns {String}
  */
 ymaps.geometry.base.Polygon.toEncodedCoordinates = function(geometry) {};
 
@@ -2055,9 +2135,10 @@ ymaps.geometry.base.Polygon.toEncodedCoordinates = function(geometry) {};
  * 
  * Базовая геометрия "Прямоугольник".
  * 
- * @param {Array.<Array.<Number>>|null=} coordinates Массив, содержащий координаты двух противоположных углов прямоугольника.
  * @constructor
  * @implements {ymaps.IBaseRectangleGeometry}
+ * 
+ * @param {Array.<Array.<Number>>|null=} coordinates Массив, содержащий координаты двух противоположных углов прямоугольника.
  */
 ymaps.geometry.base.Rectangle = function(coordinates) {};
 
@@ -2078,6 +2159,7 @@ ymaps.geometry.base.Rectangle.prototype.events;
  * 
  * @constructor
  * @implements {ymaps.IGeometryJson}
+ * 
  */
 ymaps.geometry.json.circle = function() {};
 
@@ -2115,6 +2197,7 @@ ymaps.geometry.json.circle.prototype.type;
  * 
  * @constructor
  * @implements {ymaps.IGeometryJson}
+ * 
  */
 ymaps.geometry.json.lineString = function() {};
 
@@ -2144,6 +2227,7 @@ ymaps.geometry.json.lineString.prototype.type;
  * 
  * @constructor
  * @implements {ymaps.IGeometryJson}
+ * 
  */
 ymaps.geometry.json.polygon = function() {};
 
@@ -2182,6 +2266,8 @@ ymaps.geometry.json.polygon.prototype.fillRule;
  *         (тип String).
  * 
  * @param {ymaps.geometry.base.LinearRing} geometry Геометрия.
+ * 
+ * @returns {String}
  */
 ymaps.geometry.base.LinearRing.toEncodedCoordinates = function(geometry) {};
 
@@ -2194,6 +2280,7 @@ ymaps.geometry.base.LinearRing.toEncodedCoordinates = function(geometry) {};
  * 
  * @constructor
  * @implements {ymaps.IGeometryJson}
+ * 
  */
 ymaps.geometry.json.rectangle = function() {};
 
@@ -2223,6 +2310,7 @@ ymaps.geometry.json.rectangle.prototype.type;
  * 
  * @constructor
  * @implements {ymaps.IGeometryJson}
+ * 
  */
 ymaps.geometry.json.Point = function() {};
 
@@ -2235,11 +2323,12 @@ ymaps.geometry.json.Point = function() {};
  * 
  * См.: Circle 
  * 
+ * @constructor
+ * @implements {ymaps.ICircleGeometry}
+ * 
  * @param {Array.<Number>|null=} coordinates Координаты центра круга.
  * @param {Number=} radius Радиус круга в метрах.
  * @param {Object=} options Опции геометрии.
- * @constructor
- * @implements {ymaps.ICircleGeometry}
  */
 ymaps.geometry.Circle = function(coordinates, radius, options) {};
 
@@ -2251,6 +2340,8 @@ ymaps.geometry.Circle = function(coordinates, radius, options) {};
  *         (тип String).
  * 
  * @param {ymaps.geometry.LineString} geometry Геометрия.
+ * 
+ * @returns {String}
  */
 ymaps.geometry.LineString.toEncodedCoordinates = function(geometry) {};
 
@@ -2261,10 +2352,11 @@ ymaps.geometry.LineString.toEncodedCoordinates = function(geometry) {};
  * 
  * Пиксельная геометрия "Ломаная линия".
  * 
- * @param {Array.<Array.<Number>>} coordinates Координаты линии.
- * @param {Object=} metaData Метаданные.
  * @constructor
  * @implements {ymaps.IPixelLineStringGeometry}
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты линии.
+ * @param {Object=} metaData Метаданные.
  */
 ymaps.geometry.pixel.LineString = function(coordinates, metaData) {};
 
@@ -2278,6 +2370,8 @@ ymaps.geometry.pixel.LineString = function(coordinates, metaData) {};
  *         (тип geometry.LineString).
  * 
  * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
+ * 
+ * @returns {ymaps.geometry.LineString}
  */
 ymaps.geometry.LineString.fromEncodedCoordinates = function(encodedCoordinates) {};
 
@@ -2288,10 +2382,11 @@ ymaps.geometry.LineString.fromEncodedCoordinates = function(encodedCoordinates) 
  * 
  * Пиксельная геометрия "Точка".
  * 
- * @param {Array.<Number>|null} position Координаты точки.
- * @param {Object=} metaData Метаданные.
  * @constructor
  * @implements {ymaps.IPixelPointGeometry}
+ * 
+ * @param {Array.<Number>|null} position Координаты точки.
+ * @param {Object=} metaData Метаданные.
  */
 ymaps.geometry.pixel.Point = function(position, metaData) {};
 
@@ -2301,6 +2396,9 @@ ymaps.geometry.pixel.Point = function(position, metaData) {};
  *             IPixelMultiPolygonGeometry.
  * 
  * Пиксельная геометрия "Многоугольник из нескольких фигур".
+ * 
+ * @constructor
+ * @implements {ymaps.IPixelMultiPolygonGeometry}
  * 
  * @param {Array.<Array.<Array.<Array.<Number>>>>} coordinates Координаты многоугольников.
  * @param {String} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольников.
@@ -2316,8 +2414,6 @@ ymaps.geometry.pixel.Point = function(position, metaData) {};
  *                              находится снаружи контура. В противном случае она находится внутри.
  *                          
  * @param {Object=} metaData Метаданные.
- * @constructor
- * @implements {ymaps.IPixelMultiPolygonGeometry}
  */
 ymaps.geometry.pixel.MultiPolygon = function(coordinates, fillRule, metaData) {};
 
@@ -2327,6 +2423,9 @@ ymaps.geometry.pixel.MultiPolygon = function(coordinates, fillRule, metaData) {}
  *             IPixelPolygonGeometry.
  * 
  * Пиксельная геометрия "Многоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IPixelPolygonGeometry}
  * 
  * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты многоугольника.
  * @param {String} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
@@ -2342,8 +2441,6 @@ ymaps.geometry.pixel.MultiPolygon = function(coordinates, fillRule, metaData) {}
  *                              находится снаружи контура. В противном случае она находится внутри.
  *                          
  * @param {Object=} metaData Метаданные.
- * @constructor
- * @implements {ymaps.IPixelPolygonGeometry}
  */
 ymaps.geometry.pixel.Polygon = function(coordinates, fillRule, metaData) {};
 
@@ -2354,10 +2451,11 @@ ymaps.geometry.pixel.Polygon = function(coordinates, fillRule, metaData) {};
  * 
  * Пиксельная геометрия "Прямоугольник".
  * 
- * @param {Array.<Array.<Number>>|null=} coordinates Координаты двух противоположных углов прямоугольника.
- * @param {Object=} metaData Метаданные.
  * @constructor
  * @implements {ymaps.IPixelRectangleGeometry}
+ * 
+ * @param {Array.<Array.<Number>>|null=} coordinates Координаты двух противоположных углов прямоугольника.
+ * @param {Object=} metaData Метаданные.
  */
 ymaps.geometry.pixel.Rectangle = function(coordinates, metaData) {};
 
@@ -2370,10 +2468,11 @@ ymaps.geometry.pixel.Rectangle = function(coordinates, metaData) {};
  * 
  * См.: Placemark 
  * 
- * @param {Array.<Number>=} position Координаты точки.
- * @param {Object=} options Опции геометрии.
  * @constructor
  * @implements {ymaps.IPointGeometry}
+ * 
+ * @param {Array.<Number>=} position Координаты точки.
+ * @param {Object=} options Опции геометрии.
  */
 ymaps.geometry.Point = function(position, options) {};
 
@@ -2385,6 +2484,9 @@ ymaps.geometry.Point = function(position, options) {};
  * Геометрия "Многоугольник".
  * 
  * См.: Polygon 
+ * 
+ * @constructor
+ * @implements {ymaps.IPolygonGeometry}
  * 
  * @param {Array.<Array.<Array.<Number>>>=} coordinates Координаты геометрии. Трехмерный массив, элементами которого являются
  *                                                      двумерные массивы координат контуров многоугольника. Первый элемент описывает внешний контур, остальные - внутренние.
@@ -2401,8 +2503,6 @@ ymaps.geometry.Point = function(position, options) {};
  *                               находится снаружи контура. В противном случае она находится внутри.
  *                           
  * @param {Object=} options Опции геометрии.
- * @constructor
- * @implements {ymaps.IPolygonGeometry}
  */
 ymaps.geometry.Polygon = function(coordinates, fillRule, options) {};
 
@@ -2416,6 +2516,8 @@ ymaps.geometry.Polygon = function(coordinates, fillRule, options) {};
  *         (тип geometry.Polygon).
  * 
  * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
+ * 
+ * @returns {ymaps.geometry.Polygon}
  */
 ymaps.geometry.Polygon.fromEncodedCoordinates = function(encodedCoordinates) {};
 
@@ -2427,6 +2529,8 @@ ymaps.geometry.Polygon.fromEncodedCoordinates = function(encodedCoordinates) {};
  *         (тип String).
  * 
  * @param {ymaps.geometry.Polygon} geometry Геометрия.
+ * 
+ * @returns {String}
  */
 ymaps.geometry.Polygon.toEncodedCoordinates = function(geometry) {};
 
@@ -2439,10 +2543,11 @@ ymaps.geometry.Polygon.toEncodedCoordinates = function(geometry) {};
  * 
  * См.: Rectangle 
  * 
- * @param {Array.<Array.<Number>>|null=} coordinates Массив, содержащий координаты двух противоположных углов прямоугольника.
- * @param {Object=} options Опции геометрии.
  * @constructor
  * @implements {ymaps.IRectangleGeometry}
+ * 
+ * @param {Array.<Array.<Number>>|null=} coordinates Массив, содержащий координаты двух противоположных углов прямоугольника.
+ * @param {Object=} options Опции геометрии.
  */
 ymaps.geometry.Rectangle = function(coordinates, options) {};
 
@@ -2453,14 +2558,15 @@ ymaps.geometry.Rectangle = function(coordinates, options) {};
  * 
  * Редактор геометрии "Ломаная линия".
  * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditor}
+ * 
  * @param {ymaps.ILineStringGeometry} geometry Геометрия "Ломаная линия".
  * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
  *                          редактора, так и опции его составных частей:
  *                          
  *                              опции направляющих линий с префиксом guideLines.
  *                          
- * @constructor
- * @implements {ymaps.IGeometryEditor}
  */
 ymaps.geometryEditor.LineString = function(geometry, options) {};
 
@@ -2537,11 +2643,12 @@ ymaps.geometryEditor.LineString.prototype.state;
  * 
  * Пиксельная геометрия "Круг".
  * 
+ * @constructor
+ * @implements {ymaps.IPixelCircleGeometry}
+ * 
  * @param {Array.<Number>|null} coordinates Координаты центра круга.
  * @param {Number|null} radius Радиус круга.
  * @param {Object=} metaData Метаданные.
- * @constructor
- * @implements {ymaps.IPixelCircleGeometry}
  */
 ymaps.geometry.pixel.Circle = function(coordinates, radius, metaData) {};
 
@@ -2555,7 +2662,9 @@ ymaps.geometry.pixel.Circle = function(coordinates, radius, metaData) {};
  * Модель дочернего замкнутого контура. Конструктор недоступен в package.full (стандартный набор модулей).
  * Данный модуль загружается по требованию.
  * 
+ * @constructor
  * @extends {ymaps.geometryEditor.model.ChildLineString}
+ * 
  */
 ymaps.geometryEditor.model.ChildLinearRing = function() {};
 
@@ -2568,10 +2677,11 @@ ymaps.geometryEditor.model.ChildLinearRing = function() {};
  * 
  * См.: Polyline 
  * 
- * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
- * @param {Object=} options Опции геометрии.
  * @constructor
  * @implements {ymaps.ILineStringGeometry}
+ * 
+ * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
+ * @param {Object=} options Опции геометрии.
  */
 ymaps.geometry.LineString = function(coordinates, options) {};
 
@@ -2593,7 +2703,9 @@ ymaps.geometry.LineString.prototype.getDistance = function(from, to) {};
  * Модель промежуточной метки. Конструктор недоступен в package.full (стандартный набор модулей).
  * Данный модуль загружается по требованию.
  * 
+ * @constructor
  * @implements {ymaps.IGeometryEditorRootModel}
+ * 
  */
 ymaps.geometryEditor.model.Edge = function() {};
 
@@ -2601,25 +2713,25 @@ ymaps.geometryEditor.model.Edge = function() {};
 /**
  * @return {ymaps.geometryEditor.model.ChildVertex|null}
  */
-ymaps.geometryEditor.model.Edge.getNextVertex = function() {};
+ymaps.geometryEditor.model.Edge.prototype.getNextVertex = function() {};
 
 
 /**
  * @return {ymaps.geometryEditor.model.ChildVertex|null}
  */
-ymaps.geometryEditor.model.Edge.getPrevVertex = function() {};
+ymaps.geometryEditor.model.Edge.prototype.getPrevVertex = function() {};
 
 
 /**
  * @param {ymaps.geometryEditor.model.ChildVertex|null} nextVertex Модель следующей вершины.
  */
-ymaps.geometryEditor.model.Edge.setNextVertex = function(nextVertex) {};
+ymaps.geometryEditor.model.Edge.prototype.setNextVertex = function(nextVertex) {};
 
 
 /**
  * @param {ymaps.geometryEditor.model.ChildVertex|null} prevVertex Модель предыдущей вершины.
  */
-ymaps.geometryEditor.model.Edge.setPrevVertex = function(prevVertex) {};
+ymaps.geometryEditor.model.Edge.prototype.setPrevVertex = function(prevVertex) {};
 
 /**
  * 
@@ -2631,7 +2743,9 @@ ymaps.geometryEditor.model.Edge.setPrevVertex = function(prevVertex) {};
  * Модель корневой ломаной линии. Конструктор недоступен в package.full (стандартный набор модулей).
  * Данный модуль загружается по требованию.
  * 
+ * @constructor
  * @implements {ymaps.IGeometryEditorRootModel}
+ * 
  */
 ymaps.geometryEditor.model.RootLineString = function() {};
 
@@ -2639,13 +2753,13 @@ ymaps.geometryEditor.model.RootLineString = function() {};
 /**
  * @return {number}
  */
-ymaps.geometryEditor.model.RootLineString.getAllVerticesNumber = function() {};
+ymaps.geometryEditor.model.RootLineString.prototype.getAllVerticesNumber = function() {};
 
 
 /**
  * @return {Array.<ymaps.geometryEditor.model.ChildVertex>}
  */
-ymaps.geometryEditor.model.RootLineString.getVertexModels = function() {};
+ymaps.geometryEditor.model.RootLineString.prototype.getVertexModels = function() {};
 
 
 /**
@@ -2653,7 +2767,7 @@ ymaps.geometryEditor.model.RootLineString.getVertexModels = function() {};
  * @param {number} deleteCount Количество удаляемых вершин.
  * @return {Array.<Array.<Number>>}
  */
-ymaps.geometryEditor.model.RootLineString.spliceVertices = function(start, deleteCount) {};
+ymaps.geometryEditor.model.RootLineString.prototype.spliceVertices = function(start, deleteCount) {};
 
 /**
  * 
@@ -2665,7 +2779,9 @@ ymaps.geometryEditor.model.RootLineString.spliceVertices = function(start, delet
  * Модель дочерней ломаной линии. Конструктор недоступен в package.full (стандартный набор модулей).
  * Данный модуль загружается по требованию.
  * 
+ * @constructor
  * @implements {ymaps.IGeometryEditorChildModel}
+ * 
  */
 ymaps.geometryEditor.model.ChildLineString = function() {};
 
@@ -2673,31 +2789,31 @@ ymaps.geometryEditor.model.ChildLineString = function() {};
 /**
  * @return {number}
  */
-ymaps.geometryEditor.model.ChildLineString.getAllVerticesNumber = function() {};
+ymaps.geometryEditor.model.ChildLineString.prototype.getAllVerticesNumber = function() {};
 
 
 /**
  * @return {Array.<ymaps.geometryEditor.model.Edge>}
  */
-ymaps.geometryEditor.model.ChildLineString.getEdgeModels = function() {};
+ymaps.geometryEditor.model.ChildLineString.prototype.getEdgeModels = function() {};
 
 
 /**
  * @return {number}
  */
-ymaps.geometryEditor.model.ChildLineString.getIndex = function() {};
+ymaps.geometryEditor.model.ChildLineString.prototype.getIndex = function() {};
 
 
 /**
  * @return {Array.<ymaps.geometryEditor.model.ChildVertex>}
  */
-ymaps.geometryEditor.model.ChildLineString.getVertexModels = function() {};
+ymaps.geometryEditor.model.ChildLineString.prototype.getVertexModels = function() {};
 
 
 /**
  * @param {number} index Индекс дочерней вершины.
  */
-ymaps.geometryEditor.model.ChildLineString.setIndex = function(index) {};
+ymaps.geometryEditor.model.ChildLineString.prototype.setIndex = function(index) {};
 
 
 /**
@@ -2705,7 +2821,7 @@ ymaps.geometryEditor.model.ChildLineString.setIndex = function(index) {};
  * @param {number} deleteCount Количество удаляемых вершин.
  * @return {Array.<Array.<Number>>}
  */
-ymaps.geometryEditor.model.ChildLineString.spliceVertices = function(start, deleteCount) {};
+ymaps.geometryEditor.model.ChildLineString.prototype.spliceVertices = function(start, deleteCount) {};
 
 /**
  * 
@@ -2717,7 +2833,9 @@ ymaps.geometryEditor.model.ChildLineString.spliceVertices = function(start, dele
  * Модель корневого полигона. Конструктор недоступен в package.full (стандартный набор модулей).
  * Данный модуль загружается по требованию.
  * 
+ * @constructor
  * @implements {ymaps.IGeometryEditorRootModel}
+ * 
  */
 ymaps.geometryEditor.model.RootPolygon = function() {};
 
@@ -2725,13 +2843,13 @@ ymaps.geometryEditor.model.RootPolygon = function() {};
 /**
  * @return {number}
  */
-ymaps.geometryEditor.model.RootPolygon.getAllVerticesNumber = function() {};
+ymaps.geometryEditor.model.RootPolygon.prototype.getAllVerticesNumber = function() {};
 
 
 /**
  * @return {Array.<ymaps.geometryEditor.model.ChildLinearRing>}
  */
-ymaps.geometryEditor.model.RootPolygon.getPathModels = function() {};
+ymaps.geometryEditor.model.RootPolygon.prototype.getPathModels = function() {};
 
 
 /**
@@ -2739,7 +2857,7 @@ ymaps.geometryEditor.model.RootPolygon.getPathModels = function() {};
  * @param {number} deleteCount Количество удаляемых контуров.
  * @return {Array.<Array.<Number>>}
  */
-ymaps.geometryEditor.model.RootPolygon.splicePaths = function(start, deleteCount) {};
+ymaps.geometryEditor.model.RootPolygon.prototype.splicePaths = function(start, deleteCount) {};
 
 /**
  * 
@@ -2748,14 +2866,15 @@ ymaps.geometryEditor.model.RootPolygon.splicePaths = function(start, deleteCount
  * 
  * Редактор геометрии "Точка".
  * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditor}
+ * 
  * @param {ymaps.IPointGeometry} geometry Геометрия "Точка".
  * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
  *                          редактора, так и опции его составных частей:
  *                          
  *                              опции направляющих линий с префиксом guideLines.
  *                          
- * @constructor
- * @implements {ymaps.IGeometryEditor}
  */
 ymaps.geometryEditor.Point = function(geometry, options) {};
 
@@ -2788,7 +2907,7 @@ ymaps.geometryEditor.Point.prototype.state;
  * Данный модуль загружается по требованию.
  * 
  */
-ymaps.geometryEditor.view.Edge = function() {};
+ymaps.geometryEditor.view.Edge = {};
 
 
 /**
@@ -2803,14 +2922,15 @@ ymaps.geometryEditor.view.Edge.getPlacemark = function() {};
  * 
  * Редактор геометрии "Многоугольник".
  * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditor}
+ * 
  * @param {ymaps.IPolygonGeometry} geometry Геометрия "Многоугольник".
  * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
  *                          редактора, так и опции его составных частей:
  *                          
  *                              опции направляющих линий с префиксом guideLines.
  *                          
- * @constructor
- * @implements {ymaps.IGeometryEditor}
  */
 ymaps.geometryEditor.Polygon = function(geometry, options) {};
 
@@ -2888,7 +3008,7 @@ ymaps.geometryEditor.Polygon.prototype.state;
  * Данный модуль загружается по требованию.
  * 
  */
-ymaps.geometryEditor.view.MultiPath = function() {};
+ymaps.geometryEditor.view.MultiPath = {};
 
 
 /**
@@ -2916,7 +3036,7 @@ ymaps.geometryEditor.view.MultiPath.getVertexPlacemarks = function() {};
  * Данный модуль загружается по требованию.
  * 
  */
-ymaps.geometryEditor.view.Path = function() {};
+ymaps.geometryEditor.view.Path = {};
 
 
 /**
@@ -2950,7 +3070,7 @@ ymaps.geometryEditor.view.Path.getVertexViews = function() {};
  * Данный модуль загружается по требованию.
  * 
  */
-ymaps.geometryEditor.view.Vertex = function() {};
+ymaps.geometryEditor.view.Vertex = {};
 
 
 /**
@@ -2975,7 +3095,7 @@ ymaps.geometryEditor.view.Vertex.getPlacemark = function() {};
  * Методы 
  * 
  */
-ymaps.geoObject.addon.balloon = function() {};
+ymaps.geoObject.addon.balloon = {};
 
 
 /**
@@ -3001,7 +3121,7 @@ ymaps.geoObject.addon.balloon.get = function(geoObject) {};
  * Методы 
  * 
  */
-ymaps.geoObject.addon.editor = function() {};
+ymaps.geoObject.addon.editor = {};
 
 
 /**
@@ -3027,7 +3147,7 @@ ymaps.geoObject.addon.editor.get = function(geoObject) {};
  * Методы 
  * 
  */
-ymaps.geoObject.addon.hint = function() {};
+ymaps.geoObject.addon.hint = {};
 
 
 /**
@@ -3049,9 +3169,10 @@ ymaps.geoObject.addon.hint.get = function(geoObject) {};
  * 
  * См.: Balloon GeoObject.balloon 
  * 
- * @param {Object} geoObject Геообъект.
  * @constructor
  * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {Object} geoObject Геообъект.
  */
 ymaps.geoObject.Balloon = function(geoObject) {};
 
@@ -3085,9 +3206,10 @@ ymaps.geoObject.Balloon.prototype.setData = function(data) {};
  * 
  * См.: Hint GeoObject.hint 
  * 
- * @param {Object} geoObject Геообъект.
  * @constructor
  * @implements {ymaps.IHintManager}
+ * 
+ * @param {Object} geoObject Геообъект.
  */
 ymaps.geoObject.Hint = function(geoObject) {};
 
@@ -3116,14 +3238,15 @@ ymaps.geoObject.Hint.prototype.setData = function(data) {};
  * Неизменяемая коллекция геообъектов. Позволяет группировать геообъекты для добавления на карту,
  * задания опций и т.д. Коллекция также является геообъектом.
  * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * @implements {ymaps.IGeoObjectSequence}
+ * 
  * @param {Object=} feature Описание коллекции. Функционально соответствует описанию
  *                          геообъекта. Смотрите GeoObject.
  * @param {Object=} options Опции коллекции. Здесь можно задавать все опции описанные в классе
  *                          GeoObject. Значения опций будут применяться как к самой коллекции, так и к ее
  *                          дочерним объектам, если для них данные опции не определены.
- * @constructor
- * @implements {ymaps.IGeoObject}
- * @implements {ymaps.IGeoObjectSequence}
  */
 ymaps.geoObject.Sequence = function(feature, options) {};
 
@@ -3137,6 +3260,9 @@ ymaps.geoObject.Sequence = function(feature, options) {};
  * 
  * См.: Placemark Polyline Polygon Circle Rectangle 
  * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
  * @param {Object=} feature Описание геообъекта.
  * @param {Object=} options Опции геообъекта. Используя этот параметр можно задавать как опции самого геообъекта,
  *                          так и опции его составных частей:
@@ -3149,8 +3275,6 @@ ymaps.geoObject.Sequence = function(feature, options) {};
  *                              Опции геометрии могут задаваться без префикса. Смотрите описание классов IGeometry геометрий
  *                              geometry.Point, geometry.Polygon и др.
  *                          
- * @constructor
- * @implements {ymaps.IGeoObject}
  */
 ymaps.GeoObject = function(feature, options) {};
 
@@ -3261,6 +3385,8 @@ ymaps.GeoObject.prototype.state;
  *                            options - опции геообъекта;
  *                            properties - данные геообъекта.
  *                        
+ * 
+ * @returns {ymaps.GeoQueryResult}
  */
 ymaps.geoQuery = function(source) {};
 
@@ -3272,14 +3398,15 @@ ymaps.geoQuery = function(source) {};
  * Коллекция геообъектов. Позволяет группировать геообъекты для добавления на карту,
  * задания опций и т.д. Коллекция также является геообъектом.
  * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * @implements {ymaps.IGeoObjectCollection}
+ * 
  * @param {Object=} feature Описание коллекции. Функционально соответствует описанию
  *                          геообъекта. Смотрите GeoObject.
  * @param {Object=} options Опции коллекции. Здесь можно задавать все опции описанные в классе
  *                          GeoObject. Значения опций будут применяться как к самой коллекции, так и к ее
  *                          дочерним объектам, если для них данные опции не определены.
- * @constructor
- * @implements {ymaps.IGeoObject}
- * @implements {ymaps.IGeoObjectCollection}
  */
 ymaps.GeoObjectCollection = function(feature, options) {};
 
@@ -3380,6 +3507,8 @@ ymaps.GeoObjectCollection.prototype.toArray = function() {};
  * (тип vow.Promise).
  * 
  * @param {String} url URL файла с географическими данными.
+ * 
+ * @returns {ymaps.vow.Promise}
  */
 ymaps.geoXml.load = function(url) {};
 
@@ -3410,7 +3539,7 @@ ymaps.getZoomRange = function(mapType, coords, customizable) {};
  * Задает цвет графической фигуры в форматах #RGB,#RGBA,#RRGGBB,#RRGGBBAA,rgb(r,b,a),rgba(r,g,b,a)
  * 
  */
-ymaps.graphics.style.color = function() {};
+ymaps.graphics.style.color;
 
 /**
  * 
@@ -3418,6 +3547,9 @@ ymaps.graphics.style.color = function() {};
  *             IPromiseProvider.
  * 
  * Результат геозапроса.
+ * 
+ * @constructor
+ * @implements {ymaps.IPromiseProvider}
  * 
  * @param {Object} source Источник геообъектов:
  *                        
@@ -3450,8 +3582,6 @@ ymaps.graphics.style.color = function() {};
  *                            options - опции геообъекта;
  *                            properties - данные геообъекта.
  *                        
- * @constructor
- * @implements {ymaps.IPromiseProvider}
  */
 ymaps.GeoQueryResult = function(source) {};
 
@@ -3919,11 +4049,12 @@ ymaps.GeoQueryResult.prototype.unsetProperties = function(path) {};
  * слоёв активных областей и т.д.).
  * Не создавайте их самостоятельно, если в этом нет необходимости.
  * 
- * @param {ymaps.Map} map Ссылка на объект карты.
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IHint}
  * @extends {ymaps.Popup}
+ * 
+ * @param {ymaps.Map} map Ссылка на объект карты.
+ * @param {Object=} options Опции.
  */
 ymaps.Hint = function(map, options) {};
 
@@ -3939,7 +4070,7 @@ ymaps.Hint = function(map, options) {};
  * Поля 
  * 
  */
-ymaps.graphics.style.stroke = function() {};
+ymaps.graphics.style.stroke = {};
 
 
 /**
@@ -4036,10 +4167,11 @@ ymaps.graphics.style.stroke.solid;
  * 
  * Активная область.
  * 
- * @param {ymaps.IShape} shape Фигура активной области.
- * @param {Number=} zIndex zIndex активной области.
  * @constructor
  * @implements {ymaps.IHotspot}
+ * 
+ * @param {ymaps.IShape} shape Фигура активной области.
+ * @param {Number=} zIndex zIndex активной области.
  */
 ymaps.Hotspot = function(shape, zIndex) {};
 
@@ -4055,9 +4187,10 @@ ymaps.Hotspot = function(shape, zIndex) {};
  * 
  * См.: Balloon hotspot.Layer.balloon 
  * 
- * @param {Object} hotspotLayer Хотспотный слой.
  * @constructor
  * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {Object} hotspotLayer Хотспотный слой.
  */
 ymaps.hotspot.layer.Balloon = function(hotspotLayer) {};
 
@@ -4082,9 +4215,10 @@ ymaps.hotspot.layer.Balloon.prototype.open = function(position, data, options) {
  * 
  * См.: Hint hotspot.Layer.hint 
  * 
- * @param {Object} hotspotLayer Хотспотный слой.
  * @constructor
  * @implements {ymaps.IHintManager}
+ * 
+ * @param {Object} hotspotLayer Хотспотный слой.
  */
 ymaps.hotspot.layer.Hint = function(hotspotLayer) {};
 
@@ -4104,11 +4238,12 @@ ymaps.hotspot.layer.Hint.prototype.open = function(position, data, options) {};
  * 
  * Объект хотспотного слоя.
  * 
+ * @constructor
+ * @implements {ymaps.IHotspotLayerObject}
+ * 
  * @param {ymaps.IShape} shape Фигура активной области.
  * @param {Object} feature Описание объекта {@see GeoObject}.
  * @param {Object} options Опции объекта.
- * @constructor
- * @implements {ymaps.IHotspotLayerObject}
  */
 ymaps.hotspot.layer.Object = function(shape, feature, options) {};
 
@@ -4119,12 +4254,13 @@ ymaps.hotspot.layer.Object = function(shape, feature, options) {};
  * 
  * Слой активных областей.
  * 
- * @param {ymaps.IHotspotObjectSource} objectSource Источник объектов слоя.
- * @param {Object=} options Опции слоя.
- *                          Опции для балунов Balloon и хинтов Hint хотспотного слоя нужно указывать с префиксами 'balloon' и 'hint'.
  * @constructor
  * @implements {ymaps.IChildOnMap}
  * @implements {ymaps.ICustomizable}
+ * 
+ * @param {ymaps.IHotspotObjectSource} objectSource Источник объектов слоя.
+ * @param {Object=} options Опции слоя.
+ *                          Опции для балунов Balloon и хинтов Hint хотспотного слоя нужно указывать с префиксами 'balloon' и 'hint'.
  */
 ymaps.hotspot.Layer = function(objectSource, options) {};
 
@@ -4193,8 +4329,10 @@ ymaps.hotspot.Layer.prototype.hint;
  *     'default#silent' - объект не генерирует DOM-события, но прокидывает их на карту.
  * 
  * 
+ * 
+ * @type {ymaps.util.Storage}
  */
-ymaps.interactivityModel.storage = function() {};
+ymaps.interactivityModel.storage;
 
 /**
  * 
@@ -4203,6 +4341,9 @@ ymaps.interactivityModel.storage = function() {};
  * 
  * Стандартная реализация интерфейса IHotspotObjectSource.
  * Работает со стандартным форматом ответа сервера.
+ * 
+ * @constructor
+ * @implements {ymaps.IHotspotObjectSource}
  * 
  * @param {String|Function} tileUrlTemplate Шаблон URL данных, соответствующих тайлу. Поддерживаются
  *                                          специальные конструкции и возможность использования функции по аналогии с Layer.
@@ -4217,8 +4358,6 @@ ymaps.interactivityModel.storage = function() {};
  *                                           'callback%test' =&gt; 'callback_test'
  *                                       
  * @param {Object=} options Опции источника данных.
- * @constructor
- * @implements {ymaps.IHotspotObjectSource}
  */
 ymaps.hotspot.ObjectSource = function(tileUrlTemplate, keyTemplate, options) {};
 
@@ -4288,8 +4427,10 @@ ymaps.hotspot.ObjectSource.prototype.setTileUrlTemplate = function(template) {};
  *             Экземпляр класса  util.Storage
  * Хранилище слоев.
  * 
+ * 
+ * @type {ymaps.util.Storage}
  */
-ymaps.layer.storage = function() {};
+ymaps.layer.storage;
 
 /**
  * 
@@ -4299,10 +4440,11 @@ ymaps.layer.storage = function() {};
  * Картиночный canvas-тайл. Умеет отрисовывать указанное изображение
  * через метод drawImage у 2d контекста canvas-элемента.
  * 
- * @param {String} url URL изображения.
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.ICanvasTile}
+ * 
+ * @param {String} url URL изображения.
+ * @param {Object=} options Опции.
  */
 ymaps.layer.tile.CanvasTile = function(url, options) {};
 
@@ -4314,10 +4456,11 @@ ymaps.layer.tile.CanvasTile = function(url, options) {};
  * Картиночный DOM-тайл. Умеет отрисовывать указанное изображение
  * через css свойство background у DOM-элемента.
  * 
- * @param {String} url URL изображения.
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IDomTile}
+ * 
+ * @param {String} url URL изображения.
+ * @param {Object=} options Опции.
  */
 ymaps.layer.tile.DomTile = function(url, options) {};
 
@@ -4328,10 +4471,11 @@ ymaps.layer.tile.DomTile = function(url, options) {};
  * 
  * Контейнер тайлов на canvas
  * 
- * @param {ymaps.ILayer} layer Слой.
- * @param {Object=} options Опции контейнера.
  * @constructor
  * @implements {ymaps.IChildOnMap}
+ * 
+ * @param {ymaps.ILayer} layer Слой.
+ * @param {Object=} options Опции контейнера.
  */
 ymaps.layer.tileContainer.CanvasContainer = function(layer, options) {};
 
@@ -4357,10 +4501,11 @@ ymaps.layer.tileContainer.CanvasContainer.prototype.getTile = function(tileNumbe
  * 
  * Контейнер тайлов типа IDomTile
  * 
- * @param {ymaps.ILayer} layer Слой.
- * @param {Object=} options Опции контейнера.
  * @constructor
  * @implements {ymaps.IChildOnMap}
+ * 
+ * @param {ymaps.ILayer} layer Слой.
+ * @param {Object=} options Опции контейнера.
  */
 ymaps.layer.tileContainer.DomContainer = function(layer, options) {};
 
@@ -4386,15 +4531,16 @@ ymaps.layer.tileContainer.DomContainer.prototype.getTile = function(tileNumber, 
  * 
  * Тайловый слой. Позволяет отображать на карте подложку, состоящую из тайлов.
  * 
+ * @constructor
+ * @implements {ymaps.ILayer}
+ * @implements {ymaps.IParentOnMap}
+ * @implements {ymaps.IPositioningContext}
+ * 
  * @param {String|Function} tileUrlTemplate Строковый шаблон URL тайла,
  *                                          либо функция, которая генерирует URL тайла.
  *                                          Для строкового шаблона поддерживается подстановка:
  *                                          
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.ILayer}
- * @implements {ymaps.IParentOnMap}
- * @implements {ymaps.IPositioningContext}
  */
 ymaps.Layer = function(tileUrlTemplate, options) {};
 
@@ -4472,6 +4618,7 @@ ymaps.Layer.prototype.update = function(updateBounds) {};
  * @constructor
  * @implements {ymaps.ILayer}
  * @implements {ymaps.IMapObjectCollection}
+ * 
  */
 ymaps.LayerCollection = function() {};
 
@@ -4526,9 +4673,10 @@ ymaps.LayerCollection.prototype.remove = function(child) {};
  * 
  * Класс для создания макетов, содержащих картинку.
  * 
- * @param {ymaps.ILayout} data Данные макета.
  * @constructor
  * @implements {ymaps.ILayout}
+ * 
+ * @param {ymaps.ILayout} data Данные макета.
  */
 ymaps.layout.Image = function(data) {};
 
@@ -4539,9 +4687,10 @@ ymaps.layout.Image = function(data) {};
  * 
  * Класс для создания макетов, состоящих из картинки и содержимого.
  * 
- * @param {ymaps.ILayout} data Данные макета.
  * @constructor
  * @extends {ymaps.layout.Image}
+ * 
+ * @param {ymaps.ILayout} data Данные макета.
  */
 ymaps.layout.ImageWithContent = function(data) {};
 
@@ -4551,8 +4700,10 @@ ymaps.layout.ImageWithContent = function(data) {};
  *             Экземпляр класса  util.AsyncStorage
  * Хранилище классов лейаутов.
  * 
+ * 
+ * @type {ymaps.util.AsyncStorage}
  */
-ymaps.layout.storage = function() {};
+ymaps.layout.storage;
 
 /**
  * 
@@ -4564,9 +4715,10 @@ ymaps.layout.storage = function() {};
  * 
  * См.: templateLayoutFactory 
  * 
- * @param {Object} data Набор разнородных данных, на основе которых строится макет.
  * @constructor
  * @implements {ymaps.ILayout}
+ * 
+ * @param {Object} data Набор разнородных данных, на основе которых строится макет.
  */
 ymaps.layout.templateBased.Base = function(data) {};
 
@@ -4602,6 +4754,12 @@ ymaps.layout.templateBased.Base.prototype.rebuild = function() {};
  * Описание формата соответствует формату добавляемых в ObjectManager объектов ObjectManager.add.
  * Обратите внимание, что у объектов, отрисованных на карте через данный менеджер, нельзя включать режимы редактирования и перетаскивания.
  * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * @implements {ymaps.IGeoObject}
+ * @implements {ymaps.IParentOnMap}
+ * 
  * @param {String} urlTemplate Шаблон URL данных. Поддерживаются
  *                             специальные конструкции по аналогии с Layer.
  *                             Также поддерживаются подстановки:
@@ -4624,11 +4782,6 @@ ymaps.layout.templateBased.Base.prototype.rebuild = function() {};
  *                                  Список опций указан в описании класса Placemark.
  *                              
  *                          
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * @implements {ymaps.IGeoObject}
- * @implements {ymaps.IParentOnMap}
  */
 ymaps.LoadingObjectManager = function(urlTemplate, options) {};
 
@@ -4694,6 +4847,7 @@ ymaps.LoadingObjectManager.prototype.objects;
  * 
  * @constructor
  * @implements {ymaps.IMapAction}
+ * 
  */
 ymaps.map.action.Continuous = function() {};
 
@@ -4717,6 +4871,9 @@ ymaps.map.action.Continuous.prototype.tick = function(tick) {};
  * 
  * Класс для создания и управления картой.
  * 
+ * @constructor
+ * @implements {ymaps.IDomEventEmitter}
+ * 
  * @param {Object|String} element Ссылка на HTML-элемент, в котором размещается карта, или идентификатор этого HTML-элемента.
  * @param {Object} state Параметры карты.
  * @param {Object=} options Опции карты. Через опции карты можно задавать настройки как самой карты,
@@ -4730,8 +4887,6 @@ ymaps.map.action.Continuous.prototype.tick = function(tick) {};
  *                              опции слоев хотспотов с префиксом hotspotLayer;
  *                          
  *                          Опции, которые трактует непосредственно сама карта, перечислены ниже.
- * @constructor
- * @implements {ymaps.IDomEventEmitter}
  */
 ymaps.Map = function(element, state, options) {};
 
@@ -4972,9 +5127,10 @@ ymaps.Map.prototype.zoomRange;
  * Простое движение карты.
  * Движение выполняется сразу после передачи его в map.action.Manager.
  * 
- * @param {Object} tick Параметры движения.
  * @constructor
  * @implements {ymaps.IMapAction}
+ * 
+ * @param {Object} tick Параметры движения.
  */
 ymaps.map.action.Single = function(tick) {};
 
@@ -4996,9 +5152,10 @@ ymaps.map.action.Single.prototype.isActive = function() {};
  * 
  * См.: Map.action 
  * 
- * @param {ymaps.Map} map Карта.
  * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {ymaps.Map} map Карта.
  */
 ymaps.map.action.Manager = function(map) {};
 
@@ -5053,7 +5210,7 @@ ymaps.map.action.Manager.prototype.stop = function() {};
  * Методы 
  * 
  */
-ymaps.map.addon.balloon = function() {};
+ymaps.map.addon.balloon = {};
 
 
 /**
@@ -5078,7 +5235,7 @@ ymaps.map.addon.balloon.get = function() {};
  * Методы 
  * 
  */
-ymaps.map.addon.hint = function() {};
+ymaps.map.addon.hint = {};
 
 
 /**
@@ -5097,9 +5254,10 @@ ymaps.map.addon.hint.get = function() {};
  * 
  * См.: Balloon Map.balloon 
  * 
- * @param {ymaps.Map} map Ссылка на объект карты.
  * @constructor
  * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {ymaps.Map} map Ссылка на объект карты.
  */
 ymaps.map.Balloon = function(map) {};
 
@@ -5113,6 +5271,11 @@ ymaps.map.Balloon = function(map) {};
  * Не инстанцируйте экземпляры этого класса без необходимости
  * 
  * См.: Map.behaviors 
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * @implements {ymaps.IParentOnMap}
  * 
  * @param {ymaps.Map} map Карта.
  * @param {String|Array.<String>=} behaviors Список поведений карты, включенных
@@ -5129,10 +5292,6 @@ ymaps.map.Balloon = function(map) {};
  *                              опции поведения behavior.LeftMouseButtonMagnifier, с префиксом leftMouseButtonMagnifier;
  *                              опции поведения behavior.Ruler с префиксом ruler.
  *                          
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * @implements {ymaps.IParentOnMap}
  */
 ymaps.map.behavior.Manager = function(map, behaviors, options) {};
 
@@ -5175,9 +5334,10 @@ ymaps.map.behavior.Manager.prototype.isEnabled = function(behaviorName) {};
  * 
  * См.: Map.container 
  * 
- * @param {String|HTMLElement} parentElement HTML-элемент, в котором будет создана карта или его id.
  * @constructor
  * @implements {ymaps.IDomEventEmitter}
+ * 
+ * @param {String|HTMLElement} parentElement HTML-элемент, в котором будет создана карта или его id.
  */
 ymaps.map.Container = function(parentElement) {};
 
@@ -5231,8 +5391,9 @@ ymaps.map.Container.prototype.isFullscreen = function() {};
  * 
  * См.: Map.converter 
  * 
- * @param {ymaps.Map} map Ссылка на карту.
  * @constructor
+ * 
+ * @param {ymaps.Map} map Ссылка на карту.
  */
 ymaps.map.Converter = function(map) {};
 
@@ -5259,8 +5420,9 @@ ymaps.map.Converter.prototype.pageToGlobal = function(pagePixelPoint) {};
  * 
  * См.: Map.copyrights 
  * 
- * @param {ymaps.Map} map Карта.
  * @constructor
+ * 
+ * @param {ymaps.Map} map Карта.
  */
 ymaps.map.Copyrights = function(map) {};
 
@@ -5317,6 +5479,9 @@ ymaps.map.Copyrights.prototype.events;
  * 
  * См.: Map.geoObjects 
  * 
+ * @constructor
+ * @implements {ymaps.IGeoObjectCollection}
+ * 
  * @param {ymaps.Map} map Карта.
  * @param {Object=} options Опции коллекции геообъектов.
  *                          Через опции map.geoObjects можно задавать настройки геообъектов, добавленных на карту:
@@ -5324,8 +5489,6 @@ ymaps.map.Copyrights.prototype.events;
  *                              опции кластеризаторов с префиксом clusterer;
  *                              опции кластеров с префиксом cluster.
  *                          
- * @constructor
- * @implements {ymaps.IGeoObjectCollection}
  */
 ymaps.map.GeoObjects = function(map, options) {};
 
@@ -5423,9 +5586,10 @@ ymaps.map.GeoObjects.prototype.splice = function(index, number) {};
  * 
  * См.: Hint Map.hint 
  * 
- * @param {ymaps.Map} map Ссылка на объект карты.
  * @constructor
  * @implements {ymaps.IHintManager}
+ * 
+ * @param {ymaps.Map} map Ссылка на объект карты.
  */
 ymaps.map.Hint = function(map) {};
 
@@ -5438,13 +5602,14 @@ ymaps.map.Hint = function(map) {};
  * 
  * См.: Map.layers 
  * 
+ * @constructor
+ * @implements {ymaps.ILayer}
+ * @implements {ymaps.IMapObjectCollection}
+ * 
  * @param {ymaps.Map} map Карта
  * @param {Object=} options Опции слоев карты.
  *                          Через опции map.layers можно задавать настройки слоев, добавленных на карту.
  *                          Опции слоев хотспотов задаются с префиксом 'hotspotLayer'.
- * @constructor
- * @implements {ymaps.ILayer}
- * @implements {ymaps.IMapObjectCollection}
  */
 ymaps.map.layer.Manager = function(map, options) {};
 
@@ -5481,8 +5646,9 @@ ymaps.map.layer.Manager.prototype.each = function(callback, context) {};
  *         'outerHint': pane.StaticPane (zIndex: 1200) - внешний пейн хинта.
  * См.: Map.panes 
  * 
- * @param {ymaps.Map} map Карта.
  * @constructor
+ * 
+ * @param {ymaps.Map} map Карта.
  */
 ymaps.map.pane.Manager = function(map) {};
 
@@ -5542,10 +5708,11 @@ ymaps.map.pane.Manager.prototype.remove = function(pane) {};
  * 
  * См.: Map.zoomRange 
  * 
- * @param {ymaps.Map} map Карта.
- * @param {Array.<Number>} constraints Массив, содержащий минимальный и максимальный зум карты.
  * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {Array.<Number>} constraints Массив, содержащий минимальный и максимальный зум карты.
  */
 ymaps.map.ZoomRange = function(map, constraints) {};
 
@@ -5578,11 +5745,12 @@ ymaps.map.ZoomRange.prototype.getCurrent = function() {};
  *     domEvent - исходное DOM-событие (в виде объекта DomEvent), если оно имеется.
  * 
  * 
+ * @constructor
+ * @extends {ymaps.Event}
+ * 
  * @param {Object} originalEvent Данные, связанные с событием. Должны содержать поле "map" указывающее на карту,
  *                               над которой произошло событие.
  * @param {ymaps.IEvent=} sourceEvent Исходное событие.
- * @constructor
- * @extends {ymaps.Event}
  */
 ymaps.MapEvent = function(originalEvent, sourceEvent) {};
 
@@ -5590,9 +5758,10 @@ ymaps.MapEvent = function(originalEvent, sourceEvent) {};
  * 
  * Тип карты.
  * 
+ * @constructor
+ * 
  * @param {String} name Название типа.
  * @param {Array.<Function>|Array.<String>} layers Массив, содержащий конструкторы слоев или ключи.
- * @constructor
  */
 ymaps.MapType = function(name, layers) {};
 
@@ -5617,8 +5786,10 @@ ymaps.MapType.prototype.getName = function(map) {};
  * 
  * Методы 
  * 
+ * 
+ * @type {ymaps.util.Storage}
  */
-ymaps.mapType.storage = function() {};
+ymaps.mapType.storage;
 
 /**
  * 
@@ -5627,7 +5798,7 @@ ymaps.mapType.storage = function() {};
  * Информация об API.
  * 
  */
-ymaps.meta = function() {};
+ymaps.meta = {};
 
 
 /**
@@ -5698,7 +5869,7 @@ ymaps.meta.version;
  * В модульную систему можно добавлять свои собственные модули.
  * 
  */
-ymaps.modules = function() {};
+ymaps.modules;
 
 /**
  * 
@@ -5710,6 +5881,8 @@ ymaps.modules = function() {};
  *         (тип Boolean).
  * 
  * @param {String} module Модуль
+ * 
+ * @returns {Boolean}
  */
 ymaps.modules.isDefined = function(module) {};
 
@@ -5729,6 +5902,8 @@ ymaps.modules.isDefined = function(module) {};
  *                                    Порядок аргументов будет соответствовать порядку в массиве modules.
  * @param {Function=} errorCallback Функция, которая будет вызвана в случае ошибки.
  * @param {Object=} context Контекст исполнения функции обратного вызова.
+ * 
+ * @returns {ymaps.vow.Promise}
  */
 ymaps.modules.require = function(modules, successCallback, errorCallback, context) {};
 
@@ -5737,8 +5912,9 @@ ymaps.modules.require = function(modules, successCallback, errorCallback, contex
  * Объект, отслеживающий изменения определенных полей данных на заданном менеджере данных.
  * Также может использоваться для отслеживания изменений опций.
  * 
- * @param {ymaps.IDataManager|ymaps.IOptionManager} dataManager Менеджер данных.
  * @constructor
+ * 
+ * @param {ymaps.IDataManager|ymaps.IOptionManager} dataManager Менеджер данных.
  */
 ymaps.Monitor = function(dataManager) {};
 
@@ -5788,7 +5964,9 @@ ymaps.Monitor.prototype.removeAll = function() {};
  * Отображение пути автомобильного мультимаршрута. Единичный маршрут может содержать
  * несколько путей, каждый путь соединяет две путевые точки.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.driving.Path = function() {};
 
@@ -5796,7 +5974,7 @@ ymaps.multiRouter.driving.Path = function() {};
 /**
  * @return {ymaps.GeoObjectCollection}
  */
-ymaps.multiRouter.driving.Path.getSegments = function() {};
+ymaps.multiRouter.driving.Path.prototype.getSegments = function() {};
 
 
 /**
@@ -5804,7 +5982,7 @@ ymaps.multiRouter.driving.Path.getSegments = function() {};
  * 
  * @type {ymaps.multiRouter.driving.PathModel}
  */
-ymaps.multiRouter.driving.Path.model;
+ymaps.multiRouter.driving.Path.prototype.model;
 
 
 /**
@@ -5828,7 +6006,7 @@ ymaps.multiRouter.driving.Path.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.driving.Path.properties;
+ymaps.multiRouter.driving.Path.prototype.properties;
 
 /**
  * 
@@ -5840,32 +6018,34 @@ ymaps.multiRouter.driving.Path.properties;
  * Модель данных пути автомобильного маршрута. Единичный маршрут может содержать
  * несколько путей, каждый путь соединяет две путевые точки.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.driving.PathModel = function() {};
 
 
 /**
  */
-ymaps.multiRouter.driving.PathModel.destroy = function() {};
+ymaps.multiRouter.driving.PathModel.prototype.destroy = function() {};
 
 
 /**
  * @return {Array.<ymaps.multiRouter.driving.SegmentModel>}
  */
-ymaps.multiRouter.driving.PathModel.getSegments = function() {};
+ymaps.multiRouter.driving.PathModel.prototype.getSegments = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.multiRouter.driving.PathModel.getType = function() {};
+ymaps.multiRouter.driving.PathModel.prototype.getType = function() {};
 
 
 /**
  * @param {Object} pathJson JSON-данные.
  */
-ymaps.multiRouter.driving.PathModel.update = function(pathJson) {};
+ymaps.multiRouter.driving.PathModel.prototype.update = function(pathJson) {};
 
 
 /**
@@ -5889,7 +6069,7 @@ ymaps.multiRouter.driving.PathModel.update = function(pathJson) {};
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.driving.PathModel.properties;
+ymaps.multiRouter.driving.PathModel.prototype.properties;
 
 
 /**
@@ -5897,7 +6077,7 @@ ymaps.multiRouter.driving.PathModel.properties;
  * 
  * @type {ymaps.multiRouter.driving.RouteModel}
  */
-ymaps.multiRouter.driving.PathModel.route;
+ymaps.multiRouter.driving.PathModel.prototype.route;
 
 /**
  * 
@@ -5909,7 +6089,9 @@ ymaps.multiRouter.driving.PathModel.route;
  * Отображение единичного автомобильного маршрута. Мультимаршрут может состоять из
  * нескольких единичных маршрутов.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.driving.Route = function() {};
 
@@ -5917,7 +6099,7 @@ ymaps.multiRouter.driving.Route = function() {};
 /**
  * @return {ymaps.GeoObjectCollection}
  */
-ymaps.multiRouter.driving.Route.getPaths = function() {};
+ymaps.multiRouter.driving.Route.prototype.getPaths = function() {};
 
 
 /**
@@ -5925,7 +6107,7 @@ ymaps.multiRouter.driving.Route.getPaths = function() {};
  * 
  * @type {ymaps.multiRouter.driving.RouteModel}
  */
-ymaps.multiRouter.driving.Route.model;
+ymaps.multiRouter.driving.Route.prototype.model;
 
 
 /**
@@ -5948,7 +6130,7 @@ ymaps.multiRouter.driving.Route.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.driving.Route.properties;
+ymaps.multiRouter.driving.Route.prototype.properties;
 
 /**
  * 
@@ -5960,32 +6142,34 @@ ymaps.multiRouter.driving.Route.properties;
  * Модель данных единичного автомобильного маршрута. Мультимаршрут может состоять из
  * нескольких единичных маршрутов.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.driving.RouteModel = function() {};
 
 
 /**
  */
-ymaps.multiRouter.driving.RouteModel.destroy = function() {};
+ymaps.multiRouter.driving.RouteModel.prototype.destroy = function() {};
 
 
 /**
  * @return {Array.<ymaps.multiRouter.driving.PathModel>}
  */
-ymaps.multiRouter.driving.RouteModel.getPaths = function() {};
+ymaps.multiRouter.driving.RouteModel.prototype.getPaths = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.multiRouter.driving.RouteModel.getType = function() {};
+ymaps.multiRouter.driving.RouteModel.prototype.getType = function() {};
 
 
 /**
  * @param {Object} routeJson JSON-данные.
  */
-ymaps.multiRouter.driving.RouteModel.update = function(routeJson) {};
+ymaps.multiRouter.driving.RouteModel.prototype.update = function(routeJson) {};
 
 
 /**
@@ -5993,7 +6177,7 @@ ymaps.multiRouter.driving.RouteModel.update = function(routeJson) {};
  * 
  * @type {ymaps.multiRouter.MultiRouteModel}
  */
-ymaps.multiRouter.driving.RouteModel.multiRoute;
+ymaps.multiRouter.driving.RouteModel.prototype.multiRoute;
 
 
 /**
@@ -6016,7 +6200,7 @@ ymaps.multiRouter.driving.RouteModel.multiRoute;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.driving.RouteModel.properties;
+ymaps.multiRouter.driving.RouteModel.prototype.properties;
 
 /**
  * 
@@ -6028,7 +6212,9 @@ ymaps.multiRouter.driving.RouteModel.properties;
  * Отображение сегмента автомобильного маршрута.
  * Сегментом автомобильного маршрута называется часть пути от одного манёвра до другого.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.driving.Segment = function() {};
 
@@ -6038,7 +6224,7 @@ ymaps.multiRouter.driving.Segment = function() {};
  * 
  * @type {ymaps.multiRouter.driving.SegmentModel}
  */
-ymaps.multiRouter.driving.Segment.model;
+ymaps.multiRouter.driving.Segment.prototype.model;
 
 
 /**
@@ -6066,7 +6252,7 @@ ymaps.multiRouter.driving.Segment.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.driving.Segment.properties;
+ymaps.multiRouter.driving.Segment.prototype.properties;
 
 /**
  * 
@@ -6089,6 +6275,8 @@ ymaps.multiRouter.driving.Segment.properties;
  *                                   Второй аргумент будет передан в errorCallback и в promise как ошибка в запрос модуля.
  *                                   Впоследствии модуль можно будет запросить повторно.
  * @param {Object=} context Контекст исполнения функции.
+ * 
+ * @returns {ymaps.modules}
  */
 ymaps.modules.define = function(module, depends, resolveCallback, context) {};
 
@@ -6102,32 +6290,34 @@ ymaps.modules.define = function(module, depends, resolveCallback, context) {};
  * Модель данных сегмента пути автомобильного маршрута.
  * Сегментом автомобильного маршрута называется часть пути от одного манёвра до другого.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.driving.SegmentModel = function() {};
 
 
 /**
  */
-ymaps.multiRouter.driving.SegmentModel.destroy = function() {};
+ymaps.multiRouter.driving.SegmentModel.prototype.destroy = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.multiRouter.driving.SegmentModel.getType = function() {};
+ymaps.multiRouter.driving.SegmentModel.prototype.getType = function() {};
 
 
 /**
  * @return {Array.<ymaps.multiRouter.ViaPointModel>}
  */
-ymaps.multiRouter.driving.SegmentModel.getViaPoints = function() {};
+ymaps.multiRouter.driving.SegmentModel.prototype.getViaPoints = function() {};
 
 
 /**
  * @param {Object} segmentJson JSON-данные.
  */
-ymaps.multiRouter.driving.SegmentModel.update = function(segmentJson) {};
+ymaps.multiRouter.driving.SegmentModel.prototype.update = function(segmentJson) {};
 
 
 /**
@@ -6135,7 +6325,7 @@ ymaps.multiRouter.driving.SegmentModel.update = function(segmentJson) {};
  * 
  * @type {ymaps.geometry.base.LineString}
  */
-ymaps.multiRouter.driving.SegmentModel.geometry;
+ymaps.multiRouter.driving.SegmentModel.prototype.geometry;
 
 
 /**
@@ -6143,7 +6333,7 @@ ymaps.multiRouter.driving.SegmentModel.geometry;
  * 
  * @type {ymaps.multiRouter.driving.PathModel}
  */
-ymaps.multiRouter.driving.SegmentModel.path;
+ymaps.multiRouter.driving.SegmentModel.prototype.path;
 
 
 /**
@@ -6171,7 +6361,7 @@ ymaps.multiRouter.driving.SegmentModel.path;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.driving.SegmentModel.properties;
+ymaps.multiRouter.driving.SegmentModel.prototype.properties;
 
 /**
  * 
@@ -6180,13 +6370,14 @@ ymaps.multiRouter.driving.SegmentModel.properties;
  * 
  * Редактор мультимаршрута.
  * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * 
  * @param {ymaps.multiRouter.MultiRoute} multiRoute Редактируемый мультимаршрут.
  * @param {Object=} state Объект, описывающий начальное состояние редактора. Список доступных
  *                        полей смотрите в описании multiRouter.Editor.state.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
  */
 ymaps.multiRouter.Editor = function(multiRoute, state, options) {};
 
@@ -6219,8 +6410,10 @@ ymaps.multiRouter.Editor.prototype.state;
  * 
  * Аддон редактора мультимаршрута.
  * 
+ * @constructor
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.EditorAddon = function() {};
 
@@ -6228,18 +6421,18 @@ ymaps.multiRouter.EditorAddon = function() {};
 /**
  * @return {Boolean}
  */
-ymaps.multiRouter.EditorAddon.isActive = function() {};
+ymaps.multiRouter.EditorAddon.prototype.isActive = function() {};
 
 
 /**
  * @param {Object} state Начальное состояние редактора.
  */
-ymaps.multiRouter.EditorAddon.start = function(state) {};
+ymaps.multiRouter.EditorAddon.prototype.start = function(state) {};
 
 
 /**
  */
-ymaps.multiRouter.EditorAddon.stop = function() {};
+ymaps.multiRouter.EditorAddon.prototype.stop = function() {};
 
 
 /**
@@ -6247,7 +6440,7 @@ ymaps.multiRouter.EditorAddon.stop = function() {};
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.EditorAddon.state;
+ymaps.multiRouter.EditorAddon.prototype.state;
 
 /**
  * 
@@ -6259,7 +6452,9 @@ ymaps.multiRouter.EditorAddon.state;
  * Отображение пути мультимаршрута общественного транспорта. Единичный маршрут может 
  * содержать несколько путей, каждый путь соединяет две путевые точки.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.masstransit.Path = function() {};
 
@@ -6267,13 +6462,13 @@ ymaps.multiRouter.masstransit.Path = function() {};
 /**
  * @return {ymaps.GeoObjectCollection}
  */
-ymaps.multiRouter.masstransit.Path.getSegmentMarkers = function() {};
+ymaps.multiRouter.masstransit.Path.prototype.getSegmentMarkers = function() {};
 
 
 /**
  * @return {ymaps.GeoObjectCollection}
  */
-ymaps.multiRouter.masstransit.Path.getSegments = function() {};
+ymaps.multiRouter.masstransit.Path.prototype.getSegments = function() {};
 
 
 /**
@@ -6281,7 +6476,7 @@ ymaps.multiRouter.masstransit.Path.getSegments = function() {};
  * 
  * @type {ymaps.multiRouter.masstransit.PathModel}
  */
-ymaps.multiRouter.masstransit.Path.model;
+ymaps.multiRouter.masstransit.Path.prototype.model;
 
 
 /**
@@ -6303,7 +6498,7 @@ ymaps.multiRouter.masstransit.Path.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.Path.properties;
+ymaps.multiRouter.masstransit.Path.prototype.properties;
 
 /**
  * 
@@ -6315,32 +6510,34 @@ ymaps.multiRouter.masstransit.Path.properties;
  * Модель данных пути маршрута общественного транспорта. Единичный маршрут может
  * содержать несколько путей, каждый путь соединяет две путевые точки.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.masstransit.PathModel = function() {};
 
 
 /**
  */
-ymaps.multiRouter.masstransit.PathModel.destroy = function() {};
+ymaps.multiRouter.masstransit.PathModel.prototype.destroy = function() {};
 
 
 /**
  * @return {Array.<multiRouter.masstransit.SegmentModel>}
  */
-ymaps.multiRouter.masstransit.PathModel.getSegments = function() {};
+ymaps.multiRouter.masstransit.PathModel.prototype.getSegments = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.multiRouter.masstransit.PathModel.getType = function() {};
+ymaps.multiRouter.masstransit.PathModel.prototype.getType = function() {};
 
 
 /**
  * @param {Object} pathJson JSON-данные.
  */
-ymaps.multiRouter.masstransit.PathModel.update = function(pathJson) {};
+ymaps.multiRouter.masstransit.PathModel.prototype.update = function(pathJson) {};
 
 
 /**
@@ -6362,7 +6559,7 @@ ymaps.multiRouter.masstransit.PathModel.update = function(pathJson) {};
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.PathModel.properties;
+ymaps.multiRouter.masstransit.PathModel.prototype.properties;
 
 
 /**
@@ -6370,7 +6567,7 @@ ymaps.multiRouter.masstransit.PathModel.properties;
  * 
  * @type {ymaps.multiRouter.masstransit.RouteModel}
  */
-ymaps.multiRouter.masstransit.PathModel.route;
+ymaps.multiRouter.masstransit.PathModel.prototype.route;
 
 /**
  * 
@@ -6382,7 +6579,9 @@ ymaps.multiRouter.masstransit.PathModel.route;
  * Отображение единичного маршрута общественного транспорта. Мультимаршрут может состоять
  * из нескольких единичных маршрутов.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.masstransit.Route = function() {};
 
@@ -6390,7 +6589,7 @@ ymaps.multiRouter.masstransit.Route = function() {};
 /**
  * @return {ymaps.GeoObjectCollection}
  */
-ymaps.multiRouter.masstransit.Route.getPaths = function() {};
+ymaps.multiRouter.masstransit.Route.prototype.getPaths = function() {};
 
 
 /**
@@ -6398,7 +6597,7 @@ ymaps.multiRouter.masstransit.Route.getPaths = function() {};
  * 
  * @type {ymaps.multiRouter.masstransit.RouteModel}
  */
-ymaps.multiRouter.masstransit.Route.model;
+ymaps.multiRouter.masstransit.Route.prototype.model;
 
 
 /**
@@ -6418,7 +6617,7 @@ ymaps.multiRouter.masstransit.Route.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.Route.properties;
+ymaps.multiRouter.masstransit.Route.prototype.properties;
 
 /**
  * 
@@ -6430,32 +6629,34 @@ ymaps.multiRouter.masstransit.Route.properties;
  * Модель данных единичного маршрута общественного транспорта. Мультимаршрут может
  * состоять из нескольких единичных маршрутов.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.masstransit.RouteModel = function() {};
 
 
 /**
  */
-ymaps.multiRouter.masstransit.RouteModel.destroy = function() {};
+ymaps.multiRouter.masstransit.RouteModel.prototype.destroy = function() {};
 
 
 /**
  * @return {Array.<ymaps.multiRouter.masstransit.PathModel>}
  */
-ymaps.multiRouter.masstransit.RouteModel.getPaths = function() {};
+ymaps.multiRouter.masstransit.RouteModel.prototype.getPaths = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.multiRouter.masstransit.RouteModel.getType = function() {};
+ymaps.multiRouter.masstransit.RouteModel.prototype.getType = function() {};
 
 
 /**
  * @param {Object} routeJson JSON-данные.
  */
-ymaps.multiRouter.masstransit.RouteModel.update = function(routeJson) {};
+ymaps.multiRouter.masstransit.RouteModel.prototype.update = function(routeJson) {};
 
 
 /**
@@ -6463,7 +6664,7 @@ ymaps.multiRouter.masstransit.RouteModel.update = function(routeJson) {};
  * 
  * @type {ymaps.multiRouter.MultiRouteModel}
  */
-ymaps.multiRouter.masstransit.RouteModel.multiRoute;
+ymaps.multiRouter.masstransit.RouteModel.prototype.multiRoute;
 
 
 /**
@@ -6483,7 +6684,7 @@ ymaps.multiRouter.masstransit.RouteModel.multiRoute;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.RouteModel.properties;
+ymaps.multiRouter.masstransit.RouteModel.prototype.properties;
 
 /**
  * 
@@ -6494,7 +6695,9 @@ ymaps.multiRouter.masstransit.RouteModel.properties;
  * 
  * Модель данных остановки транспортного сегмента маршрута общественного транспорта.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.masstransit.StopModel = function() {};
 
@@ -6504,7 +6707,7 @@ ymaps.multiRouter.masstransit.StopModel = function() {};
  * 
  * @type {ymaps.geometry.base.Point}
  */
-ymaps.multiRouter.masstransit.StopModel.geometry;
+ymaps.multiRouter.masstransit.StopModel.prototype.geometry;
 
 
 /**
@@ -6521,7 +6724,7 @@ ymaps.multiRouter.masstransit.StopModel.geometry;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.StopModel.properties;
+ymaps.multiRouter.masstransit.StopModel.prototype.properties;
 
 
 /**
@@ -6529,7 +6732,7 @@ ymaps.multiRouter.masstransit.StopModel.properties;
  * 
  * @type {ymaps.multiRouter.masstransit.TransportSegmentModel}
  */
-ymaps.multiRouter.masstransit.StopModel.segment;
+ymaps.multiRouter.masstransit.StopModel.prototype.segment;
 
 /**
  * 
@@ -6542,7 +6745,9 @@ ymaps.multiRouter.masstransit.StopModel.segment;
  * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
  * другой.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.masstransit.TransferSegment = function() {};
 
@@ -6552,7 +6757,7 @@ ymaps.multiRouter.masstransit.TransferSegment = function() {};
  * 
  * @type {ymaps.multiRouter.masstransit.TransferSegmentModel}
  */
-ymaps.multiRouter.masstransit.TransferSegment.model;
+ymaps.multiRouter.masstransit.TransferSegment.prototype.model;
 
 
 /**
@@ -6574,7 +6779,7 @@ ymaps.multiRouter.masstransit.TransferSegment.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.TransferSegment.properties;
+ymaps.multiRouter.masstransit.TransferSegment.prototype.properties;
 
 /**
  * 
@@ -6587,7 +6792,9 @@ ymaps.multiRouter.masstransit.TransferSegment.properties;
  * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
  * другой.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.masstransit.TransferSegmentModel = function() {};
 
@@ -6595,13 +6802,13 @@ ymaps.multiRouter.masstransit.TransferSegmentModel = function() {};
 /**
  * @param {Object} segmentJson JSON-данные.
  */
-ymaps.multiRouter.masstransit.TransferSegmentModel.destroy = function(segmentJson) {};
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.destroy = function(segmentJson) {};
 
 
 /**
  * @return {String}
  */
-ymaps.multiRouter.masstransit.TransferSegmentModel.getType = function() {};
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.getType = function() {};
 
 
 /**
@@ -6609,7 +6816,7 @@ ymaps.multiRouter.masstransit.TransferSegmentModel.getType = function() {};
  * 
  * @type {ymaps.geometry.base.LineString}
  */
-ymaps.multiRouter.masstransit.TransferSegmentModel.geometry;
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.geometry;
 
 
 /**
@@ -6617,7 +6824,7 @@ ymaps.multiRouter.masstransit.TransferSegmentModel.geometry;
  * 
  * @type {ymaps.multiRouter.masstransit.PathModel}
  */
-ymaps.multiRouter.masstransit.TransferSegmentModel.path;
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.path;
 
 
 /**
@@ -6639,7 +6846,7 @@ ymaps.multiRouter.masstransit.TransferSegmentModel.path;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.TransferSegmentModel.properties;
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.properties;
 
 /**
  * 
@@ -6647,6 +6854,7 @@ ymaps.multiRouter.masstransit.TransferSegmentModel.properties;
  * транспортного средства в транспортном сегменте маршрута общественного транспорта.
  * 
  * @constructor
+ * 
  */
 ymaps.multiRouter.masstransit.TransportProperties = function() {};
 
@@ -6694,7 +6902,9 @@ ymaps.multiRouter.masstransit.TransportProperties.prototype.type;
  * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
  * другой.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.masstransit.TransportSegment = function() {};
 
@@ -6704,7 +6914,7 @@ ymaps.multiRouter.masstransit.TransportSegment = function() {};
  * 
  * @type {ymaps.multiRouter.masstransit.TransportSegmentModel}
  */
-ymaps.multiRouter.masstransit.TransportSegment.model;
+ymaps.multiRouter.masstransit.TransportSegment.prototype.model;
 
 
 /**
@@ -6730,7 +6940,7 @@ ymaps.multiRouter.masstransit.TransportSegment.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.TransportSegment.properties;
+ymaps.multiRouter.masstransit.TransportSegment.prototype.properties;
 
 /**
  * 
@@ -6743,32 +6953,34 @@ ymaps.multiRouter.masstransit.TransportSegment.properties;
  * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
  * другой.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.masstransit.TransportSegmentModel = function() {};
 
 
 /**
  */
-ymaps.multiRouter.masstransit.TransportSegmentModel.destroy = function() {};
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.destroy = function() {};
 
 
 /**
  * @return {Array.<ymaps.multiRouter.masstransit.StopModel>}
  */
-ymaps.multiRouter.masstransit.TransportSegmentModel.getStops = function() {};
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.getStops = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.multiRouter.masstransit.TransportSegmentModel.getType = function() {};
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.getType = function() {};
 
 
 /**
  * @param {Object} segmentJson JSON-данные.
  */
-ymaps.multiRouter.masstransit.TransportSegmentModel.update = function(segmentJson) {};
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.update = function(segmentJson) {};
 
 
 /**
@@ -6776,7 +6988,7 @@ ymaps.multiRouter.masstransit.TransportSegmentModel.update = function(segmentJso
  * 
  * @type {ymaps.geometry.base.LineString}
  */
-ymaps.multiRouter.masstransit.TransportSegmentModel.geometry;
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.geometry;
 
 
 /**
@@ -6784,7 +6996,7 @@ ymaps.multiRouter.masstransit.TransportSegmentModel.geometry;
  * 
  * @type {ymaps.multiRouter.masstransit.PathModel}
  */
-ymaps.multiRouter.masstransit.TransportSegmentModel.path;
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.path;
 
 
 /**
@@ -6810,7 +7022,7 @@ ymaps.multiRouter.masstransit.TransportSegmentModel.path;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.TransportSegmentModel.properties;
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.properties;
 
 /**
  * 
@@ -6823,7 +7035,9 @@ ymaps.multiRouter.masstransit.TransportSegmentModel.properties;
  * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
  * другой.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.masstransit.WalkSegment = function() {};
 
@@ -6833,7 +7047,7 @@ ymaps.multiRouter.masstransit.WalkSegment = function() {};
  * 
  * @type {ymaps.multiRouter.masstransit.WalkSegmentModel}
  */
-ymaps.multiRouter.masstransit.WalkSegment.model;
+ymaps.multiRouter.masstransit.WalkSegment.prototype.model;
 
 
 /**
@@ -6855,7 +7069,7 @@ ymaps.multiRouter.masstransit.WalkSegment.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.WalkSegment.properties;
+ymaps.multiRouter.masstransit.WalkSegment.prototype.properties;
 
 /**
  * 
@@ -6868,20 +7082,22 @@ ymaps.multiRouter.masstransit.WalkSegment.properties;
  * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
  * другой.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.masstransit.WalkSegmentModel = function() {};
 
 
 /**
  */
-ymaps.multiRouter.masstransit.WalkSegmentModel.destroy = function() {};
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.destroy = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.multiRouter.masstransit.WalkSegmentModel.getType = function() {};
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.getType = function() {};
 
 
 /**
@@ -6889,7 +7105,7 @@ ymaps.multiRouter.masstransit.WalkSegmentModel.getType = function() {};
  * 
  * @type {ymaps.geometry.base.LineString}
  */
-ymaps.multiRouter.masstransit.WalkSegmentModel.geometry;
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.geometry;
 
 
 /**
@@ -6897,7 +7113,7 @@ ymaps.multiRouter.masstransit.WalkSegmentModel.geometry;
  * 
  * @type {ymaps.multiRouter.masstransit.PathModel}
  */
-ymaps.multiRouter.masstransit.WalkSegmentModel.path;
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.path;
 
 
 /**
@@ -6919,7 +7135,7 @@ ymaps.multiRouter.masstransit.WalkSegmentModel.path;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.masstransit.WalkSegmentModel.properties;
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.properties;
 
 /**
  * 
@@ -6928,6 +7144,9 @@ ymaps.multiRouter.masstransit.WalkSegmentModel.properties;
  * 
  * Мультимаршрут на карте. Позволяет отображать на карте маршрут и несколько альтернатив
  * к нему. Предоставляет интерфейс выбора активного маршрута.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
  * 
  * @param {ymaps.multiRouter.MultiRouteModel|ymaps.IMultiRouteModelJson} model Модель данных мультимаршрута,
  *                                                                             либо объект описания модели. В случае передачи объекта описания, модель на его основе
@@ -6961,8 +7180,6 @@ ymaps.multiRouter.masstransit.WalkSegmentModel.properties;
  *                              routeTransportSegment - опции линий транспортных сегментов маршрута;
  *                          
  *                          Также данные префиксы доступны в "routeActive*" варианте.
- * @constructor
- * @implements {ymaps.IGeoObject}
  */
 ymaps.multiRouter.MultiRoute = function(model, options) {};
 
@@ -7032,10 +7249,11 @@ ymaps.multiRouter.MultiRoute.prototype.model;
  * 
  * Модель данных мультимаршрута.
  * 
- * @param {Array.<ymaps.IMultiRouteReferencePoint>} referencePoints Описание опорных точек мультимаршрута.
- * @param {ymaps.IMultiRouteParams=} params Параметры маршрутизации.
  * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {Array.<ymaps.IMultiRouteReferencePoint>} referencePoints Описание опорных точек мультимаршрута.
+ * @param {ymaps.IMultiRouteParams=} params Параметры маршрутизации.
  */
 ymaps.multiRouter.MultiRouteModel = function(referencePoints, params) {};
 
@@ -7134,38 +7352,40 @@ ymaps.multiRouter.MultiRouteModel.prototype.properties;
  * остановку. Таким образом, при прохождении через транзитную точку, сегмент пути маршрута не
  * прерывается.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.ViaPointModel = function() {};
 
 
 /**
  */
-ymaps.multiRouter.ViaPointModel.destroy = function() {};
+ymaps.multiRouter.ViaPointModel.prototype.destroy = function() {};
 
 
 /**
  * @return {Object}
  */
-ymaps.multiRouter.ViaPointModel.getReferencePoint = function() {};
+ymaps.multiRouter.ViaPointModel.prototype.getReferencePoint = function() {};
 
 
 /**
  * @return {number}
  */
-ymaps.multiRouter.ViaPointModel.getReferencePointIndex = function() {};
+ymaps.multiRouter.ViaPointModel.prototype.getReferencePointIndex = function() {};
 
 
 /**
  * @param {Object} referencePoint Описание опорной точки.
  */
-ymaps.multiRouter.ViaPointModel.setReferencePoint = function(referencePoint) {};
+ymaps.multiRouter.ViaPointModel.prototype.setReferencePoint = function(referencePoint) {};
 
 
 /**
  * @param {Object} viaPointJson JSON-данные.
  */
-ymaps.multiRouter.ViaPointModel.update = function(viaPointJson) {};
+ymaps.multiRouter.ViaPointModel.prototype.update = function(viaPointJson) {};
 
 
 /**
@@ -7173,7 +7393,7 @@ ymaps.multiRouter.ViaPointModel.update = function(viaPointJson) {};
  * 
  * @type {ymaps.geometry.base.Point}
  */
-ymaps.multiRouter.ViaPointModel.geometry;
+ymaps.multiRouter.ViaPointModel.prototype.geometry;
 
 
 /**
@@ -7181,7 +7401,7 @@ ymaps.multiRouter.ViaPointModel.geometry;
  * 
  * @type {ymaps.multiRouter.MultiRouteModel}
  */
-ymaps.multiRouter.ViaPointModel.multiRoute;
+ymaps.multiRouter.ViaPointModel.prototype.multiRoute;
 
 
 /**
@@ -7195,7 +7415,7 @@ ymaps.multiRouter.ViaPointModel.multiRoute;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.ViaPointModel.properties;
+ymaps.multiRouter.ViaPointModel.prototype.properties;
 
 /**
  * 
@@ -7207,7 +7427,9 @@ ymaps.multiRouter.ViaPointModel.properties;
  * Отображение транзитной точки. Транзитные точки не подразумевают остановку. Таким
  * образом, при прохождении через транзитную точку, сегмент пути маршрута не прерывается.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.ViaPoint = function() {};
 
@@ -7217,7 +7439,7 @@ ymaps.multiRouter.ViaPoint = function() {};
  * 
  * @type {ymaps.multiRouter.ViaPointModel}
  */
-ymaps.multiRouter.ViaPoint.model;
+ymaps.multiRouter.ViaPoint.prototype.model;
 
 
 /**
@@ -7231,7 +7453,7 @@ ymaps.multiRouter.ViaPoint.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.ViaPoint.properties;
+ymaps.multiRouter.ViaPoint.prototype.properties;
 
 /**
  * 
@@ -7243,7 +7465,9 @@ ymaps.multiRouter.ViaPoint.properties;
  * Отображение путевой точки. Путевые точки подразумевают остановку и делят маршрут на
  * т.н. пути.
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.multiRouter.WayPoint = function() {};
 
@@ -7253,7 +7477,7 @@ ymaps.multiRouter.WayPoint = function() {};
  * 
  * @type {ymaps.multiRouter.WayPointModel}
  */
-ymaps.multiRouter.WayPoint.model;
+ymaps.multiRouter.WayPoint.prototype.model;
 
 
 /**
@@ -7269,7 +7493,7 @@ ymaps.multiRouter.WayPoint.model;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.WayPoint.properties;
+ymaps.multiRouter.WayPoint.prototype.properties;
 
 /**
  * 
@@ -7281,38 +7505,40 @@ ymaps.multiRouter.WayPoint.properties;
  * Модель данных путевой точки мультимаршрута. Путевые точки подразумевают остановку и
  * делят маршрут на т.н. пути.
  * 
+ * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.multiRouter.WayPointModel = function() {};
 
 
 /**
  */
-ymaps.multiRouter.WayPointModel.destroy = function() {};
+ymaps.multiRouter.WayPointModel.prototype.destroy = function() {};
 
 
 /**
  * @return {Object}
  */
-ymaps.multiRouter.WayPointModel.getReferencePoint = function() {};
+ymaps.multiRouter.WayPointModel.prototype.getReferencePoint = function() {};
 
 
 /**
  * @return {number}
  */
-ymaps.multiRouter.WayPointModel.getReferencePointIndex = function() {};
+ymaps.multiRouter.WayPointModel.prototype.getReferencePointIndex = function() {};
 
 
 /**
  * @param {Object} referencePoint Описание опорной точки.
  */
-ymaps.multiRouter.WayPointModel.setReferencePoint = function(referencePoint) {};
+ymaps.multiRouter.WayPointModel.prototype.setReferencePoint = function(referencePoint) {};
 
 
 /**
  * @param {Object} wayPointJson JSON-данные.
  */
-ymaps.multiRouter.WayPointModel.update = function(wayPointJson) {};
+ymaps.multiRouter.WayPointModel.prototype.update = function(wayPointJson) {};
 
 
 /**
@@ -7320,7 +7546,7 @@ ymaps.multiRouter.WayPointModel.update = function(wayPointJson) {};
  * 
  * @type {ymaps.geometry.base.Point}
  */
-ymaps.multiRouter.WayPointModel.geometry;
+ymaps.multiRouter.WayPointModel.prototype.geometry;
 
 
 /**
@@ -7328,7 +7554,7 @@ ymaps.multiRouter.WayPointModel.geometry;
  * 
  * @type {ymaps.multiRouter.MultiRouteModel}
  */
-ymaps.multiRouter.WayPointModel.multiRoute;
+ymaps.multiRouter.WayPointModel.prototype.multiRoute;
 
 
 /**
@@ -7344,7 +7570,7 @@ ymaps.multiRouter.WayPointModel.multiRoute;
  * 
  * @type {ymaps.data.Manager}
  */
-ymaps.multiRouter.WayPointModel.properties;
+ymaps.multiRouter.WayPointModel.prototype.properties;
 
 /**
  * 
@@ -7354,6 +7580,12 @@ ymaps.multiRouter.WayPointModel.properties;
  * Менеджер объектов.
  * Позволяет оптимально отображать, кластеризовать и управлять видимостью объектов.
  * Обратите внимание, что у объектов, отрисованных на карте через данный менеджер, нельзя включать режимы редактирования и перетаскивания.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * @implements {ymaps.IGeoObject}
+ * @implements {ymaps.IParentOnMap}
  * 
  * @param {Object=} options Опции.
  *                          
@@ -7368,11 +7600,6 @@ ymaps.multiRouter.WayPointModel.properties;
  *                                  Список опций указан в описании класса Placemark.
  *                              
  *                          
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * @implements {ymaps.IGeoObject}
- * @implements {ymaps.IParentOnMap}
  */
 ymaps.ObjectManager = function(options) {};
 
@@ -7487,9 +7714,10 @@ ymaps.ObjectManager.prototype.objects;
  * 
  * См.: Balloon 
  * 
- * @param {IReadOnlyymaps.Collection} collection Коллекция объектов.
  * @constructor
  * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {IReadOnlyymaps.Collection} collection Коллекция объектов.
  */
 ymaps.objectManager.Balloon = function(collection) {};
 
@@ -7542,9 +7770,10 @@ ymaps.objectManager.Balloon.prototype.setData = function(objectData) {};
  * 
  * См.: Hint 
  * 
- * @param {IReadOnlyymaps.Collection} collection Объектный слой.
  * @constructor
  * @implements {ymaps.IHintManager}
+ * 
+ * @param {IReadOnlyymaps.Collection} collection Объектный слой.
  */
 ymaps.objectManager.Hint = function(collection) {};
 
@@ -7605,6 +7834,7 @@ ymaps.objectManager.Hint.prototype.setData = function(objectData) {};
  * @constructor
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.objectManager.ClusterCollection = function() {};
 
@@ -7715,6 +7945,7 @@ ymaps.objectManager.ClusterCollection.prototype.state;
  * @constructor
  * @implements {ymaps.ICollection}
  * @implements {ymaps.ICustomizable}
+ * 
  */
 ymaps.objectManager.ObjectCollection = function() {};
 
@@ -7833,6 +8064,7 @@ ymaps.objectManager.ObjectCollection.prototype.overlays;
  * @constructor
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.objectManager.OverlayCollection = function() {};
 
@@ -7891,11 +8123,12 @@ ymaps.objectManager.OverlayCollection.prototype.getLength = function() {};
  * "preset", после чего происходит обращение к родителю, если он есть.
  * Для отслеживания изменений некоторых опций можно использовать Monitor.
  * 
+ * @constructor
+ * @implements {ymaps.IOptionManager}
+ * 
  * @param {Object=} options Хэш опций.
  * @param {ymaps.IOptionManager=} parent Родительский менеджер опций.
  * @param {String=} name Имя менеджера опций.
- * @constructor
- * @implements {ymaps.IOptionManager}
  */
 ymaps.option.Manager = function(options, parent, name) {};
 
@@ -8070,8 +8303,10 @@ ymaps.option.Manager.prototype.unsetAll = function() {};
  *               'islands#invertedOliveClusterIcons'
  *  
  * 
+ * 
+ * @type {ymaps.util.Storage}
  */
-ymaps.option.presetStorage = function() {};
+ymaps.option.presetStorage;
 
 /**
  * 
@@ -8082,10 +8317,11 @@ ymaps.option.presetStorage = function() {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * 
  * @param {ymaps.IPixelCircleGeometry} geometry Геометрия.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
  */
 ymaps.overlay.hotspot.Circle = function(geometry, data, options) {};
 
@@ -8098,11 +8334,12 @@ ymaps.overlay.hotspot.Circle = function(geometry, data, options) {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelCircleGeometry} geometry Пиксельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.Circle = function(geometry, data, options) {};
 
@@ -8115,10 +8352,11 @@ ymaps.overlay.Circle = function(geometry, data, options) {};
  * По умолчанию оверлеи не добавлены в package.full (стандартный набор модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * 
  * @param {ymaps.IPixelPointGeometry} geometry Пиксельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
  */
 ymaps.overlay.hotspot.Placemark = function(geometry, data, options) {};
 
@@ -8131,10 +8369,11 @@ ymaps.overlay.hotspot.Placemark = function(geometry, data, options) {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * 
  * @param {ymaps.IPixelPolygonGeometry} geometry Геометрия.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
  */
 ymaps.overlay.hotspot.Polygon = function(geometry, data, options) {};
 
@@ -8147,10 +8386,11 @@ ymaps.overlay.hotspot.Polygon = function(geometry, data, options) {};
  * По умолчанию оверлеи не добавлены в package.full (стандартный набор модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * 
  * @param {ymaps.IPixelLineStringGeometry} geometry Пикcельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
  */
 ymaps.overlay.hotspot.Polyline = function(geometry, data, options) {};
 
@@ -8163,10 +8403,11 @@ ymaps.overlay.hotspot.Polyline = function(geometry, data, options) {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * 
  * @param {ymaps.IPixelRectangleGeometry} geometry Пиксельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
  */
 ymaps.overlay.hotspot.Rectangle = function(geometry, data, options) {};
 
@@ -8179,11 +8420,12 @@ ymaps.overlay.hotspot.Rectangle = function(geometry, data, options) {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelPointGeometry} geometry Пиксельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.html.Balloon = function(geometry, data, options) {};
 
@@ -8262,11 +8504,12 @@ ymaps.overlay.html.Balloon.prototype.isEmpty = function() {};
  * По умолчанию оверлеи не добавлены в package.full (стандартный набор модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelPointGeometry} geometry Пикcельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.html.Hint = function(geometry, data, options) {};
 
@@ -8303,11 +8546,12 @@ ymaps.overlay.html.Hint.prototype.isEmpty = function() {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelPointGeometry} geometry Пикcельная геометрия.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.html.Placemark = function(geometry, data, options) {};
 
@@ -8374,12 +8618,13 @@ ymaps.overlay.html.Placemark.prototype.getShadowLayoutSync = function() {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelRectangleGeometry} geometry Пикcельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции оверлея. Используя этот параметр можно задавать как опции самого оверлея,
  *                          так и опции его макета.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.html.Rectangle = function(geometry, data, options) {};
 
@@ -8410,11 +8655,12 @@ ymaps.overlay.html.Rectangle.prototype.getLayoutSync = function() {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelPointGeometry} geometry Пиксельная геометрия метки.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.Pin = function(geometry, data, options) {};
 
@@ -8427,11 +8673,12 @@ ymaps.overlay.Pin = function(geometry, data, options) {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelPointGeometry} geometry Пикcельная геометрия.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.Placemark = function(geometry, data, options) {};
 
@@ -8496,11 +8743,12 @@ ymaps.overlay.Placemark.prototype.getShadowLayoutSync = function() {};
  * 
  * Оверлей многоугольника.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelPolygonGeometry} geometry Пикcельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.Polygon = function(geometry, data, options) {};
 
@@ -8513,11 +8761,12 @@ ymaps.overlay.Polygon = function(geometry, data, options) {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelLineStringGeometry} geometry Пикcельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.Polyline = function(geometry, data, options) {};
 
@@ -8530,11 +8779,12 @@ ymaps.overlay.Polyline = function(geometry, data, options) {};
  * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
  * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
  * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
  * @param {ymaps.IPixelRectangleGeometry} geometry Пиксельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
- * @constructor
- * @implements {ymaps.IOverlay}
  */
 ymaps.overlay.Rectangle = function(geometry, data, options) {};
 
@@ -8566,8 +8816,10 @@ ymaps.overlay.Rectangle = function(geometry, data, options) {};
  *    'html#rectangle' - HTML-оверлей прямоугольника overlay.html.Rectangle.
  * Методы 
  * 
+ * 
+ * @type {ymaps.util.AsyncStorage}
  */
-ymaps.overlay.storage = function() {};
+ymaps.overlay.storage;
 
 /**
  * 
@@ -8576,10 +8828,11 @@ ymaps.overlay.storage = function() {};
  * 
  * Пейн событий.
  * 
- * @param {ymaps.Map} map Карта.
- * @param {Object} params Параметры.
  * @constructor
  * @implements {ymaps.IEventPane}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {Object} params Параметры.
  */
 ymaps.pane.EventsPane = function(map, params) {};
 
@@ -8590,10 +8843,11 @@ ymaps.pane.EventsPane = function(map, params) {};
  * 
  * Двигающийся пейн карты.
  * 
- * @param {ymaps.Map} map Карта.
- * @param {Object} params Параметры.
  * @constructor
  * @implements {ymaps.IContainerPane}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {Object} params Параметры.
  */
 ymaps.pane.MovablePane = function(map, params) {};
 
@@ -8604,10 +8858,11 @@ ymaps.pane.MovablePane = function(map, params) {};
  * 
  * Статичный пейн карты.
  * 
- * @param {ymaps.Map} map Карта.
- * @param {Object} params Параметры.
  * @constructor
  * @implements {ymaps.IContainerPane}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {Object} params Параметры.
  */
 ymaps.pane.StaticPane = function(map, params) {};
 
@@ -8619,6 +8874,9 @@ ymaps.pane.StaticPane = function(map, params) {};
  * Метка. Представляет собой геообъект с геометрией geometry.Point.
  * 
  * См.: GeoObject geometry.Point 
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
  * 
  * @param {Array.<Number>|Object|ymaps.IPointGeometry} geometry Координаты метки или хэш с описанием геометрии, или
  *                                                              ссылка на объект точечной геометрии.
@@ -8639,8 +8897,6 @@ ymaps.pane.StaticPane = function(map, params) {};
  *                                                Например в макете метки или макете балуна.
  * @param {Object=} options Опции метки.
  *                          
- * @constructor
- * @extends {ymaps.GeoObject}
  */
 ymaps.Placemark = function(geometry, properties, options) {};
 
@@ -8669,6 +8925,9 @@ ymaps.Placemark.prototype.geometry;
  * 
  * См.: GeoObject geometry.Polygon 
  * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
+ * 
  * @param {Array.<Array.<Array.<Number>>>|Object|ymaps.IPolygonGeometry} geometry Координаты вершин ломаных, определяющих
  *                                                                                внешнюю и внутренние границы многоугольника, хэш-объект с параметрами геометрии или ссылка на объект геометрии.
  *                                                                                Внутренняя граница может отсутствовать.
@@ -8695,8 +8954,6 @@ ymaps.Placemark.prototype.geometry;
  *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии
  *                              geometry.Polygon.
  *                          
- * @constructor
- * @extends {ymaps.GeoObject}
  */
 ymaps.Polygon = function(geometry, properties, options) {};
 
@@ -8725,6 +8982,9 @@ ymaps.Polygon.prototype.geometry;
  * 
  * См.: GeoObject geometry.LineString 
  * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
+ * 
  * @param {Array.<Array.<Number>>|Object|ymaps.ILineStringGeometry} geometry Координаты вершин, хэш-объект с параметрами геометрии или ссылка на объект геометрии ломаной линии.
  * @param {Object|ymaps.IDataManager=} properties Данные ломаной. Могут задаваться как экземпляр класса,
  *                                                реализующего интерфейс IDataManager, либо в виде хэша.
@@ -8748,8 +9008,6 @@ ymaps.Polygon.prototype.geometry;
  *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии
  *                              geometry.LineString.
  *                          
- * @constructor
- * @extends {ymaps.GeoObject}
  */
 ymaps.Polyline = function(geometry, properties, options) {};
 
@@ -8776,10 +9034,11 @@ ymaps.Polyline.prototype.geometry;
  * 
  * Класс для создания инфо-объекта.
  * 
- * @param {ymaps.Map} map Ссылка на карту.
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.IPopup}
+ * 
+ * @param {ymaps.Map} map Ссылка на карту.
+ * @param {Object=} options Опции.
  */
 ymaps.Popup = function(map, options) {};
 
@@ -8792,12 +9051,13 @@ ymaps.Popup = function(map, options) {};
  * Учитывает параметр coordorder загрузки API - при значении 'latlong' в массиве координат точки
  * на первом месте должен стоять y, а на втором x.
  * 
+ * @constructor
+ * @implements {ymaps.IProjection}
+ * 
  * @param {Array.<Object>} bounds Массив из двух точек -
  *                                координат левого нижнего и правого верхнего углов прямоугольной координатной области.
  * @param {Array.<Boolean>=} cycled Массив из признаков зацикленности карты по x и y.
  * @param {Number|Array.<Number>=} scale Масштаб одного деления на оси. Может быть числом или парой чисел для каждой из осей.
- * @constructor
- * @implements {ymaps.IProjection}
  */
 ymaps.projection.Cartesian = function(bounds, cycled, scale) {};
 
@@ -8810,8 +9070,10 @@ ymaps.projection.Cartesian = function(bounds, cycled, scale) {};
  * 
  * Методы 
  * 
+ * 
+ * @type {ymaps.IProjection}
  */
-ymaps.projection.sphericalMercator = function() {};
+ymaps.projection.sphericalMercator;
 
 /**
  * 
@@ -8828,6 +9090,8 @@ ymaps.projection.sphericalMercator = function() {};
  * @param {Function=} errorCallback Функция, которая будет вызвана если произошла ошибка при инициализации.
  *                                  В функцию будет передана ошибка.
  * @param {Object=} context Контекст исполнения функции.
+ * 
+ * @returns {ymaps.vow.Promise}
  */
 ymaps.ready = function(successCallback, errorCallback, context) {};
 
@@ -8839,6 +9103,9 @@ ymaps.ready = function(successCallback, errorCallback, context) {};
  * Прямоугольник. Представляет собой геообъект с геометрией geometry.Rectangle.
  * 
  * См.: GeoObject geometry.Rectangle 
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
  * 
  * @param {Array.<Array.<Number>>|Object|ymaps.IRectangleGeometry} geometry Координаты двух противоположных углов, хэш-объект с параметрами геометрии или ссылка на объект геометрии прямоугольника.
  * @param {Object|ymaps.IDataManager=} properties Данные прямоугольника. Могут задаваться как экземпляр класса,
@@ -8861,8 +9128,6 @@ ymaps.ready = function(successCallback, errorCallback, context) {};
  *                              Опции всплывающей подсказки прямоугольника с префиксом hint.
  *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии geometry.Rectangle.
  *                          
- * @constructor
- * @extends {ymaps.GeoObject}
  */
 ymaps.Rectangle = function(geometry, properties, options) {};
 
@@ -8886,11 +9151,12 @@ ymaps.Rectangle.prototype.geometry;
  * 
  * Предоставляет доступ к геометрии различных регионов и стран мира.
  * 
+ * @constructor
+ * 
  * @param {String} region ISO_3166-1 код страны (RU, UA, BY, KZ) для загрузки
  *                        административно-территориального деления, либо '001' для загрузки геометрии
  *                        границ стран мира.
  * @param {Object=} options Опции отображения.
- * @constructor
  */
 ymaps.regions.load = function(region, options) {};
 
@@ -8920,6 +9186,12 @@ ymaps.regions.load = function(region, options) {};
  * При необходимости кластеризовать объекты на клиенте после загрузки используйте LoadingObjectManager.
  * Обратите внимание, что у объектов, отрисованных на карте через данный менеджер, нельзя включать режимы редактирования и перетаскивания.
  * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * @implements {ymaps.IGeoObject}
+ * @implements {ymaps.IParentOnMap}
+ * 
  * @param {String} urlTemplate Шаблон URL данных. Поддерживаются
  *                             специальные конструкции по аналогии с Layer.
  *                             Также поддерживаются подстановки:
@@ -8942,11 +9214,6 @@ ymaps.regions.load = function(region, options) {};
  *                                  Список опций указан в описании класса Placemark.
  *                              
  *                          
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * @implements {ymaps.IGeoObject}
- * @implements {ymaps.IParentOnMap}
  */
 ymaps.RemoteObjectManager = function(urlTemplate, options) {};
 
@@ -9042,6 +9309,8 @@ ymaps.RemoteObjectManager.prototype.objects;
  *                                    point: Number[]|String - Массив координат точки, либо ее адрес в виде строки.
  *                                
  * @param {Object=} params Параметры маршрутизации.
+ * 
+ * @returns {ymaps.vow.Promise}
  */
 ymaps.route = function(points, params) {};
 
@@ -9055,8 +9324,10 @@ ymaps.route = function(points, params) {};
  * Редактор маршрутов. Конструктор недоступен в package.full (стандартный набор модулей).
  * Данный модуль загружается по требованию.
  * 
+ * @constructor
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.router.Editor = function() {};
 
@@ -9064,12 +9335,12 @@ ymaps.router.Editor = function() {};
 /**
  * @param {Object=} options Опции.
  */
-ymaps.router.Editor.start = function(options) {};
+ymaps.router.Editor.prototype.start = function(options) {};
 
 
 /**
  */
-ymaps.router.Editor.stop = function() {};
+ymaps.router.Editor.prototype.stop = function() {};
 
 
 /**
@@ -9078,7 +9349,7 @@ ymaps.router.Editor.stop = function() {};
  * 
  * @type {ymaps.IDataManager}
  */
-ymaps.router.Editor.state;
+ymaps.router.Editor.prototype.state;
 
 /**
  * 
@@ -9098,7 +9369,9 @@ ymaps.router.Editor.state;
  *     'router#plainPath' - путь ведет себя как обычный геообъект.
  * См.: route 
  * 
+ * @constructor
  * @extends {ymaps.GeoObject}
+ * 
  */
 ymaps.router.Path = function() {};
 
@@ -9106,43 +9379,43 @@ ymaps.router.Path = function() {};
 /**
  * @return {String}
  */
-ymaps.router.Path.getHumanJamsTime = function() {};
+ymaps.router.Path.prototype.getHumanJamsTime = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.router.Path.getHumanLength = function() {};
+ymaps.router.Path.prototype.getHumanLength = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.router.Path.getHumanTime = function() {};
+ymaps.router.Path.prototype.getHumanTime = function() {};
 
 
 /**
  * @return {number}
  */
-ymaps.router.Path.getJamsTime = function() {};
+ymaps.router.Path.prototype.getJamsTime = function() {};
 
 
 /**
  * @return {Number}
  */
-ymaps.router.Path.getLength = function() {};
+ymaps.router.Path.prototype.getLength = function() {};
 
 
 /**
  * @return {Array.<ymaps.router.Segment>}
  */
-ymaps.router.Path.getSegments = function() {};
+ymaps.router.Path.prototype.getSegments = function() {};
 
 
 /**
  * @return {number}
  */
-ymaps.router.Path.getTime = function() {};
+ymaps.router.Path.prototype.getTime = function() {};
 
 /**
  * 
@@ -9156,7 +9429,9 @@ ymaps.router.Path.getTime = function() {};
  * 
  * См.: route 
  * 
+ * @constructor
  * @implements {ymaps.IGeoObject}
+ * 
  */
 ymaps.router.Route = function() {};
 
@@ -9164,55 +9439,55 @@ ymaps.router.Route = function() {};
 /**
  * @return {String}
  */
-ymaps.router.Route.getHumanJamsTime = function() {};
+ymaps.router.Route.prototype.getHumanJamsTime = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.router.Route.getHumanLength = function() {};
+ymaps.router.Route.prototype.getHumanLength = function() {};
 
 
 /**
  * @return {String}
  */
-ymaps.router.Route.getHumanTime = function() {};
+ymaps.router.Route.prototype.getHumanTime = function() {};
 
 
 /**
  * @return {number}
  */
-ymaps.router.Route.getJamsTime = function() {};
+ymaps.router.Route.prototype.getJamsTime = function() {};
 
 
 /**
  * @return {Number}
  */
-ymaps.router.Route.getLength = function() {};
+ymaps.router.Route.prototype.getLength = function() {};
 
 
 /**
  * @return {ymaps.GeoObjectCollection}
  */
-ymaps.router.Route.getPaths = function() {};
+ymaps.router.Route.prototype.getPaths = function() {};
 
 
 /**
  * @return {number}
  */
-ymaps.router.Route.getTime = function() {};
+ymaps.router.Route.prototype.getTime = function() {};
 
 
 /**
  * @return {ymaps.GeoObjectCollection}
  */
-ymaps.router.Route.getViaPoints = function() {};
+ymaps.router.Route.prototype.getViaPoints = function() {};
 
 
 /**
  * @return {ymaps.GeoObjectCollection}
  */
-ymaps.router.Route.getWayPoints = function() {};
+ymaps.router.Route.prototype.getWayPoints = function() {};
 
 
 /**
@@ -9220,7 +9495,7 @@ ymaps.router.Route.getWayPoints = function() {};
  * 
  * @type {ymaps.router.Editor}
  */
-ymaps.router.Route.editor;
+ymaps.router.Route.prototype.editor;
 
 /**
  * 
@@ -9231,7 +9506,7 @@ ymaps.router.Route.editor;
  * Данный модуль загружается по требованию.
  * 
  */
-ymaps.router.Segment = function() {};
+ymaps.router.Segment = {};
 
 
 /**
@@ -9327,7 +9602,9 @@ ymaps.router.Segment.getTime = function() {};
  * Объект, описывающий транзитную точку маршрута. Конструктор недоступен в package.full (стандартный набор модулей).
  * Данный модуль загружается по требованию.
  * 
+ * @constructor
  * @extends {ymaps.GeoObject}
+ * 
  */
 ymaps.router.ViaPoint = function() {};
 
@@ -9335,13 +9612,13 @@ ymaps.router.ViaPoint = function() {};
 /**
  * @return {number}
  */
-ymaps.router.ViaPoint.getPathIndex = function() {};
+ymaps.router.ViaPoint.prototype.getPathIndex = function() {};
 
 
 /**
  * @return {number}
  */
-ymaps.router.ViaPoint.getSegmentIndex = function() {};
+ymaps.router.ViaPoint.prototype.getSegmentIndex = function() {};
 
 /**
  * 
@@ -9350,10 +9627,11 @@ ymaps.router.ViaPoint.getSegmentIndex = function() {};
  * 
  * Объект, описывающий путевую точку маршрута.
  * 
- * @param {Object} feature Свойства и геометрия.
- * @param {Object=} options Опции.
  * @constructor
  * @extends {ymaps.GeoObject}
+ * 
+ * @param {Object} feature Свойства и геометрия.
+ * @param {Object=} options Опции.
  */
 ymaps.router.WayPoint = function(feature, options) {};
 
@@ -9379,6 +9657,8 @@ ymaps.router.WayPoint.prototype.properties;
  * 
  * @param {String|Array.<Number>} request Строка запроса или географическая точка.
  * @param {Object=} options Опции.
+ * 
+ * @returns {ymaps.vow.Promise}
  */
 ymaps.search = function(request, options) {};
 
@@ -9389,10 +9669,11 @@ ymaps.search = function(request, options) {};
  * 
  * Пиксельная фигура "Круг".
  * 
- * @param {ymaps.IPixelCircleGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
  * @constructor
  * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelCircleGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
  */
 ymaps.shape.Circle = function(pixelGeometry, params) {};
 
@@ -9403,10 +9684,11 @@ ymaps.shape.Circle = function(pixelGeometry, params) {};
  * 
  * Пиксельная фигура "Ломаная линия".
  * 
- * @param {ymaps.IPixelLineStringGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
  * @constructor
  * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelLineStringGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
  */
 ymaps.shape.LineString = function(pixelGeometry, params) {};
 
@@ -9417,10 +9699,11 @@ ymaps.shape.LineString = function(pixelGeometry, params) {};
  * 
  * Пиксельная фигура "Мультиполигон".
  * 
- * @param {ymaps.IPixelMultiPolygonGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
  * @constructor
  * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelMultiPolygonGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
  */
 ymaps.shape.MultiPolygon = function(pixelGeometry, params) {};
 
@@ -9431,10 +9714,11 @@ ymaps.shape.MultiPolygon = function(pixelGeometry, params) {};
  * 
  * Пиксельная фигура "Полигон".
  * 
- * @param {ymaps.IPixelPolygonGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
  * @constructor
  * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelPolygonGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
  */
 ymaps.shape.Polygon = function(pixelGeometry, params) {};
 
@@ -9445,10 +9729,11 @@ ymaps.shape.Polygon = function(pixelGeometry, params) {};
  * 
  * Пиксельная фигура "Прямоугольник".
  * 
- * @param {ymaps.IPixelRectangleGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
  * @constructor
  * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelRectangleGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
  */
 ymaps.shape.Rectangle = function(pixelGeometry, params) {};
 
@@ -9458,8 +9743,10 @@ ymaps.shape.Rectangle = function(pixelGeometry, params) {};
  *             Экземпляр класса  util.Storage
  * Хранилище геометрий хотспотных шейпов.
  * 
+ * 
+ * @type {ymaps.util.Storage}
  */
-ymaps.shape.storage = function() {};
+ymaps.shape.storage;
 
 /**
  * 
@@ -9488,11 +9775,12 @@ ymaps.suggest = function(request, options) {};
  * Создаёт выпадающую панель с поисковыми подсказками
  * и прикрепляет к HTML-элементу &lt;input type="text"&gt;.
  * 
- * @param {HTMLElement|String} element HTML-элемент или его id.
- * @param {Object=} options Опции.
  * @constructor
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {HTMLElement|String} element HTML-элемент или его id.
+ * @param {Object=} options Опции.
  */
 ymaps.SuggestView = function(element, options) {};
 
@@ -9540,8 +9828,10 @@ ymaps.SuggestView.prototype.state;
  * 
  * 3.
  * 
+ * 
+ * @type {ymaps.util.Storage}
  */
-ymaps.template.filtersStorage = function() {};
+ymaps.template.filtersStorage;
 
 /**
  * 
@@ -9555,8 +9845,9 @@ ymaps.template.filtersStorage = function() {};
  * 
  * {% for key, value in массив_или_хеш %} ... {% endfor %}.
  * 
- * @param {String} text Строка-шаблон.
  * @constructor
+ * 
+ * @param {String} text Строка-шаблон.
  */
 ymaps.Template = function(text) {};
 
@@ -9591,7 +9882,7 @@ ymaps.Template.prototype.build = function(data) {};
  * 4.
  * 
  */
-ymaps.templateLayoutFactory = function() {};
+ymaps.templateLayoutFactory = {};
 
 
 /**
@@ -9610,6 +9901,9 @@ ymaps.templateLayoutFactory.createClass = function(template, overrides, staticMe
  * 
  * Провайдер актуальных пробок. Доступен в хранилище провайдеров под ключом 'traffic#actual'.
  * 
+ * @constructor
+ * @implements {ymaps.ITrafficProvider}
+ * 
  * @param {Object=} options Опции провайдера. Опции для слоев провайдера задаются через
  *                          опции глобальной коллекции слоев Map.layers.
  *                          
@@ -9622,8 +9916,6 @@ ymaps.templateLayoutFactory.createClass = function(template, overrides, staticMe
  *                              hotspot.Layer.
  *                          
  * @param {Object=} state Состояние провайдера.
- * @constructor
- * @implements {ymaps.ITrafficProvider}
  */
 ymaps.traffic.provider.Actual = function(options, state) {};
 
@@ -9658,6 +9950,9 @@ ymaps.traffic.provider.Actual.prototype.state;
  * Провайдер архива пробок. Позволяет показывать состояние пробок,
  * типичное для данного региона в конкретный день недели и конкретное время суток.
  * 
+ * @constructor
+ * @implements {ymaps.ITrafficProvider}
+ * 
  * @param {Object=} options Опции провайдера. Опции для слоев провайдера задаются через
  *                          опции глобальной коллекции слоев Map.layers.
  *                          
@@ -9667,8 +9962,6 @@ ymaps.traffic.provider.Actual.prototype.state;
  *                              задаются с префиксом 'trafficJam'.
  *                          
  * @param {Object=} state Состояние провайдера.
- * @constructor
- * @implements {ymaps.ITrafficProvider}
  */
 ymaps.traffic.provider.Archive = function(options, state) {};
 
@@ -9714,7 +10007,9 @@ ymaps.traffic.provider.Archive.prototype.state;
  * Модель дочерней вершины. Конструктор недоступен в package.full (стандартный набор модулей).
  * Данный модуль загружается по требованию.
  * 
+ * @constructor
  * @implements {ymaps.IGeometryEditorChildModel}
+ * 
  */
 ymaps.geometryEditor.model.ChildVertex = function() {};
 
@@ -9722,49 +10017,49 @@ ymaps.geometryEditor.model.ChildVertex = function() {};
 /**
  * @return {number}
  */
-ymaps.geometryEditor.model.ChildVertex.getAllVerticesNumber = function() {};
+ymaps.geometryEditor.model.ChildVertex.prototype.getAllVerticesNumber = function() {};
 
 
 /**
  * @return {number}
  */
-ymaps.geometryEditor.model.ChildVertex.getIndex = function() {};
+ymaps.geometryEditor.model.ChildVertex.prototype.getIndex = function() {};
 
 
 /**
  * @return {ymaps.geometryEditor.model.ChildVertex|null}
  */
-ymaps.geometryEditor.model.ChildVertex.getNextVertex = function() {};
+ymaps.geometryEditor.model.ChildVertex.prototype.getNextVertex = function() {};
 
 
 /**
  * @return {ymaps.geometryEditor.model.ChildVertex|null}
  */
-ymaps.geometryEditor.model.ChildVertex.getPrevVertex = function() {};
+ymaps.geometryEditor.model.ChildVertex.prototype.getPrevVertex = function() {};
 
 
 /**
  * @param {Array.<Number>} pixels Глобальные пиксельные координаты вершины.
  */
-ymaps.geometryEditor.model.ChildVertex.setGlobalPixels = function(pixels) {};
+ymaps.geometryEditor.model.ChildVertex.prototype.setGlobalPixels = function(pixels) {};
 
 
 /**
  * @param {number} index Индекс дочерней вершины.
  */
-ymaps.geometryEditor.model.ChildVertex.setIndex = function(index) {};
+ymaps.geometryEditor.model.ChildVertex.prototype.setIndex = function(index) {};
 
 
 /**
  * @param {ymaps.geometryEditor.model.ChildVertex|null} nextVertex Модель следующей вершины.
  */
-ymaps.geometryEditor.model.ChildVertex.setNextVertex = function(nextVertex) {};
+ymaps.geometryEditor.model.ChildVertex.prototype.setNextVertex = function(nextVertex) {};
 
 
 /**
  * @param {ymaps.geometryEditor.model.ChildVertex|null} prevVertex Модель предыдущей вершины.
  */
-ymaps.geometryEditor.model.ChildVertex.setPrevVertex = function(prevVertex) {};
+ymaps.geometryEditor.model.ChildVertex.prototype.setPrevVertex = function(prevVertex) {};
 
 /**
  * 
@@ -9776,7 +10071,9 @@ ymaps.geometryEditor.model.ChildVertex.setPrevVertex = function(prevVertex) {};
  * Геометрия промежуточной метки. Конструктор недоступен в package.full (стандартный набор модулей).
  * Данный модуль загружается по требованию.
  * 
+ * @constructor
  * @implements {ymaps.IGeometry}
+ * 
  */
 ymaps.geometryEditor.model.EdgeGeometry = function() {};
 
@@ -9787,6 +10084,9 @@ ymaps.geometryEditor.model.EdgeGeometry = function() {};
  * 
  * Провайдер прогноза пробок. Доступен в хранилище провайдеров под ключом 'traffic#forecast'.
  * 
+ * @constructor
+ * @implements {ymaps.ITrafficProvider}
+ * 
  * @param {Object=} options Опции провайдера. Опции для слоев провайдера задаются через
  *                          опции глобальной коллекции слоев Map.layers.
  *                          
@@ -9796,8 +10096,6 @@ ymaps.geometryEditor.model.EdgeGeometry = function() {};
  *                              задаются с префиксом 'trafficJam'.
  *                          
  * @param {Object=} state Состояние провайдера.
- * @constructor
- * @implements {ymaps.ITrafficProvider}
  */
 ymaps.traffic.provider.Forecast = function(options, state) {};
 
@@ -9832,8 +10130,10 @@ ymaps.traffic.provider.Forecast.prototype.state;
  *             Экземпляр класса  util.Storage
  * Хранилище провайдеров.
  * 
+ * 
+ * @type {ymaps.util.Storage}
  */
-ymaps.traffic.provider.storage = function() {};
+ymaps.traffic.provider.storage;
 
 /**
  * 
@@ -9844,6 +10144,7 @@ ymaps.traffic.provider.storage = function() {};
  * 
  * @constructor
  * @extends {ymaps.util.Storage}
+ * 
  */
 ymaps.util.AsyncStorage = function() {};
 
@@ -9900,6 +10201,8 @@ ymaps.util.AsyncStorage.prototype.require = function(keys, successCallback, erro
  * @param {Function} ParentClass Родительский класс.
  * @param {Object} override Набор дополнительных полей и функций,
  *                          которые будут приписаны к прототипу дочернего класса.
+ * 
+ * @returns {Object}
  */
 ymaps.util.augment = function(ChildClass, ParentClass, override) {};
 
@@ -9921,7 +10224,7 @@ ymaps.util.bind = function(callback, context) {};
  * Набор статических методов для работы с прямоугольными областями, представленными в виде двух противоположных точек в координатной системе проекции.
  * 
  */
-ymaps.util.bounds = function() {};
+ymaps.util.bounds = {};
 
 
 /**
@@ -10016,8 +10319,9 @@ ymaps.util.bounds.getSize = function(bounds, projection) {};
  * 
  * Объект, предоставляющий доступ к добавленному на карту курсору.
  * 
- * @param {String} key Ключ, под которым хранится курсор в хранилище курсоров.
  * @constructor
+ * 
+ * @param {String} key Ключ, под которым хранится курсор в хранилище курсоров.
  */
 ymaps.util.cursor.Accessor = function(key) {};
 
@@ -10042,8 +10346,9 @@ ymaps.util.cursor.Accessor.prototype.setKey = function(key) {};
  * 
  * Менеджер курсоров.
  * 
- * @param {HTMLElement} element DOM-элемент, для которого выполняется установка курсоров.
  * @constructor
+ * 
+ * @param {HTMLElement} element DOM-элемент, для которого выполняется установка курсоров.
  */
 ymaps.util.cursor.Manager = function(element) {};
 
@@ -10092,6 +10397,8 @@ ymaps.util.cursor.Manager.prototype.events;
  *                           которые будут приписаны к прототипу класса. Источников может быть несколько (функция может иметь
  *                           произвольное число параметров), данные копируются справа налево (последний
  *                           аргумент имеет наивысший приоритет при копировании).
+ * 
+ * @returns {Object}
  */
 ymaps.util.defineClass = function(constructor, parentClass, override) {};
 
@@ -10120,9 +10427,10 @@ ymaps.util.extend = function(target, source) {};
  * При использовании следует обратить внимание, что во время работы драггера
  * в системе событий API Яндекс.Карт не будут поступать события mousemove и mouseup.
  * 
- * @param {Object=} params Параметры драггера.
  * @constructor
  * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {Object=} params Параметры драггера.
  */
 ymaps.util.Dragger = function(params) {};
 
@@ -10160,6 +10468,8 @@ ymaps.util.Dragger.prototype.stop = function() {};
  * @param {Array.<Number>} first Массив для сравнения.
  * @param {Array.<Number>} second Массив, который будем сравнивать.
  * @param {Number=} diff Точность сравнения.
+ * 
+ * @returns {Boolean}
  */
 ymaps.util.math.areEqual = function(first, second, diff) {};
 
@@ -10170,7 +10480,7 @@ ymaps.util.math.areEqual = function(first, second, diff) {};
  * Позволяет работать с HD экранами различных устройств.
  * 
  */
-ymaps.util.hd = function() {};
+ymaps.util.hd = {};
 
 
 /**
@@ -10207,6 +10517,8 @@ ymaps.util.hd.selectValue = function(hash) {};
  * @param {Number} value Ограничиваемое значение.
  * @param {Number} min Минимальный предел.
  * @param {Number} max Максимальный предел.
+ * 
+ * @returns {Number}
  */
 ymaps.util.math.cycleRestrict = function(value, min, max) {};
 
@@ -10222,6 +10534,8 @@ ymaps.util.math.cycleRestrict = function(value, min, max) {};
  * @param {Number} value Ограничиваемое значение.
  * @param {Number} min Минимальный предел.
  * @param {Number} max Максимальный предел.
+ * 
+ * @returns {Number}
  */
 ymaps.util.math.restrict = function(value, min, max) {};
 
@@ -10244,6 +10558,8 @@ ymaps.util.math.restrict = function(value, min, max) {};
  *                                        максимальные.
  * @param {Array.<Number>} containerSize Размер контейнера карты.
  * @param {Object=} params Параметры.
+ * 
+ * @returns {ymaps.vow.Promise}
  */
 ymaps.util.requireCenterAndZoom = function(mapType, bounds, containerSize, params) {};
 
@@ -10256,7 +10572,7 @@ ymaps.util.requireCenterAndZoom = function(mapType, bounds, containerSize, param
  * в декардовой координатной системе.
  * 
  */
-ymaps.util.pixelBounds = function() {};
+ymaps.util.pixelBounds = {};
 
 
 /**
@@ -10323,6 +10639,7 @@ ymaps.util.pixelBounds.getSize = function(bounds) {};
  * Хранилище объектов по ключу.
  * 
  * @constructor
+ * 
  */
 ymaps.util.Storage = function() {};
 
@@ -10368,7 +10685,7 @@ ymaps.util.Storage.prototype.remove = function(key) {};
  *   and GPL licenses.
  * 
  */
-ymaps.vow = function() {};
+ymaps.vow = {};
 
 
 /**
@@ -10416,6 +10733,7 @@ ymaps.vow.resolve = function(value) {};
  * Примечание.&nbsp;Не является отдельным модулем: доступен после подключения модуля vow.
  * 
  * @constructor
+ * 
  */
 ymaps.vow.Deferred = function() {};
 
@@ -10456,9 +10774,10 @@ ymaps.vow.Deferred.prototype.resolve = function(value) {};
  *   and GPL licenses.
  * Примечание.&nbsp;Не является отдельным модулем: доступен после подключения модуля vow.
  * 
+ * @constructor
+ * 
  * @param {Function=} resolver Функция, которая принимает в качестве параметров методы resolve и reject
  *                             для установки состояния и значения создаваемому объекту-promise.
- * @constructor
  */
 ymaps.vow.Promise = function(resolver) {};
 
@@ -10505,6 +10824,7 @@ ymaps.vow.Promise.prototype.valueOf = function() {};
  * 
  * @interface
  * @implements {ymaps.IPopup}
+ * 
  */
 ymaps.IBalloon = function() {};
 
@@ -10523,6 +10843,7 @@ ymaps.IBalloon.prototype.autoPan = function() {};
  * 
  * @interface
  * @implements {ymaps.ILayout}
+ * 
  */
 ymaps.IBalloonLayout = function() {};
 
@@ -10535,6 +10856,7 @@ ymaps.IBalloonLayout = function() {};
  * 
  * @interface
  * @implements {ymaps.IPopupManager}
+ * 
  */
 ymaps.IBalloonManager = function() {};
 
@@ -10549,6 +10871,7 @@ ymaps.IBalloonManager.prototype.autoPan = function() {};
  * Объект, имеющий балун, доступный через свойство "balloon".
  * 
  * @interface
+ * 
  */
 ymaps.IBalloonOwner = function() {};
 
@@ -10570,6 +10893,7 @@ ymaps.IBalloonOwner.prototype.balloon;
  * @interface
  * @implements {ymaps.IBaseGeometry}
  * @implements {ymaps.ICircleGeometryAccess}
+ * 
  */
 ymaps.IBaseCircleGeometry = function() {};
 
@@ -10588,6 +10912,7 @@ ymaps.IBaseCircleGeometry.prototype.getType = function() {};
  * 
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.IBaseGeometry = function() {};
 
@@ -10613,6 +10938,7 @@ ymaps.IBaseGeometry.prototype.getType = function() {};
  * @interface
  * @implements {ymaps.IBaseGeometry}
  * @implements {ymaps.ILineStringGeometryAccess}
+ * 
  */
 ymaps.IBaseLineStringGeometry = function() {};
 
@@ -10632,6 +10958,7 @@ ymaps.IBaseLineStringGeometry.prototype.getType = function() {};
  * @interface
  * @implements {ymaps.IBaseGeometry}
  * @implements {ymaps.ILinearRingGeometryAccess}
+ * 
  */
 ymaps.IBaseLinearRingGeometry = function() {};
 
@@ -10651,6 +10978,7 @@ ymaps.IBaseLinearRingGeometry.prototype.getType = function() {};
  * @interface
  * @implements {ymaps.IBaseGeometry}
  * @implements {ymaps.IPointGeometryAccess}
+ * 
  */
 ymaps.IBasePointGeometry = function() {};
 
@@ -10670,6 +10998,7 @@ ymaps.IBasePointGeometry.prototype.getType = function() {};
  * @interface
  * @implements {ymaps.IBaseGeometry}
  * @implements {ymaps.IPolygonGeometryAccess}
+ * 
  */
 ymaps.IBasePolygonGeometry = function() {};
 
@@ -10689,6 +11018,7 @@ ymaps.IBasePolygonGeometry.prototype.getType = function() {};
  * @interface
  * @implements {ymaps.IBaseGeometry}
  * @implements {ymaps.IRectangleGeometryAccess}
+ * 
  */
 ymaps.IBaseRectangleGeometry = function() {};
 
@@ -10707,10 +11037,11 @@ ymaps.IBaseRectangleGeometry.prototype.getType = function() {};
  * (например, таскание, масштабирование правой кнопкой мыши, многосенсорное касание).
  * Поведение по умолчанию выключено и включается вызовом метода enable.
  * 
- * @param {Object=} options Опции поведения.
  * @interface
  * @implements {ymaps.IChildOnMap}
  * @implements {ymaps.ICustomizable}
+ * 
+ * @param {Object=} options Опции поведения.
  */
 ymaps.IBehavior = function(options) {};
 
@@ -10734,8 +11065,9 @@ ymaps.IBehavior.prototype.isEnabled = function() {};
  * 
  * Интерфейс тайлов, умеющих отображаться на 2d-контексте объекта canvas.
  * 
- * @param {String} url URL тайла.
  * @interface
+ * 
+ * @param {String} url URL тайла.
  */
 ymaps.ICanvasTile = function(url) {};
 
@@ -10776,6 +11108,7 @@ ymaps.ICanvasTile.prototype.events;
  * 
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.IChild = function() {};
 
@@ -10801,6 +11134,7 @@ ymaps.IChild.prototype.setParent = function(parent) {};
  * 
  * @interface
  * @implements {ymaps.IChild}
+ * 
  */
 ymaps.IChildOnMap = function() {};
 
@@ -10827,6 +11161,7 @@ ymaps.IChildOnMap.prototype.setParent = function(parent) {};
  * @interface
  * @implements {ymaps.ICircleGeometryAccess}
  * @implements {ymaps.IGeometry}
+ * 
  */
 ymaps.ICircleGeometry = function() {};
 
@@ -10845,6 +11180,7 @@ ymaps.ICircleGeometry.prototype.getType = function() {};
  * 
  * @interface
  * @implements {ymaps.IFreezable}
+ * 
  */
 ymaps.ICircleGeometryAccess = function() {};
 
@@ -10897,6 +11233,7 @@ ymaps.ICircleGeometryAccess.prototype.setRadius = function(radius) {};
  * 
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.ICollection = function() {};
 
@@ -10934,6 +11271,7 @@ ymaps.ICollection.prototype.remove = function(object) {};
  * @interface
  * @implements {ymaps.IPane}
  * @implements {ymaps.IPositioningContext}
+ * 
  */
 ymaps.IContainerPane = function() {};
 
@@ -10950,9 +11288,10 @@ ymaps.IContainerPane.prototype.getViewport = function() {};
  * 
  * Элемент управления.
  * 
- * @param {Object=} options Опции элемента управления.
  * @interface
  * @implements {ymaps.IChildOnMap}
+ * 
+ * @param {Object=} options Опции элемента управления.
  */
 ymaps.IControl = function(options) {};
 
@@ -10986,6 +11325,7 @@ ymaps.IControl.prototype.options;
  * 
  * @interface
  * @implements {ymaps.IParentOnMap}
+ * 
  */
 ymaps.IControlParent = function() {};
 
@@ -11011,6 +11351,7 @@ ymaps.IControlParent.prototype.state;
  * См.: coordSystem.geo coordSystem.cartesian 
  * 
  * @interface
+ * 
  */
 ymaps.ICoordSystem = function() {};
 
@@ -11062,6 +11403,7 @@ ymaps.ICoordSystem.prototype.solveInverseProblem = function(startPoint, endPoint
  * 
  * @interface
  * @implements {ymaps.ICopyrightsProvider}
+ * 
  */
 ymaps.ICopyrightsAccessor = function() {};
 
@@ -11074,6 +11416,7 @@ ymaps.ICopyrightsAccessor = function() {};
  * 
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.ICopyrightsProvider = function() {};
 
@@ -11103,6 +11446,7 @@ ymaps.ICopyrightsProvider.prototype.setCopyrights = function(copyrights) {};
  * Интерфейс объекта, который можно настраивать с помощью глобального реестра опций.
  * 
  * @interface
+ * 
  */
 ymaps.ICustomizable = function() {};
 
@@ -11123,6 +11467,7 @@ ymaps.ICustomizable.prototype.options;
  * 
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.IDataManager = function() {};
 
@@ -11147,9 +11492,10 @@ ymaps.IDataManager.prototype.get = function(path, defaultValue) {};
  * Так, event.callMethod('stopPropagation') остановит распространение DOM-события во всех браузерах, включая Internet
  * Explorer.
  * 
- * @param {Object} originalEvent Исходное DOM-событие.
  * @interface
  * @implements {ymaps.IEvent}
+ * 
+ * @param {Object} originalEvent Исходное DOM-событие.
  */
 ymaps.IDomEvent = function(originalEvent) {};
 
@@ -11199,6 +11545,7 @@ ymaps.IDomEvent.prototype.stopPropagation = function() {};
  * 
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.IDomEventEmitter = function() {};
 
@@ -11214,8 +11561,9 @@ ymaps.IDomEventEmitter.prototype.events;
  * 
  * Интерфейс тайлов, представляющих из себя DOM-объект.
  * 
- * @param {String} url URL тайла.
  * @interface
+ * 
+ * @param {String} url URL тайла.
  */
 ymaps.IDomTile = function(url) {};
 
@@ -11251,6 +11599,7 @@ ymaps.IDomTile.prototype.events;
  * Событие, бросаемое менеджером событий IEventManager.
  * 
  * @interface
+ * 
  */
 ymaps.IEvent = function() {};
 
@@ -11324,6 +11673,7 @@ ymaps.IEvent.prototype.stopPropagation = function() {};
  * на определённом менеджере событий.
  * 
  * @interface
+ * 
  */
 ymaps.IEventController = function() {};
 
@@ -11346,6 +11696,7 @@ ymaps.IEventController.prototype.onStopListening = function(events, type) {};
  * Интерфейс объекта, у которого можно слушать события.
  * 
  * @interface
+ * 
  */
 ymaps.IEventEmitter = function() {};
 
@@ -11362,6 +11713,7 @@ ymaps.IEventEmitter.prototype.events;
  * Группа слушателей событий.
  * 
  * @interface
+ * 
  */
 ymaps.IEventGroup = function() {};
 
@@ -11403,6 +11755,7 @@ ymaps.IEventGroup.prototype.removeAll = function() {};
  * 
  * @interface
  * @implements {ymaps.IEventTrigger}
+ * 
  */
 ymaps.IEventManager = function() {};
 
@@ -11467,6 +11820,7 @@ ymaps.IEventManager.prototype.setParent = function(parent) {};
  * @interface
  * @implements {ymaps.IDomEventEmitter}
  * @implements {ymaps.IPane}
+ * 
  */
 ymaps.IEventPane = function() {};
 
@@ -11475,6 +11829,7 @@ ymaps.IEventPane = function() {};
  * Объект инициирующий события.
  * 
  * @interface
+ * 
  */
 ymaps.IEventTrigger = function() {};
 
@@ -11498,6 +11853,7 @@ ymaps.IEventTrigger.prototype.fire = function(type, eventObject) {};
  * 
  * @interface
  * @implements {ymaps.ILayout}
+ * 
  */
 ymaps.IExpandableControlLayout = function() {};
 
@@ -11513,6 +11869,7 @@ ymaps.IExpandableControlLayout = function() {};
  * 
  * 
  * @interface
+ * 
  */
 ymaps.IFreezable = function() {};
 
@@ -11547,6 +11904,7 @@ ymaps.IFreezable.prototype.events;
  * Интерфейс провайдера геокодера.
  * 
  * @interface
+ * 
  */
 ymaps.IGeocodeProvider = function() {};
 
@@ -11576,6 +11934,7 @@ ymaps.IGeocodeProvider.prototype.suggest = function(request, options) {};
  * @interface
  * @implements {ymaps.IBaseGeometry}
  * @implements {ymaps.ICustomizable}
+ * 
  */
 ymaps.IGeometry = function() {};
 
@@ -11614,6 +11973,7 @@ ymaps.IGeometry.prototype.setMap = function(map) {};
  * @interface
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.IGeometryEditor = function() {};
 
@@ -11650,13 +12010,14 @@ ymaps.IGeometryEditor.prototype.state;
  * 
  * Интерфейс дочерней модели данных.
  * 
+ * @interface
+ * @implements {ymaps.IGeometryEditorModel}
+ * 
  * @param {ymaps.IBaseGeometry} geometry Редактируемая дочерняя геометрия. Интерфейс IBaseGeometry не подразумевает наличие
  *                                       события pixelgeometrychange, поэтому пиксельные данные получаются от родительской модели данных.
  * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
  * @param {Array.<Number>} pixels Пиксельные данные модели.
  * @param {ymaps.IGeometryEditorModel} parent Родительская модель данных.
- * @interface
- * @implements {ymaps.IGeometryEditorModel}
  */
 ymaps.IGeometryEditorChildModel = function(geometry, editor, pixels, parent) {};
 
@@ -11695,10 +12056,11 @@ ymaps.IGeometryEditorChildModel.prototype.geometry;
  * 
  * Интерфейс модели данных редактора геометрии.
  * 
- * @param {ymaps.IBaseGeometry} geometry Редактируемая геометрия.
- * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {ymaps.IBaseGeometry} geometry Редактируемая геометрия.
+ * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
  */
 ymaps.IGeometryEditorModel = function(geometry, editor) {};
 
@@ -11720,10 +12082,11 @@ ymaps.IGeometryEditorModel.prototype.getPixels = function() {};
  * 
  * Интерфейс корневой модели данных.
  * 
- * @param {ymaps.IGeometry} geometry Редактируемая геометрия.
- * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
  * @interface
  * @implements {ymaps.IGeometryEditorModel}
+ * 
+ * @param {ymaps.IGeometry} geometry Редактируемая геометрия.
+ * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
  */
 ymaps.IGeometryEditorRootModel = function(geometry, editor) {};
 
@@ -11732,6 +12095,7 @@ ymaps.IGeometryEditorRootModel = function(geometry, editor) {};
  * Интерфейс объекта, описывающего JSON-представление геометрии.
  * 
  * @interface
+ * 
  */
 ymaps.IGeometryJson = function() {};
 
@@ -11755,6 +12119,7 @@ ymaps.IGeometryJson.prototype.type;
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IDomEventEmitter}
  * @implements {ymaps.IParentOnMap}
+ * 
  */
 ymaps.IGeoObject = function() {};
 
@@ -11805,6 +12170,7 @@ ymaps.IGeoObject.prototype.state;
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
  * @implements {ymaps.IParentOnMap}
+ * 
  */
 ymaps.IGeoObjectCollection = function() {};
 
@@ -11898,7 +12264,7 @@ ymaps.IGeoObjectCollection.prototype.splice = function(index, number) {};
  * Объект с данными, передаваемый геообъектом своему инфо-объекту (например, балуну или хинту).
  * 
  */
-ymaps.IGeoObjectPopupData = function() {};
+ymaps.IGeoObjectPopupData = {};
 
 
 /**
@@ -11943,6 +12309,7 @@ ymaps.IGeoObjectPopupData.userData;
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
  * @implements {ymaps.IParentOnMap}
+ * 
  */
 ymaps.IGeoObjectSequence = function() {};
 
@@ -11998,9 +12365,10 @@ ymaps.IGeoObjectSequence.prototype.indexOf = function(object) {};
  * 
  * Интерфейс макета группового элемента управления.
  * 
- * @param {Object} data Данные макета.
  * @interface
  * @implements {ymaps.ILayout}
+ * 
+ * @param {Object} data Данные макета.
  */
 ymaps.IGroupControlLayout = function(data) {};
 
@@ -12019,6 +12387,7 @@ ymaps.IGroupControlLayout.prototype.getChildContainerElement = function() {};
  * 
  * @interface
  * @implements {ymaps.IPopup}
+ * 
  */
 ymaps.IHint = function() {};
 
@@ -12031,6 +12400,7 @@ ymaps.IHint = function() {};
  * 
  * @interface
  * @implements {ymaps.IPopupManager}
+ * 
  */
 ymaps.IHintManager = function() {};
 
@@ -12039,6 +12409,7 @@ ymaps.IHintManager = function() {};
  * Объект, имеющий хинт, доступный через свойство "hint".
  * 
  * @interface
+ * 
  */
 ymaps.IHintOwner = function() {};
 
@@ -12060,6 +12431,7 @@ ymaps.IHintOwner.prototype.hint;
  * 
  * @interface
  * @implements {ymaps.IDomEventEmitter}
+ * 
  */
 ymaps.IHotspot = function() {};
 
@@ -12097,6 +12469,7 @@ ymaps.IHotspot.prototype.setZIndex = function() {};
  * @interface
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IDomEventEmitter}
+ * 
  */
 ymaps.IHotspotLayerObject = function() {};
 
@@ -12151,6 +12524,7 @@ ymaps.IHotspotLayerObject.prototype.setProperties = function(properties) {};
  * 
  * @interface
  * @implements {ymaps.ICustomizable}
+ * 
  */
 ymaps.IHotspotObjectSource = function() {};
 
@@ -12179,6 +12553,7 @@ ymaps.IHotspotObjectSource.prototype.requestObjects = function(layer, tileNumber
  * @interface
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IDomEventEmitter}
+ * 
  */
 ymaps.IHotspotShape = function() {};
 
@@ -12248,6 +12623,7 @@ ymaps.IHotspotShape.prototype.setShape = function(shape) {};
  * Итератор позволяет перебрать все составляющие элементы той или иной коллекции.
  * 
  * @interface
+ * 
  */
 ymaps.IIterator = function() {};
 
@@ -12276,6 +12652,7 @@ ymaps.IIterator.prototype.STOP_ITERATION;
  * @implements {ymaps.IChildOnMap}
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.ILayer = function() {};
 
@@ -12309,9 +12686,10 @@ ymaps.ILayer.prototype.getZoomRange = function(point) {};
  * 
  * Интерфейс макета.
  * 
- * @param {Object} data Данные макета.
  * @interface
  * @implements {ymaps.IDomEventEmitter}
+ * 
+ * @param {Object} data Данные макета.
  */
 ymaps.ILayout = function(data) {};
 
@@ -12367,6 +12745,7 @@ ymaps.ILayout.prototype.setParentElement = function(parent) {};
  * 
  * @interface
  * @implements {ymaps.IFreezable}
+ * 
  */
 ymaps.ILinearRingGeometryAccess = function() {};
 
@@ -12471,6 +12850,7 @@ ymaps.ILinearRingGeometryAccess.prototype.splice = function(index, number) {};
  * @interface
  * @implements {ymaps.IGeometry}
  * @implements {ymaps.ILineStringGeometryAccess}
+ * 
  */
 ymaps.ILineStringGeometry = function() {};
 
@@ -12489,6 +12869,7 @@ ymaps.ILineStringGeometry.prototype.getType = function() {};
  * 
  * @interface
  * @implements {ymaps.IFreezable}
+ * 
  */
 ymaps.ILineStringGeometryAccess = function() {};
 
@@ -12572,6 +12953,7 @@ ymaps.ILineStringGeometryAccess.prototype.splice = function(index, number) {};
  * 
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.IMapAction = function() {};
 
@@ -12597,6 +12979,7 @@ ymaps.IMapAction.prototype.end = function() {};
  * @implements {ymaps.ICollection}
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IParentOnMap}
+ * 
  */
 ymaps.IMapObjectCollection = function() {};
 
@@ -12605,6 +12988,7 @@ ymaps.IMapObjectCollection = function() {};
  * Интерфейс объекта-описания модели мультимаршрута.
  * 
  * @interface
+ * 
  */
 ymaps.IMultiRouteModelJson = function() {};
 
@@ -12630,6 +13014,7 @@ ymaps.IMultiRouteModelJson.prototype.referencePoints;
  * Интерфейс объекта, описывающего формат задания параметров модели мультимаршрута.
  * 
  * @interface
+ * 
  */
 ymaps.IMultiRouteParams = function() {};
 
@@ -12709,6 +13094,7 @@ ymaps.IMultiRouteParams.prototype.viaIndexes;
  * Интерфейс объекта, описывающего формат задания опорной точки мультимаршрута.
  * 
  * @interface
+ * 
  */
 ymaps.IMultiRouteReferencePoint = function() {};
 
@@ -12724,6 +13110,7 @@ ymaps.IMultiRouteReferencePoint = function() {};
  * @implements {ymaps.IChild}
  * @implements {ymaps.IEventEmitter}
  * @implements {ymaps.IFreezable}
+ * 
  */
 ymaps.IOptionManager = function() {};
 
@@ -12790,6 +13177,7 @@ ymaps.IOptionManager.prototype.setParent = function(parent) {};
  * @interface
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IDomEventEmitter}
+ * 
  */
 ymaps.IOverlay = function() {};
 
@@ -12854,6 +13242,7 @@ ymaps.IOverlay.prototype.setMap = function(map) {};
  * 
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.IPane = function() {};
 
@@ -12891,6 +13280,7 @@ ymaps.IPane.prototype.getZIndex = function() {};
  * Интерфейс родительского объекта, относящегося к определенному объекту карты.
  * 
  * @interface
+ * 
  */
 ymaps.IParentOnMap = function() {};
 
@@ -12909,6 +13299,7 @@ ymaps.IParentOnMap.prototype.getMap = function() {};
  * 
  * @interface
  * @implements {ymaps.IPixelGeometry}
+ * 
  */
 ymaps.IPixelCircleGeometry = function() {};
 
@@ -12933,6 +13324,7 @@ ymaps.IPixelCircleGeometry.prototype.getRadius = function() {};
  * 
  * @interface
  * @implements {ymaps.IBaseGeometry}
+ * 
  */
 ymaps.IPixelGeometry = function() {};
 
@@ -12972,6 +13364,7 @@ ymaps.IPixelGeometry.prototype.shift = function(offset) {};
  * 
  * @interface
  * @implements {ymaps.IPixelGeometry}
+ * 
  */
 ymaps.IPixelLineStringGeometry = function() {};
 
@@ -13003,6 +13396,7 @@ ymaps.IPixelLineStringGeometry.prototype.getLength = function() {};
  * 
  * @interface
  * @implements {ymaps.IPixelGeometry}
+ * 
  */
 ymaps.IPixelMultiPolygonGeometry = function() {};
 
@@ -13047,6 +13441,7 @@ ymaps.IPixelMultiPolygonGeometry.prototype.getLength = function() {};
  * 
  * @interface
  * @implements {ymaps.IPixelGeometry}
+ * 
  */
 ymaps.IPixelPointGeometry = function() {};
 
@@ -13065,6 +13460,7 @@ ymaps.IPixelPointGeometry.prototype.getCoordinates = function() {};
  * 
  * @interface
  * @implements {ymaps.IPixelGeometry}
+ * 
  */
 ymaps.IPixelPolygonGeometry = function() {};
 
@@ -13109,6 +13505,7 @@ ymaps.IPixelPolygonGeometry.prototype.getLength = function() {};
  * 
  * @interface
  * @implements {ymaps.IPixelGeometry}
+ * 
  */
 ymaps.IPixelRectangleGeometry = function() {};
 
@@ -13135,6 +13532,7 @@ ymaps.IPixelRectangleGeometry.prototype.getCoordinates = function() {};
  * @interface
  * @implements {ymaps.IGeometry}
  * @implements {ymaps.IPointGeometryAccess}
+ * 
  */
 ymaps.IPointGeometry = function() {};
 
@@ -13149,6 +13547,7 @@ ymaps.IPointGeometry.prototype.getType = function() {};
  * Интерфейс доступа к геометрии "Точка".
  * 
  * @interface
+ * 
  */
 ymaps.IPointGeometryAccess = function() {};
 
@@ -13175,6 +13574,7 @@ ymaps.IPointGeometryAccess.prototype.setCoordinates = function(coordinates) {};
  * @interface
  * @implements {ymaps.IGeometry}
  * @implements {ymaps.IPolygonGeometryAccess}
+ * 
  */
 ymaps.IPolygonGeometry = function() {};
 
@@ -13193,6 +13593,7 @@ ymaps.IPolygonGeometry.prototype.getType = function() {};
  * 
  * @interface
  * @implements {ymaps.IFreezable}
+ * 
  */
 ymaps.IPolygonGeometryAccess = function() {};
 
@@ -13297,6 +13698,7 @@ ymaps.IPolygonGeometryAccess.prototype.splice = function(index, number) {};
  * @interface
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.IPopup = function() {};
 
@@ -13366,6 +13768,7 @@ ymaps.IPopup.prototype.setPosition = function(position) {};
  * 
  * @interface
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.IPopupManager = function() {};
 
@@ -13452,6 +13855,7 @@ ymaps.IPopupManager.prototype.setPosition = function(position) {};
  * координатами.
  * 
  * @interface
+ * 
  */
 ymaps.IPositioningContext = function() {};
 
@@ -13485,6 +13889,7 @@ ymaps.IPositioningContext.prototype.toClientPixels = function(globalPixelPoint) 
  * (либо по обеим осям сразу).
  * 
  * @interface
+ * 
  */
 ymaps.IProjection = function() {};
 
@@ -13521,6 +13926,7 @@ ymaps.IProjection.prototype.toGlobalPixels = function(coordPoint, zoom) {};
  * Объект, выполняющий "обещание".
  * 
  * @interface
+ * 
  */
 ymaps.IPromiseProvider = function() {};
 
@@ -13541,6 +13947,7 @@ ymaps.IPromiseProvider.prototype.then = function(onResolve, onReject) {};
  * обозначающего коэффициент плотности пикселей.
  * 
  * @interface
+ * 
  */
 ymaps.IRatioMap = function() {};
 
@@ -13554,6 +13961,7 @@ ymaps.IRatioMap = function() {};
  * @interface
  * @implements {ymaps.IGeometry}
  * @implements {ymaps.IRectangleGeometryAccess}
+ * 
  */
 ymaps.IRectangleGeometry = function() {};
 
@@ -13572,6 +13980,7 @@ ymaps.IRectangleGeometry.prototype.getType = function() {};
  * 
  * @interface
  * @implements {ymaps.IFreezable}
+ * 
  */
 ymaps.IRectangleGeometryAccess = function() {};
 
@@ -13611,6 +14020,7 @@ ymaps.IRectangleGeometryAccess.prototype.setCoordinates = function(coordinates) 
  * 
  * @interface
  * @implements {ymaps.IExpandableControlLayout}
+ * 
  */
 ymaps.ISearchControlLayout = function() {};
 
@@ -13619,6 +14029,7 @@ ymaps.ISearchControlLayout = function() {};
  * Интерфейс провайдера поиска.
  * 
  * @interface
+ * 
  */
 ymaps.ISearchProvider = function() {};
 
@@ -13647,6 +14058,7 @@ ymaps.ISearchProvider.prototype.suggest = function(request, options) {};
  * 
  * @interface
  * @implements {ymaps.IControl}
+ * 
  */
 ymaps.ISelectableControl = function() {};
 
@@ -13691,6 +14103,7 @@ ymaps.ISelectableControl.prototype.select = function() {};
  * 
  * @interface
  * @implements {ymaps.ILayout}
+ * 
  */
 ymaps.ISelectableControlLayout = function() {};
 
@@ -13701,6 +14114,7 @@ ymaps.ISelectableControlLayout = function() {};
  * (таких как наличие контура и его ширина, наличие заливки).
  * 
  * @interface
+ * 
  */
 ymaps.IShape = function() {};
 
@@ -13755,6 +14169,7 @@ ymaps.IShape.prototype.shift = function(offset) {};
  * Интерфейс провайдера поисковых подсказок.
  * 
  * @interface
+ * 
  */
 ymaps.ISuggestProvider = function() {};
 
@@ -13771,6 +14186,7 @@ ymaps.ISuggestProvider.prototype.suggest = function(request, options) {};
  * Интерфейс макета панели поисковых подсказок.
  * 
  * @interface
+ * 
  */
 ymaps.ISuggestViewLayout = function() {};
 
@@ -13783,6 +14199,7 @@ ymaps.ISuggestViewLayout = function() {};
  * 
  * @interface
  * @implements {ymaps.IExpandableControlLayout}
+ * 
  */
 ymaps.ITrafficControlLayout = function() {};
 
@@ -13796,6 +14213,7 @@ ymaps.ITrafficControlLayout = function() {};
  * @interface
  * @implements {ymaps.ICustomizable}
  * @implements {ymaps.IEventEmitter}
+ * 
  */
 ymaps.ITrafficProvider = function() {};
 
@@ -13820,6 +14238,7 @@ ymaps.ITrafficProvider.prototype.setMap = function(Ссылка) {};
  * 
  * @interface
  * @implements {ymaps.ILayout}
+ * 
  */
 ymaps.IZoomControlLayout = function() {};
 
@@ -13832,6 +14251,7 @@ ymaps.IZoomControlLayout = function() {};
  * См.: geoXml.load 
  * 
  * @interface
+ * 
  */
 ymaps.IMapState = function() {};
 
@@ -13853,6 +14273,7 @@ ymaps.IMapState.prototype.applyToMap = function(map) {};
  * 
  * @interface
  * @implements {ymaps.IEventController}
+ * 
  */
 ymaps.IEventWorkflowController = function() {};
 

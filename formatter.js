@@ -110,25 +110,10 @@ data.forEach(function(item) {
   if(item.def.description) {
     r.push(' * ', (' * ' + parseDescription(item.def.description)), ' * ');
   }
-  
-  // CTOR
-  var ctorParamsList = [];
-  if ((item.def.ctorParams || item.def.params) && !rendered['__ctor__' + item.name]) {
-    (item.def.ctorParams || item.def.params).forEach(function(p) {
-      ctorParamsList.push(p.param);
-      var paramString = ('@param {' + normilizeType(p.type, p.isRequired) + '} ' + p.param + ' ');
-      var paramDesc = '';
-      if(p.description) {
-        paramDesc =  parseDescription(p.description, paramString.length);
-      }
-      r.push(' * ' + paramString + paramDesc);
-    });
-    rendered['__ctor__' + item.name] = true;
-  }
-  
+
+  // CTOR 
   var prototypeSep = '.';
-  
-  if (item.def.hasCtor) {
+  if (item.def.hasCtor || item.def.inherits) {
     if (isInterface(item.name)) {
       r.push(' * @interface');
     } else {
@@ -150,8 +135,43 @@ data.forEach(function(item) {
       }
     });
   }
+  
+  if(prototypeSep !== '.') {
+    r.push(' * ');
+  }
+  
+  //PARAMS
+  var ctorParamsList = [];
+  if ((item.def.ctorParams || item.def.params) && !rendered['__ctor__' + item.name]) {
+    (item.def.ctorParams || item.def.params).forEach(function(p) {
+      ctorParamsList.push(p.param);
+      var paramString = ('@param {' + normilizeType(p.type, p.isRequired) + '} ' + p.param + ' ');
+      var paramDesc = '';
+      if(p.description) {
+        paramDesc =  parseDescription(p.description, paramString.length);
+      }
+      r.push(' * ' + paramString + paramDesc);
+    });
+    rendered['__ctor__' + item.name] = true;
+  }
+  
+  if(item.def['return']) {
+    r.push(' * ', (' * @returns {' + normilizeType(item.def['return'], true) + '}'));
+  }
+  
+  if(item.def['type']) {
+    r.push(' * ', (' * @type {' + normilizeType(item.def.type, true) + '}'));
+  }
+  
+  var finish = '';
+  if(prototypeSep !== '.' || ctorParamsList.length > 0 || item.def['return']) {
+    finish = ' = function(' + ctorParamsList.join(', ') + ') {}';
+  } else if(item.def.methods || item.def.props) {
+    finish = ' = {}';
+  }
+
   r.push(' */');
-  r.push(NS_PREFIX + item.name + ' = function(' + ctorParamsList.join(', ') + ') {};');
+  r.push(NS_PREFIX + item.name + finish + ';');
   r.push('', '');
 
   // METHODS
