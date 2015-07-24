@@ -550,9 +550,12 @@ function parsePropertyCodeblock(propName, codeblock) {
  */
 function parseDescription($content) {
   var desc = [];
+  
+  var $pMenu = $('a[id$="summary"]', $content).prev('p');
+  
   $content.find('p:not(:empty)').each(function() {
     var $this = $(this);
-    if($this.is(':has(div.codeblock)')) {
+    if($this.is(':has(div.codeblock)') || $this.is($pMenu)) {
       return;
     }
     
@@ -563,7 +566,9 @@ function parseDescription($content) {
     desc.push(stripTags($this.html()));
   });
   if(desc.length > 0) {
-    return desc.join("\n\n");
+    var d = desc.join("\n\n");
+    d = d.replace(/\n\s+(?=\n)/gm, "").replace(/\n\n\s+/gm, "\n\n");
+    return d;
   }
   
   return '';
