@@ -104,28 +104,47 @@ Object.keys(interf).forEach(function(i) {
 data.forEach(function(item) {
   var r = [];
 
-
+  r.push('/**');
+  
+  // DESCRIPTION
+  if(item.def.description) {
+    r.push(' * ', (' * ' + parseDescription(item.def.description)), ' * ');
+  }
+  
   // CTOR
   var ctorParamsList = [];
-  r.push('/**');
   if ((item.def.ctorParams || item.def.params) && !rendered['__ctor__' + item.name]) {
     (item.def.ctorParams || item.def.params).forEach(function(p) {
       ctorParamsList.push(p.param);
-      r.push(' * @param {' + normilizeType(p.type, p.isRequired) + '} ' + p.param + ' ' + p.description);
+      var paramString = ('@param {' + normilizeType(p.type, p.isRequired) + '} ' + p.param + ' ');
+      var paramDesc = '';
+      if(p.description) {
+        paramDesc =  parseDescription(p.description, paramString.length);
+      }
+      r.push(' * ' + paramString + paramDesc);
     });
     rendered['__ctor__' + item.name] = true;
   }
+  
+  var prototypeSep = '.';
+  
   if (item.def.hasCtor) {
     if (isInterface(item.name)) {
       r.push(' * @interface');
     } else {
       r.push(' * @constructor');
     }
+    
+    prototypeSep += 'prototype.';
   }
+  
+  var interfacesToPad = [];
+  
   if (item.def.inherits) {
     item.def.inherits.forEach(function(parentName) {
       if (isInterface(parentName)) {
         r.push(' * @implements {' + NS_PREFIX + parentName + '}');
+        interfacesToPad.push(parentName);
       } else {
         r.push(' * @extends {' + NS_PREFIX + parentName + '}');
       }
@@ -146,12 +165,17 @@ data.forEach(function(item) {
       var paramsList = [];
       r.push('/**');
       if (p.description) {
-        r.push(' * ' + p.description);
+        r.push((' * ' + parseDescription(p.description)), ' * ');
       }
       if (p.params) {
         p.params.forEach(function(p) {
           paramsList.push(p.param);
-          r.push(' * @param {' + normilizeType(p.type, p.isRequired) + '} ' + p.param + ' ' + p.description);
+          var paramString = ('@param {' + normilizeType(p.type, p.isRequired) + '} ' + p.param + ' ');
+          var paramDesc = '';
+          if(p.description) {
+            paramDesc =  parseDescription(p.description, paramString.length);
+          }
+          r.push(' * ' + paramString + paramDesc);
         });
       }
       if (p['return']) {
@@ -161,7 +185,7 @@ data.forEach(function(item) {
       if (r.length == 2) {
         r = [];
       }
-      r.push(NS_PREFIX + item.name + '.prototype.' + p.name + ' = function(' + paramsList.join(', ') + ') {};');
+      r.push(NS_PREFIX + item.name + prototypeSep + p.name + ' = function(' + paramsList.join(', ') + ') {};');
       r.push('', '');
     });
   }
@@ -176,7 +200,7 @@ data.forEach(function(item) {
       var paramsList = [];
       r.push('/**');
       if (p.description) {
-        r.push(' * ' + p.description);
+        r.push((' * ' + parseDescription(p.description)), ' * ');
       }
       if (p.type) {
         r.push(' * @type {' + normilizeType(p.type, true) + '}');
@@ -185,7 +209,7 @@ data.forEach(function(item) {
       if (r.length == 2) {
         r = [];
       }
-      r.push(NS_PREFIX + item.name + '.prototype.' + p.name + ';');
+      r.push(NS_PREFIX + item.name + prototypeSep + p.name + ';');
       r.push('', '');
     });
   }
@@ -205,6 +229,11 @@ fs.writeFile("extern.ymaps.js", ret, function(err) {
     }
 });
 
+/**
+ * @param {string} str
+ * @param {boolean} isRequired
+ * @returns {string}
+ */
 function normilizeType(str, isRequired) {
   str = str.replace(namesRegex, NS_PREFIX + "$1").replace(/Integer/g, "number");
 
@@ -218,6 +247,10 @@ function normilizeType(str, isRequired) {
   return (type.join('|') || '*') + (isRequired ? '' : '=');
 };
 
+/**
+ * @param {string} str
+ * @returns {boolean}
+ */
 function isInterface(str) {
   return str.length > 1 && str[0] == 'I' && str[1] == str[1].toUpperCase();
 };
@@ -233,4 +266,19 @@ function inheritsPad(interfaceName, padInto) {
       inheritsPad(inh, padInto);
     });
   }
+};
+
+/**
+ * @param {string} desc
+ * @param {number=} opt_padSpaces
+ * @param {string=} opt_prefix
+ * @returns {string}
+ */
+function parseDescription(desc, opt_padSpaces, opt_prefix) {
+  var padSpaces = opt_padSpaces || 0;
+  var prefix = opt_prefix || ' * ';
+  
+  var separator = "\n" + prefix + (new Array(padSpaces + 1).join(' '));
+  
+  return desc.split('\n').join(separator);
 };
