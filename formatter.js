@@ -1,6 +1,27 @@
 var fs = require('fs');
 
 var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+data.sort(function(a, b) {
+  var aParts = a.name.split('.'),
+    bParts = b.name.split('.');
+    
+  var al = aParts.length, 
+    bl = bParts.length;
+    
+  if(al != bl) {
+    return (al < bl) ? -1 : 1;
+  }
+  
+  for(var i = 0; i < al; i++) {
+    if(aParts[i] == bParts[i]) {
+      continue;
+    }
+    
+    return aParts[i].localeCompare(bParts[i]);
+  }
+  
+  return 0;
+});
 
 var NS = 'ymaps';
 var NS_PREFIX = NS + '.';

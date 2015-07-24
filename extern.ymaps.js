@@ -127,570 +127,6 @@ ymaps.Balloon.prototype.options;
  */
 ymaps.Balloon.prototype.events;
 
-
-ymaps.behavior = {};
-
-/**
- * 
- * Расширяет
- *             IBehavior.
- * 
- * Поведение "масштабирование карты двойным щелчком кнопки мыши".
- * 
- * @constructor
- * @implements {ymaps.IBehavior}
- * 
- * @param {Object=} options Опции.
- */
-ymaps.behavior.DblClickZoom = function(options) {};
-
-
-/**
- */
-ymaps.behavior.DblClickZoom.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.behavior.DblClickZoom.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.behavior.DblClickZoom.prototype.isEnabled = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.behavior.DblClickZoom.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.behavior.DblClickZoom.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.behavior.DblClickZoom.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.behavior.DblClickZoom.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IBehavior.
- * 
- * Поведение "масштабирование карты при выделении области левой кнопкой мыши".
- * 
- * @constructor
- * @implements {ymaps.IBehavior}
- * 
- * @param {Object=} options Опции.
- */
-ymaps.behavior.LeftMouseButtonMagnifier = function(options) {};
-
-
-/**
- */
-ymaps.behavior.LeftMouseButtonMagnifier.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.behavior.LeftMouseButtonMagnifier.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.behavior.LeftMouseButtonMagnifier.prototype.isEnabled = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.behavior.LeftMouseButtonMagnifier.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.behavior.LeftMouseButtonMagnifier.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.behavior.LeftMouseButtonMagnifier.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.behavior.LeftMouseButtonMagnifier.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IBehavior.
- * 
- * Поведение "масштабирование карты мультисенсорным касанием".
- * 
- * @constructor
- * @implements {ymaps.IBehavior}
- * 
- * @param {Object=} options Опции.
- */
-ymaps.behavior.MultiTouch = function(options) {};
-
-
-/**
- */
-ymaps.behavior.MultiTouch.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.behavior.MultiTouch.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.behavior.MultiTouch.prototype.isEnabled = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.behavior.MultiTouch.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.behavior.MultiTouch.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.behavior.MultiTouch.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.behavior.MultiTouch.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IBehavior.
- * 
- * Поведение "масштабирование карты при выделении области правой кнопкой мыши".
- * 
- * @constructor
- * @implements {ymaps.IBehavior}
- * 
- * @param {Object=} options Опции.
- */
-ymaps.behavior.RightMouseButtonMagnifier = function(options) {};
-
-
-/**
- */
-ymaps.behavior.RightMouseButtonMagnifier.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.behavior.RightMouseButtonMagnifier.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.behavior.RightMouseButtonMagnifier.prototype.isEnabled = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.behavior.RightMouseButtonMagnifier.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.behavior.RightMouseButtonMagnifier.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.behavior.RightMouseButtonMagnifier.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.behavior.RightMouseButtonMagnifier.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IBehavior.
- * 
- * Поведение "редактор маршрутов".
- * 
- * @constructor
- * @implements {ymaps.IBehavior}
- * 
- */
-ymaps.behavior.RouteEditor = function() {};
-
-
-/**
- */
-ymaps.behavior.RouteEditor.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.behavior.RouteEditor.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.behavior.RouteEditor.prototype.isEnabled = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.behavior.RouteEditor.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.behavior.RouteEditor.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.behavior.RouteEditor.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.behavior.RouteEditor.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IBehavior.
- * 
- * Поведение "масштабирование карты колесом мыши".
- * 
- * @constructor
- * @implements {ymaps.IBehavior}
- * 
- * @param {Object=} options Опции.
- */
-ymaps.behavior.ScrollZoom = function(options) {};
-
-
-/**
- */
-ymaps.behavior.ScrollZoom.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.behavior.ScrollZoom.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.behavior.ScrollZoom.prototype.isEnabled = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.behavior.ScrollZoom.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.behavior.ScrollZoom.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.behavior.ScrollZoom.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.behavior.ScrollZoom.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IBehavior.
- * 
- * Поведение "Линейка". Позволяет отмечать на карте точки
- * и отображать расстояния между ними.
- * 
- * @constructor
- * @implements {ymaps.IBehavior}
- * 
- */
-ymaps.behavior.Ruler = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.behavior.Ruler.prototype.close = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.behavior.Ruler.prototype.getState = function() {};
-
-
-/**
- * @param {String} state Закодированное состояние линейки.
- */
-ymaps.behavior.Ruler.prototype.setState = function(state) {};
-
-
-/**
- */
-ymaps.behavior.Ruler.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.behavior.Ruler.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.behavior.Ruler.prototype.isEnabled = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.behavior.Ruler.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.behavior.Ruler.prototype.setParent = function(parent) {};
-
-
-/**
- * Геометрия поведения "Линейка".
- * 
- * @type {ymaps.geometry.LineString}
- */
-ymaps.behavior.Ruler.prototype.geometry;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.behavior.Ruler.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.behavior.Ruler.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IBehavior.
- * 
- * Поведение "перетаскивание карты с помощью мыши либо одиночного касания".
- * 
- * @constructor
- * @implements {ymaps.IBehavior}
- * 
- * @param {Object=} options Опции.
- */
-ymaps.behavior.Drag = function(options) {};
-
-
-/**
- */
-ymaps.behavior.Drag.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.behavior.Drag.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.behavior.Drag.prototype.isEnabled = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.behavior.Drag.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.behavior.Drag.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.behavior.Drag.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.behavior.Drag.prototype.options;
-
 /**
  * 
  * Расширяет
@@ -747,133 +183,104 @@ ymaps.Circle.prototype.editor;
  */
 ymaps.Circle.prototype.geometry;
 
-
-ymaps.clusterer = {};
-
 /**
  * 
  * Расширяет
- *             IBalloonManager.
+ *             IGeoObject, collection.Item.
  * 
- * Менеджер балуна кластеризатора. Позволяет управлять балуном кластера, открывать и скрывать его.
- * Использует внутри себя менеджер балуна карты map.Balloon.
- * Кластеризаторы содержат экземпляр этого класса, доступный как myClusterer.balloon.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Balloon 
+ * Кластер геообъектов.
+ * Используется по умолчанию в Clusterer.
  * 
  * @constructor
- * @implements {ymaps.IBalloonManager}
+ * @implements {ymaps.IGeoObject}
+ * @extends {ymaps.collection.Item}
  * 
- * @param {ymaps.Clusterer} clusterer Кластеризатор.
+ * @param {Array.<Number>|Object|ymaps.IPointGeometry} geometry Координаты метки или хэш с описанием
+ *                                                              геометрии или ссылка на объект точечной геометрии.
+ * @param {ymaps.IDataManager} properties Данные кластера.
+ * @param {Object=} options Опции кластера.
+ *                          Помимо частных опций, балун кластера поддерживает те же опции, что и Balloon.
+ *                          Опции для балуна кластера указываются с префикcом 'balloon'.
  */
-ymaps.clusterer.Balloon = function(clusterer) {};
+ymaps.ClusterPlacemark = function(geometry, properties, options) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.ClusterPlacemark.prototype.getBounds = function() {};
+
+
+/**
+ * @return {Array.<ymaps.IGeoObject>}
+ */
+ymaps.ClusterPlacemark.prototype.getGeoObjects = function() {};
 
 
 /**
  * @return {ymaps.vow.Promise}
  */
-ymaps.clusterer.Balloon.prototype.autoPan = function() {};
+ymaps.ClusterPlacemark.prototype.getOverlay = function() {};
 
 
 /**
- * @see ymaps.IPopupManager
- * 
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
+ * @return {ymaps.IOverlay|null}
  */
-ymaps.clusterer.Balloon.prototype.close = function(force) {};
+ymaps.ClusterPlacemark.prototype.getOverlaySync = function() {};
 
 
 /**
- * @see ymaps.IPopupManager
+ * @see ymaps.IChildOnMap
  * 
+ * @return {ymaps.IControlParent|null}
  */
-ymaps.clusterer.Balloon.prototype.destroy = function() {};
+ymaps.ClusterPlacemark.prototype.getParent = function() {};
 
 
 /**
- * @see ymaps.IPopupManager
+ * @see ymaps.IChildOnMap
  * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
  */
-ymaps.clusterer.Balloon.prototype.getData = function() {};
+ymaps.ClusterPlacemark.prototype.setParent = function(parent) {};
 
 
 /**
- * @see ymaps.IPopupManager
+ * @see ymaps.IParentOnMap
  * 
- * @return {ymaps.IOptionManager}
+ * @return {ymaps.Map}
  */
-ymaps.clusterer.Balloon.prototype.getOptions = function() {};
+ymaps.ClusterPlacemark.prototype.getMap = function() {};
 
 
 /**
- * @see ymaps.IPopupManager
+ * Состояние кластера. Определяется следующими полями:
  * 
- * @return {ymaps.vow.Promise}
+ * activeObject - Cсылка на активный объект кластера.
+ *     Активным объектом является тот, который в данный момент выбран в
+ *     балуне кластера.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
  */
-ymaps.clusterer.Balloon.prototype.getOverlay = function() {};
+ymaps.ClusterPlacemark.prototype.state;
 
 
 /**
- * @see ymaps.IPopupManager
+ * Геометрия геообъекта.
  * 
- * @return {ymaps.IOverlay}
+ * @type {ymaps.IGeometry|null}
  */
-ymaps.clusterer.Balloon.prototype.getOverlaySync = function() {};
+ymaps.ClusterPlacemark.prototype.geometry;
 
 
 /**
- * @see ymaps.IPopupManager
+ * Данные геообъекта.
  * 
+ * @type {ymaps.IDataManager}
  */
-ymaps.clusterer.Balloon.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {Boolean}
- */
-ymaps.clusterer.Balloon.prototype.isOpen = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>=} position Координаты открытия.
- * @param {Object|String|HTMLElement=} data Данные.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Balloon.prototype.open = function(position, data, options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object|String|HTMLElement} data Данные инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Balloon.prototype.setData = function(data) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Balloon.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Balloon.prototype.setPosition = function(position) {};
+ymaps.ClusterPlacemark.prototype.properties;
 
 
 /**
@@ -883,7 +290,17 @@ ymaps.clusterer.Balloon.prototype.setPosition = function(position) {};
  * 
  * @type {ymaps.IEventManager}
  */
-ymaps.clusterer.Balloon.prototype.events;
+ymaps.ClusterPlacemark.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.ClusterPlacemark.prototype.options;
 
 /**
  * 
@@ -1019,125 +436,6 @@ ymaps.Clusterer.prototype.options;
 /**
  * 
  * Расширяет
- *             IGeoObject, collection.Item.
- * 
- * Кластер геообъектов.
- * Используется по умолчанию в Clusterer.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * @extends {ymaps.collection.Item}
- * 
- * @param {Array.<Number>|Object|ymaps.IPointGeometry} geometry Координаты метки или хэш с описанием
- *                                                              геометрии или ссылка на объект точечной геометрии.
- * @param {ymaps.IDataManager} properties Данные кластера.
- * @param {Object=} options Опции кластера.
- *                          Помимо частных опций, балун кластера поддерживает те же опции, что и Balloon.
- *                          Опции для балуна кластера указываются с префикcом 'balloon'.
- */
-ymaps.ClusterPlacemark = function(geometry, properties, options) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.ClusterPlacemark.prototype.getBounds = function() {};
-
-
-/**
- * @return {Array.<ymaps.IGeoObject>}
- */
-ymaps.ClusterPlacemark.prototype.getGeoObjects = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.ClusterPlacemark.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.ClusterPlacemark.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.ClusterPlacemark.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.ClusterPlacemark.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.ClusterPlacemark.prototype.getMap = function() {};
-
-
-/**
- * Состояние кластера. Определяется следующими полями:
- * 
- * activeObject - Cсылка на активный объект кластера.
- *     Активным объектом является тот, который в данный момент выбран в
- *     балуне кластера.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.ClusterPlacemark.prototype.state;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.ClusterPlacemark.prototype.geometry;
-
-
-/**
- * Данные геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.ClusterPlacemark.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.ClusterPlacemark.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.ClusterPlacemark.prototype.options;
-
-/**
- * 
- * Расширяет
  *             ICollection, collection.Item.
  * 
  * Базовая реализация коллекции объектов на карте.
@@ -1228,1145 +526,6 @@ ymaps.Collection.prototype.removeAll = function() {};
  * @type {ymaps.IEventManager}
  */
 ymaps.Collection.prototype.events;
-
-
-ymaps.collection = {};
-
-/**
- * 
- * Расширяет
- *             IChildOnMap, ICustomizable, IEventEmitter, IParentOnMap.
- * 
- * Базовый класс элемента коллекции объектов карты.
- * 
- * @constructor
- * @implements {ymaps.IChildOnMap}
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * @implements {ymaps.IParentOnMap}
- * 
- * @param {Object=} options Опции обьекта.
- */
-ymaps.collection.Item = function(options) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.collection.Item.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IParentOnMap}
- */
-ymaps.collection.Item.prototype.getParent = function() {};
-
-
-/**
- * @param {ymaps.Map} map Карта, на которую добавлен объект.
- */
-ymaps.collection.Item.prototype.onAddToMap = function(map) {};
-
-
-/**
- * @param {ymaps.Map} oldMap Карта, с которой удален объект.
- */
-ymaps.collection.Item.prototype.onRemoveFromMap = function(oldMap) {};
-
-
-/**
- * @param {ymaps.IParentOnMap} parent Родительский объект.
- * @return {ymaps.collection.Item}
- */
-ymaps.collection.Item.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.collection.Item.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.collection.Item.prototype.options;
-
-
-ymaps.control = {};
-
-/**
- * 
- * Расширяет
- *             ICustomizable, ISelectableControl.
- * 
- * Элемент управления "Кнопка".
- * Стандартный макет кнопки изменяет свой внешний вид в зависимости от размеров карты.
- * Если карта имеет большую ширину, то кнопка принимает вид "картинка + текст".
- * Если карта среднего размера, кнопка принимает вид "текст".
- * Если карта небольшого размера, то в макете кнопки отображается только иконка.
- * Если для кнопки не задана иконка, то во всех состояниях будет отображаться текст и наоборот.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.ISelectableControl}
- * 
- * @param {Object|String=} parameters Параметры кнопки или строка - содержимое кнопки в виде HTML.
- */
-ymaps.control.Button = function(parameters) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.control.Button.prototype.getMap = function() {};
-
-
-/**
- */
-ymaps.control.Button.prototype.deselect = function() {};
-
-
-/**
- */
-ymaps.control.Button.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.control.Button.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.control.Button.prototype.isEnabled = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.control.Button.prototype.isSelected = function() {};
-
-
-/**
- */
-ymaps.control.Button.prototype.select = function() {};
-
-
-/**
- * @see ymaps.IControl
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.control.Button.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IControl
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.control.Button.prototype.setParent = function(parent) {};
-
-
-/**
- * Данные кнопки.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * image - иконка кнопки, если есть;
- *     content - cодержимое кнопки в виде HTML;
- *     title - текст всплывающей подсказки, которая появляется при наведении на кнопку курсора мыши.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.Button.prototype.data;
-
-
-/**
- * Состояние кнопки.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * selected - признак, нажата ли кнопка;
- *     enabled - признак, активна ли кнопка;
- *     size - размер, который в данный момент выставлен кнопке;
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.Button.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.control.Button.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.control.Button.prototype.events;
-
-/**
- * 
- * Расширяет
- *             control.Button.
- * 
- * Элемент управления "Полноэкранный режим".
- * Задать свойство z-index контейнеру карты, находящейся в "полноэкранном режиме",
- * можно с помощью опции Map.options.fullscreenZIndex.
- * Ключ элемента управления в хранилище control.storage —&nbsp;"fullscreenControl".
- * 
- * @constructor
- * @extends {ymaps.control.Button}
- * 
- * @param {Object=} parameters Параметры элемента управления.
- */
-ymaps.control.FullscreenControl = function(parameters) {};
-
-
-/**
- */
-ymaps.control.FullscreenControl.prototype.enterFullscreen = function() {};
-
-
-/**
- */
-ymaps.control.FullscreenControl.prototype.exitFullscreen = function() {};
-
-
-/**
- * Состояние элемента управления.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * fullscreen — признак, находится ля карта в полноэкранном режиме.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.FullscreenControl.prototype.state;
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.Storage
- * Хранилище классов поведений карты.
- * Добавление нового поведения на карту производится через это хранилище.
- * По умолчанию в хранилище добавлены следующие поведения:
- *         "drag" - перемещание карты при нажатой левой кнопке мыши либо одиночным касанием behavior.Drag;
- *         "scrollZoom" - изменение масштаба колесом мыши behavior.ScrollZoom (только для десктопных браузеров);
- *         "dblClickZoom" - масштабирование карты двойным щелчком кнопки мыши behavior.DblClickZoom;
- *         "multiTouch" - масштабирование карты двойным касанием (например, пальцами на сенсорном экране) behavior.MultiTouch (только для мобильных браузеров);
- *         "rightMouseButtonMagnifier" - увеличение области, выделенной правой кнопкой мыши (только для настольных браузеров), behavior.RightMouseButtonMagnifier (только для десктопных браузеров);
- *         "leftMouseButtonMagnifier" - увеличение области, выделенной левой кнопкой мыши либо одиночным касанием, behavior.LeftMouseButtonMagnifier;
- *         "ruler" - измерение расстояния behavior.Ruler.
- *         "routeEditor" - редактор маршрутов behavior.RouteEditor;
- * 
- * 
- * 
- * @type {ymaps.util.Storage}
- */
-ymaps.behavior.storage;
-
-/**
- * 
- * Расширяет
- *             control.Button.
- * 
- * Элемент управления "геолокация". Позволяет отразить положение пользователя
- * на карте.
- * Ключ элемента управления в хранилище control.storage —&nbsp;"geolocationControl".
- * 
- * См.: geolocation 
- * 
- * @constructor
- * @extends {ymaps.control.Button}
- * 
- * @param {Object=} parameters Параметры элемента управления.
- */
-ymaps.control.GeolocationControl = function(parameters) {};
-
-/**
- * 
- * Расширяет
- *             ICollection, IControl, ICustomizable.
- * 
- * Класс для создания элемента управления в виде раскрывающегося списка.
- * Стандартный макет выпадающего списка изменяет свой внешний вид в зависимости от размеров карты.
- * Если карта имеет большую ширину, то в заголовке выпадающего списка отображается текст.
- * Если карта небольшого размера, то в заголовке списка отображается только иконка.
- * Если для кнопки не задана иконка, то во всех состояниях будет отображаться текст и наоборот.
- * 
- * @constructor
- * @implements {ymaps.ICollection}
- * @implements {ymaps.IControl}
- * @implements {ymaps.ICustomizable}
- * 
- * @param {Object=} parameters Параметры выпадающего списка.
- */
-ymaps.control.ListBox = function(parameters) {};
-
-
-/**
- * @return {ymaps.control.ListBox}
- */
-ymaps.control.ListBox.prototype.collapse = function() {};
-
-
-/**
- * @return {ymaps.control.ListBox}
- */
-ymaps.control.ListBox.prototype.expand = function() {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.control.ListBox.prototype.getMap = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.control.ListBox.prototype.isExpanded = function() {};
-
-
-/**
- * @param {Object} object Добавляемый объект.
- * @return {ymaps.ICollection}
- */
-ymaps.control.ListBox.prototype.add = function(object) {};
-
-
-/**
- * @return {ymaps.IIterator}
- */
-ymaps.control.ListBox.prototype.getIterator = function() {};
-
-
-/**
- * @param {Object} object Удаляемый объект.
- * @return {ymaps.ICollection}
- */
-ymaps.control.ListBox.prototype.remove = function(object) {};
-
-
-/**
- * @return {ymaps.IControlParent|null}
- */
-ymaps.control.ListBox.prototype.getParent = function() {};
-
-
-/**
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.control.ListBox.prototype.setParent = function(parent) {};
-
-
-/**
- * Данные выпадающего списка.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * content - заголовок выпадающего списка;
- *     title - текст всплывающей подсказки, которая появляется при наведении на список курсора мыши.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.ListBox.prototype.data;
-
-
-/**
- * Состояние выпадающего списка.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * expanded - признак, раскрыт ли список;
- *     size - размер, который в данный момент выставлен списку;
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.ListBox.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.control.ListBox.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.control.ListBox.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IHintManager.
- * 
- * Менеджер хинта кластеризатора. Позволяет управлять хинтом кластара, открывать и скрывать его.
- * Использует внутри себя менеджер хинта карты map.Hint.
- * Кластеризаторы содержат экземпляр этого класса, доступный как myClusterer.hint.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Hint 
- * 
- * @constructor
- * @implements {ymaps.IHintManager}
- * 
- * @param {ymaps.Clusterer} clusterer Кластеризатор.
- */
-ymaps.clusterer.Hint = function(clusterer) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Hint.prototype.close = function(force) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.clusterer.Hint.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.clusterer.Hint.prototype.getData = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOptionManager}
- */
-ymaps.clusterer.Hint.prototype.getOptions = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Hint.prototype.getOverlay = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOverlay}
- */
-ymaps.clusterer.Hint.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.clusterer.Hint.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {Boolean}
- */
-ymaps.clusterer.Hint.prototype.isOpen = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>=} position Координаты открытия.
- * @param {Object|String|HTMLElement=} data Данные.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Hint.prototype.open = function(position, data, options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object|String|HTMLElement} data Данные инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Hint.prototype.setData = function(data) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Hint.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.clusterer.Hint.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.clusterer.Hint.prototype.events;
-
-/**
- * 
- * Менеджер элементов управления.
- * 
- * @constructor
- * 
- * @param {ymaps.Map} map Экземпляр карты.
- * @param {Array.<String>|Array.<ymaps.IControl>=} controls Элементы управления, которые требуется разместить на карте изначально.
- * @param {Object=} options Опции менеджера.
- */
-ymaps.control.Manager = function(map, controls, options) {};
-
-
-/**
- * @param {ymaps.IControl|String} control Элементы управления, заданные
- *                                        экземплярами классов, реализующих интерфейс IControl либо ключами.
- *                                        
- * @param {Object=} options Опции элемента управления.
- * @return {ymaps.control.Manager}
- */
-ymaps.control.Manager.prototype.add = function(control, options) {};
-
-
-/**
- * @param {Function} callback Функция-обработчик. На вход получает элемент коллекции.
- *                            При возвращении функцией значения false перебор останавливается.
- * @param {Object} context Контекст вызываемой функции.
- * @return {ymaps.control.Manager}
- */
-ymaps.control.Manager.prototype.each = function(callback, context) {};
-
-
-/**
- * @param {Number|String} index Индекс искомого элемента или его ключ.
- * @return {ymaps.IControl|null}
- */
-ymaps.control.Manager.prototype.get = function(index) {};
-
-
-/**
- * @param {ymaps.IControl} control Элемент управления.
- * @return {ymaps.vow.Promise}
- */
-ymaps.control.Manager.prototype.getChildElement = function(control) {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.control.Manager.prototype.getContainer = function() {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.control.Manager.prototype.getMap = function() {};
-
-
-/**
- * @param {String|ymaps.IControl} childToFind Элемент управления или его ключ.
- * @return {number}
- */
-ymaps.control.Manager.prototype.indexOf = function(childToFind) {};
-
-
-/**
- * @param {ymaps.IControl|String} control Удаляемый элемент управления, либо его ключ.
- * @return {ymaps.control.Manager}
- */
-ymaps.control.Manager.prototype.remove = function(control) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.control.Manager.prototype.events;
-
-
-/**
- * Опции менеджера.
- * 
- * @type {ymaps.option.Manager}
- */
-ymaps.control.Manager.prototype.options;
-
-
-/**
- * Состояние менеджера.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * size - состояние в котором находятся элементы управления.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.Manager.prototype.state;
-
-/**
- * 
- * Расширяет
- *             control.Button.
- * 
- * Элемент управления "Редактор маршрутов".
- * Ключ элемента управления в хранилище control.storage —&nbsp;"routeEditor".
- * 
- * @constructor
- * @extends {ymaps.control.Button}
- * 
- * @param {Object=} parameters Параметры элемента управления.
- */
-ymaps.control.RouteEditor = function(parameters) {};
-
-
-/**
- * @return {ymaps.router.Route}
- */
-ymaps.control.RouteEditor.prototype.getRoute = function() {};
-
-/**
- * 
- * Расширяет
- *             IControl, ICustomizable.
- * 
- * Элемент управления "Поиск по карте". Позволяет обрабатывать поисковый запрос
- * пользователя и отображать результат в панели и на карте.
- * Каждый результат поиска представляется в панели элемента управления в виде
- * двухстрочного блока. Для формирования блока используются поля name и description
- * объекта-результата геокодирования.
- * 
- * @constructor
- * @implements {ymaps.IControl}
- * @implements {ymaps.ICustomizable}
- * 
- * @param {Object=} parameters Параметры элемента управления.
- */
-ymaps.control.SearchControl = function(parameters) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.control.SearchControl.prototype.getMap = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.control.SearchControl.prototype.getRequestString = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.control.SearchControl.prototype.getResponseMetaData = function() {};
-
-
-/**
- * @param {number} index Индекс результата (начиная с 0).
- * @return {ymaps.vow.Promise}
- */
-ymaps.control.SearchControl.prototype.getResult = function(index) {};
-
-
-/**
- * @return {Array.<Object>}
- */
-ymaps.control.SearchControl.prototype.getResultsArray = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.control.SearchControl.prototype.getResultsCount = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.control.SearchControl.prototype.getSelectedIndex = function() {};
-
-
-/**
- */
-ymaps.control.SearchControl.prototype.hideResult = function() {};
-
-
-/**
- * @param {String} request Запрос.
- * @return {ymaps.vow.Promise}
- */
-ymaps.control.SearchControl.prototype.search = function(request) {};
-
-
-/**
- * @param {number} index Индекс результата, начинается с 0.
- * @return {ymaps.control.SearchControl}
- */
-ymaps.control.SearchControl.prototype.showResult = function(index) {};
-
-
-/**
- * @return {ymaps.IControlParent|null}
- */
-ymaps.control.SearchControl.prototype.getParent = function() {};
-
-
-/**
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.control.SearchControl.prototype.setParent = function(parent) {};
-
-
-/**
- * Состояние элемента управления.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * size — текущий размер элемента управления;
- *     results — массив, содержащий результаты поиска;
- *     currentIndex — индекс текущего выбранного элемента;
- *     found — общее количество найденных результатов;
- *     request — текущий активный запрос;
- *     correction — исправленный запрос;
- *     noSuggestPanel - флаг, скрывать ли панель поисковых подсказок.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.SearchControl.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.control.SearchControl.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.control.SearchControl.prototype.events;
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.Storage
- * Хранилище элементов управления карты. Содержит
- * соответствие ключей элементов управления и их конструкторов.
- * По умолчанию в хранилище добавлены следующие элементы управления:
- * 
- * 
- * @type {ymaps.util.Storage}
- */
-ymaps.control.storage;
-
-/**
- * 
- * Расширяет
- *             control.ListBox.
- * 
- * Элемент управления "Типы карты". В данный элемент управления можно добавлять
- * элементы списка, которые описывают типы карты, а также дополнительные элементы.
- * Ключ элемента управления в хранилище control.storage —&nbsp;"typeSelector".
- * 
- * @constructor
- * @extends {ymaps.control.ListBox}
- * 
- * @param {Array.<String>|Array.<ymaps.MapType>|Object=} parameters Объект с описаниями параметров элемента управления.
- *                                                                  Если передан массив, то он трактуется как массив типов карты.
- */
-ymaps.control.TypeSelector = function(parameters) {};
-
-
-/**
- * @param {String|ymaps.MapType} mapType Тип карты.
- * @param {number=} positionIndex Позиция в списке (если не указана,
- *                                новый тип карты добавляется в конец списка).
- *                                Список значений positionIndex по умолчанию для стандартных типов карты:
- *                                
- *                                    'yandex#map' - 5;
- *                                    'yandex#satellite' - 10;
- *                                    'yandex#hybrid' - 15;
- *                                    'yandex#publicMap' - 20;
- *                                    'yandex#publicMapHybrid' - 25.
- *                                
- * @return {ymaps.control.TypeSelector}
- */
-ymaps.control.TypeSelector.prototype.addMapType = function(mapType, positionIndex) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.control.TypeSelector.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.control.TypeSelector}
- */
-ymaps.control.TypeSelector.prototype.removeAllMapTypes = function() {};
-
-
-/**
- * @param {String|ymaps.MapType} mapType Тип карты.
- * @return {ymaps.control.TypeSelector}
- */
-ymaps.control.TypeSelector.prototype.removeMapType = function(mapType) {};
-
-
-/**
- * Данные элемента управления.
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.TypeSelector.prototype.data;
-
-/**
- * 
- * Расширяет
- *             IControl, ICustomizable.
- * 
- * Панель управления пробками на карте.
- * 
- * @constructor
- * @implements {ymaps.IControl}
- * @implements {ymaps.ICustomizable}
- * 
- * @param {Object=} parameters Параметры элемента управления.
- */
-ymaps.control.TrafficControl = function(parameters) {};
-
-
-/**
- */
-ymaps.control.TrafficControl.prototype.collapse = function() {};
-
-
-/**
- */
-ymaps.control.TrafficControl.prototype.expand = function() {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.control.TrafficControl.prototype.getMap = function() {};
-
-
-/**
- * @param {String=} key Ключ провайдера информации о пробках.
- *                      Список доступных ключей:
- *                      
- *                          'traffic#actual' - провайдер пробок "сейчас";
- *                          'traffic#archive' - провайдер пробок "обычно".
- *                      
- *                      Если параметр не передан, возвращается текущий провайдер.
- * @return {ymaps.ITrafficProvider}
- */
-ymaps.control.TrafficControl.prototype.getProvider = function(key) {};
-
-
-/**
- */
-ymaps.control.TrafficControl.prototype.hideTraffic = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.control.TrafficControl.prototype.isExpanded = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.control.TrafficControl.prototype.isTrafficShown = function() {};
-
-
-/**
- */
-ymaps.control.TrafficControl.prototype.showTraffic = function() {};
-
-
-/**
- * @return {ymaps.IControlParent|null}
- */
-ymaps.control.TrafficControl.prototype.getParent = function() {};
-
-
-/**
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.control.TrafficControl.prototype.setParent = function(parent) {};
-
-
-/**
- * Данные панели.
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.TrafficControl.prototype.data;
-
-
-/**
- * Состояние панели.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * trafficShown - признак, показан ли на карте провайдер пробок;
- *     providerKey - ключ провайдера, который показывает панель.
- *     Может принимать значения 'traffic#actual' или 'traffic#archive';
- *     expanded - признак, развернута ли панель.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.TrafficControl.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.control.TrafficControl.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.control.TrafficControl.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IControl, ICustomizable.
- * 
- * Элемент управления масштабом карты.
- * Ключ элемента управления в хранилище control.storage —&nbsp;"zoomControl".
- * 
- * @constructor
- * @implements {ymaps.IControl}
- * @implements {ymaps.ICustomizable}
- * 
- * @param {Object=} parameters Параметры элемента управления.
- */
-ymaps.control.ZoomControl = function(parameters) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.control.ZoomControl.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IControlParent|null}
- */
-ymaps.control.ZoomControl.prototype.getParent = function() {};
-
-
-/**
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.control.ZoomControl.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.control.ZoomControl.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.control.ZoomControl.prototype.events;
-
-
-ymaps.coordSystem = {};
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  ICoordSystem
- * Класс, описывающий геометрию декартовой плоскости.
- * Используется как координатная система по умолчанию при построении
- * геодезических линий в нестандартных проекциях.
- * 
- * Методы 
- * 
- * @param {Number|Array.<Number>=} scale Масштаб одного деления на оси. Может быть числом или парой чисел для каждой из осей.
- */
-ymaps.coordSystem.cartesian = function(scale) {};
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  ICoordSystem
- * Объект, описывающий геометрию земной поверхности.
- * Позволяет строить кратчайшие маршруты (геодезические линии) между
- * точками земной поверхности и находить расстояния.
- * 
- * 
- * 
- * 
- * @type {ymaps.ICoordSystem}
- */
-ymaps.coordSystem.geo;
-
-
-ymaps.data = {};
-
-/**
- * 
- * Расширяет
- *             IDataManager, IFreezable.
- * 
- * Менеджер произвольных данных.
- * 
- * @constructor
- * @implements {ymaps.IDataManager}
- * @implements {ymaps.IFreezable}
- * 
- * @param {Object} data Данные.
- */
-ymaps.data.Manager = function(data) {};
-
-
-/**
- * @param {String} path Строка с именем поля данных. Имя может адресовать вложенные поля, т.е. содержать '.'.
- * @param {Object=} defaultValue Значение по умолчанию.
- * @return {Object}
- */
-ymaps.data.Manager.prototype.get = function(path, defaultValue) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.data.Manager.prototype.getAll = function() {};
-
-
-/**
- * @param {Object|String} path Строка, содержащая имя поля данных, либо объект вида {"имя поля": "значение"}.
- * @param {Object=} value Значение, если в качестве первого аргумента передается строка, содержащая имя поля.
- * @return {ymaps.data.Manager}
- */
-ymaps.data.Manager.prototype.set = function(path, value) {};
-
-
-/**
- * @param {*} data 
- * @return {ymaps.data.Manager}
- */
-ymaps.data.Manager.prototype.setAll = function(data) {};
-
-
-/**
- * @param {String|Array.<String>} path Имя поля, либо массив имён.
- * @return {ymaps.data.Manager}
- */
-ymaps.data.Manager.prototype.unset = function(path) {};
-
-
-/**
- * @return {ymaps.data.Manager}
- */
-ymaps.data.Manager.prototype.unsetAll = function() {};
-
-
-/**
- * @return {ymaps.IFreezable}
- */
-ymaps.data.Manager.prototype.freeze = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.data.Manager.prototype.isFrozen = function() {};
-
-
-/**
- * @return {ymaps.IFreezable}
- */
-ymaps.data.Manager.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.data.Manager.prototype.events;
 
 /**
  * 
@@ -2467,690 +626,6 @@ ymaps.DomEvent.prototype.isMapEventAllowed = function() {};
  */
 ymaps.DomEvent.prototype.isPropagationStopped = function() {};
 
-
-ymaps.domEvent = {};
-
-/**
- * 
- * Статический объект.
- * 
- * Предоставляет единый интерфейс для работы с событиями DOM-элементов во всех браузерах и на всех устройствах.
- * Для устройств, которые не поддерживают мышь, события будут транслироваться.
- * 
- * Событие начала касания (touchstart/pointerdown) с одной точкой прикосновения
- *     транслируется в последовательность событий mouseenter, mousemove и mousedown;
- *     Событие перемещения касания (touchmove/pointermove) с одной точкой прикосновения транслируется в событие mousemove;
- *     События завершения касания (touchend/pointerup) или отмены (touchcancel/pointercancel)
- *     транслируются в последовательность событий mouseup, mousemove и mouseleave,
- *     если ранее произошло событие начала касания с одной точкой прикосновения;
- *     Быстрое поступление событий начала и завершения с одной точкой прикосновения без перемещения транслируется в событие click;
- *     Быстрое поступление двух событий click транслируется в событие dblclick;
- *     Если между событиями начала и завершения с одной точкой прикосновения без перемещения была продолжительная задержка,
- *     то это транслируется в событие contextmenu.
- * Также поддерживаются специальные события для обработки нескольких одновременных касаний.
- * 
- * multitouchstart отправляется при поступлении события начала касания с двумя и более точками прикосновений;
- *     multitouchmove отправляется при поступлении события перемещения касания с двумя и более точками прикосновений;
- *     multitouchend отправляется при поступлении события завершения касания, если ранее было отправлено событие multitouchstart;
- *     При добавлении/удалении точки прикосновения будет отправлено событие multitouchend
- *     и событие multitouchstart, если оставшееся количество точек больше или равно двум.
- * Менеджер работы с событиями DOM-элементов.
- * 
- * Методы 
- * 
- * Примеры: 
- * 
- * 1.
- * 
- * 2.
- * 
- * 3.
- * 
- * 4.
- * 
- */
-ymaps.domEvent.manager = {};
-
-
-/**
- * @param {HTMLElement} htmlElement DOM-элемент, события которого необходимо прослушивать.
- * @param {String|Array.<String>} types Тип или типы событий.
- * @param {Function} callback Функция-обработчик события.
- * @param {Object=} context Контекст исполнения функции-обработчика.
- * @param {Boolean=} capture Признак того, что событие необходимо отслеживать на фазе захвата.
- * @return {ymaps.domEvent.manager}
- */
-ymaps.domEvent.manager.add = function(htmlElement, types, callback, context, capture) {};
-
-
-/**
- * @param {HTMLElement} htmlElement DOM-элемент.
- * @param {Boolean=} capture Признак того, что событие необходимо отслеживать на фазе захвата.
- * @return {ymaps.event.Group}
- */
-ymaps.domEvent.manager.group = function(htmlElement, capture) {};
-
-
-/**
- * @param {HTMLElement} htmlElement DOM-элемент, события которого прослушиваются.
- * @param {String|Array.<String>} types Тип или типы событий.
- * @param {Function|String} callback Функция-обработчик события либо уникальный
- *                                   id пары callback-context.
- * @param {Object=} context Контекст исполнения функции-обработчика.
- * @param {Boolean=} capture Признак того, что событие необходимо отслеживать на фазе захвата.
- * @return {ymaps.domEvent.manager}
- */
-ymaps.domEvent.manager.remove = function(htmlElement, types, callback, context, capture) {};
-
-/**
- * 
- * Расширяет
- *             ICustomizable, ISelectableControl.
- * 
- * Элемент раскрывающегося списка.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.ISelectableControl}
- * 
- * @param {Object|String=} parameters Параметры элемента либо строка - HTML-содержимое элемента.
- */
-ymaps.control.ListBoxItem = function(parameters) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.control.ListBoxItem.prototype.getMap = function() {};
-
-
-/**
- */
-ymaps.control.ListBoxItem.prototype.deselect = function() {};
-
-
-/**
- */
-ymaps.control.ListBoxItem.prototype.disable = function() {};
-
-
-/**
- */
-ymaps.control.ListBoxItem.prototype.enable = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.control.ListBoxItem.prototype.isEnabled = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.control.ListBoxItem.prototype.isSelected = function() {};
-
-
-/**
- */
-ymaps.control.ListBoxItem.prototype.select = function() {};
-
-
-/**
- * @see ymaps.IControl
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.control.ListBoxItem.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IControl
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.control.ListBoxItem.prototype.setParent = function(parent) {};
-
-
-/**
- * Данные элемента списка.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * content - cодержимое элемента списка в виде HTML;
- *     title - текст всплывающей подсказки.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.ListBoxItem.prototype.data;
-
-
-/**
- * Состояние элемента списка.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * selected - признак, выбран ли элемент списка;
- *     enabled - признак, активен ли элемент списка.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.control.ListBoxItem.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.control.ListBoxItem.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.control.ListBoxItem.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IMultiTouchEvent.
- * 
- * Объект, описывающий multitouch-событие, которое было вызвано
- * несколькими событиями PointerEvent. Предоставляет прокси-методы для
- * доступа к полям и методам DOM-события.
- * 
- * @constructor
- * 
- * @param {Object} originalEvent pointer-событие.
- * @param {String=} type Тип события. Если не указан, считается равным 'multi' + originalEvent.type.
- */
-ymaps.domEvent.MultiPointer = function(originalEvent, type) {};
-
-
-/**
- * @param {String} name Имя свойства.
- * @return {Object}
- */
-ymaps.domEvent.MultiPointer.prototype.get = function(name) {};
-
-/**
- * 
- * Расширяет
- *             control.Button.
- * 
- * Элемент управления "Линейка".
- * Ключ элемента управления в хранилище control.storage —&nbsp;"rulerControl".
- * 
- * @constructor
- * @extends {ymaps.control.Button}
- * 
- * @param {Object=} parameters Параметры элемента управления.
- */
-ymaps.control.RulerControl = function(parameters) {};
-
-/**
- * 
- * Расширяет
- *             IMultiTouchEvent.
- * 
- * Объект-событие. Предоставляет прокси-методы для
- * доступа к полям и методам DOM-события. Возвращаемые
- * значения нормализованы с учётом особенностей различных браузеров.
- * 
- * @constructor
- * 
- * @param {Object} originalEvent multitouch-событие.
- * @param {String=} type Тип события. Если не указан, считается равным 'multi' + originalEvent.type.
- */
-ymaps.domEvent.MultiTouch = function(originalEvent, type) {};
-
-
-/**
- * @param {String} name Имя свойства.
- * @return {Object}
- */
-ymaps.domEvent.MultiTouch.prototype.get = function(name) {};
-
-/**
- * 
- * Расширяет
- *             IMultiTouchEvent.
- * 
- * Объект-событие. Предоставляет прокси-методы для
- * доступа к полям и методам DOM-события. Возвращаемые
- * значения нормализованы с учётом особенностей различных браузеров.
- * 
- * @constructor
- * 
- * @param {Object} originalEvent DOM-событие.
- * @param {String=} type Тип события. Если не указан, берётся из originalEvent.type.
- */
-ymaps.domEvent.Touch = function(originalEvent, type) {};
-
-
-/**
- * @param {String} name Имя свойства.
- * @return {Object}
- */
-ymaps.domEvent.Touch.prototype.get = function(name) {};
-
-
-ymaps.error = {};
-
-/**
- * 
- * Расширяет Error.
- * 
- * @constructor
- * @extends {ymaps.Error}
- * 
- */
-ymaps.error.ClientError = function() {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Критические ошибки при выполнении операций.
- * Эти ошибки вызваны некорректным использованием API и должны быть исправлены разработчиком.
- * 
- * @param {String} errorType Тип ошибки (из пространства имен error.*).
- * @param {String=} message Текст ошибки.
- */
-ymaps.error.create = function(errorType, message) {};
-
-/**
- * 
- * Расширяет
- *             error.ExternalError.
- * 
- * @constructor
- * @extends {ymaps.error.ExternalError}
- * 
- */
-ymaps.error.DataProcessingError = function() {};
-
-/**
- * 
- * Расширяет
- *             error.Warning.
- * 
- * @constructor
- * @extends {ymaps.error.Warning}
- * 
- */
-ymaps.error.DeprecationWarning = function() {};
-
-/**
- * 
- * Расширяет
- *             error.Reject.
- * 
- * @constructor
- * @extends {ymaps.error.Reject}
- * 
- */
-ymaps.error.EmptyResultReject = function() {};
-
-/**
- * 
- * Расширяет Error.
- * 
- * @constructor
- * @extends {ymaps.Error}
- * 
- */
-ymaps.error.ExternalError = function() {};
-
-/**
- * 
- * Расширяет
- *             error.ClientError.
- * 
- * @constructor
- * @extends {ymaps.error.ClientError}
- * 
- */
-ymaps.error.InputError = function() {};
-
-/**
- * 
- * Расширяет
- *             error.ClientError.
- * 
- * @constructor
- * @extends {ymaps.error.ClientError}
- * 
- */
-ymaps.error.FeatureRemovedError = function() {};
-
-/**
- * 
- * Расширяет
- *             error.ExternalError.
- * 
- * @constructor
- * @extends {ymaps.error.ExternalError}
- * 
- */
-ymaps.error.NotSupportedError = function() {};
-
-/**
- * 
- * Расширяет
- *             error.Reject.
- * 
- * @constructor
- * @extends {ymaps.error.Reject}
- * 
- */
-ymaps.error.OperationCanceledReject = function() {};
-
-/**
- * 
- * Расширяет
- *             IMultiTouchEvent.
- * 
- * Объект-событие. Предоставляет прокси-методы для
- * доступа к полям и методам DOM-события (одиночное касание экрана).
- * 
- * @constructor
- * 
- * @param {Object} originalEvent DOM-событие.
- * @param {String=} type Тип события. Если не указан, берётся из originalEvent.type.
- */
-ymaps.domEvent.Pointer = function(originalEvent, type) {};
-
-
-/**
- * @param {String} name Имя свойства.
- * @return {Object}
- */
-ymaps.domEvent.Pointer.prototype.get = function(name) {};
-
-/**
- * 
- * Расширяет
- *             error.Reject.
- * 
- * @constructor
- * @extends {ymaps.error.Reject}
- * 
- */
-ymaps.error.OperationUnallowedReject = function() {};
-
-/**
- * 
- * Расширяет
- *             error.ClientError.
- * 
- * @constructor
- * @extends {ymaps.error.ClientError}
- * 
- */
-ymaps.error.ProcessError = function() {};
-
-/**
- * 
- * Расширяет
- *             error.ExternalError.
- * 
- * @constructor
- * @extends {ymaps.error.ExternalError}
- * 
- */
-ymaps.error.AccessError = function() {};
-
-/**
- * 
- * Расширяет
- *             error.Reject.
- * 
- * @constructor
- * @extends {ymaps.error.Reject}
- * 
- */
-ymaps.error.OperationUnawailableReject = function() {};
-
-/**
- * 
- * Расширяет
- *             error.ClientError.
- * 
- * @constructor
- * @extends {ymaps.error.ClientError}
- * 
- */
-ymaps.error.StateError = function() {};
-
-/**
- * 
- * Расширяет Error.
- * 
- * @constructor
- * @extends {ymaps.Error}
- * 
- */
-ymaps.error.Reject = function() {};
-
-/**
- * 
- * Расширяет
- *             error.ClientError.
- * 
- * @constructor
- * @extends {ymaps.error.ClientError}
- * 
- */
-ymaps.error.StorageItemAccessError = function() {};
-
-/**
- * 
- * Расширяет Error.
- * 
- * @constructor
- * @extends {ymaps.Error}
- * 
- */
-ymaps.error.Warning = function() {};
-
-
-ymaps.event = {};
-
-/**
- * 
- * Расширяет
- *             IEventGroup.
- * 
- * Группа слушателей событий.
- * 
- * @constructor
- * @implements {ymaps.IEventGroup}
- * 
- * @param {ymaps.IEventManager} events Менеджер событий, для которого создается группа.
- */
-ymaps.event.Group = function(events) {};
-
-
-/**
- * @param {String|Array.<String>} types Тип события или массив типов.
- * @param {Function} callback Функция-обработчик. В качестве параметра в функцию передается
- *                            объект события.
- * @param {Object=} context Контекст исполнения функции-обработчика.
- * @param {number=} priority Приоритет подписки.
- * @return {ymaps.IEventGroup}
- */
-ymaps.event.Group.prototype.add = function(types, callback, context, priority) {};
-
-
-/**
- * @param {String|Array.<String>} types Тип или массив типов событий.
- * @param {Function} callback Функция-обработчик. В качестве параметра в функцию передается
- *                            объект события.
- * @param {Object=} context Контекст исполнения функции-обработчика.
- * @param {number=} priority Приоритет подписки.
- * @return {ymaps.IEventGroup}
- */
-ymaps.event.Group.prototype.remove = function(types, callback, context, priority) {};
-
-
-/**
- * @return {ymaps.IEventGroup}
- */
-ymaps.event.Group.prototype.removeAll = function() {};
-
-
-/**
- * Менеджер событий, для которого создана группа.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.event.Group.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IEventManager.
- * 
- * Менеджер событий. При помощи менеджера событий можно подписываться на события и
- * отписываться от них, а также инициировать сами события.
- * Менеджер реализует возможность построения иерархии распространения событий с помощью метода
- * event.Manager.setParent.
- * Распространение события происходит в три фазы:
- * 
- * 1. Событие получают непосредственные подписчики;
- * 2. Событие получают вышестоящие в иерархии объекты посредством перебрасывания
- * события на родительском менеджере событий;
- * 3. Событие получают обработчики действия по умолчанию посредством служебного события
- * type + 'defaultaction'; действие по умолчанию выполняется, только если поле target события
- * совпадает с контекстом менеджера событий.
- * Также менеджер позволяет добавлять обработчики событий с указанием приоритета. При
- * бросании событий обработчики будут вызваны в порядке убывания приоритета.
- * Подписки с одинаковыми параметрами callback, context, но с разными приоритетами считаются
- * разными. При удалении подписки необходимо указывать тот же приоритет, что и при
- * добавлении.
- * 
- * @constructor
- * @implements {ymaps.IEventManager}
- * 
- * @param {Object=} params Параметры менеджера событий.
- */
-ymaps.event.Manager = function(params) {};
-
-
-/**
- * @param {String} type Тип события.
- * @param {Object} event Объект, описывающий событие.
- * @param {Object} target Объект, на котором произошло событие.
- * @return {ymaps.Event}
- */
-ymaps.event.Manager.prototype.createEventObject = function(type, event, target) {};
-
-
-/**
- * @param {String} type Тип события.
- * @param {Object|ymaps.Event=} event Событие. Если передан хэш с данными, то для него будет
- *                                    вызван метод createEventObject, и дальнейшие действия будут производиться с новым
- *                                    созданным событием.
- * @return {ymaps.event.Manager}
- */
-ymaps.event.Manager.prototype.fire = function(type, event) {};
-
-
-/**
- * @param {String|Array.<String>} types Тип события или массив типов.
- * @param {Function} callback Функция-обработчик события. В качестве параметра в функцию передается
- *                            объект события IEvent.
- * @param {Object=} context Контекст исполнения обработчика.
- * @param {number=} priority Приоритет подписки.
- * @return {ymaps.IEventManager}
- */
-ymaps.event.Manager.prototype.once = function(types, callback, context, priority) {};
-
-
-/**
- * @param {ymaps.IEventManager|null} parent Родительский менеджер событий.
- * @return {ymaps.event.Manager}
- */
-ymaps.event.Manager.prototype.setParent = function(parent) {};
-
-
-/**
- * @param {String|Array.<String>} types Тип или массив типов события.
- * @param {Function} callback Функция-обработчик события. В качестве параметра в функцию передается
- *                            объект, описывающий событие. Может быть либо произвольным объектом, либо реализовывать интерфейс IEvent.
- * @param {Object=} context Контекст исполнения обработчика.
- * @param {number=} priority Приоритет подписки.
- * @return {ymaps.IEventManager}
- */
-ymaps.event.Manager.prototype.add = function(types, callback, context, priority) {};
-
-
-/**
- * @return {ymaps.IEventManager|null}
- */
-ymaps.event.Manager.prototype.getParent = function() {};
-
-
-/**
- * @return {ymaps.IEventGroup}
- */
-ymaps.event.Manager.prototype.group = function() {};
-
-
-/**
- * @param {String|Array.<String>} types Тип события или массив типов.
- * @param {Function} callback Функция-обработчик события. В качестве параметра в функцию передается
- *                            объект события IEvent.
- * @param {Object=} context Контекст исполнения обработчика.
- * @param {number=} priority Приоритет подписки.
- * @return {ymaps.IEventManager}
- */
-ymaps.event.Manager.prototype.remove = function(types, callback, context, priority) {};
-
-/**
- * 
- * Расширяет
- *             IEventTrigger.
- * 
- * Маппер событий. Позволяет управлять распространением событий по иерархии менеджеров событий.
- * 
- * @constructor
- * @implements {ymaps.IEventTrigger}
- * 
- * @param {ymaps.IEventManager} targetEventManager Менеджер событий, на который маппер распространяет инициируемые на
- *                                                 нем события.
- * @param {Object} mappingTable Таблица правил маппинга. Представляет собой хэш, ключами которого являются типы
- *                              событий, а значениями - соответствующие функции маппинга, либо Boolean значения.
- *                              Функция маппинга для конкретного типа событий получает на вход экземпляр события, инициированного на маппере,
- *                              а возвращать должна экземпляр события для распространения далее по иерархии, либо null, если распространение
- *                              необходимо запретить.
- *                              Boolean значения трактуются следующим образом:
- *                              
- *                                  true - события данного типа распространяются по иерархии в неизменном виде;
- *                                  false - события данного типа по иерархии не распространяются.
- *                              
- *                              Дополнительно в таблице доступен ключ "*" для правила обработки по умолчанию.
- */
-ymaps.event.Mapper = function(targetEventManager, mappingTable) {};
-
-
-/**
- * @param {String} type Тип события.
- * @param {Object|ymaps.IEvent=} eventObject Объект, описывающий событие. Может быть
- *                                           либо произвольным объектом, либо реализовывать интерфейс IEvent. Во втором случае
- *                                           после вызова каждого обработчика будет проверяться значение метода isImmediatePropagationStopped() -
- *                                           если оно истинно, оповещение о событии немедленно прекращается.
- * @return {ymaps.IEventTrigger}
- */
-ymaps.event.Mapper.prototype.fire = function(type, eventObject) {};
-
 /**
  * 
  * Расширяет
@@ -3230,3802 +705,6 @@ ymaps.Event.prototype.getSourceEvent = function() {};
  * @return {Boolean}
  */
 ymaps.Event.prototype.isMapEventAllowed = function() {};
-
-/**
- * 
- * Расширяет
- *             error.Warning.
- * 
- * @constructor
- * @extends {ymaps.error.Warning}
- * 
- */
-ymaps.error.OveruseWarning = function() {};
-
-/**
- * 
- * Статический объект.
- * 
- * Статический класс, содержащий методы форматирования единиц
- * измерения с учётом текущего языка.
- * 
- */
-ymaps.formatter = {};
-
-
-/**
- * @param {Number} value Длина в метрах.
- * @param {number=} significantDigits Число значащих цифр в ответе.
- * @return {String}
- */
-ymaps.formatter.distance = function(value, significantDigits) {};
-
-
-/**
- * @param {Number} value Интервал времени в секундах.
- * @param {number=} significantDigits Число значащих цифр в ответе.
- * @return {String}
- */
-ymaps.formatter.duration = function(value, significantDigits) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Обрабатывает запросы геокодирования. Результат запроса может быть представлен в
- * формате JSON или в виде объекта GeoObjectCollection. Формат ответа геокодера описан в разделе Геокодирование.
- * Примечание.&nbsp;Для платной версии API поиск доступен только по следующим странам: Россия, Украина, Беларусь, Казахстан, Грузия,
- * Абхазия, Южная Осетия, Армения, Азербайджан, Молдова, Туркмения, Таджикистан, Узбекистан, Киргизия и Турция.
- * 
- * Возвращает:  Объект-promise.
- *         (тип vow.Promise).
- * 
- * @param {String|Array.<Number>} request Адрес, для которого необходимо определить координаты (прямое геокодирование)
- *                                        или координаты, для которых необходимо определить адрес (обратное геокодирование).
- * @param {Object=} options Опции.
- * 
- * @returns {ymaps.vow.Promise}
- */
-ymaps.geocode = function(request, options) {};
-
-
-ymaps.geometry = {};
-
-
-ymaps.geometry.base = {};
-
-/**
- * 
- * Расширяет
- *             IBaseCircleGeometry.
- * 
- * Базовая геометрия "Круг".
- * 
- * @constructor
- * @implements {ymaps.IBaseCircleGeometry}
- * 
- * @param {Array.<Number>|null=} coordinates Координаты центра круга.
- * @param {Number=} radius Радиус круга.
- */
-ymaps.geometry.base.Circle = function(coordinates, radius) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.base.Circle.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.base.Circle.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.geometry.base.Circle.prototype.contains = function(position) {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на окружности.
- * @return {Object}
- */
-ymaps.geometry.base.Circle.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @return {Array.<Number>|null}
- */
-ymaps.geometry.base.Circle.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @return {Number}
- */
-ymaps.geometry.base.Circle.prototype.getRadius = function() {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @param {Array.<Number>|null} coordinates Координаты центра круга.
- * @return {ymaps.ICircleGeometryAccess}
- */
-ymaps.geometry.base.Circle.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @param {Number} radius Радиус круга.
- * @return {ymaps.ICircleGeometryAccess}
- */
-ymaps.geometry.base.Circle.prototype.setRadius = function(radius) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.Circle.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.geometry.base.Circle.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.Circle.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий геометрии.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.geometry.base.Circle.prototype.events;
-
-/**
- * 
- * Расширяет
- *             error.ExternalError.
- * 
- * @constructor
- * @extends {ymaps.error.ExternalError}
- * 
- */
-ymaps.error.RequestError = function() {};
-
-
-ymaps.geometry.base.LinearRing = {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Создает геометрию geometry.base.LinearRing на основе строки закодированных в Base64 координат.
- * 
- * Возвращает:  Геометрию.
- *         (тип geometry.base.LinearRing).
- * 
- * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин контура.
- * 
- * @returns {ymaps.geometry.base.LinearRing}
- */
-ymaps.geometry.base.LinearRing.fromEncodedCoordinates = function(encodedCoordinates) {};
-
-/**
- * 
- * Расширяет
- *             IBaseLinearRingGeometry.
- * 
- * Базовая геометрия "Замкнутый контур".
- * 
- * @constructor
- * @implements {ymaps.IBaseLinearRingGeometry}
- * 
- */
-ymaps.geometry.base.LinearRing = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.base.LinearRing.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.base.LinearRing.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.geometry.base.LinearRing.prototype.contains = function(position) {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @return {Array.<Number>}
- */
-ymaps.geometry.base.LinearRing.prototype.get = function(index) {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {number} index Индекс вершины контура.
- * @return {ymaps.IPointGeometryAccess}
- */
-ymaps.geometry.base.LinearRing.prototype.getChildGeometry = function(index) {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре.
- * @return {Object}
- */
-ymaps.geometry.base.LinearRing.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.base.LinearRing.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @return {String}
- */
-ymaps.geometry.base.LinearRing.prototype.getFillRule = function() {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @return {number}
- */
-ymaps.geometry.base.LinearRing.prototype.getLength = function() {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @param {Array.<Number>} coordinates Координаты точки.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.geometry.base.LinearRing.prototype.insert = function(index, coordinates) {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @return {Array.<Number>}
- */
-ymaps.geometry.base.LinearRing.prototype.remove = function(index) {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @param {Array.<Number>} coordinates Координаты точки.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.geometry.base.LinearRing.prototype.set = function(index, coordinates) {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.geometry.base.LinearRing.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {String} fillRule Идентификатор алгоритма заливки.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.geometry.base.LinearRing.prototype.setFillRule = function(fillRule) {};
-
-
-/**
- * @see ymaps.ILinearRingGeometryAccess
- * 
- * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
- * @param {number} number Количество удаляемых точек.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.base.LinearRing.prototype.splice = function(index, number) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.LinearRing.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.geometry.base.LinearRing.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.LinearRing.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий геометрии.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.geometry.base.LinearRing.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IBaseLineStringGeometry.
- * 
- * Базовая геометрия "Ломаная линия".
- * 
- * @constructor
- * @implements {ymaps.IBaseLineStringGeometry}
- * 
- * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
- */
-ymaps.geometry.base.LineString = function(coordinates) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.base.LineString.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.base.LineString.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @return {Array.<Number>}
- */
-ymaps.geometry.base.LineString.prototype.get = function(index) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс вершины.
- * @return {ymaps.IPointGeometryAccess}
- */
-ymaps.geometry.base.LineString.prototype.getChildGeometry = function(index) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
- * @return {Object}
- */
-ymaps.geometry.base.LineString.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.base.LineString.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @return {number}
- */
-ymaps.geometry.base.LineString.prototype.getLength = function() {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @param {Array.<Number>} coordinates Координаты точки.
- * @return {ymaps.ILineStringGeometryAccess}
- */
-ymaps.geometry.base.LineString.prototype.insert = function(index, coordinates) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @return {Array.<Number>}
- */
-ymaps.geometry.base.LineString.prototype.remove = function(index) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @param {Array.<Number>} coordinates Координаты точки.
- * @return {ymaps.ILineStringGeometryAccess}
- */
-ymaps.geometry.base.LineString.prototype.set = function(index, coordinates) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
- * @return {ymaps.ILineStringGeometryAccess}
- */
-ymaps.geometry.base.LineString.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
- * @param {number} number Количество удаляемых точек.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.base.LineString.prototype.splice = function(index, number) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.LineString.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.geometry.base.LineString.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.LineString.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий геометрии.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.geometry.base.LineString.prototype.events;
-
-/**
- * 
- * Статическая функция.
- * 
- * Создает геометрию geometry.base.LineString на основе строки закодированных в Base64 координат.
- * 
- * Возвращает:  Геометрию.
- *         (тип geometry.base.LineString).
- * 
- * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
- * 
- * @returns {ymaps.geometry.base.LineString}
- */
-ymaps.geometry.base.LineString.fromEncodedCoordinates = function(encodedCoordinates) {};
-
-/**
- * 
- * Расширяет
- *             IBasePointGeometry.
- * 
- * Базовая геометрия "Точка".
- * 
- * @constructor
- * @implements {ymaps.IBasePointGeometry}
- * 
- * @param {Array.<Number>|null=} coordinates Координаты точки.
- */
-ymaps.geometry.base.Point = function(coordinates) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.base.Point.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.base.Point.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IPointGeometryAccess
- * 
- * @return {Array.<Number>|null}
- */
-ymaps.geometry.base.Point.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.IPointGeometryAccess
- * 
- * @param {Array.<Number>|null} coordinates Координаты точки.
- * @return {ymaps.IPointGeometryAccess}
- */
-ymaps.geometry.base.Point.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * Менеджер событий геометрии.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.geometry.base.Point.prototype.events;
-
-/**
- * 
- * Статическая функция.
- * 
- * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
- *         (тип String).
- * 
- * @param {ymaps.geometry.base.LineString} geometry Геометрия.
- * 
- * @returns {String}
- */
-ymaps.geometry.base.LineString.toEncodedCoordinates = function(geometry) {};
-
-/**
- * 
- * Расширяет
- *             IBasePolygonGeometry.
- * 
- * Базовая геометрия "Многоугольник".
- * 
- * @constructor
- * @implements {ymaps.IBasePolygonGeometry}
- * 
- * @param {Array.<Array.<Array.<Number>>>=} coordinates Координаты геометрии.
- * @param {String=} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
- *                           Может принимать одно из двух значений:
- *                           
- *                               evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                               до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
- *                               пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
- *                               nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                               до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
- *                               нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
- *                               раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
- *                               находится снаружи контура. В противном случае она находится внутри.
- *                           
- */
-ymaps.geometry.base.Polygon = function(coordinates, fillRule) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.base.Polygon.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.base.Polygon.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.geometry.base.Polygon.prototype.contains = function(position) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.base.Polygon.prototype.get = function(index) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.geometry.base.Polygon.prototype.getChildGeometry = function(index) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
- * @return {Object}
- */
-ymaps.geometry.base.Polygon.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @return {Array.<Array.<Array.<Number>>>}
- */
-ymaps.geometry.base.Polygon.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @return {String}
- */
-ymaps.geometry.base.Polygon.prototype.getFillRule = function() {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @return {number}
- */
-ymaps.geometry.base.Polygon.prototype.getLength = function() {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @param {Array.<Array.<Number>>} path Координаты контура.
- * @return {ymaps.IPolygonGeometryAccess}
- */
-ymaps.geometry.base.Polygon.prototype.insert = function(index, path) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.geometry.base.Polygon.prototype.remove = function(index) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @param {Array.<Array.<Number>>} path Координаты контура.
- * @return {ymaps.IPolygonGeometryAccess}
- */
-ymaps.geometry.base.Polygon.prototype.set = function(index, path) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты геометрии.
- * @return {ymaps.IPolygonGeometryAccess}
- */
-ymaps.geometry.base.Polygon.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {String} fillRule Идентификатор алгоритма заливки.
- * @return {ymaps.IPolygonGeometryAccess}
- */
-ymaps.geometry.base.Polygon.prototype.setFillRule = function(fillRule) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс, начиная с которого производится удаление и добавление контуров.
- * @param {number} number Количество удаляемых контуров.
- * @return {Array.<ymaps.ILinearRingGeometryAccess>}
- */
-ymaps.geometry.base.Polygon.prototype.splice = function(index, number) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.Polygon.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.geometry.base.Polygon.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.Polygon.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий геометрии.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.geometry.base.Polygon.prototype.events;
-
-/**
- * 
- * Статическая функция.
- * 
- * Создает геометрию geometry.base.Polygon на основе строки закодированных в Base64 координат.
- * 
- * Возвращает:  Геометрию.
- *         (тип geometry.base.Polygon).
- * 
- * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин многоугольника.
- * 
- * @returns {ymaps.geometry.base.Polygon}
- */
-ymaps.geometry.base.Polygon.fromEncodedCoordinates = function(encodedCoordinates) {};
-
-/**
- * 
- * Статический объект.
- * 
- * Предоставляет информацию о местоположении пользователя.
- * 
- */
-ymaps.geolocation = {};
-
-
-/**
- * @param {*=} options 
- * @return {ymaps.vow.Promise}
- */
-ymaps.geolocation.get = function(options) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
- *         (тип String).
- * 
- * @param {ymaps.geometry.base.Polygon} geometry Геометрия.
- * 
- * @returns {String}
- */
-ymaps.geometry.base.Polygon.toEncodedCoordinates = function(geometry) {};
-
-/**
- * 
- * Расширяет
- *             IBaseRectangleGeometry.
- * 
- * Базовая геометрия "Прямоугольник".
- * 
- * @constructor
- * @implements {ymaps.IBaseRectangleGeometry}
- * 
- * @param {Array.<Array.<Number>>|null=} coordinates Массив, содержащий координаты двух противоположных углов прямоугольника.
- */
-ymaps.geometry.base.Rectangle = function(coordinates) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.base.Rectangle.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.base.Rectangle.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IRectangleGeometryAccess
- * 
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.geometry.base.Rectangle.prototype.contains = function(position) {};
-
-
-/**
- * @see ymaps.IRectangleGeometryAccess
- * 
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
- * @return {Object}
- */
-ymaps.geometry.base.Rectangle.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @see ymaps.IRectangleGeometryAccess
- * 
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.base.Rectangle.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.IRectangleGeometryAccess
- * 
- * @param {Array.<Array.<Number>>} coordinates Координаты углов.
- * @return {ymaps.IRectangleGeometryAccess}
- */
-ymaps.geometry.base.Rectangle.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.Rectangle.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.geometry.base.Rectangle.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.base.Rectangle.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий геометрии.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.geometry.base.Rectangle.prototype.events;
-
-
-ymaps.geometry.json = {};
-
-/**
- * 
- * Расширяет
- *             IGeometryJson.
- * 
- * Объект, описывающий JSON-представление геометрии "Круг".
- * 
- * @constructor
- * @implements {ymaps.IGeometryJson}
- * 
- */
-ymaps.geometry.json.circle = function() {};
-
-
-/**
- * Координаты центра круга.
- * 
- * @type {Array.<Number>|null}
- */
-ymaps.geometry.json.circle.prototype.coordinates;
-
-
-/**
- * Радиус круга.
- * 
- * @type {Number}
- */
-ymaps.geometry.json.circle.prototype.radius;
-
-
-/**
- * Идентификатор типа геометрии "Круг".
- * Всегда должен принимать значение "Circle".
- * 
- * @type {String}
- */
-ymaps.geometry.json.circle.prototype.type;
-
-/**
- * 
- * Расширяет
- *             IGeometryJson.
- * 
- * Объект, описывающий JSON-представление геометрии "Ломаная линия".
- * 
- * @constructor
- * @implements {ymaps.IGeometryJson}
- * 
- */
-ymaps.geometry.json.lineString = function() {};
-
-
-/**
- * Координаты ломаной линии.
- * 
- * @type {Array.<Array.<Number>>}
- */
-ymaps.geometry.json.lineString.prototype.coordinates;
-
-
-/**
- * Идентификатор типа геометрии "Ломаная линия".
- * Всегда должен принимать значение "LineString".
- * 
- * @type {String}
- */
-ymaps.geometry.json.lineString.prototype.type;
-
-/**
- * 
- * Расширяет
- *             IGeometryJson.
- * 
- * Объект, описывающий JSON-представление геометрии "Многоугольник".
- * 
- * @constructor
- * @implements {ymaps.IGeometryJson}
- * 
- */
-ymaps.geometry.json.polygon = function() {};
-
-
-/**
- * Координаты многоугольника.
- * 
- * @type {Array.<Array.<Array.<Number>>>}
- */
-ymaps.geometry.json.polygon.prototype.coordinates;
-
-
-/**
- * Идентификатор алгоритма заливки многоугольника.
- * Может принимать одно из двух значений:
- * 
- * evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *     до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
- *     пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
- *     nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *     до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
- *     нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
- *     раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
- *     находится снаружи контура. В противном случае она находится внутри.
- * 
- * 
- * @type {String}
- */
-ymaps.geometry.json.polygon.prototype.fillRule;
-
-
-/**
- * Идентификатор типа геометрии.
- * 
- * @type {String}
- */
-ymaps.geometry.json.polygon.prototype.type;
-
-/**
- * 
- * Статическая функция.
- * 
- * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
- *         (тип String).
- * 
- * @param {ymaps.geometry.base.LinearRing} geometry Геометрия.
- * 
- * @returns {String}
- */
-ymaps.geometry.base.LinearRing.toEncodedCoordinates = function(geometry) {};
-
-/**
- * 
- * Расширяет
- *             IGeometryJson.
- * 
- * Объект, описывающий JSON-представление геометрии "Прямоугольник".
- * 
- * @constructor
- * @implements {ymaps.IGeometryJson}
- * 
- */
-ymaps.geometry.json.rectangle = function() {};
-
-
-/**
- * Координаты двух противоположных углов прямоугольника.
- * 
- * @type {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.json.rectangle.prototype.coordinates;
-
-
-/**
- * Идентификатор типа геометрии "Прямоугольник".
- * Всегда должен принимать значение "Rectangle".
- * 
- * @type {String}
- */
-ymaps.geometry.json.rectangle.prototype.type;
-
-/**
- * 
- * Расширяет
- *             IGeometryJson.
- * 
- * Объект, описывающий JSON-представление геометрии "Точка".
- * 
- * @constructor
- * @implements {ymaps.IGeometryJson}
- * 
- */
-ymaps.geometry.json.Point = function() {};
-
-
-/**
- * Идентификатор типа геометрии.
- * 
- * @type {String}
- */
-ymaps.geometry.json.Point.prototype.type;
-
-/**
- * 
- * Расширяет
- *             ICircleGeometry.
- * 
- * Геометрия "Круг".
- * 
- * См.: Circle 
- * 
- * @constructor
- * @implements {ymaps.ICircleGeometry}
- * 
- * @param {Array.<Number>|null=} coordinates Координаты центра круга.
- * @param {Number=} radius Радиус круга в метрах.
- * @param {Object=} options Опции геометрии.
- */
-ymaps.geometry.Circle = function(coordinates, radius, options) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.Circle.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.geometry.Circle.prototype.contains = function(position) {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на окружности.
- * @return {Object}
- */
-ymaps.geometry.Circle.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @return {Array.<Number>|null}
- */
-ymaps.geometry.Circle.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @return {Number}
- */
-ymaps.geometry.Circle.prototype.getRadius = function() {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @param {Array.<Number>|null} coordinates Координаты центра круга.
- * @return {ymaps.ICircleGeometryAccess}
- */
-ymaps.geometry.Circle.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @see ymaps.ICircleGeometryAccess
- * 
- * @param {Number} radius Радиус круга.
- * @return {ymaps.ICircleGeometryAccess}
- */
-ymaps.geometry.Circle.prototype.setRadius = function(radius) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.Circle.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.geometry.Circle.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.Circle.prototype.unfreeze = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.Circle.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {ymaps.Map|null}
- */
-ymaps.geometry.Circle.prototype.getMap = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.Circle.prototype.getPixelGeometry = function(options) {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.geometry.Circle.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер событий объекта.
- * 
- * @see ymaps.IFreezable
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.Circle.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geometry.Circle.prototype.options;
-
-
-ymaps.geometry.LineString = {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
- *         (тип String).
- * 
- * @param {ymaps.geometry.LineString} geometry Геометрия.
- * 
- * @returns {String}
- */
-ymaps.geometry.LineString.toEncodedCoordinates = function(geometry) {};
-
-
-ymaps.geometry.pixel = {};
-
-/**
- * 
- * Расширяет
- *             IPixelLineStringGeometry.
- * 
- * Пиксельная геометрия "Ломаная линия".
- * 
- * @constructor
- * @implements {ymaps.IPixelLineStringGeometry}
- * 
- * @param {Array.<Array.<Number>>} coordinates Координаты линии.
- * @param {Object=} metaData Метаданные.
- */
-ymaps.geometry.pixel.LineString = function(coordinates, metaData) {};
-
-
-/**
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
- * @return {Object}
- */
-ymaps.geometry.pixel.LineString.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.pixel.LineString.prototype.getCoordinates = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geometry.pixel.LineString.prototype.getLength = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.geometry.pixel.LineString.prototype.equals = function(geometry) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @return {Object}
- */
-ymaps.geometry.pixel.LineString.prototype.getMetaData = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.LineString.prototype.scale = function(factor) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.LineString.prototype.shift = function(offset) {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.pixel.LineString.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {String}
- */
-ymaps.geometry.pixel.LineString.prototype.getType = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.pixel.LineString.prototype.events;
-
-/**
- * 
- * Статическая функция.
- * 
- * Создает геометрию geometry.LineString на основе строки закодированных в Base64 координат.
- * 
- * Возвращает:  Геометрию.
- *         (тип geometry.LineString).
- * 
- * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
- * 
- * @returns {ymaps.geometry.LineString}
- */
-ymaps.geometry.LineString.fromEncodedCoordinates = function(encodedCoordinates) {};
-
-/**
- * 
- * Расширяет
- *             IPixelPointGeometry.
- * 
- * Пиксельная геометрия "Точка".
- * 
- * @constructor
- * @implements {ymaps.IPixelPointGeometry}
- * 
- * @param {Array.<Number>|null} position Координаты точки.
- * @param {Object=} metaData Метаданные.
- */
-ymaps.geometry.pixel.Point = function(position, metaData) {};
-
-
-/**
- * @return {Array.<Number>}
- */
-ymaps.geometry.pixel.Point.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.geometry.pixel.Point.prototype.equals = function(geometry) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @return {Object}
- */
-ymaps.geometry.pixel.Point.prototype.getMetaData = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.Point.prototype.scale = function(factor) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.Point.prototype.shift = function(offset) {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.pixel.Point.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {String}
- */
-ymaps.geometry.pixel.Point.prototype.getType = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.pixel.Point.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IPixelMultiPolygonGeometry.
- * 
- * Пиксельная геометрия "Многоугольник из нескольких фигур".
- * 
- * @constructor
- * @implements {ymaps.IPixelMultiPolygonGeometry}
- * 
- * @param {Array.<Array.<Array.<Array.<Number>>>>} coordinates Координаты многоугольников.
- * @param {String} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольников.
- *                          Может принимать одно из двух значений:
- *                          
- *                              evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                              до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
- *                              пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
- *                              nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                              до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
- *                              нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
- *                              раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
- *                              находится снаружи контура. В противном случае она находится внутри.
- *                          
- * @param {Object=} metaData Метаданные.
- */
-ymaps.geometry.pixel.MultiPolygon = function(coordinates, fillRule, metaData) {};
-
-
-/**
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.contains = function(position) {};
-
-
-/**
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
- * @return {Object}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @return {Array.<Array.<Array.<Array.<Number>>>>}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.getCoordinates = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.getFillRule = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.getLength = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.equals = function(geometry) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @return {Object}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.getMetaData = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.scale = function(factor) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.shift = function(offset) {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {String}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.getType = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.pixel.MultiPolygon.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IPixelPolygonGeometry.
- * 
- * Пиксельная геометрия "Многоугольник".
- * 
- * @constructor
- * @implements {ymaps.IPixelPolygonGeometry}
- * 
- * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты многоугольника.
- * @param {String} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
- *                          Может принимать одно из двух значений:
- *                          
- *                              evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                              до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
- *                              пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
- *                              nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                              до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
- *                              нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
- *                              раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
- *                              находится снаружи контура. В противном случае она находится внутри.
- *                          
- * @param {Object=} metaData Метаданные.
- */
-ymaps.geometry.pixel.Polygon = function(coordinates, fillRule, metaData) {};
-
-
-/**
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.geometry.pixel.Polygon.prototype.contains = function(position) {};
-
-
-/**
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
- * @return {Object}
- */
-ymaps.geometry.pixel.Polygon.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @return {Array.<Array.<Array.<Number>>>}
- */
-ymaps.geometry.pixel.Polygon.prototype.getCoordinates = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.pixel.Polygon.prototype.getFillRule = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geometry.pixel.Polygon.prototype.getLength = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.geometry.pixel.Polygon.prototype.equals = function(geometry) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @return {Object}
- */
-ymaps.geometry.pixel.Polygon.prototype.getMetaData = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.Polygon.prototype.scale = function(factor) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.Polygon.prototype.shift = function(offset) {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.pixel.Polygon.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {String}
- */
-ymaps.geometry.pixel.Polygon.prototype.getType = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.pixel.Polygon.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IPixelRectangleGeometry.
- * 
- * Пиксельная геометрия "Прямоугольник".
- * 
- * @constructor
- * @implements {ymaps.IPixelRectangleGeometry}
- * 
- * @param {Array.<Array.<Number>>|null=} coordinates Координаты двух противоположных углов прямоугольника.
- * @param {Object=} metaData Метаданные.
- */
-ymaps.geometry.pixel.Rectangle = function(coordinates, metaData) {};
-
-
-/**
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
- * @return {Object}
- */
-ymaps.geometry.pixel.Rectangle.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.pixel.Rectangle.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.geometry.pixel.Rectangle.prototype.equals = function(geometry) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @return {Object}
- */
-ymaps.geometry.pixel.Rectangle.prototype.getMetaData = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.Rectangle.prototype.scale = function(factor) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.Rectangle.prototype.shift = function(offset) {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.pixel.Rectangle.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {String}
- */
-ymaps.geometry.pixel.Rectangle.prototype.getType = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.pixel.Rectangle.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IPointGeometry.
- * 
- * Геометрия "Точка".
- * 
- * См.: Placemark 
- * 
- * @constructor
- * @implements {ymaps.IPointGeometry}
- * 
- * @param {Array.<Number>=} position Координаты точки.
- * @param {Object=} options Опции геометрии.
- */
-ymaps.geometry.Point = function(position, options) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.Point.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.Point.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {ymaps.Map|null}
- */
-ymaps.geometry.Point.prototype.getMap = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.Point.prototype.getPixelGeometry = function(options) {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.geometry.Point.prototype.setMap = function(map) {};
-
-
-/**
- * @see ymaps.IPointGeometryAccess
- * 
- * @return {Array.<Number>|null}
- */
-ymaps.geometry.Point.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.IPointGeometryAccess
- * 
- * @param {Array.<Number>|null} coordinates Координаты точки.
- * @return {ymaps.IPointGeometryAccess}
- */
-ymaps.geometry.Point.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.Point.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geometry.Point.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IPolygonGeometry.
- * 
- * Геометрия "Многоугольник".
- * 
- * См.: Polygon 
- * 
- * @constructor
- * @implements {ymaps.IPolygonGeometry}
- * 
- * @param {Array.<Array.<Array.<Number>>>=} coordinates Координаты геометрии. Трехмерный массив, элементами которого являются
- *                                                      двумерные массивы координат контуров многоугольника. Первый элемент описывает внешний контур, остальные - внутренние.
- * @param {String=} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
- *                           Может принимать одно из двух значений:
- *                           
- *                               evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                               до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
- *                               пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
- *                               nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
- *                               до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
- *                               нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
- *                               раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
- *                               находится снаружи контура. В противном случае она находится внутри.
- *                           
- * @param {Object=} options Опции геометрии.
- */
-ymaps.geometry.Polygon = function(coordinates, fillRule, options) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.Polygon.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.Polygon.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {ymaps.Map|null}
- */
-ymaps.geometry.Polygon.prototype.getMap = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.Polygon.prototype.getPixelGeometry = function(options) {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.geometry.Polygon.prototype.setMap = function(map) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.geometry.Polygon.prototype.contains = function(position) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.Polygon.prototype.get = function(index) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.geometry.Polygon.prototype.getChildGeometry = function(index) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
- * @return {Object}
- */
-ymaps.geometry.Polygon.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @return {Array.<Array.<Array.<Number>>>}
- */
-ymaps.geometry.Polygon.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @return {String}
- */
-ymaps.geometry.Polygon.prototype.getFillRule = function() {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @return {number}
- */
-ymaps.geometry.Polygon.prototype.getLength = function() {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @param {Array.<Array.<Number>>} path Координаты контура.
- * @return {ymaps.IPolygonGeometryAccess}
- */
-ymaps.geometry.Polygon.prototype.insert = function(index, path) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.geometry.Polygon.prototype.remove = function(index) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс контура.
- * @param {Array.<Array.<Number>>} path Координаты контура.
- * @return {ymaps.IPolygonGeometryAccess}
- */
-ymaps.geometry.Polygon.prototype.set = function(index, path) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты геометрии.
- * @return {ymaps.IPolygonGeometryAccess}
- */
-ymaps.geometry.Polygon.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {String} fillRule Идентификатор алгоритма заливки.
- * @return {ymaps.IPolygonGeometryAccess}
- */
-ymaps.geometry.Polygon.prototype.setFillRule = function(fillRule) {};
-
-
-/**
- * @see ymaps.IPolygonGeometryAccess
- * 
- * @param {number} index Индекс, начиная с которого производится удаление и добавление контуров.
- * @param {number} number Количество удаляемых контуров.
- * @return {Array.<ymaps.ILinearRingGeometryAccess>}
- */
-ymaps.geometry.Polygon.prototype.splice = function(index, number) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.Polygon.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.geometry.Polygon.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.Polygon.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.Polygon.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geometry.Polygon.prototype.options;
-
-/**
- * 
- * Статическая функция.
- * 
- * Создает геометрию geometry.Polygon на основе строки закодированных в Base64 координат.
- * 
- * Возвращает:  Геометрию.
- *         (тип geometry.Polygon).
- * 
- * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
- * 
- * @returns {ymaps.geometry.Polygon}
- */
-ymaps.geometry.Polygon.fromEncodedCoordinates = function(encodedCoordinates) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
- *         (тип String).
- * 
- * @param {ymaps.geometry.Polygon} geometry Геометрия.
- * 
- * @returns {String}
- */
-ymaps.geometry.Polygon.toEncodedCoordinates = function(geometry) {};
-
-/**
- * 
- * Расширяет
- *             IRectangleGeometry.
- * 
- * Геометрия "Прямоугольник".
- * 
- * См.: Rectangle 
- * 
- * @constructor
- * @implements {ymaps.IRectangleGeometry}
- * 
- * @param {Array.<Array.<Number>>|null=} coordinates Массив, содержащий координаты двух противоположных углов прямоугольника.
- * @param {Object=} options Опции геометрии.
- */
-ymaps.geometry.Rectangle = function(coordinates, options) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.Rectangle.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.Rectangle.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {ymaps.Map|null}
- */
-ymaps.geometry.Rectangle.prototype.getMap = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.Rectangle.prototype.getPixelGeometry = function(options) {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.geometry.Rectangle.prototype.setMap = function(map) {};
-
-
-/**
- * @see ymaps.IRectangleGeometryAccess
- * 
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.geometry.Rectangle.prototype.contains = function(position) {};
-
-
-/**
- * @see ymaps.IRectangleGeometryAccess
- * 
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
- * @return {Object}
- */
-ymaps.geometry.Rectangle.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @see ymaps.IRectangleGeometryAccess
- * 
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.Rectangle.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.IRectangleGeometryAccess
- * 
- * @param {Array.<Array.<Number>>} coordinates Координаты углов.
- * @return {ymaps.IRectangleGeometryAccess}
- */
-ymaps.geometry.Rectangle.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.Rectangle.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.geometry.Rectangle.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.Rectangle.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.Rectangle.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geometry.Rectangle.prototype.options;
-
-
-ymaps.geometryEditor = {};
-
-/**
- * 
- * Расширяет
- *             IGeometryEditor.
- * 
- * Редактор геометрии "Ломаная линия".
- * 
- * @constructor
- * @implements {ymaps.IGeometryEditor}
- * 
- * @param {ymaps.ILineStringGeometry} geometry Геометрия "Ломаная линия".
- * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
- *                          редактора, так и опции его составных частей:
- *                          
- *                              опции направляющих линий с префиксом guideLines.
- *                          
- */
-ymaps.geometryEditor.LineString = function(geometry, options) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.LineString.prototype.getModel = function() {};
-
-
-/**
- * @return {ymaps.geometryEditor.model.RootLineString|null}
- */
-ymaps.geometryEditor.LineString.prototype.getModelSync = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.LineString.prototype.getView = function() {};
-
-
-/**
- * @return {ymaps.geometryEditor.view.Path|null}
- */
-ymaps.geometryEditor.LineString.prototype.getViewSync = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.LineString.prototype.startDrawing = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.LineString.prototype.startEditing = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.LineString.prototype.startFraming = function() {};
-
-
-/**
- */
-ymaps.geometryEditor.LineString.prototype.stopDrawing = function() {};
-
-
-/**
- */
-ymaps.geometryEditor.LineString.prototype.stopEditing = function() {};
-
-
-/**
- */
-ymaps.geometryEditor.LineString.prototype.stopFraming = function() {};
-
-
-/**
- * Менеджер состояния редактора геометрии.
- * Поля данных, доступные посредством методов get и set:
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.geometryEditor.LineString.prototype.state;
-
-
-/**
- * Редактируемая геометрия.
- * 
- * @type {ymaps.IGeometry}
- */
-ymaps.geometryEditor.LineString.prototype.geometry;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geometryEditor.LineString.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometryEditor.LineString.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IPixelCircleGeometry.
- * 
- * Пиксельная геометрия "Круг".
- * 
- * @constructor
- * @implements {ymaps.IPixelCircleGeometry}
- * 
- * @param {Array.<Number>|null} coordinates Координаты центра круга.
- * @param {Number|null} radius Радиус круга.
- * @param {Object=} metaData Метаданные.
- */
-ymaps.geometry.pixel.Circle = function(coordinates, radius, metaData) {};
-
-
-/**
- * @return {Array.<Number>}
- */
-ymaps.geometry.pixel.Circle.prototype.getCoordinates = function() {};
-
-
-/**
- * @return {Number}
- */
-ymaps.geometry.pixel.Circle.prototype.getRadius = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.geometry.pixel.Circle.prototype.equals = function(geometry) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @return {Object}
- */
-ymaps.geometry.pixel.Circle.prototype.getMetaData = function() {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.Circle.prototype.scale = function(factor) {};
-
-
-/**
- * @see ymaps.IPixelGeometry
- * 
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.pixel.Circle.prototype.shift = function(offset) {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.pixel.Circle.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {String}
- */
-ymaps.geometry.pixel.Circle.prototype.getType = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.pixel.Circle.prototype.events;
-
-
-ymaps.geometryEditor.model = {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.model.ChildLinearRing скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             geometryEditor.model.ChildLineString.
- * 
- * Модель дочернего замкнутого контура. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * @constructor
- * @extends {ymaps.geometryEditor.model.ChildLineString}
- * 
- */
-ymaps.geometryEditor.model.ChildLinearRing = function() {};
-
-/**
- * 
- * Расширяет
- *             ILineStringGeometry.
- * 
- * Геометрия "Ломаная линия".
- * 
- * См.: Polyline 
- * 
- * @constructor
- * @implements {ymaps.ILineStringGeometry}
- * 
- */
-ymaps.geometry.LineString = function() {};
-
-
-/**
- * @param {Number=} from Начиная с какой точки считать длину.
- * @param {Number=} to До какой точки считать длину. Если не указано, берётся последняя точка.
- * @return {Number}
- */
-ymaps.geometry.LineString.prototype.getDistance = function(from, to) {};
-
-
-/**
- * @return {String}
- */
-ymaps.geometry.LineString.prototype.getType = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometry.LineString.prototype.getBounds = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @return {ymaps.Map|null}
- */
-ymaps.geometry.LineString.prototype.getMap = function() {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometry.LineString.prototype.getPixelGeometry = function(options) {};
-
-
-/**
- * @see ymaps.IGeometry
- * 
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.geometry.LineString.prototype.setMap = function(map) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @return {Array.<Number>}
- */
-ymaps.geometry.LineString.prototype.get = function(index) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс вершины.
- * @return {ymaps.IPointGeometryAccess}
- */
-ymaps.geometry.LineString.prototype.getChildGeometry = function(index) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
- * @return {Object}
- */
-ymaps.geometry.LineString.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.LineString.prototype.getCoordinates = function() {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @return {number}
- */
-ymaps.geometry.LineString.prototype.getLength = function() {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @param {Array.<Number>} coordinates Координаты точки.
- * @return {ymaps.ILineStringGeometryAccess}
- */
-ymaps.geometry.LineString.prototype.insert = function(index, coordinates) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @return {Array.<Number>}
- */
-ymaps.geometry.LineString.prototype.remove = function(index) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс точки.
- * @param {Array.<Number>} coordinates Координаты точки.
- * @return {ymaps.ILineStringGeometryAccess}
- */
-ymaps.geometry.LineString.prototype.set = function(index, coordinates) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
- * @return {ymaps.ILineStringGeometryAccess}
- */
-ymaps.geometry.LineString.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @see ymaps.ILineStringGeometryAccess
- * 
- * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
- * @param {number} number Количество удаляемых точек.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometry.LineString.prototype.splice = function(index, number) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.LineString.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.geometry.LineString.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.geometry.LineString.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometry.LineString.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geometry.LineString.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.model.Edge скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeometryEditorRootModel.
- * 
- * Модель промежуточной метки. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * @constructor
- * @implements {ymaps.IGeometryEditorRootModel}
- * 
- */
-ymaps.geometryEditor.model.Edge = function() {};
-
-
-/**
- * @return {ymaps.geometryEditor.model.ChildVertex|null}
- */
-ymaps.geometryEditor.model.Edge.prototype.getNextVertex = function() {};
-
-
-/**
- * @return {ymaps.geometryEditor.model.ChildVertex|null}
- */
-ymaps.geometryEditor.model.Edge.prototype.getPrevVertex = function() {};
-
-
-/**
- * @param {ymaps.geometryEditor.model.ChildVertex|null} nextVertex Модель следующей вершины.
- */
-ymaps.geometryEditor.model.Edge.prototype.setNextVertex = function(nextVertex) {};
-
-
-/**
- * @param {ymaps.geometryEditor.model.ChildVertex|null} prevVertex Модель предыдущей вершины.
- */
-ymaps.geometryEditor.model.Edge.prototype.setPrevVertex = function(prevVertex) {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- */
-ymaps.geometryEditor.model.Edge.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- * @return {Array.<Number>}
- */
-ymaps.geometryEditor.model.Edge.prototype.getPixels = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometryEditor.model.Edge.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.model.RootLineString скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeometryEditorRootModel.
- * 
- * Модель корневой ломаной линии. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * @constructor
- * @implements {ymaps.IGeometryEditorRootModel}
- * 
- */
-ymaps.geometryEditor.model.RootLineString = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geometryEditor.model.RootLineString.prototype.getAllVerticesNumber = function() {};
-
-
-/**
- * @return {Array.<ymaps.geometryEditor.model.ChildVertex>}
- */
-ymaps.geometryEditor.model.RootLineString.prototype.getVertexModels = function() {};
-
-
-/**
- * @param {number} start Индекс, начиная с которого производится удаление и добавление вершин.
- * @param {number} deleteCount Количество удаляемых вершин.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometryEditor.model.RootLineString.prototype.spliceVertices = function(start, deleteCount) {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- */
-ymaps.geometryEditor.model.RootLineString.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- * @return {Array.<Number>}
- */
-ymaps.geometryEditor.model.RootLineString.prototype.getPixels = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometryEditor.model.RootLineString.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.model.ChildLineString скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeometryEditorChildModel.
- * 
- * Модель дочерней ломаной линии. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * @constructor
- * @implements {ymaps.IGeometryEditorChildModel}
- * 
- */
-ymaps.geometryEditor.model.ChildLineString = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.getAllVerticesNumber = function() {};
-
-
-/**
- * @return {Array.<ymaps.geometryEditor.model.Edge>}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.getEdgeModels = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.getIndex = function() {};
-
-
-/**
- * @return {Array.<ymaps.geometryEditor.model.ChildVertex>}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.getVertexModels = function() {};
-
-
-/**
- * @param {number} index Индекс дочерней вершины.
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.setIndex = function(index) {};
-
-
-/**
- * @param {number} start Индекс, начиная с которого производится удаление и добавление вершин.
- * @param {number} deleteCount Количество удаляемых вершин.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.spliceVertices = function(start, deleteCount) {};
-
-
-/**
- * @return {ymaps.IGeometryEditorModel}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.getParent = function() {};
-
-
-/**
- * @param {Array.<Number>} pixels Пиксельные данные.
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.setPixels = function(pixels) {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- * @return {Array.<Number>}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.getPixels = function() {};
-
-
-/**
- * Редактор геометрии.
- * 
- * @type {ymaps.IGeometryEditor}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.editor;
-
-
-/**
- * Геометрия модели.
- * 
- * @type {ymaps.IBaseGeometry}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.geometry;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometryEditor.model.ChildLineString.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.model.RootPolygon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeometryEditorRootModel.
- * 
- * Модель корневого полигона. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * @constructor
- * @implements {ymaps.IGeometryEditorRootModel}
- * 
- */
-ymaps.geometryEditor.model.RootPolygon = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geometryEditor.model.RootPolygon.prototype.getAllVerticesNumber = function() {};
-
-
-/**
- * @return {Array.<ymaps.geometryEditor.model.ChildLinearRing>}
- */
-ymaps.geometryEditor.model.RootPolygon.prototype.getPathModels = function() {};
-
-
-/**
- * @param {number} start Индекс, начиная с которого производится удаление и добавление контуров.
- * @param {number} deleteCount Количество удаляемых контуров.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.geometryEditor.model.RootPolygon.prototype.splicePaths = function(start, deleteCount) {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- */
-ymaps.geometryEditor.model.RootPolygon.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- * @return {Array.<Number>}
- */
-ymaps.geometryEditor.model.RootPolygon.prototype.getPixels = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometryEditor.model.RootPolygon.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IGeometryEditor.
- * 
- * Редактор геометрии "Точка".
- * 
- * @constructor
- * @implements {ymaps.IGeometryEditor}
- * 
- * @param {ymaps.IPointGeometry} geometry Геометрия "Точка".
- * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
- *                          редактора, так и опции его составных частей:
- *                          
- *                              опции направляющих линий с префиксом guideLines.
- *                          
- */
-ymaps.geometryEditor.Point = function(geometry, options) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.Point.prototype.startDrawing = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.Point.prototype.stopDrawing = function() {};
-
-
-/**
- */
-ymaps.geometryEditor.Point.prototype.startEditing = function() {};
-
-
-/**
- */
-ymaps.geometryEditor.Point.prototype.stopEditing = function() {};
-
-
-/**
- * Менеджер состояния редактора геометрии.
- * Поля данных, доступные посредством методов get и set:
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.geometryEditor.Point.prototype.state;
-
-
-/**
- * Редактируемая геометрия.
- * 
- * @type {ymaps.IGeometry}
- */
-ymaps.geometryEditor.Point.prototype.geometry;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geometryEditor.Point.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometryEditor.Point.prototype.events;
-
-
-ymaps.geometryEditor.view = {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.view.Edge скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Отображение промежуточной метки. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- */
-ymaps.geometryEditor.view.Edge = {};
-
-
-/**
- * @return {ymaps.GeoObject}
- */
-ymaps.geometryEditor.view.Edge.getPlacemark = function() {};
-
-/**
- * 
- * Расширяет
- *             IGeometryEditor.
- * 
- * Редактор геометрии "Многоугольник".
- * 
- * @constructor
- * @implements {ymaps.IGeometryEditor}
- * 
- * @param {ymaps.IPolygonGeometry} geometry Геометрия "Многоугольник".
- * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
- *                          редактора, так и опции его составных частей:
- *                          
- *                              опции направляющих линий с префиксом guideLines.
- *                          
- */
-ymaps.geometryEditor.Polygon = function(geometry, options) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.Polygon.prototype.getModel = function() {};
-
-
-/**
- * @return {ymaps.geometryEditor.model.RootPolygon|null}
- */
-ymaps.geometryEditor.Polygon.prototype.getModelSync = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.Polygon.prototype.getView = function() {};
-
-
-/**
- * @return {ymaps.geometryEditor.view.MultiPath|null}
- */
-ymaps.geometryEditor.Polygon.prototype.getViewSync = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.Polygon.prototype.startDrawing = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.Polygon.prototype.startEditing = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geometryEditor.Polygon.prototype.startFraming = function() {};
-
-
-/**
- */
-ymaps.geometryEditor.Polygon.prototype.stopDrawing = function() {};
-
-
-/**
- */
-ymaps.geometryEditor.Polygon.prototype.stopEditing = function() {};
-
-
-/**
- */
-ymaps.geometryEditor.Polygon.prototype.stopFraming = function() {};
-
-
-/**
- * Менеджер состояния редактора геометрии.
- * Поля данных, доступные посредством методов get и set:
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.geometryEditor.Polygon.prototype.state;
-
-
-/**
- * Редактируемая геометрия.
- * 
- * @type {ymaps.IGeometry}
- */
-ymaps.geometryEditor.Polygon.prototype.geometry;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geometryEditor.Polygon.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometryEditor.Polygon.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.view.MultiPath скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Отображение множества контуров. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- */
-ymaps.geometryEditor.view.MultiPath = {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.geometryEditor.view.MultiPath.getEdgePlacemarks = function() {};
-
-
-/**
- * @return {Array.<ymaps.geometryEditor.view.Path>}
- */
-ymaps.geometryEditor.view.MultiPath.getPathViews = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.geometryEditor.view.MultiPath.getVertexPlacemarks = function() {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.view.Path скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Отображение контура. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- */
-ymaps.geometryEditor.view.Path = {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.geometryEditor.view.Path.getEdgePlacemarks = function() {};
-
-
-/**
- * @return {Array.<ymaps.geometryEditor.view.Edge>}
- */
-ymaps.geometryEditor.view.Path.getEdgeViews = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.geometryEditor.view.Path.getVertexPlacemarks = function() {};
-
-
-/**
- * @return {Array.<ymaps.geometryEditor.view.Vertex>}
- */
-ymaps.geometryEditor.view.Path.getVertexViews = function() {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.view.Vertex скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Отображение вершины. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- */
-ymaps.geometryEditor.view.Vertex = {};
-
-
-/**
- * @return {ymaps.GeoObject}
- */
-ymaps.geometryEditor.view.Vertex.getPlacemark = function() {};
-
-
-ymaps.geoObject = {};
-
-
-ymaps.geoObject.addon = {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geoObject.addon.balloon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Статический объект.
- * 
- * Модуль, который предоставляет возможность использовать балун у геообъекта.
- * Добавляет геообъекту (GeoObject) интерфейс IBalloonOwner.
- * При подключении package.full (стандартный набор модулей) доступен по умолчанию.
- * Если GeoObject подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
- * Если geoObject.addon.balloon подключается отдельно после создания GeoObject,
- * то интерфейс IBalloonOwner не будет добавлен. Тогда для инициализации менеджера балуна
- * нужно будет использовать метод geoObject.addon.balloon#get.
- * 
- * Методы 
- * 
- */
-ymaps.geoObject.addon.balloon = {};
-
-
-/**
- * @param {ymaps.IGeoObject} geoObject Геообъект
- * @return {ymaps.IPopupManager}
- */
-ymaps.geoObject.addon.balloon.get = function(geoObject) {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geoObject.addon.editor скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Статический объект.
- * 
- * Модуль, который предоставляет возможность использовать редактор у геообъекта.
- * Добавляет поле GeoObject#editor в GeoObject.
- * При подключении package.full (стандартного набора модулей) доступен по умолчанию.
- * Если GeoObject подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
- * Если geoObject.addon.editor подключается отдельно после создания GeoObject,
- * то поле GeoObject#editor не будет добавлено. Тогда для редактора
- * нужно будет использовать метод geoObject.addon.editor#get.
- * 
- * Методы 
- * 
- */
-ymaps.geoObject.addon.editor = {};
-
-
-/**
- * @param {ymaps.IGeoObject} geoObject Геообъект
- * @return {ymaps.IGeometryEditor}
- */
-ymaps.geoObject.addon.editor.get = function(geoObject) {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geoObject.addon.hint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Статический объект.
- * 
- * Модуль, который предоставляет возможность использовать хинт у геообъекта.
- * Добавляет геообъекту (GeoObject) интерфейс IHintOwner.
- * При подключении package.full (стандартный набор модулей) доступен по умолчанию.
- * Если GeoObject подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
- * Если geoObject.addon.hint подключается отдельно после создания GeoObject,
- * то интерфейс IHintOwner не будет добавлен. Тогда для инициализации менеджера балуна
- * нужно будет использовать метод geoObject.addon.hint#get.
- * 
- * Методы 
- * 
- */
-ymaps.geoObject.addon.hint = {};
-
-
-/**
- * @param {ymaps.IGeoObject} geoObject Геообъект
- * @return {ymaps.IPopupManager}
- */
-ymaps.geoObject.addon.hint.get = function(geoObject) {};
-
-/**
- * 
- * Расширяет
- *             IBalloonManager.
- * 
- * Менеджер балуна геообъекта. Позволяет управлять балуном геообъекта, открывать и скрывать его.
- * Передает балуну данные в формате IGeoObjectPopupData.
- * Использует внутри себя менеджер балуна карты map.Balloon.
- * Геообъекты содержат экземпляр этого класса, доступный как myGeoObject.balloon.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Balloon GeoObject.balloon 
- * 
- * @constructor
- * @implements {ymaps.IBalloonManager}
- * 
- * @param {Object} geoObject Геообъект.
- */
-ymaps.geoObject.Balloon = function(geoObject) {};
-
-
-/**
- * @param {Array.<Number>=} position Координаты открытия. По умолчанию: точка на геообъекте, ближайшая к текущему центру карты.
- *                                   Проекцию координат можно указать в опциях, иначе используется проекция геообъекта.
- * @param {Object=} data Данные, добавляемые в поле userData объекта данных, передаваемых балуну.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Balloon.prototype.open = function(position, data, options) {};
-
-
-/**
- * @param {Object=} data Данные, добавляемые в поле userData объекта данных, передаваемых балуну.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Balloon.prototype.setData = function(data) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Balloon.prototype.autoPan = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Balloon.prototype.close = function(force) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.geoObject.Balloon.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.geoObject.Balloon.prototype.getData = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOptionManager}
- */
-ymaps.geoObject.Balloon.prototype.getOptions = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Balloon.prototype.getOverlay = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOverlay}
- */
-ymaps.geoObject.Balloon.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.geoObject.Balloon.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {Boolean}
- */
-ymaps.geoObject.Balloon.prototype.isOpen = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Balloon.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Balloon.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geoObject.Balloon.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IHintManager.
- * 
- * Менеджер хинта геообъекта. Позволяет управлять хинтом геообъекта, открывать и скрывать его.
- * Передает хинту данные в формате IGeoObjectPopupData.
- * Использует внутри себя менеджер хинтов карты map.Hint.
- * Геообъекты содержат экземпляр этого класса, доступный как myGeoObject.hint.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Hint GeoObject.hint 
- * 
- * @constructor
- * @implements {ymaps.IHintManager}
- * 
- * @param {Object} geoObject Геообъект.
- */
-ymaps.geoObject.Hint = function(geoObject) {};
-
-
-/**
- * @param {Array.<Number>=} position Координаты открытия. По умолчанию: геометрический центр тяжести геообъекта.
- *                                   Проекцию координат можно указать в опциях, иначе используется проекция геообъекта.
- * @param {Object=} data Данные, добавляемые в поле userData объекта данных, передаваемых хинту.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Hint.prototype.open = function(position, data, options) {};
-
-
-/**
- * @param {Object=} data Данные, добавляемые в поле userData объекта данных, передаваемых хинту.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Hint.prototype.setData = function(data) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Hint.prototype.close = function(force) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.geoObject.Hint.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.geoObject.Hint.prototype.getData = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOptionManager}
- */
-ymaps.geoObject.Hint.prototype.getOptions = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Hint.prototype.getOverlay = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOverlay}
- */
-ymaps.geoObject.Hint.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.geoObject.Hint.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {Boolean}
- */
-ymaps.geoObject.Hint.prototype.isOpen = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Hint.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Hint.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geoObject.Hint.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IGeoObject, IGeoObjectSequence.
- * 
- * Неизменяемая коллекция геообъектов. Позволяет группировать геообъекты для добавления на карту,
- * задания опций и т.д. Коллекция также является геообъектом.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * @implements {ymaps.IGeoObjectSequence}
- * 
- * @param {Object=} feature Описание коллекции. Функционально соответствует описанию
- *                          геообъекта. Смотрите GeoObject.
- * @param {Object=} options Опции коллекции. Здесь можно задавать все опции описанные в классе
- *                          GeoObject. Значения опций будут применяться как к самой коллекции, так и к ее
- *                          дочерним объектам, если для них данные опции не определены.
- */
-ymaps.geoObject.Sequence = function(feature, options) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.geoObject.Sequence.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.geoObject.Sequence.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.geoObject.Sequence.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.geoObject.Sequence.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.geoObject.Sequence.prototype.getMap = function() {};
-
-
-/**
- * @param {Function} callback Функция-обработчик.
- * @param {Object=} context Контекст выполнения функции-обработчика.
- */
-ymaps.geoObject.Sequence.prototype.each = function(callback, context) {};
-
-
-/**
- * @param {number} index Индекс.
- * @return {ymaps.IGeoObject}
- */
-ymaps.geoObject.Sequence.prototype.get = function(index) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geoObject.Sequence.prototype.getBounds = function() {};
-
-
-/**
- * @return {ymaps.IIterator}
- */
-ymaps.geoObject.Sequence.prototype.getIterator = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geoObject.Sequence.prototype.getLength = function() {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geoObject.Sequence.prototype.getPixelBounds = function() {};
-
-
-/**
- * @param {ymaps.IGeoObject} object Дочерний геообъект.
- * @return {number}
- */
-ymaps.geoObject.Sequence.prototype.indexOf = function(object) {};
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.geoObject.Sequence.prototype.geometry;
-
-
-/**
- * Данные геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.geoObject.Sequence.prototype.properties;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.geoObject.Sequence.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geoObject.Sequence.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geoObject.Sequence.prototype.options;
 
 /**
  * 
@@ -7160,49 +839,6 @@ ymaps.GeoObject.prototype.properties;
  * @type {ymaps.data.Manager}
  */
 ymaps.GeoObject.prototype.state;
-
-/**
- * 
- * Статическая функция.
- * 
- * Формирует набор данных из указанного источника и создает на его основе
- * экземпляр GeoQueryResult.
- * 
- * Возвращает:  Результат, содержащий данные из источника.
- *         (тип GeoQueryResult).
- * 
- * @param {Object} source Источник геообъектов:
- *                        
- *                            IGeoObject - объект, реализующий соответствующий интерфейс;
- *                            IGeoObject[] - массив объектов, реализующих соответствующий интерфейс;
- *                            ICollection - коллекция объектов, реализующих интерфейс IGeoObject;
- *                            ICollection[] - массив коллекций объектов, реализующих интерфейс IGeoObject;
- *                            vow.Promise - объект-промис, передающий в функцию-обработчик источник данных для geoQuery;
- *                            Также в функцию-обработчик может быть передан объект с полем geoObjects, содержащий источник данных
- *                            для geoQuery;
- *                            GeoQueryResult - объект класса GeoQueryResult;
- *                            String|Object - строка или объект с JSON-описанием объектов.
- *                        
- *                        JSON-описание объектов строится по следующему принципу (см. пример ниже).
- *                        Объектом может быть сущность или коллекция сущностей.
- *                        Коллекция сущностей представляет из себя объект с полями:
- *                        
- *                            type - тип объекта. Значение поля должно быть равно "FeatureCollection";
- *                            features - массив дочерних сущностей коллекции. Дочерние объекты могут быть сущностями или
- *                            вложенными коллекциями сущностей.
- *                        
- *                        Сущность представляет из себя объект с полями:
- *                        
- *                            type - тип объекта. Значение поля должно быть равно "Feature";
- *                            geometry - геометрия объекта. Содержит поля type и coordinates. Соответствует параметру,
- *                            передаваемому в конструктор объекта ymaps.GeoObject;
- *                            options - опции геообъекта;
- *                            properties - данные геообъекта.
- *                        
- * 
- * @returns {ymaps.GeoQueryResult}
- */
-ymaps.geoQuery = function(source) {};
 
 /**
  * 
@@ -7391,73 +1027,6 @@ ymaps.GeoObjectCollection.prototype.events;
  * @type {ymaps.IOptionManager}
  */
 ymaps.GeoObjectCollection.prototype.options;
-
-
-ymaps.geoXml = {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Загружает XML-файл с географическими данными и преобразует его
- * в коллекцию GeoObjectCollection. Сформированная коллекция
- * может быть передана заданной функции для последующей обработки.
- * Поддерживаемые форматы XML-данных: YMapsML, KML, GPX.
- * Для верхней коллекции геообъектов GPX-файла доступны следующие пресеты:
- * 
- * 'gpx#interactive' - обеспечивает вывод информации о точке маршрута при клике. Также при
- *     использовании этого пресета в макете балуна становятся доступными следующие свойства геообъекта: time, velocity, trackName,
- *     trackDescription, pointName, pointDescription, lon, lat, sym. Используется по умолчанию;
- *     'gpx#plain' - элементы gpx-коллекции ведут себя как обычные геообъекты;
- * Возвращает:  Объект-promise. Если xml-файл по указанному
- * урлу будет успешно загружен, promise будет подтверждён и получит в качестве параметров
- * объект со следующими полями:
- * 
- * geoObjects - коллекция геообъектов GeoObjectCollection;
- *     mapState - описание состояния карты IMapState (только для YMapsML);
- * 
- * (тип vow.Promise).
- * 
- * @param {String} url URL файла с географическими данными.
- * 
- * @returns {ymaps.vow.Promise}
- */
-ymaps.geoXml.load = function(url) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Определяет доступный диапазон уровней масштабирования в указанной точке для указанного типа карты.
- * Возвращает объект-promise, который будет подтверждён и получит в качестве
- * параметра массив из двух чисел - максимальный и минимальный уровень масштабирования в данной точке.
- * 
- * Возвращает:  Объект-promise.
- *         (тип vow.Promise).
- * 
- * @param {String|ymaps.MapType} mapType Тип карты. Cтрока-ключ из mapType.storage, либо экземпляр
- *                                       класса MapType.
- * @param {Array.<Number>} coords Координаты точки, для которой нужно узнать диапазон
- *                                доступных уровней масштабирования.
- * @param {ymaps.ICustomizable=null} customizable Объект, который содержит менеджер опций.
- *                                                Опции объекта будут учитываться при получении результата.
- */
-ymaps.getZoomRange = function(mapType, coords, customizable) {};
-
-
-ymaps.graphics = {};
-
-
-ymaps.graphics.style = {};
-
-/**
- * 
- * Статический объект.
- * 
- * Задает цвет графической фигуры в форматах #RGB,#RGBA,#RRGGBB,#RRGGBBAA,rgb(r,b,a),rgba(r,g,b,a)
- * 
- */
-ymaps.graphics.style.color;
 
 /**
  * 
@@ -8073,108 +1642,6 @@ ymaps.Hint.prototype.events;
 
 /**
  * 
- * Статический объект.
- * 
- * Позволяет изменить стиль линии.
- * Задавать значение можно как используя ключи описанные ниже, так и в формате массива.
- * Следует учесть, что в режиме отображениея VML(IE&lt;9) могут быть использованны только ключи.
- * Также в стиле линии можно указать смещение начала пунктира через поле offset.
- * 
- * Поля 
- * 
- */
-ymaps.graphics.style.stroke = {};
-
-
-/**
- * Тире
- * 
- * @type {dash}
- */
-ymaps.graphics.style.stroke.dash;
-
-
-/**
- * Длинное тире-короткое тире
- * 
- * @type {dashdot}
- */
-ymaps.graphics.style.stroke.dashdot;
-
-
-/**
- * Точки
- * 
- * @type {dot}
- */
-ymaps.graphics.style.stroke.dot;
-
-
-/**
- * Длинные тире
- * 
- * @type {longdash}
- */
-ymaps.graphics.style.stroke.longdash;
-
-
-/**
- * Очень длинное тире - точка
- * 
- * @type {longdashdot}
- */
-ymaps.graphics.style.stroke.longdashdot;
-
-
-/**
- * Длинное тире-точка-точка
- * 
- * @type {longdashdotdot}
- */
-ymaps.graphics.style.stroke.longdashdotdot;
-
-
-/**
- * Короткие тире
- * 
- * @type {shortdash}
- */
-ymaps.graphics.style.stroke.shortdash;
-
-
-/**
- * Тире-точка
- * 
- * @type {shortdashdot}
- */
-ymaps.graphics.style.stroke.shortdashdot;
-
-
-/**
- * Тире-точка-точка
- * 
- * @type {shortdashdotdot}
- */
-ymaps.graphics.style.stroke.shortdashdotdot;
-
-
-/**
- * Точки через двойной интервал
- * 
- * @type {shortdot}
- */
-ymaps.graphics.style.stroke.shortdot;
-
-
-/**
- * Сплошная линия
- * 
- * @type {solid}
- */
-ymaps.graphics.style.stroke.solid;
-
-/**
- * 
  * Расширяет
  *             IHotspot.
  * 
@@ -8220,10823 +1687,6 @@ ymaps.Hotspot.prototype.setZIndex = function() {};
  * @type {ymaps.IEventManager}
  */
 ymaps.Hotspot.prototype.events;
-
-
-ymaps.hotspot = {};
-
-
-ymaps.hotspot.layer = {};
-
-/**
- * 
- * Расширяет
- *             IBalloonManager.
- * 
- * Менеджер балуна хотспотного слоя. Позволяет управлять балуном хотспотного слоя, открывать и скрывать его.
- * Использует внутри себя менеджер балуна карты map.Balloon.
- * Хотспотные слои содержат экземпляр этого класса, доступный как myHotspotLayer.balloon.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Balloon hotspot.Layer.balloon 
- * 
- * @constructor
- * @implements {ymaps.IBalloonManager}
- * 
- * @param {Object} hotspotLayer Хотспотный слой.
- */
-ymaps.hotspot.layer.Balloon = function(hotspotLayer) {};
-
-
-/**
- * @param {Array.<Number>=} position Координаты открытия в глобальных пиксельных координатах.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Balloon.prototype.open = function(position, data, options) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Balloon.prototype.autoPan = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Balloon.prototype.close = function(force) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.hotspot.layer.Balloon.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.hotspot.layer.Balloon.prototype.getData = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOptionManager}
- */
-ymaps.hotspot.layer.Balloon.prototype.getOptions = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Balloon.prototype.getOverlay = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOverlay}
- */
-ymaps.hotspot.layer.Balloon.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.hotspot.layer.Balloon.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {Boolean}
- */
-ymaps.hotspot.layer.Balloon.prototype.isOpen = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object|String|HTMLElement} data Данные инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Balloon.prototype.setData = function(data) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Balloon.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Balloon.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.hotspot.layer.Balloon.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IHintManager.
- * 
- * Менеджер хинта хотспотного слоя. Позволяет управлять хинтом хотспотного слоя, открывать и скрывать его.
- * Использует внутри себя менеджер хинтов карты map.Hint.
- * Хотспотные слои содержат экземпляр этого класса, доступный как myHotspotLayer.hint.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Hint hotspot.Layer.hint 
- * 
- * @constructor
- * @implements {ymaps.IHintManager}
- * 
- * @param {Object} hotspotLayer Хотспотный слой.
- */
-ymaps.hotspot.layer.Hint = function(hotspotLayer) {};
-
-
-/**
- * @param {Array.<Number>=} position Координаты открытия в глобальных пиксельных координатах.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Hint.prototype.open = function(position, data, options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Hint.prototype.close = function(force) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.hotspot.layer.Hint.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.hotspot.layer.Hint.prototype.getData = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOptionManager}
- */
-ymaps.hotspot.layer.Hint.prototype.getOptions = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Hint.prototype.getOverlay = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOverlay}
- */
-ymaps.hotspot.layer.Hint.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.hotspot.layer.Hint.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {Boolean}
- */
-ymaps.hotspot.layer.Hint.prototype.isOpen = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object|String|HTMLElement} data Данные инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Hint.prototype.setData = function(data) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Hint.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.layer.Hint.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.hotspot.layer.Hint.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IHotspotLayerObject.
- * 
- * Объект хотспотного слоя.
- * 
- * @constructor
- * @implements {ymaps.IHotspotLayerObject}
- * 
- * @param {ymaps.IShape} shape Фигура активной области.
- * @param {Object} feature Описание объекта {@see GeoObject}.
- * @param {Object} options Опции объекта.
- */
-ymaps.hotspot.layer.Object = function(shape, feature, options) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.hotspot.layer.Object.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.IHotspot}
- */
-ymaps.hotspot.layer.Object.prototype.getHotspot = function() {};
-
-
-/**
- * @return {Number}
- */
-ymaps.hotspot.layer.Object.prototype.getId = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.hotspot.layer.Object.prototype.getProperties = function() {};
-
-
-/**
- * @param {Object} geometry Реальная геометрия объекта.
- */
-ymaps.hotspot.layer.Object.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {Number} id Идентификатор объекта.
- */
-ymaps.hotspot.layer.Object.prototype.setId = function(id) {};
-
-
-/**
- * @param {Object} properties Данные объекта.
- */
-ymaps.hotspot.layer.Object.prototype.setProperties = function(properties) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.hotspot.layer.Object.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.hotspot.layer.Object.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IChildOnMap, ICustomizable.
- * 
- * Слой активных областей.
- * 
- * @constructor
- * @implements {ymaps.IChildOnMap}
- * @implements {ymaps.ICustomizable}
- * 
- * @param {ymaps.IHotspotObjectSource} objectSource Источник объектов слоя.
- * @param {Object=} options Опции слоя.
- *                          Опции для балунов Balloon и хинтов Hint хотспотного слоя нужно указывать с префиксами 'balloon' и 'hint'.
- */
-ymaps.hotspot.Layer = function(objectSource, options) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.hotspot.Layer.prototype.getMap = function() {};
-
-
-/**
- * @param {Array.<Number>} coords Географические координаты точки.
- * @return {ymaps.vow.Promise}
- */
-ymaps.hotspot.Layer.prototype.getObjectInPosition = function(coords) {};
-
-
-/**
- * @return {ymaps.IHotspotObjectSource}
- */
-ymaps.hotspot.Layer.prototype.getObjectSource = function() {};
-
-
-/**
- */
-ymaps.hotspot.Layer.prototype.update = function() {};
-
-
-/**
- * @return {ymaps.IControlParent|null}
- */
-ymaps.hotspot.Layer.prototype.getParent = function() {};
-
-
-/**
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.hotspot.Layer.prototype.setParent = function(parent) {};
-
-
-/**
- * Балун хотспотного слоя.
- * 
- * @type {ymaps.hotspot.layer.Balloon}
- */
-ymaps.hotspot.Layer.prototype.balloon;
-
-
-/**
- * Хинт хотспотного слоя.
- * 
- * @type {ymaps.hotspot.layer.Hint}
- */
-ymaps.hotspot.Layer.prototype.hint;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.hotspot.Layer.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.hotspot.Layer.prototype.options;
-
-
-ymaps.interactivityModel = {};
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.Storage
- * Хранилище моделей интерактивности.
- * Модели интерактивности позволяют объектам по-разному обрабатывать DOM-события.
- * Список доступных ключей моделей интерактивности:
- * 
- * 'default#opaque' - объект генерирует все DOM-события и не прокидывает их на карту.
- *     Поведения карты не будут работать при наведении или клике на объекты с данной моделью
- *     интерактивности.
- *     'default#geoObject' - объект генерирует все DOM-события.
- *     На карту прокидываются события 'wheel', 'mousedown', 'dblclick', 'contextmenu', 'multitouchstart', 'multitouchmove' и 'multitouchend'.
- *     Если на карте включены поведения 'scrollZoom', 'dblClickZoom' или 'magnifier', они будут работать через
- *     объекты с данной моделью интерактивности, в отличие от объектов с моделью
- *     'default#opaque'.
- *     'default#layer' - объект генерирует все DOM-события.
- *     На карту прокидываются события 'wheel', 'mousedown', 'contextmenu', 'multitouchstart', 'multitouchmove' и 'multitouchend'.
- *     Если на карте включены поведения 'scrollZoom', 'drag' или 'magnifier', они будут работать
- *     через объекты с данной моделью интерактивности.
- *     'default#transparent' - объект генерирует все DOM-события, а затем прокидывает их на
- *     карту.
- *     'default#silent' - объект не генерирует DOM-события, но прокидывает их на карту.
- * 
- * 
- * 
- * @type {ymaps.util.Storage}
- */
-ymaps.interactivityModel.storage;
-
-/**
- * 
- * Расширяет
- *             IHotspotObjectSource.
- * 
- * Стандартная реализация интерфейса IHotspotObjectSource.
- * Работает со стандартным форматом ответа сервера.
- * 
- * @constructor
- * @implements {ymaps.IHotspotObjectSource}
- * 
- * @param {String|Function} tileUrlTemplate Шаблон URL данных, соответствующих тайлу. Поддерживаются
- *                                          специальные конструкции и возможность использования функции по аналогии с Layer.
- * @param {String|Function=} keyTemplate Шаблон идентификатора тайла. Используется для формирования padding в jsonp-запросе за данными.
- *                                       Задается по аналогии с предыдущим параметром. Все символы, не являющиеся буквой, цифрой или символом '_', будут заменены на '_'.
- *                                       Если параметр не задан, то padding запроса будет сгенерирован автоматически.
- *                                       Примеры преобразований при tileNumber=[3, 1], zoom=9:
- *                                       
- *                                           'myCallback=%x' =&gt; 'myCallback_3'
- *                                           '%c' =&gt; 'x_3_y_1_z_9'
- *                                           'callback2_%c' =&gt; 'callback2_x_3_y_1_z_9'
- *                                           'callback%test' =&gt; 'callback_test'
- *                                       
- * @param {Object=} options Опции источника данных.
- */
-ymaps.hotspot.ObjectSource = function(tileUrlTemplate, keyTemplate, options) {};
-
-
-/**
- * @param {Array.<Number>} tileNumber Номер тайла (тайловые координаты).
- * @param {number} zoom Уровень масштаба.
- * @return {String}
- */
-ymaps.hotspot.ObjectSource.prototype.getKey = function(tileNumber, zoom) {};
-
-
-/**
- * @return {String}
- */
-ymaps.hotspot.ObjectSource.prototype.getKeyTemplate = function() {};
-
-
-/**
- * @param {Array.<Number>} tileNumber Номер тайла (тайловые координаты).
- * @param {number} zoom Уровень масштабирования.
- * @return {String}
- */
-ymaps.hotspot.ObjectSource.prototype.getTileUrl = function(tileNumber, zoom) {};
-
-
-/**
- * @return {String}
- */
-ymaps.hotspot.ObjectSource.prototype.getTileUrlTemplate = function() {};
-
-
-/**
- * @param {ymaps.hotspot.Layer} layer Слой, которому принадлежат объекты.
- * @param {Object} res Ответ сервера.
- * @param {Function} callback Функция-обработчик.
- * @param {Array.<Number>} tileNumber Номер тайла, для которого пришел ответ.
- * @param {Number} zoom Коэффициент масштабирования, для которого пришел ответ.
- *                      массива объектов.
- */
-ymaps.hotspot.ObjectSource.prototype.parseResponse = function(layer, res, callback, tileNumber, zoom) {};
-
-
-/**
- * @param {ymaps.hotspot.Layer} layer Слой активных областей.
- * @param {Array.<Number>} tileNumber Номер тайла.
- * @param {number} zoom Коэффициент масштабирования.
- * @return {Boolean}
- */
-ymaps.hotspot.ObjectSource.prototype.restrict = function(layer, tileNumber, zoom) {};
-
-
-/**
- * @param {String} template Шаблон идентификатора.
- */
-ymaps.hotspot.ObjectSource.prototype.setKeyTemplate = function(template) {};
-
-
-/**
- * @param {String} template Шаблон URL
- */
-ymaps.hotspot.ObjectSource.prototype.setTileUrlTemplate = function(template) {};
-
-
-/**
- */
-ymaps.hotspot.ObjectSource.prototype.cancelLastRequest = function() {};
-
-
-/**
- * @param {ymaps.hotspot.Layer} layer Слой активных областей.
- * @param {Array.<Number>} tileNumber Тайловые координаты.
- * @param {Number} zoom Коэффициент масштабирования.
- * @param {Function} callback Функция-обработчик.
- */
-ymaps.hotspot.ObjectSource.prototype.requestObjects = function(layer, tileNumber, zoom, callback) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.hotspot.ObjectSource.prototype.options;
-
-
-ymaps.layer = {};
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.Storage
- * Хранилище слоев.
- * 
- * 
- * @type {ymaps.util.Storage}
- */
-ymaps.layer.storage;
-
-
-ymaps.layer.tile = {};
-
-/**
- * 
- * Расширяет
- *             ICanvasTile.
- * 
- * Картиночный canvas-тайл. Умеет отрисовывать указанное изображение
- * через метод drawImage у 2d контекста canvas-элемента.
- * 
- * @constructor
- * @implements {ymaps.ICanvasTile}
- * 
- * @param {String} url URL изображения.
- * @param {Object=} options Опции.
- */
-ymaps.layer.tile.CanvasTile = function(url, options) {};
-
-
-/**
- */
-ymaps.layer.tile.CanvasTile.prototype.destroy = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.layer.tile.CanvasTile.prototype.isReady = function() {};
-
-
-/**
- * @param {Object} context 2d-контекст объекта canvas.
- * @param {Array.<Number>} canvasSize размеры HTML-элемента canvas.
- * @param {Array.<Array.<Number>>} bounds Область в клиентских координатах, в которой нужно отрисовать тайл.
- * @param {Boolean=} animate true - анимировать рендеринг, false - нет.
- */
-ymaps.layer.tile.CanvasTile.prototype.renderAt = function(context, canvasSize, bounds, animate) {};
-
-
-/**
- * Менеджер событий тайла.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.layer.tile.CanvasTile.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IDomTile.
- * 
- * Картиночный DOM-тайл. Умеет отрисовывать указанное изображение
- * через css свойство background у DOM-элемента.
- * 
- * @constructor
- * @implements {ymaps.IDomTile}
- * 
- * @param {String} url URL изображения.
- * @param {Object=} options Опции.
- */
-ymaps.layer.tile.DomTile = function(url, options) {};
-
-
-/**
- */
-ymaps.layer.tile.DomTile.prototype.destroy = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.layer.tile.DomTile.prototype.isReady = function() {};
-
-
-/**
- * @param {HTMLElement} context Родительский HTML-элемент
- * @param {Array.<Array.<Number>>} clientBounds Область в клиентских координатах, которую должен занять тайл.
- * @param {Boolean} animate true - анимировать рендеринг, false - нет.
- */
-ymaps.layer.tile.DomTile.prototype.renderAt = function(context, clientBounds, animate) {};
-
-
-/**
- * Менеджер событий тайла.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.layer.tile.DomTile.prototype.events;
-
-
-ymaps.layer.tileContainer = {};
-
-/**
- * 
- * Расширяет
- *             IChildOnMap.
- * 
- * Контейнер тайлов на canvas
- * 
- * @constructor
- * @implements {ymaps.IChildOnMap}
- * 
- * @param {ymaps.ILayer} layer Слой.
- * @param {Object=} options Опции контейнера.
- */
-ymaps.layer.tileContainer.CanvasContainer = function(layer, options) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.layer.tileContainer.CanvasContainer.prototype.getMap = function() {};
-
-
-/**
- * @param {Array.<Number>} tileNumber Номер тайла.
- * @param {Number} tileZoom Масштаб тайла.
- * @param {Number} priority Приоритет загрузки.
- * @return {ymaps.ICanvasTile}
- */
-ymaps.layer.tileContainer.CanvasContainer.prototype.getTile = function(tileNumber, tileZoom, priority) {};
-
-
-/**
- * @return {ymaps.IControlParent|null}
- */
-ymaps.layer.tileContainer.CanvasContainer.prototype.getParent = function() {};
-
-
-/**
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.layer.tileContainer.CanvasContainer.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.layer.tileContainer.CanvasContainer.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IChildOnMap.
- * 
- * Контейнер тайлов типа IDomTile
- * 
- * @constructor
- * @implements {ymaps.IChildOnMap}
- * 
- * @param {ymaps.ILayer} layer Слой.
- * @param {Object=} options Опции контейнера.
- */
-ymaps.layer.tileContainer.DomContainer = function(layer, options) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.layer.tileContainer.DomContainer.prototype.getMap = function() {};
-
-
-/**
- * @param {Array.<Number>} tileNumber Номер тайла.
- * @param {Number} tileZoom Масштаб тайла.
- * @param {Number} priority Приоритет загрузки.
- * @return {ymaps.IDomTile}
- */
-ymaps.layer.tileContainer.DomContainer.prototype.getTile = function(tileNumber, tileZoom, priority) {};
-
-
-/**
- * @return {ymaps.IControlParent|null}
- */
-ymaps.layer.tileContainer.DomContainer.prototype.getParent = function() {};
-
-
-/**
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.layer.tileContainer.DomContainer.prototype.setParent = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.layer.tileContainer.DomContainer.prototype.events;
-
-/**
- * 
- * Расширяет
- *             ILayer, IParentOnMap, IPositioningContext.
- * 
- * Тайловый слой. Позволяет отображать на карте подложку, состоящую из тайлов.
- * 
- * @constructor
- * @implements {ymaps.ILayer}
- * @implements {ymaps.IParentOnMap}
- * @implements {ymaps.IPositioningContext}
- * 
- * @param {String|Function} tileUrlTemplate Строковый шаблон URL тайла,
- *                                          либо функция, которая генерирует URL тайла.
- *                                          Для строкового шаблона поддерживается подстановка:
- *                                          
- * @param {Object=} options Опции.
- */
-ymaps.Layer = function(tileUrlTemplate, options) {};
-
-
-/**
- * @param {Number} clientPixelPoint Точка в клиентских пиксельных
- *                                  координатах.
- * @param {Number} tileZoom Уровень масштаба тайла.
- * @return {Array.<Number>}
- */
-ymaps.Layer.prototype.clientPixelsToNumber = function(clientPixelPoint, tileZoom) {};
-
-
-/**
- * @return {ymaps.IPane}
- */
-ymaps.Layer.prototype.getPane = function() {};
-
-
-/**
- * @param {Number} zoom Значение коэффициента мастабирования.
- * @return {Array.<Number>}
- */
-ymaps.Layer.prototype.getTileSize = function(zoom) {};
-
-
-/**
- * @param {*} tileNumber 
- * @param {*} tileZoom 
- * @return {String|null}
- */
-ymaps.Layer.prototype.getTileUrl = function(tileNumber, tileZoom) {};
-
-
-/**
- * @return {String|Function}
- */
-ymaps.Layer.prototype.getTileUrlTemplate = function() {};
-
-
-/**
- * @param {Array.<number>} tileNumber Номер тайла.
- * @param {number} tileZoom Уровень масштаба тайла.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.Layer.prototype.numberToClientBounds = function(tileNumber, tileZoom) {};
-
-
-/**
- * @param {Array.<number>} number Номер тайла.
- * @param {number} tileZoom Уровень масштабирования тайла.
- * @return {Array.<number>|null}
- */
-ymaps.Layer.prototype.restrict = function(number, tileZoom) {};
-
-
-/**
- * @param {String|Function} tileUrlTemplate Строковый шаблон URL тайла, либо функция, которая его генерирует.
- */
-ymaps.Layer.prototype.setTileUrlTemplate = function(tileUrlTemplate) {};
-
-
-/**
- * @param {*} updateBounds 
- */
-ymaps.Layer.prototype.update = function(updateBounds) {};
-
-
-/**
- * @return {Number}
- */
-ymaps.Layer.prototype.getBrightness = function() {};
-
-
-/**
- * @param {Array.<Number>} coords Точка на карте, для которой запрашивается
- *                                информация об авторских правах.
- * @param {Number} zoom Уровень масштабирования, для которого запрашивается
- *                      информация об авторских правах.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Layer.prototype.getCopyrights = function(coords, zoom) {};
-
-
-/**
- * @param {Array.<Number>} point Точка
- * @return {ymaps.vow.Promise}
- */
-ymaps.Layer.prototype.getZoomRange = function(point) {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.Layer.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.Layer.prototype.setParent = function(parent) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.Layer.prototype.getMap = function() {};
-
-
-/**
- * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
- * @return {Array.<Number>}
- */
-ymaps.Layer.prototype.fromClientPixels = function(clientPixelPoint) {};
-
-
-/**
- * @return {Number}
- */
-ymaps.Layer.prototype.getZoom = function() {};
-
-
-/**
- * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
- * @return {Array.<Number>}
- */
-ymaps.Layer.prototype.toClientPixels = function(globalPixelPoint) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.Layer.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.Layer.prototype.options;
-
-/**
- * 
- * Расширяет
- *             ILayer, IMapObjectCollection.
- * 
- * Коллекция слоев.
- * 
- * @constructor
- * @implements {ymaps.ILayer}
- * @implements {ymaps.IMapObjectCollection}
- * 
- */
-ymaps.LayerCollection = function() {};
-
-
-/**
- * @param {ymaps.ILayer|String} child Слой (ключ хранилища layer.storage или экземпляр класса ILayer), который нужно добавить.
- * @return {ymaps.LayerCollection}
- */
-ymaps.LayerCollection.prototype.add = function(child) {};
-
-
-/**
- * @param {Function} callback Функция-обработчик.
- * @param {Object=} context Контекст выполнения функции.
- */
-ymaps.LayerCollection.prototype.each = function(callback, context) {};
-
-
-/**
- * @return {Number}
- */
-ymaps.LayerCollection.prototype.getBrightness = function() {};
-
-
-/**
- * @param {Array.<Number>=} coords Точка на карте, для которой запрашивается
- *                                 информация об авторских правах.
- * @param {Number=} zoom Уровень масштабирования, для которого запрашивается
- *                       информация об авторских правах.
- * @return {ymaps.vow.Promise}
- */
-ymaps.LayerCollection.prototype.getCopyrights = function(coords, zoom) {};
-
-
-/**
- * @param {*} coords 
- * @return {ymaps.vow.Promise}
- */
-ymaps.LayerCollection.prototype.getZoomRange = function(coords) {};
-
-
-/**
- * @param {ymaps.ILayer|String} child Слой (строка-ключ из layer.storage или экземпляр класса ILayer), который нужно удалить.
- * @return {ymaps.LayerCollection}
- */
-ymaps.LayerCollection.prototype.remove = function(child) {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.LayerCollection.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.LayerCollection.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.ICollection
- * 
- * @return {ymaps.IIterator}
- */
-ymaps.LayerCollection.prototype.getIterator = function() {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.LayerCollection.prototype.getMap = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.LayerCollection.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.LayerCollection.prototype.options;
-
-
-ymaps.layout = {};
-
-/**
- * 
- * Расширяет
- *             ILayout.
- * 
- * Класс для создания макетов, содержащих картинку.
- * 
- * @constructor
- * @implements {ymaps.ILayout}
- * 
- * @param {ymaps.ILayout} data Данные макета.
- */
-ymaps.layout.Image = function(data) {};
-
-
-/**
- */
-ymaps.layout.Image.prototype.destroy = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.layout.Image.prototype.getData = function() {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.layout.Image.prototype.getParentElement = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.layout.Image.prototype.getShape = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.layout.Image.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные макета.
- */
-ymaps.layout.Image.prototype.setData = function(data) {};
-
-
-/**
- * @param {HTMLElement|null} parent Родительский html-элемент.
- *                                  Родительский элемент должен быть добавлен в DOM-дерево.
- *                                  Если передан null, то элемент удаляется из DOM-дерева.
- */
-ymaps.layout.Image.prototype.setParentElement = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.layout.Image.prototype.events;
-
-/**
- * 
- * Расширяет
- *             layout.Image.
- * 
- * Класс для создания макетов, состоящих из картинки и содержимого.
- * 
- * @constructor
- * @extends {ymaps.layout.Image}
- * 
- * @param {ymaps.ILayout} data Данные макета.
- */
-ymaps.layout.ImageWithContent = function(data) {};
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.AsyncStorage
- * Хранилище классов лейаутов.
- * 
- * 
- * @type {ymaps.util.AsyncStorage}
- */
-ymaps.layout.storage;
-
-
-ymaps.layout.templateBased = {};
-
-/**
- * 
- * Расширяет
- *             ILayout.
- * 
- * Базовый класс макета на основе шаблонов. Этот класс
- * используется фабрикой макетов как базовый для создания пользовательских макетов.
- * 
- * См.: templateLayoutFactory 
- * 
- * @constructor
- * @implements {ymaps.ILayout}
- * 
- * @param {Object} data Набор разнородных данных, на основе которых строится макет.
- */
-ymaps.layout.templateBased.Base = function(data) {};
-
-
-/**
- */
-ymaps.layout.templateBased.Base.prototype.build = function() {};
-
-
-/**
- */
-ymaps.layout.templateBased.Base.prototype.clear = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.layout.templateBased.Base.prototype.getShape = function() {};
-
-
-/**
- */
-ymaps.layout.templateBased.Base.prototype.rebuild = function() {};
-
-
-/**
- */
-ymaps.layout.templateBased.Base.prototype.destroy = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.layout.templateBased.Base.prototype.getData = function() {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.layout.templateBased.Base.prototype.getParentElement = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.layout.templateBased.Base.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные макета.
- */
-ymaps.layout.templateBased.Base.prototype.setData = function(data) {};
-
-
-/**
- * @param {HTMLElement|null} parent Родительский html-элемент.
- *                                  Родительский элемент должен быть добавлен в DOM-дерево.
- *                                  Если передан null, то элемент удаляется из DOM-дерева.
- */
-ymaps.layout.templateBased.Base.prototype.setParentElement = function(parent) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.layout.templateBased.Base.prototype.events;
-
-/**
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter, IGeoObject, IParentOnMap.
- * 
- * Менеджер объектов, осуществляющий их оптимальную подгрузку с сервера.
- * Позволяет оптимально загружать, отображать, кластеризовать и управлять видимостью объектов.
- * Менеджер отправляет запрос за данными по указанному url в JSONP-формате.
- * Описание формата соответствует формату добавляемых в ObjectManager объектов ObjectManager.add.
- * Обратите внимание, что у объектов, отрисованных на карте через данный менеджер, нельзя включать режимы редактирования и перетаскивания.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * @implements {ymaps.IGeoObject}
- * @implements {ymaps.IParentOnMap}
- * 
- * @param {String} urlTemplate Шаблон URL данных. Поддерживаются
- *                             специальные конструкции по аналогии с Layer.
- *                             Также поддерживаются подстановки:
- *                             
- *                                 %b заменяется на массив географических координат,
- *                                 описывающих прямоугольную область, для которой требуется загрузить данные.
- *                                 %t заменяется на массив номеров тайлов, описывающих прямоугольную область,
- *                                 для которой требуется загрузить данные.
- *                             
- * @param {Object=} options Опции.
- *                          
- *                              Можно задавать все опции, указанные в описании Clusterer,
- *                                  за исключением опций hasBalloon и hasHint.
- *                              
- *                              Опции для кластеров задаются с префиксом cluster.
- *                                  Список опций указан в описании класса ClusterPlacemark;
- *                              
- *                              
- *                                  Опции для одиночных объектов задаются с префиксом geoObject.
- *                                  Список опций указан в описании класса Placemark.
- *                              
- *                          
- */
-ymaps.LoadingObjectManager = function(urlTemplate, options) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.LoadingObjectManager.prototype.getBounds = function() {};
-
-
-/**
- * @param {Object} id Идентификатор объекта, для которого нужно получить состояние.
- * @return {Object}
- */
-ymaps.LoadingObjectManager.prototype.getObjectState = function(id) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.LoadingObjectManager.prototype.getPixelBounds = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.LoadingObjectManager.prototype.getUrlTemplate = function() {};
-
-
-/**
- */
-ymaps.LoadingObjectManager.prototype.reloadData = function() {};
-
-
-/**
- * @param {String} urlTemplate шаблон URL данных.
- */
-ymaps.LoadingObjectManager.prototype.setUrlTemplate = function(urlTemplate) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.LoadingObjectManager.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.LoadingObjectManager.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.LoadingObjectManager.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.LoadingObjectManager.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.LoadingObjectManager.prototype.getMap = function() {};
-
-
-/**
- * Коллекция кластеров, сгенерированных менеджером.
- * 
- * @type {ymaps.objectManager.ClusterCollection}
- */
-ymaps.LoadingObjectManager.prototype.clusters;
-
-
-/**
- * Коллекция объектов, добавленных в слой.
- * 
- * @type {ymaps.objectManager.ObjectCollection}
- */
-ymaps.LoadingObjectManager.prototype.objects;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.LoadingObjectManager.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.LoadingObjectManager.prototype.events;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.LoadingObjectManager.prototype.geometry;
-
-
-/**
- * Данные геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.LoadingObjectManager.prototype.properties;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.LoadingObjectManager.prototype.state;
-
-
-ymaps.map = {};
-
-
-ymaps.map.action = {};
-
-/**
- * 
- * Расширяет
- *             IMapAction.
- * 
- * Движение карты, состоящее из одного или более шагов.
- * Предназначено для реализации сложных движений карты.
- * 
- * @constructor
- * @implements {ymaps.IMapAction}
- * 
- */
-ymaps.map.action.Continuous = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.map.action.Continuous.prototype.isActive = function() {};
-
-
-/**
- * @param {Object} tick Параметры движения.
- * @return {ymaps.map.action.Continuous}
- */
-ymaps.map.action.Continuous.prototype.tick = function(tick) {};
-
-
-/**
- * @param {ymaps.map.action.Manager} mapActionManager Менеджер действий карты, на которой исполняется движение.
- */
-ymaps.map.action.Continuous.prototype.begin = function(mapActionManager) {};
-
-
-/**
- */
-ymaps.map.action.Continuous.prototype.end = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.action.Continuous.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IDomEventEmitter.
- * 
- * Класс для создания и управления картой.
- * 
- * @constructor
- * @implements {ymaps.IDomEventEmitter}
- * 
- * @param {Object|String} element Ссылка на HTML-элемент, в котором размещается карта, или идентификатор этого HTML-элемента.
- * @param {Object} state Параметры карты.
- * @param {Object=} options Опции карты. Через опции карты можно задавать настройки как самой карты,
- *                          так и добавленных на неё объектов:
- *                          
- *                              опции поведений карты;
- *                              опции балуна карты с префиксом balloon;
- *                              опции хинта карты с префиксом hint;
- *                              опции гео-объектов с префиксом geoObject;
- *                              опции слоев с префиксом layer;
- *                              опции слоев хотспотов с префиксом hotspotLayer;
- *                          
- *                          Опции, которые трактует непосредственно сама карта, перечислены ниже.
- */
-ymaps.Map = function(element, state, options) {};
-
-
-/**
- */
-ymaps.Map.prototype.destroy = function() {};
-
-
-/**
- * @param {Object=} options Опции.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.Map.prototype.getBounds = function(options) {};
-
-
-/**
- * @param {Object=} options Опции.
- * @return {Array.<Number>}
- */
-ymaps.Map.prototype.getCenter = function(options) {};
-
-
-/**
- * @param {Object=} options Опции.
- * @return {Array.<Number>}
- */
-ymaps.Map.prototype.getGlobalPixelCenter = function(options) {};
-
-
-/**
- * @return {String|ymaps.MapType}
- */
-ymaps.Map.prototype.getType = function() {};
-
-
-/**
- * @return {Number}
- */
-ymaps.Map.prototype.getZoom = function() {};
-
-
-/**
- * @param {Array.<Number>|Array.<Object>} center Центр карты или массив точек для последовательного обхода.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Map.prototype.panTo = function(center, options) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds Границы области показа.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Map.prototype.setBounds = function(bounds, options) {};
-
-
-/**
- * @param {Array.<Number>} center Геокоординаты центра карты.
- * @param {Number=} zoom Коэффициент масштабирования карты.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Map.prototype.setCenter = function(center, zoom, options) {};
-
-
-/**
- * @param {Array.<Number>} globalPixelCenter Пиксельные координаты нового центра карты.
- * @param {Number=} zoom Коэффициент масштабирования карты.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Map.prototype.setGlobalPixelCenter = function(globalPixelCenter, zoom, options) {};
-
-
-/**
- * @param {String|ymaps.MapType} type Тип карты. Может быть ключом или или экземпляром класса MapType.
- *                                    Список доступных ключей:
- *                                    
- *                                        'yandex#map' - тип карты "схема";
- *                                        'yandex#satellite' - тип карты "спутник";
- *                                        'yandex#hybrid' - тип карты "гибрид";
- *                                        'yandex#publicMap' - тип карты "народная карта";
- *                                        'yandex#publicMapHybrid' - тип карты "народный гибрид".
- *                                    
- *                                    Ключи 'yandex#publicMap' и 'yandex#publicMapHybrid' доступны только для России и Украины.
- * @param {Object=} options Опции карты.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Map.prototype.setType = function(type, options) {};
-
-
-/**
- * @param {Number} zoom Коэффициент масштабирования карты.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Map.prototype.setZoom = function(zoom, options) {};
-
-
-/**
- * Менеджер действий карты.
- * 
- * @type {ymaps.map.action.Manager}
- */
-ymaps.Map.prototype.action;
-
-
-/**
- * Балун карты.
- * 
- * @type {ymaps.map.Balloon}
- */
-ymaps.Map.prototype.balloon;
-
-
-/**
- * Менеджер поведений карты. Позволяет включать и выключать поведения,
- * а также предоставляет доступ к их методам и свойствам.
- * 
- * @type {ymaps.map.behavior.Manager}
- */
-ymaps.Map.prototype.behaviors;
-
-
-/**
- * Контейнер карты.
- * 
- * @type {ymaps.map.Container}
- */
-ymaps.Map.prototype.container;
-
-
-/**
- * Элементы управления картой.
- * 
- * @type {ymaps.control.Manager}
- */
-ymaps.Map.prototype.controls;
-
-
-/**
- * Преобразователь пиксельных точек карты
- * из глобальных в локальные и наоборот.
- * 
- * @type {ymaps.map.Converter}
- */
-ymaps.Map.prototype.converter;
-
-
-/**
- * Менеджер размещённой на карте информации об авторских правах.
- * 
- * @type {ymaps.map.Copyrights}
- */
-ymaps.Map.prototype.copyrights;
-
-
-/**
- * Менеджер курсоров карты.
- * 
- * @type {ymaps.util.cursor.Manager}
- */
-ymaps.Map.prototype.cursors;
-
-
-/**
- * Менеджер событий карты. Поддерживает подписку с приоритетами.
- * Бросает события типа MapEvent.
- * 
- * Примеры: 
- * 
- * 1.
- * 
- * 2.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.Map.prototype.events;
-
-
-/**
- * Менеджер геообъектов карты.
- * 
- * @type {ymaps.map.GeoObjects}
- */
-ymaps.Map.prototype.geoObjects;
-
-
-/**
- * Хинт карты.
- * 
- * @type {ymaps.map.Hint}
- */
-ymaps.Map.prototype.hint;
-
-
-/**
- * Менеджер слоёв карты.
- * 
- * См.: Layer 
- * 
- * @type {ymaps.map.layer.Manager}
- */
-ymaps.Map.prototype.layers;
-
-
-/**
- * Опции карты.
- * 
- * @type {ymaps.option.Manager}
- */
-ymaps.Map.prototype.options;
-
-
-/**
- * Менеджер контейнеров объектов карты.
- * 
- * @type {ymaps.map.pane.Manager}
- */
-ymaps.Map.prototype.panes;
-
-
-/**
- * Объект, предоставляющий доступ к информации о доступных
- * в точке уровнях масштабирования.
- * 
- * @type {ymaps.map.ZoomRange}
- */
-ymaps.Map.prototype.zoomRange;
-
-/**
- * 
- * Расширяет
- *             IMapAction.
- * 
- * Простое движение карты.
- * Движение выполняется сразу после передачи его в map.action.Manager.
- * 
- * @constructor
- * @implements {ymaps.IMapAction}
- * 
- * @param {Object} tick Параметры движения.
- */
-ymaps.map.action.Single = function(tick) {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.map.action.Single.prototype.isActive = function() {};
-
-
-/**
- * @param {ymaps.map.action.Manager} mapActionManager Менеджер действий карты, на которой исполняется движение.
- */
-ymaps.map.action.Single.prototype.begin = function(mapActionManager) {};
-
-
-/**
- */
-ymaps.map.action.Single.prototype.end = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.action.Single.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Менеджер действий карты. Позволяет выполнять сложные движения
- * на карте и гарантирует, что сложные движения не наложатся друг на друга.
- * У каждой карты уже есть собственный менеджер действий, доступный как
- * Map.action. Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Map.action 
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- * @param {ymaps.Map} map Карта.
- */
-ymaps.map.action.Manager = function(map) {};
-
-
-/**
- */
-ymaps.map.action.Manager.prototype.breakTick = function() {};
-
-
-/**
- * @param {ymaps.IMapAction} action Действие.
- */
-ymaps.map.action.Manager.prototype.execute = function(action) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.map.action.Manager.prototype.getCurrentState = function() {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.map.action.Manager.prototype.getMap = function() {};
-
-
-/**
- * @param {Function} userFunction Пользовательская функция коррекции шагов.
- */
-ymaps.map.action.Manager.prototype.setCorrection = function(userFunction) {};
-
-
-/**
- */
-ymaps.map.action.Manager.prototype.stop = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.action.Manager.prototype.events;
-
-
-ymaps.map.addon = {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса map.addon.balloon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Статический объект.
- * 
- * Модуль, который предоставляет возможность использовать балун у карты.
- * Добавляет карте (Map) интерфейс IBalloonOwner.
- * При подключении package.full (стандартный набор модулей) доступен по умолчанию.
- * Если Map подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
- * Если map.addon.balloon подключается отдельно после создания Map,
- * то интерфейс IBalloonOwner не будет добавлен. Тогда для инициализации менеджера балуна
- * нужно будет использовать метод map.addon.balloon#get.
- * 
- * Методы 
- * 
- */
-ymaps.map.addon.balloon = {};
-
-
-/**
- * @return {ymaps.IPopupManager}
- */
-ymaps.map.addon.balloon.get = function() {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса map.addon.hint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Статический объект.
- * 
- * Модуль, который предоставляет возможность использовать хинт у карты.
- * Добавляет карте (Map) интерфейс IHintOwner.
- * При подключении package.full (стандартный набор модулей) доступен по умолчанию.
- * Если Map подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
- * Если map.addon.hint подключается отдельно после создания Map,
- * то интерфейс IHintOwner не будет добавлен. Тогда для инициализации менеджера балуна
- * нужно будет использовать метод map.addon.hint#get.
- * 
- * Методы 
- * 
- */
-ymaps.map.addon.hint = {};
-
-
-/**
- * @return {ymaps.IPopupManager}
- */
-ymaps.map.addon.hint.get = function() {};
-
-/**
- * 
- * Расширяет
- *             IBalloonManager, IBalloonSharingManager.
- * 
- * Менеджер балуна карты. У каждой карты уже есть собственный менеджер балуна, доступный как myMap.balloon.
- * В один момент на карте может быть открыт только один балун, управляемый менеджером.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Balloon Map.balloon 
- * 
- * @constructor
- * @implements {ymaps.IBalloonManager}
- * 
- * @param {ymaps.Map} map Ссылка на объект карты.
- */
-ymaps.map.Balloon = function(map) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Balloon.prototype.autoPan = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Balloon.prototype.close = function(force) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.map.Balloon.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.map.Balloon.prototype.getData = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOptionManager}
- */
-ymaps.map.Balloon.prototype.getOptions = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Balloon.prototype.getOverlay = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOverlay}
- */
-ymaps.map.Balloon.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.map.Balloon.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {Boolean}
- */
-ymaps.map.Balloon.prototype.isOpen = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>=} position Координаты открытия.
- * @param {Object|String|HTMLElement=} data Данные.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Balloon.prototype.open = function(position, data, options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object|String|HTMLElement} data Данные инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Balloon.prototype.setData = function(data) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Balloon.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Balloon.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.Balloon.prototype.events;
-
-
-ymaps.map.behavior = {};
-
-/**
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter, IParentOnMap.
- * 
- * Менеджер поведений карты. Позволяет включать и отключать поведения.
- * У каждой карты уже есть собственный менеджер поведений, доступный как map.behaviors.
- * Не инстанцируйте экземпляры этого класса без необходимости
- * 
- * См.: Map.behaviors 
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * @implements {ymaps.IParentOnMap}
- * 
- * @param {ymaps.Map} map Карта.
- * @param {String|Array.<String>=} behaviors Список поведений карты, включенных
- *                                           сразу при создании карты. По умолчанию - "drag", "dblClickZoom", "rightMouseButtonMagnifier" для настольных браузеров,
- *                                           "drag", "dblClickZoom" и "multiTouch" - для мобильных.
- *                                           
- * @param {Object=} options Опции поведений. Можно задавать следующие опции:
- *                          
- *                              опции поведения behavior.Drag с префиксом drag;
- *                              опции поведения behavior.ScrollZoom с префиксом scrollZoom;
- *                              опции поведения behavior.DblClickZoom с префиксом dblClickZoom;
- *                              опции поведения behavior.MultiTouch с префиксом multiTouch;
- *                              опции поведения magnifier.RightMouseButtonMagnifier, с префиксом rightMouseButtonMagnifier;
- *                              опции поведения behavior.LeftMouseButtonMagnifier, с префиксом leftMouseButtonMagnifier;
- *                              опции поведения behavior.Ruler с префиксом ruler.
- *                          
- */
-ymaps.map.behavior.Manager = function(map, behaviors, options) {};
-
-
-/**
- * @param {String|Array.<String>} behaviors Список отключаемых поведений.
- * @return {ymaps.map.behavior.Manager}
- */
-ymaps.map.behavior.Manager.prototype.disable = function(behaviors) {};
-
-
-/**
- * @param {String|Array.<String>} behaviors Список подключаемых поведений.
- * @return {ymaps.map.behavior.Manager}
- */
-ymaps.map.behavior.Manager.prototype.enable = function(behaviors) {};
-
-
-/**
- * @param {String} behaviorName Имя поведения.
- * @return {ymaps.IBehavior}
- */
-ymaps.map.behavior.Manager.prototype.get = function(behaviorName) {};
-
-
-/**
- * @param {String} behaviorName Идентификатор поведения.
- * @return {Boolean}
- */
-ymaps.map.behavior.Manager.prototype.isEnabled = function(behaviorName) {};
-
-
-/**
- * @return {ymaps.Map}
- */
-ymaps.map.behavior.Manager.prototype.getMap = function() {};
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.map.behavior.Manager.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.behavior.Manager.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IDomEventEmitter.
- * 
- * Менеджер контейнера карты. У каждой карты уже есть свой собственный
- * менеджер контейнера, доступный как map.container. Не инстанцируйте экземпляры
- * этого класса без необходимости.
- * 
- * См.: Map.container 
- * 
- * @constructor
- * @implements {ymaps.IDomEventEmitter}
- * 
- * @param {String|HTMLElement} parentElement HTML-элемент, в котором будет создана карта или его id.
- */
-ymaps.map.Container = function(parentElement) {};
-
-
-/**
- */
-ymaps.map.Container.prototype.enterFullscreen = function() {};
-
-
-/**
- */
-ymaps.map.Container.prototype.exitFullscreen = function() {};
-
-
-/**
- * @param {Boolean=} preservePixelPosition Сохранять положение центра карты.
- */
-ymaps.map.Container.prototype.fitToViewport = function(preservePixelPosition) {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.map.Container.prototype.getElement = function() {};
-
-
-/**
- * @return {Array.<Number>}
- */
-ymaps.map.Container.prototype.getOffset = function() {};
-
-
-/**
- * @return {Array.<Number>}
- */
-ymaps.map.Container.prototype.getSize = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.map.Container.prototype.isFullscreen = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.Container.prototype.events;
-
-/**
- * 
- * Класс для преобразования глобальных пиксельных координат точки
- * (считаются от левого верхнего угла мира) в локальные
- * (считаются от левого верхнего угла окна) и наоборот.
- * У каждой карты уже есть собственный конвертер, доступный как map.converter.
- * Не инстанцируйте экземпляры этого класса без необходимости.
- * 
- * См.: Map.converter 
- * 
- * @constructor
- * 
- * @param {ymaps.Map} map Ссылка на карту.
- */
-ymaps.map.Converter = function(map) {};
-
-
-/**
- * @param {Array.<Number>} globalPixelPoint Пиксельные координаты точки, которые необходимо преобразовать.
- * @return {Array.<Number>}
- */
-ymaps.map.Converter.prototype.globalToPage = function(globalPixelPoint) {};
-
-
-/**
- * @param {Array.<Number>} pagePixelPoint Пиксельные координаты точки, которые необходимо преобразовать.
- * @return {Array.<Number>}
- */
-ymaps.map.Converter.prototype.pageToGlobal = function(pagePixelPoint) {};
-
-/**
- * 
- * Менеджер размещённой на карте информации
- * об авторских правах. У каждой карты уже есть собственный менеджер
- * информации об авторских правах, доступный как map.copyrights. Не инстанцируйте экземпляры
- * этого класса без необходимости.
- * 
- * См.: Map.copyrights 
- * 
- * @constructor
- * 
- * @param {ymaps.Map} map Карта.
- */
-ymaps.map.Copyrights = function(map) {};
-
-
-/**
- * @param {String|HTMLElement|Array.<String>|Array.<HTMLElement>} customCopyrights Информация
- *                                                                                 об авторских правах в виде строки, DOM-элемента либо массива строк/DOM-элементов.
- * @return {ymaps.ICopyrightsAccessor}
- */
-ymaps.map.Copyrights.prototype.add = function(customCopyrights) {};
-
-
-/**
- * @param {ymaps.ICopyrightsProvider} provider Провайдер.
- * @return {ymaps.map.Copyrights}
- */
-ymaps.map.Copyrights.prototype.addProvider = function(provider) {};
-
-
-/**
- * @param {Array.<Number>=} point Точка (в географических координатах),
- *                                для которой требуется определить информацию об авторских правах.
- *                                Если не указана, берётся текущий центр карты.
- * @param {Number=} zoom Уровень масштабирования,
- *                       для которого требуется определить информацию об авторских правах.
- *                       Если не указан, берётся текущий уровень масштабирования карты.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Copyrights.prototype.get = function(point, zoom) {};
-
-
-/**
- * @param {ymaps.ICopyrightsProvider} provider Провайдер.
- * @return {ymaps.map.Copyrights}
- */
-ymaps.map.Copyrights.prototype.removeProvider = function(provider) {};
-
-
-/**
- * Менеджер событий.
- * Бросает события типа MapEvent.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.map.Copyrights.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IGeoObjectCollection.
- * 
- * Коллекция геообъектов карты. У каждой карты уже есть своя коллекция геообъектов,
- * доступная как map.geoObjects. Не инстанцируйте экземпляры этого класса без необходимости.
- * 
- * См.: Map.geoObjects 
- * 
- * @constructor
- * @implements {ymaps.IGeoObjectCollection}
- * 
- * @param {ymaps.Map} map Карта.
- * @param {Object=} options Опции коллекции геообъектов.
- *                          Через опции map.geoObjects можно задавать настройки геообъектов, добавленных на карту:
- *                          
- *                              опции кластеризаторов с префиксом clusterer;
- *                              опции кластеров с префиксом cluster.
- *                          
- */
-ymaps.map.GeoObjects = function(map, options) {};
-
-
-/**
- * @param {ymaps.IGeoObject} child Дочерний геообъект.
- * @param {number=} index Индекс, в который добавляется новый объект.
- *                        По умолчанию объект добавляется в конец коллекции.
- * @return {ymaps.map.GeoObjects}
- */
-ymaps.map.GeoObjects.prototype.add = function(child, index) {};
-
-
-/**
- * @param {Function} callback Функция-обработчик.
- * @param {Object=} context Контекст выполнения функции-обработчика.
- */
-ymaps.map.GeoObjects.prototype.each = function(callback, context) {};
-
-
-/**
- * @param {number} index Индекс.
- * @return {ymaps.IGeoObject}
- */
-ymaps.map.GeoObjects.prototype.get = function(index) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.map.GeoObjects.prototype.getBounds = function() {};
-
-
-/**
- * @return {ymaps.IIterator}
- */
-ymaps.map.GeoObjects.prototype.getIterator = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.map.GeoObjects.prototype.getLength = function() {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.map.GeoObjects.prototype.getPixelBounds = function() {};
-
-
-/**
- * @param {Object} object Дочерний геообъект.
- * @return {number}
- */
-ymaps.map.GeoObjects.prototype.indexOf = function(object) {};
-
-
-/**
- * @param {ymaps.IGeoObject} child Удаляемый геообъект.
- * @return {ymaps.map.GeoObjects}
- */
-ymaps.map.GeoObjects.prototype.remove = function(child) {};
-
-
-/**
- * @return {ymaps.map.GeoObjects}
- */
-ymaps.map.GeoObjects.prototype.removeAll = function() {};
-
-
-/**
- * @param {number} index Индекс.
- * @param {ymaps.IGeoObject} child Дочерний геообъект.
- * @return {ymaps.map.GeoObjects}
- */
-ymaps.map.GeoObjects.prototype.set = function(index, child) {};
-
-
-/**
- * @param {number} index Индекс геообъекта, с которого начинается удаление.
- * @param {number} number Количество удаляемых геообъектов.
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.map.GeoObjects.prototype.splice = function(index, number) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.map.GeoObjects.prototype.getMap = function() {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.map.GeoObjects.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.GeoObjects.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IHintManager, IHintSharingManager.
- * 
- * Менеджер хинта карты. У каждой карты уже есть собственный менеджер хинта, доступный как myMap.hint.
- * В один момент на карте может быть открыт только один хинт, управляемый менеджером.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Hint Map.hint 
- * 
- * @constructor
- * @implements {ymaps.IHintManager}
- * 
- * @param {ymaps.Map} map Ссылка на объект карты.
- */
-ymaps.map.Hint = function(map) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Hint.prototype.close = function(force) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.map.Hint.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.map.Hint.prototype.getData = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOptionManager}
- */
-ymaps.map.Hint.prototype.getOptions = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Hint.prototype.getOverlay = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOverlay}
- */
-ymaps.map.Hint.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.map.Hint.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {Boolean}
- */
-ymaps.map.Hint.prototype.isOpen = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>=} position Координаты открытия.
- * @param {Object|String|HTMLElement=} data Данные.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Hint.prototype.open = function(position, data, options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object|String|HTMLElement} data Данные инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Hint.prototype.setData = function(data) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Hint.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.Hint.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.Hint.prototype.events;
-
-
-ymaps.map.layer = {};
-
-/**
- * 
- * Расширяет
- *             ILayer, IMapObjectCollection.
- * 
- * Менеджер слоев карты.
- * 
- * См.: Map.layers 
- * 
- * @constructor
- * @implements {ymaps.ILayer}
- * @implements {ymaps.IMapObjectCollection}
- * 
- * @param {ymaps.Map} map Карта
- * @param {Object=} options Опции слоев карты.
- *                          Через опции map.layers можно задавать настройки слоев, добавленных на карту.
- *                          Опции слоев хотспотов задаются с префиксом 'hotspotLayer'.
- */
-ymaps.map.layer.Manager = function(map, options) {};
-
-
-/**
- * @param {Function} callback Функция-обработчик.
- * @param {Object=} context Контекст выполнения функции.
- */
-ymaps.map.layer.Manager.prototype.each = function(callback, context) {};
-
-
-/**
- * @return {Number}
- */
-ymaps.map.layer.Manager.prototype.getBrightness = function() {};
-
-
-/**
- * @param {Array.<Number>} coords Точка на карте, для которой запрашивается
- *                                информация об авторских правах.
- * @param {Number} zoom Уровень масштабирования, для которого запрашивается
- *                      информация об авторских правах.
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.layer.Manager.prototype.getCopyrights = function(coords, zoom) {};
-
-
-/**
- * @param {Array.<Number>} point Точка
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.layer.Manager.prototype.getZoomRange = function(point) {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.map.layer.Manager.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.map.layer.Manager.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.ICollection
- * 
- * @param {Object} object Добавляемый объект.
- * @return {ymaps.ICollection}
- */
-ymaps.map.layer.Manager.prototype.add = function(object) {};
-
-
-/**
- * @see ymaps.ICollection
- * 
- * @return {ymaps.IIterator}
- */
-ymaps.map.layer.Manager.prototype.getIterator = function() {};
-
-
-/**
- * @see ymaps.ICollection
- * 
- * @param {Object} object Удаляемый объект.
- * @return {ymaps.ICollection}
- */
-ymaps.map.layer.Manager.prototype.remove = function(object) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.map.layer.Manager.prototype.getMap = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.layer.Manager.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.map.layer.Manager.prototype.options;
-
-
-ymaps.map.pane = {};
-
-/**
- * 
- * Менеджер пейнов карты.
- * У каждой карты уже есть свой менеджер пейнов, доступный как map.panes.
- * Не создавайте экземпляры этого класса без необходимости.
- * Список ключей доступных по умолчанию пейнов карты и их zIndex'ы:
- *         'ground': pane.MovablePane (zIndex: 100) - самый нижний пейн, предназначенный
- *         для размещения подложки карты;
- *         'areas': pane.MovablePane (zIndex: 200) - пейн площадных объектов, таких как
- *         многоугольники;
- *         'shadows': pane.MovablePane (zIndex: 300) - пейн теней объектов карты,
- *         находящихся выше;
- *         'places': pane.MovablePane (zIndex: 400) - пейн точечных объектов, таких как
- *         метки;
- *         'events': pane.EventsPane (zIndex: 500) - пейн, предназначенный для слушания
- *         событий карты;
- *         'overlaps': pane.MovablePane (zIndex: 600) - пейн для объектов не теребующих,
- *         использования активных областей для реализации своей интерактивности;
- *         'balloon': pane.MovablePane (zIndex: 700) - пейн балуна;
- *         'outerBalloon': pane.MovablePane (zIndex: 800) - внешний пейн балуна;
- *         'controls': pane.StaticPane (zIndex: 900) - пейн элементов управления карты;
- *         'copyrights': pane.StaticPane (zIndex: 1000) - пейн копирайтов;
- *         'hint': pane.StaticPane (zIndex: 1100) - пейн хинта;
- *         'outerHint': pane.StaticPane (zIndex: 1200) - внешний пейн хинта.
- * См.: Map.panes 
- * 
- * @constructor
- * 
- * @param {ymaps.Map} map Карта.
- */
-ymaps.map.pane.Manager = function(map) {};
-
-
-/**
- * @param {String} key Ключ добавляемого пейна.
- * @param {ymaps.IPane} pane Добавляемый пейн.
- */
-ymaps.map.pane.Manager.prototype.append = function(key, pane) {};
-
-
-/**
- */
-ymaps.map.pane.Manager.prototype.destroy = function() {};
-
-
-/**
- * @param {String} key Ключ пейна.
- * @return {ymaps.IPane|null}
- */
-ymaps.map.pane.Manager.prototype.get = function(key) {};
-
-
-/**
- * @return {String}
- */
-ymaps.map.pane.Manager.prototype.getLower = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.map.pane.Manager.prototype.getUpper = function() {};
-
-
-/**
- * @param {String} key Ключ добавляемого пейна.
- * @param {ymaps.IPane} pane Добавляемый пейн.
- * @param {String} referenceKey Ключ пейна, перед которым осуществляется вставка.
- */
-ymaps.map.pane.Manager.prototype.insertBefore = function(key, pane, referenceKey) {};
-
-
-/**
- * @param {ymaps.IPane} pane Удаляемый пейн.
- */
-ymaps.map.pane.Manager.prototype.remove = function(pane) {};
-
-/**
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Менеджер коэффициентов масштабирования карты.
- * У каждой карты уже есть свой менеджер коэффициентов масштабирования, доступный как
- * map.zoomRange. Не инстанцируйте экземпляры этого класса без необходимости.
- * 
- * См.: Map.zoomRange 
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- * @param {ymaps.Map} map Карта.
- * @param {Array.<Number>} constraints Массив, содержащий минимальный и максимальный зум карты.
- */
-ymaps.map.ZoomRange = function(map, constraints) {};
-
-
-/**
- * @param {*} coords 
- * @return {ymaps.vow.Promise}
- */
-ymaps.map.ZoomRange.prototype.get = function(coords) {};
-
-
-/**
- * @return {Array.<Number>}
- */
-ymaps.map.ZoomRange.prototype.getCurrent = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.map.ZoomRange.prototype.events;
-
-/**
- * 
- * Расширяет
- *             Event.
- * 
- * Объект, описывающий произошедшее над картой событие.
- * Имена полей, доступных через метод Event.get:
- * 
- * coords - географические координаты точки, в которой произошло событие;
- *     globalPixels - координаты события в глобальных пикселях от левого верхнего угла мира;
- *     pagePixels - координаты события в пикселях от левого верхнего угла страницы
- *     (также доступно под именем position);
- *     clientPixels - координаты события в пикселях от левого верхнего угла окна браузера;
- *     domEvent - исходное DOM-событие (в виде объекта DomEvent), если оно имеется.
- * 
- * 
- * @constructor
- * @extends {ymaps.Event}
- * 
- * @param {Object} originalEvent Данные, связанные с событием. Должны содержать поле "map" указывающее на карту,
- *                               над которой произошло событие.
- * @param {ymaps.IEvent=} sourceEvent Исходное событие.
- */
-ymaps.MapEvent = function(originalEvent, sourceEvent) {};
-
-/**
- * 
- * Тип карты.
- * 
- * @constructor
- * 
- * @param {String} name Название типа.
- * @param {Array.<Function>|Array.<String>} layers Массив, содержащий конструкторы слоев или ключи.
- */
-ymaps.MapType = function(name, layers) {};
-
-
-/**
- * @return {Array.<Function>|Array.<String>}
- */
-ymaps.MapType.prototype.getLayers = function() {};
-
-
-/**
- * @param {*} map 
- * @return {String}
- */
-ymaps.MapType.prototype.getName = function(map) {};
-
-
-ymaps.mapType = {};
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.Storage
- * Хранилище типов карты.
- * 
- * Методы 
- * 
- * 
- * @type {ymaps.util.Storage}
- */
-ymaps.mapType.storage;
-
-/**
- * 
- * Статический объект.
- * 
- * Информация об API.
- * 
- */
-ymaps.meta = {};
-
-
-/**
- * Порядок координат, который используется в API. Возможные значения:
- * Задается GET-параметром "coordorder" при подключении API.
- * Подробнее про параметры подключения API
- * 
- * @type {String}
- */
-ymaps.meta.coordinatesOrder;
-
-
-/**
- * Двузначный код страны. Возвращается в формате ISO 3166-1.
- * Задается GET-параметром "lang" при подключении API.
- * Подробнее про параметры подключения API
- * 
- * @type {String}
- */
-ymaps.meta.countryCode;
-
-
-/**
- * Двузначный код языка. Возвращается  в формате ISO 639-1.
- * Задается GET-параметром "lang" при подключении API.
- * Подробнее про параметры подключения API
- * 
- * @type {String}
- */
-ymaps.meta.languageCode;
-
-
-/**
- * Режим работы API Яндекс.Карт. Возможные значения:
- * Задается GET-параметром "mode" при подключении API.
- * Подробнее про параметры подключения API
- * 
- * @type {String}
- */
-ymaps.meta.mode;
-
-
-/**
- * Ссылка на пространство имен API Яндекс.Карт. 
- * Имеет значение независимо от значения параметра "ns" при подключении API.
- * 
- * @type {Object}
- */
-ymaps.meta.ns;
-
-
-/**
- * Версия API Яндекс.Карт.
- * 
- * @type {String}
- */
-ymaps.meta.version;
-
-/**
- * 
- * Статический объект.
- * 
- * Модульная система, на основе которой работает API Яндекс.Карт. 
- * API Яндекс.Карт состоит из большого количества взаимосвязанных модулей. 
- * Модуль - это некоторая программная единица. К примеру, класс, конкретная реализация класса, статический объект или функция.
- * Модульная система гарантирует, что при инициализации конкретного модуля все необходимые ему для работы модули уже будут проинициализированы.
- * Модульная система предоставляет асинхронный доступ, так как может потребоваться произвести загрузку недостающих модулей.
- * В модульную систему можно добавлять свои собственные модули.
- * 
- */
-ymaps.modules;
-
-
-ymaps.modules = {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Проверка доступности модуля по названию.
- * 
- * Возвращает:  true - модуль был определен, false - нет.
- *         (тип Boolean).
- * 
- * @param {String} module Модуль
- * 
- * @returns {Boolean}
- */
-ymaps.modules.isDefined = function(module) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Запрос получения модулей.
- * 
- * Возвращает:  Объект-обещание, который подтверждается запрошенными модулями. 
- * Либо отклоняется в случае, если произошла ошибка. К примеру, один из запрошенных модулей отсутствует в модульной системе.
- *         (тип vow.Promise).
- * 
- * @param {String|Array.<String>} modules Название модуля или массив названий модулей.
- * @param {Function=} successCallback Функция, которая будет вызвана после получения всех модулей.
- *                                    В функцию как аргументы будут переданы запрошенные сущности.
- *                                    Порядок аргументов будет соответствовать порядку в массиве modules.
- * @param {Function=} errorCallback Функция, которая будет вызвана в случае ошибки.
- * @param {Object=} context Контекст исполнения функции обратного вызова.
- * 
- * @returns {ymaps.vow.Promise}
- */
-ymaps.modules.require = function(modules, successCallback, errorCallback, context) {};
-
-/**
- * 
- * Объект, отслеживающий изменения определенных полей данных на заданном менеджере данных.
- * Также может использоваться для отслеживания изменений опций.
- * 
- * @constructor
- * 
- * @param {ymaps.IDataManager|ymaps.IOptionManager} dataManager Менеджер данных.
- */
-ymaps.Monitor = function(dataManager) {};
-
-
-/**
- * @param {String|Array.<String>} name Имя, либо массив имен полей данных, за которыми устанавливается наблюдение.
- * @param {Function} changeCallback Обработчик изменения поля данных, либо одного из полей данных группы.
- * @param {Object=} context Контекст исполнения обработчика изменений данных, а также опциональных обработчиков.
- * @param {Object=} params Опциональные параметры.
- * @return {ymaps.Monitor}
- */
-ymaps.Monitor.prototype.add = function(name, changeCallback, context, params) {};
-
-
-/**
- * @return {ymaps.Monitor}
- */
-ymaps.Monitor.prototype.forceChange = function() {};
-
-
-/**
- * @param {String} name Имя поля данных.
- * @return {Object}
- */
-ymaps.Monitor.prototype.get = function(name) {};
-
-
-/**
- * @param {String|Array.<String>} name Имя, либо массив имен полей данных, для которых отключается наблюдение.
- * @return {ymaps.Monitor}
- */
-ymaps.Monitor.prototype.remove = function(name) {};
-
-
-/**
- * @return {ymaps.Monitor}
- */
-ymaps.Monitor.prototype.removeAll = function() {};
-
-
-ymaps.multiRouter = {};
-
-
-ymaps.multiRouter.driving = {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.driving.Path скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение пути автомобильного мультимаршрута. Единичный маршрут может содержать
- * несколько путей, каждый путь соединяет две путевые точки.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.driving.Path = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.multiRouter.driving.Path.prototype.getSegments = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.driving.Path.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.driving.Path.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.driving.Path.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.driving.Path.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.driving.Path.prototype.getMap = function() {};
-
-
-/**
- * Модель данных пути мультимаршрута.
- * 
- * @type {ymaps.multiRouter.driving.PathModel}
- */
-ymaps.multiRouter.driving.Path.prototype.model;
-
-
-/**
- * Данные пути мультимаршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер пути в соответствующем маршруте
- *     мультимаршрута;
- *     type: String - идентификатор типа маршрута, принимающий значение "driving" для
- *     автомобильных маршрутов;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     пути в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     пути в секундах;
- *     durationInTraffic: Object - объект с полями text и value, описывающий время
- *     проезда пути в секундах с учетом пробок;
- *     coordinates: Number[][] - координаты всех точек пути;
- *     encodedCoordinates: String - строка закодированных в base64 координат всех точек
- *     пути.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.driving.Path.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.driving.Path.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.driving.Path.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.driving.Path.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.driving.Path.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.driving.PathModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных пути автомобильного маршрута. Единичный маршрут может содержать
- * несколько путей, каждый путь соединяет две путевые точки.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.driving.PathModel = function() {};
-
-
-/**
- */
-ymaps.multiRouter.driving.PathModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Array.<ymaps.multiRouter.driving.SegmentModel>}
- */
-ymaps.multiRouter.driving.PathModel.prototype.getSegments = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.multiRouter.driving.PathModel.prototype.getType = function() {};
-
-
-/**
- * @param {Object} pathJson JSON-данные.
- */
-ymaps.multiRouter.driving.PathModel.prototype.update = function(pathJson) {};
-
-
-/**
- * Данные пути мультимаршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер пути в соответствующем маршруте
- *     мультимаршрута;
- *     type: String - идентификатор типа маршрута, принимающий значение "driving" для
- *     автомобильных маршрутов;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     пути в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     пути в секундах;
- *     durationInTraffic: Object - объект с полями text и value, описывающий время
- *     проезда пути в секундах с учетом пробок;
- *     coordinates: Number[][] - координаты всех точек пути;
- *     encodedCoordinates: String - строка закодированных в base64 координат всех точек
- *     пути.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.driving.PathModel.prototype.properties;
-
-
-/**
- * Ссылка на родительскую модель маршрута.
- * 
- * @type {ymaps.multiRouter.driving.RouteModel}
- */
-ymaps.multiRouter.driving.PathModel.prototype.route;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.driving.PathModel.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.driving.Route скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение единичного автомобильного маршрута. Мультимаршрут может состоять из
- * нескольких единичных маршрутов.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.driving.Route = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.multiRouter.driving.Route.prototype.getPaths = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.driving.Route.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.driving.Route.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.driving.Route.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.driving.Route.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.driving.Route.prototype.getMap = function() {};
-
-
-/**
- * Модель данных единичного маршрута.
- * 
- * @type {ymaps.multiRouter.driving.RouteModel}
- */
-ymaps.multiRouter.driving.Route.prototype.model;
-
-
-/**
- * Данные маршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер маршрута в мультимаршруте;
- *     type: String - идентификатор типа маршрута, принимающий значение "driving" для
- *     автомобильных маршрутов;
- *     blocked: Boolean - признак того, что маршрут содержит перекрытые участки;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     маршрута в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     маршрута в секундах;
- *     durationInTraffic: Object - объект с полями text и value, описывающий время
- *     проезда маршрута в секундах с учетом пробок;
- *     boundedBy: Number[][] - координаты нижнего и верхнего углов прямоугольника,
- *     ограничивающего данный маршрут.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.driving.Route.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.driving.Route.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.driving.Route.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.driving.Route.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.driving.Route.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.driving.RouteModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных единичного автомобильного маршрута. Мультимаршрут может состоять из
- * нескольких единичных маршрутов.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.driving.RouteModel = function() {};
-
-
-/**
- */
-ymaps.multiRouter.driving.RouteModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Array.<ymaps.multiRouter.driving.PathModel>}
- */
-ymaps.multiRouter.driving.RouteModel.prototype.getPaths = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.multiRouter.driving.RouteModel.prototype.getType = function() {};
-
-
-/**
- * @param {Object} routeJson JSON-данные.
- */
-ymaps.multiRouter.driving.RouteModel.prototype.update = function(routeJson) {};
-
-
-/**
- * Ссылка на родительскую модель мультимаршрута.
- * 
- * @type {ymaps.multiRouter.MultiRouteModel}
- */
-ymaps.multiRouter.driving.RouteModel.prototype.multiRoute;
-
-
-/**
- * Данные маршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер маршрута в мультимаршруте;
- *     type: String - идентификатор типа маршрута, принимающий значение "driving" для
- *     автомобильных маршрутов;
- *     blocked: Boolean - признак того, что маршрут содержит перекрытые участки;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     маршрута в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     маршрута в секундах;
- *     durationInTraffic: Object - объект с полями text и value, описывающий время
- *     проезда маршрута в секундах с учетом пробок;
- *     boundedBy: Number[][] - координаты нижнего и верхнего углов прямоугольника,
- *     ограничивающего данный маршрут.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.driving.RouteModel.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.driving.RouteModel.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.driving.Segment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение сегмента автомобильного маршрута.
- * Сегментом автомобильного маршрута называется часть пути от одного манёвра до другого.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.driving.Segment = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.driving.Segment.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.driving.Segment.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.driving.Segment.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.driving.Segment.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.driving.Segment.prototype.getMap = function() {};
-
-
-/**
- * Модель данных сегмента.
- * 
- * @type {ymaps.multiRouter.driving.SegmentModel}
- */
-ymaps.multiRouter.driving.Segment.prototype.model;
-
-
-/**
- * Данные сегмента.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер сегмента во множестве сегментов
- *     соответствующего пути маршрута;
- *     type: String - идентификатор типа сегмента, принимающий значение "driving" для
- *     автомобильных сегментов;
- *     street: String - текстовое описание улицы, по которой проходит сегмент;
- *     action: Object - объект с полями text и value, описывающий завершающий маневр
- *     сегмента;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     сегмента в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     сегмента в секундах;
- *     durationInTraffic: Object - объект с полями text и value, описывающий время
- *     проезда сегмента в секундах с учетом пробок;
- *     text: String - текстовое описание сегмента;
- *     viaPoints: Integer[] - индексы транзитных точек, лежащих на данном сегменте;
- *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
- *     координат соответствующего ему пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.driving.Segment.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.driving.Segment.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.driving.Segment.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.driving.Segment.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.driving.Segment.prototype.options;
-
-/**
- * 
- * Статическая функция.
- * 
- * Определение модуля в модульной системе.
- * Примечание.&nbsp;Рекомендуется создавать собственные модули в своем пространстве имен, чтобы случано не заменить необходимые для работы API модули.
- * 
- * Возвращает:  Ссылку на самого себя.
- *         (тип modules).
- * 
- * @param {String} module Название модуля.
- * @param {Array.<String>=} depends Массив названий необходимых модулей. Этот аргумент может быть пропущен.
- * @param {Function} resolveCallback Функция, которая определяет модуль.
- *                                   Первым аргументом в resolveCallback поступит provide-функция, в которую нужно будет передать модуль. 
- *                                   Вызов provide-функции может быть отложен во времени.
- *                                   Последующие аргументы - это модули, указанные в зависимостях. Порядок модулей будет соответствовать порядку в массиве depends.
- *                                   В случае если модуль не может быть зарезолвен, то необходимо об этом уведомить модульную систему. 
- *                                   Это можно сделать передав в provide-функцию второй аргумент. 
- *                                   Второй аргумент будет передан в errorCallback и в promise как ошибка в запрос модуля.
- *                                   Впоследствии модуль можно будет запросить повторно.
- * @param {Object=} context Контекст исполнения функции.
- * 
- * @returns {ymaps.modules}
- */
-ymaps.modules.define = function(module, depends, resolveCallback, context) {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.driving.SegmentModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных сегмента пути автомобильного маршрута.
- * Сегментом автомобильного маршрута называется часть пути от одного манёвра до другого.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.driving.SegmentModel = function() {};
-
-
-/**
- */
-ymaps.multiRouter.driving.SegmentModel.prototype.destroy = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.multiRouter.driving.SegmentModel.prototype.getType = function() {};
-
-
-/**
- * @return {Array.<ymaps.multiRouter.ViaPointModel>}
- */
-ymaps.multiRouter.driving.SegmentModel.prototype.getViaPoints = function() {};
-
-
-/**
- * @param {Object} segmentJson JSON-данные.
- */
-ymaps.multiRouter.driving.SegmentModel.prototype.update = function(segmentJson) {};
-
-
-/**
- * Геометрия сегмента.
- * 
- * @type {ymaps.geometry.base.LineString}
- */
-ymaps.multiRouter.driving.SegmentModel.prototype.geometry;
-
-
-/**
- * Ссылка на родительскую модель пути.
- * 
- * @type {ymaps.multiRouter.driving.PathModel}
- */
-ymaps.multiRouter.driving.SegmentModel.prototype.path;
-
-
-/**
- * Данные сегмента.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер сегмента во множестве сегментов
- *     соответствующего пути маршрута;
- *     type: String - идентификатор типа сегмента, принимающий значение "driving" для
- *     автомобильных сегментов;
- *     street: String - текстовое описание улицы, по которой проходит сегмент;
- *     action: Object - объект с полями text и value, описывающий завершающий маневр
- *     сегмента;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     сегмента в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     сегмента в секундах;
- *     durationInTraffic: Object - объект с полями text и value, описывающий время
- *     проезда сегмента в секундах с учетом пробок;
- *     text: String - текстовое описание сегмента;
- *     viaPoints: Integer[] - индексы транзитных точек, лежащих на данном сегменте;
- *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
- *     координат соответствующего ему пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.driving.SegmentModel.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.driving.SegmentModel.prototype.events;
-
-/**
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter.
- * 
- * Редактор мультимаршрута.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * 
- * @param {ymaps.multiRouter.MultiRoute} multiRoute Редактируемый мультимаршрут.
- * @param {Object=} state Объект, описывающий начальное состояние редактора. Список доступных
- *                        полей смотрите в описании multiRouter.Editor.state.
- * @param {Object=} options Опции.
- */
-ymaps.multiRouter.Editor = function(multiRoute, state, options) {};
-
-
-/**
- */
-ymaps.multiRouter.Editor.prototype.destroy = function() {};
-
-
-/**
- * @return {ymaps.multiRouter.MultiRoute}
- */
-ymaps.multiRouter.Editor.prototype.getMultiRoute = function() {};
-
-
-/**
- * Менеджер состояния редактора мультимаршрута.
- * Доступные поля:
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.Editor.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.Editor.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.Editor.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.EditorAddon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter.
- * 
- * Аддон редактора мультимаршрута.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.EditorAddon = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.multiRouter.EditorAddon.prototype.isActive = function() {};
-
-
-/**
- * @param {Object} state Начальное состояние редактора.
- */
-ymaps.multiRouter.EditorAddon.prototype.start = function(state) {};
-
-
-/**
- */
-ymaps.multiRouter.EditorAddon.prototype.stop = function() {};
-
-
-/**
- * Менеджер состояния редактора мультимаршрута.
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.EditorAddon.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.EditorAddon.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.EditorAddon.prototype.events;
-
-
-ymaps.multiRouter.masstransit = {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.Path скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение пути мультимаршрута общественного транспорта. Единичный маршрут может 
- * содержать несколько путей, каждый путь соединяет две путевые точки.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.masstransit.Path = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.multiRouter.masstransit.Path.prototype.getSegmentMarkers = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.multiRouter.masstransit.Path.prototype.getSegments = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.masstransit.Path.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.masstransit.Path.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.masstransit.Path.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.masstransit.Path.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.masstransit.Path.prototype.getMap = function() {};
-
-
-/**
- * Модель данных пути мультимаршрута.
- * 
- * @type {ymaps.multiRouter.masstransit.PathModel}
- */
-ymaps.multiRouter.masstransit.Path.prototype.model;
-
-
-/**
- * Данные пути мультимаршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер пути в соответствующем маршруте
- *     мультимаршрута;
- *     type: String - идентификатор типа маршрута, принимающий значение "masstransit"
- *     для маршрутов общественного транспорта;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     пути в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     пути в секундах;
- *     coordinates: Number[][] - координаты всех точек пути;
- *     encodedCoordinates: String - строка закодированных в base64 координат всех точек
- *     пути.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.Path.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.masstransit.Path.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.masstransit.Path.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.Path.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.masstransit.Path.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.PathModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных пути маршрута общественного транспорта. Единичный маршрут может
- * содержать несколько путей, каждый путь соединяет две путевые точки.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.masstransit.PathModel = function() {};
-
-
-/**
- */
-ymaps.multiRouter.masstransit.PathModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Array.<multiRouter.masstransit.SegmentModel>}
- */
-ymaps.multiRouter.masstransit.PathModel.prototype.getSegments = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.multiRouter.masstransit.PathModel.prototype.getType = function() {};
-
-
-/**
- * @param {Object} pathJson JSON-данные.
- */
-ymaps.multiRouter.masstransit.PathModel.prototype.update = function(pathJson) {};
-
-
-/**
- * Данные пути мультимаршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер пути в соответствующем маршруте
- *     мультимаршрута;
- *     type: String - идентификатор типа маршрута, принимающий значение "masstransit"
- *     для маршрутов общественного транспорта;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     пути в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     пути в секундах;
- *     coordinates: Number[][] - координаты всех точек пути;
- *     encodedCoordinates: String - строка закодированных в base64 координат всех точек
- *     пути.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.PathModel.prototype.properties;
-
-
-/**
- * Ссылка на родительскую модель маршрута.
- * 
- * @type {ymaps.multiRouter.masstransit.RouteModel}
- */
-ymaps.multiRouter.masstransit.PathModel.prototype.route;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.PathModel.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.Route скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение единичного маршрута общественного транспорта. Мультимаршрут может состоять
- * из нескольких единичных маршрутов.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.masstransit.Route = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.multiRouter.masstransit.Route.prototype.getPaths = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.masstransit.Route.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.masstransit.Route.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.masstransit.Route.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.masstransit.Route.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.masstransit.Route.prototype.getMap = function() {};
-
-
-/**
- * Модель данных единичного маршрута.
- * 
- * @type {ymaps.multiRouter.masstransit.RouteModel}
- */
-ymaps.multiRouter.masstransit.Route.prototype.model;
-
-
-/**
- * Данные маршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер маршрута в мультимаршруте;
- *     type: String - идентификатор типа маршрута, принимающий значение "masstransit"
- *     для маршрутов общественного транспорта;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     маршрута в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     маршрута в секундах;
- *     boundedBy: Number[][] - координаты нижнего и верхнего углов прямоугольника,
- *     ограничивающего данный маршрут.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.Route.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.masstransit.Route.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.masstransit.Route.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.Route.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.masstransit.Route.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.RouteModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных единичного маршрута общественного транспорта. Мультимаршрут может
- * состоять из нескольких единичных маршрутов.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.masstransit.RouteModel = function() {};
-
-
-/**
- */
-ymaps.multiRouter.masstransit.RouteModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Array.<ymaps.multiRouter.masstransit.PathModel>}
- */
-ymaps.multiRouter.masstransit.RouteModel.prototype.getPaths = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.multiRouter.masstransit.RouteModel.prototype.getType = function() {};
-
-
-/**
- * @param {Object} routeJson JSON-данные.
- */
-ymaps.multiRouter.masstransit.RouteModel.prototype.update = function(routeJson) {};
-
-
-/**
- * Ссылка на родительскую модель мультимаршрута.
- * 
- * @type {ymaps.multiRouter.MultiRouteModel}
- */
-ymaps.multiRouter.masstransit.RouteModel.prototype.multiRoute;
-
-
-/**
- * Данные маршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер маршрута в мультимаршруте;
- *     type: String - идентификатор типа маршрута, принимающий значение "masstransit"
- *     для маршрутов общественного транспорта;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     маршрута в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     маршрута в секундах;
- *     boundedBy: Number[][] - координаты нижнего и верхнего углов прямоугольника,
- *     ограничивающего данный маршрут.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.RouteModel.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.RouteModel.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.StopModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных остановки транспортного сегмента маршрута общественного транспорта.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.masstransit.StopModel = function() {};
-
-
-/**
- * Геометрия остановки.
- * 
- * @type {ymaps.geometry.base.Point}
- */
-ymaps.multiRouter.masstransit.StopModel.prototype.geometry;
-
-
-/**
- * Данные остановки.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер остановки во множестве остановок
- *     соответствующего транспортного сегмента;
- *     id: String - идентификатор остановки;
- *     name: String - название остановки;
- *     lodIndex: Integer - порядковый номер точки остановки во множестве всех
- *     координат соответствующего ей пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.StopModel.prototype.properties;
-
-
-/**
- * Ссылка на родительскую модель транспортного сегмента.
- * 
- * @type {ymaps.multiRouter.masstransit.TransportSegmentModel}
- */
-ymaps.multiRouter.masstransit.StopModel.prototype.segment;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.StopModel.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.TransferSegment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение сегмента перехода маршрута общественного транспорта.
- * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
- * другой.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.masstransit.TransferSegment = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.getMap = function() {};
-
-
-/**
- * Модель данных сегмента.
- * 
- * @type {ymaps.multiRouter.masstransit.TransferSegmentModel}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.model;
-
-
-/**
- * Данные сегмента.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер сегмента во множестве сегментов
- *     соответствующего пути маршрута;
- *     type: String - идентификатор типа сегмента, принимающий значение "transfer" для
- *     сегментов переходов;
- *     text: String - текстовое описание сегмента;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     сегмента в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     сегмента в секундах;
- *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
- *     координат соответствующего ему пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.masstransit.TransferSegment.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.TransferSegmentModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных сегмента перехода пути маршрута общественного транспорта.
- * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
- * другой.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.masstransit.TransferSegmentModel = function() {};
-
-
-/**
- * @param {Object} segmentJson JSON-данные.
- */
-ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.destroy = function(segmentJson) {};
-
-
-/**
- * @return {String}
- */
-ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.getType = function() {};
-
-
-/**
- * Геометрия сегмента.
- * 
- * @type {ymaps.geometry.base.LineString}
- */
-ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.geometry;
-
-
-/**
- * Ссылка на родительскую модель пути.
- * 
- * @type {ymaps.multiRouter.masstransit.PathModel}
- */
-ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.path;
-
-
-/**
- * Данные сегмента.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер сегмента во множестве сегментов
- *     соответствующего пути маршрута;
- *     type: String - идентификатор типа сегмента, принимающий значение "transfer" для
- *     сегментов переходов;
- *     text: String - текстовое описание сегмента;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     сегмента в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     сегмента в секундах;
- *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
- *     координат соответствующего ему пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.events;
-
-/**
- * 
- * Данный класс не имеет конструктора и предназначен для описания объекта данных
- * транспортного средства в транспортном сегменте маршрута общественного транспорта.
- * 
- * @constructor
- * 
- */
-ymaps.multiRouter.masstransit.TransportProperties = function() {};
-
-
-/**
- * Идентификатор транспортного средства.
- * 
- * @type {String}
- */
-ymaps.multiRouter.masstransit.TransportProperties.prototype.id;
-
-
-/**
- * Название маршрута транспортного средства.
- * 
- * @type {String}
- */
-ymaps.multiRouter.masstransit.TransportProperties.prototype.name;
-
-
-/**
- * Идентификатор вида транспортного средства.
- * Может принимать одно из следующих строковых значений:
- * 
- * "bus" - автобус;
- *     "trolleybus" - троллейбус;
- *     "tramway" - трамвай;
- *     "minibus" - маршрутное такси;
- *     "underground" - метро;
- *     "suburban" - электричка.
- * 
- * 
- * @type {String}
- */
-ymaps.multiRouter.masstransit.TransportProperties.prototype.type;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.TransportSegment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение транспортного сегмента маршрута общественного транспорта.
- * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
- * другой.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.masstransit.TransportSegment = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.getMap = function() {};
-
-
-/**
- * Модель данных сегмента.
- * 
- * @type {ymaps.multiRouter.masstransit.TransportSegmentModel}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.model;
-
-
-/**
- * Данные сегмента.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер сегмента во множестве сегментов
- *     соответствующего пути маршрута;
- *     type: String - идентификатор типа сегмента, принимающий значение "transport" для
- *     транспортных сегментов;
- *     text: String - текстовое описание сегмента;
- *     transports: multiRouter.masstransit.TransportProperties[] - массив,
- *     описывающий конкретные транспортные средства, с помощью которых возможно перемещение
- *     по данному сегменту;
- *     stops: Object - описание остановок в формате GeoJson:FeatureCollection;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     сегмента в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     сегмента в секундах;
- *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
- *     координат соответствующего ему пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.masstransit.TransportSegment.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.TransportSegmentModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных транспортного сегмента пути маршрута общественного транспорта.
- * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
- * другой.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.masstransit.TransportSegmentModel = function() {};
-
-
-/**
- */
-ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Array.<ymaps.multiRouter.masstransit.StopModel>}
- */
-ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.getStops = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.getType = function() {};
-
-
-/**
- * @param {Object} segmentJson JSON-данные.
- */
-ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.update = function(segmentJson) {};
-
-
-/**
- * Геометрия сегмента.
- * 
- * @type {ymaps.geometry.base.LineString}
- */
-ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.geometry;
-
-
-/**
- * Ссылка на родительскую модель пути.
- * 
- * @type {ymaps.multiRouter.masstransit.PathModel}
- */
-ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.path;
-
-
-/**
- * Данные сегмента.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер сегмента во множестве сегментов
- *     соответствующего пути маршрута;
- *     type: String - идентификатор типа сегмента, принимающий значение "transport" для
- *     транспортных сегментов;
- *     text: String - текстовое описание сегмента;
- *     transports: multiRouter.masstransit.TransportProperties[] - массив,
- *     описывающий конкретные транспортные средства, с помощью которых возможно перемещение
- *     по данному сегменту;
- *     stops: Object - описание остановок в формате GeoJson:FeatureCollection;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     сегмента в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     сегмента в секундах;
- *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
- *     координат соответствующего ему пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.WalkSegment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение пешего сегмента маршрута общественного транспорта.
- * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
- * другой.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.masstransit.WalkSegment = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.getMap = function() {};
-
-
-/**
- * Модель данных сегмента.
- * 
- * @type {ymaps.multiRouter.masstransit.WalkSegmentModel}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.model;
-
-
-/**
- * Данные сегмента.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер сегмента во множестве сегментов
- *     соответствующего пути маршрута;
- *     type: String - идентификатор типа сегмента, принимающий значение "walk" для
- *     пеших сегментов;
- *     text: String - текстовое описание сегмента;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     сегмента в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     сегмента в секундах;
- *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
- *     координат соответствующего ему пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.masstransit.WalkSegment.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.WalkSegmentModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных пешего сегмента пути маршрута общественного транспорта.
- * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
- * другой.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.masstransit.WalkSegmentModel = function() {};
-
-
-/**
- */
-ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.destroy = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.getType = function() {};
-
-
-/**
- * Геометрия сегмента.
- * 
- * @type {ymaps.geometry.base.LineString}
- */
-ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.geometry;
-
-
-/**
- * Ссылка на родительскую модель пути.
- * 
- * @type {ymaps.multiRouter.masstransit.PathModel}
- */
-ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.path;
-
-
-/**
- * Данные сегмента.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер сегмента во множестве сегментов
- *     соответствующего пути маршрута;
- *     type: String - идентификатор типа сегмента, принимающий значение "walk" для
- *     пеших сегментов;
- *     text: String - текстовое описание сегмента;
- *     distance: Object - объект с полями text и value, описывающий протяженность
- *     сегмента в метрах;
- *     duration: Object - объект с полями text и value, описывающий время проезда
- *     сегмента в секундах;
- *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
- *     координат соответствующего ему пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Мультимаршрут на карте. Позволяет отображать на карте маршрут и несколько альтернатив
- * к нему. Предоставляет интерфейс выбора активного маршрута.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- * @param {ymaps.multiRouter.MultiRouteModel|ymaps.IMultiRouteModelJson} model Модель данных мультимаршрута,
- *                                                                             либо объект описания модели. В случае передачи объекта описания, модель на его основе
- *                                                                             создается автоматически.
- * @param {Object=} options Опции мультимаршрута. Также для задания опций составных частей
- *                          мультимаршрута доступны следующие префиксы:
- *                          
- *                              wayPoint - опции путевых точек;
- *                              wayPointStart - опции отображения начальной путевой точки;
- *                              wayPointFinish - опции отображения конечной путевой точки;
- *                              viaPoint - опции транзитных точек;
- *                              pin - опции точечных маркеров на маршруте;
- *                              editor - опции редактора мультимаршрута (см. multiRouter.Editor).
- *                          
- *                          Опции единичных маршрутов в рамках мультимаршрута задаются с помощью префиксов:
- *                          
- *                              route - опции маршрутов в том числе неактивных;
- *                              routeActive - опции активного маршрута.
- *                          
- *                          Причем опции заданные с префиксом "routeActive" более приоритетны по отношению к опциям с
- *                          префиксом "route".
- *                          Для задания опций составных частей маршрутов общественного транспорта доступны следующие
- *                          префиксы.
- *                          
- *                              routeMarker - опции меток сегментов маршрута;
- *                              routeWalkMarker - опции меток пеших сегментов маршрута;
- *                              routeTransferMarker - опции меток сегментов переходов;
- *                              routeTransportMarker - опции меток транспортных сегментов маршрута;
- *                              routeWalkSegment - опции линий пеших сегментов маршрута;
- *                              routeTransferSegment - опции линий сегментов переходов;
- *                              routeTransportSegment - опции линий транспортных сегментов маршрута;
- *                          
- *                          Также данные префиксы доступны в "routeActive*" варианте.
- */
-ymaps.multiRouter.MultiRoute = function(model, options) {};
-
-
-/**
- * @return {ymaps.multiRouter.driving.Route|ymaps.multiRouter.masstransit.Route|null}
- */
-ymaps.multiRouter.MultiRoute.prototype.getActiveRoute = function() {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.multiRouter.MultiRoute.prototype.getBounds = function() {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.multiRouter.MultiRoute.prototype.getPixelBounds = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.multiRouter.MultiRoute.prototype.getRoutes = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.multiRouter.MultiRoute.prototype.getViaPoints = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.multiRouter.MultiRoute.prototype.getWayPoints = function() {};
-
-
-/**
- * @param {ymaps.multiRouter.driving.Route|ymaps.multiRouter.masstransit.Route|null} route Активируемый
- *                                                                                         маршрут.
- */
-ymaps.multiRouter.MultiRoute.prototype.setActiveRoute = function(route) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.MultiRoute.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.MultiRoute.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.MultiRoute.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.MultiRoute.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.MultiRoute.prototype.getMap = function() {};
-
-
-/**
- * Редактор мультимаршрута.
- * 
- * @type {ymaps.multiRouter.EditorAddon}
- */
-ymaps.multiRouter.MultiRoute.prototype.editor;
-
-
-/**
- * Модель данных мультимаршрута.
- * 
- * @type {ymaps.multiRouter.MultiRouteModel}
- */
-ymaps.multiRouter.MultiRoute.prototype.model;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.MultiRoute.prototype.geometry;
-
-
-/**
- * Данные геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.MultiRoute.prototype.properties;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.MultiRoute.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.MultiRoute.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.MultiRoute.prototype.options;
-
-/**
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных мультимаршрута.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- * @param {Array.<ymaps.IMultiRouteReferencePoint>} referencePoints Описание опорных точек мультимаршрута.
- * @param {ymaps.IMultiRouteParams=} params Параметры маршрутизации.
- */
-ymaps.multiRouter.MultiRouteModel = function(referencePoints, params) {};
-
-
-/**
- */
-ymaps.multiRouter.MultiRouteModel.prototype.destroy = function() {};
-
-
-/**
- * @return {(ymaps.multiRouter.WayPointModel|Array.<ymaps.multiRouter.ViaPointModel)>}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.getAllPoints = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.getJson = function() {};
-
-
-/**
- * @return {ymaps.IMultiRouteParams}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.getParams = function() {};
-
-
-/**
- * @return {(ymaps.multiRouter.WayPointModel|Array.<ymaps.multiRouter.ViaPointModel)>}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.getPoints = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.getReferencePointIndexes = function() {};
-
-
-/**
- * @return {Array.<ymaps.IMultiRouteReferencePoint>}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.getReferencePoints = function() {};
-
-
-/**
- * @return {Array.<ymaps.multiRouter.driving.RouteModel>|Array.<ymaps.multiRouter.masstransit.RouteModel>}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.getRoutes = function() {};
-
-
-/**
- * @return {Array.<ymaps.multiRouter.ViaPointModel>}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.getViaPoints = function() {};
-
-
-/**
- * @return {Array.<ymaps.multiRouter.WayPointModel>}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.getWayPoints = function() {};
-
-
-/**
- * @param {ymaps.IMultiRouteParams} params Параметры маршрутизации.
- * @param {Boolean=} extend Позволяет изменить лишь часть параметров, а значения не
- *                          переданных оставить прежним.
- * @param {*} clearRequests 
- */
-ymaps.multiRouter.MultiRouteModel.prototype.setParams = function(params, extend, clearRequests) {};
-
-
-/**
- * @param {Array.<ymaps.IMultiRouteReferencePoint>} referencePoints Массив опорных точек.
- * @param {Array.<number>=} viaIndexes Индексы транзитных точек в массиве опорных точек.
- * @param {*} clearRequests 
- */
-ymaps.multiRouter.MultiRouteModel.prototype.setReferencePoints = function(referencePoints, viaIndexes, clearRequests) {};
-
-
-/**
- * Данные мультимаршрута.
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.MultiRouteModel.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.ViaPointModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных транзитной точки мультимаршрута. Транзитные точки не подразумевают
- * остановку. Таким образом, при прохождении через транзитную точку, сегмент пути маршрута не
- * прерывается.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.ViaPointModel = function() {};
-
-
-/**
- */
-ymaps.multiRouter.ViaPointModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.multiRouter.ViaPointModel.prototype.getReferencePoint = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.multiRouter.ViaPointModel.prototype.getReferencePointIndex = function() {};
-
-
-/**
- * @param {Object} referencePoint Описание опорной точки.
- */
-ymaps.multiRouter.ViaPointModel.prototype.setReferencePoint = function(referencePoint) {};
-
-
-/**
- * @param {Object} viaPointJson JSON-данные.
- */
-ymaps.multiRouter.ViaPointModel.prototype.update = function(viaPointJson) {};
-
-
-/**
- * Геометрия транзитной точки мультимаршрута.
- * 
- * @type {ymaps.geometry.base.Point}
- */
-ymaps.multiRouter.ViaPointModel.prototype.geometry;
-
-
-/**
- * Ссылка на родительскую модель мультимаршрута.
- * 
- * @type {ymaps.multiRouter.MultiRouteModel}
- */
-ymaps.multiRouter.ViaPointModel.prototype.multiRoute;
-
-
-/**
- * Данные транзитной точки мультимаршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер точки;
- *     lodIndex: Integer - порядковый номер транзитной точки во множестве всех координат
- *     соответствующего ей пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.ViaPointModel.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.ViaPointModel.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.ViaPoint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение транзитной точки. Транзитные точки не подразумевают остановку. Таким
- * образом, при прохождении через транзитную точку, сегмент пути маршрута не прерывается.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.ViaPoint = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.ViaPoint.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.ViaPoint.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.ViaPoint.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.ViaPoint.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.ViaPoint.prototype.getMap = function() {};
-
-
-/**
- * Модель данных транзитной точки.
- * 
- * @type {ymaps.multiRouter.ViaPointModel}
- */
-ymaps.multiRouter.ViaPoint.prototype.model;
-
-
-/**
- * Данные транзитной точки мультимаршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер точки;
- *     lodIndex: Integer - порядковый номер транзитной точки во множестве всех координат
- *     соответствующего ей пути маршрута.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.ViaPoint.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.ViaPoint.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.ViaPoint.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.ViaPoint.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.ViaPoint.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.WayPoint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Отображение путевой точки. Путевые точки подразумевают остановку и делят маршрут на
- * т.н. пути.
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.multiRouter.WayPoint = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.multiRouter.WayPoint.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.multiRouter.WayPoint.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.multiRouter.WayPoint.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.multiRouter.WayPoint.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.multiRouter.WayPoint.prototype.getMap = function() {};
-
-
-/**
- * Модель данных путевой точки.
- * 
- * @type {ymaps.multiRouter.WayPointModel}
- */
-ymaps.multiRouter.WayPoint.prototype.model;
-
-
-/**
- * Данные путевой точки мультимаршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер точки;
- *     request: String - строка запроса соответствующего точке запроса;
- *     address: String - строка почтового адреса точки;
- *     description: String - описание точки;
- *     name: String - название точки.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.WayPoint.prototype.properties;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.multiRouter.WayPoint.prototype.geometry;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.multiRouter.WayPoint.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.WayPoint.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.multiRouter.WayPoint.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса multiRouter.WayPointModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Модель данных путевой точки мультимаршрута. Путевые точки подразумевают остановку и
- * делят маршрут на т.н. пути.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.multiRouter.WayPointModel = function() {};
-
-
-/**
- */
-ymaps.multiRouter.WayPointModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.multiRouter.WayPointModel.prototype.getReferencePoint = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.multiRouter.WayPointModel.prototype.getReferencePointIndex = function() {};
-
-
-/**
- * @param {Object} referencePoint Описание опорной точки.
- */
-ymaps.multiRouter.WayPointModel.prototype.setReferencePoint = function(referencePoint) {};
-
-
-/**
- * @param {Object} wayPointJson JSON-данные.
- */
-ymaps.multiRouter.WayPointModel.prototype.update = function(wayPointJson) {};
-
-
-/**
- * Геометрия путевой точки мультимаршрута.
- * 
- * @type {ymaps.geometry.base.Point}
- */
-ymaps.multiRouter.WayPointModel.prototype.geometry;
-
-
-/**
- * Ссылка на родительскую модель мультимаршрута.
- * 
- * @type {ymaps.multiRouter.MultiRouteModel}
- */
-ymaps.multiRouter.WayPointModel.prototype.multiRoute;
-
-
-/**
- * Данные путевой точки мультимаршрута.
- * Доступны следующие поля:
- * 
- * index: Integer - порядковый номер точки;
- *     request: String - строка запроса соответствующего точке запроса;
- *     address: String - строка почтового адреса точки;
- *     description: String - описание точки;
- *     name: String - название точки.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.multiRouter.WayPointModel.prototype.properties;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.multiRouter.WayPointModel.prototype.events;
-
-/**
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter, IGeoObject, IParentOnMap.
- * 
- * Менеджер объектов.
- * Позволяет оптимально отображать, кластеризовать и управлять видимостью объектов.
- * Обратите внимание, что у объектов, отрисованных на карте через данный менеджер, нельзя включать режимы редактирования и перетаскивания.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * @implements {ymaps.IGeoObject}
- * @implements {ymaps.IParentOnMap}
- * 
- * @param {Object=} options Опции.
- *                          
- *                              Можно задавать все опции, указанные в описании Clusterer,
- *                                  за исключением опций hasBalloon и hasHint.
- *                              
- *                              Опции для кластеров задаются с префиксом cluster.
- *                                  Список опций указан в описании класса ClusterPlacemark;
- *                              
- *                              
- *                                  Опции для одиночных объектов задаются с префиксом geoObject.
- *                                  Список опций указан в описании класса Placemark.
- *                              
- *                          
- */
-ymaps.ObjectManager = function(options) {};
-
-
-/**
- * @param {Object|Array.<Object>|String} objects Строка или объект с JSON-описанием объектов.
- *                                               JSON-описание объектов строится по следующему принципу (см. пример ниже).
- *                                               Объектом может быть сущность или коллекция сущностей.
- *                                               Коллекция сущностей представляет из себя объект с полями:
- *                                               
- *                                                   type - тип объекта. Значение поля должно быть равно "FeatureCollection";
- *                                                   features - массив дочерних сущностей коллекции. Дочерние объекты могут быть сущностями или
- *                                                   вложенными коллекциями сущностей.
- *                                               
- *                                               Сущность представляет из себя объект с полями:
- *                                               
- *                                                   id - уникальный идентификатор объекта. Обязательное поле;
- *                                                   type - тип объекта. Значение поля должно быть равно "Feature";
- *                                                   geometry - геометрия объекта. Содержит поля type и coordinates. Значение соответствует,
- *                                                   передаваемому в конструктор GeoObject;
- *                                                   options - опции геообъекта;
- *                                                   properties - данные геообъекта.
- *                                               
- * @return {ymaps.ObjectManager}
- */
-ymaps.ObjectManager.prototype.add = function(objects) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.ObjectManager.prototype.getBounds = function() {};
-
-
-/**
- * @param {*}  
- * @return {String|Function|null}
- */
-ymaps.ObjectManager.prototype.getFilter = function() {};
-
-
-/**
- * @param {Object} id Идентификатор объекта, для которого нужно получить состояние.
- * @return {Object}
- */
-ymaps.ObjectManager.prototype.getObjectState = function(id) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.ObjectManager.prototype.getPixelBounds = function() {};
-
-
-/**
- * @param {Object|Array.<Object>|String} objects Строка, объект с JSON-описанием объектов или массив
- *                                               идентификаторов удаляемых объектов.
- *                                               Формат описания объектов см. в описании метода ObjectManager.add
- * @return {ymaps.ObjectManager}
- */
-ymaps.ObjectManager.prototype.remove = function(objects) {};
-
-
-/**
- * @return {ymaps.ObjectManager}
- */
-ymaps.ObjectManager.prototype.removeAll = function() {};
-
-
-/**
- * @param {Function|String} filterFunction функция-фильтр. Получает на вход единичный объект, добавленный
- *                                         в ObjectManager. Если функция возвращает true, объект будет обработан. Если false - объект будет
- *                                         исключен из дальнейшей обработки.
- *                                         Также в качестве фильтра можно передавать строку.
- *                                         В строке-фильтре доступны следующие ключевые слова:
- *                                         
- *                                             options - обращение к опциям объекта;
- *                                             properties - обращение к данным объекта;
- *                                             geometry - обращение к геометрии объекта;
- *                                             id - обращение к идентификатору объекта;
- *                                         
- *                                         В качестве фильтра можно указывать выражение, возвращающее true или false.
- */
-ymaps.ObjectManager.prototype.setFilter = function(filterFunction) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.ObjectManager.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.ObjectManager.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.ObjectManager.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.ObjectManager.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.ObjectManager.prototype.getMap = function() {};
-
-
-/**
- * Коллекция кластеров, сгенерированных менеджером.
- * 
- * @type {ymaps.objectManager.ClusterCollection}
- */
-ymaps.ObjectManager.prototype.clusters;
-
-
-/**
- * Коллекция объектов, добавленных в слой.
- * 
- * @type {ymaps.objectManager.ObjectCollection}
- */
-ymaps.ObjectManager.prototype.objects;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.ObjectManager.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.ObjectManager.prototype.events;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.ObjectManager.prototype.geometry;
-
-
-/**
- * Данные геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.ObjectManager.prototype.properties;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.ObjectManager.prototype.state;
-
-
-ymaps.objectManager = {};
-
-/**
- * 
- * Расширяет
- *             IBalloonManager.
- * 
- * Менеджер балуна коллекций ObjectManager. Позволяет управлять балуном объекта, открывать и скрывать его.
- * Использует внутри себя менеджер балуна карты map.Balloon.
- * Коллекции объектов в составе ObjectManager содержат экземпляр этого класса, доступный как myObjectManager.objects.balloon
- * и myObjectsLayer.clusters.balloon.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Balloon 
- * 
- * @constructor
- * @implements {ymaps.IBalloonManager}
- * 
- * @param {IReadOnlyymaps.Collection} collection Коллекция объектов.
- */
-ymaps.objectManager.Balloon = function(collection) {};
-
-
-/**
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Balloon.prototype.close = function(force) {};
-
-
-/**
- * @return {Object|null}
- */
-ymaps.objectManager.Balloon.prototype.getData = function() {};
-
-
-/**
- * @param {Object} id Идентификатор объекта.
- * @return {Boolean}
- */
-ymaps.objectManager.Balloon.prototype.isOpen = function(id) {};
-
-
-/**
- * @param {Object} objectId Идентификатор объекта, на котором надо открыть балун.
- * @param {*} anchorPixelPosition 
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Balloon.prototype.open = function(objectId, anchorPixelPosition) {};
-
-
-/**
- * @param {Object} objectData Хэш с описанием объекта, на котором открыт балун. Соответствует
- *                            описанию объекта, который подается на вход ObjectManager.add.
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Balloon.prototype.setData = function(objectData) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Balloon.prototype.autoPan = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.objectManager.Balloon.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOptionManager}
- */
-ymaps.objectManager.Balloon.prototype.getOptions = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Balloon.prototype.getOverlay = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOverlay}
- */
-ymaps.objectManager.Balloon.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.objectManager.Balloon.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Balloon.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Balloon.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.objectManager.Balloon.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IHintManager.
- * 
- * Менеджер хинта объектного слоя. Позволяет управлять хинтом объектного слоя, открывать и скрывать его.
- * Использует внутри себя менеджер хинтов карты map.Hint.
- * Объектные слои содержат экземпляры этого класса, доступные как myObjectManager.objects.hint и
- * myObjectManager.clusters.hint.
- * Не создавайте экземпляры этого класса без необходимости.
- * 
- * См.: Hint 
- * 
- * @constructor
- * @implements {ymaps.IHintManager}
- * 
- * @param {IReadOnlyymaps.Collection} collection Объектный слой.
- */
-ymaps.objectManager.Hint = function(collection) {};
-
-
-/**
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Hint.prototype.close = function(force) {};
-
-
-/**
- * @return {Object|null}
- */
-ymaps.objectManager.Hint.prototype.getData = function() {};
-
-
-/**
- * @param {Object} id Идентификатор объекта.
- * @return {Boolean}
- */
-ymaps.objectManager.Hint.prototype.isOpen = function(id) {};
-
-
-/**
- * @param {Object} objectId Идентификатор объекта, на котором надо открыть подсказку.
- * @param {Array.<Number>=} position Позиция, на которой надо показать всплывающую подсказку в глобальных
- *                                   пиксельных координатах. Если значение не задано, хинт покажется на геометрическом центре объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Hint.prototype.open = function(objectId, position) {};
-
-
-/**
- * @param {Object} objectData Хэш с описанием объекта, на котором открыт хинт. Соответствует
- *                            описанию объекта, который подается на вход ObjectManager.add.
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Hint.prototype.setData = function(objectData) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.objectManager.Hint.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOptionManager}
- */
-ymaps.objectManager.Hint.prototype.getOptions = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Hint.prototype.getOverlay = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @return {ymaps.IOverlay}
- */
-ymaps.objectManager.Hint.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- */
-ymaps.objectManager.Hint.prototype.getPosition = function() {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Object} options Опции инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Hint.prototype.setOptions = function(options) {};
-
-
-/**
- * @see ymaps.IPopupManager
- * 
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.objectManager.Hint.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.objectManager.Hint.prototype.events;
-
-/**
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter.
- * 
- * Коллекция кластеров, сгенерированных ObjectManager.
- * Кластеры добавляются и удаляются из коллекции автоматически в ходе работы и доступны только на чтение.
- * Объект-кластер представляет из себя JSON-структуру, аналогичную объектам в составе слоя.
- * Поля объекта-кластера:
- * 
- * id - уникальный идентификатор кластера;
- *     geometry - описание геометрии кластера;
- *     properties - описание данных кластера. В поле properties.geoObjects хранится массив
- *     объектов, входящих в состав кластера;
- *     options - опции кластера. Необязательное поле.
- * 
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.objectManager.ClusterCollection = function() {};
-
-
-/**
- * @param {Function} callback Функция-обработчик, в которую передаются объекты коллекции.
- * @param {Object} context Контекст исполнения функции-обработчика.
- */
-ymaps.objectManager.ClusterCollection.prototype.each = function(callback, context) {};
-
-
-/**
- * @return {Array.<Object>}
- */
-ymaps.objectManager.ClusterCollection.prototype.getAll = function() {};
-
-
-/**
- * @param {String} id Идентификатор кластера.
- * @return {Object|null}
- */
-ymaps.objectManager.ClusterCollection.prototype.getById = function(id) {};
-
-
-/**
- * @return {ymaps.IIterator}
- */
-ymaps.objectManager.ClusterCollection.prototype.getIterator = function() {};
-
-
-/**
- * @return {Number}
- */
-ymaps.objectManager.ClusterCollection.prototype.getLength = function() {};
-
-
-/**
- * @return {ymaps.ObjectManager}
- */
-ymaps.objectManager.ClusterCollection.prototype.getObjectManager = function() {};
-
-
-/**
- * @param {String} objectId Идентификатор кластера.
- * @param {Object} options Объект с опциями кластера.
- * @return {ymaps.objectManager.ObjectCollection}
- */
-ymaps.objectManager.ClusterCollection.prototype.setClusterOptions = function(objectId, options) {};
-
-
-/**
- * Балун кластера в составе менеджера.
- * 
- * @type {ymaps.objectManager.Balloon}
- */
-ymaps.objectManager.ClusterCollection.prototype.balloon;
-
-
-/**
- * Менеджер опций.
- * Имена полей, доступных через метод option.Manager.get:
- * 
- * hasBalloon - флаг наличия у коллекции поля .balloon.
- *     Если при клике на кластер не нужно открывать балун, рекомендуется установить эту опцию в значение
- *     false, чтобы избежать лишних инициализаций;
- *     hasHint - флаг наличия у коллекции поля .hint.
- *     Если при наведении на кластер не нужно показывать всплывающую подсказку,
- *     рекомендуется установить эту опцию в значение false, чтобы избежать лишних инициализаций;
- *     hideIconOnBalloonOpen - cкрывать иконку при открытии балуна. Значение по умолчанию true;
- *     openBalloonOnClick - опция, позволяющая запретить открытие балуна при клике на кластер.
- *     По умолчанию открытие балуна разрешено;
- *     openHintOnHover - опция, позволяющая запретить показ всплывающей подсказки при наведении на кластер.
- *     По умолчанию показ хинтов разрешен.
- * 
- * 
- * @type {ymaps.option.Manager}
- */
-ymaps.objectManager.ClusterCollection.prototype.options;
-
-
-/**
- * Коллекция оверлеев кластеров.
- * Все события, за исключением событий add и remove, пропагируются от коллекции оверлеев
- * в коллекцию кластеров.
- * 
- * @type {ymaps.objectManager.OverlayCollection}
- */
-ymaps.objectManager.ClusterCollection.prototype.overlays;
-
-
-/**
- * Состояние коллекции кластеров. Определяется следующими полями:
- * 
- * activeObject - JSON-описание объекта, выбранного в балуне кластера.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.objectManager.ClusterCollection.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.objectManager.ClusterCollection.prototype.events;
-
-/**
- * 
- * Расширяет
- *             ICollection, ICustomizable.
- * 
- * Коллекция объектов, добавленных в слой.
- * 
- * @constructor
- * @implements {ymaps.ICollection}
- * @implements {ymaps.ICustomizable}
- * 
- */
-ymaps.objectManager.ObjectCollection = function() {};
-
-
-/**
- * @param {Object|Array.<Object>|String} data Объекты, добавляемые в слой.
- * @return {ymaps.objectManager.ObjectCollection}
- */
-ymaps.objectManager.ObjectCollection.prototype.add = function(data) {};
-
-
-/**
- * @param {Function} callback Функция-обработчик, в которую передаются объекты коллекции.
- * @param {Object} context Контекст исполнения функции-обработчика.
- */
-ymaps.objectManager.ObjectCollection.prototype.each = function(callback, context) {};
-
-
-/**
- * @return {Array.<Object>}
- */
-ymaps.objectManager.ObjectCollection.prototype.getAll = function() {};
-
-
-/**
- * @param {Number} id Идентификатор объекта.
- * @return {Object|null}
- */
-ymaps.objectManager.ObjectCollection.prototype.getById = function(id) {};
-
-
-/**
- * @return {Number}
- */
-ymaps.objectManager.ObjectCollection.prototype.getLength = function() {};
-
-
-/**
- * @return {ymaps.ObjectManager}
- */
-ymaps.objectManager.ObjectCollection.prototype.getObjectManager = function() {};
-
-
-/**
- * @param {Object|Array.<Object>|String} data Объекты, которые нужно удалить.
- * @return {ymaps.objectManager.ObjectCollection}
- */
-ymaps.objectManager.ObjectCollection.prototype.remove = function(data) {};
-
-
-/**
- * @return {ymaps.objectManager.ObjectCollection}
- */
-ymaps.objectManager.ObjectCollection.prototype.removeAll = function() {};
-
-
-/**
- * @param {Object} objectId Идентификатор объекта, которому нужно задать опции.
- * @param {Object} options Новые опции объекта.
- * @return {ymaps.objectManager.ObjectCollection}
- */
-ymaps.objectManager.ObjectCollection.prototype.setObjectOptions = function(objectId, options) {};
-
-
-/**
- * @return {ymaps.IIterator}
- */
-ymaps.objectManager.ObjectCollection.prototype.getIterator = function() {};
-
-
-/**
- * Балун объекта в составе менеджера.
- * 
- * @type {ymaps.objectManager.Balloon}
- */
-ymaps.objectManager.ObjectCollection.prototype.balloon;
-
-
-/**
- * Хинт объекта в составе ObjectManager.
- * 
- * @type {ymaps.objectManager.Hint}
- */
-ymaps.objectManager.ObjectCollection.prototype.hint;
-
-
-/**
- * Менеджер опций.
- * Имена полей, доступных через метод option.Manager.get:
- * 
- * hasBalloon - флаг наличия у коллекции поля .balloon.
- *     Если при клике на объекте не нужно открывать балун, рекомендуется установить эту опцию в значение
- *     false, чтобы избежать лишних инициализаций;
- *     hasHint - флаг наличия у коллекции поля .hint.
- *     Если при наведении на объект не нужно показывать всплывающую подсказку,
- *     рекомендуется установить эту опцию в значение false, чтобы избежать лишних инициализаций;
- *     hideIconOnBalloonOpen - cкрывать иконку при открытии балуна. Значение по умолчанию true;
- *     openBalloonOnClick - показывать балун при клике на объект. Значение по умолчанию true.
- *  
- * 
- * @type {ymaps.option.Manager}
- */
-ymaps.objectManager.ObjectCollection.prototype.options;
-
-
-/**
- * Коллекция оверлеев одиночных объектов.
- * Все события, за исключением событий add и remove, пропагируются от коллекции оверлеев
- * в коллекцию объектов.
- * 
- * @type {ymaps.objectManager.OverlayCollection}
- */
-ymaps.objectManager.ObjectCollection.prototype.overlays;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.objectManager.ObjectCollection.prototype.events;
-
-/**
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter.
- * 
- * Коллекция овелеев.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.objectManager.OverlayCollection = function() {};
-
-
-/**
- * @param {Function} callback Функция-обработчик, в которую передаются объекты коллекции.
- * @param {Object} context Контекст исполнения функции-обработчика.
- */
-ymaps.objectManager.OverlayCollection.prototype.each = function(callback, context) {};
-
-
-/**
- * @return {Array.<Object>}
- */
-ymaps.objectManager.OverlayCollection.prototype.getAll = function() {};
-
-
-/**
- * @param {Number} id Идентификатор объекта, которому принадлежит оверлей.
- * @return {Object|null}
- */
-ymaps.objectManager.OverlayCollection.prototype.getById = function(id) {};
-
-
-/**
- * @param {ymaps.IOverlay} overlay Оверлей.
- * @return {Number|null}
- */
-ymaps.objectManager.OverlayCollection.prototype.getId = function(overlay) {};
-
-
-/**
- * @return {ymaps.IIterator}
- */
-ymaps.objectManager.OverlayCollection.prototype.getIterator = function() {};
-
-
-/**
- * @return {Number}
- */
-ymaps.objectManager.OverlayCollection.prototype.getLength = function() {};
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.objectManager.OverlayCollection.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.objectManager.OverlayCollection.prototype.events;
-
-
-ymaps.option = {};
-
-/**
- * 
- * Расширяет
- *             IOptionManager.
- * 
- * Менеджер опций. Позволяет задавать и получать значения опций по строковому ключу,
- * а также разрешать значения опций в контексте существующей иерархии менеджеров опций.
- * Специальный ключ "preset" позволяет задать набор опций по умолчанию для данного менеджера.
- * Значением опции "preset" может быть хэш вида {"имя опции": "значение опции"}, либо строковый идентификатор
- * хэша опций в хранилище option.presetStorage.
- * Данный хэш опций может также содержать поле с именем "preset", что позволяет наследовать значения опций от
- * других наборов.
- * При поиске значения в иерархии сначала проверяются собственные опции, затем опции заданные с помощью ключа
- * "preset", после чего происходит обращение к родителю, если он есть.
- * Для отслеживания изменений некоторых опций можно использовать Monitor.
- * 
- * @constructor
- * @implements {ymaps.IOptionManager}
- * 
- * @param {Object=} options Хэш опций.
- * @param {ymaps.IOptionManager=} parent Родительский менеджер опций.
- * @param {String=} name Имя менеджера опций.
- */
-ymaps.option.Manager = function(options, parent, name) {};
-
-
-/**
- * @param {Object|String} key Имя опции, либо хеш вида {"имя опции": "значение опции"}.
- * @param {Object=} value Значение опции, если в качестве первого аргумента было передано имя.
- * @return {ymaps.option.Manager}
- */
-ymaps.option.Manager.prototype.set = function(key, value) {};
-
-
-/**
- * @param {String|Array.<String>} keys Имя опции или массив имен опций, значения которых должны быть аннулированы.
- * @return {ymaps.option.Manager}
- */
-ymaps.option.Manager.prototype.unset = function(keys) {};
-
-
-/**
- * @return {ymaps.option.Manager}
- */
-ymaps.option.Manager.prototype.unsetAll = function() {};
-
-
-/**
- * @param {String} key Имя опции.
- * @param {Object=} defaultValue Значение по умолчанию.
- */
-ymaps.option.Manager.prototype.get = function(key, defaultValue) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.option.Manager.prototype.getAll = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.option.Manager.prototype.getName = function() {};
-
-
-/**
- * @param {String} key Имя опции.
- * @return {Object}
- */
-ymaps.option.Manager.prototype.getNative = function(key) {};
-
-
-/**
- * @return {ymaps.IOptionManager|null}
- */
-ymaps.option.Manager.prototype.getParent = function() {};
-
-
-/**
- * @param {String} key Имя опции.
- * @param {String=} name Имя дочернего менеджера опций.
- * @return {Object}
- */
-ymaps.option.Manager.prototype.resolve = function(key, name) {};
-
-
-/**
- * @param {String} name Имя менеджера опций.
- */
-ymaps.option.Manager.prototype.setName = function(name) {};
-
-
-/**
- * @param {ymaps.IOptionManager|null} parent Родительский менеджер опций.
- * @return {ymaps.IChild}
- */
-ymaps.option.Manager.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.option.Manager.prototype.freeze = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {Boolean}
- */
-ymaps.option.Manager.prototype.isFrozen = function() {};
-
-
-/**
- * @see ymaps.IFreezable
- * 
- * @return {ymaps.IFreezable}
- */
-ymaps.option.Manager.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.option.Manager.prototype.events;
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.Storage
- * Хранилище предустановленных опций.
- * Список доступных ключей:
- * Метки с текстом
- *               Значок
- *               Ключ
- *               Значок
- *               Ключ
- *             'islands#blueIcon'
- *             'islands#darkGreenIcon'
- *             'islands#redIcon'
- *            'islands#violetIcon'
- *            'islands#darkOrangeIcon'
- *            'islands#blackIcon'
- *            'islands#nightIcon'
- *            'islands#yellowIcon'
- *            'islands#darkBlueIcon'
- *            'islands#greenIcon'
- *             'islands#pinkIcon'
- *             'islands#orangeIcon'
- *            'islands#grayIcon'
- *            'islands#lightBlueIcon'
- *            'islands#brownIcon'
- *            'islands#oliveIcon'
- * Метки с текстом (иконки тянутся под контент)
- *              Значок
- *              Ключ
- *              Значок
- *              Ключ
- *            'islands#blueStretchyIcon'
- *            'islands#darkGreenStretchyIcon'
- *            'islands#redStretchyIcon'
- *            'islands#violetStretchyIcon'
- *            'islands#darkOrangeStretchyIcon'
- *            'islands#blackStretchyIcon'
- *            'islands#nightStretchyIcon'
- *            'islands#yellowStretchyIcon'
- *            'islands#darkBlueStretchyIcon'
- *            'islands#greenStretchyIcon'
- *            'islands#pinkStretchyIcon'
- *            'islands#orangeStretchyIcon'
- *            'islands#grayStretchyIcon'
- *            'islands#lightBlueStretchyIcon'
- *            'islands#brownStretchyIcon'
- *            'islands#oliveStretchyIcon'
- * Метки без содержимого с точкой в центре
- *              Значок
- *              Ключ
- *              Значок
- *              Ключ
- *            'islands#blueDotIcon'
- *            'islands#darkGreenDotIcon'
- *            'islands#redDotIcon'
- *            'islands#violetDotIcon'
- *            'islands#darkOrangeDotIcon'
- *            'islands#blackDotIcon'
- *            'islands#nightDotIcon'
- *            'islands#yellowDotIcon'
- *            'islands#darkBlueDotIcon'
- *            'islands#greenDotIcon'
- *            'islands#pinkDotIcon'
- *            'islands#orangeDotIcon'
- *            'islands#grayDotIcon'
- *            'islands#lightBlueDotIcon'
- *            'islands#brownDotIcon'
- *            'islands#oliveDotIcon'
- * Метки в виде кругов 
- *              Значок
- *              Ключ
- *              Значок
- *              Ключ
- *            'islands#blueCircleIcon'
- *            'islands#darkGreenCircleIcon'
- *            'islands#redCircleIcon'
- *            'islands#violetCircleIcon'
- *            'islands#darkOrangeCircleIcon'
- *            'islands#blackCircleIcon'
- *            'islands#nightCircleIcon'
- *            'islands#yellowCircleIcon'
- *            'islands#darkBlueCircleIcon'
- *            'islands#greenCircleIcon'
- *            'islands#pinkCircleIcon'
- *            'islands#orangeCircleIcon'
- *            'islands#grayCircleIcon'
- *            'islands#lightBlueCircleIcon'
- *            'islands#brownCircleIcon'
- *            'islands#oliveCircleIcon'
- * Метки в виде кругов с точкой в центре
- *              Значок
- *              Ключ
- *              Значок
- *              Ключ
- *            'islands#blueCircleDotIcon'
- *            'islands#darkGreenCircleDotIcon'
- *            'islands#redCircleDotIcon'
- *            'islands#violetCircleDotIcon'
- *            'islands#darkOrangeCircleDotIcon'
- *            'islands#blackCircleDotIcon'
- *            'islands#nightCircleDotIcon'
- *            'islands#yellowCircleDotIcon'
- *            'islands#darkBlueCircleDotIcon'
- *            'islands#greenCircleDotIcon'
- *            'islands#pinkCircleDotIcon'
- *            'islands#orangeCircleDotIcon'
- *            'islands#grayCircleDotIcon'
- *            'islands#lightBlueCircleDotIcon'
- *            'islands#brownCircleDotIcon'
- *            'islands#oliveCircleDotIcon'
- * Пиктограммы
- *           ЗначокКлюч
- *              'islands#geolocationIcon'
- * Значки кластеров
- *           ЗначокКлючЗначокКлюч
- *              'islands#blueClusterIcons'
- *              'islands#invertedBlueClusterIcons'
- *               'islands#redClusterIcons'
- *               'islands#invertedRedClusterIcons'
- *               'islands#darkOrangeClusterIcons'
- *               'islands#invertedDarkOrangeClusterIcons'
- *               'islands#nightClusterIcons'
- *               'islands#invertedNightClusterIcons'
- *               'islands#darkBlueClusterIcons'
- *               'islands#invertedDarkBlueClusterIcons'
- *               'islands#pinkClusterIcons'
- *               'islands#invertedPinkClusterIcons'
- *               'islands#grayClusterIcons'
- *               'islands#invertedGrayClusterIcons'
- *               'islands#brownClusterIcons'
- *               'islands#invertedBrownClusterIcons'
- *               'islands#darkGreenClusterIcons'
- *               'islands#invertedDarkGreenClusterIcons'
- *               'islands#violetClusterIcons'
- *               'islands#invertedVioletClusterIcons'
- *               'islands#blackClusterIcons'
- *               'islands#invertedBlackClusterIcons'
- *               'islands#yellowClusterIcons'
- *               'islands#invertedYellowClusterIcons'
- *               'islands#greenClusterIcons'
- *               'islands#invertedGreenClusterIcons'
- *               'islands#orangeClusterIcons'
- *               'islands#invertedOrangeClusterIcons'
- *               'islands#lightBlueClusterIcons'
- *               'islands#invertedLightBlueClusterIcons'
- *               'islands#oliveClusterIcons'
- *               'islands#invertedOliveClusterIcons'
- *  
- * 
- * 
- * @type {ymaps.util.Storage}
- */
-ymaps.option.presetStorage;
-
-
-ymaps.overlay = {};
-
-
-ymaps.overlay.hotspot = {};
-
-/**
- * 
- * Расширяет
- *             overlay.hotspot.Base.
- * 
- * Оверлей круглой активной области.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * 
- * @param {ymaps.IPixelCircleGeometry} geometry Геометрия.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.hotspot.Circle = function(geometry, data, options) {};
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * Интерактивный оверлей круга.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelCircleGeometry} geometry Пиксельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.Circle = function(geometry, data, options) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.Circle.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.Circle.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.Circle.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.Circle.prototype.getShape = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.Circle.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.Circle.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.Circle.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.Circle.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.Circle.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.Circle.prototype.events;
-
-/**
- * 
- * Расширяет
- *             overlay.hotspot.Base.
- * 
- * Оверлей точечной активной области.
- * По умолчанию оверлеи не добавлены в package.full (стандартный набор модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * 
- * @param {ymaps.IPixelPointGeometry} geometry Пиксельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.hotspot.Placemark = function(geometry, data, options) {};
-
-/**
- * 
- * Расширяет
- *             overlay.hotspot.Base.
- * 
- * Оверлей активной области в форме многоугольника.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * 
- * @param {ymaps.IPixelPolygonGeometry} geometry Геометрия.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.hotspot.Polygon = function(geometry, data, options) {};
-
-/**
- * 
- * Расширяет
- *             overlay.hotspot.Base.
- * 
- * Оверлей активной области в форме ломаной линии.
- * По умолчанию оверлеи не добавлены в package.full (стандартный набор модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * 
- * @param {ymaps.IPixelLineStringGeometry} geometry Пикcельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.hotspot.Polyline = function(geometry, data, options) {};
-
-/**
- * 
- * Расширяет
- *             overlay.hotspot.Base.
- * 
- * Оверлей прямоугольной активной области.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * 
- * @param {ymaps.IPixelRectangleGeometry} geometry Пиксельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.hotspot.Rectangle = function(geometry, data, options) {};
-
-
-ymaps.overlay.html = {};
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * HTML-оверлей балуна.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelPointGeometry} geometry Пиксельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.html.Balloon = function(geometry, data, options) {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.html.Balloon.prototype.getBalloonElement = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.html.Balloon.prototype.getBalloonLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout}
- */
-ymaps.overlay.html.Balloon.prototype.getBalloonLayoutSync = function() {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.html.Balloon.prototype.getElement = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.html.Balloon.prototype.getLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.html.Balloon.prototype.getLayoutSync = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.overlay.html.Balloon.prototype.getMode = function() {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.html.Balloon.prototype.getShadowElement = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.html.Balloon.prototype.getShadowLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.html.Balloon.prototype.getShadowLayoutSync = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.html.Balloon.prototype.isEmpty = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.html.Balloon.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.html.Balloon.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.html.Balloon.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.html.Balloon.prototype.getShape = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.html.Balloon.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.html.Balloon.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.html.Balloon.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.html.Balloon.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.html.Balloon.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * Простой HTML-оверлей.
- * По умолчанию оверлеи не добавлены в package.full (стандартный набор модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelPointGeometry} geometry Пикcельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.html.Hint = function(geometry, data, options) {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.html.Hint.prototype.getElement = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.html.Hint.prototype.getLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.html.Hint.prototype.getLayoutSync = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.html.Hint.prototype.isEmpty = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.html.Hint.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.html.Hint.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.html.Hint.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.html.Hint.prototype.getShape = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.html.Hint.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.html.Hint.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.html.Hint.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.html.Hint.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.html.Hint.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * HTML-оверлей метки.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelPointGeometry} geometry Пикcельная геометрия.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.html.Placemark = function(geometry, data, options) {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.html.Placemark.prototype.getElement = function() {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.html.Placemark.prototype.getIconElement = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.html.Placemark.prototype.getIconLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.html.Placemark.prototype.getIconLayoutSync = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.html.Placemark.prototype.getLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.html.Placemark.prototype.getLayoutSync = function() {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.html.Placemark.prototype.getShadowElement = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.html.Placemark.prototype.getShadowLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.html.Placemark.prototype.getShadowLayoutSync = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.html.Placemark.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.html.Placemark.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.html.Placemark.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.html.Placemark.prototype.getShape = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.html.Placemark.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.html.Placemark.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.html.Placemark.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.html.Placemark.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.html.Placemark.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.html.Placemark.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * HTML-оверлей прямоугольника.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelRectangleGeometry} geometry Пикcельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции оверлея. Используя этот параметр можно задавать как опции самого оверлея,
- *                          так и опции его макета.
- */
-ymaps.overlay.html.Rectangle = function(geometry, data, options) {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.html.Rectangle.prototype.getElement = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.html.Rectangle.prototype.getLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.html.Rectangle.prototype.getLayoutSync = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.html.Rectangle.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.html.Rectangle.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.html.Rectangle.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.html.Rectangle.prototype.getShape = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.html.Rectangle.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.html.Rectangle.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.html.Rectangle.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.html.Rectangle.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.html.Rectangle.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.html.Rectangle.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * Интерактивный оверлей круглой метки.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelPointGeometry} geometry Пиксельная геометрия метки.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.Pin = function(geometry, data, options) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.Pin.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.Pin.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.Pin.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.Pin.prototype.getShape = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.Pin.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.Pin.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.Pin.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.Pin.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.Pin.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.Pin.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * Оверлей метки.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelPointGeometry} geometry Пикcельная геометрия.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.Placemark = function(geometry, data, options) {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.Placemark.prototype.getElement = function() {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.Placemark.prototype.getIconElement = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.Placemark.prototype.getIconLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.Placemark.prototype.getIconLayoutSync = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.Placemark.prototype.getLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.Placemark.prototype.getLayoutSync = function() {};
-
-
-/**
- * @return {HTMLElement}
- */
-ymaps.overlay.Placemark.prototype.getShadowElement = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.overlay.Placemark.prototype.getShadowLayout = function() {};
-
-
-/**
- * @return {ymaps.ILayout|null}
- */
-ymaps.overlay.Placemark.prototype.getShadowLayoutSync = function() {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.Placemark.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.Placemark.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.Placemark.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.Placemark.prototype.getShape = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.Placemark.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.Placemark.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.Placemark.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.Placemark.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.Placemark.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.Placemark.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * Оверлей многоугольника.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelPolygonGeometry} geometry Пикcельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.Polygon = function(geometry, data, options) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.Polygon.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.Polygon.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.Polygon.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.Polygon.prototype.getShape = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.Polygon.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.Polygon.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.Polygon.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.Polygon.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.Polygon.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.Polygon.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * Оверлей линии.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelLineStringGeometry} geometry Пикcельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.Polyline = function(geometry, data, options) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.Polyline.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.Polyline.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.Polyline.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.Polyline.prototype.getShape = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.Polyline.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.Polyline.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.Polyline.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.Polyline.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.Polyline.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.Polyline.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IOverlay.
- * 
- * Оверлей прямоугольника.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
- * 
- * @constructor
- * @implements {ymaps.IOverlay}
- * 
- * @param {ymaps.IPixelRectangleGeometry} geometry Пиксельная геометрия фигуры.
- * @param {Object=} data Данные.
- * @param {Object=} options Опции.
- */
-ymaps.overlay.Rectangle = function(geometry, data, options) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.overlay.Rectangle.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.overlay.Rectangle.prototype.getGeometry = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.overlay.Rectangle.prototype.getMap = function() {};
-
-
-/**
- * @return {ymaps.IShape|null}
- */
-ymaps.overlay.Rectangle.prototype.getShape = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.overlay.Rectangle.prototype.isEmpty = function() {};
-
-
-/**
- * @param {Object} data Данные оверлея.
- */
-ymaps.overlay.Rectangle.prototype.setData = function(data) {};
-
-
-/**
- * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
- */
-ymaps.overlay.Rectangle.prototype.setGeometry = function(geometry) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.overlay.Rectangle.prototype.setMap = function(map) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.overlay.Rectangle.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.overlay.Rectangle.prototype.events;
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.AsyncStorage
- * Хранилище оверлеев.
- * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
- * При добавлении геообъекта на карту происходит загрузка необходимого оверлея.
- * Для получения класса оверлея необходимо использовать метод
- * require данного хранилища.
- * 
- * По умолчанию в хранилище объявлены следующие ключи для асинхронного доступа:
- * 
- * 'default#circle' - Оверлей круга overlay.Circle;
- *    'default#polyline' - Оверлей линии overlay.Polyline;
- *    'default#placemark' - Оверлей метки-изображения overlay.Placemark;
- *    'default#polygon' - Оверлей многоугольника overlay.Polygon;
- *    'default#rectangle' - Оверлей прямоугольника overlay.Rectangle;
- *    'hotspot#circle' - Хотспотный оверлей круга overlay.hotspot.Circle;
- *    'hotspot#polyline' - Хотспотный оверлей линии overlay.hotspot.Polyline;
- *    'hotspot#placemark' - Хотспотный оверлей точки overlay.hotspot.Placemark;
- *    'hotspot#polygon' - Хотспотный оверлей многоугольника overlay.hotspot.Polygon;
- *    'hotspot#rectangle' - Хотспотный оверлей прямоугольника overlay.hotspot.Rectangle;
- *    'html#balloon' - HTML-оверлей балуна overlay.html.Balloon;
- *    'html#hint' - Простой HTML-оверлей overlay.html.Hint;
- *    'html#placemark' - HTML-оверлей метки overlay.html.Placemark;
- *    'html#rectangle' - HTML-оверлей прямоугольника overlay.html.Rectangle.
- * Методы 
- * 
- * 
- * @type {ymaps.util.AsyncStorage}
- */
-ymaps.overlay.storage;
-
-
-ymaps.pane = {};
-
-/**
- * 
- * Расширяет
- *             IEventPane.
- * 
- * Пейн событий.
- * 
- * @constructor
- * @implements {ymaps.IEventPane}
- * 
- * @param {ymaps.Map} map Карта.
- * @param {Object} params Параметры.
- */
-ymaps.pane.EventsPane = function(map, params) {};
-
-
-/**
- * @see ymaps.IPane
- * 
- */
-ymaps.pane.EventsPane.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {HTMLElement}
- */
-ymaps.pane.EventsPane.prototype.getElement = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {ymaps.Map}
- */
-ymaps.pane.EventsPane.prototype.getMap = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {String}
- */
-ymaps.pane.EventsPane.prototype.getOverflow = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {Number}
- */
-ymaps.pane.EventsPane.prototype.getZIndex = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IDomEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.pane.EventsPane.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IContainerPane.
- * 
- * Двигающийся пейн карты.
- * 
- * @constructor
- * @implements {ymaps.IContainerPane}
- * 
- * @param {ymaps.Map} map Карта.
- * @param {Object} params Параметры.
- */
-ymaps.pane.MovablePane = function(map, params) {};
-
-
-/**
- * @return {Array.<Array.<Number>>}
- */
-ymaps.pane.MovablePane.prototype.getViewport = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- */
-ymaps.pane.MovablePane.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {HTMLElement}
- */
-ymaps.pane.MovablePane.prototype.getElement = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {ymaps.Map}
- */
-ymaps.pane.MovablePane.prototype.getMap = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {String}
- */
-ymaps.pane.MovablePane.prototype.getOverflow = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {Number}
- */
-ymaps.pane.MovablePane.prototype.getZIndex = function() {};
-
-
-/**
- * @see ymaps.IPositioningContext
- * 
- * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
- * @return {Array.<Number>}
- */
-ymaps.pane.MovablePane.prototype.fromClientPixels = function(clientPixelPoint) {};
-
-
-/**
- * @see ymaps.IPositioningContext
- * 
- * @return {Number}
- */
-ymaps.pane.MovablePane.prototype.getZoom = function() {};
-
-
-/**
- * @see ymaps.IPositioningContext
- * 
- * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
- * @return {Array.<Number>}
- */
-ymaps.pane.MovablePane.prototype.toClientPixels = function(globalPixelPoint) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.pane.MovablePane.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IContainerPane.
- * 
- * Статичный пейн карты.
- * 
- * @constructor
- * @implements {ymaps.IContainerPane}
- * 
- * @param {ymaps.Map} map Карта.
- * @param {Object} params Параметры.
- */
-ymaps.pane.StaticPane = function(map, params) {};
-
-
-/**
- * @return {Array.<Array.<Number>>}
- */
-ymaps.pane.StaticPane.prototype.getViewport = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- */
-ymaps.pane.StaticPane.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {HTMLElement}
- */
-ymaps.pane.StaticPane.prototype.getElement = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {ymaps.Map}
- */
-ymaps.pane.StaticPane.prototype.getMap = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {String}
- */
-ymaps.pane.StaticPane.prototype.getOverflow = function() {};
-
-
-/**
- * @see ymaps.IPane
- * 
- * @return {Number}
- */
-ymaps.pane.StaticPane.prototype.getZIndex = function() {};
-
-
-/**
- * @see ymaps.IPositioningContext
- * 
- * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
- * @return {Array.<Number>}
- */
-ymaps.pane.StaticPane.prototype.fromClientPixels = function(clientPixelPoint) {};
-
-
-/**
- * @see ymaps.IPositioningContext
- * 
- * @return {Number}
- */
-ymaps.pane.StaticPane.prototype.getZoom = function() {};
-
-
-/**
- * @see ymaps.IPositioningContext
- * 
- * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
- * @return {Array.<Number>}
- */
-ymaps.pane.StaticPane.prototype.toClientPixels = function(globalPixelPoint) {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.pane.StaticPane.prototype.events;
-
-/**
- * 
- * Расширяет
- *             GeoObject.
- * 
- * Метка. Представляет собой геообъект с геометрией geometry.Point.
- * 
- * См.: GeoObject geometry.Point 
- * 
- * @constructor
- * @extends {ymaps.GeoObject}
- * 
- * @param {Array.<Number>|Object|ymaps.IPointGeometry} geometry Координаты метки или хэш с описанием геометрии, или
- *                                                              ссылка на объект точечной геометрии.
- * @param {Object|ymaps.IDataManager=} properties Данные метки. Могут задаваться как экземпляр класса,
- *                                                реализующего интерфейс IDataManager, либо в виде хэша.
- *                                                При значениях опций по умолчанию геообъектом трактуются следующие поля данных:
- *                                                
- *                                                    iconContent — содержимое иконки геообъекта;
- *                                                    hintContent — содержимое всплывающей подсказки геообъекта;
- *                                                    balloonContent — содержимое балуна геообъекта;
- *                                                    balloonContentHeader — содержимое заголовка балуна геообъекта;
- *                                                    balloonContentBody — содержимое основой части балуна геообъекта;
- *                                                    balloonContentFooter — содержимое нижней части балуна геообъекта.
- *                                                
- *                                                Поле balloonContent является кратким обозначением для поля balloonContentBody, но при одновременном задании
- *                                                balloonContentBody более приоритетен.
- *                                                Также вы можете дополнить данные метки своими собственными полями и использовать их везде, где это возможно.
- *                                                Например в макете метки или макете балуна.
- * @param {Object=} options Опции метки.
- *                          
- */
-ymaps.Placemark = function(geometry, properties, options) {};
-
-
-/**
- * Редактор геометрии "Точка".
- * 
- * @type {ymaps.geometryEditor.Point}
- */
-ymaps.Placemark.prototype.editor;
-
-
-/**
- * Геометрия типа "Точка".
- * 
- * @type {ymaps.geometry.Point}
- */
-ymaps.Placemark.prototype.geometry;
-
-/**
- * 
- * Расширяет
- *             GeoObject.
- * 
- * Многоугольник. Представляет собой геообъект с геометрией geometry.Polygon.
- * 
- * См.: GeoObject geometry.Polygon 
- * 
- * @constructor
- * @extends {ymaps.GeoObject}
- * 
- * @param {Array.<Array.<Array.<Number>>>|Object|ymaps.IPolygonGeometry} geometry Координаты вершин ломаных, определяющих
- *                                                                                внешнюю и внутренние границы многоугольника, хэш-объект с параметрами геометрии или ссылка на объект геометрии.
- *                                                                                Внутренняя граница может отсутствовать.
- * @param {Object|ymaps.IDataManager=} properties Данные многоугольника. Могут задаваться как экземпляр класса,
- *                                                реализующего интерфейс IDataManager, либо в виде хэша.
- *                                                При значениях опций по умолчанию геообъектом трактуются следующие поля данных:
- *                                                
- *                                                    hintContent - содержимое всплывающей подсказки многоугольника;
- *                                                    balloonContent - содержимое балуна многоугольника;
- *                                                    balloonContentHeader - содержимое заголовка балуна многоугольника;
- *                                                     balloonContentBody - содержимое основой части балуна многоугольника;
- *                                                     balloonContentFooter - содержимое нижней части балуна многоугольника.
- *                                                
- *                                                Поле balloonContent является кратким обозначением для поля balloonContentBody, но при одновременном задании
- *                                                balloonContentBody более приоритетен.
- *                                                Также вы можете дополнить данные многоугольника своими собственными полями и использовать их везде, где это возможно.
- *                                                Например в макете балуна многоугольника.
- * @param {Object=} options Опции многоугольника. Используя этот параметр можно задавать как опции самого многоульника,
- *                          так и опции его составных частей:
- *                          
- *                              Опции балуна многоульника с префиксом balloon.
- *                              Опции всплывающей подсказки многоульника с префиксом hint.
- *                              Опции редактора геометрии многоульника с префиксом editor. Смотрите описание класса geometryEditor.Polygon.
- *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии
- *                              geometry.Polygon.
- *                          
- */
-ymaps.Polygon = function(geometry, properties, options) {};
-
-
-/**
- * Редактор геометрии "Многоугольник".
- * 
- * @type {ymaps.geometryEditor.Polygon}
- */
-ymaps.Polygon.prototype.editor;
-
-
-/**
- * Геометрия типа "Многоугольник".
- * 
- * @type {ymaps.geometry.Polygon}
- */
-ymaps.Polygon.prototype.geometry;
-
-/**
- * 
- * Расширяет
- *             GeoObject.
- * 
- * Ломаная линия. Представляет собой геообъект с геометрией geometry.LineString.
- * 
- * См.: GeoObject geometry.LineString 
- * 
- * @constructor
- * @extends {ymaps.GeoObject}
- * 
- * @param {Array.<Array.<Number>>|Object|ymaps.ILineStringGeometry} geometry Координаты вершин, хэш-объект с параметрами геометрии или ссылка на объект геометрии ломаной линии.
- * @param {Object|ymaps.IDataManager=} properties Данные ломаной. Могут задаваться как экземпляр класса,
- *                                                реализующего интерфейс IDataManager, либо в виде хэша.
- *                                                При значениях опций по умолчанию геообъектом трактуются следующие поля данных:
- *                                                
- *                                                    hintContent - содержимое всплывающей подсказки ломаной;
- *                                                    balloonContent - содержимое балуна ломаной;
- *                                                    balloonContentHeader - содержимое заголовка балуна ломаной;
- *                                                    balloonContentBody - содержимое основой части балуна ломаной;
- *                                                    balloonContentFooter - содержимое нижней части балуна ломаной.
- *                                                
- *                                                Поле balloonContent является кратким обозначением для поля balloonContentBody, но при одновременном задании
- *                                                balloonContentBody более приоритетен.
- *                                                Также вы можете дополнить данные ломаной своими собственными полями и использовать их, например, в макете хинта.
- * @param {Object=} options Опции ломаной. Используя этот параметр можно задавать как опции самой ломаной,
- *                          так и опции ее составных частей:
- *                          
- *                              Опции балуна ломаной с префиксом balloon.
- *                              Опции всплывающей подсказки ломаной с префиксом hint.
- *                              Опции редактора геометрии ломаной с префиксом editor. Смотрите описание класса geometryEditor.LineString.
- *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии
- *                              geometry.LineString.
- *                          
- */
-ymaps.Polyline = function(geometry, properties, options) {};
-
-
-/**
- * Редактор геометрии "Ломаная линия".
- * 
- * @type {ymaps.geometryEditor.LineString}
- */
-ymaps.Polyline.prototype.editor;
-
-
-/**
- * Геометрия типа "Ломаная линия".
- * 
- * @type {ymaps.geometry.LineString}
- */
-ymaps.Polyline.prototype.geometry;
-
-/**
- * 
- * Расширяет
- *             IPopup.
- * 
- * Класс для создания инфо-объекта.
- * 
- * @constructor
- * @implements {ymaps.IPopup}
- * 
- * @param {ymaps.Map} map Ссылка на карту.
- * @param {Object=} options Опции.
- */
-ymaps.Popup = function(map, options) {};
-
-
-/**
- * @param {Boolean=} force Мгновенное закрытие.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Popup.prototype.close = function(force) {};
-
-
-/**
- */
-ymaps.Popup.prototype.getData = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.Popup.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay}
- */
-ymaps.Popup.prototype.getOverlaySync = function() {};
-
-
-/**
- */
-ymaps.Popup.prototype.getPosition = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.Popup.prototype.isOpen = function() {};
-
-
-/**
- * @param {Array.<Number>=} position Точка, где необходимо расположить балун.
- * @param {Object|String|HTMLElement=} data Данные оверлея.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Popup.prototype.open = function(position, data) {};
-
-
-/**
- * @param {Object|String|HTMLElement} data Данные инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Popup.prototype.setData = function(data) {};
-
-
-/**
- * @param {Array.<Number>} position Координаты инфо-объекта.
- * @return {ymaps.vow.Promise}
- */
-ymaps.Popup.prototype.setPosition = function(position) {};
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.Popup.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.Popup.prototype.events;
-
-
-ymaps.projection = {};
-
-/**
- * 
- * Расширяет
- *             IProjection.
- * 
- * Декартова проекция прямоугольной области.
- * Учитывает параметр coordorder загрузки API - при значении 'latlong' в массиве координат точки
- * на первом месте должен стоять y, а на втором x.
- * 
- * @constructor
- * @implements {ymaps.IProjection}
- * 
- * @param {Array.<Object>} bounds Массив из двух точек -
- *                                координат левого нижнего и правого верхнего углов прямоугольной координатной области.
- * @param {Array.<Boolean>=} cycled Массив из признаков зацикленности карты по x и y.
- * @param {Number|Array.<Number>=} scale Масштаб одного деления на оси. Может быть числом или парой чисел для каждой из осей.
- */
-ymaps.projection.Cartesian = function(bounds, cycled, scale) {};
-
-
-/**
- * @param {Array.<Number>} globalPixelPoint Точка в пиксельных координатах.
- * @param {Number} zoom Уровень масштабирования.
- * @return {Array.<Number>}
- */
-ymaps.projection.Cartesian.prototype.fromGlobalPixels = function(globalPixelPoint, zoom) {};
-
-
-/**
- * @return {ymaps.ICoordSystem}
- */
-ymaps.projection.Cartesian.prototype.getCoordSystem = function() {};
-
-
-/**
- * @return {Array.<Boolean>}
- */
-ymaps.projection.Cartesian.prototype.isCycled = function() {};
-
-
-/**
- * @param {Array.<Number>} coordPoint Точка в координатах проекции.
- * @param {Number} zoom Уровень масштабирования.
- * @return {Array.<Number>}
- */
-ymaps.projection.Cartesian.prototype.toGlobalPixels = function(coordPoint, zoom) {};
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  IProjection
- * Меркаторовская проекция на сферу.
- * Используется многими картографическими сервисами, в частности, OpenStreetMap.
- * 
- * Методы 
- * 
- * 
- * @type {ymaps.IProjection}
- */
-ymaps.projection.sphericalMercator;
-
-/**
- * 
- * Статическая функция.
- * 
- * Выполняет переданную функцию, когда API и DOM готовы к использованию.
- * 
- * Возвращает:  Объект-обещание, которое подтверждается пространством имен API, либо отклоняется, если при загрузке произошла ошибка.
- *         (тип vow.Promise).
- * 
- * @param {Function|Object=} successCallback Функция, которая будет вызвана при успешной загрузке и инициализации API и DOM,
- *                                           или объект с параметрами, если используется расширенный синтаксис.
- *                                           
- * @param {Function=} errorCallback Функция, которая будет вызвана если произошла ошибка при инициализации.
- *                                  В функцию будет передана ошибка.
- * @param {Object=} context Контекст исполнения функции.
- * 
- * @returns {ymaps.vow.Promise}
- */
-ymaps.ready = function(successCallback, errorCallback, context) {};
-
-/**
- * 
- * Расширяет
- *             GeoObject.
- * 
- * Прямоугольник. Представляет собой геообъект с геометрией geometry.Rectangle.
- * 
- * См.: GeoObject geometry.Rectangle 
- * 
- * @constructor
- * @extends {ymaps.GeoObject}
- * 
- * @param {Array.<Array.<Number>>|Object|ymaps.IRectangleGeometry} geometry Координаты двух противоположных углов, хэш-объект с параметрами геометрии или ссылка на объект геометрии прямоугольника.
- * @param {Object|ymaps.IDataManager=} properties Данные прямоугольника. Могут задаваться как экземпляр класса,
- *                                                реализующего интерфейс IDataManager, либо в виде хэша.
- *                                                При значениях опций по умолчанию геообъектом трактуются следующие поля данных:
- *                                                
- *                                                    hintContent - содержимое всплывающей подсказки прямоугольника;
- *                                                    balloonContent - содержимое балуна прямоугольника;
- *                                                    balloonContentHeader - содержимое заголовка балуна прямоугольника;
- *                                                    balloonContentBody - содержимое основой части балуна прямоугольника;
- *                                                    balloonContentFooter - содержимое нижней части балуна прямоугольника.
- *                                                
- *                                                Поле balloonContent является кратким обозначением для поля balloonContentBody, но при одновременном задании
- *                                                balloonContentBody более приоритетен.
- *                                                Также вы можете дополнить данные прямоугольника своими собственными полями и использовать их, например, в макете балуна.
- * @param {Object=} options Опции прямоугольника. Используя этот параметр можно задавать как опции самого прямоугольника,
- *                          так и опции его составных частей:
- *                          
- *                              Опции балуна прямоугольника с префиксом balloon.
- *                              Опции всплывающей подсказки прямоугольника с префиксом hint.
- *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии geometry.Rectangle.
- *                          
- */
-ymaps.Rectangle = function(geometry, properties, options) {};
-
-
-/**
- * Редактор геометрии "Прямоугольник" на данный момент не реализован.
- * 
- * @type {Null}
- */
-ymaps.Rectangle.prototype.editor;
-
-
-/**
- * Геометрия типа "Прямоугольник".
- * 
- * @type {ymaps.geometry.Rectangle}
- */
-ymaps.Rectangle.prototype.geometry;
-
-
-ymaps.regions = {};
-
-/**
- * 
- * Предоставляет доступ к геометрии различных регионов и стран мира.
- * 
- * @constructor
- * 
- * @param {String} region ISO_3166-1 код страны (RU, UA, BY, KZ) для загрузки
- *                        административно-территориального деления, либо '001' для загрузки геометрии
- *                        границ стран мира.
- * @param {Object=} options Опции отображения.
- */
-ymaps.regions.load = function(region, options) {};
-
-/**
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter, IGeoObject, IParentOnMap.
- * 
- * Менеджер объектов, осуществляющий их оптимальную подгрузку с сервера.
- * Менеджер отправляет запросы за данными по указанному url в JSONP-формате.
- * Описание формата соответствует формату добавляемых в ObjectManager объектов ObjectManager.add.
- * Также поддерживаются объекты типа 'Cluster', содержащие поля:
- * 
- * type - тип объекта, для кластеров всегда 'Cluster';
- *     id - уникальный идентификатор кластера;
- *     geometry - геометрия кластера в JSON-формате;
- *     features - массив объектов в составе кластера. Необязательное поле;
- *     bbox - массив координат, описывающих прямоугольную область,
- *     содержащую все объекты в составе кластера;
- *     number - количество объектов в кластере;
- *     properties - данные кластера.
- * 
- * Данный модуль рассчитан на загрузку и отображение данных, предварительно обработанных на сервере.
- * В частности, рекомендуется использовать модуль для отображения результатов серверной кластеризации.
- * Данные перезапрашиваются заново при изменении коэффициента масштабирования карты.
- * Модуль не осуществляет кластеризацию объектов или фильтрацию по области видимости на клиенте.
- * При необходимости кластеризовать объекты на клиенте после загрузки используйте LoadingObjectManager.
- * Обратите внимание, что у объектов, отрисованных на карте через данный менеджер, нельзя включать режимы редактирования и перетаскивания.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * @implements {ymaps.IGeoObject}
- * @implements {ymaps.IParentOnMap}
- * 
- * @param {String} urlTemplate Шаблон URL данных. Поддерживаются
- *                             специальные конструкции по аналогии с Layer.
- *                             Также поддерживаются подстановки:
- *                             
- *                                 %b заменяется на массив географических координат,
- *                                 описывающих прямоугольную область, для которой требуется загрузить данные.
- *                                 %t заменяется на массив номеров тайлов, описывающих прямоугольную область,
- *                                 для которой требуется загрузить данные.
- *                             
- * @param {Object=} options Опции.
- *                          
- *                              Можно задавать все опции, указанные в описании Clusterer,
- *                                  за исключением опций hasBalloon и hasHint.
- *                              
- *                              Опции для кластеров задаются с префиксом cluster.
- *                                  Список опций указан в описании класса ClusterPlacemark;
- *                              
- *                              
- *                                  Опции для одиночных объектов задаются с префиксом geoObject.
- *                                  Список опций указан в описании класса Placemark.
- *                              
- *                          
- */
-ymaps.RemoteObjectManager = function(urlTemplate, options) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.RemoteObjectManager.prototype.getBounds = function() {};
-
-
-/**
- * @param {Object} id Идентификатор объекта, для которого нужно получить состояние.
- * @return {Object}
- */
-ymaps.RemoteObjectManager.prototype.getObjectState = function(id) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.RemoteObjectManager.prototype.getPixelBounds = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.RemoteObjectManager.prototype.getUrlTemplate = function() {};
-
-
-/**
- */
-ymaps.RemoteObjectManager.prototype.reloadData = function() {};
-
-
-/**
- * @param {Function|String} filterFunction функция-фильтр. Получает на вход единичный объект, добавленный
- *                                         в ObjectManager. Если функция возвращает true, объект будет обработан. Если false - объект будет
- *                                         исключен из дальнейшей обработки.
- *                                         Также в качестве фильтра можно передавать строку.
- *                                         В строке-фильтре доступны следующие ключевые слова:
- *                                         
- *                                             options - обращение к опциям объекта;
- *                                             properties - обращение к данным объекта;
- *                                             geometry - обращение к геометрии объекта;
- *                                             id - обращение к идентификатору объекта;
- *                                         
- *                                         В качестве фильтра можно указывать выражение, возвращающее true или false.
- */
-ymaps.RemoteObjectManager.prototype.setFilter = function(filterFunction) {};
-
-
-/**
- * @param {String} urlTemplate шаблон URL данных.
- */
-ymaps.RemoteObjectManager.prototype.setUrlTemplate = function(urlTemplate) {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.RemoteObjectManager.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.RemoteObjectManager.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.RemoteObjectManager.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.RemoteObjectManager.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.RemoteObjectManager.prototype.getMap = function() {};
-
-
-/**
- * Коллекция кластеров, сгенерированных менеджером.
- * 
- * @type {ymaps.objectManager.ClusterCollection}
- */
-ymaps.RemoteObjectManager.prototype.clusters;
-
-
-/**
- * Коллекция объектов, добавленных в слой.
- * 
- * @type {ymaps.objectManager.ObjectCollection}
- */
-ymaps.RemoteObjectManager.prototype.objects;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.RemoteObjectManager.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.RemoteObjectManager.prototype.events;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.RemoteObjectManager.prototype.geometry;
-
-
-/**
- * Данные геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.RemoteObjectManager.prototype.properties;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.RemoteObjectManager.prototype.state;
-
-/**
- * 
- * Статическая функция.
- * 
- * Прокладывает маршрут через заданные точки.
- * Примечание.&nbsp;Для платной версии API маршрутизация доступна по следующим странам: Россия, Украина, Беларусь, Казахстан, Грузия,
- * Абхазия, Южная Осетия, Армения, Азербайджан, Молдова, Туркмения, Таджикистан, Узбекистан, Киргизия и Турция.
- * 
- * Возвращает:  Объект-обещание, который подтверждается объектом маршрута
- * router.Route, либо объектом мультимаршрута multiRouter.MultiRoute, в
- * зависимости от значения параметра multiRoute. В случае ошибки объект-обещание отклоняется.
- *         (тип vow.Promise).
- * 
- * @param {Array.<Object>} points Массив точек, через которые должен проходить маршрут.
- *                                Каждая точка может быть задана строкой, содержащей адрес, массивом координат, и JSON-объектом
- *                                со следующими полями:
- *                                
- *                                    type: String - тип точки. Значение 'wayPoint' задает путевую точку маршрута.
- *                                    Значение 'viaPoint' задает транзитную точку, т.е. точку, через которую нужно проехать без
- *                                    остановки.
- *                                    point: Number[]|String - Массив координат точки, либо ее адрес в виде строки.
- *                                
- * @param {Object=} params Параметры маршрутизации.
- * 
- * @returns {ymaps.vow.Promise}
- */
-ymaps.route = function(points, params) {};
-
-
-ymaps.router = {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса router.Editor скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter.
- * 
- * Редактор маршрутов. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.router.Editor = function() {};
-
-
-/**
- * @param {Object=} options Опции.
- */
-ymaps.router.Editor.prototype.start = function(options) {};
-
-
-/**
- */
-ymaps.router.Editor.prototype.stop = function() {};
-
-
-/**
- * Менеджер состояния редактора маршрута.
- * Поля данных, доступные посредством методов get и set:
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.router.Editor.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.router.Editor.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.router.Editor.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса router.Path скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             GeoObject.
- * 
- * Объект, описывающий часть (путь) машрута. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * Маршрут может содержать несколько путей, каждый путь соединяет две путевые точки.
- * Для путей доступны следующие пресеты:
- * 
- * 'router#interactivePath' - обеспечивает вывод информации о сегменте пути при клике по полилинии пути. При использовании этого пресета в макете балуна становятся доступными, как свойства геообъекта,
- *     следующие данные сегмента router.Segment: action, humanAction, angle, length, humanLength, time, humanTime,
- *     jamsTime, humanJamsTime, street. Используется по умолчанию.
- *     'router#plainPath' - путь ведет себя как обычный геообъект.
- * См.: route 
- * 
- * @constructor
- * @extends {ymaps.GeoObject}
- * 
- */
-ymaps.router.Path = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Path.prototype.getHumanJamsTime = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Path.prototype.getHumanLength = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Path.prototype.getHumanTime = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.Path.prototype.getJamsTime = function() {};
-
-
-/**
- * @return {Number}
- */
-ymaps.router.Path.prototype.getLength = function() {};
-
-
-/**
- * @return {Array.<ymaps.router.Segment>}
- */
-ymaps.router.Path.prototype.getSegments = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.Path.prototype.getTime = function() {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса router.Route скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeoObject.
- * 
- * Объект, описывающий проложенный маршрут. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * См.: route 
- * 
- * @constructor
- * @implements {ymaps.IGeoObject}
- * 
- */
-ymaps.router.Route = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Route.prototype.getHumanJamsTime = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Route.prototype.getHumanLength = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Route.prototype.getHumanTime = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.Route.prototype.getJamsTime = function() {};
-
-
-/**
- * @return {Number}
- */
-ymaps.router.Route.prototype.getLength = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.router.Route.prototype.getPaths = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.Route.prototype.getTime = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.router.Route.prototype.getViaPoints = function() {};
-
-
-/**
- * @return {ymaps.GeoObjectCollection}
- */
-ymaps.router.Route.prototype.getWayPoints = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.router.Route.prototype.getOverlay = function() {};
-
-
-/**
- * @return {ymaps.IOverlay|null}
- */
-ymaps.router.Route.prototype.getOverlaySync = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @return {ymaps.IControlParent|null}
- */
-ymaps.router.Route.prototype.getParent = function() {};
-
-
-/**
- * @see ymaps.IChildOnMap
- * 
- * @param {ymaps.IControlParent|null} parent Родительский объект.
- * @return {ymaps.IChildOnMap}
- */
-ymaps.router.Route.prototype.setParent = function(parent) {};
-
-
-/**
- * @see ymaps.IParentOnMap
- * 
- * @return {ymaps.Map}
- */
-ymaps.router.Route.prototype.getMap = function() {};
-
-
-/**
- * Редактор маршрутов.
- * 
- * @type {ymaps.router.Editor}
- */
-ymaps.router.Route.prototype.editor;
-
-
-/**
- * Геометрия геообъекта.
- * 
- * @type {ymaps.IGeometry|null}
- */
-ymaps.router.Route.prototype.geometry;
-
-
-/**
- * Данные геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.router.Route.prototype.properties;
-
-
-/**
- * Состояние геообъекта.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.router.Route.prototype.state;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.router.Route.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.router.Route.prototype.options;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса router.Segment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Объект, описываюший сегмент маршрута. Сегмент - часть маршрута от одного
- * манёвра до другого. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- */
-ymaps.router.Segment = {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Segment.getAction = function() {};
-
-
-/**
- * @return {Number}
- */
-ymaps.router.Segment.getAngle = function() {};
-
-
-/**
- * @return {Array.<Array.<Number>>}
- */
-ymaps.router.Segment.getCoordinates = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Segment.getHumanAction = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Segment.getHumanJamsTime = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Segment.getHumanLength = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Segment.getHumanTime = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.Segment.getIndex = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.Segment.getJamsTime = function() {};
-
-
-/**
- * @return {Number}
- */
-ymaps.router.Segment.getLength = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.Segment.getPolylineEndIndex = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.Segment.getPolylineStartIndex = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.router.Segment.getStreet = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.Segment.getTime = function() {};
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса router.ViaPoint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             GeoObject.
- * 
- * Объект, описывающий транзитную точку маршрута. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * @constructor
- * @extends {ymaps.GeoObject}
- * 
- */
-ymaps.router.ViaPoint = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.ViaPoint.prototype.getPathIndex = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.router.ViaPoint.prototype.getSegmentIndex = function() {};
-
-/**
- * 
- * Расширяет
- *             GeoObject.
- * 
- * Объект, описывающий путевую точку маршрута.
- * 
- * @constructor
- * @extends {ymaps.GeoObject}
- * 
- * @param {Object} feature Свойства и геометрия.
- * @param {Object=} options Опции.
- */
-ymaps.router.WayPoint = function(feature, options) {};
-
-
-/**
- * Менеджер данных путевой точки.
- * Если путевая точка была задана адресом, то в поле GeocoderMetaData будут содержаться метаданные
- * геокодера. См. geocode.
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.router.WayPoint.prototype.properties;
-
-/**
- * 
- * Статическая функция.
- * 
- * Обрабатывает поисковые запросы. Результат запроса может быть представлен в
- * формате JSON или в виде объекта с GeoObjectCollection.
- * 
- * Возвращает:  Объект-promise.
- *         (тип vow.Promise).
- * 
- * @param {String|Array.<Number>} request Строка запроса или географическая точка.
- * @param {Object=} options Опции.
- * 
- * @returns {ymaps.vow.Promise}
- */
-ymaps.search = function(request, options) {};
-
-
-ymaps.shape = {};
-
-/**
- * 
- * Расширяет
- *             IShape.
- * 
- * Пиксельная фигура "Круг".
- * 
- * @constructor
- * @implements {ymaps.IShape}
- * 
- * @param {ymaps.IPixelCircleGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
- */
-ymaps.shape.Circle = function(pixelGeometry, params) {};
-
-
-/**
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.shape.Circle.prototype.contains = function(position) {};
-
-
-/**
- * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.shape.Circle.prototype.equals = function(shape) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.shape.Circle.prototype.getBounds = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.shape.Circle.prototype.getGeometry = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.shape.Circle.prototype.getType = function() {};
-
-
-/**
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IShape}
- */
-ymaps.shape.Circle.prototype.scale = function(factor) {};
-
-
-/**
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IShape}
- */
-ymaps.shape.Circle.prototype.shift = function(offset) {};
-
-/**
- * 
- * Расширяет
- *             IShape.
- * 
- * Пиксельная фигура "Ломаная линия".
- * 
- * @constructor
- * @implements {ymaps.IShape}
- * 
- * @param {ymaps.IPixelLineStringGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
- */
-ymaps.shape.LineString = function(pixelGeometry, params) {};
-
-
-/**
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.shape.LineString.prototype.contains = function(position) {};
-
-
-/**
- * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.shape.LineString.prototype.equals = function(shape) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.shape.LineString.prototype.getBounds = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.shape.LineString.prototype.getGeometry = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.shape.LineString.prototype.getType = function() {};
-
-
-/**
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IShape}
- */
-ymaps.shape.LineString.prototype.scale = function(factor) {};
-
-
-/**
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IShape}
- */
-ymaps.shape.LineString.prototype.shift = function(offset) {};
-
-/**
- * 
- * Расширяет
- *             IShape.
- * 
- * Пиксельная фигура "Мультиполигон".
- * 
- * @constructor
- * @implements {ymaps.IShape}
- * 
- * @param {ymaps.IPixelMultiPolygonGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
- */
-ymaps.shape.MultiPolygon = function(pixelGeometry, params) {};
-
-
-/**
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.shape.MultiPolygon.prototype.contains = function(position) {};
-
-
-/**
- * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.shape.MultiPolygon.prototype.equals = function(shape) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.shape.MultiPolygon.prototype.getBounds = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.shape.MultiPolygon.prototype.getGeometry = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.shape.MultiPolygon.prototype.getType = function() {};
-
-
-/**
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IShape}
- */
-ymaps.shape.MultiPolygon.prototype.scale = function(factor) {};
-
-
-/**
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IShape}
- */
-ymaps.shape.MultiPolygon.prototype.shift = function(offset) {};
-
-/**
- * 
- * Расширяет
- *             IShape.
- * 
- * Пиксельная фигура "Полигон".
- * 
- * @constructor
- * @implements {ymaps.IShape}
- * 
- * @param {ymaps.IPixelPolygonGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
- */
-ymaps.shape.Polygon = function(pixelGeometry, params) {};
-
-
-/**
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.shape.Polygon.prototype.contains = function(position) {};
-
-
-/**
- * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.shape.Polygon.prototype.equals = function(shape) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.shape.Polygon.prototype.getBounds = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.shape.Polygon.prototype.getGeometry = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.shape.Polygon.prototype.getType = function() {};
-
-
-/**
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IShape}
- */
-ymaps.shape.Polygon.prototype.scale = function(factor) {};
-
-
-/**
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IShape}
- */
-ymaps.shape.Polygon.prototype.shift = function(offset) {};
-
-/**
- * 
- * Расширяет
- *             IShape.
- * 
- * Пиксельная фигура "Прямоугольник".
- * 
- * @constructor
- * @implements {ymaps.IShape}
- * 
- * @param {ymaps.IPixelRectangleGeometry} pixelGeometry Пиксельная геометрия фигуры.
- * @param {Object=} params Параметры фигуры.
- */
-ymaps.shape.Rectangle = function(pixelGeometry, params) {};
-
-
-/**
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.shape.Rectangle.prototype.contains = function(position) {};
-
-
-/**
- * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
- * @return {Boolean}
- */
-ymaps.shape.Rectangle.prototype.equals = function(shape) {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.shape.Rectangle.prototype.getBounds = function() {};
-
-
-/**
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.shape.Rectangle.prototype.getGeometry = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.shape.Rectangle.prototype.getType = function() {};
-
-
-/**
- * @param {Number} factor Масштабный коэффициент.
- * @return {ymaps.IShape}
- */
-ymaps.shape.Rectangle.prototype.scale = function(factor) {};
-
-
-/**
- * @param {Array.<Number>} offset Величина сдвига по осям.
- * @return {ymaps.IShape}
- */
-ymaps.shape.Rectangle.prototype.shift = function(offset) {};
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.Storage
- * Хранилище геометрий хотспотных шейпов.
- * 
- * 
- * @type {ymaps.util.Storage}
- */
-ymaps.shape.storage;
-
-/**
- * 
- * Статическая функция.
- * 
- * Обрабатывает запросы за поисковыми подсказками. Возвращает объект-promise,
- * который будет либо отклонён с ошибкой, либо подтверждён массивом объектов
- * вида { displayName: "Мытищи, Московская область", value: "Россия, Московская область, Мытищи " }.
- * Поле displayName отвечает за представление топонима в удобном для чтения
- * пользователем виде, поле value - значение, которое необходимо подставить в
- * поле ввода после выбора пользователем данной подсказки.
- * 
- * Возвращает:  Объект-promise.
- *         (тип vow.Promise).
- * 
- * @param {String} request Строка запроса.
- * @param {Object=} options Опции.
- */
-ymaps.suggest = function(request, options) {};
-
-/**
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter.
- * 
- * Создаёт выпадающую панель с поисковыми подсказками
- * и прикрепляет к HTML-элементу &lt;input type="text"&gt;.
- * 
- * @constructor
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * 
- * @param {HTMLElement|String} element HTML-элемент или его id.
- * @param {Object=} options Опции.
- */
-ymaps.SuggestView = function(element, options) {};
-
-
-/**
- */
-ymaps.SuggestView.prototype.destroy = function() {};
-
-
-/**
- * Состояние панели поисковых подсказок.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * request: String — текущий активный запрос;
- *     items: Object[] - массив поисковых подсказок (объектов с полями
- * value и displayName);
- *     activeIndex: Number|null - индекс текущей активной подсказки, выделенная
- * пользователем путём наведения мыши или с клавиатуры, или null, если
- * ни одна подсказка не активка;
- *     panelClosed: Boolean - признак, была ли панель закрыта пользователем
- * путём нажатия клавиши ESC или выбора одной из подсказок.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.SuggestView.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.SuggestView.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.SuggestView.prototype.events;
-
-
-ymaps.template = {};
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.Storage
- * Хранилище фильтров для шаблонов.
- * Фильтры из хранилища можно использовать во всех макетах, созданных с помощью templateLayoutFactory.
- * По умолчанию в хранилище объявлены следующие ключи для фильтров:
- * 
- * default — позволяет устанавливать значения по умолчанию.
- *      Например, так: {{ properties.header|default:"Заголовок" }}
- * Методы 
- * 
- * Примеры: 
- * 
- * 1.
- * 
- * 2.
- * 
- * 3.
- * 
- * 
- * @type {ymaps.util.Storage}
- */
-ymaps.template.filtersStorage;
-
-/**
- * 
- * Шаблонизатор.
- * В API Яндекс.Карт поддерживается базовый синтаксис языков шаблонов Twig/Django Templates.
- * Поддерживаются следующие операции:
- * {% if условие %} ... {% else %} ... {% endif %} или
- *     Блок else или elseif можно опустить. Внутри блоков if, else и elseif можно использовать любые конструкции языка шаблонов.
- *     {% for значение in массив_или_хеш %} ... {% endfor %}.
- *     Внутри блока for можно использовать любые конструкции языка шаблонов.
- * 
- * {% for key, value in массив_или_хеш %} ... {% endfor %}.
- * 
- * @constructor
- * 
- * @param {String} text Строка-шаблон.
- */
-ymaps.Template = function(text) {};
-
-
-/**
- * @param {ymaps.IDataManager} data Менеджер данных.
- * @return {Object}
- */
-ymaps.Template.prototype.build = function(data) {};
-
-/**
- * 
- * Статический объект.
- * 
- * Фабрика для создания класса макета из текстового шаблона.
- * Позволяет создавать классы, реализующие интерфейс ILayout, используя язык шаблонов.
- * В API Яндекс.Карт поддерживается базовый синтаксис языков шаблонов Twig/Django Templates.
- * Более подробно о синтаксисе можно прочитать в описании Template.
- * 
- * См.: layout.templateBased.Base 
- * 
- * Методы 
- * 
- * Примеры: 
- * 
- * 1.
- * 
- * 2.
- * 
- * 3.
- * 
- * 4.
- * 
- */
-ymaps.templateLayoutFactory = {};
-
-
-/**
- * @param {String} template Шаблон html-содержимого макетов.
- * @param {Object=} overrides Переопределения родительских методов. Можно переопределять/дополнять методы
- *                            build, clear и rebuild.
- * @param {*} staticMethods 
- * @return {Function}
- */
-ymaps.templateLayoutFactory.createClass = function(template, overrides, staticMethods) {};
-
-
-ymaps.traffic = {};
-
-
-ymaps.traffic.provider = {};
-
-/**
- * 
- * Расширяет
- *             ITrafficProvider.
- * 
- * Провайдер актуальных пробок. Доступен в хранилище провайдеров под ключом 'traffic#actual'.
- * 
- * @constructor
- * @implements {ymaps.ITrafficProvider}
- * 
- * @param {Object=} options Опции провайдера. Опции для слоев провайдера задаются через
- *                          опции глобальной коллекции слоев Map.layers.
- *                          
- *                              Опции для картиночного слоя Layer
- *                              задаются с префиксом 'trafficImage';
- *                              Опции для слоя хотспотов hotspot.Layer
- *                              задаются с префиксом 'trafficJam';
- *                              Опции для слоя инфоточек задаются с префиксом
- *                              'trafficInfo'. Слой инфоточек является экземпляром класса
- *                              hotspot.Layer.
- *                          
- * @param {Object=} state Состояние провайдера.
- */
-ymaps.traffic.provider.Actual = function(options, state) {};
-
-
-/**
- */
-ymaps.traffic.provider.Actual.prototype.update = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.traffic.provider.Actual.prototype.getMap = function() {};
-
-
-/**
- * @param {ymaps.Map|null} Ссылка на карту.
- */
-ymaps.traffic.provider.Actual.prototype.setMap = function(Ссылка) {};
-
-
-/**
- * Состояние провайдера.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * isInited - признак, готов ли провайдер предоставлять данные;
- *     infoLayerShown - признак, показан ли слой дорожных событий;
- *     timestamp - текущее время во временной зоне UTC+0 в секундах;
- *     localtime - локальное время, для которого сервер в текущий момент отдает данные,
- *     в формате 'ЧЧ:ММ';
- *     level - уровень загруженности дорог в баллах - от 0 до 10;
- *     isotime - строка, содержащая текущую дату в формате "YYYY-MM-DDThh:mm:ss±hhmm".
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.traffic.provider.Actual.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.traffic.provider.Actual.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.traffic.provider.Actual.prototype.events;
-
-/**
- * 
- * Расширяет
- *             ITrafficProvider.
- * 
- * Провайдер архива пробок. Позволяет показывать состояние пробок,
- * типичное для данного региона в конкретный день недели и конкретное время суток.
- * 
- * @constructor
- * @implements {ymaps.ITrafficProvider}
- * 
- * @param {Object=} options Опции провайдера. Опции для слоев провайдера задаются через
- *                          опции глобальной коллекции слоев Map.layers.
- *                          
- *                              Опции для картиночного слоя Layer
- *                              задаются с префиксом 'trafficImage';
- *                              Опции для слоя хотспотов hotspot.Layer
- *                              задаются с префиксом 'trafficJam'.
- *                          
- * @param {Object=} state Состояние провайдера.
- */
-ymaps.traffic.provider.Archive = function(options, state) {};
-
-
-/**
- * @return {Object|null}
- */
-ymaps.traffic.provider.Archive.prototype.getTime = function() {};
-
-
-/**
- * @param {Object} time Объект с задаваемыми параметрами.
- * @param {Function=} callback Функция, которая вызывается после того, как было выставлено время.
- *                             Принимает на вход хэш с выставленными данными.
- */
-ymaps.traffic.provider.Archive.prototype.setTime = function(time, callback) {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.traffic.provider.Archive.prototype.getMap = function() {};
-
-
-/**
- * @param {ymaps.Map|null} Ссылка на карту.
- */
-ymaps.traffic.provider.Archive.prototype.setMap = function(Ссылка) {};
-
-
-/**
- * Состояние провайдера.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * isInited - признак, готов ли провайдер предоставлять данные;
- *     timeZone - смещение по времени для текущего временного пояса относительно UTC+0.
- *     Измеряется в секундах.;
- *     dst - признак перехода на зимнее/летнее время. При dst='dst' время летнее;
- *     timestamp - текущее время во временной зоне UTC+0 в секундах;
- *     localtime - локальное время, которое возвращает в ответе сервер;
- *     level - уровень загруженности дорог в баллах - от 0 до 10.
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.traffic.provider.Archive.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.traffic.provider.Archive.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.traffic.provider.Archive.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.model.ChildVertex скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeometryEditorChildModel.
- * 
- * Модель дочерней вершины. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * @constructor
- * @implements {ymaps.IGeometryEditorChildModel}
- * 
- */
-ymaps.geometryEditor.model.ChildVertex = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.getAllVerticesNumber = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.getIndex = function() {};
-
-
-/**
- * @return {ymaps.geometryEditor.model.ChildVertex|null}
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.getNextVertex = function() {};
-
-
-/**
- * @return {ymaps.geometryEditor.model.ChildVertex|null}
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.getPrevVertex = function() {};
-
-
-/**
- * @param {Array.<Number>} pixels Глобальные пиксельные координаты вершины.
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.setGlobalPixels = function(pixels) {};
-
-
-/**
- * @param {number} index Индекс дочерней вершины.
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.setIndex = function(index) {};
-
-
-/**
- * @param {ymaps.geometryEditor.model.ChildVertex|null} nextVertex Модель следующей вершины.
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.setNextVertex = function(nextVertex) {};
-
-
-/**
- * @param {ymaps.geometryEditor.model.ChildVertex|null} prevVertex Модель предыдущей вершины.
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.setPrevVertex = function(prevVertex) {};
-
-
-/**
- * @return {ymaps.IGeometryEditorModel}
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.getParent = function() {};
-
-
-/**
- * @param {Array.<Number>} pixels Пиксельные данные.
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.setPixels = function(pixels) {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.destroy = function() {};
-
-
-/**
- * @see ymaps.IGeometryEditorModel
- * 
- * @return {Array.<Number>}
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.getPixels = function() {};
-
-
-/**
- * Редактор геометрии.
- * 
- * @type {ymaps.IGeometryEditor}
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.editor;
-
-
-/**
- * Геометрия модели.
- * 
- * @type {ymaps.IBaseGeometry}
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.geometry;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometryEditor.model.ChildVertex.prototype.events;
-
-/**
- * 
- * Примечание.&nbsp;Конструктор класса geometryEditor.model.EdgeGeometry скрыт, так как данный класс не предназначен для самостоятельной инициализации.
- * 
- * Расширяет
- *             IGeometry.
- * 
- * Геометрия промежуточной метки. Конструктор недоступен в package.full (стандартный набор модулей).
- * Данный модуль загружается по требованию.
- * 
- * @constructor
- * @implements {ymaps.IGeometry}
- * 
- */
-ymaps.geometryEditor.model.EdgeGeometry = function() {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.geometryEditor.model.EdgeGeometry.prototype.getBounds = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.geometryEditor.model.EdgeGeometry.prototype.getMap = function() {};
-
-
-/**
- * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.geometryEditor.model.EdgeGeometry.prototype.getPixelGeometry = function(options) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.geometryEditor.model.EdgeGeometry.prototype.setMap = function(map) {};
-
-
-/**
- * @see ymaps.IBaseGeometry
- * 
- * @return {String}
- */
-ymaps.geometryEditor.model.EdgeGeometry.prototype.getType = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.geometryEditor.model.EdgeGeometry.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.geometryEditor.model.EdgeGeometry.prototype.options;
-
-/**
- * 
- * Расширяет
- *             ITrafficProvider.
- * 
- * Провайдер прогноза пробок. Доступен в хранилище провайдеров под ключом 'traffic#forecast'.
- * 
- * @constructor
- * @implements {ymaps.ITrafficProvider}
- * 
- * @param {Object=} options Опции провайдера. Опции для слоев провайдера задаются через
- *                          опции глобальной коллекции слоев Map.layers.
- *                          
- *                              Опции для картиночного слоя Layer
- *                              задаются с префиксом 'trafficImage';
- *                              Опции для слоя хотспотов hotspot.Layer
- *                              задаются с префиксом 'trafficJam'.
- *                          
- * @param {Object=} state Состояние провайдера.
- */
-ymaps.traffic.provider.Forecast = function(options, state) {};
-
-
-/**
- * @return {Object|null}
- */
-ymaps.traffic.provider.Forecast.prototype.getTime = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.traffic.provider.Forecast.prototype.getMap = function() {};
-
-
-/**
- * @param {ymaps.Map|null} Ссылка на карту.
- */
-ymaps.traffic.provider.Forecast.prototype.setMap = function(Ссылка) {};
-
-
-/**
- * Состояние провайдера.
- * Имена полей, доступных через метод data.Manager.get:
- * 
- * isInited - признак, готов ли провайдер предоставлять данные;
- *     timestamp - текущее время в формате unix timestamp в секундах;
- *     localtime - локальное время, для которого сервер в текущий момент отдает данные,
- *     в формате 'ЧЧ:ММ';
- *     level - уровень загруженности дорог в баллах - от 0 до 10.
- *     timeOffset - временной интервал между текущим временем и временем прогноза.
- *     Измеряется в секундах и кратен 15 минутам (900 секундам)
- *     isotime - строка, содержащая текущую дату в формате "YYYY-MM-DDThh:mm:ss±hhmm".
- * 
- * 
- * @type {ymaps.data.Manager}
- */
-ymaps.traffic.provider.Forecast.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @see ymaps.ICustomizable
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.traffic.provider.Forecast.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.traffic.provider.Forecast.prototype.events;
-
-/**
- * 
- * Статический объект.
- *             Экземпляр класса  util.Storage
- * Хранилище провайдеров.
- * 
- * 
- * @type {ymaps.util.Storage}
- */
-ymaps.traffic.provider.storage;
-
-
-ymaps.util = {};
-
-/**
- * 
- * Расширяет
- *             util.Storage.
- * 
- * Хранилище, которое предоставляет асинхронный доступ к значениям по ключам.
- * 
- * @constructor
- * @extends {ymaps.util.Storage}
- * 
- */
-ymaps.util.AsyncStorage = function() {};
-
-
-/**
- * @param {String} key Ключ, по которому можно будет произвести асинхронный вызов.
- * @param {Array.<String>=} depends Массив ключей значений из текущего хранилища,
- *                                  которые должны быть проинициализированы перед текущим. Этот аргумент может быть пропущен.
- * @param {Function} resolveCallback Функция, которая определяет значение, доступное по ключу.
- *                                   Первым аргументом в resolveCallback поступит provide-функция, в которую нужно будет передать значение.
- *                                   Вызов provide-функции может быть отложен во времени.
- *                                   Последующие аргументы - это значения из хранилища, указанные в зависимостях.
- *                                   Порядок модулей будет соответствовать порядку в массиве depends.
- * @param {Object=} context Контекст исполнения функции.
- * @return {ymaps.util.AsyncStorage}
- */
-ymaps.util.AsyncStorage.prototype.define = function(key, depends, resolveCallback, context) {};
-
-
-/**
- * @param {String} key Ключ значения.
- * @return {Boolean}
- */
-ymaps.util.AsyncStorage.prototype.isDefined = function(key) {};
-
-
-/**
- * @param {String|Array.<String>} keys Ключ или массив ключей.
- * @param {Function=} successCallback Функция обратного вызова, которая будет вызвана после получения всех значений.
- *                                    В функцию как аргументы будут переданы значения из хранилища.
- *                                    Порядок аргументов будет соответствовать порядку в массиве keys.
- * @param {Function=} errorCallback Функция обратного вызова, которая будет вызвана в случае ошибки.
- *                                  В функцию будет передан объект ошибки.
- * @param {Object=} context Контекст исполнения функции обратного вызова.
- * @return {ymaps.vow.Promise}
- */
-ymaps.util.AsyncStorage.prototype.require = function(keys, successCallback, errorCallback, context) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Базовая функция, реализующая наследование в JavaScript.
- * Реализует наследование прототипа без исполнения конструктора родителя.
- * 
- * К дочернему классу добавляется поле 'superclass', указывающее на
- * прототип родительского класса, и поле 'constructor', которое указывает на конструктор класса.
- * Через поле 'constructor' объекта 'superclass' можно обратится к конструктору родительского класса.
- * 
- * Возвращает:  Прототип дочернего класса.
- *         (тип Object).
- * 
- * @param {Function} ChildClass Дочерний класс.
- * @param {Function} ParentClass Родительский класс.
- * @param {Object} override Набор дополнительных полей и функций,
- *                          которые будут приписаны к прототипу дочернего класса.
- * 
- * @returns {Object}
- */
-ymaps.util.augment = function(ChildClass, ParentClass, override) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Связывает переданную функцию с переданным контекстом исполнения.
- * 
- * @param {Function} callback Функция.
- * @param {Object} context Контекст исполнения.
- */
-ymaps.util.bind = function(callback, context) {};
-
-/**
- * 
- * Статический объект.
- * 
- * Набор статических методов для работы с прямоугольными областями, представленными в виде двух противоположных точек в координатной системе проекции.
- * 
- */
-ymaps.util.bounds = {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds1 Первая область.
- * @param {Array.<Array.<Number>>} bounds2 Вторая область.
- * @param {ymaps.IProjection=} projection Проекция.
- * @return {Boolean}
- */
-ymaps.util.bounds.areIntersecting = function(bounds1, bounds2, projection) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} outer Внешняя область
- * @param {Array.<Array.<Number>>} inner Проверяемая область.
- * @param {ymaps.IProjection=} projection Проекция.
- * @return {Boolean}
- */
-ymaps.util.bounds.containsBounds = function(outer, inner, projection) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds Внешняя область
- * @param {Array.<Number>} point Проверяемая точка.
- * @param {ymaps.IProjection=} projection Проекция.
- * @return {Boolean}
- */
-ymaps.util.bounds.containsPoint = function(bounds, point, projection) {};
-
-
-/**
- * @param {Array.<Array.<Array.<Number>>>} sourceBounds Массив прямоугольных обласлей
- * @param {ymaps.IProjection=} projection Проекция.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.util.bounds.fromBounds = function(sourceBounds, projection) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} pixelBounds Исходные границы.
- * @param {Number} zoom Масштаб.
- * @param {ymaps.IProjection=} projection Проекция, которая будет использоваться для вычисления геокоординат.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.util.bounds.fromGlobalPixelBounds = function(pixelBounds, zoom, projection) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} points Массив точек.
- * @param {ymaps.IProjection=} projection Проекция.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.util.bounds.fromPoints = function(points, projection) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds Область.
- * @param {ymaps.IProjection=} projection Проекция.
- * @return {Array.<Number>}
- */
-ymaps.util.bounds.getCenter = function(bounds, projection) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds Область, заданная в географических координатах.
- *                                        Первая точка содержит минимальные значения широты и долготы, вторая точка -
- *                                        максимальные.
- * @param {Array.<Number>} containerSize Размер контейнера карты.
- * @param {ymaps.IProjection=} projection Проекция.
- * @param {Boolean|Object=} params Параметры или значение опции preciseZoom.
- * @return {Object}
- */
-ymaps.util.bounds.getCenterAndZoom = function(bounds, containerSize, projection, params) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds1 Первая область.
- * @param {Array.<Array.<Number>>} bounds2 Вторая область.
- * @param {ymaps.IProjection=} projection Проекция.
- * @return {Array.<Array.<Array.<Number>>>}
- */
-ymaps.util.bounds.getIntersections = function(bounds1, bounds2, projection) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds Область.
- * @param {ymaps.IProjection=} projection Проекция.
- * @return {Array.<Number>}
- */
-ymaps.util.bounds.getSize = function(bounds, projection) {};
-
-
-ymaps.util.cursor = {};
-
-/**
- * 
- * Объект, предоставляющий доступ к добавленному на карту курсору.
- * 
- * @constructor
- * 
- * @param {String} key Ключ, под которым хранится курсор в хранилище курсоров.
- */
-ymaps.util.cursor.Accessor = function(key) {};
-
-
-/**
- * @return {String}
- */
-ymaps.util.cursor.Accessor.prototype.getKey = function() {};
-
-
-/**
- */
-ymaps.util.cursor.Accessor.prototype.remove = function() {};
-
-
-/**
- * @param {String} key 
- */
-ymaps.util.cursor.Accessor.prototype.setKey = function(key) {};
-
-/**
- * 
- * Менеджер курсоров.
- * 
- * @constructor
- * 
- * @param {HTMLElement} element DOM-элемент, для которого выполняется установка курсоров.
- */
-ymaps.util.cursor.Manager = function(element) {};
-
-
-/**
- * @param {String} key Курсор. Допустимые значения:
- *                     
- *                         "arrow" - стрелка;
- *                         "crosshair" - перекрестье;
- *                         "grab" - "рука";
- *                         "grabbing" - сжатая "рука"
- *                         "help" - стрелка со знаком вопроса;
- *                         "zoom" - лупа;
- *                         "move" - курсор в виде четырех стрелок;
- *                         "pointer" - "палец";
- *                         "inherit" - унаследовать курсор от родителя.
- *                     
- * @return {ymaps.util.cursor.Accessor}
- */
-ymaps.util.cursor.Manager.prototype.push = function(key) {};
-
-
-/**
- * Менеджер событий менеджера курсоров.
- * 
- * @type {ymaps.event.Manager}
- */
-ymaps.util.cursor.Manager.prototype.events;
-
-/**
- * 
- * Статическая функция.
- * 
- * Базовая функция, реализующая объявление классов в API Яндекс.Карт.
- * При помощи этой функции можно объявить новый класс, указать у этого класса набор методов и произвести наследование от другого класса.
- * К дочернему классу приписывается поле superclass, указывающее на
- * прототип родительского класса.
- * Через поле 'constructor' объекта 'superclass' можно обратится к конструктору родительского класса.
- * 
- * Возвращает:  Класс.
- *         (тип Object).
- * 
- * @param {Function} constructor Конструктор класса.
- * @param {Function=} parentClass Родительский класс, от которого необходимо произвести наследование. Этот аргумент может быть пропущен.
- * @param {Object=} override Набор дополнительных полей и функций,
- *                           которые будут приписаны к прототипу класса. Источников может быть несколько (функция может иметь
- *                           произвольное число параметров), данные копируются справа налево (последний
- *                           аргумент имеет наивысший приоритет при копировании).
- * 
- * @returns {Object}
- */
-ymaps.util.defineClass = function(constructor, parentClass, override) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Функция, копирующая свойства из одного или нескольких
- * JavaScript-объектов в другой JavaScript-объект.
- * 
- * @param {Object} target Целевой JavaScript-объект. Будет модифицирован
- *                        в результате работы функции.
- * @param {Object} source JavaScript-объект - источник. Все его свойства
- *                        будут скопированы. Источников может быть несколько (функция может иметь
- *                        произвольное число параметров), данные копируются справа налево (последний
- *                        аргумент имеет наивысший приоритет при копировании).
- */
-ymaps.util.extend = function(target, source) {};
-
-/**
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Специальный инструмент, который предоставляет механизм для реализации перетаскивания элементов на странице.
- * При использовании следует обратить внимание, что во время работы драггера
- * в системе событий API Яндекс.Карт не будут поступать события mousemove и mouseup.
- * 
- * @constructor
- * @implements {ymaps.IEventEmitter}
- * 
- * @param {Object=} params Параметры драггера.
- */
-ymaps.util.Dragger = function(params) {};
-
-
-/**
- */
-ymaps.util.Dragger.prototype.destroy = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.util.Dragger.prototype.isDragging = function() {};
-
-
-/**
- * @param {ymaps.IDomEvent} event Инициализирующее событие.
- */
-ymaps.util.Dragger.prototype.start = function(event) {};
-
-
-/**
- */
-ymaps.util.Dragger.prototype.stop = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.util.Dragger.prototype.events;
-
-
-ymaps.util.math = {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Производит сравнение двух точек с допустимой погрешностью.
- * 
- * Возвращает:  Результат сравнения.
- *         (тип Boolean).
- * 
- * @param {Array.<Number>} first Массив для сравнения.
- * @param {Array.<Number>} second Массив, который будем сравнивать.
- * @param {Number=} diff Точность сравнения.
- * 
- * @returns {Boolean}
- */
-ymaps.util.math.areEqual = function(first, second, diff) {};
-
-/**
- * 
- * Статический объект.
- * 
- * Позволяет работать с HD экранами различных устройств.
- * 
- */
-ymaps.util.hd = {};
-
-
-/**
- * @return {Number}
- */
-ymaps.util.hd.getPixelRatio = function() {};
-
-
-/**
- * @param {ymaps.IRatioMap} hash Объект типа IRatioMap для экранов с различным пиксельным соотношением.
- * @return {Number}
- */
-ymaps.util.hd.selectRatio = function(hash) {};
-
-
-/**
- * @param {Object|ymaps.IRatioMap} hash Объект типа IRatioMap для экранов с различным пиксельным соотношением.
- * @return {Object}
- */
-ymaps.util.hd.selectValue = function(hash) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Приводит цифровое значение к заданному диапазону.
- * Считается, что диапазон значений замкнут в кольцо. Если значение выходит
- * за одну из границ диапазона, то излишек отсчитывается по кругу, со стороны
- * другой границы.
- * 
- * Возвращает:  Ограниченное значение.
- *         (тип Number).
- * 
- * @param {Number} value Ограничиваемое значение.
- * @param {Number} min Минимальный предел.
- * @param {Number} max Максимальный предел.
- * 
- * @returns {Number}
- */
-ymaps.util.math.cycleRestrict = function(value, min, max) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Ограничивает цифровое значение на входе заданными минимальным и максимальным пределами.
- * 
- * Возвращает:  Ограниченное значение.
- *         (тип Number).
- * 
- * @param {Number} value Ограничиваемое значение.
- * @param {Number} min Минимальный предел.
- * @param {Number} max Максимальный предел.
- * 
- * @returns {Number}
- */
-ymaps.util.math.restrict = function(value, min, max) {};
-
-/**
- * 
- * Статическая функция.
- * 
- * Вычисляет оптимальный центр и уровень масштабирования карты
- * для отображения переданной области на указанном типе карты.
- * Уровень масштаба будет в рамках доступного диапозона масштабов.
- * 
- * Возвращает:  Объект-promise, который будет подтвержден объектом с полями center и zoom
- * или будет отклонен с ошибкой.
- *         (тип vow.Promise).
- * 
- * @param {String|ymaps.MapType} mapType Тип карты. Cтрока-ключ из хранилища mapType.storage, 
- *                                       либо экземпляр класса MapType.
- * @param {Array.<Array.<Number>>} bounds Область, заданная в географических координатах.
- *                                        Первая точка содержит минимальные значения широты и долготы, вторая точка -
- *                                        максимальные.
- * @param {Array.<Number>} containerSize Размер контейнера карты.
- * @param {Object=} params Параметры.
- * 
- * @returns {ymaps.vow.Promise}
- */
-ymaps.util.requireCenterAndZoom = function(mapType, bounds, containerSize, params) {};
-
-/**
- * 
- * Статический объект.
- * 
- * Набор статических методов для работы с прямоугольными областями, 
- * представленными в виде пары из верхней левой и нижней правой точек
- * в декардовой координатной системе.
- * 
- */
-ymaps.util.pixelBounds = {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds1 Первая область.
- * @param {Array.<Array.<Number>>} bounds2 Вторая область.
- * @return {Boolean}
- */
-ymaps.util.pixelBounds.areIntersecting = function(bounds1, bounds2) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} outer Внешняя область
- * @param {Array.<Array.<Number>>} inner Проверяемая область.
- * @return {Boolean}
- */
-ymaps.util.pixelBounds.containsBounds = function(outer, inner) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds Внешняя область
- * @param {Array.<Number>} point Проверяемая точка.
- * @return {Boolean}
- */
-ymaps.util.pixelBounds.containsPoint = function(bounds, point) {};
-
-
-/**
- * @param {Array.<Array.<Array.<Number>>>} sourceBounds Массив прямоугольных обласлей
- * @return {Array.<Array.<Number>>}
- */
-ymaps.util.pixelBounds.fromBounds = function(sourceBounds) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} points Массив точек.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.util.pixelBounds.fromPoints = function(points) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds Область.
- * @return {Array.<Number>}
- */
-ymaps.util.pixelBounds.getCenter = function(bounds) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds1 Первая область.
- * @param {Array.<Array.<Number>>} bounds2 Вторая область.
- * @return {Array.<Array.<Number>>|Null}
- */
-ymaps.util.pixelBounds.getIntersection = function(bounds1, bounds2) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} bounds Область.
- * @return {Array.<Number>}
- */
-ymaps.util.pixelBounds.getSize = function(bounds) {};
-
-/**
- * 
- * Хранилище объектов по ключу.
- * 
- * @constructor
- * 
- */
-ymaps.util.Storage = function() {};
-
-
-/**
- * @param {String} key Ключ.
- * @param {Object} object Хранимый объект.
- * @return {ymaps.util.Storage}
- */
-ymaps.util.Storage.prototype.add = function(key, object) {};
-
-
-/**
- * @param {String|Object} key Ключ.
- * @return {Object}
- */
-ymaps.util.Storage.prototype.get = function(key) {};
-
-
-/**
- * @param {String} key Ключ.
- * @return {ymaps.util.Storage}
- */
-ymaps.util.Storage.prototype.remove = function(key) {};
-
-/**
- * 
- * Статический объект.
- * 
- * Содержит методы для создания и обработки объектов-promise.
- * Примечание.&nbsp;
- *   Данный класс является частью библиотеки Vow.
- *   Ниже описаны только некоторые методы. Полный список методов доступен здесь:
- *   http://dfilatov.github.io/vow/.
- *   Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
- *   Dual licensed under the MIT
- *   and GPL licenses.
- * Данный класс является частью библиотеки Vow.
- * Ниже описаны только некоторые методы. Полный список методов доступен здесь:
- *   http://dfilatov.github.io/vow/.
- * Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
- *   Dual licensed under the MIT
- *   and GPL licenses.
- * 
- */
-ymaps.vow = {};
-
-
-/**
- * @param {Object|Array.<Object>} iterable Набор объектов-promise и/или значений.
- * @return {ymaps.vow.Promise}
- */
-ymaps.vow.all = function(iterable) {};
-
-
-/**
- * @return {ymaps.vow.Deferred}
- */
-ymaps.vow.defer = function() {};
-
-
-/**
- * @param {Object} reason Причина отклонения.
- * @return {ymaps.vow.Promise}
- */
-ymaps.vow.reject = function(reason) {};
-
-
-/**
- * @param {Object} value Значение.
- * @return {ymaps.vow.Promise}
- */
-ymaps.vow.resolve = function(value) {};
-
-
-ymaps.vow = {};
-
-/**
- * 
- * Класс, описывающий объекты-deferred.
- * Примечание.&nbsp;
- *   Данный класс является частью библиотеки Vow.
- *   Ниже описаны только некоторые методы. Полный список методов доступен здесь:
- *   http://dfilatov.github.io/vow/.
- *   Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
- *   Dual licensed under the MIT
- *   and GPL licenses.
- * Данный класс является частью библиотеки Vow.
- * Ниже описаны только некоторые методы. Полный список методов доступен здесь:
- *   http://dfilatov.github.io/vow/.
- * Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
- *   Dual licensed under the MIT
- *   and GPL licenses.
- * Примечание.&nbsp;Не является отдельным модулем: доступен после подключения модуля vow.
- * 
- * @constructor
- * 
- */
-ymaps.vow.Deferred = function() {};
-
-
-/**
- * @return {ymaps.vow.Promise}
- */
-ymaps.vow.Deferred.prototype.promise = function() {};
-
-
-/**
- * @param {Object} reason Причина отклонения.
- */
-ymaps.vow.Deferred.prototype.reject = function(reason) {};
-
-
-/**
- * @param {Object} value Значение.
- */
-ymaps.vow.Deferred.prototype.resolve = function(value) {};
-
-/**
- * 
- * Класс, описывающий объекты-promise.
- * Спецификация Promise/A+.
- * Примечание.&nbsp;
- *   Данный класс является частью библиотеки Vow.
- *   Ниже описаны только некоторые методы. Полный список методов доступен здесь:
- *   http://dfilatov.github.io/vow/.
- *   Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
- *   Dual licensed under the MIT
- *   and GPL licenses.
- * Данный класс является частью библиотеки Vow.
- * Ниже описаны только некоторые методы. Полный список методов доступен здесь:
- *   http://dfilatov.github.io/vow/.
- * Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
- *   Dual licensed under the MIT
- *   and GPL licenses.
- * Примечание.&nbsp;Не является отдельным модулем: доступен после подключения модуля vow.
- * 
- * @constructor
- * 
- * @param {Function=} resolver Функция, которая принимает в качестве параметров методы resolve и reject
- *                             для установки состояния и значения создаваемому объекту-promise.
- */
-ymaps.vow.Promise = function(resolver) {};
-
-
-/**
- * @param {Function=} onFulfilled Функция обратного вызова, которая будет вызвана в случае если объект-promise будет разрешён.
- * @param {Function=} onRejected Функция обратного вызова, которая будет вызвана в случае если объект-promise будет отклонён.
- * @param {Function=} onProgress Функция обратного вызова, которая будет вызвана при "оповещении" объекта-promise.
- * @param {Object=} ctx Контекст выполнения функций обратного вызова.
- */
-ymaps.vow.Promise.prototype.done = function(onFulfilled, onRejected, onProgress, ctx) {};
-
-
-/**
- * @param {Function=} onFulfilled Функция обратного вызова, которая будет вызвана в случае если объект-promise будет разрешён.
- * @param {Function=} onRejected Функция обратного вызова, которая будет вызвана в случае если объект-promise будет отклонён.
- * @param {Object=} ctx Контекст выполнения функций обратного вызова.
- * @return {ymaps.vow.Promise}
- */
-ymaps.vow.Promise.prototype.spread = function(onFulfilled, onRejected, ctx) {};
-
-
-/**
- * @param {Function=} onFulfilled Функция обратного вызова, которая будет вызвана в случае если объект-promise будет разрешён.
- * @param {Function=} onRejected Функция обратного вызова, которая будет вызвана в случае если объект-promise будет отклонён.
- * @param {Function=} onProgress Функция обратного вызова, которая будет вызвана при "оповещении" объекта-promise.
- * @param {Object=} ctx Контекст выполнения функций обратного вызова.
- * @return {ymaps.vow.Promise}
- */
-ymaps.vow.Promise.prototype.then = function(onFulfilled, onRejected, onProgress, ctx) {};
-
-
-/**
- * @return {Object}
- */
-ymaps.vow.Promise.prototype.valueOf = function() {};
 
 /**
  * 
@@ -21229,6 +3879,51 @@ ymaps.IEventTrigger.prototype.fire = function(type, eventObject) {};
 /**
  * 
  * Расширяет
+ *             IEventController.
+ * 
+ * Интерфейс контроллера событий,
+ * позволяющего влиять на распространение
+ * событий по дереву.
+ * 
+ * @interface
+ * @implements {ymaps.IEventController}
+ * 
+ */
+ymaps.IEventWorkflowController = function() {};
+
+
+/**
+ * @param {ymaps.IEventManager} events Менеджер событий.
+ * @param {String} type Тип события.
+ * @param {ymaps.IEvent=} event Событие.
+ */
+ymaps.IEventWorkflowController.prototype.onAfterEventFiring = function(events, type, event) {};
+
+
+/**
+ * @param {ymaps.IEventManager} events Менеджер событий.
+ * @param {String} type Тип события.
+ * @param {ymaps.IEvent=} event Событие.
+ */
+ymaps.IEventWorkflowController.prototype.onBeforeEventFiring = function(events, type, event) {};
+
+
+/**
+ * @param {ymaps.IEventManager} events Менеджер событий.
+ * @param {String} type Тип события.
+ */
+ymaps.IEventWorkflowController.prototype.onStartListening = function(events, type) {};
+
+
+/**
+ * @param {ymaps.IEventManager} events Менеджер событий.
+ * @param {String} type Тип события.
+ */
+ymaps.IEventWorkflowController.prototype.onStopListening = function(events, type) {};
+
+/**
+ * 
+ * Расширяет
  *             ILayout.
  * 
  * Интерфейс макета, который может находится в свернутом и развернутом состоянии.
@@ -21333,304 +4028,6 @@ ymaps.IFreezable.prototype.unfreeze = function() {};
  * @type {ymaps.IEventManager}
  */
 ymaps.IFreezable.prototype.events;
-
-/**
- * 
- * Интерфейс провайдера геокодера.
- * 
- * @interface
- * 
- */
-ymaps.IGeocodeProvider = function() {};
-
-
-/**
- * @param {String} request Строка запроса.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.IGeocodeProvider.prototype.geocode = function(request, options) {};
-
-
-/**
- * @param {String} request Строка запроса.
- * @param {Object=} options Опции.
- * @return {ymaps.vow.Promise}
- */
-ymaps.IGeocodeProvider.prototype.suggest = function(request, options) {};
-
-/**
- * 
- * Расширяет
- *             IBaseGeometry, ICustomizable.
- * 
- * Интерфейс геометрии.
- * 
- * @interface
- * @implements {ymaps.IBaseGeometry}
- * @implements {ymaps.ICustomizable}
- * 
- */
-ymaps.IGeometry = function() {};
-
-
-/**
- * @return {Array.<Array.<Number>>|null}
- */
-ymaps.IGeometry.prototype.getBounds = function() {};
-
-
-/**
- * @return {ymaps.Map|null}
- */
-ymaps.IGeometry.prototype.getMap = function() {};
-
-
-/**
- * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
- * @return {ymaps.IPixelGeometry}
- */
-ymaps.IGeometry.prototype.getPixelGeometry = function(options) {};
-
-
-/**
- * @param {ymaps.Map|null} map Ссылка на карту.
- */
-ymaps.IGeometry.prototype.setMap = function(map) {};
-
-
-/**
- * @return {String}
- */
-ymaps.IGeometry.prototype.getType = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.IGeometry.prototype.events;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.IGeometry.prototype.options;
-
-/**
- * 
- * Расширяет
- *             ICustomizable, IEventEmitter.
- * 
- * Интерфейс редактора геометрии.
- * 
- * @interface
- * @implements {ymaps.ICustomizable}
- * @implements {ymaps.IEventEmitter}
- * 
- */
-ymaps.IGeometryEditor = function() {};
-
-
-/**
- */
-ymaps.IGeometryEditor.prototype.startEditing = function() {};
-
-
-/**
- */
-ymaps.IGeometryEditor.prototype.stopEditing = function() {};
-
-
-/**
- * Редактируемая геометрия.
- * 
- * @type {ymaps.IGeometry}
- */
-ymaps.IGeometryEditor.prototype.geometry;
-
-
-/**
- * Состояние редактора геометрии.
- * 
- * @type {ymaps.IDataManager}
- */
-ymaps.IGeometryEditor.prototype.state;
-
-
-/**
- * Менеджер опций.
- * 
- * @type {ymaps.IOptionManager}
- */
-ymaps.IGeometryEditor.prototype.options;
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.IGeometryEditor.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IGeometryEditorModel.
- * 
- * Интерфейс дочерней модели данных.
- * 
- * @interface
- * @implements {ymaps.IGeometryEditorModel}
- * 
- * @param {ymaps.IBaseGeometry} geometry Редактируемая дочерняя геометрия. Интерфейс IBaseGeometry не подразумевает наличие
- *                                       события pixelgeometrychange, поэтому пиксельные данные получаются от родительской модели данных.
- * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
- * @param {Array.<Number>} pixels Пиксельные данные модели.
- * @param {ymaps.IGeometryEditorModel} parent Родительская модель данных.
- */
-ymaps.IGeometryEditorChildModel = function(geometry, editor, pixels, parent) {};
-
-
-/**
- * @return {ymaps.IGeometryEditorModel}
- */
-ymaps.IGeometryEditorChildModel.prototype.getParent = function() {};
-
-
-/**
- * @param {Array.<Number>} pixels Пиксельные данные.
- */
-ymaps.IGeometryEditorChildModel.prototype.setPixels = function(pixels) {};
-
-
-/**
- */
-ymaps.IGeometryEditorChildModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Array.<Number>}
- */
-ymaps.IGeometryEditorChildModel.prototype.getPixels = function() {};
-
-
-/**
- * Редактор геометрии.
- * 
- * @type {ymaps.IGeometryEditor}
- */
-ymaps.IGeometryEditorChildModel.prototype.editor;
-
-
-/**
- * Геометрия модели.
- * 
- * @type {ymaps.IBaseGeometry}
- */
-ymaps.IGeometryEditorChildModel.prototype.geometry;
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.IGeometryEditorChildModel.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IEventEmitter.
- * 
- * Интерфейс модели данных редактора геометрии.
- * 
- * @interface
- * @implements {ymaps.IEventEmitter}
- * 
- * @param {ymaps.IBaseGeometry} geometry Редактируемая геометрия.
- * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
- */
-ymaps.IGeometryEditorModel = function(geometry, editor) {};
-
-
-/**
- */
-ymaps.IGeometryEditorModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Array.<Number>}
- */
-ymaps.IGeometryEditorModel.prototype.getPixels = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.IGeometryEditorModel.prototype.events;
-
-/**
- * 
- * Расширяет
- *             IGeometryEditorModel.
- * 
- * Интерфейс корневой модели данных.
- * 
- * @interface
- * @implements {ymaps.IGeometryEditorModel}
- * 
- * @param {ymaps.IGeometry} geometry Редактируемая геометрия.
- * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
- */
-ymaps.IGeometryEditorRootModel = function(geometry, editor) {};
-
-
-/**
- */
-ymaps.IGeometryEditorRootModel.prototype.destroy = function() {};
-
-
-/**
- * @return {Array.<Number>}
- */
-ymaps.IGeometryEditorRootModel.prototype.getPixels = function() {};
-
-
-/**
- * Менеджер событий.
- * 
- * @see ymaps.IEventEmitter
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.IGeometryEditorRootModel.prototype.events;
-
-/**
- * 
- * Интерфейс объекта, описывающего JSON-представление геометрии.
- * 
- * @interface
- * 
- */
-ymaps.IGeometryJson = function() {};
-
-
-/**
- * Идентификатор типа геометрии.
- * 
- * @type {String}
- */
-ymaps.IGeometryJson.prototype.type;
 
 /**
  * 
@@ -21963,6 +4360,304 @@ ymaps.IGeoObjectSequence.prototype.options;
  * @type {ymaps.IEventManager}
  */
 ymaps.IGeoObjectSequence.prototype.events;
+
+/**
+ * 
+ * Интерфейс провайдера геокодера.
+ * 
+ * @interface
+ * 
+ */
+ymaps.IGeocodeProvider = function() {};
+
+
+/**
+ * @param {String} request Строка запроса.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IGeocodeProvider.prototype.geocode = function(request, options) {};
+
+
+/**
+ * @param {String} request Строка запроса.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IGeocodeProvider.prototype.suggest = function(request, options) {};
+
+/**
+ * 
+ * Расширяет
+ *             IBaseGeometry, ICustomizable.
+ * 
+ * Интерфейс геометрии.
+ * 
+ * @interface
+ * @implements {ymaps.IBaseGeometry}
+ * @implements {ymaps.ICustomizable}
+ * 
+ */
+ymaps.IGeometry = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.IGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.IGeometry.prototype.getMap = function() {};
+
+
+/**
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.IGeometry.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.IGeometry.prototype.setMap = function(map) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.IGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometry.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IGeometry.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter.
+ * 
+ * Интерфейс редактора геометрии.
+ * 
+ * @interface
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.IGeometryEditor = function() {};
+
+
+/**
+ */
+ymaps.IGeometryEditor.prototype.startEditing = function() {};
+
+
+/**
+ */
+ymaps.IGeometryEditor.prototype.stopEditing = function() {};
+
+
+/**
+ * Редактируемая геометрия.
+ * 
+ * @type {ymaps.IGeometry}
+ */
+ymaps.IGeometryEditor.prototype.geometry;
+
+
+/**
+ * Состояние редактора геометрии.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.IGeometryEditor.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.IGeometryEditor.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometryEditor.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryEditorModel.
+ * 
+ * Интерфейс дочерней модели данных.
+ * 
+ * @interface
+ * @implements {ymaps.IGeometryEditorModel}
+ * 
+ * @param {ymaps.IBaseGeometry} geometry Редактируемая дочерняя геометрия. Интерфейс IBaseGeometry не подразумевает наличие
+ *                                       события pixelgeometrychange, поэтому пиксельные данные получаются от родительской модели данных.
+ * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
+ * @param {Array.<Number>} pixels Пиксельные данные модели.
+ * @param {ymaps.IGeometryEditorModel} parent Родительская модель данных.
+ */
+ymaps.IGeometryEditorChildModel = function(geometry, editor, pixels, parent) {};
+
+
+/**
+ * @return {ymaps.IGeometryEditorModel}
+ */
+ymaps.IGeometryEditorChildModel.prototype.getParent = function() {};
+
+
+/**
+ * @param {Array.<Number>} pixels Пиксельные данные.
+ */
+ymaps.IGeometryEditorChildModel.prototype.setPixels = function(pixels) {};
+
+
+/**
+ */
+ymaps.IGeometryEditorChildModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.IGeometryEditorChildModel.prototype.getPixels = function() {};
+
+
+/**
+ * Редактор геометрии.
+ * 
+ * @type {ymaps.IGeometryEditor}
+ */
+ymaps.IGeometryEditorChildModel.prototype.editor;
+
+
+/**
+ * Геометрия модели.
+ * 
+ * @type {ymaps.IBaseGeometry}
+ */
+ymaps.IGeometryEditorChildModel.prototype.geometry;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometryEditorChildModel.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Интерфейс модели данных редактора геометрии.
+ * 
+ * @interface
+ * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {ymaps.IBaseGeometry} geometry Редактируемая геометрия.
+ * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
+ */
+ymaps.IGeometryEditorModel = function(geometry, editor) {};
+
+
+/**
+ */
+ymaps.IGeometryEditorModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.IGeometryEditorModel.prototype.getPixels = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometryEditorModel.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryEditorModel.
+ * 
+ * Интерфейс корневой модели данных.
+ * 
+ * @interface
+ * @implements {ymaps.IGeometryEditorModel}
+ * 
+ * @param {ymaps.IGeometry} geometry Редактируемая геометрия.
+ * @param {ymaps.IGeometryEditor} editor Ссылка на редактор геометрии.
+ */
+ymaps.IGeometryEditorRootModel = function(geometry, editor) {};
+
+
+/**
+ */
+ymaps.IGeometryEditorRootModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.IGeometryEditorRootModel.prototype.getPixels = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.IGeometryEditorRootModel.prototype.events;
+
+/**
+ * 
+ * Интерфейс объекта, описывающего JSON-представление геометрии.
+ * 
+ * @interface
+ * 
+ */
+ymaps.IGeometryJson = function() {};
+
+
+/**
+ * Идентификатор типа геометрии.
+ * 
+ * @type {String}
+ */
+ymaps.IGeometryJson.prototype.type;
 
 /**
  * 
@@ -22648,136 +5343,6 @@ ymaps.ILayout.prototype.events;
 /**
  * 
  * Расширяет
- *             IFreezable.
- * 
- * Интерфейс доступа к геометрии "Замкнутый контур".
- * 
- * @interface
- * @implements {ymaps.IFreezable}
- * 
- */
-ymaps.ILinearRingGeometryAccess = function() {};
-
-
-/**
- * @param {Array.<Number>} position Координаты точки.
- * @return {Boolean}
- */
-ymaps.ILinearRingGeometryAccess.prototype.contains = function(position) {};
-
-
-/**
- * @param {number} index Индекс точки.
- * @return {Array.<Number>}
- */
-ymaps.ILinearRingGeometryAccess.prototype.get = function(index) {};
-
-
-/**
- * @param {number} index Индекс вершины контура.
- * @return {ymaps.IPointGeometryAccess}
- */
-ymaps.ILinearRingGeometryAccess.prototype.getChildGeometry = function(index) {};
-
-
-/**
- * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре.
- * @return {Object}
- */
-ymaps.ILinearRingGeometryAccess.prototype.getClosest = function(anchorPosition) {};
-
-
-/**
- * @return {Array.<Array.<Number>>}
- */
-ymaps.ILinearRingGeometryAccess.prototype.getCoordinates = function() {};
-
-
-/**
- * @return {String}
- */
-ymaps.ILinearRingGeometryAccess.prototype.getFillRule = function() {};
-
-
-/**
- * @return {number}
- */
-ymaps.ILinearRingGeometryAccess.prototype.getLength = function() {};
-
-
-/**
- * @param {number} index Индекс точки.
- * @param {Array.<Number>} coordinates Координаты точки.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.ILinearRingGeometryAccess.prototype.insert = function(index, coordinates) {};
-
-
-/**
- * @param {number} index Индекс точки.
- * @return {Array.<Number>}
- */
-ymaps.ILinearRingGeometryAccess.prototype.remove = function(index) {};
-
-
-/**
- * @param {number} index Индекс точки.
- * @param {Array.<Number>} coordinates Координаты точки.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.ILinearRingGeometryAccess.prototype.set = function(index, coordinates) {};
-
-
-/**
- * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.ILinearRingGeometryAccess.prototype.setCoordinates = function(coordinates) {};
-
-
-/**
- * @param {String} fillRule Идентификатор алгоритма заливки.
- * @return {ymaps.ILinearRingGeometryAccess}
- */
-ymaps.ILinearRingGeometryAccess.prototype.setFillRule = function(fillRule) {};
-
-
-/**
- * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
- * @param {number} number Количество удаляемых точек.
- * @return {Array.<Array.<Number>>}
- */
-ymaps.ILinearRingGeometryAccess.prototype.splice = function(index, number) {};
-
-
-/**
- * @return {ymaps.IFreezable}
- */
-ymaps.ILinearRingGeometryAccess.prototype.freeze = function() {};
-
-
-/**
- * @return {Boolean}
- */
-ymaps.ILinearRingGeometryAccess.prototype.isFrozen = function() {};
-
-
-/**
- * @return {ymaps.IFreezable}
- */
-ymaps.ILinearRingGeometryAccess.prototype.unfreeze = function() {};
-
-
-/**
- * Менеджер событий объекта.
- * 
- * @type {ymaps.IEventManager}
- */
-ymaps.ILinearRingGeometryAccess.prototype.events;
-
-/**
- * 
- * Расширяет
  *             IGeometry, ILineStringGeometryAccess.
  * 
  * Интерфейс геометрии "Ломаная линия".
@@ -23048,6 +5613,136 @@ ymaps.ILineStringGeometryAccess.prototype.events;
 /**
  * 
  * Расширяет
+ *             IFreezable.
+ * 
+ * Интерфейс доступа к геометрии "Замкнутый контур".
+ * 
+ * @interface
+ * @implements {ymaps.IFreezable}
+ * 
+ */
+ymaps.ILinearRingGeometryAccess = function() {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.contains = function(position) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.get = function(index) {};
+
+
+/**
+ * @param {number} index Индекс вершины контура.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре.
+ * @return {Object}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.getFillRule = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.getLength = function() {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.remove = function(index) {};
+
+
+/**
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.splice = function(index, number) {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.freeze = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.isFrozen = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий объекта.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ILinearRingGeometryAccess.prototype.events;
+
+/**
+ * 
+ * Расширяет
  *             IEventEmitter.
  * 
  * Интерфейс объекта, управляющего движением карты.
@@ -23135,6 +5830,26 @@ ymaps.IMapObjectCollection.prototype.events;
  * @type {ymaps.IOptionManager}
  */
 ymaps.IMapObjectCollection.prototype.options;
+
+/**
+ * 
+ * Объект-описание состояния карты.
+ * Объекты с таким интерфейсом возвращаются сервисом загрузки
+ * YMapsML.
+ * 
+ * См.: geoXml.load 
+ * 
+ * @interface
+ * 
+ */
+ymaps.IMapState = function() {};
+
+
+/**
+ * @param {ymaps.Map} map Карта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.IMapState.prototype.applyToMap = function(map) {};
 
 /**
  * 
@@ -25466,66 +8181,17360 @@ ymaps.IZoomControlLayout.prototype.events;
 
 /**
  * 
- * Объект-описание состояния карты.
- * Объекты с таким интерфейсом возвращаются сервисом загрузки
- * YMapsML.
+ * Расширяет
+ *             ILayer, IParentOnMap, IPositioningContext.
  * 
- * См.: geoXml.load 
+ * Тайловый слой. Позволяет отображать на карте подложку, состоящую из тайлов.
  * 
- * @interface
+ * @constructor
+ * @implements {ymaps.ILayer}
+ * @implements {ymaps.IParentOnMap}
+ * @implements {ymaps.IPositioningContext}
  * 
+ * @param {String|Function} tileUrlTemplate Строковый шаблон URL тайла,
+ *                                          либо функция, которая генерирует URL тайла.
+ *                                          Для строкового шаблона поддерживается подстановка:
+ *                                          
+ * @param {Object=} options Опции.
  */
-ymaps.IMapState = function() {};
+ymaps.Layer = function(tileUrlTemplate, options) {};
 
 
 /**
- * @param {ymaps.Map} map Карта.
+ * @param {Number} clientPixelPoint Точка в клиентских пиксельных
+ *                                  координатах.
+ * @param {Number} tileZoom Уровень масштаба тайла.
+ * @return {Array.<Number>}
+ */
+ymaps.Layer.prototype.clientPixelsToNumber = function(clientPixelPoint, tileZoom) {};
+
+
+/**
+ * @return {ymaps.IPane}
+ */
+ymaps.Layer.prototype.getPane = function() {};
+
+
+/**
+ * @param {Number} zoom Значение коэффициента мастабирования.
+ * @return {Array.<Number>}
+ */
+ymaps.Layer.prototype.getTileSize = function(zoom) {};
+
+
+/**
+ * @param {*} tileNumber 
+ * @param {*} tileZoom 
+ * @return {String|null}
+ */
+ymaps.Layer.prototype.getTileUrl = function(tileNumber, tileZoom) {};
+
+
+/**
+ * @return {String|Function}
+ */
+ymaps.Layer.prototype.getTileUrlTemplate = function() {};
+
+
+/**
+ * @param {Array.<number>} tileNumber Номер тайла.
+ * @param {number} tileZoom Уровень масштаба тайла.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.Layer.prototype.numberToClientBounds = function(tileNumber, tileZoom) {};
+
+
+/**
+ * @param {Array.<number>} number Номер тайла.
+ * @param {number} tileZoom Уровень масштабирования тайла.
+ * @return {Array.<number>|null}
+ */
+ymaps.Layer.prototype.restrict = function(number, tileZoom) {};
+
+
+/**
+ * @param {String|Function} tileUrlTemplate Строковый шаблон URL тайла, либо функция, которая его генерирует.
+ */
+ymaps.Layer.prototype.setTileUrlTemplate = function(tileUrlTemplate) {};
+
+
+/**
+ * @param {*} updateBounds 
+ */
+ymaps.Layer.prototype.update = function(updateBounds) {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.Layer.prototype.getBrightness = function() {};
+
+
+/**
+ * @param {Array.<Number>} coords Точка на карте, для которой запрашивается
+ *                                информация об авторских правах.
+ * @param {Number} zoom Уровень масштабирования, для которого запрашивается
+ *                      информация об авторских правах.
  * @return {ymaps.vow.Promise}
  */
-ymaps.IMapState.prototype.applyToMap = function(map) {};
+ymaps.Layer.prototype.getCopyrights = function(coords, zoom) {};
+
+
+/**
+ * @param {Array.<Number>} point Точка
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Layer.prototype.getZoomRange = function(point) {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.Layer.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.Layer.prototype.setParent = function(parent) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.Layer.prototype.getMap = function() {};
+
+
+/**
+ * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.Layer.prototype.fromClientPixels = function(clientPixelPoint) {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.Layer.prototype.getZoom = function() {};
+
+
+/**
+ * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.Layer.prototype.toClientPixels = function(globalPixelPoint) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.Layer.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.Layer.prototype.options;
 
 /**
  * 
  * Расширяет
- *             IEventController.
+ *             ILayer, IMapObjectCollection.
  * 
- * Интерфейс контроллера событий,
- * позволяющего влиять на распространение
- * событий по дереву.
+ * Коллекция слоев.
  * 
- * @interface
- * @implements {ymaps.IEventController}
+ * @constructor
+ * @implements {ymaps.ILayer}
+ * @implements {ymaps.IMapObjectCollection}
  * 
  */
-ymaps.IEventWorkflowController = function() {};
+ymaps.LayerCollection = function() {};
 
 
 /**
- * @param {ymaps.IEventManager} events Менеджер событий.
- * @param {String} type Тип события.
- * @param {ymaps.IEvent=} event Событие.
+ * @param {ymaps.ILayer|String} child Слой (ключ хранилища layer.storage или экземпляр класса ILayer), который нужно добавить.
+ * @return {ymaps.LayerCollection}
  */
-ymaps.IEventWorkflowController.prototype.onAfterEventFiring = function(events, type, event) {};
+ymaps.LayerCollection.prototype.add = function(child) {};
 
 
 /**
- * @param {ymaps.IEventManager} events Менеджер событий.
- * @param {String} type Тип события.
- * @param {ymaps.IEvent=} event Событие.
+ * @param {Function} callback Функция-обработчик.
+ * @param {Object=} context Контекст выполнения функции.
  */
-ymaps.IEventWorkflowController.prototype.onBeforeEventFiring = function(events, type, event) {};
+ymaps.LayerCollection.prototype.each = function(callback, context) {};
 
 
 /**
- * @param {ymaps.IEventManager} events Менеджер событий.
- * @param {String} type Тип события.
+ * @return {Number}
  */
-ymaps.IEventWorkflowController.prototype.onStartListening = function(events, type) {};
+ymaps.LayerCollection.prototype.getBrightness = function() {};
 
 
 /**
- * @param {ymaps.IEventManager} events Менеджер событий.
- * @param {String} type Тип события.
+ * @param {Array.<Number>=} coords Точка на карте, для которой запрашивается
+ *                                 информация об авторских правах.
+ * @param {Number=} zoom Уровень масштабирования, для которого запрашивается
+ *                       информация об авторских правах.
+ * @return {ymaps.vow.Promise}
  */
-ymaps.IEventWorkflowController.prototype.onStopListening = function(events, type) {};
+ymaps.LayerCollection.prototype.getCopyrights = function(coords, zoom) {};
+
+
+/**
+ * @param {*} coords 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.LayerCollection.prototype.getZoomRange = function(coords) {};
+
+
+/**
+ * @param {ymaps.ILayer|String} child Слой (строка-ключ из layer.storage или экземпляр класса ILayer), который нужно удалить.
+ * @return {ymaps.LayerCollection}
+ */
+ymaps.LayerCollection.prototype.remove = function(child) {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.LayerCollection.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.LayerCollection.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.ICollection
+ * 
+ * @return {ymaps.IIterator}
+ */
+ymaps.LayerCollection.prototype.getIterator = function() {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.LayerCollection.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.LayerCollection.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.LayerCollection.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter, IGeoObject, IParentOnMap.
+ * 
+ * Менеджер объектов, осуществляющий их оптимальную подгрузку с сервера.
+ * Позволяет оптимально загружать, отображать, кластеризовать и управлять видимостью объектов.
+ * Менеджер отправляет запрос за данными по указанному url в JSONP-формате.
+ * Описание формата соответствует формату добавляемых в ObjectManager объектов ObjectManager.add.
+ * Обратите внимание, что у объектов, отрисованных на карте через данный менеджер, нельзя включать режимы редактирования и перетаскивания.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * @implements {ymaps.IGeoObject}
+ * @implements {ymaps.IParentOnMap}
+ * 
+ * @param {String} urlTemplate Шаблон URL данных. Поддерживаются
+ *                             специальные конструкции по аналогии с Layer.
+ *                             Также поддерживаются подстановки:
+ *                             
+ *                                 %b заменяется на массив географических координат,
+ *                                 описывающих прямоугольную область, для которой требуется загрузить данные.
+ *                                 %t заменяется на массив номеров тайлов, описывающих прямоугольную область,
+ *                                 для которой требуется загрузить данные.
+ *                             
+ * @param {Object=} options Опции.
+ *                          
+ *                              Можно задавать все опции, указанные в описании Clusterer,
+ *                                  за исключением опций hasBalloon и hasHint.
+ *                              
+ *                              Опции для кластеров задаются с префиксом cluster.
+ *                                  Список опций указан в описании класса ClusterPlacemark;
+ *                              
+ *                              
+ *                                  Опции для одиночных объектов задаются с префиксом geoObject.
+ *                                  Список опций указан в описании класса Placemark.
+ *                              
+ *                          
+ */
+ymaps.LoadingObjectManager = function(urlTemplate, options) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.LoadingObjectManager.prototype.getBounds = function() {};
+
+
+/**
+ * @param {Object} id Идентификатор объекта, для которого нужно получить состояние.
+ * @return {Object}
+ */
+ymaps.LoadingObjectManager.prototype.getObjectState = function(id) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.LoadingObjectManager.prototype.getPixelBounds = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.LoadingObjectManager.prototype.getUrlTemplate = function() {};
+
+
+/**
+ */
+ymaps.LoadingObjectManager.prototype.reloadData = function() {};
+
+
+/**
+ * @param {String} urlTemplate шаблон URL данных.
+ */
+ymaps.LoadingObjectManager.prototype.setUrlTemplate = function(urlTemplate) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.LoadingObjectManager.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.LoadingObjectManager.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.LoadingObjectManager.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.LoadingObjectManager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.LoadingObjectManager.prototype.getMap = function() {};
+
+
+/**
+ * Коллекция кластеров, сгенерированных менеджером.
+ * 
+ * @type {ymaps.objectManager.ClusterCollection}
+ */
+ymaps.LoadingObjectManager.prototype.clusters;
+
+
+/**
+ * Коллекция объектов, добавленных в слой.
+ * 
+ * @type {ymaps.objectManager.ObjectCollection}
+ */
+ymaps.LoadingObjectManager.prototype.objects;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.LoadingObjectManager.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.LoadingObjectManager.prototype.events;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.LoadingObjectManager.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.LoadingObjectManager.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.LoadingObjectManager.prototype.state;
+
+/**
+ * 
+ * Расширяет
+ *             IDomEventEmitter.
+ * 
+ * Класс для создания и управления картой.
+ * 
+ * @constructor
+ * @implements {ymaps.IDomEventEmitter}
+ * 
+ * @param {Object|String} element Ссылка на HTML-элемент, в котором размещается карта, или идентификатор этого HTML-элемента.
+ * @param {Object} state Параметры карты.
+ * @param {Object=} options Опции карты. Через опции карты можно задавать настройки как самой карты,
+ *                          так и добавленных на неё объектов:
+ *                          
+ *                              опции поведений карты;
+ *                              опции балуна карты с префиксом balloon;
+ *                              опции хинта карты с префиксом hint;
+ *                              опции гео-объектов с префиксом geoObject;
+ *                              опции слоев с префиксом layer;
+ *                              опции слоев хотспотов с префиксом hotspotLayer;
+ *                          
+ *                          Опции, которые трактует непосредственно сама карта, перечислены ниже.
+ */
+ymaps.Map = function(element, state, options) {};
+
+
+/**
+ */
+ymaps.Map.prototype.destroy = function() {};
+
+
+/**
+ * @param {Object=} options Опции.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.Map.prototype.getBounds = function(options) {};
+
+
+/**
+ * @param {Object=} options Опции.
+ * @return {Array.<Number>}
+ */
+ymaps.Map.prototype.getCenter = function(options) {};
+
+
+/**
+ * @param {Object=} options Опции.
+ * @return {Array.<Number>}
+ */
+ymaps.Map.prototype.getGlobalPixelCenter = function(options) {};
+
+
+/**
+ * @return {String|ymaps.MapType}
+ */
+ymaps.Map.prototype.getType = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.Map.prototype.getZoom = function() {};
+
+
+/**
+ * @param {Array.<Number>|Array.<Object>} center Центр карты или массив точек для последовательного обхода.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Map.prototype.panTo = function(center, options) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds Границы области показа.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Map.prototype.setBounds = function(bounds, options) {};
+
+
+/**
+ * @param {Array.<Number>} center Геокоординаты центра карты.
+ * @param {Number=} zoom Коэффициент масштабирования карты.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Map.prototype.setCenter = function(center, zoom, options) {};
+
+
+/**
+ * @param {Array.<Number>} globalPixelCenter Пиксельные координаты нового центра карты.
+ * @param {Number=} zoom Коэффициент масштабирования карты.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Map.prototype.setGlobalPixelCenter = function(globalPixelCenter, zoom, options) {};
+
+
+/**
+ * @param {String|ymaps.MapType} type Тип карты. Может быть ключом или или экземпляром класса MapType.
+ *                                    Список доступных ключей:
+ *                                    
+ *                                        'yandex#map' - тип карты "схема";
+ *                                        'yandex#satellite' - тип карты "спутник";
+ *                                        'yandex#hybrid' - тип карты "гибрид";
+ *                                        'yandex#publicMap' - тип карты "народная карта";
+ *                                        'yandex#publicMapHybrid' - тип карты "народный гибрид".
+ *                                    
+ *                                    Ключи 'yandex#publicMap' и 'yandex#publicMapHybrid' доступны только для России и Украины.
+ * @param {Object=} options Опции карты.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Map.prototype.setType = function(type, options) {};
+
+
+/**
+ * @param {Number} zoom Коэффициент масштабирования карты.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Map.prototype.setZoom = function(zoom, options) {};
+
+
+/**
+ * Менеджер действий карты.
+ * 
+ * @type {ymaps.map.action.Manager}
+ */
+ymaps.Map.prototype.action;
+
+
+/**
+ * Балун карты.
+ * 
+ * @type {ymaps.map.Balloon}
+ */
+ymaps.Map.prototype.balloon;
+
+
+/**
+ * Менеджер поведений карты. Позволяет включать и выключать поведения,
+ * а также предоставляет доступ к их методам и свойствам.
+ * 
+ * @type {ymaps.map.behavior.Manager}
+ */
+ymaps.Map.prototype.behaviors;
+
+
+/**
+ * Контейнер карты.
+ * 
+ * @type {ymaps.map.Container}
+ */
+ymaps.Map.prototype.container;
+
+
+/**
+ * Элементы управления картой.
+ * 
+ * @type {ymaps.control.Manager}
+ */
+ymaps.Map.prototype.controls;
+
+
+/**
+ * Преобразователь пиксельных точек карты
+ * из глобальных в локальные и наоборот.
+ * 
+ * @type {ymaps.map.Converter}
+ */
+ymaps.Map.prototype.converter;
+
+
+/**
+ * Менеджер размещённой на карте информации об авторских правах.
+ * 
+ * @type {ymaps.map.Copyrights}
+ */
+ymaps.Map.prototype.copyrights;
+
+
+/**
+ * Менеджер курсоров карты.
+ * 
+ * @type {ymaps.util.cursor.Manager}
+ */
+ymaps.Map.prototype.cursors;
+
+
+/**
+ * Менеджер событий карты. Поддерживает подписку с приоритетами.
+ * Бросает события типа MapEvent.
+ * 
+ * Примеры: 
+ * 
+ * 1.
+ * 
+ * 2.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.Map.prototype.events;
+
+
+/**
+ * Менеджер геообъектов карты.
+ * 
+ * @type {ymaps.map.GeoObjects}
+ */
+ymaps.Map.prototype.geoObjects;
+
+
+/**
+ * Хинт карты.
+ * 
+ * @type {ymaps.map.Hint}
+ */
+ymaps.Map.prototype.hint;
+
+
+/**
+ * Менеджер слоёв карты.
+ * 
+ * См.: Layer 
+ * 
+ * @type {ymaps.map.layer.Manager}
+ */
+ymaps.Map.prototype.layers;
+
+
+/**
+ * Опции карты.
+ * 
+ * @type {ymaps.option.Manager}
+ */
+ymaps.Map.prototype.options;
+
+
+/**
+ * Менеджер контейнеров объектов карты.
+ * 
+ * @type {ymaps.map.pane.Manager}
+ */
+ymaps.Map.prototype.panes;
+
+
+/**
+ * Объект, предоставляющий доступ к информации о доступных
+ * в точке уровнях масштабирования.
+ * 
+ * @type {ymaps.map.ZoomRange}
+ */
+ymaps.Map.prototype.zoomRange;
+
+/**
+ * 
+ * Расширяет
+ *             Event.
+ * 
+ * Объект, описывающий произошедшее над картой событие.
+ * Имена полей, доступных через метод Event.get:
+ * 
+ * coords - географические координаты точки, в которой произошло событие;
+ *     globalPixels - координаты события в глобальных пикселях от левого верхнего угла мира;
+ *     pagePixels - координаты события в пикселях от левого верхнего угла страницы
+ *     (также доступно под именем position);
+ *     clientPixels - координаты события в пикселях от левого верхнего угла окна браузера;
+ *     domEvent - исходное DOM-событие (в виде объекта DomEvent), если оно имеется.
+ * 
+ * 
+ * @constructor
+ * @extends {ymaps.Event}
+ * 
+ * @param {Object} originalEvent Данные, связанные с событием. Должны содержать поле "map" указывающее на карту,
+ *                               над которой произошло событие.
+ * @param {ymaps.IEvent=} sourceEvent Исходное событие.
+ */
+ymaps.MapEvent = function(originalEvent, sourceEvent) {};
+
+/**
+ * 
+ * Тип карты.
+ * 
+ * @constructor
+ * 
+ * @param {String} name Название типа.
+ * @param {Array.<Function>|Array.<String>} layers Массив, содержащий конструкторы слоев или ключи.
+ */
+ymaps.MapType = function(name, layers) {};
+
+
+/**
+ * @return {Array.<Function>|Array.<String>}
+ */
+ymaps.MapType.prototype.getLayers = function() {};
+
+
+/**
+ * @param {*} map 
+ * @return {String}
+ */
+ymaps.MapType.prototype.getName = function(map) {};
+
+/**
+ * 
+ * Объект, отслеживающий изменения определенных полей данных на заданном менеджере данных.
+ * Также может использоваться для отслеживания изменений опций.
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.IDataManager|ymaps.IOptionManager} dataManager Менеджер данных.
+ */
+ymaps.Monitor = function(dataManager) {};
+
+
+/**
+ * @param {String|Array.<String>} name Имя, либо массив имен полей данных, за которыми устанавливается наблюдение.
+ * @param {Function} changeCallback Обработчик изменения поля данных, либо одного из полей данных группы.
+ * @param {Object=} context Контекст исполнения обработчика изменений данных, а также опциональных обработчиков.
+ * @param {Object=} params Опциональные параметры.
+ * @return {ymaps.Monitor}
+ */
+ymaps.Monitor.prototype.add = function(name, changeCallback, context, params) {};
+
+
+/**
+ * @return {ymaps.Monitor}
+ */
+ymaps.Monitor.prototype.forceChange = function() {};
+
+
+/**
+ * @param {String} name Имя поля данных.
+ * @return {Object}
+ */
+ymaps.Monitor.prototype.get = function(name) {};
+
+
+/**
+ * @param {String|Array.<String>} name Имя, либо массив имен полей данных, для которых отключается наблюдение.
+ * @return {ymaps.Monitor}
+ */
+ymaps.Monitor.prototype.remove = function(name) {};
+
+
+/**
+ * @return {ymaps.Monitor}
+ */
+ymaps.Monitor.prototype.removeAll = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter, IGeoObject, IParentOnMap.
+ * 
+ * Менеджер объектов.
+ * Позволяет оптимально отображать, кластеризовать и управлять видимостью объектов.
+ * Обратите внимание, что у объектов, отрисованных на карте через данный менеджер, нельзя включать режимы редактирования и перетаскивания.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * @implements {ymaps.IGeoObject}
+ * @implements {ymaps.IParentOnMap}
+ * 
+ * @param {Object=} options Опции.
+ *                          
+ *                              Можно задавать все опции, указанные в описании Clusterer,
+ *                                  за исключением опций hasBalloon и hasHint.
+ *                              
+ *                              Опции для кластеров задаются с префиксом cluster.
+ *                                  Список опций указан в описании класса ClusterPlacemark;
+ *                              
+ *                              
+ *                                  Опции для одиночных объектов задаются с префиксом geoObject.
+ *                                  Список опций указан в описании класса Placemark.
+ *                              
+ *                          
+ */
+ymaps.ObjectManager = function(options) {};
+
+
+/**
+ * @param {Object|Array.<Object>|String} objects Строка или объект с JSON-описанием объектов.
+ *                                               JSON-описание объектов строится по следующему принципу (см. пример ниже).
+ *                                               Объектом может быть сущность или коллекция сущностей.
+ *                                               Коллекция сущностей представляет из себя объект с полями:
+ *                                               
+ *                                                   type - тип объекта. Значение поля должно быть равно "FeatureCollection";
+ *                                                   features - массив дочерних сущностей коллекции. Дочерние объекты могут быть сущностями или
+ *                                                   вложенными коллекциями сущностей.
+ *                                               
+ *                                               Сущность представляет из себя объект с полями:
+ *                                               
+ *                                                   id - уникальный идентификатор объекта. Обязательное поле;
+ *                                                   type - тип объекта. Значение поля должно быть равно "Feature";
+ *                                                   geometry - геометрия объекта. Содержит поля type и coordinates. Значение соответствует,
+ *                                                   передаваемому в конструктор GeoObject;
+ *                                                   options - опции геообъекта;
+ *                                                   properties - данные геообъекта.
+ *                                               
+ * @return {ymaps.ObjectManager}
+ */
+ymaps.ObjectManager.prototype.add = function(objects) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.ObjectManager.prototype.getBounds = function() {};
+
+
+/**
+ * @param {*}  
+ * @return {String|Function|null}
+ */
+ymaps.ObjectManager.prototype.getFilter = function() {};
+
+
+/**
+ * @param {Object} id Идентификатор объекта, для которого нужно получить состояние.
+ * @return {Object}
+ */
+ymaps.ObjectManager.prototype.getObjectState = function(id) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.ObjectManager.prototype.getPixelBounds = function() {};
+
+
+/**
+ * @param {Object|Array.<Object>|String} objects Строка, объект с JSON-описанием объектов или массив
+ *                                               идентификаторов удаляемых объектов.
+ *                                               Формат описания объектов см. в описании метода ObjectManager.add
+ * @return {ymaps.ObjectManager}
+ */
+ymaps.ObjectManager.prototype.remove = function(objects) {};
+
+
+/**
+ * @return {ymaps.ObjectManager}
+ */
+ymaps.ObjectManager.prototype.removeAll = function() {};
+
+
+/**
+ * @param {Function|String} filterFunction функция-фильтр. Получает на вход единичный объект, добавленный
+ *                                         в ObjectManager. Если функция возвращает true, объект будет обработан. Если false - объект будет
+ *                                         исключен из дальнейшей обработки.
+ *                                         Также в качестве фильтра можно передавать строку.
+ *                                         В строке-фильтре доступны следующие ключевые слова:
+ *                                         
+ *                                             options - обращение к опциям объекта;
+ *                                             properties - обращение к данным объекта;
+ *                                             geometry - обращение к геометрии объекта;
+ *                                             id - обращение к идентификатору объекта;
+ *                                         
+ *                                         В качестве фильтра можно указывать выражение, возвращающее true или false.
+ */
+ymaps.ObjectManager.prototype.setFilter = function(filterFunction) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.ObjectManager.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.ObjectManager.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.ObjectManager.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.ObjectManager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.ObjectManager.prototype.getMap = function() {};
+
+
+/**
+ * Коллекция кластеров, сгенерированных менеджером.
+ * 
+ * @type {ymaps.objectManager.ClusterCollection}
+ */
+ymaps.ObjectManager.prototype.clusters;
+
+
+/**
+ * Коллекция объектов, добавленных в слой.
+ * 
+ * @type {ymaps.objectManager.ObjectCollection}
+ */
+ymaps.ObjectManager.prototype.objects;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.ObjectManager.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.ObjectManager.prototype.events;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.ObjectManager.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.ObjectManager.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.ObjectManager.prototype.state;
+
+/**
+ * 
+ * Расширяет
+ *             GeoObject.
+ * 
+ * Метка. Представляет собой геообъект с геометрией geometry.Point.
+ * 
+ * См.: GeoObject geometry.Point 
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
+ * 
+ * @param {Array.<Number>|Object|ymaps.IPointGeometry} geometry Координаты метки или хэш с описанием геометрии, или
+ *                                                              ссылка на объект точечной геометрии.
+ * @param {Object|ymaps.IDataManager=} properties Данные метки. Могут задаваться как экземпляр класса,
+ *                                                реализующего интерфейс IDataManager, либо в виде хэша.
+ *                                                При значениях опций по умолчанию геообъектом трактуются следующие поля данных:
+ *                                                
+ *                                                    iconContent — содержимое иконки геообъекта;
+ *                                                    hintContent — содержимое всплывающей подсказки геообъекта;
+ *                                                    balloonContent — содержимое балуна геообъекта;
+ *                                                    balloonContentHeader — содержимое заголовка балуна геообъекта;
+ *                                                    balloonContentBody — содержимое основой части балуна геообъекта;
+ *                                                    balloonContentFooter — содержимое нижней части балуна геообъекта.
+ *                                                
+ *                                                Поле balloonContent является кратким обозначением для поля balloonContentBody, но при одновременном задании
+ *                                                balloonContentBody более приоритетен.
+ *                                                Также вы можете дополнить данные метки своими собственными полями и использовать их везде, где это возможно.
+ *                                                Например в макете метки или макете балуна.
+ * @param {Object=} options Опции метки.
+ *                          
+ */
+ymaps.Placemark = function(geometry, properties, options) {};
+
+
+/**
+ * Редактор геометрии "Точка".
+ * 
+ * @type {ymaps.geometryEditor.Point}
+ */
+ymaps.Placemark.prototype.editor;
+
+
+/**
+ * Геометрия типа "Точка".
+ * 
+ * @type {ymaps.geometry.Point}
+ */
+ymaps.Placemark.prototype.geometry;
+
+/**
+ * 
+ * Расширяет
+ *             GeoObject.
+ * 
+ * Многоугольник. Представляет собой геообъект с геометрией geometry.Polygon.
+ * 
+ * См.: GeoObject geometry.Polygon 
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
+ * 
+ * @param {Array.<Array.<Array.<Number>>>|Object|ymaps.IPolygonGeometry} geometry Координаты вершин ломаных, определяющих
+ *                                                                                внешнюю и внутренние границы многоугольника, хэш-объект с параметрами геометрии или ссылка на объект геометрии.
+ *                                                                                Внутренняя граница может отсутствовать.
+ * @param {Object|ymaps.IDataManager=} properties Данные многоугольника. Могут задаваться как экземпляр класса,
+ *                                                реализующего интерфейс IDataManager, либо в виде хэша.
+ *                                                При значениях опций по умолчанию геообъектом трактуются следующие поля данных:
+ *                                                
+ *                                                    hintContent - содержимое всплывающей подсказки многоугольника;
+ *                                                    balloonContent - содержимое балуна многоугольника;
+ *                                                    balloonContentHeader - содержимое заголовка балуна многоугольника;
+ *                                                     balloonContentBody - содержимое основой части балуна многоугольника;
+ *                                                     balloonContentFooter - содержимое нижней части балуна многоугольника.
+ *                                                
+ *                                                Поле balloonContent является кратким обозначением для поля balloonContentBody, но при одновременном задании
+ *                                                balloonContentBody более приоритетен.
+ *                                                Также вы можете дополнить данные многоугольника своими собственными полями и использовать их везде, где это возможно.
+ *                                                Например в макете балуна многоугольника.
+ * @param {Object=} options Опции многоугольника. Используя этот параметр можно задавать как опции самого многоульника,
+ *                          так и опции его составных частей:
+ *                          
+ *                              Опции балуна многоульника с префиксом balloon.
+ *                              Опции всплывающей подсказки многоульника с префиксом hint.
+ *                              Опции редактора геометрии многоульника с префиксом editor. Смотрите описание класса geometryEditor.Polygon.
+ *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии
+ *                              geometry.Polygon.
+ *                          
+ */
+ymaps.Polygon = function(geometry, properties, options) {};
+
+
+/**
+ * Редактор геометрии "Многоугольник".
+ * 
+ * @type {ymaps.geometryEditor.Polygon}
+ */
+ymaps.Polygon.prototype.editor;
+
+
+/**
+ * Геометрия типа "Многоугольник".
+ * 
+ * @type {ymaps.geometry.Polygon}
+ */
+ymaps.Polygon.prototype.geometry;
+
+/**
+ * 
+ * Расширяет
+ *             GeoObject.
+ * 
+ * Ломаная линия. Представляет собой геообъект с геометрией geometry.LineString.
+ * 
+ * См.: GeoObject geometry.LineString 
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
+ * 
+ * @param {Array.<Array.<Number>>|Object|ymaps.ILineStringGeometry} geometry Координаты вершин, хэш-объект с параметрами геометрии или ссылка на объект геометрии ломаной линии.
+ * @param {Object|ymaps.IDataManager=} properties Данные ломаной. Могут задаваться как экземпляр класса,
+ *                                                реализующего интерфейс IDataManager, либо в виде хэша.
+ *                                                При значениях опций по умолчанию геообъектом трактуются следующие поля данных:
+ *                                                
+ *                                                    hintContent - содержимое всплывающей подсказки ломаной;
+ *                                                    balloonContent - содержимое балуна ломаной;
+ *                                                    balloonContentHeader - содержимое заголовка балуна ломаной;
+ *                                                    balloonContentBody - содержимое основой части балуна ломаной;
+ *                                                    balloonContentFooter - содержимое нижней части балуна ломаной.
+ *                                                
+ *                                                Поле balloonContent является кратким обозначением для поля balloonContentBody, но при одновременном задании
+ *                                                balloonContentBody более приоритетен.
+ *                                                Также вы можете дополнить данные ломаной своими собственными полями и использовать их, например, в макете хинта.
+ * @param {Object=} options Опции ломаной. Используя этот параметр можно задавать как опции самой ломаной,
+ *                          так и опции ее составных частей:
+ *                          
+ *                              Опции балуна ломаной с префиксом balloon.
+ *                              Опции всплывающей подсказки ломаной с префиксом hint.
+ *                              Опции редактора геометрии ломаной с префиксом editor. Смотрите описание класса geometryEditor.LineString.
+ *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии
+ *                              geometry.LineString.
+ *                          
+ */
+ymaps.Polyline = function(geometry, properties, options) {};
+
+
+/**
+ * Редактор геометрии "Ломаная линия".
+ * 
+ * @type {ymaps.geometryEditor.LineString}
+ */
+ymaps.Polyline.prototype.editor;
+
+
+/**
+ * Геометрия типа "Ломаная линия".
+ * 
+ * @type {ymaps.geometry.LineString}
+ */
+ymaps.Polyline.prototype.geometry;
+
+/**
+ * 
+ * Расширяет
+ *             IPopup.
+ * 
+ * Класс для создания инфо-объекта.
+ * 
+ * @constructor
+ * @implements {ymaps.IPopup}
+ * 
+ * @param {ymaps.Map} map Ссылка на карту.
+ * @param {Object=} options Опции.
+ */
+ymaps.Popup = function(map, options) {};
+
+
+/**
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.close = function(force) {};
+
+
+/**
+ */
+ymaps.Popup.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay}
+ */
+ymaps.Popup.prototype.getOverlaySync = function() {};
+
+
+/**
+ */
+ymaps.Popup.prototype.getPosition = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.Popup.prototype.isOpen = function() {};
+
+
+/**
+ * @param {Array.<Number>=} position Точка, где необходимо расположить балун.
+ * @param {Object|String|HTMLElement=} data Данные оверлея.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.open = function(position, data) {};
+
+
+/**
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.setData = function(data) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.Popup.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.Popup.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.Popup.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             GeoObject.
+ * 
+ * Прямоугольник. Представляет собой геообъект с геометрией geometry.Rectangle.
+ * 
+ * См.: GeoObject geometry.Rectangle 
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
+ * 
+ * @param {Array.<Array.<Number>>|Object|ymaps.IRectangleGeometry} geometry Координаты двух противоположных углов, хэш-объект с параметрами геометрии или ссылка на объект геометрии прямоугольника.
+ * @param {Object|ymaps.IDataManager=} properties Данные прямоугольника. Могут задаваться как экземпляр класса,
+ *                                                реализующего интерфейс IDataManager, либо в виде хэша.
+ *                                                При значениях опций по умолчанию геообъектом трактуются следующие поля данных:
+ *                                                
+ *                                                    hintContent - содержимое всплывающей подсказки прямоугольника;
+ *                                                    balloonContent - содержимое балуна прямоугольника;
+ *                                                    balloonContentHeader - содержимое заголовка балуна прямоугольника;
+ *                                                    balloonContentBody - содержимое основой части балуна прямоугольника;
+ *                                                    balloonContentFooter - содержимое нижней части балуна прямоугольника.
+ *                                                
+ *                                                Поле balloonContent является кратким обозначением для поля balloonContentBody, но при одновременном задании
+ *                                                balloonContentBody более приоритетен.
+ *                                                Также вы можете дополнить данные прямоугольника своими собственными полями и использовать их, например, в макете балуна.
+ * @param {Object=} options Опции прямоугольника. Используя этот параметр можно задавать как опции самого прямоугольника,
+ *                          так и опции его составных частей:
+ *                          
+ *                              Опции балуна прямоугольника с префиксом balloon.
+ *                              Опции всплывающей подсказки прямоугольника с префиксом hint.
+ *                              Опции геометрии могут задаваться без префикса. Смотрите описание класса IGeometry геометрии geometry.Rectangle.
+ *                          
+ */
+ymaps.Rectangle = function(geometry, properties, options) {};
+
+
+/**
+ * Редактор геометрии "Прямоугольник" на данный момент не реализован.
+ * 
+ * @type {Null}
+ */
+ymaps.Rectangle.prototype.editor;
+
+
+/**
+ * Геометрия типа "Прямоугольник".
+ * 
+ * @type {ymaps.geometry.Rectangle}
+ */
+ymaps.Rectangle.prototype.geometry;
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter, IGeoObject, IParentOnMap.
+ * 
+ * Менеджер объектов, осуществляющий их оптимальную подгрузку с сервера.
+ * Менеджер отправляет запросы за данными по указанному url в JSONP-формате.
+ * Описание формата соответствует формату добавляемых в ObjectManager объектов ObjectManager.add.
+ * Также поддерживаются объекты типа 'Cluster', содержащие поля:
+ * 
+ * type - тип объекта, для кластеров всегда 'Cluster';
+ *     id - уникальный идентификатор кластера;
+ *     geometry - геометрия кластера в JSON-формате;
+ *     features - массив объектов в составе кластера. Необязательное поле;
+ *     bbox - массив координат, описывающих прямоугольную область,
+ *     содержащую все объекты в составе кластера;
+ *     number - количество объектов в кластере;
+ *     properties - данные кластера.
+ * 
+ * Данный модуль рассчитан на загрузку и отображение данных, предварительно обработанных на сервере.
+ * В частности, рекомендуется использовать модуль для отображения результатов серверной кластеризации.
+ * Данные перезапрашиваются заново при изменении коэффициента масштабирования карты.
+ * Модуль не осуществляет кластеризацию объектов или фильтрацию по области видимости на клиенте.
+ * При необходимости кластеризовать объекты на клиенте после загрузки используйте LoadingObjectManager.
+ * Обратите внимание, что у объектов, отрисованных на карте через данный менеджер, нельзя включать режимы редактирования и перетаскивания.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * @implements {ymaps.IGeoObject}
+ * @implements {ymaps.IParentOnMap}
+ * 
+ * @param {String} urlTemplate Шаблон URL данных. Поддерживаются
+ *                             специальные конструкции по аналогии с Layer.
+ *                             Также поддерживаются подстановки:
+ *                             
+ *                                 %b заменяется на массив географических координат,
+ *                                 описывающих прямоугольную область, для которой требуется загрузить данные.
+ *                                 %t заменяется на массив номеров тайлов, описывающих прямоугольную область,
+ *                                 для которой требуется загрузить данные.
+ *                             
+ * @param {Object=} options Опции.
+ *                          
+ *                              Можно задавать все опции, указанные в описании Clusterer,
+ *                                  за исключением опций hasBalloon и hasHint.
+ *                              
+ *                              Опции для кластеров задаются с префиксом cluster.
+ *                                  Список опций указан в описании класса ClusterPlacemark;
+ *                              
+ *                              
+ *                                  Опции для одиночных объектов задаются с префиксом geoObject.
+ *                                  Список опций указан в описании класса Placemark.
+ *                              
+ *                          
+ */
+ymaps.RemoteObjectManager = function(urlTemplate, options) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.RemoteObjectManager.prototype.getBounds = function() {};
+
+
+/**
+ * @param {Object} id Идентификатор объекта, для которого нужно получить состояние.
+ * @return {Object}
+ */
+ymaps.RemoteObjectManager.prototype.getObjectState = function(id) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.RemoteObjectManager.prototype.getPixelBounds = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.RemoteObjectManager.prototype.getUrlTemplate = function() {};
+
+
+/**
+ */
+ymaps.RemoteObjectManager.prototype.reloadData = function() {};
+
+
+/**
+ * @param {Function|String} filterFunction функция-фильтр. Получает на вход единичный объект, добавленный
+ *                                         в ObjectManager. Если функция возвращает true, объект будет обработан. Если false - объект будет
+ *                                         исключен из дальнейшей обработки.
+ *                                         Также в качестве фильтра можно передавать строку.
+ *                                         В строке-фильтре доступны следующие ключевые слова:
+ *                                         
+ *                                             options - обращение к опциям объекта;
+ *                                             properties - обращение к данным объекта;
+ *                                             geometry - обращение к геометрии объекта;
+ *                                             id - обращение к идентификатору объекта;
+ *                                         
+ *                                         В качестве фильтра можно указывать выражение, возвращающее true или false.
+ */
+ymaps.RemoteObjectManager.prototype.setFilter = function(filterFunction) {};
+
+
+/**
+ * @param {String} urlTemplate шаблон URL данных.
+ */
+ymaps.RemoteObjectManager.prototype.setUrlTemplate = function(urlTemplate) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.RemoteObjectManager.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.RemoteObjectManager.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.RemoteObjectManager.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.RemoteObjectManager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.RemoteObjectManager.prototype.getMap = function() {};
+
+
+/**
+ * Коллекция кластеров, сгенерированных менеджером.
+ * 
+ * @type {ymaps.objectManager.ClusterCollection}
+ */
+ymaps.RemoteObjectManager.prototype.clusters;
+
+
+/**
+ * Коллекция объектов, добавленных в слой.
+ * 
+ * @type {ymaps.objectManager.ObjectCollection}
+ */
+ymaps.RemoteObjectManager.prototype.objects;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.RemoteObjectManager.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.RemoteObjectManager.prototype.events;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.RemoteObjectManager.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.RemoteObjectManager.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.RemoteObjectManager.prototype.state;
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter.
+ * 
+ * Создаёт выпадающую панель с поисковыми подсказками
+ * и прикрепляет к HTML-элементу &lt;input type="text"&gt;.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {HTMLElement|String} element HTML-элемент или его id.
+ * @param {Object=} options Опции.
+ */
+ymaps.SuggestView = function(element, options) {};
+
+
+/**
+ */
+ymaps.SuggestView.prototype.destroy = function() {};
+
+
+/**
+ * Состояние панели поисковых подсказок.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * request: String — текущий активный запрос;
+ *     items: Object[] - массив поисковых подсказок (объектов с полями
+ * value и displayName);
+ *     activeIndex: Number|null - индекс текущей активной подсказки, выделенная
+ * пользователем путём наведения мыши или с клавиатуры, или null, если
+ * ни одна подсказка не активка;
+ *     panelClosed: Boolean - признак, была ли панель закрыта пользователем
+ * путём нажатия клавиши ESC или выбора одной из подсказок.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.SuggestView.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.SuggestView.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.SuggestView.prototype.events;
+
+/**
+ * 
+ * Шаблонизатор.
+ * В API Яндекс.Карт поддерживается базовый синтаксис языков шаблонов Twig/Django Templates.
+ * Поддерживаются следующие операции:
+ * {% if условие %} ... {% else %} ... {% endif %} или
+ *     Блок else или elseif можно опустить. Внутри блоков if, else и elseif можно использовать любые конструкции языка шаблонов.
+ *     {% for значение in массив_или_хеш %} ... {% endfor %}.
+ *     Внутри блока for можно использовать любые конструкции языка шаблонов.
+ * 
+ * {% for key, value in массив_или_хеш %} ... {% endfor %}.
+ * 
+ * @constructor
+ * 
+ * @param {String} text Строка-шаблон.
+ */
+ymaps.Template = function(text) {};
+
+
+/**
+ * @param {ymaps.IDataManager} data Менеджер данных.
+ * @return {Object}
+ */
+ymaps.Template.prototype.build = function(data) {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Статический класс, содержащий методы форматирования единиц
+ * измерения с учётом текущего языка.
+ * 
+ */
+ymaps.formatter = {};
+
+
+/**
+ * @param {Number} value Длина в метрах.
+ * @param {number=} significantDigits Число значащих цифр в ответе.
+ * @return {String}
+ */
+ymaps.formatter.distance = function(value, significantDigits) {};
+
+
+/**
+ * @param {Number} value Интервал времени в секундах.
+ * @param {number=} significantDigits Число значащих цифр в ответе.
+ * @return {String}
+ */
+ymaps.formatter.duration = function(value, significantDigits) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Формирует набор данных из указанного источника и создает на его основе
+ * экземпляр GeoQueryResult.
+ * 
+ * Возвращает:  Результат, содержащий данные из источника.
+ *         (тип GeoQueryResult).
+ * 
+ * @param {Object} source Источник геообъектов:
+ *                        
+ *                            IGeoObject - объект, реализующий соответствующий интерфейс;
+ *                            IGeoObject[] - массив объектов, реализующих соответствующий интерфейс;
+ *                            ICollection - коллекция объектов, реализующих интерфейс IGeoObject;
+ *                            ICollection[] - массив коллекций объектов, реализующих интерфейс IGeoObject;
+ *                            vow.Promise - объект-промис, передающий в функцию-обработчик источник данных для geoQuery;
+ *                            Также в функцию-обработчик может быть передан объект с полем geoObjects, содержащий источник данных
+ *                            для geoQuery;
+ *                            GeoQueryResult - объект класса GeoQueryResult;
+ *                            String|Object - строка или объект с JSON-описанием объектов.
+ *                        
+ *                        JSON-описание объектов строится по следующему принципу (см. пример ниже).
+ *                        Объектом может быть сущность или коллекция сущностей.
+ *                        Коллекция сущностей представляет из себя объект с полями:
+ *                        
+ *                            type - тип объекта. Значение поля должно быть равно "FeatureCollection";
+ *                            features - массив дочерних сущностей коллекции. Дочерние объекты могут быть сущностями или
+ *                            вложенными коллекциями сущностей.
+ *                        
+ *                        Сущность представляет из себя объект с полями:
+ *                        
+ *                            type - тип объекта. Значение поля должно быть равно "Feature";
+ *                            geometry - геометрия объекта. Содержит поля type и coordinates. Соответствует параметру,
+ *                            передаваемому в конструктор объекта ymaps.GeoObject;
+ *                            options - опции геообъекта;
+ *                            properties - данные геообъекта.
+ *                        
+ * 
+ * @returns {ymaps.GeoQueryResult}
+ */
+ymaps.geoQuery = function(source) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Обрабатывает запросы геокодирования. Результат запроса может быть представлен в
+ * формате JSON или в виде объекта GeoObjectCollection. Формат ответа геокодера описан в разделе Геокодирование.
+ * Примечание.&nbsp;Для платной версии API поиск доступен только по следующим странам: Россия, Украина, Беларусь, Казахстан, Грузия,
+ * Абхазия, Южная Осетия, Армения, Азербайджан, Молдова, Туркмения, Таджикистан, Узбекистан, Киргизия и Турция.
+ * 
+ * Возвращает:  Объект-promise.
+ *         (тип vow.Promise).
+ * 
+ * @param {String|Array.<Number>} request Адрес, для которого необходимо определить координаты (прямое геокодирование)
+ *                                        или координаты, для которых необходимо определить адрес (обратное геокодирование).
+ * @param {Object=} options Опции.
+ * 
+ * @returns {ymaps.vow.Promise}
+ */
+ymaps.geocode = function(request, options) {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Предоставляет информацию о местоположении пользователя.
+ * 
+ */
+ymaps.geolocation = {};
+
+
+/**
+ * @param {*=} options 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geolocation.get = function(options) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Определяет доступный диапазон уровней масштабирования в указанной точке для указанного типа карты.
+ * Возвращает объект-promise, который будет подтверждён и получит в качестве
+ * параметра массив из двух чисел - максимальный и минимальный уровень масштабирования в данной точке.
+ * 
+ * Возвращает:  Объект-promise.
+ *         (тип vow.Promise).
+ * 
+ * @param {String|ymaps.MapType} mapType Тип карты. Cтрока-ключ из mapType.storage, либо экземпляр
+ *                                       класса MapType.
+ * @param {Array.<Number>} coords Координаты точки, для которой нужно узнать диапазон
+ *                                доступных уровней масштабирования.
+ * @param {ymaps.ICustomizable=null} customizable Объект, который содержит менеджер опций.
+ *                                                Опции объекта будут учитываться при получении результата.
+ */
+ymaps.getZoomRange = function(mapType, coords, customizable) {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Информация об API.
+ * 
+ */
+ymaps.meta = {};
+
+
+/**
+ * Порядок координат, который используется в API. Возможные значения:
+ * Задается GET-параметром "coordorder" при подключении API.
+ * Подробнее про параметры подключения API
+ * 
+ * @type {String}
+ */
+ymaps.meta.coordinatesOrder;
+
+
+/**
+ * Двузначный код страны. Возвращается в формате ISO 3166-1.
+ * Задается GET-параметром "lang" при подключении API.
+ * Подробнее про параметры подключения API
+ * 
+ * @type {String}
+ */
+ymaps.meta.countryCode;
+
+
+/**
+ * Двузначный код языка. Возвращается  в формате ISO 639-1.
+ * Задается GET-параметром "lang" при подключении API.
+ * Подробнее про параметры подключения API
+ * 
+ * @type {String}
+ */
+ymaps.meta.languageCode;
+
+
+/**
+ * Режим работы API Яндекс.Карт. Возможные значения:
+ * Задается GET-параметром "mode" при подключении API.
+ * Подробнее про параметры подключения API
+ * 
+ * @type {String}
+ */
+ymaps.meta.mode;
+
+
+/**
+ * Ссылка на пространство имен API Яндекс.Карт. 
+ * Имеет значение независимо от значения параметра "ns" при подключении API.
+ * 
+ * @type {Object}
+ */
+ymaps.meta.ns;
+
+
+/**
+ * Версия API Яндекс.Карт.
+ * 
+ * @type {String}
+ */
+ymaps.meta.version;
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Модульная система, на основе которой работает API Яндекс.Карт. 
+ * API Яндекс.Карт состоит из большого количества взаимосвязанных модулей. 
+ * Модуль - это некоторая программная единица. К примеру, класс, конкретная реализация класса, статический объект или функция.
+ * Модульная система гарантирует, что при инициализации конкретного модуля все необходимые ему для работы модули уже будут проинициализированы.
+ * Модульная система предоставляет асинхронный доступ, так как может потребоваться произвести загрузку недостающих модулей.
+ * В модульную систему можно добавлять свои собственные модули.
+ * 
+ */
+ymaps.modules;
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Выполняет переданную функцию, когда API и DOM готовы к использованию.
+ * 
+ * Возвращает:  Объект-обещание, которое подтверждается пространством имен API, либо отклоняется, если при загрузке произошла ошибка.
+ *         (тип vow.Promise).
+ * 
+ * @param {Function|Object=} successCallback Функция, которая будет вызвана при успешной загрузке и инициализации API и DOM,
+ *                                           или объект с параметрами, если используется расширенный синтаксис.
+ *                                           
+ * @param {Function=} errorCallback Функция, которая будет вызвана если произошла ошибка при инициализации.
+ *                                  В функцию будет передана ошибка.
+ * @param {Object=} context Контекст исполнения функции.
+ * 
+ * @returns {ymaps.vow.Promise}
+ */
+ymaps.ready = function(successCallback, errorCallback, context) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Прокладывает маршрут через заданные точки.
+ * Примечание.&nbsp;Для платной версии API маршрутизация доступна по следующим странам: Россия, Украина, Беларусь, Казахстан, Грузия,
+ * Абхазия, Южная Осетия, Армения, Азербайджан, Молдова, Туркмения, Таджикистан, Узбекистан, Киргизия и Турция.
+ * 
+ * Возвращает:  Объект-обещание, который подтверждается объектом маршрута
+ * router.Route, либо объектом мультимаршрута multiRouter.MultiRoute, в
+ * зависимости от значения параметра multiRoute. В случае ошибки объект-обещание отклоняется.
+ *         (тип vow.Promise).
+ * 
+ * @param {Array.<Object>} points Массив точек, через которые должен проходить маршрут.
+ *                                Каждая точка может быть задана строкой, содержащей адрес, массивом координат, и JSON-объектом
+ *                                со следующими полями:
+ *                                
+ *                                    type: String - тип точки. Значение 'wayPoint' задает путевую точку маршрута.
+ *                                    Значение 'viaPoint' задает транзитную точку, т.е. точку, через которую нужно проехать без
+ *                                    остановки.
+ *                                    point: Number[]|String - Массив координат точки, либо ее адрес в виде строки.
+ *                                
+ * @param {Object=} params Параметры маршрутизации.
+ * 
+ * @returns {ymaps.vow.Promise}
+ */
+ymaps.route = function(points, params) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Обрабатывает поисковые запросы. Результат запроса может быть представлен в
+ * формате JSON или в виде объекта с GeoObjectCollection.
+ * 
+ * Возвращает:  Объект-promise.
+ *         (тип vow.Promise).
+ * 
+ * @param {String|Array.<Number>} request Строка запроса или географическая точка.
+ * @param {Object=} options Опции.
+ * 
+ * @returns {ymaps.vow.Promise}
+ */
+ymaps.search = function(request, options) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Обрабатывает запросы за поисковыми подсказками. Возвращает объект-promise,
+ * который будет либо отклонён с ошибкой, либо подтверждён массивом объектов
+ * вида { displayName: "Мытищи, Московская область", value: "Россия, Московская область, Мытищи " }.
+ * Поле displayName отвечает за представление топонима в удобном для чтения
+ * пользователем виде, поле value - значение, которое необходимо подставить в
+ * поле ввода после выбора пользователем данной подсказки.
+ * 
+ * Возвращает:  Объект-promise.
+ *         (тип vow.Promise).
+ * 
+ * @param {String} request Строка запроса.
+ * @param {Object=} options Опции.
+ */
+ymaps.suggest = function(request, options) {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Фабрика для создания класса макета из текстового шаблона.
+ * Позволяет создавать классы, реализующие интерфейс ILayout, используя язык шаблонов.
+ * В API Яндекс.Карт поддерживается базовый синтаксис языков шаблонов Twig/Django Templates.
+ * Более подробно о синтаксисе можно прочитать в описании Template.
+ * 
+ * См.: layout.templateBased.Base 
+ * 
+ * Методы 
+ * 
+ * Примеры: 
+ * 
+ * 1.
+ * 
+ * 2.
+ * 
+ * 3.
+ * 
+ * 4.
+ * 
+ */
+ymaps.templateLayoutFactory = {};
+
+
+/**
+ * @param {String} template Шаблон html-содержимого макетов.
+ * @param {Object=} overrides Переопределения родительских методов. Можно переопределять/дополнять методы
+ *                            build, clear и rebuild.
+ * @param {*} staticMethods 
+ * @return {Function}
+ */
+ymaps.templateLayoutFactory.createClass = function(template, overrides, staticMethods) {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Содержит методы для создания и обработки объектов-promise.
+ * Примечание.&nbsp;
+ *   Данный класс является частью библиотеки Vow.
+ *   Ниже описаны только некоторые методы. Полный список методов доступен здесь:
+ *   http://dfilatov.github.io/vow/.
+ *   Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
+ *   Dual licensed under the MIT
+ *   and GPL licenses.
+ * Данный класс является частью библиотеки Vow.
+ * Ниже описаны только некоторые методы. Полный список методов доступен здесь:
+ *   http://dfilatov.github.io/vow/.
+ * Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
+ *   Dual licensed under the MIT
+ *   and GPL licenses.
+ * 
+ */
+ymaps.vow = {};
+
+
+/**
+ * @param {Object|Array.<Object>} iterable Набор объектов-promise и/или значений.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.vow.all = function(iterable) {};
+
+
+/**
+ * @return {ymaps.vow.Deferred}
+ */
+ymaps.vow.defer = function() {};
+
+
+/**
+ * @param {Object} reason Причина отклонения.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.vow.reject = function(reason) {};
+
+
+/**
+ * @param {Object} value Значение.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.vow.resolve = function(value) {};
+
+
+ymaps.behavior = {};
+
+/**
+ * 
+ * Расширяет
+ *             IBehavior.
+ * 
+ * Поведение "масштабирование карты двойным щелчком кнопки мыши".
+ * 
+ * @constructor
+ * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
+ */
+ymaps.behavior.DblClickZoom = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.DblClickZoom.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.DblClickZoom.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.DblClickZoom.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.DblClickZoom.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.DblClickZoom.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.DblClickZoom.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.DblClickZoom.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IBehavior.
+ * 
+ * Поведение "перетаскивание карты с помощью мыши либо одиночного касания".
+ * 
+ * @constructor
+ * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
+ */
+ymaps.behavior.Drag = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.Drag.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.Drag.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.Drag.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.Drag.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.Drag.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.Drag.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.Drag.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IBehavior.
+ * 
+ * Поведение "масштабирование карты при выделении области левой кнопкой мыши".
+ * 
+ * @constructor
+ * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
+ */
+ymaps.behavior.LeftMouseButtonMagnifier = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.LeftMouseButtonMagnifier.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IBehavior.
+ * 
+ * Поведение "масштабирование карты мультисенсорным касанием".
+ * 
+ * @constructor
+ * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
+ */
+ymaps.behavior.MultiTouch = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.MultiTouch.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.MultiTouch.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.MultiTouch.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.MultiTouch.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.MultiTouch.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.MultiTouch.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.MultiTouch.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IBehavior.
+ * 
+ * Поведение "масштабирование карты при выделении области правой кнопкой мыши".
+ * 
+ * @constructor
+ * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
+ */
+ymaps.behavior.RightMouseButtonMagnifier = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.RightMouseButtonMagnifier.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IBehavior.
+ * 
+ * Поведение "редактор маршрутов".
+ * 
+ * @constructor
+ * @implements {ymaps.IBehavior}
+ * 
+ */
+ymaps.behavior.RouteEditor = function() {};
+
+
+/**
+ */
+ymaps.behavior.RouteEditor.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.RouteEditor.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.RouteEditor.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.RouteEditor.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.RouteEditor.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.RouteEditor.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.RouteEditor.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IBehavior.
+ * 
+ * Поведение "Линейка". Позволяет отмечать на карте точки
+ * и отображать расстояния между ними.
+ * 
+ * @constructor
+ * @implements {ymaps.IBehavior}
+ * 
+ */
+ymaps.behavior.Ruler = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.Ruler.prototype.close = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.behavior.Ruler.prototype.getState = function() {};
+
+
+/**
+ * @param {String} state Закодированное состояние линейки.
+ */
+ymaps.behavior.Ruler.prototype.setState = function(state) {};
+
+
+/**
+ */
+ymaps.behavior.Ruler.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.Ruler.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.Ruler.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.Ruler.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.Ruler.prototype.setParent = function(parent) {};
+
+
+/**
+ * Геометрия поведения "Линейка".
+ * 
+ * @type {ymaps.geometry.LineString}
+ */
+ymaps.behavior.Ruler.prototype.geometry;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.Ruler.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.Ruler.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IBehavior.
+ * 
+ * Поведение "масштабирование карты колесом мыши".
+ * 
+ * @constructor
+ * @implements {ymaps.IBehavior}
+ * 
+ * @param {Object=} options Опции.
+ */
+ymaps.behavior.ScrollZoom = function(options) {};
+
+
+/**
+ */
+ymaps.behavior.ScrollZoom.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.behavior.ScrollZoom.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.behavior.ScrollZoom.prototype.isEnabled = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.behavior.ScrollZoom.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.behavior.ScrollZoom.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.behavior.ScrollZoom.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.behavior.ScrollZoom.prototype.options;
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.Storage
+ * Хранилище классов поведений карты.
+ * Добавление нового поведения на карту производится через это хранилище.
+ * По умолчанию в хранилище добавлены следующие поведения:
+ *         "drag" - перемещание карты при нажатой левой кнопке мыши либо одиночным касанием behavior.Drag;
+ *         "scrollZoom" - изменение масштаба колесом мыши behavior.ScrollZoom (только для десктопных браузеров);
+ *         "dblClickZoom" - масштабирование карты двойным щелчком кнопки мыши behavior.DblClickZoom;
+ *         "multiTouch" - масштабирование карты двойным касанием (например, пальцами на сенсорном экране) behavior.MultiTouch (только для мобильных браузеров);
+ *         "rightMouseButtonMagnifier" - увеличение области, выделенной правой кнопкой мыши (только для настольных браузеров), behavior.RightMouseButtonMagnifier (только для десктопных браузеров);
+ *         "leftMouseButtonMagnifier" - увеличение области, выделенной левой кнопкой мыши либо одиночным касанием, behavior.LeftMouseButtonMagnifier;
+ *         "ruler" - измерение расстояния behavior.Ruler.
+ *         "routeEditor" - редактор маршрутов behavior.RouteEditor;
+ * 
+ * 
+ * 
+ * @type {ymaps.util.Storage}
+ */
+ymaps.behavior.storage;
+
+
+ymaps.clusterer = {};
+
+/**
+ * 
+ * Расширяет
+ *             IBalloonManager.
+ * 
+ * Менеджер балуна кластеризатора. Позволяет управлять балуном кластера, открывать и скрывать его.
+ * Использует внутри себя менеджер балуна карты map.Balloon.
+ * Кластеризаторы содержат экземпляр этого класса, доступный как myClusterer.balloon.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Balloon 
+ * 
+ * @constructor
+ * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {ymaps.Clusterer} clusterer Кластеризатор.
+ */
+ymaps.clusterer.Balloon = function(clusterer) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.clusterer.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.clusterer.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.clusterer.Balloon.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.clusterer.Balloon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IHintManager.
+ * 
+ * Менеджер хинта кластеризатора. Позволяет управлять хинтом кластара, открывать и скрывать его.
+ * Использует внутри себя менеджер хинта карты map.Hint.
+ * Кластеризаторы содержат экземпляр этого класса, доступный как myClusterer.hint.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Hint 
+ * 
+ * @constructor
+ * @implements {ymaps.IHintManager}
+ * 
+ * @param {ymaps.Clusterer} clusterer Кластеризатор.
+ */
+ymaps.clusterer.Hint = function(clusterer) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Hint.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.clusterer.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.clusterer.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.clusterer.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.clusterer.Hint.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.clusterer.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.clusterer.Hint.prototype.events;
+
+
+ymaps.collection = {};
+
+/**
+ * 
+ * Расширяет
+ *             IChildOnMap, ICustomizable, IEventEmitter, IParentOnMap.
+ * 
+ * Базовый класс элемента коллекции объектов карты.
+ * 
+ * @constructor
+ * @implements {ymaps.IChildOnMap}
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * @implements {ymaps.IParentOnMap}
+ * 
+ * @param {Object=} options Опции обьекта.
+ */
+ymaps.collection.Item = function(options) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.collection.Item.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IParentOnMap}
+ */
+ymaps.collection.Item.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.Map} map Карта, на которую добавлен объект.
+ */
+ymaps.collection.Item.prototype.onAddToMap = function(map) {};
+
+
+/**
+ * @param {ymaps.Map} oldMap Карта, с которой удален объект.
+ */
+ymaps.collection.Item.prototype.onRemoveFromMap = function(oldMap) {};
+
+
+/**
+ * @param {ymaps.IParentOnMap} parent Родительский объект.
+ * @return {ymaps.collection.Item}
+ */
+ymaps.collection.Item.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.collection.Item.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.collection.Item.prototype.options;
+
+
+ymaps.control = {};
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, ISelectableControl.
+ * 
+ * Элемент управления "Кнопка".
+ * Стандартный макет кнопки изменяет свой внешний вид в зависимости от размеров карты.
+ * Если карта имеет большую ширину, то кнопка принимает вид "картинка + текст".
+ * Если карта среднего размера, кнопка принимает вид "текст".
+ * Если карта небольшого размера, то в макете кнопки отображается только иконка.
+ * Если для кнопки не задана иконка, то во всех состояниях будет отображаться текст и наоборот.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.ISelectableControl}
+ * 
+ * @param {Object|String=} parameters Параметры кнопки или строка - содержимое кнопки в виде HTML.
+ */
+ymaps.control.Button = function(parameters) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.control.Button.prototype.getMap = function() {};
+
+
+/**
+ */
+ymaps.control.Button.prototype.deselect = function() {};
+
+
+/**
+ */
+ymaps.control.Button.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.control.Button.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.Button.prototype.isEnabled = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.Button.prototype.isSelected = function() {};
+
+
+/**
+ */
+ymaps.control.Button.prototype.select = function() {};
+
+
+/**
+ * @see ymaps.IControl
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.Button.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IControl
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.Button.prototype.setParent = function(parent) {};
+
+
+/**
+ * Данные кнопки.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * image - иконка кнопки, если есть;
+ *     content - cодержимое кнопки в виде HTML;
+ *     title - текст всплывающей подсказки, которая появляется при наведении на кнопку курсора мыши.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.Button.prototype.data;
+
+
+/**
+ * Состояние кнопки.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * selected - признак, нажата ли кнопка;
+ *     enabled - признак, активна ли кнопка;
+ *     size - размер, который в данный момент выставлен кнопке;
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.Button.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.Button.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.Button.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             control.Button.
+ * 
+ * Элемент управления "Полноэкранный режим".
+ * Задать свойство z-index контейнеру карты, находящейся в "полноэкранном режиме",
+ * можно с помощью опции Map.options.fullscreenZIndex.
+ * Ключ элемента управления в хранилище control.storage —&nbsp;"fullscreenControl".
+ * 
+ * @constructor
+ * @extends {ymaps.control.Button}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
+ */
+ymaps.control.FullscreenControl = function(parameters) {};
+
+
+/**
+ */
+ymaps.control.FullscreenControl.prototype.enterFullscreen = function() {};
+
+
+/**
+ */
+ymaps.control.FullscreenControl.prototype.exitFullscreen = function() {};
+
+
+/**
+ * Состояние элемента управления.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * fullscreen — признак, находится ля карта в полноэкранном режиме.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.FullscreenControl.prototype.state;
+
+/**
+ * 
+ * Расширяет
+ *             control.Button.
+ * 
+ * Элемент управления "геолокация". Позволяет отразить положение пользователя
+ * на карте.
+ * Ключ элемента управления в хранилище control.storage —&nbsp;"geolocationControl".
+ * 
+ * См.: geolocation 
+ * 
+ * @constructor
+ * @extends {ymaps.control.Button}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
+ */
+ymaps.control.GeolocationControl = function(parameters) {};
+
+/**
+ * 
+ * Расширяет
+ *             ICollection, IControl, ICustomizable.
+ * 
+ * Класс для создания элемента управления в виде раскрывающегося списка.
+ * Стандартный макет выпадающего списка изменяет свой внешний вид в зависимости от размеров карты.
+ * Если карта имеет большую ширину, то в заголовке выпадающего списка отображается текст.
+ * Если карта небольшого размера, то в заголовке списка отображается только иконка.
+ * Если для кнопки не задана иконка, то во всех состояниях будет отображаться текст и наоборот.
+ * 
+ * @constructor
+ * @implements {ymaps.ICollection}
+ * @implements {ymaps.IControl}
+ * @implements {ymaps.ICustomizable}
+ * 
+ * @param {Object=} parameters Параметры выпадающего списка.
+ */
+ymaps.control.ListBox = function(parameters) {};
+
+
+/**
+ * @return {ymaps.control.ListBox}
+ */
+ymaps.control.ListBox.prototype.collapse = function() {};
+
+
+/**
+ * @return {ymaps.control.ListBox}
+ */
+ymaps.control.ListBox.prototype.expand = function() {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.control.ListBox.prototype.getMap = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.ListBox.prototype.isExpanded = function() {};
+
+
+/**
+ * @param {Object} object Добавляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.control.ListBox.prototype.add = function(object) {};
+
+
+/**
+ * @return {ymaps.IIterator}
+ */
+ymaps.control.ListBox.prototype.getIterator = function() {};
+
+
+/**
+ * @param {Object} object Удаляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.control.ListBox.prototype.remove = function(object) {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.ListBox.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.ListBox.prototype.setParent = function(parent) {};
+
+
+/**
+ * Данные выпадающего списка.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * content - заголовок выпадающего списка;
+ *     title - текст всплывающей подсказки, которая появляется при наведении на список курсора мыши.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.ListBox.prototype.data;
+
+
+/**
+ * Состояние выпадающего списка.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * expanded - признак, раскрыт ли список;
+ *     size - размер, который в данный момент выставлен списку;
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.ListBox.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.ListBox.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.ListBox.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, ISelectableControl.
+ * 
+ * Элемент раскрывающегося списка.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.ISelectableControl}
+ * 
+ * @param {Object|String=} parameters Параметры элемента либо строка - HTML-содержимое элемента.
+ */
+ymaps.control.ListBoxItem = function(parameters) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.control.ListBoxItem.prototype.getMap = function() {};
+
+
+/**
+ */
+ymaps.control.ListBoxItem.prototype.deselect = function() {};
+
+
+/**
+ */
+ymaps.control.ListBoxItem.prototype.disable = function() {};
+
+
+/**
+ */
+ymaps.control.ListBoxItem.prototype.enable = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.ListBoxItem.prototype.isEnabled = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.ListBoxItem.prototype.isSelected = function() {};
+
+
+/**
+ */
+ymaps.control.ListBoxItem.prototype.select = function() {};
+
+
+/**
+ * @see ymaps.IControl
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.ListBoxItem.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IControl
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.ListBoxItem.prototype.setParent = function(parent) {};
+
+
+/**
+ * Данные элемента списка.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * content - cодержимое элемента списка в виде HTML;
+ *     title - текст всплывающей подсказки.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.ListBoxItem.prototype.data;
+
+
+/**
+ * Состояние элемента списка.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * selected - признак, выбран ли элемент списка;
+ *     enabled - признак, активен ли элемент списка.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.ListBoxItem.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.ListBoxItem.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.ListBoxItem.prototype.events;
+
+/**
+ * 
+ * Менеджер элементов управления.
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.Map} map Экземпляр карты.
+ * @param {Array.<String>|Array.<ymaps.IControl>=} controls Элементы управления, которые требуется разместить на карте изначально.
+ * @param {Object=} options Опции менеджера.
+ */
+ymaps.control.Manager = function(map, controls, options) {};
+
+
+/**
+ * @param {ymaps.IControl|String} control Элементы управления, заданные
+ *                                        экземплярами классов, реализующих интерфейс IControl либо ключами.
+ *                                        
+ * @param {Object=} options Опции элемента управления.
+ * @return {ymaps.control.Manager}
+ */
+ymaps.control.Manager.prototype.add = function(control, options) {};
+
+
+/**
+ * @param {Function} callback Функция-обработчик. На вход получает элемент коллекции.
+ *                            При возвращении функцией значения false перебор останавливается.
+ * @param {Object} context Контекст вызываемой функции.
+ * @return {ymaps.control.Manager}
+ */
+ymaps.control.Manager.prototype.each = function(callback, context) {};
+
+
+/**
+ * @param {Number|String} index Индекс искомого элемента или его ключ.
+ * @return {ymaps.IControl|null}
+ */
+ymaps.control.Manager.prototype.get = function(index) {};
+
+
+/**
+ * @param {ymaps.IControl} control Элемент управления.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.control.Manager.prototype.getChildElement = function(control) {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.control.Manager.prototype.getContainer = function() {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.control.Manager.prototype.getMap = function() {};
+
+
+/**
+ * @param {String|ymaps.IControl} childToFind Элемент управления или его ключ.
+ * @return {number}
+ */
+ymaps.control.Manager.prototype.indexOf = function(childToFind) {};
+
+
+/**
+ * @param {ymaps.IControl|String} control Удаляемый элемент управления, либо его ключ.
+ * @return {ymaps.control.Manager}
+ */
+ymaps.control.Manager.prototype.remove = function(control) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.control.Manager.prototype.events;
+
+
+/**
+ * Опции менеджера.
+ * 
+ * @type {ymaps.option.Manager}
+ */
+ymaps.control.Manager.prototype.options;
+
+
+/**
+ * Состояние менеджера.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * size - состояние в котором находятся элементы управления.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.Manager.prototype.state;
+
+/**
+ * 
+ * Расширяет
+ *             control.Button.
+ * 
+ * Элемент управления "Редактор маршрутов".
+ * Ключ элемента управления в хранилище control.storage —&nbsp;"routeEditor".
+ * 
+ * @constructor
+ * @extends {ymaps.control.Button}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
+ */
+ymaps.control.RouteEditor = function(parameters) {};
+
+
+/**
+ * @return {ymaps.router.Route}
+ */
+ymaps.control.RouteEditor.prototype.getRoute = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             control.Button.
+ * 
+ * Элемент управления "Линейка".
+ * Ключ элемента управления в хранилище control.storage —&nbsp;"rulerControl".
+ * 
+ * @constructor
+ * @extends {ymaps.control.Button}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
+ */
+ymaps.control.RulerControl = function(parameters) {};
+
+/**
+ * 
+ * Расширяет
+ *             IControl, ICustomizable.
+ * 
+ * Элемент управления "Поиск по карте". Позволяет обрабатывать поисковый запрос
+ * пользователя и отображать результат в панели и на карте.
+ * Каждый результат поиска представляется в панели элемента управления в виде
+ * двухстрочного блока. Для формирования блока используются поля name и description
+ * объекта-результата геокодирования.
+ * 
+ * @constructor
+ * @implements {ymaps.IControl}
+ * @implements {ymaps.ICustomizable}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
+ */
+ymaps.control.SearchControl = function(parameters) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.control.SearchControl.prototype.getMap = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.control.SearchControl.prototype.getRequestString = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.control.SearchControl.prototype.getResponseMetaData = function() {};
+
+
+/**
+ * @param {number} index Индекс результата (начиная с 0).
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.control.SearchControl.prototype.getResult = function(index) {};
+
+
+/**
+ * @return {Array.<Object>}
+ */
+ymaps.control.SearchControl.prototype.getResultsArray = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.control.SearchControl.prototype.getResultsCount = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.control.SearchControl.prototype.getSelectedIndex = function() {};
+
+
+/**
+ */
+ymaps.control.SearchControl.prototype.hideResult = function() {};
+
+
+/**
+ * @param {String} request Запрос.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.control.SearchControl.prototype.search = function(request) {};
+
+
+/**
+ * @param {number} index Индекс результата, начинается с 0.
+ * @return {ymaps.control.SearchControl}
+ */
+ymaps.control.SearchControl.prototype.showResult = function(index) {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.SearchControl.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.SearchControl.prototype.setParent = function(parent) {};
+
+
+/**
+ * Состояние элемента управления.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * size — текущий размер элемента управления;
+ *     results — массив, содержащий результаты поиска;
+ *     currentIndex — индекс текущего выбранного элемента;
+ *     found — общее количество найденных результатов;
+ *     request — текущий активный запрос;
+ *     correction — исправленный запрос;
+ *     noSuggestPanel - флаг, скрывать ли панель поисковых подсказок.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.SearchControl.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.SearchControl.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.SearchControl.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IControl, ICustomizable.
+ * 
+ * Панель управления пробками на карте.
+ * 
+ * @constructor
+ * @implements {ymaps.IControl}
+ * @implements {ymaps.ICustomizable}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
+ */
+ymaps.control.TrafficControl = function(parameters) {};
+
+
+/**
+ */
+ymaps.control.TrafficControl.prototype.collapse = function() {};
+
+
+/**
+ */
+ymaps.control.TrafficControl.prototype.expand = function() {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.control.TrafficControl.prototype.getMap = function() {};
+
+
+/**
+ * @param {String=} key Ключ провайдера информации о пробках.
+ *                      Список доступных ключей:
+ *                      
+ *                          'traffic#actual' - провайдер пробок "сейчас";
+ *                          'traffic#archive' - провайдер пробок "обычно".
+ *                      
+ *                      Если параметр не передан, возвращается текущий провайдер.
+ * @return {ymaps.ITrafficProvider}
+ */
+ymaps.control.TrafficControl.prototype.getProvider = function(key) {};
+
+
+/**
+ */
+ymaps.control.TrafficControl.prototype.hideTraffic = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.TrafficControl.prototype.isExpanded = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.control.TrafficControl.prototype.isTrafficShown = function() {};
+
+
+/**
+ */
+ymaps.control.TrafficControl.prototype.showTraffic = function() {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.TrafficControl.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.TrafficControl.prototype.setParent = function(parent) {};
+
+
+/**
+ * Данные панели.
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.TrafficControl.prototype.data;
+
+
+/**
+ * Состояние панели.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * trafficShown - признак, показан ли на карте провайдер пробок;
+ *     providerKey - ключ провайдера, который показывает панель.
+ *     Может принимать значения 'traffic#actual' или 'traffic#archive';
+ *     expanded - признак, развернута ли панель.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.TrafficControl.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.TrafficControl.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.TrafficControl.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             control.ListBox.
+ * 
+ * Элемент управления "Типы карты". В данный элемент управления можно добавлять
+ * элементы списка, которые описывают типы карты, а также дополнительные элементы.
+ * Ключ элемента управления в хранилище control.storage —&nbsp;"typeSelector".
+ * 
+ * @constructor
+ * @extends {ymaps.control.ListBox}
+ * 
+ * @param {Array.<String>|Array.<ymaps.MapType>|Object=} parameters Объект с описаниями параметров элемента управления.
+ *                                                                  Если передан массив, то он трактуется как массив типов карты.
+ */
+ymaps.control.TypeSelector = function(parameters) {};
+
+
+/**
+ * @param {String|ymaps.MapType} mapType Тип карты.
+ * @param {number=} positionIndex Позиция в списке (если не указана,
+ *                                новый тип карты добавляется в конец списка).
+ *                                Список значений positionIndex по умолчанию для стандартных типов карты:
+ *                                
+ *                                    'yandex#map' - 5;
+ *                                    'yandex#satellite' - 10;
+ *                                    'yandex#hybrid' - 15;
+ *                                    'yandex#publicMap' - 20;
+ *                                    'yandex#publicMapHybrid' - 25.
+ *                                
+ * @return {ymaps.control.TypeSelector}
+ */
+ymaps.control.TypeSelector.prototype.addMapType = function(mapType, positionIndex) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.control.TypeSelector.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.control.TypeSelector}
+ */
+ymaps.control.TypeSelector.prototype.removeAllMapTypes = function() {};
+
+
+/**
+ * @param {String|ymaps.MapType} mapType Тип карты.
+ * @return {ymaps.control.TypeSelector}
+ */
+ymaps.control.TypeSelector.prototype.removeMapType = function(mapType) {};
+
+
+/**
+ * Данные элемента управления.
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.control.TypeSelector.prototype.data;
+
+/**
+ * 
+ * Расширяет
+ *             IControl, ICustomizable.
+ * 
+ * Элемент управления масштабом карты.
+ * Ключ элемента управления в хранилище control.storage —&nbsp;"zoomControl".
+ * 
+ * @constructor
+ * @implements {ymaps.IControl}
+ * @implements {ymaps.ICustomizable}
+ * 
+ * @param {Object=} parameters Параметры элемента управления.
+ */
+ymaps.control.ZoomControl = function(parameters) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.control.ZoomControl.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.control.ZoomControl.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.control.ZoomControl.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.control.ZoomControl.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.control.ZoomControl.prototype.events;
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.Storage
+ * Хранилище элементов управления карты. Содержит
+ * соответствие ключей элементов управления и их конструкторов.
+ * По умолчанию в хранилище добавлены следующие элементы управления:
+ * 
+ * 
+ * @type {ymaps.util.Storage}
+ */
+ymaps.control.storage;
+
+
+ymaps.coordSystem = {};
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  ICoordSystem
+ * Класс, описывающий геометрию декартовой плоскости.
+ * Используется как координатная система по умолчанию при построении
+ * геодезических линий в нестандартных проекциях.
+ * 
+ * Методы 
+ * 
+ * @param {Number|Array.<Number>=} scale Масштаб одного деления на оси. Может быть числом или парой чисел для каждой из осей.
+ */
+ymaps.coordSystem.cartesian = function(scale) {};
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  ICoordSystem
+ * Объект, описывающий геометрию земной поверхности.
+ * Позволяет строить кратчайшие маршруты (геодезические линии) между
+ * точками земной поверхности и находить расстояния.
+ * 
+ * 
+ * 
+ * 
+ * @type {ymaps.ICoordSystem}
+ */
+ymaps.coordSystem.geo;
+
+
+ymaps.data = {};
+
+/**
+ * 
+ * Расширяет
+ *             IDataManager, IFreezable.
+ * 
+ * Менеджер произвольных данных.
+ * 
+ * @constructor
+ * @implements {ymaps.IDataManager}
+ * @implements {ymaps.IFreezable}
+ * 
+ * @param {Object} data Данные.
+ */
+ymaps.data.Manager = function(data) {};
+
+
+/**
+ * @param {String} path Строка с именем поля данных. Имя может адресовать вложенные поля, т.е. содержать '.'.
+ * @param {Object=} defaultValue Значение по умолчанию.
+ * @return {Object}
+ */
+ymaps.data.Manager.prototype.get = function(path, defaultValue) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.data.Manager.prototype.getAll = function() {};
+
+
+/**
+ * @param {Object|String} path Строка, содержащая имя поля данных, либо объект вида {"имя поля": "значение"}.
+ * @param {Object=} value Значение, если в качестве первого аргумента передается строка, содержащая имя поля.
+ * @return {ymaps.data.Manager}
+ */
+ymaps.data.Manager.prototype.set = function(path, value) {};
+
+
+/**
+ * @param {*} data 
+ * @return {ymaps.data.Manager}
+ */
+ymaps.data.Manager.prototype.setAll = function(data) {};
+
+
+/**
+ * @param {String|Array.<String>} path Имя поля, либо массив имён.
+ * @return {ymaps.data.Manager}
+ */
+ymaps.data.Manager.prototype.unset = function(path) {};
+
+
+/**
+ * @return {ymaps.data.Manager}
+ */
+ymaps.data.Manager.prototype.unsetAll = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.data.Manager.prototype.freeze = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.data.Manager.prototype.isFrozen = function() {};
+
+
+/**
+ * @return {ymaps.IFreezable}
+ */
+ymaps.data.Manager.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.data.Manager.prototype.events;
+
+
+ymaps.domEvent = {};
+
+/**
+ * 
+ * Расширяет
+ *             IMultiTouchEvent.
+ * 
+ * Объект, описывающий multitouch-событие, которое было вызвано
+ * несколькими событиями PointerEvent. Предоставляет прокси-методы для
+ * доступа к полям и методам DOM-события.
+ * 
+ * @constructor
+ * 
+ * @param {Object} originalEvent pointer-событие.
+ * @param {String=} type Тип события. Если не указан, считается равным 'multi' + originalEvent.type.
+ */
+ymaps.domEvent.MultiPointer = function(originalEvent, type) {};
+
+
+/**
+ * @param {String} name Имя свойства.
+ * @return {Object}
+ */
+ymaps.domEvent.MultiPointer.prototype.get = function(name) {};
+
+/**
+ * 
+ * Расширяет
+ *             IMultiTouchEvent.
+ * 
+ * Объект-событие. Предоставляет прокси-методы для
+ * доступа к полям и методам DOM-события. Возвращаемые
+ * значения нормализованы с учётом особенностей различных браузеров.
+ * 
+ * @constructor
+ * 
+ * @param {Object} originalEvent multitouch-событие.
+ * @param {String=} type Тип события. Если не указан, считается равным 'multi' + originalEvent.type.
+ */
+ymaps.domEvent.MultiTouch = function(originalEvent, type) {};
+
+
+/**
+ * @param {String} name Имя свойства.
+ * @return {Object}
+ */
+ymaps.domEvent.MultiTouch.prototype.get = function(name) {};
+
+/**
+ * 
+ * Расширяет
+ *             IMultiTouchEvent.
+ * 
+ * Объект-событие. Предоставляет прокси-методы для
+ * доступа к полям и методам DOM-события (одиночное касание экрана).
+ * 
+ * @constructor
+ * 
+ * @param {Object} originalEvent DOM-событие.
+ * @param {String=} type Тип события. Если не указан, берётся из originalEvent.type.
+ */
+ymaps.domEvent.Pointer = function(originalEvent, type) {};
+
+
+/**
+ * @param {String} name Имя свойства.
+ * @return {Object}
+ */
+ymaps.domEvent.Pointer.prototype.get = function(name) {};
+
+/**
+ * 
+ * Расширяет
+ *             IMultiTouchEvent.
+ * 
+ * Объект-событие. Предоставляет прокси-методы для
+ * доступа к полям и методам DOM-события. Возвращаемые
+ * значения нормализованы с учётом особенностей различных браузеров.
+ * 
+ * @constructor
+ * 
+ * @param {Object} originalEvent DOM-событие.
+ * @param {String=} type Тип события. Если не указан, берётся из originalEvent.type.
+ */
+ymaps.domEvent.Touch = function(originalEvent, type) {};
+
+
+/**
+ * @param {String} name Имя свойства.
+ * @return {Object}
+ */
+ymaps.domEvent.Touch.prototype.get = function(name) {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Предоставляет единый интерфейс для работы с событиями DOM-элементов во всех браузерах и на всех устройствах.
+ * Для устройств, которые не поддерживают мышь, события будут транслироваться.
+ * 
+ * Событие начала касания (touchstart/pointerdown) с одной точкой прикосновения
+ *     транслируется в последовательность событий mouseenter, mousemove и mousedown;
+ *     Событие перемещения касания (touchmove/pointermove) с одной точкой прикосновения транслируется в событие mousemove;
+ *     События завершения касания (touchend/pointerup) или отмены (touchcancel/pointercancel)
+ *     транслируются в последовательность событий mouseup, mousemove и mouseleave,
+ *     если ранее произошло событие начала касания с одной точкой прикосновения;
+ *     Быстрое поступление событий начала и завершения с одной точкой прикосновения без перемещения транслируется в событие click;
+ *     Быстрое поступление двух событий click транслируется в событие dblclick;
+ *     Если между событиями начала и завершения с одной точкой прикосновения без перемещения была продолжительная задержка,
+ *     то это транслируется в событие contextmenu.
+ * Также поддерживаются специальные события для обработки нескольких одновременных касаний.
+ * 
+ * multitouchstart отправляется при поступлении события начала касания с двумя и более точками прикосновений;
+ *     multitouchmove отправляется при поступлении события перемещения касания с двумя и более точками прикосновений;
+ *     multitouchend отправляется при поступлении события завершения касания, если ранее было отправлено событие multitouchstart;
+ *     При добавлении/удалении точки прикосновения будет отправлено событие multitouchend
+ *     и событие multitouchstart, если оставшееся количество точек больше или равно двум.
+ * Менеджер работы с событиями DOM-элементов.
+ * 
+ * Методы 
+ * 
+ * Примеры: 
+ * 
+ * 1.
+ * 
+ * 2.
+ * 
+ * 3.
+ * 
+ * 4.
+ * 
+ */
+ymaps.domEvent.manager = {};
+
+
+/**
+ * @param {HTMLElement} htmlElement DOM-элемент, события которого необходимо прослушивать.
+ * @param {String|Array.<String>} types Тип или типы событий.
+ * @param {Function} callback Функция-обработчик события.
+ * @param {Object=} context Контекст исполнения функции-обработчика.
+ * @param {Boolean=} capture Признак того, что событие необходимо отслеживать на фазе захвата.
+ * @return {ymaps.domEvent.manager}
+ */
+ymaps.domEvent.manager.add = function(htmlElement, types, callback, context, capture) {};
+
+
+/**
+ * @param {HTMLElement} htmlElement DOM-элемент.
+ * @param {Boolean=} capture Признак того, что событие необходимо отслеживать на фазе захвата.
+ * @return {ymaps.event.Group}
+ */
+ymaps.domEvent.manager.group = function(htmlElement, capture) {};
+
+
+/**
+ * @param {HTMLElement} htmlElement DOM-элемент, события которого прослушиваются.
+ * @param {String|Array.<String>} types Тип или типы событий.
+ * @param {Function|String} callback Функция-обработчик события либо уникальный
+ *                                   id пары callback-context.
+ * @param {Object=} context Контекст исполнения функции-обработчика.
+ * @param {Boolean=} capture Признак того, что событие необходимо отслеживать на фазе захвата.
+ * @return {ymaps.domEvent.manager}
+ */
+ymaps.domEvent.manager.remove = function(htmlElement, types, callback, context, capture) {};
+
+
+ymaps.error = {};
+
+/**
+ * 
+ * Расширяет
+ *             error.ExternalError.
+ * 
+ * @constructor
+ * @extends {ymaps.error.ExternalError}
+ * 
+ */
+ymaps.error.AccessError = function() {};
+
+/**
+ * 
+ * Расширяет Error.
+ * 
+ * @constructor
+ * @extends {ymaps.Error}
+ * 
+ */
+ymaps.error.ClientError = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.ExternalError.
+ * 
+ * @constructor
+ * @extends {ymaps.error.ExternalError}
+ * 
+ */
+ymaps.error.DataProcessingError = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.Warning.
+ * 
+ * @constructor
+ * @extends {ymaps.error.Warning}
+ * 
+ */
+ymaps.error.DeprecationWarning = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.Reject.
+ * 
+ * @constructor
+ * @extends {ymaps.error.Reject}
+ * 
+ */
+ymaps.error.EmptyResultReject = function() {};
+
+/**
+ * 
+ * Расширяет Error.
+ * 
+ * @constructor
+ * @extends {ymaps.Error}
+ * 
+ */
+ymaps.error.ExternalError = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.ClientError.
+ * 
+ * @constructor
+ * @extends {ymaps.error.ClientError}
+ * 
+ */
+ymaps.error.FeatureRemovedError = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.ClientError.
+ * 
+ * @constructor
+ * @extends {ymaps.error.ClientError}
+ * 
+ */
+ymaps.error.InputError = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.ExternalError.
+ * 
+ * @constructor
+ * @extends {ymaps.error.ExternalError}
+ * 
+ */
+ymaps.error.NotSupportedError = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.Reject.
+ * 
+ * @constructor
+ * @extends {ymaps.error.Reject}
+ * 
+ */
+ymaps.error.OperationCanceledReject = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.Reject.
+ * 
+ * @constructor
+ * @extends {ymaps.error.Reject}
+ * 
+ */
+ymaps.error.OperationUnallowedReject = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.Reject.
+ * 
+ * @constructor
+ * @extends {ymaps.error.Reject}
+ * 
+ */
+ymaps.error.OperationUnawailableReject = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.Warning.
+ * 
+ * @constructor
+ * @extends {ymaps.error.Warning}
+ * 
+ */
+ymaps.error.OveruseWarning = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.ClientError.
+ * 
+ * @constructor
+ * @extends {ymaps.error.ClientError}
+ * 
+ */
+ymaps.error.ProcessError = function() {};
+
+/**
+ * 
+ * Расширяет Error.
+ * 
+ * @constructor
+ * @extends {ymaps.Error}
+ * 
+ */
+ymaps.error.Reject = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.ExternalError.
+ * 
+ * @constructor
+ * @extends {ymaps.error.ExternalError}
+ * 
+ */
+ymaps.error.RequestError = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.ClientError.
+ * 
+ * @constructor
+ * @extends {ymaps.error.ClientError}
+ * 
+ */
+ymaps.error.StateError = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             error.ClientError.
+ * 
+ * @constructor
+ * @extends {ymaps.error.ClientError}
+ * 
+ */
+ymaps.error.StorageItemAccessError = function() {};
+
+/**
+ * 
+ * Расширяет Error.
+ * 
+ * @constructor
+ * @extends {ymaps.Error}
+ * 
+ */
+ymaps.error.Warning = function() {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Критические ошибки при выполнении операций.
+ * Эти ошибки вызваны некорректным использованием API и должны быть исправлены разработчиком.
+ * 
+ * @param {String} errorType Тип ошибки (из пространства имен error.*).
+ * @param {String=} message Текст ошибки.
+ */
+ymaps.error.create = function(errorType, message) {};
+
+
+ymaps.event = {};
+
+/**
+ * 
+ * Расширяет
+ *             IEventGroup.
+ * 
+ * Группа слушателей событий.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventGroup}
+ * 
+ * @param {ymaps.IEventManager} events Менеджер событий, для которого создается группа.
+ */
+ymaps.event.Group = function(events) {};
+
+
+/**
+ * @param {String|Array.<String>} types Тип события или массив типов.
+ * @param {Function} callback Функция-обработчик. В качестве параметра в функцию передается
+ *                            объект события.
+ * @param {Object=} context Контекст исполнения функции-обработчика.
+ * @param {number=} priority Приоритет подписки.
+ * @return {ymaps.IEventGroup}
+ */
+ymaps.event.Group.prototype.add = function(types, callback, context, priority) {};
+
+
+/**
+ * @param {String|Array.<String>} types Тип или массив типов событий.
+ * @param {Function} callback Функция-обработчик. В качестве параметра в функцию передается
+ *                            объект события.
+ * @param {Object=} context Контекст исполнения функции-обработчика.
+ * @param {number=} priority Приоритет подписки.
+ * @return {ymaps.IEventGroup}
+ */
+ymaps.event.Group.prototype.remove = function(types, callback, context, priority) {};
+
+
+/**
+ * @return {ymaps.IEventGroup}
+ */
+ymaps.event.Group.prototype.removeAll = function() {};
+
+
+/**
+ * Менеджер событий, для которого создана группа.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.event.Group.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IEventManager.
+ * 
+ * Менеджер событий. При помощи менеджера событий можно подписываться на события и
+ * отписываться от них, а также инициировать сами события.
+ * Менеджер реализует возможность построения иерархии распространения событий с помощью метода
+ * event.Manager.setParent.
+ * Распространение события происходит в три фазы:
+ * 
+ * 1. Событие получают непосредственные подписчики;
+ * 2. Событие получают вышестоящие в иерархии объекты посредством перебрасывания
+ * события на родительском менеджере событий;
+ * 3. Событие получают обработчики действия по умолчанию посредством служебного события
+ * type + 'defaultaction'; действие по умолчанию выполняется, только если поле target события
+ * совпадает с контекстом менеджера событий.
+ * Также менеджер позволяет добавлять обработчики событий с указанием приоритета. При
+ * бросании событий обработчики будут вызваны в порядке убывания приоритета.
+ * Подписки с одинаковыми параметрами callback, context, но с разными приоритетами считаются
+ * разными. При удалении подписки необходимо указывать тот же приоритет, что и при
+ * добавлении.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventManager}
+ * 
+ * @param {Object=} params Параметры менеджера событий.
+ */
+ymaps.event.Manager = function(params) {};
+
+
+/**
+ * @param {String} type Тип события.
+ * @param {Object} event Объект, описывающий событие.
+ * @param {Object} target Объект, на котором произошло событие.
+ * @return {ymaps.Event}
+ */
+ymaps.event.Manager.prototype.createEventObject = function(type, event, target) {};
+
+
+/**
+ * @param {String} type Тип события.
+ * @param {Object|ymaps.Event=} event Событие. Если передан хэш с данными, то для него будет
+ *                                    вызван метод createEventObject, и дальнейшие действия будут производиться с новым
+ *                                    созданным событием.
+ * @return {ymaps.event.Manager}
+ */
+ymaps.event.Manager.prototype.fire = function(type, event) {};
+
+
+/**
+ * @param {String|Array.<String>} types Тип события или массив типов.
+ * @param {Function} callback Функция-обработчик события. В качестве параметра в функцию передается
+ *                            объект события IEvent.
+ * @param {Object=} context Контекст исполнения обработчика.
+ * @param {number=} priority Приоритет подписки.
+ * @return {ymaps.IEventManager}
+ */
+ymaps.event.Manager.prototype.once = function(types, callback, context, priority) {};
+
+
+/**
+ * @param {ymaps.IEventManager|null} parent Родительский менеджер событий.
+ * @return {ymaps.event.Manager}
+ */
+ymaps.event.Manager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @param {String|Array.<String>} types Тип или массив типов события.
+ * @param {Function} callback Функция-обработчик события. В качестве параметра в функцию передается
+ *                            объект, описывающий событие. Может быть либо произвольным объектом, либо реализовывать интерфейс IEvent.
+ * @param {Object=} context Контекст исполнения обработчика.
+ * @param {number=} priority Приоритет подписки.
+ * @return {ymaps.IEventManager}
+ */
+ymaps.event.Manager.prototype.add = function(types, callback, context, priority) {};
+
+
+/**
+ * @return {ymaps.IEventManager|null}
+ */
+ymaps.event.Manager.prototype.getParent = function() {};
+
+
+/**
+ * @return {ymaps.IEventGroup}
+ */
+ymaps.event.Manager.prototype.group = function() {};
+
+
+/**
+ * @param {String|Array.<String>} types Тип события или массив типов.
+ * @param {Function} callback Функция-обработчик события. В качестве параметра в функцию передается
+ *                            объект события IEvent.
+ * @param {Object=} context Контекст исполнения обработчика.
+ * @param {number=} priority Приоритет подписки.
+ * @return {ymaps.IEventManager}
+ */
+ymaps.event.Manager.prototype.remove = function(types, callback, context, priority) {};
+
+/**
+ * 
+ * Расширяет
+ *             IEventTrigger.
+ * 
+ * Маппер событий. Позволяет управлять распространением событий по иерархии менеджеров событий.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventTrigger}
+ * 
+ * @param {ymaps.IEventManager} targetEventManager Менеджер событий, на который маппер распространяет инициируемые на
+ *                                                 нем события.
+ * @param {Object} mappingTable Таблица правил маппинга. Представляет собой хэш, ключами которого являются типы
+ *                              событий, а значениями - соответствующие функции маппинга, либо Boolean значения.
+ *                              Функция маппинга для конкретного типа событий получает на вход экземпляр события, инициированного на маппере,
+ *                              а возвращать должна экземпляр события для распространения далее по иерархии, либо null, если распространение
+ *                              необходимо запретить.
+ *                              Boolean значения трактуются следующим образом:
+ *                              
+ *                                  true - события данного типа распространяются по иерархии в неизменном виде;
+ *                                  false - события данного типа по иерархии не распространяются.
+ *                              
+ *                              Дополнительно в таблице доступен ключ "*" для правила обработки по умолчанию.
+ */
+ymaps.event.Mapper = function(targetEventManager, mappingTable) {};
+
+
+/**
+ * @param {String} type Тип события.
+ * @param {Object|ymaps.IEvent=} eventObject Объект, описывающий событие. Может быть
+ *                                           либо произвольным объектом, либо реализовывать интерфейс IEvent. Во втором случае
+ *                                           после вызова каждого обработчика будет проверяться значение метода isImmediatePropagationStopped() -
+ *                                           если оно истинно, оповещение о событии немедленно прекращается.
+ * @return {ymaps.IEventTrigger}
+ */
+ymaps.event.Mapper.prototype.fire = function(type, eventObject) {};
+
+
+ymaps.geoObject = {};
+
+/**
+ * 
+ * Расширяет
+ *             IBalloonManager.
+ * 
+ * Менеджер балуна геообъекта. Позволяет управлять балуном геообъекта, открывать и скрывать его.
+ * Передает балуну данные в формате IGeoObjectPopupData.
+ * Использует внутри себя менеджер балуна карты map.Balloon.
+ * Геообъекты содержат экземпляр этого класса, доступный как myGeoObject.balloon.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Balloon GeoObject.balloon 
+ * 
+ * @constructor
+ * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {Object} geoObject Геообъект.
+ */
+ymaps.geoObject.Balloon = function(geoObject) {};
+
+
+/**
+ * @param {Array.<Number>=} position Координаты открытия. По умолчанию: точка на геообъекте, ближайшая к текущему центру карты.
+ *                                   Проекцию координат можно указать в опциях, иначе используется проекция геообъекта.
+ * @param {Object=} data Данные, добавляемые в поле userData объекта данных, передаваемых балуну.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @param {Object=} data Данные, добавляемые в поле userData объекта данных, передаваемых балуну.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.geoObject.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.geoObject.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.geoObject.Balloon.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geoObject.Balloon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IHintManager.
+ * 
+ * Менеджер хинта геообъекта. Позволяет управлять хинтом геообъекта, открывать и скрывать его.
+ * Передает хинту данные в формате IGeoObjectPopupData.
+ * Использует внутри себя менеджер хинтов карты map.Hint.
+ * Геообъекты содержат экземпляр этого класса, доступный как myGeoObject.hint.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Hint GeoObject.hint 
+ * 
+ * @constructor
+ * @implements {ymaps.IHintManager}
+ * 
+ * @param {Object} geoObject Геообъект.
+ */
+ymaps.geoObject.Hint = function(geoObject) {};
+
+
+/**
+ * @param {Array.<Number>=} position Координаты открытия. По умолчанию: геометрический центр тяжести геообъекта.
+ *                                   Проекцию координат можно указать в опциях, иначе используется проекция геообъекта.
+ * @param {Object=} data Данные, добавляемые в поле userData объекта данных, передаваемых хинту.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @param {Object=} data Данные, добавляемые в поле userData объекта данных, передаваемых хинту.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Hint.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.geoObject.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.geoObject.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.geoObject.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.geoObject.Hint.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geoObject.Hint.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IGeoObject, IGeoObjectSequence.
+ * 
+ * Неизменяемая коллекция геообъектов. Позволяет группировать геообъекты для добавления на карту,
+ * задания опций и т.д. Коллекция также является геообъектом.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * @implements {ymaps.IGeoObjectSequence}
+ * 
+ * @param {Object=} feature Описание коллекции. Функционально соответствует описанию
+ *                          геообъекта. Смотрите GeoObject.
+ * @param {Object=} options Опции коллекции. Здесь можно задавать все опции описанные в классе
+ *                          GeoObject. Значения опций будут применяться как к самой коллекции, так и к ее
+ *                          дочерним объектам, если для них данные опции не определены.
+ */
+ymaps.geoObject.Sequence = function(feature, options) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geoObject.Sequence.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.geoObject.Sequence.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.geoObject.Sequence.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.geoObject.Sequence.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.geoObject.Sequence.prototype.getMap = function() {};
+
+
+/**
+ * @param {Function} callback Функция-обработчик.
+ * @param {Object=} context Контекст выполнения функции-обработчика.
+ */
+ymaps.geoObject.Sequence.prototype.each = function(callback, context) {};
+
+
+/**
+ * @param {number} index Индекс.
+ * @return {ymaps.IGeoObject}
+ */
+ymaps.geoObject.Sequence.prototype.get = function(index) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geoObject.Sequence.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IIterator}
+ */
+ymaps.geoObject.Sequence.prototype.getIterator = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geoObject.Sequence.prototype.getLength = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geoObject.Sequence.prototype.getPixelBounds = function() {};
+
+
+/**
+ * @param {ymaps.IGeoObject} object Дочерний геообъект.
+ * @return {number}
+ */
+ymaps.geoObject.Sequence.prototype.indexOf = function(object) {};
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.geoObject.Sequence.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.geoObject.Sequence.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.geoObject.Sequence.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geoObject.Sequence.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geoObject.Sequence.prototype.options;
+
+
+ymaps.geoXml = {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Загружает XML-файл с географическими данными и преобразует его
+ * в коллекцию GeoObjectCollection. Сформированная коллекция
+ * может быть передана заданной функции для последующей обработки.
+ * Поддерживаемые форматы XML-данных: YMapsML, KML, GPX.
+ * Для верхней коллекции геообъектов GPX-файла доступны следующие пресеты:
+ * 
+ * 'gpx#interactive' - обеспечивает вывод информации о точке маршрута при клике. Также при
+ *     использовании этого пресета в макете балуна становятся доступными следующие свойства геообъекта: time, velocity, trackName,
+ *     trackDescription, pointName, pointDescription, lon, lat, sym. Используется по умолчанию;
+ *     'gpx#plain' - элементы gpx-коллекции ведут себя как обычные геообъекты;
+ * Возвращает:  Объект-promise. Если xml-файл по указанному
+ * урлу будет успешно загружен, promise будет подтверждён и получит в качестве параметров
+ * объект со следующими полями:
+ * 
+ * geoObjects - коллекция геообъектов GeoObjectCollection;
+ *     mapState - описание состояния карты IMapState (только для YMapsML);
+ * 
+ * (тип vow.Promise).
+ * 
+ * @param {String} url URL файла с географическими данными.
+ * 
+ * @returns {ymaps.vow.Promise}
+ */
+ymaps.geoXml.load = function(url) {};
+
+
+ymaps.geometry = {};
+
+/**
+ * 
+ * Расширяет
+ *             ICircleGeometry.
+ * 
+ * Геометрия "Круг".
+ * 
+ * См.: Circle 
+ * 
+ * @constructor
+ * @implements {ymaps.ICircleGeometry}
+ * 
+ * @param {Array.<Number>|null=} coordinates Координаты центра круга.
+ * @param {Number=} radius Радиус круга в метрах.
+ * @param {Object=} options Опции геометрии.
+ */
+ymaps.geometry.Circle = function(coordinates, radius, options) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.Circle.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.Circle.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на окружности.
+ * @return {Object}
+ */
+ymaps.geometry.Circle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @return {Array.<Number>|null}
+ */
+ymaps.geometry.Circle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @return {Number}
+ */
+ymaps.geometry.Circle.prototype.getRadius = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>|null} coordinates Координаты центра круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.geometry.Circle.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Number} radius Радиус круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.geometry.Circle.prototype.setRadius = function(radius) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Circle.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.Circle.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Circle.prototype.unfreeze = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.Circle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.Circle.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.Circle.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.Circle.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер событий объекта.
+ * 
+ * @see ymaps.IFreezable
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.Circle.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.Circle.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             ILineStringGeometry.
+ * 
+ * Геометрия "Ломаная линия".
+ * 
+ * См.: Polyline 
+ * 
+ * @constructor
+ * @implements {ymaps.ILineStringGeometry}
+ * 
+ * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
+ * @param {Object=} options Опции геометрии.
+ */
+ymaps.geometry.LineString = function(coordinates, options) {};
+
+
+/**
+ * @param {Number=} from Начиная с какой точки считать длину.
+ * @param {Number=} to До какой точки считать длину. Если не указано, берётся последняя точка.
+ * @return {Number}
+ */
+ymaps.geometry.LineString.prototype.getDistance = function(from, to) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.LineString.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.LineString.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.LineString.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.LineString.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.LineString.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.LineString.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс вершины.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.LineString.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
+ * @return {Object}
+ */
+ymaps.geometry.LineString.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.LineString.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.LineString.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.LineString.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.LineString.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.LineString.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.LineString.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.LineString.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.LineString.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.LineString.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.LineString.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.LineString.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.LineString.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IPointGeometry.
+ * 
+ * Геометрия "Точка".
+ * 
+ * См.: Placemark 
+ * 
+ * @constructor
+ * @implements {ymaps.IPointGeometry}
+ * 
+ * @param {Array.<Number>=} position Координаты точки.
+ * @param {Object=} options Опции геометрии.
+ */
+ymaps.geometry.Point = function(position, options) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.Point.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.Point.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.Point.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.Point.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.Point.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.IPointGeometryAccess
+ * 
+ * @return {Array.<Number>|null}
+ */
+ymaps.geometry.Point.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPointGeometryAccess
+ * 
+ * @param {Array.<Number>|null} coordinates Координаты точки.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.Point.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.Point.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.Point.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IPolygonGeometry.
+ * 
+ * Геометрия "Многоугольник".
+ * 
+ * См.: Polygon 
+ * 
+ * @constructor
+ * @implements {ymaps.IPolygonGeometry}
+ * 
+ * @param {Array.<Array.<Array.<Number>>>=} coordinates Координаты геометрии. Трехмерный массив, элементами которого являются
+ *                                                      двумерные массивы координат контуров многоугольника. Первый элемент описывает внешний контур, остальные - внутренние.
+ * @param {String=} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
+ *                           Может принимать одно из двух значений:
+ *                           
+ *                               evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                               до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
+ *                               пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
+ *                               nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                               до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
+ *                               нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
+ *                               раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
+ *                               находится снаружи контура. В противном случае она находится внутри.
+ *                           
+ * @param {Object=} options Опции геометрии.
+ */
+ymaps.geometry.Polygon = function(coordinates, fillRule, options) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.Polygon.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.Polygon.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.Polygon.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.Polygon.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.Polygon.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.Polygon.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.Polygon.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.geometry.Polygon.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.geometry.Polygon.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {String}
+ */
+ymaps.geometry.Polygon.prototype.getFillRule = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.Polygon.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.insert = function(index, path) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.set = function(index, path) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты геометрии.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.Polygon.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление контуров.
+ * @param {number} number Количество удаляемых контуров.
+ * @return {Array.<ymaps.ILinearRingGeometryAccess>}
+ */
+ymaps.geometry.Polygon.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Polygon.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.Polygon.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Polygon.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.Polygon.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.Polygon.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IRectangleGeometry.
+ * 
+ * Геометрия "Прямоугольник".
+ * 
+ * См.: Rectangle 
+ * 
+ * @constructor
+ * @implements {ymaps.IRectangleGeometry}
+ * 
+ * @param {Array.<Array.<Number>>|null=} coordinates Массив, содержащий координаты двух противоположных углов прямоугольника.
+ * @param {Object=} options Опции геометрии.
+ */
+ymaps.geometry.Rectangle = function(coordinates, options) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.Rectangle.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.Rectangle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometry.Rectangle.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.Rectangle.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @see ymaps.IGeometry
+ * 
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometry.Rectangle.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.Rectangle.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
+ * @return {Object}
+ */
+ymaps.geometry.Rectangle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.Rectangle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты углов.
+ * @return {ymaps.IRectangleGeometryAccess}
+ */
+ymaps.geometry.Rectangle.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Rectangle.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.Rectangle.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.Rectangle.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.Rectangle.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometry.Rectangle.prototype.options;
+
+
+ymaps.geometryEditor = {};
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryEditor.
+ * 
+ * Редактор геометрии "Ломаная линия".
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditor}
+ * 
+ * @param {ymaps.ILineStringGeometry} geometry Геометрия "Ломаная линия".
+ * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
+ *                          редактора, так и опции его составных частей:
+ *                          
+ *                              опции направляющих линий с префиксом guideLines.
+ *                          
+ */
+ymaps.geometryEditor.LineString = function(geometry, options) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.LineString.prototype.getModel = function() {};
+
+
+/**
+ * @return {ymaps.geometryEditor.model.RootLineString|null}
+ */
+ymaps.geometryEditor.LineString.prototype.getModelSync = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.LineString.prototype.getView = function() {};
+
+
+/**
+ * @return {ymaps.geometryEditor.view.Path|null}
+ */
+ymaps.geometryEditor.LineString.prototype.getViewSync = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.LineString.prototype.startDrawing = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.LineString.prototype.startEditing = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.LineString.prototype.startFraming = function() {};
+
+
+/**
+ */
+ymaps.geometryEditor.LineString.prototype.stopDrawing = function() {};
+
+
+/**
+ */
+ymaps.geometryEditor.LineString.prototype.stopEditing = function() {};
+
+
+/**
+ */
+ymaps.geometryEditor.LineString.prototype.stopFraming = function() {};
+
+
+/**
+ * Менеджер состояния редактора геометрии.
+ * Поля данных, доступные посредством методов get и set:
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.geometryEditor.LineString.prototype.state;
+
+
+/**
+ * Редактируемая геометрия.
+ * 
+ * @type {ymaps.IGeometry}
+ */
+ymaps.geometryEditor.LineString.prototype.geometry;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometryEditor.LineString.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.LineString.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryEditor.
+ * 
+ * Редактор геометрии "Точка".
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditor}
+ * 
+ * @param {ymaps.IPointGeometry} geometry Геометрия "Точка".
+ * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
+ *                          редактора, так и опции его составных частей:
+ *                          
+ *                              опции направляющих линий с префиксом guideLines.
+ *                          
+ */
+ymaps.geometryEditor.Point = function(geometry, options) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.Point.prototype.startDrawing = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.Point.prototype.stopDrawing = function() {};
+
+
+/**
+ */
+ymaps.geometryEditor.Point.prototype.startEditing = function() {};
+
+
+/**
+ */
+ymaps.geometryEditor.Point.prototype.stopEditing = function() {};
+
+
+/**
+ * Менеджер состояния редактора геометрии.
+ * Поля данных, доступные посредством методов get и set:
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.geometryEditor.Point.prototype.state;
+
+
+/**
+ * Редактируемая геометрия.
+ * 
+ * @type {ymaps.IGeometry}
+ */
+ymaps.geometryEditor.Point.prototype.geometry;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometryEditor.Point.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.Point.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryEditor.
+ * 
+ * Редактор геометрии "Многоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditor}
+ * 
+ * @param {ymaps.IPolygonGeometry} geometry Геометрия "Многоугольник".
+ * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
+ *                          редактора, так и опции его составных частей:
+ *                          
+ *                              опции направляющих линий с префиксом guideLines.
+ *                          
+ */
+ymaps.geometryEditor.Polygon = function(geometry, options) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.Polygon.prototype.getModel = function() {};
+
+
+/**
+ * @return {ymaps.geometryEditor.model.RootPolygon|null}
+ */
+ymaps.geometryEditor.Polygon.prototype.getModelSync = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.Polygon.prototype.getView = function() {};
+
+
+/**
+ * @return {ymaps.geometryEditor.view.MultiPath|null}
+ */
+ymaps.geometryEditor.Polygon.prototype.getViewSync = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.Polygon.prototype.startDrawing = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.Polygon.prototype.startEditing = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.geometryEditor.Polygon.prototype.startFraming = function() {};
+
+
+/**
+ */
+ymaps.geometryEditor.Polygon.prototype.stopDrawing = function() {};
+
+
+/**
+ */
+ymaps.geometryEditor.Polygon.prototype.stopEditing = function() {};
+
+
+/**
+ */
+ymaps.geometryEditor.Polygon.prototype.stopFraming = function() {};
+
+
+/**
+ * Менеджер состояния редактора геометрии.
+ * Поля данных, доступные посредством методов get и set:
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.geometryEditor.Polygon.prototype.state;
+
+
+/**
+ * Редактируемая геометрия.
+ * 
+ * @type {ymaps.IGeometry}
+ */
+ymaps.geometryEditor.Polygon.prototype.geometry;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometryEditor.Polygon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.Polygon.prototype.events;
+
+
+ymaps.hotspot = {};
+
+/**
+ * 
+ * Расширяет
+ *             IChildOnMap, ICustomizable.
+ * 
+ * Слой активных областей.
+ * 
+ * @constructor
+ * @implements {ymaps.IChildOnMap}
+ * @implements {ymaps.ICustomizable}
+ * 
+ * @param {ymaps.IHotspotObjectSource} objectSource Источник объектов слоя.
+ * @param {Object=} options Опции слоя.
+ *                          Опции для балунов Balloon и хинтов Hint хотспотного слоя нужно указывать с префиксами 'balloon' и 'hint'.
+ */
+ymaps.hotspot.Layer = function(objectSource, options) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.hotspot.Layer.prototype.getMap = function() {};
+
+
+/**
+ * @param {Array.<Number>} coords Географические координаты точки.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.Layer.prototype.getObjectInPosition = function(coords) {};
+
+
+/**
+ * @return {ymaps.IHotspotObjectSource}
+ */
+ymaps.hotspot.Layer.prototype.getObjectSource = function() {};
+
+
+/**
+ */
+ymaps.hotspot.Layer.prototype.update = function() {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.hotspot.Layer.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.hotspot.Layer.prototype.setParent = function(parent) {};
+
+
+/**
+ * Балун хотспотного слоя.
+ * 
+ * @type {ymaps.hotspot.layer.Balloon}
+ */
+ymaps.hotspot.Layer.prototype.balloon;
+
+
+/**
+ * Хинт хотспотного слоя.
+ * 
+ * @type {ymaps.hotspot.layer.Hint}
+ */
+ymaps.hotspot.Layer.prototype.hint;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.hotspot.Layer.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.hotspot.Layer.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IHotspotObjectSource.
+ * 
+ * Стандартная реализация интерфейса IHotspotObjectSource.
+ * Работает со стандартным форматом ответа сервера.
+ * 
+ * @constructor
+ * @implements {ymaps.IHotspotObjectSource}
+ * 
+ * @param {String|Function} tileUrlTemplate Шаблон URL данных, соответствующих тайлу. Поддерживаются
+ *                                          специальные конструкции и возможность использования функции по аналогии с Layer.
+ * @param {String|Function=} keyTemplate Шаблон идентификатора тайла. Используется для формирования padding в jsonp-запросе за данными.
+ *                                       Задается по аналогии с предыдущим параметром. Все символы, не являющиеся буквой, цифрой или символом '_', будут заменены на '_'.
+ *                                       Если параметр не задан, то padding запроса будет сгенерирован автоматически.
+ *                                       Примеры преобразований при tileNumber=[3, 1], zoom=9:
+ *                                       
+ *                                           'myCallback=%x' =&gt; 'myCallback_3'
+ *                                           '%c' =&gt; 'x_3_y_1_z_9'
+ *                                           'callback2_%c' =&gt; 'callback2_x_3_y_1_z_9'
+ *                                           'callback%test' =&gt; 'callback_test'
+ *                                       
+ * @param {Object=} options Опции источника данных.
+ */
+ymaps.hotspot.ObjectSource = function(tileUrlTemplate, keyTemplate, options) {};
+
+
+/**
+ * @param {Array.<Number>} tileNumber Номер тайла (тайловые координаты).
+ * @param {number} zoom Уровень масштаба.
+ * @return {String}
+ */
+ymaps.hotspot.ObjectSource.prototype.getKey = function(tileNumber, zoom) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.hotspot.ObjectSource.prototype.getKeyTemplate = function() {};
+
+
+/**
+ * @param {Array.<Number>} tileNumber Номер тайла (тайловые координаты).
+ * @param {number} zoom Уровень масштабирования.
+ * @return {String}
+ */
+ymaps.hotspot.ObjectSource.prototype.getTileUrl = function(tileNumber, zoom) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.hotspot.ObjectSource.prototype.getTileUrlTemplate = function() {};
+
+
+/**
+ * @param {ymaps.hotspot.Layer} layer Слой, которому принадлежат объекты.
+ * @param {Object} res Ответ сервера.
+ * @param {Function} callback Функция-обработчик.
+ * @param {Array.<Number>} tileNumber Номер тайла, для которого пришел ответ.
+ * @param {Number} zoom Коэффициент масштабирования, для которого пришел ответ.
+ *                      массива объектов.
+ */
+ymaps.hotspot.ObjectSource.prototype.parseResponse = function(layer, res, callback, tileNumber, zoom) {};
+
+
+/**
+ * @param {ymaps.hotspot.Layer} layer Слой активных областей.
+ * @param {Array.<Number>} tileNumber Номер тайла.
+ * @param {number} zoom Коэффициент масштабирования.
+ * @return {Boolean}
+ */
+ymaps.hotspot.ObjectSource.prototype.restrict = function(layer, tileNumber, zoom) {};
+
+
+/**
+ * @param {String} template Шаблон идентификатора.
+ */
+ymaps.hotspot.ObjectSource.prototype.setKeyTemplate = function(template) {};
+
+
+/**
+ * @param {String} template Шаблон URL
+ */
+ymaps.hotspot.ObjectSource.prototype.setTileUrlTemplate = function(template) {};
+
+
+/**
+ */
+ymaps.hotspot.ObjectSource.prototype.cancelLastRequest = function() {};
+
+
+/**
+ * @param {ymaps.hotspot.Layer} layer Слой активных областей.
+ * @param {Array.<Number>} tileNumber Тайловые координаты.
+ * @param {Number} zoom Коэффициент масштабирования.
+ * @param {Function} callback Функция-обработчик.
+ */
+ymaps.hotspot.ObjectSource.prototype.requestObjects = function(layer, tileNumber, zoom, callback) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.hotspot.ObjectSource.prototype.options;
+
+
+ymaps.interactivityModel = {};
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.Storage
+ * Хранилище моделей интерактивности.
+ * Модели интерактивности позволяют объектам по-разному обрабатывать DOM-события.
+ * Список доступных ключей моделей интерактивности:
+ * 
+ * 'default#opaque' - объект генерирует все DOM-события и не прокидывает их на карту.
+ *     Поведения карты не будут работать при наведении или клике на объекты с данной моделью
+ *     интерактивности.
+ *     'default#geoObject' - объект генерирует все DOM-события.
+ *     На карту прокидываются события 'wheel', 'mousedown', 'dblclick', 'contextmenu', 'multitouchstart', 'multitouchmove' и 'multitouchend'.
+ *     Если на карте включены поведения 'scrollZoom', 'dblClickZoom' или 'magnifier', они будут работать через
+ *     объекты с данной моделью интерактивности, в отличие от объектов с моделью
+ *     'default#opaque'.
+ *     'default#layer' - объект генерирует все DOM-события.
+ *     На карту прокидываются события 'wheel', 'mousedown', 'contextmenu', 'multitouchstart', 'multitouchmove' и 'multitouchend'.
+ *     Если на карте включены поведения 'scrollZoom', 'drag' или 'magnifier', они будут работать
+ *     через объекты с данной моделью интерактивности.
+ *     'default#transparent' - объект генерирует все DOM-события, а затем прокидывает их на
+ *     карту.
+ *     'default#silent' - объект не генерирует DOM-события, но прокидывает их на карту.
+ * 
+ * 
+ * 
+ * @type {ymaps.util.Storage}
+ */
+ymaps.interactivityModel.storage;
+
+
+ymaps.layer = {};
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.Storage
+ * Хранилище слоев.
+ * 
+ * 
+ * @type {ymaps.util.Storage}
+ */
+ymaps.layer.storage;
+
+
+ymaps.layout = {};
+
+/**
+ * 
+ * Расширяет
+ *             ILayout.
+ * 
+ * Класс для создания макетов, содержащих картинку.
+ * 
+ * @constructor
+ * @implements {ymaps.ILayout}
+ * 
+ * @param {ymaps.ILayout} data Данные макета.
+ */
+ymaps.layout.Image = function(data) {};
+
+
+/**
+ */
+ymaps.layout.Image.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.layout.Image.prototype.getData = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.layout.Image.prototype.getParentElement = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.layout.Image.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.layout.Image.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные макета.
+ */
+ymaps.layout.Image.prototype.setData = function(data) {};
+
+
+/**
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.layout.Image.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layout.Image.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             layout.Image.
+ * 
+ * Класс для создания макетов, состоящих из картинки и содержимого.
+ * 
+ * @constructor
+ * @extends {ymaps.layout.Image}
+ * 
+ * @param {ymaps.ILayout} data Данные макета.
+ */
+ymaps.layout.ImageWithContent = function(data) {};
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.AsyncStorage
+ * Хранилище классов лейаутов.
+ * 
+ * 
+ * @type {ymaps.util.AsyncStorage}
+ */
+ymaps.layout.storage;
+
+
+ymaps.map = {};
+
+/**
+ * 
+ * Расширяет
+ *             IBalloonManager, IBalloonSharingManager.
+ * 
+ * Менеджер балуна карты. У каждой карты уже есть собственный менеджер балуна, доступный как myMap.balloon.
+ * В один момент на карте может быть открыт только один балун, управляемый менеджером.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Balloon Map.balloon 
+ * 
+ * @constructor
+ * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {ymaps.Map} map Ссылка на объект карты.
+ */
+ymaps.map.Balloon = function(map) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.map.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.map.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.map.Balloon.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.Balloon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IDomEventEmitter.
+ * 
+ * Менеджер контейнера карты. У каждой карты уже есть свой собственный
+ * менеджер контейнера, доступный как map.container. Не инстанцируйте экземпляры
+ * этого класса без необходимости.
+ * 
+ * См.: Map.container 
+ * 
+ * @constructor
+ * @implements {ymaps.IDomEventEmitter}
+ * 
+ * @param {String|HTMLElement} parentElement HTML-элемент, в котором будет создана карта или его id.
+ */
+ymaps.map.Container = function(parentElement) {};
+
+
+/**
+ */
+ymaps.map.Container.prototype.enterFullscreen = function() {};
+
+
+/**
+ */
+ymaps.map.Container.prototype.exitFullscreen = function() {};
+
+
+/**
+ * @param {Boolean=} preservePixelPosition Сохранять положение центра карты.
+ */
+ymaps.map.Container.prototype.fitToViewport = function(preservePixelPosition) {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.map.Container.prototype.getElement = function() {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.map.Container.prototype.getOffset = function() {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.map.Container.prototype.getSize = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.map.Container.prototype.isFullscreen = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.Container.prototype.events;
+
+/**
+ * 
+ * Класс для преобразования глобальных пиксельных координат точки
+ * (считаются от левого верхнего угла мира) в локальные
+ * (считаются от левого верхнего угла окна) и наоборот.
+ * У каждой карты уже есть собственный конвертер, доступный как map.converter.
+ * Не инстанцируйте экземпляры этого класса без необходимости.
+ * 
+ * См.: Map.converter 
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.Map} map Ссылка на карту.
+ */
+ymaps.map.Converter = function(map) {};
+
+
+/**
+ * @param {Array.<Number>} globalPixelPoint Пиксельные координаты точки, которые необходимо преобразовать.
+ * @return {Array.<Number>}
+ */
+ymaps.map.Converter.prototype.globalToPage = function(globalPixelPoint) {};
+
+
+/**
+ * @param {Array.<Number>} pagePixelPoint Пиксельные координаты точки, которые необходимо преобразовать.
+ * @return {Array.<Number>}
+ */
+ymaps.map.Converter.prototype.pageToGlobal = function(pagePixelPoint) {};
+
+/**
+ * 
+ * Менеджер размещённой на карте информации
+ * об авторских правах. У каждой карты уже есть собственный менеджер
+ * информации об авторских правах, доступный как map.copyrights. Не инстанцируйте экземпляры
+ * этого класса без необходимости.
+ * 
+ * См.: Map.copyrights 
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.Map} map Карта.
+ */
+ymaps.map.Copyrights = function(map) {};
+
+
+/**
+ * @param {String|HTMLElement|Array.<String>|Array.<HTMLElement>} customCopyrights Информация
+ *                                                                                 об авторских правах в виде строки, DOM-элемента либо массива строк/DOM-элементов.
+ * @return {ymaps.ICopyrightsAccessor}
+ */
+ymaps.map.Copyrights.prototype.add = function(customCopyrights) {};
+
+
+/**
+ * @param {ymaps.ICopyrightsProvider} provider Провайдер.
+ * @return {ymaps.map.Copyrights}
+ */
+ymaps.map.Copyrights.prototype.addProvider = function(provider) {};
+
+
+/**
+ * @param {Array.<Number>=} point Точка (в географических координатах),
+ *                                для которой требуется определить информацию об авторских правах.
+ *                                Если не указана, берётся текущий центр карты.
+ * @param {Number=} zoom Уровень масштабирования,
+ *                       для которого требуется определить информацию об авторских правах.
+ *                       Если не указан, берётся текущий уровень масштабирования карты.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Copyrights.prototype.get = function(point, zoom) {};
+
+
+/**
+ * @param {ymaps.ICopyrightsProvider} provider Провайдер.
+ * @return {ymaps.map.Copyrights}
+ */
+ymaps.map.Copyrights.prototype.removeProvider = function(provider) {};
+
+
+/**
+ * Менеджер событий.
+ * Бросает события типа MapEvent.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.map.Copyrights.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IGeoObjectCollection.
+ * 
+ * Коллекция геообъектов карты. У каждой карты уже есть своя коллекция геообъектов,
+ * доступная как map.geoObjects. Не инстанцируйте экземпляры этого класса без необходимости.
+ * 
+ * См.: Map.geoObjects 
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObjectCollection}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {Object=} options Опции коллекции геообъектов.
+ *                          Через опции map.geoObjects можно задавать настройки геообъектов, добавленных на карту:
+ *                          
+ *                              опции кластеризаторов с префиксом clusterer;
+ *                              опции кластеров с префиксом cluster.
+ *                          
+ */
+ymaps.map.GeoObjects = function(map, options) {};
+
+
+/**
+ * @param {ymaps.IGeoObject} child Дочерний геообъект.
+ * @param {number=} index Индекс, в который добавляется новый объект.
+ *                        По умолчанию объект добавляется в конец коллекции.
+ * @return {ymaps.map.GeoObjects}
+ */
+ymaps.map.GeoObjects.prototype.add = function(child, index) {};
+
+
+/**
+ * @param {Function} callback Функция-обработчик.
+ * @param {Object=} context Контекст выполнения функции-обработчика.
+ */
+ymaps.map.GeoObjects.prototype.each = function(callback, context) {};
+
+
+/**
+ * @param {number} index Индекс.
+ * @return {ymaps.IGeoObject}
+ */
+ymaps.map.GeoObjects.prototype.get = function(index) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.map.GeoObjects.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IIterator}
+ */
+ymaps.map.GeoObjects.prototype.getIterator = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.map.GeoObjects.prototype.getLength = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.map.GeoObjects.prototype.getPixelBounds = function() {};
+
+
+/**
+ * @param {Object} object Дочерний геообъект.
+ * @return {number}
+ */
+ymaps.map.GeoObjects.prototype.indexOf = function(object) {};
+
+
+/**
+ * @param {ymaps.IGeoObject} child Удаляемый геообъект.
+ * @return {ymaps.map.GeoObjects}
+ */
+ymaps.map.GeoObjects.prototype.remove = function(child) {};
+
+
+/**
+ * @return {ymaps.map.GeoObjects}
+ */
+ymaps.map.GeoObjects.prototype.removeAll = function() {};
+
+
+/**
+ * @param {number} index Индекс.
+ * @param {ymaps.IGeoObject} child Дочерний геообъект.
+ * @return {ymaps.map.GeoObjects}
+ */
+ymaps.map.GeoObjects.prototype.set = function(index, child) {};
+
+
+/**
+ * @param {number} index Индекс геообъекта, с которого начинается удаление.
+ * @param {number} number Количество удаляемых геообъектов.
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.map.GeoObjects.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.map.GeoObjects.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.map.GeoObjects.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.GeoObjects.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IHintManager, IHintSharingManager.
+ * 
+ * Менеджер хинта карты. У каждой карты уже есть собственный менеджер хинта, доступный как myMap.hint.
+ * В один момент на карте может быть открыт только один хинт, управляемый менеджером.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Hint Map.hint 
+ * 
+ * @constructor
+ * @implements {ymaps.IHintManager}
+ * 
+ * @param {ymaps.Map} map Ссылка на объект карты.
+ */
+ymaps.map.Hint = function(map) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Hint.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.map.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.map.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.map.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.map.Hint.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>=} position Координаты открытия.
+ * @param {Object|String|HTMLElement=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.Hint.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Менеджер коэффициентов масштабирования карты.
+ * У каждой карты уже есть свой менеджер коэффициентов масштабирования, доступный как
+ * map.zoomRange. Не инстанцируйте экземпляры этого класса без необходимости.
+ * 
+ * См.: Map.zoomRange 
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {Array.<Number>} constraints Массив, содержащий минимальный и максимальный зум карты.
+ */
+ymaps.map.ZoomRange = function(map, constraints) {};
+
+
+/**
+ * @param {*} coords 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.ZoomRange.prototype.get = function(coords) {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.map.ZoomRange.prototype.getCurrent = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.ZoomRange.prototype.events;
+
+
+ymaps.mapType = {};
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.Storage
+ * Хранилище типов карты.
+ * 
+ * Методы 
+ * 
+ * 
+ * @type {ymaps.util.Storage}
+ */
+ymaps.mapType.storage;
+
+
+ymaps.modules = {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Определение модуля в модульной системе.
+ * Примечание.&nbsp;Рекомендуется создавать собственные модули в своем пространстве имен, чтобы случано не заменить необходимые для работы API модули.
+ * 
+ * Возвращает:  Ссылку на самого себя.
+ *         (тип modules).
+ * 
+ * @param {String} module Название модуля.
+ * @param {Array.<String>=} depends Массив названий необходимых модулей. Этот аргумент может быть пропущен.
+ * @param {Function} resolveCallback Функция, которая определяет модуль.
+ *                                   Первым аргументом в resolveCallback поступит provide-функция, в которую нужно будет передать модуль. 
+ *                                   Вызов provide-функции может быть отложен во времени.
+ *                                   Последующие аргументы - это модули, указанные в зависимостях. Порядок модулей будет соответствовать порядку в массиве depends.
+ *                                   В случае если модуль не может быть зарезолвен, то необходимо об этом уведомить модульную систему. 
+ *                                   Это можно сделать передав в provide-функцию второй аргумент. 
+ *                                   Второй аргумент будет передан в errorCallback и в promise как ошибка в запрос модуля.
+ *                                   Впоследствии модуль можно будет запросить повторно.
+ * @param {Object=} context Контекст исполнения функции.
+ * 
+ * @returns {ymaps.modules}
+ */
+ymaps.modules.define = function(module, depends, resolveCallback, context) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Проверка доступности модуля по названию.
+ * 
+ * Возвращает:  true - модуль был определен, false - нет.
+ *         (тип Boolean).
+ * 
+ * @param {String} module Модуль
+ * 
+ * @returns {Boolean}
+ */
+ymaps.modules.isDefined = function(module) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Запрос получения модулей.
+ * 
+ * Возвращает:  Объект-обещание, который подтверждается запрошенными модулями. 
+ * Либо отклоняется в случае, если произошла ошибка. К примеру, один из запрошенных модулей отсутствует в модульной системе.
+ *         (тип vow.Promise).
+ * 
+ * @param {String|Array.<String>} modules Название модуля или массив названий модулей.
+ * @param {Function=} successCallback Функция, которая будет вызвана после получения всех модулей.
+ *                                    В функцию как аргументы будут переданы запрошенные сущности.
+ *                                    Порядок аргументов будет соответствовать порядку в массиве modules.
+ * @param {Function=} errorCallback Функция, которая будет вызвана в случае ошибки.
+ * @param {Object=} context Контекст исполнения функции обратного вызова.
+ * 
+ * @returns {ymaps.vow.Promise}
+ */
+ymaps.modules.require = function(modules, successCallback, errorCallback, context) {};
+
+
+ymaps.multiRouter = {};
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter.
+ * 
+ * Редактор мультимаршрута.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {ymaps.multiRouter.MultiRoute} multiRoute Редактируемый мультимаршрут.
+ * @param {Object=} state Объект, описывающий начальное состояние редактора. Список доступных
+ *                        полей смотрите в описании multiRouter.Editor.state.
+ * @param {Object=} options Опции.
+ */
+ymaps.multiRouter.Editor = function(multiRoute, state, options) {};
+
+
+/**
+ */
+ymaps.multiRouter.Editor.prototype.destroy = function() {};
+
+
+/**
+ * @return {ymaps.multiRouter.MultiRoute}
+ */
+ymaps.multiRouter.Editor.prototype.getMultiRoute = function() {};
+
+
+/**
+ * Менеджер состояния редактора мультимаршрута.
+ * Доступные поля:
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.Editor.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.Editor.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.Editor.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.EditorAddon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter.
+ * 
+ * Аддон редактора мультимаршрута.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.EditorAddon = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.multiRouter.EditorAddon.prototype.isActive = function() {};
+
+
+/**
+ * @param {Object} state Начальное состояние редактора.
+ */
+ymaps.multiRouter.EditorAddon.prototype.start = function(state) {};
+
+
+/**
+ */
+ymaps.multiRouter.EditorAddon.prototype.stop = function() {};
+
+
+/**
+ * Менеджер состояния редактора мультимаршрута.
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.EditorAddon.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.EditorAddon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.EditorAddon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Мультимаршрут на карте. Позволяет отображать на карте маршрут и несколько альтернатив
+ * к нему. Предоставляет интерфейс выбора активного маршрута.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ * @param {ymaps.multiRouter.MultiRouteModel|ymaps.IMultiRouteModelJson} model Модель данных мультимаршрута,
+ *                                                                             либо объект описания модели. В случае передачи объекта описания, модель на его основе
+ *                                                                             создается автоматически.
+ * @param {Object=} options Опции мультимаршрута. Также для задания опций составных частей
+ *                          мультимаршрута доступны следующие префиксы:
+ *                          
+ *                              wayPoint - опции путевых точек;
+ *                              wayPointStart - опции отображения начальной путевой точки;
+ *                              wayPointFinish - опции отображения конечной путевой точки;
+ *                              viaPoint - опции транзитных точек;
+ *                              pin - опции точечных маркеров на маршруте;
+ *                              editor - опции редактора мультимаршрута (см. multiRouter.Editor).
+ *                          
+ *                          Опции единичных маршрутов в рамках мультимаршрута задаются с помощью префиксов:
+ *                          
+ *                              route - опции маршрутов в том числе неактивных;
+ *                              routeActive - опции активного маршрута.
+ *                          
+ *                          Причем опции заданные с префиксом "routeActive" более приоритетны по отношению к опциям с
+ *                          префиксом "route".
+ *                          Для задания опций составных частей маршрутов общественного транспорта доступны следующие
+ *                          префиксы.
+ *                          
+ *                              routeMarker - опции меток сегментов маршрута;
+ *                              routeWalkMarker - опции меток пеших сегментов маршрута;
+ *                              routeTransferMarker - опции меток сегментов переходов;
+ *                              routeTransportMarker - опции меток транспортных сегментов маршрута;
+ *                              routeWalkSegment - опции линий пеших сегментов маршрута;
+ *                              routeTransferSegment - опции линий сегментов переходов;
+ *                              routeTransportSegment - опции линий транспортных сегментов маршрута;
+ *                          
+ *                          Также данные префиксы доступны в "routeActive*" варианте.
+ */
+ymaps.multiRouter.MultiRoute = function(model, options) {};
+
+
+/**
+ * @return {ymaps.multiRouter.driving.Route|ymaps.multiRouter.masstransit.Route|null}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getActiveRoute = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getBounds = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getPixelBounds = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getRoutes = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getViaPoints = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getWayPoints = function() {};
+
+
+/**
+ * @param {ymaps.multiRouter.driving.Route|ymaps.multiRouter.masstransit.Route|null} route Активируемый
+ *                                                                                         маршрут.
+ */
+ymaps.multiRouter.MultiRoute.prototype.setActiveRoute = function(route) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.MultiRoute.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.MultiRoute.prototype.getMap = function() {};
+
+
+/**
+ * Редактор мультимаршрута.
+ * 
+ * @type {ymaps.multiRouter.EditorAddon}
+ */
+ymaps.multiRouter.MultiRoute.prototype.editor;
+
+
+/**
+ * Модель данных мультимаршрута.
+ * 
+ * @type {ymaps.multiRouter.MultiRouteModel}
+ */
+ymaps.multiRouter.MultiRoute.prototype.model;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.MultiRoute.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.MultiRoute.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.MultiRoute.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.MultiRoute.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.MultiRoute.prototype.options;
+
+/**
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных мультимаршрута.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {Array.<ymaps.IMultiRouteReferencePoint>} referencePoints Описание опорных точек мультимаршрута.
+ * @param {ymaps.IMultiRouteParams=} params Параметры маршрутизации.
+ */
+ymaps.multiRouter.MultiRouteModel = function(referencePoints, params) {};
+
+
+/**
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {(ymaps.multiRouter.WayPointModel|Array.<ymaps.multiRouter.ViaPointModel)>}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.getAllPoints = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.getJson = function() {};
+
+
+/**
+ * @return {ymaps.IMultiRouteParams}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.getParams = function() {};
+
+
+/**
+ * @return {(ymaps.multiRouter.WayPointModel|Array.<ymaps.multiRouter.ViaPointModel)>}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.getPoints = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.getReferencePointIndexes = function() {};
+
+
+/**
+ * @return {Array.<ymaps.IMultiRouteReferencePoint>}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.getReferencePoints = function() {};
+
+
+/**
+ * @return {Array.<ymaps.multiRouter.driving.RouteModel>|Array.<ymaps.multiRouter.masstransit.RouteModel>}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.getRoutes = function() {};
+
+
+/**
+ * @return {Array.<ymaps.multiRouter.ViaPointModel>}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.getViaPoints = function() {};
+
+
+/**
+ * @return {Array.<ymaps.multiRouter.WayPointModel>}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.getWayPoints = function() {};
+
+
+/**
+ * @param {ymaps.IMultiRouteParams} params Параметры маршрутизации.
+ * @param {Boolean=} extend Позволяет изменить лишь часть параметров, а значения не
+ *                          переданных оставить прежним.
+ * @param {*} clearRequests 
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.setParams = function(params, extend, clearRequests) {};
+
+
+/**
+ * @param {Array.<ymaps.IMultiRouteReferencePoint>} referencePoints Массив опорных точек.
+ * @param {Array.<number>=} viaIndexes Индексы транзитных точек в массиве опорных точек.
+ * @param {*} clearRequests 
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.setReferencePoints = function(referencePoints, viaIndexes, clearRequests) {};
+
+
+/**
+ * Данные мультимаршрута.
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.MultiRouteModel.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.ViaPoint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение транзитной точки. Транзитные точки не подразумевают остановку. Таким
+ * образом, при прохождении через транзитную точку, сегмент пути маршрута не прерывается.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.ViaPoint = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.ViaPoint.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.ViaPoint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.ViaPoint.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.ViaPoint.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.ViaPoint.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных транзитной точки.
+ * 
+ * @type {ymaps.multiRouter.ViaPointModel}
+ */
+ymaps.multiRouter.ViaPoint.prototype.model;
+
+
+/**
+ * Данные транзитной точки мультимаршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер точки;
+ *     lodIndex: Integer - порядковый номер транзитной точки во множестве всех координат
+ *     соответствующего ей пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.ViaPoint.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.ViaPoint.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.ViaPoint.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.ViaPoint.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.ViaPoint.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.ViaPointModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных транзитной точки мультимаршрута. Транзитные точки не подразумевают
+ * остановку. Таким образом, при прохождении через транзитную точку, сегмент пути маршрута не
+ * прерывается.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.ViaPointModel = function() {};
+
+
+/**
+ */
+ymaps.multiRouter.ViaPointModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.multiRouter.ViaPointModel.prototype.getReferencePoint = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.multiRouter.ViaPointModel.prototype.getReferencePointIndex = function() {};
+
+
+/**
+ * @param {Object} referencePoint Описание опорной точки.
+ */
+ymaps.multiRouter.ViaPointModel.prototype.setReferencePoint = function(referencePoint) {};
+
+
+/**
+ * @param {Object} viaPointJson JSON-данные.
+ */
+ymaps.multiRouter.ViaPointModel.prototype.update = function(viaPointJson) {};
+
+
+/**
+ * Геометрия транзитной точки мультимаршрута.
+ * 
+ * @type {ymaps.geometry.base.Point}
+ */
+ymaps.multiRouter.ViaPointModel.prototype.geometry;
+
+
+/**
+ * Ссылка на родительскую модель мультимаршрута.
+ * 
+ * @type {ymaps.multiRouter.MultiRouteModel}
+ */
+ymaps.multiRouter.ViaPointModel.prototype.multiRoute;
+
+
+/**
+ * Данные транзитной точки мультимаршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер точки;
+ *     lodIndex: Integer - порядковый номер транзитной точки во множестве всех координат
+ *     соответствующего ей пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.ViaPointModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.ViaPointModel.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.WayPoint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение путевой точки. Путевые точки подразумевают остановку и делят маршрут на
+ * т.н. пути.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.WayPoint = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.WayPoint.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.WayPoint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.WayPoint.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.WayPoint.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.WayPoint.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных путевой точки.
+ * 
+ * @type {ymaps.multiRouter.WayPointModel}
+ */
+ymaps.multiRouter.WayPoint.prototype.model;
+
+
+/**
+ * Данные путевой точки мультимаршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер точки;
+ *     request: String - строка запроса соответствующего точке запроса;
+ *     address: String - строка почтового адреса точки;
+ *     description: String - описание точки;
+ *     name: String - название точки.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.WayPoint.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.WayPoint.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.WayPoint.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.WayPoint.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.WayPoint.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.WayPointModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных путевой точки мультимаршрута. Путевые точки подразумевают остановку и
+ * делят маршрут на т.н. пути.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.WayPointModel = function() {};
+
+
+/**
+ */
+ymaps.multiRouter.WayPointModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.multiRouter.WayPointModel.prototype.getReferencePoint = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.multiRouter.WayPointModel.prototype.getReferencePointIndex = function() {};
+
+
+/**
+ * @param {Object} referencePoint Описание опорной точки.
+ */
+ymaps.multiRouter.WayPointModel.prototype.setReferencePoint = function(referencePoint) {};
+
+
+/**
+ * @param {Object} wayPointJson JSON-данные.
+ */
+ymaps.multiRouter.WayPointModel.prototype.update = function(wayPointJson) {};
+
+
+/**
+ * Геометрия путевой точки мультимаршрута.
+ * 
+ * @type {ymaps.geometry.base.Point}
+ */
+ymaps.multiRouter.WayPointModel.prototype.geometry;
+
+
+/**
+ * Ссылка на родительскую модель мультимаршрута.
+ * 
+ * @type {ymaps.multiRouter.MultiRouteModel}
+ */
+ymaps.multiRouter.WayPointModel.prototype.multiRoute;
+
+
+/**
+ * Данные путевой точки мультимаршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер точки;
+ *     request: String - строка запроса соответствующего точке запроса;
+ *     address: String - строка почтового адреса точки;
+ *     description: String - описание точки;
+ *     name: String - название точки.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.WayPointModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.WayPointModel.prototype.events;
+
+
+ymaps.objectManager = {};
+
+/**
+ * 
+ * Расширяет
+ *             IBalloonManager.
+ * 
+ * Менеджер балуна коллекций ObjectManager. Позволяет управлять балуном объекта, открывать и скрывать его.
+ * Использует внутри себя менеджер балуна карты map.Balloon.
+ * Коллекции объектов в составе ObjectManager содержат экземпляр этого класса, доступный как myObjectManager.objects.balloon
+ * и myObjectsLayer.clusters.balloon.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Balloon 
+ * 
+ * @constructor
+ * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {IReadOnlyymaps.Collection} collection Коллекция объектов.
+ */
+ymaps.objectManager.Balloon = function(collection) {};
+
+
+/**
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @return {Object|null}
+ */
+ymaps.objectManager.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @param {Object} id Идентификатор объекта.
+ * @return {Boolean}
+ */
+ymaps.objectManager.Balloon.prototype.isOpen = function(id) {};
+
+
+/**
+ * @param {Object} objectId Идентификатор объекта, на котором надо открыть балун.
+ * @param {*} anchorPixelPosition 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.open = function(objectId, anchorPixelPosition) {};
+
+
+/**
+ * @param {Object} objectData Хэш с описанием объекта, на котором открыт балун. Соответствует
+ *                            описанию объекта, который подается на вход ObjectManager.add.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.setData = function(objectData) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.objectManager.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.objectManager.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.objectManager.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.objectManager.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.Balloon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter.
+ * 
+ * Коллекция кластеров, сгенерированных ObjectManager.
+ * Кластеры добавляются и удаляются из коллекции автоматически в ходе работы и доступны только на чтение.
+ * Объект-кластер представляет из себя JSON-структуру, аналогичную объектам в составе слоя.
+ * Поля объекта-кластера:
+ * 
+ * id - уникальный идентификатор кластера;
+ *     geometry - описание геометрии кластера;
+ *     properties - описание данных кластера. В поле properties.geoObjects хранится массив
+ *     объектов, входящих в состав кластера;
+ *     options - опции кластера. Необязательное поле.
+ * 
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.objectManager.ClusterCollection = function() {};
+
+
+/**
+ * @param {Function} callback Функция-обработчик, в которую передаются объекты коллекции.
+ * @param {Object} context Контекст исполнения функции-обработчика.
+ */
+ymaps.objectManager.ClusterCollection.prototype.each = function(callback, context) {};
+
+
+/**
+ * @return {Array.<Object>}
+ */
+ymaps.objectManager.ClusterCollection.prototype.getAll = function() {};
+
+
+/**
+ * @param {String} id Идентификатор кластера.
+ * @return {Object|null}
+ */
+ymaps.objectManager.ClusterCollection.prototype.getById = function(id) {};
+
+
+/**
+ * @return {ymaps.IIterator}
+ */
+ymaps.objectManager.ClusterCollection.prototype.getIterator = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.objectManager.ClusterCollection.prototype.getLength = function() {};
+
+
+/**
+ * @return {ymaps.ObjectManager}
+ */
+ymaps.objectManager.ClusterCollection.prototype.getObjectManager = function() {};
+
+
+/**
+ * @param {String} objectId Идентификатор кластера.
+ * @param {Object} options Объект с опциями кластера.
+ * @return {ymaps.objectManager.ObjectCollection}
+ */
+ymaps.objectManager.ClusterCollection.prototype.setClusterOptions = function(objectId, options) {};
+
+
+/**
+ * Балун кластера в составе менеджера.
+ * 
+ * @type {ymaps.objectManager.Balloon}
+ */
+ymaps.objectManager.ClusterCollection.prototype.balloon;
+
+
+/**
+ * Менеджер опций.
+ * Имена полей, доступных через метод option.Manager.get:
+ * 
+ * hasBalloon - флаг наличия у коллекции поля .balloon.
+ *     Если при клике на кластер не нужно открывать балун, рекомендуется установить эту опцию в значение
+ *     false, чтобы избежать лишних инициализаций;
+ *     hasHint - флаг наличия у коллекции поля .hint.
+ *     Если при наведении на кластер не нужно показывать всплывающую подсказку,
+ *     рекомендуется установить эту опцию в значение false, чтобы избежать лишних инициализаций;
+ *     hideIconOnBalloonOpen - cкрывать иконку при открытии балуна. Значение по умолчанию true;
+ *     openBalloonOnClick - опция, позволяющая запретить открытие балуна при клике на кластер.
+ *     По умолчанию открытие балуна разрешено;
+ *     openHintOnHover - опция, позволяющая запретить показ всплывающей подсказки при наведении на кластер.
+ *     По умолчанию показ хинтов разрешен.
+ * 
+ * 
+ * @type {ymaps.option.Manager}
+ */
+ymaps.objectManager.ClusterCollection.prototype.options;
+
+
+/**
+ * Коллекция оверлеев кластеров.
+ * Все события, за исключением событий add и remove, пропагируются от коллекции оверлеев
+ * в коллекцию кластеров.
+ * 
+ * @type {ymaps.objectManager.OverlayCollection}
+ */
+ymaps.objectManager.ClusterCollection.prototype.overlays;
+
+
+/**
+ * Состояние коллекции кластеров. Определяется следующими полями:
+ * 
+ * activeObject - JSON-описание объекта, выбранного в балуне кластера.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.objectManager.ClusterCollection.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.ClusterCollection.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IHintManager.
+ * 
+ * Менеджер хинта объектного слоя. Позволяет управлять хинтом объектного слоя, открывать и скрывать его.
+ * Использует внутри себя менеджер хинтов карты map.Hint.
+ * Объектные слои содержат экземпляры этого класса, доступные как myObjectManager.objects.hint и
+ * myObjectManager.clusters.hint.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Hint 
+ * 
+ * @constructor
+ * @implements {ymaps.IHintManager}
+ * 
+ * @param {IReadOnlyymaps.Collection} collection Объектный слой.
+ */
+ymaps.objectManager.Hint = function(collection) {};
+
+
+/**
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @return {Object|null}
+ */
+ymaps.objectManager.Hint.prototype.getData = function() {};
+
+
+/**
+ * @param {Object} id Идентификатор объекта.
+ * @return {Boolean}
+ */
+ymaps.objectManager.Hint.prototype.isOpen = function(id) {};
+
+
+/**
+ * @param {Object} objectId Идентификатор объекта, на котором надо открыть подсказку.
+ * @param {Array.<Number>=} position Позиция, на которой надо показать всплывающую подсказку в глобальных
+ *                                   пиксельных координатах. Если значение не задано, хинт покажется на геометрическом центре объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Hint.prototype.open = function(objectId, position) {};
+
+
+/**
+ * @param {Object} objectData Хэш с описанием объекта, на котором открыт хинт. Соответствует
+ *                            описанию объекта, который подается на вход ObjectManager.add.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Hint.prototype.setData = function(objectData) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.objectManager.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.objectManager.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.objectManager.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.objectManager.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.objectManager.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.Hint.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             ICollection, ICustomizable.
+ * 
+ * Коллекция объектов, добавленных в слой.
+ * 
+ * @constructor
+ * @implements {ymaps.ICollection}
+ * @implements {ymaps.ICustomizable}
+ * 
+ */
+ymaps.objectManager.ObjectCollection = function() {};
+
+
+/**
+ * @param {Object|Array.<Object>|String} data Объекты, добавляемые в слой.
+ * @return {ymaps.objectManager.ObjectCollection}
+ */
+ymaps.objectManager.ObjectCollection.prototype.add = function(data) {};
+
+
+/**
+ * @param {Function} callback Функция-обработчик, в которую передаются объекты коллекции.
+ * @param {Object} context Контекст исполнения функции-обработчика.
+ */
+ymaps.objectManager.ObjectCollection.prototype.each = function(callback, context) {};
+
+
+/**
+ * @return {Array.<Object>}
+ */
+ymaps.objectManager.ObjectCollection.prototype.getAll = function() {};
+
+
+/**
+ * @param {Number} id Идентификатор объекта.
+ * @return {Object|null}
+ */
+ymaps.objectManager.ObjectCollection.prototype.getById = function(id) {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.objectManager.ObjectCollection.prototype.getLength = function() {};
+
+
+/**
+ * @return {ymaps.ObjectManager}
+ */
+ymaps.objectManager.ObjectCollection.prototype.getObjectManager = function() {};
+
+
+/**
+ * @param {Object|Array.<Object>|String} data Объекты, которые нужно удалить.
+ * @return {ymaps.objectManager.ObjectCollection}
+ */
+ymaps.objectManager.ObjectCollection.prototype.remove = function(data) {};
+
+
+/**
+ * @return {ymaps.objectManager.ObjectCollection}
+ */
+ymaps.objectManager.ObjectCollection.prototype.removeAll = function() {};
+
+
+/**
+ * @param {Object} objectId Идентификатор объекта, которому нужно задать опции.
+ * @param {Object} options Новые опции объекта.
+ * @return {ymaps.objectManager.ObjectCollection}
+ */
+ymaps.objectManager.ObjectCollection.prototype.setObjectOptions = function(objectId, options) {};
+
+
+/**
+ * @return {ymaps.IIterator}
+ */
+ymaps.objectManager.ObjectCollection.prototype.getIterator = function() {};
+
+
+/**
+ * Балун объекта в составе менеджера.
+ * 
+ * @type {ymaps.objectManager.Balloon}
+ */
+ymaps.objectManager.ObjectCollection.prototype.balloon;
+
+
+/**
+ * Хинт объекта в составе ObjectManager.
+ * 
+ * @type {ymaps.objectManager.Hint}
+ */
+ymaps.objectManager.ObjectCollection.prototype.hint;
+
+
+/**
+ * Менеджер опций.
+ * Имена полей, доступных через метод option.Manager.get:
+ * 
+ * hasBalloon - флаг наличия у коллекции поля .balloon.
+ *     Если при клике на объекте не нужно открывать балун, рекомендуется установить эту опцию в значение
+ *     false, чтобы избежать лишних инициализаций;
+ *     hasHint - флаг наличия у коллекции поля .hint.
+ *     Если при наведении на объект не нужно показывать всплывающую подсказку,
+ *     рекомендуется установить эту опцию в значение false, чтобы избежать лишних инициализаций;
+ *     hideIconOnBalloonOpen - cкрывать иконку при открытии балуна. Значение по умолчанию true;
+ *     openBalloonOnClick - показывать балун при клике на объект. Значение по умолчанию true.
+ *  
+ * 
+ * @type {ymaps.option.Manager}
+ */
+ymaps.objectManager.ObjectCollection.prototype.options;
+
+
+/**
+ * Коллекция оверлеев одиночных объектов.
+ * Все события, за исключением событий add и remove, пропагируются от коллекции оверлеев
+ * в коллекцию объектов.
+ * 
+ * @type {ymaps.objectManager.OverlayCollection}
+ */
+ymaps.objectManager.ObjectCollection.prototype.overlays;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.ObjectCollection.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter.
+ * 
+ * Коллекция овелеев.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.objectManager.OverlayCollection = function() {};
+
+
+/**
+ * @param {Function} callback Функция-обработчик, в которую передаются объекты коллекции.
+ * @param {Object} context Контекст исполнения функции-обработчика.
+ */
+ymaps.objectManager.OverlayCollection.prototype.each = function(callback, context) {};
+
+
+/**
+ * @return {Array.<Object>}
+ */
+ymaps.objectManager.OverlayCollection.prototype.getAll = function() {};
+
+
+/**
+ * @param {Number} id Идентификатор объекта, которому принадлежит оверлей.
+ * @return {Object|null}
+ */
+ymaps.objectManager.OverlayCollection.prototype.getById = function(id) {};
+
+
+/**
+ * @param {ymaps.IOverlay} overlay Оверлей.
+ * @return {Number|null}
+ */
+ymaps.objectManager.OverlayCollection.prototype.getId = function(overlay) {};
+
+
+/**
+ * @return {ymaps.IIterator}
+ */
+ymaps.objectManager.OverlayCollection.prototype.getIterator = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.objectManager.OverlayCollection.prototype.getLength = function() {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.objectManager.OverlayCollection.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.objectManager.OverlayCollection.prototype.events;
+
+
+ymaps.option = {};
+
+/**
+ * 
+ * Расширяет
+ *             IOptionManager.
+ * 
+ * Менеджер опций. Позволяет задавать и получать значения опций по строковому ключу,
+ * а также разрешать значения опций в контексте существующей иерархии менеджеров опций.
+ * Специальный ключ "preset" позволяет задать набор опций по умолчанию для данного менеджера.
+ * Значением опции "preset" может быть хэш вида {"имя опции": "значение опции"}, либо строковый идентификатор
+ * хэша опций в хранилище option.presetStorage.
+ * Данный хэш опций может также содержать поле с именем "preset", что позволяет наследовать значения опций от
+ * других наборов.
+ * При поиске значения в иерархии сначала проверяются собственные опции, затем опции заданные с помощью ключа
+ * "preset", после чего происходит обращение к родителю, если он есть.
+ * Для отслеживания изменений некоторых опций можно использовать Monitor.
+ * 
+ * @constructor
+ * @implements {ymaps.IOptionManager}
+ * 
+ * @param {Object=} options Хэш опций.
+ * @param {ymaps.IOptionManager=} parent Родительский менеджер опций.
+ * @param {String=} name Имя менеджера опций.
+ */
+ymaps.option.Manager = function(options, parent, name) {};
+
+
+/**
+ * @param {Object|String} key Имя опции, либо хеш вида {"имя опции": "значение опции"}.
+ * @param {Object=} value Значение опции, если в качестве первого аргумента было передано имя.
+ * @return {ymaps.option.Manager}
+ */
+ymaps.option.Manager.prototype.set = function(key, value) {};
+
+
+/**
+ * @param {String|Array.<String>} keys Имя опции или массив имен опций, значения которых должны быть аннулированы.
+ * @return {ymaps.option.Manager}
+ */
+ymaps.option.Manager.prototype.unset = function(keys) {};
+
+
+/**
+ * @return {ymaps.option.Manager}
+ */
+ymaps.option.Manager.prototype.unsetAll = function() {};
+
+
+/**
+ * @param {String} key Имя опции.
+ * @param {Object=} defaultValue Значение по умолчанию.
+ */
+ymaps.option.Manager.prototype.get = function(key, defaultValue) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.option.Manager.prototype.getAll = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.option.Manager.prototype.getName = function() {};
+
+
+/**
+ * @param {String} key Имя опции.
+ * @return {Object}
+ */
+ymaps.option.Manager.prototype.getNative = function(key) {};
+
+
+/**
+ * @return {ymaps.IOptionManager|null}
+ */
+ymaps.option.Manager.prototype.getParent = function() {};
+
+
+/**
+ * @param {String} key Имя опции.
+ * @param {String=} name Имя дочернего менеджера опций.
+ * @return {Object}
+ */
+ymaps.option.Manager.prototype.resolve = function(key, name) {};
+
+
+/**
+ * @param {String} name Имя менеджера опций.
+ */
+ymaps.option.Manager.prototype.setName = function(name) {};
+
+
+/**
+ * @param {ymaps.IOptionManager|null} parent Родительский менеджер опций.
+ * @return {ymaps.IChild}
+ */
+ymaps.option.Manager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.option.Manager.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.option.Manager.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.option.Manager.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.option.Manager.prototype.events;
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.Storage
+ * Хранилище предустановленных опций.
+ * Список доступных ключей:
+ * Метки с текстом
+ *               Значок
+ *               Ключ
+ *               Значок
+ *               Ключ
+ *             'islands#blueIcon'
+ *             'islands#darkGreenIcon'
+ *             'islands#redIcon'
+ *            'islands#violetIcon'
+ *            'islands#darkOrangeIcon'
+ *            'islands#blackIcon'
+ *            'islands#nightIcon'
+ *            'islands#yellowIcon'
+ *            'islands#darkBlueIcon'
+ *            'islands#greenIcon'
+ *             'islands#pinkIcon'
+ *             'islands#orangeIcon'
+ *            'islands#grayIcon'
+ *            'islands#lightBlueIcon'
+ *            'islands#brownIcon'
+ *            'islands#oliveIcon'
+ * Метки с текстом (иконки тянутся под контент)
+ *              Значок
+ *              Ключ
+ *              Значок
+ *              Ключ
+ *            'islands#blueStretchyIcon'
+ *            'islands#darkGreenStretchyIcon'
+ *            'islands#redStretchyIcon'
+ *            'islands#violetStretchyIcon'
+ *            'islands#darkOrangeStretchyIcon'
+ *            'islands#blackStretchyIcon'
+ *            'islands#nightStretchyIcon'
+ *            'islands#yellowStretchyIcon'
+ *            'islands#darkBlueStretchyIcon'
+ *            'islands#greenStretchyIcon'
+ *            'islands#pinkStretchyIcon'
+ *            'islands#orangeStretchyIcon'
+ *            'islands#grayStretchyIcon'
+ *            'islands#lightBlueStretchyIcon'
+ *            'islands#brownStretchyIcon'
+ *            'islands#oliveStretchyIcon'
+ * Метки без содержимого с точкой в центре
+ *              Значок
+ *              Ключ
+ *              Значок
+ *              Ключ
+ *            'islands#blueDotIcon'
+ *            'islands#darkGreenDotIcon'
+ *            'islands#redDotIcon'
+ *            'islands#violetDotIcon'
+ *            'islands#darkOrangeDotIcon'
+ *            'islands#blackDotIcon'
+ *            'islands#nightDotIcon'
+ *            'islands#yellowDotIcon'
+ *            'islands#darkBlueDotIcon'
+ *            'islands#greenDotIcon'
+ *            'islands#pinkDotIcon'
+ *            'islands#orangeDotIcon'
+ *            'islands#grayDotIcon'
+ *            'islands#lightBlueDotIcon'
+ *            'islands#brownDotIcon'
+ *            'islands#oliveDotIcon'
+ * Метки в виде кругов 
+ *              Значок
+ *              Ключ
+ *              Значок
+ *              Ключ
+ *            'islands#blueCircleIcon'
+ *            'islands#darkGreenCircleIcon'
+ *            'islands#redCircleIcon'
+ *            'islands#violetCircleIcon'
+ *            'islands#darkOrangeCircleIcon'
+ *            'islands#blackCircleIcon'
+ *            'islands#nightCircleIcon'
+ *            'islands#yellowCircleIcon'
+ *            'islands#darkBlueCircleIcon'
+ *            'islands#greenCircleIcon'
+ *            'islands#pinkCircleIcon'
+ *            'islands#orangeCircleIcon'
+ *            'islands#grayCircleIcon'
+ *            'islands#lightBlueCircleIcon'
+ *            'islands#brownCircleIcon'
+ *            'islands#oliveCircleIcon'
+ * Метки в виде кругов с точкой в центре
+ *              Значок
+ *              Ключ
+ *              Значок
+ *              Ключ
+ *            'islands#blueCircleDotIcon'
+ *            'islands#darkGreenCircleDotIcon'
+ *            'islands#redCircleDotIcon'
+ *            'islands#violetCircleDotIcon'
+ *            'islands#darkOrangeCircleDotIcon'
+ *            'islands#blackCircleDotIcon'
+ *            'islands#nightCircleDotIcon'
+ *            'islands#yellowCircleDotIcon'
+ *            'islands#darkBlueCircleDotIcon'
+ *            'islands#greenCircleDotIcon'
+ *            'islands#pinkCircleDotIcon'
+ *            'islands#orangeCircleDotIcon'
+ *            'islands#grayCircleDotIcon'
+ *            'islands#lightBlueCircleDotIcon'
+ *            'islands#brownCircleDotIcon'
+ *            'islands#oliveCircleDotIcon'
+ * Пиктограммы
+ *           ЗначокКлюч
+ *              'islands#geolocationIcon'
+ * Значки кластеров
+ *           ЗначокКлючЗначокКлюч
+ *              'islands#blueClusterIcons'
+ *              'islands#invertedBlueClusterIcons'
+ *               'islands#redClusterIcons'
+ *               'islands#invertedRedClusterIcons'
+ *               'islands#darkOrangeClusterIcons'
+ *               'islands#invertedDarkOrangeClusterIcons'
+ *               'islands#nightClusterIcons'
+ *               'islands#invertedNightClusterIcons'
+ *               'islands#darkBlueClusterIcons'
+ *               'islands#invertedDarkBlueClusterIcons'
+ *               'islands#pinkClusterIcons'
+ *               'islands#invertedPinkClusterIcons'
+ *               'islands#grayClusterIcons'
+ *               'islands#invertedGrayClusterIcons'
+ *               'islands#brownClusterIcons'
+ *               'islands#invertedBrownClusterIcons'
+ *               'islands#darkGreenClusterIcons'
+ *               'islands#invertedDarkGreenClusterIcons'
+ *               'islands#violetClusterIcons'
+ *               'islands#invertedVioletClusterIcons'
+ *               'islands#blackClusterIcons'
+ *               'islands#invertedBlackClusterIcons'
+ *               'islands#yellowClusterIcons'
+ *               'islands#invertedYellowClusterIcons'
+ *               'islands#greenClusterIcons'
+ *               'islands#invertedGreenClusterIcons'
+ *               'islands#orangeClusterIcons'
+ *               'islands#invertedOrangeClusterIcons'
+ *               'islands#lightBlueClusterIcons'
+ *               'islands#invertedLightBlueClusterIcons'
+ *               'islands#oliveClusterIcons'
+ *               'islands#invertedOliveClusterIcons'
+ *  
+ * 
+ * 
+ * @type {ymaps.util.Storage}
+ */
+ymaps.option.presetStorage;
+
+
+ymaps.overlay = {};
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * Интерактивный оверлей круга.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelCircleGeometry} geometry Пиксельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.Circle = function(geometry, data, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Circle.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Circle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Circle.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Circle.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Circle.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Circle.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Circle.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Circle.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Circle.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Circle.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * Интерактивный оверлей круглой метки.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelPointGeometry} geometry Пиксельная геометрия метки.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.Pin = function(geometry, data, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Pin.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Pin.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Pin.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Pin.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Pin.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Pin.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Pin.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Pin.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Pin.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Pin.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * Оверлей метки.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelPointGeometry} geometry Пикcельная геометрия.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.Placemark = function(geometry, data, options) {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.Placemark.prototype.getElement = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.Placemark.prototype.getIconElement = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.Placemark.prototype.getIconLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.Placemark.prototype.getIconLayoutSync = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.Placemark.prototype.getLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.Placemark.prototype.getLayoutSync = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.Placemark.prototype.getShadowElement = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.Placemark.prototype.getShadowLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.Placemark.prototype.getShadowLayoutSync = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Placemark.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Placemark.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Placemark.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Placemark.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Placemark.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Placemark.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Placemark.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Placemark.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Placemark.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Placemark.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * Оверлей многоугольника.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelPolygonGeometry} geometry Пикcельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.Polygon = function(geometry, data, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Polygon.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Polygon.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Polygon.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Polygon.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Polygon.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Polygon.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Polygon.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Polygon.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Polygon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Polygon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * Оверлей линии.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelLineStringGeometry} geometry Пикcельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.Polyline = function(geometry, data, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Polyline.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Polyline.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Polyline.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Polyline.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Polyline.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Polyline.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Polyline.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Polyline.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Polyline.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Polyline.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * Оверлей прямоугольника.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelRectangleGeometry} geometry Пиксельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.Rectangle = function(geometry, data, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.Rectangle.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.Rectangle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.Rectangle.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.Rectangle.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.Rectangle.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.Rectangle.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.Rectangle.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.Rectangle.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.Rectangle.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.Rectangle.prototype.events;
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.AsyncStorage
+ * Хранилище оверлеев.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * При добавлении геообъекта на карту происходит загрузка необходимого оверлея.
+ * Для получения класса оверлея необходимо использовать метод
+ * require данного хранилища.
+ * 
+ * По умолчанию в хранилище объявлены следующие ключи для асинхронного доступа:
+ * 
+ * 'default#circle' - Оверлей круга overlay.Circle;
+ *    'default#polyline' - Оверлей линии overlay.Polyline;
+ *    'default#placemark' - Оверлей метки-изображения overlay.Placemark;
+ *    'default#polygon' - Оверлей многоугольника overlay.Polygon;
+ *    'default#rectangle' - Оверлей прямоугольника overlay.Rectangle;
+ *    'hotspot#circle' - Хотспотный оверлей круга overlay.hotspot.Circle;
+ *    'hotspot#polyline' - Хотспотный оверлей линии overlay.hotspot.Polyline;
+ *    'hotspot#placemark' - Хотспотный оверлей точки overlay.hotspot.Placemark;
+ *    'hotspot#polygon' - Хотспотный оверлей многоугольника overlay.hotspot.Polygon;
+ *    'hotspot#rectangle' - Хотспотный оверлей прямоугольника overlay.hotspot.Rectangle;
+ *    'html#balloon' - HTML-оверлей балуна overlay.html.Balloon;
+ *    'html#hint' - Простой HTML-оверлей overlay.html.Hint;
+ *    'html#placemark' - HTML-оверлей метки overlay.html.Placemark;
+ *    'html#rectangle' - HTML-оверлей прямоугольника overlay.html.Rectangle.
+ * Методы 
+ * 
+ * 
+ * @type {ymaps.util.AsyncStorage}
+ */
+ymaps.overlay.storage;
+
+
+ymaps.pane = {};
+
+/**
+ * 
+ * Расширяет
+ *             IEventPane.
+ * 
+ * Пейн событий.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventPane}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {Object} params Параметры.
+ */
+ymaps.pane.EventsPane = function(map, params) {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ */
+ymaps.pane.EventsPane.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {HTMLElement}
+ */
+ymaps.pane.EventsPane.prototype.getElement = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.pane.EventsPane.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {String}
+ */
+ymaps.pane.EventsPane.prototype.getOverflow = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {Number}
+ */
+ymaps.pane.EventsPane.prototype.getZIndex = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.pane.EventsPane.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IContainerPane.
+ * 
+ * Двигающийся пейн карты.
+ * 
+ * @constructor
+ * @implements {ymaps.IContainerPane}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {Object} params Параметры.
+ */
+ymaps.pane.MovablePane = function(map, params) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.pane.MovablePane.prototype.getViewport = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ */
+ymaps.pane.MovablePane.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {HTMLElement}
+ */
+ymaps.pane.MovablePane.prototype.getElement = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.pane.MovablePane.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {String}
+ */
+ymaps.pane.MovablePane.prototype.getOverflow = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {Number}
+ */
+ymaps.pane.MovablePane.prototype.getZIndex = function() {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.pane.MovablePane.prototype.fromClientPixels = function(clientPixelPoint) {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @return {Number}
+ */
+ymaps.pane.MovablePane.prototype.getZoom = function() {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.pane.MovablePane.prototype.toClientPixels = function(globalPixelPoint) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.pane.MovablePane.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IContainerPane.
+ * 
+ * Статичный пейн карты.
+ * 
+ * @constructor
+ * @implements {ymaps.IContainerPane}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {Object} params Параметры.
+ */
+ymaps.pane.StaticPane = function(map, params) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.pane.StaticPane.prototype.getViewport = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ */
+ymaps.pane.StaticPane.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {HTMLElement}
+ */
+ymaps.pane.StaticPane.prototype.getElement = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.pane.StaticPane.prototype.getMap = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {String}
+ */
+ymaps.pane.StaticPane.prototype.getOverflow = function() {};
+
+
+/**
+ * @see ymaps.IPane
+ * 
+ * @return {Number}
+ */
+ymaps.pane.StaticPane.prototype.getZIndex = function() {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @param {Array.<Number>} clientPixelPoint Клиентские пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.pane.StaticPane.prototype.fromClientPixels = function(clientPixelPoint) {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @return {Number}
+ */
+ymaps.pane.StaticPane.prototype.getZoom = function() {};
+
+
+/**
+ * @see ymaps.IPositioningContext
+ * 
+ * @param {Array.<Number>} globalPixelPoint Глобальные пиксельные координаты.
+ * @return {Array.<Number>}
+ */
+ymaps.pane.StaticPane.prototype.toClientPixels = function(globalPixelPoint) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.pane.StaticPane.prototype.events;
+
+
+ymaps.projection = {};
+
+/**
+ * 
+ * Расширяет
+ *             IProjection.
+ * 
+ * Декартова проекция прямоугольной области.
+ * Учитывает параметр coordorder загрузки API - при значении 'latlong' в массиве координат точки
+ * на первом месте должен стоять y, а на втором x.
+ * 
+ * @constructor
+ * @implements {ymaps.IProjection}
+ * 
+ * @param {Array.<Object>} bounds Массив из двух точек -
+ *                                координат левого нижнего и правого верхнего углов прямоугольной координатной области.
+ * @param {Array.<Boolean>=} cycled Массив из признаков зацикленности карты по x и y.
+ * @param {Number|Array.<Number>=} scale Масштаб одного деления на оси. Может быть числом или парой чисел для каждой из осей.
+ */
+ymaps.projection.Cartesian = function(bounds, cycled, scale) {};
+
+
+/**
+ * @param {Array.<Number>} globalPixelPoint Точка в пиксельных координатах.
+ * @param {Number} zoom Уровень масштабирования.
+ * @return {Array.<Number>}
+ */
+ymaps.projection.Cartesian.prototype.fromGlobalPixels = function(globalPixelPoint, zoom) {};
+
+
+/**
+ * @return {ymaps.ICoordSystem}
+ */
+ymaps.projection.Cartesian.prototype.getCoordSystem = function() {};
+
+
+/**
+ * @return {Array.<Boolean>}
+ */
+ymaps.projection.Cartesian.prototype.isCycled = function() {};
+
+
+/**
+ * @param {Array.<Number>} coordPoint Точка в координатах проекции.
+ * @param {Number} zoom Уровень масштабирования.
+ * @return {Array.<Number>}
+ */
+ymaps.projection.Cartesian.prototype.toGlobalPixels = function(coordPoint, zoom) {};
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  IProjection
+ * Меркаторовская проекция на сферу.
+ * Используется многими картографическими сервисами, в частности, OpenStreetMap.
+ * 
+ * Методы 
+ * 
+ * 
+ * @type {ymaps.IProjection}
+ */
+ymaps.projection.sphericalMercator;
+
+
+ymaps.regions = {};
+
+/**
+ * 
+ * Предоставляет доступ к геометрии различных регионов и стран мира.
+ * 
+ * @constructor
+ * 
+ * @param {String} region ISO_3166-1 код страны (RU, UA, BY, KZ) для загрузки
+ *                        административно-территориального деления, либо '001' для загрузки геометрии
+ *                        границ стран мира.
+ * @param {Object=} options Опции отображения.
+ */
+ymaps.regions.load = function(region, options) {};
+
+
+ymaps.router = {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса router.Editor скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter.
+ * 
+ * Редактор маршрутов. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.router.Editor = function() {};
+
+
+/**
+ * @param {Object=} options Опции.
+ */
+ymaps.router.Editor.prototype.start = function(options) {};
+
+
+/**
+ */
+ymaps.router.Editor.prototype.stop = function() {};
+
+
+/**
+ * Менеджер состояния редактора маршрута.
+ * Поля данных, доступные посредством методов get и set:
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.router.Editor.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.router.Editor.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.router.Editor.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса router.Path скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             GeoObject.
+ * 
+ * Объект, описывающий часть (путь) машрута. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * Маршрут может содержать несколько путей, каждый путь соединяет две путевые точки.
+ * Для путей доступны следующие пресеты:
+ * 
+ * 'router#interactivePath' - обеспечивает вывод информации о сегменте пути при клике по полилинии пути. При использовании этого пресета в макете балуна становятся доступными, как свойства геообъекта,
+ *     следующие данные сегмента router.Segment: action, humanAction, angle, length, humanLength, time, humanTime,
+ *     jamsTime, humanJamsTime, street. Используется по умолчанию.
+ *     'router#plainPath' - путь ведет себя как обычный геообъект.
+ * См.: route 
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
+ * 
+ */
+ymaps.router.Path = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Path.prototype.getHumanJamsTime = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Path.prototype.getHumanLength = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Path.prototype.getHumanTime = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.Path.prototype.getJamsTime = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.router.Path.prototype.getLength = function() {};
+
+
+/**
+ * @return {Array.<ymaps.router.Segment>}
+ */
+ymaps.router.Path.prototype.getSegments = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.Path.prototype.getTime = function() {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса router.Route скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Объект, описывающий проложенный маршрут. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * См.: route 
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.router.Route = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Route.prototype.getHumanJamsTime = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Route.prototype.getHumanLength = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Route.prototype.getHumanTime = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.Route.prototype.getJamsTime = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.router.Route.prototype.getLength = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.router.Route.prototype.getPaths = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.Route.prototype.getTime = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.router.Route.prototype.getViaPoints = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.router.Route.prototype.getWayPoints = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.router.Route.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.router.Route.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.router.Route.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.router.Route.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.router.Route.prototype.getMap = function() {};
+
+
+/**
+ * Редактор маршрутов.
+ * 
+ * @type {ymaps.router.Editor}
+ */
+ymaps.router.Route.prototype.editor;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.router.Route.prototype.geometry;
+
+
+/**
+ * Данные геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.router.Route.prototype.properties;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.router.Route.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.router.Route.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.router.Route.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса router.Segment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Объект, описываюший сегмент маршрута. Сегмент - часть маршрута от одного
+ * манёвра до другого. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ */
+ymaps.router.Segment = {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Segment.getAction = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.router.Segment.getAngle = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.router.Segment.getCoordinates = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Segment.getHumanAction = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Segment.getHumanJamsTime = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Segment.getHumanLength = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Segment.getHumanTime = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.Segment.getIndex = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.Segment.getJamsTime = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.router.Segment.getLength = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.Segment.getPolylineEndIndex = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.Segment.getPolylineStartIndex = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.router.Segment.getStreet = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.Segment.getTime = function() {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса router.ViaPoint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             GeoObject.
+ * 
+ * Объект, описывающий транзитную точку маршрута. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
+ * 
+ */
+ymaps.router.ViaPoint = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.ViaPoint.prototype.getPathIndex = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.router.ViaPoint.prototype.getSegmentIndex = function() {};
+
+/**
+ * 
+ * Расширяет
+ *             GeoObject.
+ * 
+ * Объект, описывающий путевую точку маршрута.
+ * 
+ * @constructor
+ * @extends {ymaps.GeoObject}
+ * 
+ * @param {Object} feature Свойства и геометрия.
+ * @param {Object=} options Опции.
+ */
+ymaps.router.WayPoint = function(feature, options) {};
+
+
+/**
+ * Менеджер данных путевой точки.
+ * Если путевая точка была задана адресом, то в поле GeocoderMetaData будут содержаться метаданные
+ * геокодера. См. geocode.
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.router.WayPoint.prototype.properties;
+
+
+ymaps.shape = {};
+
+/**
+ * 
+ * Расширяет
+ *             IShape.
+ * 
+ * Пиксельная фигура "Круг".
+ * 
+ * @constructor
+ * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelCircleGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
+ */
+ymaps.shape.Circle = function(pixelGeometry, params) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.Circle.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.Circle.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.Circle.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.Circle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.Circle.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Circle.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Circle.prototype.shift = function(offset) {};
+
+/**
+ * 
+ * Расширяет
+ *             IShape.
+ * 
+ * Пиксельная фигура "Ломаная линия".
+ * 
+ * @constructor
+ * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelLineStringGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
+ */
+ymaps.shape.LineString = function(pixelGeometry, params) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.LineString.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.LineString.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.LineString.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.LineString.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.LineString.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.LineString.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.LineString.prototype.shift = function(offset) {};
+
+/**
+ * 
+ * Расширяет
+ *             IShape.
+ * 
+ * Пиксельная фигура "Мультиполигон".
+ * 
+ * @constructor
+ * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelMultiPolygonGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
+ */
+ymaps.shape.MultiPolygon = function(pixelGeometry, params) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.MultiPolygon.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.MultiPolygon.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.MultiPolygon.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.MultiPolygon.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.MultiPolygon.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.MultiPolygon.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.MultiPolygon.prototype.shift = function(offset) {};
+
+/**
+ * 
+ * Расширяет
+ *             IShape.
+ * 
+ * Пиксельная фигура "Полигон".
+ * 
+ * @constructor
+ * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelPolygonGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
+ */
+ymaps.shape.Polygon = function(pixelGeometry, params) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.Polygon.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.Polygon.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.Polygon.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.Polygon.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.Polygon.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Polygon.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Polygon.prototype.shift = function(offset) {};
+
+/**
+ * 
+ * Расширяет
+ *             IShape.
+ * 
+ * Пиксельная фигура "Прямоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IShape}
+ * 
+ * @param {ymaps.IPixelRectangleGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {Object=} params Параметры фигуры.
+ */
+ymaps.shape.Rectangle = function(pixelGeometry, params) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.shape.Rectangle.prototype.contains = function(position) {};
+
+
+/**
+ * @param {ymaps.IShape} shape Фигура, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.shape.Rectangle.prototype.equals = function(shape) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.shape.Rectangle.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.shape.Rectangle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.shape.Rectangle.prototype.getType = function() {};
+
+
+/**
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Rectangle.prototype.scale = function(factor) {};
+
+
+/**
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IShape}
+ */
+ymaps.shape.Rectangle.prototype.shift = function(offset) {};
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.Storage
+ * Хранилище геометрий хотспотных шейпов.
+ * 
+ * 
+ * @type {ymaps.util.Storage}
+ */
+ymaps.shape.storage;
+
+
+ymaps.template = {};
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.Storage
+ * Хранилище фильтров для шаблонов.
+ * Фильтры из хранилища можно использовать во всех макетах, созданных с помощью templateLayoutFactory.
+ * По умолчанию в хранилище объявлены следующие ключи для фильтров:
+ * 
+ * default — позволяет устанавливать значения по умолчанию.
+ *      Например, так: {{ properties.header|default:"Заголовок" }}
+ * Методы 
+ * 
+ * Примеры: 
+ * 
+ * 1.
+ * 
+ * 2.
+ * 
+ * 3.
+ * 
+ * 
+ * @type {ymaps.util.Storage}
+ */
+ymaps.template.filtersStorage;
+
+
+ymaps.util = {};
+
+/**
+ * 
+ * Расширяет
+ *             util.Storage.
+ * 
+ * Хранилище, которое предоставляет асинхронный доступ к значениям по ключам.
+ * 
+ * @constructor
+ * @extends {ymaps.util.Storage}
+ * 
+ */
+ymaps.util.AsyncStorage = function() {};
+
+
+/**
+ * @param {String} key Ключ, по которому можно будет произвести асинхронный вызов.
+ * @param {Array.<String>=} depends Массив ключей значений из текущего хранилища,
+ *                                  которые должны быть проинициализированы перед текущим. Этот аргумент может быть пропущен.
+ * @param {Function} resolveCallback Функция, которая определяет значение, доступное по ключу.
+ *                                   Первым аргументом в resolveCallback поступит provide-функция, в которую нужно будет передать значение.
+ *                                   Вызов provide-функции может быть отложен во времени.
+ *                                   Последующие аргументы - это значения из хранилища, указанные в зависимостях.
+ *                                   Порядок модулей будет соответствовать порядку в массиве depends.
+ * @param {Object=} context Контекст исполнения функции.
+ * @return {ymaps.util.AsyncStorage}
+ */
+ymaps.util.AsyncStorage.prototype.define = function(key, depends, resolveCallback, context) {};
+
+
+/**
+ * @param {String} key Ключ значения.
+ * @return {Boolean}
+ */
+ymaps.util.AsyncStorage.prototype.isDefined = function(key) {};
+
+
+/**
+ * @param {String|Array.<String>} keys Ключ или массив ключей.
+ * @param {Function=} successCallback Функция обратного вызова, которая будет вызвана после получения всех значений.
+ *                                    В функцию как аргументы будут переданы значения из хранилища.
+ *                                    Порядок аргументов будет соответствовать порядку в массиве keys.
+ * @param {Function=} errorCallback Функция обратного вызова, которая будет вызвана в случае ошибки.
+ *                                  В функцию будет передан объект ошибки.
+ * @param {Object=} context Контекст исполнения функции обратного вызова.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.util.AsyncStorage.prototype.require = function(keys, successCallback, errorCallback, context) {};
+
+/**
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Специальный инструмент, который предоставляет механизм для реализации перетаскивания элементов на странице.
+ * При использовании следует обратить внимание, что во время работы драггера
+ * в системе событий API Яндекс.Карт не будут поступать события mousemove и mouseup.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {Object=} params Параметры драггера.
+ */
+ymaps.util.Dragger = function(params) {};
+
+
+/**
+ */
+ymaps.util.Dragger.prototype.destroy = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.util.Dragger.prototype.isDragging = function() {};
+
+
+/**
+ * @param {ymaps.IDomEvent} event Инициализирующее событие.
+ */
+ymaps.util.Dragger.prototype.start = function(event) {};
+
+
+/**
+ */
+ymaps.util.Dragger.prototype.stop = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.util.Dragger.prototype.events;
+
+/**
+ * 
+ * Хранилище объектов по ключу.
+ * 
+ * @constructor
+ * 
+ */
+ymaps.util.Storage = function() {};
+
+
+/**
+ * @param {String} key Ключ.
+ * @param {Object} object Хранимый объект.
+ * @return {ymaps.util.Storage}
+ */
+ymaps.util.Storage.prototype.add = function(key, object) {};
+
+
+/**
+ * @param {String|Object} key Ключ.
+ * @return {Object}
+ */
+ymaps.util.Storage.prototype.get = function(key) {};
+
+
+/**
+ * @param {String} key Ключ.
+ * @return {ymaps.util.Storage}
+ */
+ymaps.util.Storage.prototype.remove = function(key) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Базовая функция, реализующая наследование в JavaScript.
+ * Реализует наследование прототипа без исполнения конструктора родителя.
+ * 
+ * К дочернему классу добавляется поле 'superclass', указывающее на
+ * прототип родительского класса, и поле 'constructor', которое указывает на конструктор класса.
+ * Через поле 'constructor' объекта 'superclass' можно обратится к конструктору родительского класса.
+ * 
+ * Возвращает:  Прототип дочернего класса.
+ *         (тип Object).
+ * 
+ * @param {Function} ChildClass Дочерний класс.
+ * @param {Function} ParentClass Родительский класс.
+ * @param {Object} override Набор дополнительных полей и функций,
+ *                          которые будут приписаны к прототипу дочернего класса.
+ * 
+ * @returns {Object}
+ */
+ymaps.util.augment = function(ChildClass, ParentClass, override) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Связывает переданную функцию с переданным контекстом исполнения.
+ * 
+ * @param {Function} callback Функция.
+ * @param {Object} context Контекст исполнения.
+ */
+ymaps.util.bind = function(callback, context) {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Набор статических методов для работы с прямоугольными областями, представленными в виде двух противоположных точек в координатной системе проекции.
+ * 
+ */
+ymaps.util.bounds = {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds1 Первая область.
+ * @param {Array.<Array.<Number>>} bounds2 Вторая область.
+ * @param {ymaps.IProjection=} projection Проекция.
+ * @return {Boolean}
+ */
+ymaps.util.bounds.areIntersecting = function(bounds1, bounds2, projection) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} outer Внешняя область
+ * @param {Array.<Array.<Number>>} inner Проверяемая область.
+ * @param {ymaps.IProjection=} projection Проекция.
+ * @return {Boolean}
+ */
+ymaps.util.bounds.containsBounds = function(outer, inner, projection) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds Внешняя область
+ * @param {Array.<Number>} point Проверяемая точка.
+ * @param {ymaps.IProjection=} projection Проекция.
+ * @return {Boolean}
+ */
+ymaps.util.bounds.containsPoint = function(bounds, point, projection) {};
+
+
+/**
+ * @param {Array.<Array.<Array.<Number>>>} sourceBounds Массив прямоугольных обласлей
+ * @param {ymaps.IProjection=} projection Проекция.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.util.bounds.fromBounds = function(sourceBounds, projection) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} pixelBounds Исходные границы.
+ * @param {Number} zoom Масштаб.
+ * @param {ymaps.IProjection=} projection Проекция, которая будет использоваться для вычисления геокоординат.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.util.bounds.fromGlobalPixelBounds = function(pixelBounds, zoom, projection) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} points Массив точек.
+ * @param {ymaps.IProjection=} projection Проекция.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.util.bounds.fromPoints = function(points, projection) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds Область.
+ * @param {ymaps.IProjection=} projection Проекция.
+ * @return {Array.<Number>}
+ */
+ymaps.util.bounds.getCenter = function(bounds, projection) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds Область, заданная в географических координатах.
+ *                                        Первая точка содержит минимальные значения широты и долготы, вторая точка -
+ *                                        максимальные.
+ * @param {Array.<Number>} containerSize Размер контейнера карты.
+ * @param {ymaps.IProjection=} projection Проекция.
+ * @param {Boolean|Object=} params Параметры или значение опции preciseZoom.
+ * @return {Object}
+ */
+ymaps.util.bounds.getCenterAndZoom = function(bounds, containerSize, projection, params) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds1 Первая область.
+ * @param {Array.<Array.<Number>>} bounds2 Вторая область.
+ * @param {ymaps.IProjection=} projection Проекция.
+ * @return {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.util.bounds.getIntersections = function(bounds1, bounds2, projection) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds Область.
+ * @param {ymaps.IProjection=} projection Проекция.
+ * @return {Array.<Number>}
+ */
+ymaps.util.bounds.getSize = function(bounds, projection) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Базовая функция, реализующая объявление классов в API Яндекс.Карт.
+ * При помощи этой функции можно объявить новый класс, указать у этого класса набор методов и произвести наследование от другого класса.
+ * К дочернему классу приписывается поле superclass, указывающее на
+ * прототип родительского класса.
+ * Через поле 'constructor' объекта 'superclass' можно обратится к конструктору родительского класса.
+ * 
+ * Возвращает:  Класс.
+ *         (тип Object).
+ * 
+ * @param {Function} constructor Конструктор класса.
+ * @param {Function=} parentClass Родительский класс, от которого необходимо произвести наследование. Этот аргумент может быть пропущен.
+ * @param {Object=} override Набор дополнительных полей и функций,
+ *                           которые будут приписаны к прототипу класса. Источников может быть несколько (функция может иметь
+ *                           произвольное число параметров), данные копируются справа налево (последний
+ *                           аргумент имеет наивысший приоритет при копировании).
+ * 
+ * @returns {Object}
+ */
+ymaps.util.defineClass = function(constructor, parentClass, override) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Функция, копирующая свойства из одного или нескольких
+ * JavaScript-объектов в другой JavaScript-объект.
+ * 
+ * @param {Object} target Целевой JavaScript-объект. Будет модифицирован
+ *                        в результате работы функции.
+ * @param {Object} source JavaScript-объект - источник. Все его свойства
+ *                        будут скопированы. Источников может быть несколько (функция может иметь
+ *                        произвольное число параметров), данные копируются справа налево (последний
+ *                        аргумент имеет наивысший приоритет при копировании).
+ */
+ymaps.util.extend = function(target, source) {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Позволяет работать с HD экранами различных устройств.
+ * 
+ */
+ymaps.util.hd = {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.util.hd.getPixelRatio = function() {};
+
+
+/**
+ * @param {ymaps.IRatioMap} hash Объект типа IRatioMap для экранов с различным пиксельным соотношением.
+ * @return {Number}
+ */
+ymaps.util.hd.selectRatio = function(hash) {};
+
+
+/**
+ * @param {Object|ymaps.IRatioMap} hash Объект типа IRatioMap для экранов с различным пиксельным соотношением.
+ * @return {Object}
+ */
+ymaps.util.hd.selectValue = function(hash) {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Набор статических методов для работы с прямоугольными областями, 
+ * представленными в виде пары из верхней левой и нижней правой точек
+ * в декардовой координатной системе.
+ * 
+ */
+ymaps.util.pixelBounds = {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds1 Первая область.
+ * @param {Array.<Array.<Number>>} bounds2 Вторая область.
+ * @return {Boolean}
+ */
+ymaps.util.pixelBounds.areIntersecting = function(bounds1, bounds2) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} outer Внешняя область
+ * @param {Array.<Array.<Number>>} inner Проверяемая область.
+ * @return {Boolean}
+ */
+ymaps.util.pixelBounds.containsBounds = function(outer, inner) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds Внешняя область
+ * @param {Array.<Number>} point Проверяемая точка.
+ * @return {Boolean}
+ */
+ymaps.util.pixelBounds.containsPoint = function(bounds, point) {};
+
+
+/**
+ * @param {Array.<Array.<Array.<Number>>>} sourceBounds Массив прямоугольных обласлей
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.util.pixelBounds.fromBounds = function(sourceBounds) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} points Массив точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.util.pixelBounds.fromPoints = function(points) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds Область.
+ * @return {Array.<Number>}
+ */
+ymaps.util.pixelBounds.getCenter = function(bounds) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds1 Первая область.
+ * @param {Array.<Array.<Number>>} bounds2 Вторая область.
+ * @return {Array.<Array.<Number>>|Null}
+ */
+ymaps.util.pixelBounds.getIntersection = function(bounds1, bounds2) {};
+
+
+/**
+ * @param {Array.<Array.<Number>>} bounds Область.
+ * @return {Array.<Number>}
+ */
+ymaps.util.pixelBounds.getSize = function(bounds) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Вычисляет оптимальный центр и уровень масштабирования карты
+ * для отображения переданной области на указанном типе карты.
+ * Уровень масштаба будет в рамках доступного диапозона масштабов.
+ * 
+ * Возвращает:  Объект-promise, который будет подтвержден объектом с полями center и zoom
+ * или будет отклонен с ошибкой.
+ *         (тип vow.Promise).
+ * 
+ * @param {String|ymaps.MapType} mapType Тип карты. Cтрока-ключ из хранилища mapType.storage, 
+ *                                       либо экземпляр класса MapType.
+ * @param {Array.<Array.<Number>>} bounds Область, заданная в географических координатах.
+ *                                        Первая точка содержит минимальные значения широты и долготы, вторая точка -
+ *                                        максимальные.
+ * @param {Array.<Number>} containerSize Размер контейнера карты.
+ * @param {Object=} params Параметры.
+ * 
+ * @returns {ymaps.vow.Promise}
+ */
+ymaps.util.requireCenterAndZoom = function(mapType, bounds, containerSize, params) {};
+
+
+ymaps.vow = {};
+
+/**
+ * 
+ * Класс, описывающий объекты-deferred.
+ * Примечание.&nbsp;
+ *   Данный класс является частью библиотеки Vow.
+ *   Ниже описаны только некоторые методы. Полный список методов доступен здесь:
+ *   http://dfilatov.github.io/vow/.
+ *   Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
+ *   Dual licensed under the MIT
+ *   and GPL licenses.
+ * Данный класс является частью библиотеки Vow.
+ * Ниже описаны только некоторые методы. Полный список методов доступен здесь:
+ *   http://dfilatov.github.io/vow/.
+ * Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
+ *   Dual licensed under the MIT
+ *   and GPL licenses.
+ * Примечание.&nbsp;Не является отдельным модулем: доступен после подключения модуля vow.
+ * 
+ * @constructor
+ * 
+ */
+ymaps.vow.Deferred = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.vow.Deferred.prototype.promise = function() {};
+
+
+/**
+ * @param {Object} reason Причина отклонения.
+ */
+ymaps.vow.Deferred.prototype.reject = function(reason) {};
+
+
+/**
+ * @param {Object} value Значение.
+ */
+ymaps.vow.Deferred.prototype.resolve = function(value) {};
+
+/**
+ * 
+ * Класс, описывающий объекты-promise.
+ * Спецификация Promise/A+.
+ * Примечание.&nbsp;
+ *   Данный класс является частью библиотеки Vow.
+ *   Ниже описаны только некоторые методы. Полный список методов доступен здесь:
+ *   http://dfilatov.github.io/vow/.
+ *   Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
+ *   Dual licensed under the MIT
+ *   and GPL licenses.
+ * Данный класс является частью библиотеки Vow.
+ * Ниже описаны только некоторые методы. Полный список методов доступен здесь:
+ *   http://dfilatov.github.io/vow/.
+ * Copyright (c) 2012-2013 Filatov Dmitry (dfilatov@yandex-team.ru).
+ *   Dual licensed under the MIT
+ *   and GPL licenses.
+ * Примечание.&nbsp;Не является отдельным модулем: доступен после подключения модуля vow.
+ * 
+ * @constructor
+ * 
+ * @param {Function=} resolver Функция, которая принимает в качестве параметров методы resolve и reject
+ *                             для установки состояния и значения создаваемому объекту-promise.
+ */
+ymaps.vow.Promise = function(resolver) {};
+
+
+/**
+ * @param {Function=} onFulfilled Функция обратного вызова, которая будет вызвана в случае если объект-promise будет разрешён.
+ * @param {Function=} onRejected Функция обратного вызова, которая будет вызвана в случае если объект-promise будет отклонён.
+ * @param {Function=} onProgress Функция обратного вызова, которая будет вызвана при "оповещении" объекта-promise.
+ * @param {Object=} ctx Контекст выполнения функций обратного вызова.
+ */
+ymaps.vow.Promise.prototype.done = function(onFulfilled, onRejected, onProgress, ctx) {};
+
+
+/**
+ * @param {Function=} onFulfilled Функция обратного вызова, которая будет вызвана в случае если объект-promise будет разрешён.
+ * @param {Function=} onRejected Функция обратного вызова, которая будет вызвана в случае если объект-promise будет отклонён.
+ * @param {Object=} ctx Контекст выполнения функций обратного вызова.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.vow.Promise.prototype.spread = function(onFulfilled, onRejected, ctx) {};
+
+
+/**
+ * @param {Function=} onFulfilled Функция обратного вызова, которая будет вызвана в случае если объект-promise будет разрешён.
+ * @param {Function=} onRejected Функция обратного вызова, которая будет вызвана в случае если объект-promise будет отклонён.
+ * @param {Function=} onProgress Функция обратного вызова, которая будет вызвана при "оповещении" объекта-promise.
+ * @param {Object=} ctx Контекст выполнения функций обратного вызова.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.vow.Promise.prototype.then = function(onFulfilled, onRejected, onProgress, ctx) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.vow.Promise.prototype.valueOf = function() {};
+
+
+ymaps.geoObject.addon = {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geoObject.addon.balloon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Статический объект.
+ * 
+ * Модуль, который предоставляет возможность использовать балун у геообъекта.
+ * Добавляет геообъекту (GeoObject) интерфейс IBalloonOwner.
+ * При подключении package.full (стандартный набор модулей) доступен по умолчанию.
+ * Если GeoObject подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
+ * Если geoObject.addon.balloon подключается отдельно после создания GeoObject,
+ * то интерфейс IBalloonOwner не будет добавлен. Тогда для инициализации менеджера балуна
+ * нужно будет использовать метод geoObject.addon.balloon#get.
+ * 
+ * Методы 
+ * 
+ */
+ymaps.geoObject.addon.balloon = {};
+
+
+/**
+ * @param {ymaps.IGeoObject} geoObject Геообъект
+ * @return {ymaps.IPopupManager}
+ */
+ymaps.geoObject.addon.balloon.get = function(geoObject) {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geoObject.addon.editor скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Статический объект.
+ * 
+ * Модуль, который предоставляет возможность использовать редактор у геообъекта.
+ * Добавляет поле GeoObject#editor в GeoObject.
+ * При подключении package.full (стандартного набора модулей) доступен по умолчанию.
+ * Если GeoObject подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
+ * Если geoObject.addon.editor подключается отдельно после создания GeoObject,
+ * то поле GeoObject#editor не будет добавлено. Тогда для редактора
+ * нужно будет использовать метод geoObject.addon.editor#get.
+ * 
+ * Методы 
+ * 
+ */
+ymaps.geoObject.addon.editor = {};
+
+
+/**
+ * @param {ymaps.IGeoObject} geoObject Геообъект
+ * @return {ymaps.IGeometryEditor}
+ */
+ymaps.geoObject.addon.editor.get = function(geoObject) {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geoObject.addon.hint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Статический объект.
+ * 
+ * Модуль, который предоставляет возможность использовать хинт у геообъекта.
+ * Добавляет геообъекту (GeoObject) интерфейс IHintOwner.
+ * При подключении package.full (стандартный набор модулей) доступен по умолчанию.
+ * Если GeoObject подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
+ * Если geoObject.addon.hint подключается отдельно после создания GeoObject,
+ * то интерфейс IHintOwner не будет добавлен. Тогда для инициализации менеджера балуна
+ * нужно будет использовать метод geoObject.addon.hint#get.
+ * 
+ * Методы 
+ * 
+ */
+ymaps.geoObject.addon.hint = {};
+
+
+/**
+ * @param {ymaps.IGeoObject} geoObject Геообъект
+ * @return {ymaps.IPopupManager}
+ */
+ymaps.geoObject.addon.hint.get = function(geoObject) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Создает геометрию geometry.LineString на основе строки закодированных в Base64 координат.
+ * 
+ * Возвращает:  Геометрию.
+ *         (тип geometry.LineString).
+ * 
+ * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
+ * 
+ * @returns {ymaps.geometry.LineString}
+ */
+ymaps.geometry.LineString.fromEncodedCoordinates = function(encodedCoordinates) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
+ *         (тип String).
+ * 
+ * @param {ymaps.geometry.LineString} geometry Геометрия.
+ * 
+ * @returns {String}
+ */
+ymaps.geometry.LineString.toEncodedCoordinates = function(geometry) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Создает геометрию geometry.Polygon на основе строки закодированных в Base64 координат.
+ * 
+ * Возвращает:  Геометрию.
+ *         (тип geometry.Polygon).
+ * 
+ * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
+ * 
+ * @returns {ymaps.geometry.Polygon}
+ */
+ymaps.geometry.Polygon.fromEncodedCoordinates = function(encodedCoordinates) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
+ *         (тип String).
+ * 
+ * @param {ymaps.geometry.Polygon} geometry Геометрия.
+ * 
+ * @returns {String}
+ */
+ymaps.geometry.Polygon.toEncodedCoordinates = function(geometry) {};
+
+
+ymaps.geometry.base = {};
+
+/**
+ * 
+ * Расширяет
+ *             IBaseCircleGeometry.
+ * 
+ * Базовая геометрия "Круг".
+ * 
+ * @constructor
+ * @implements {ymaps.IBaseCircleGeometry}
+ * 
+ * @param {Array.<Number>|null=} coordinates Координаты центра круга.
+ * @param {Number=} radius Радиус круга.
+ */
+ymaps.geometry.base.Circle = function(coordinates, radius) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.Circle.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.Circle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Circle.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на окружности.
+ * @return {Object}
+ */
+ymaps.geometry.base.Circle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @return {Array.<Number>|null}
+ */
+ymaps.geometry.base.Circle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @return {Number}
+ */
+ymaps.geometry.base.Circle.prototype.getRadius = function() {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Array.<Number>|null} coordinates Координаты центра круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.geometry.base.Circle.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ICircleGeometryAccess
+ * 
+ * @param {Number} radius Радиус круга.
+ * @return {ymaps.ICircleGeometryAccess}
+ */
+ymaps.geometry.base.Circle.prototype.setRadius = function(radius) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Circle.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Circle.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Circle.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий геометрии.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.geometry.base.Circle.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IBaseLineStringGeometry.
+ * 
+ * Базовая геометрия "Ломаная линия".
+ * 
+ * @constructor
+ * @implements {ymaps.IBaseLineStringGeometry}
+ * 
+ * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
+ */
+ymaps.geometry.base.LineString = function(coordinates) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.LineString.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.LineString.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.base.LineString.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс вершины.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.base.LineString.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
+ * @return {Object}
+ */
+ymaps.geometry.base.LineString.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.LineString.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.base.LineString.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.base.LineString.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.base.LineString.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.base.LineString.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILineStringGeometryAccess}
+ */
+ymaps.geometry.base.LineString.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ILineStringGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.LineString.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.LineString.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.LineString.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.LineString.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий геометрии.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.geometry.base.LineString.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IBaseLinearRingGeometry.
+ * 
+ * Базовая геометрия "Замкнутый контур".
+ * 
+ * @constructor
+ * @implements {ymaps.IBaseLinearRingGeometry}
+ * 
+ * @param {Array.<Array.<Number>>=} coordinates Координаты геометрии.
+ * @param {String=} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
+ *                           Может принимать одно из двух значений:
+ *                           
+ *                               evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                               до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
+ *                               пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
+ *                               nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                               до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
+ *                               нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
+ *                               раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
+ *                               находится снаружи контура. В противном случае она находится внутри.
+ *                           
+ */
+ymaps.geometry.base.LinearRing = function(coordinates, fillRule) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.LinearRing.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.LinearRing.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.base.LinearRing.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.base.LinearRing.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс вершины контура.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре.
+ * @return {Object}
+ */
+ymaps.geometry.base.LinearRing.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.LinearRing.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @return {String}
+ */
+ymaps.geometry.base.LinearRing.prototype.getFillRule = function() {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.base.LinearRing.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.insert = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.base.LinearRing.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс точки.
+ * @param {Array.<Number>} coordinates Координаты точки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.set = function(index, coordinates) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты геометрии.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.LinearRing.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @see ymaps.ILinearRingGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
+ * @param {number} number Количество удаляемых точек.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.LinearRing.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.LinearRing.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.LinearRing.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.LinearRing.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий геометрии.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.geometry.base.LinearRing.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IBasePointGeometry.
+ * 
+ * Базовая геометрия "Точка".
+ * 
+ * @constructor
+ * @implements {ymaps.IBasePointGeometry}
+ * 
+ * @param {Array.<Number>|null=} coordinates Координаты точки.
+ */
+ymaps.geometry.base.Point = function(coordinates) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.Point.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.Point.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IPointGeometryAccess
+ * 
+ * @return {Array.<Number>|null}
+ */
+ymaps.geometry.base.Point.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPointGeometryAccess
+ * 
+ * @param {Array.<Number>|null} coordinates Координаты точки.
+ * @return {ymaps.IPointGeometryAccess}
+ */
+ymaps.geometry.base.Point.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * Менеджер событий геометрии.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.geometry.base.Point.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IBasePolygonGeometry.
+ * 
+ * Базовая геометрия "Многоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IBasePolygonGeometry}
+ * 
+ * @param {Array.<Array.<Array.<Number>>>=} coordinates Координаты геометрии.
+ * @param {String=} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
+ *                           Может принимать одно из двух значений:
+ *                           
+ *                               evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                               до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
+ *                               пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
+ *                               nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                               до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
+ *                               нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
+ *                               раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
+ *                               находится снаружи контура. В противном случае она находится внутри.
+ *                           
+ */
+ymaps.geometry.base.Polygon = function(coordinates, fillRule) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.Polygon.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.Polygon.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Polygon.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.Polygon.prototype.get = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.getChildGeometry = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.geometry.base.Polygon.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.geometry.base.Polygon.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {String}
+ */
+ymaps.geometry.base.Polygon.prototype.getFillRule = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @return {number}
+ */
+ymaps.geometry.base.Polygon.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.insert = function(index, path) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @return {ymaps.ILinearRingGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.remove = function(index) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс контура.
+ * @param {Array.<Array.<Number>>} path Координаты контура.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.set = function(index, path) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты геометрии.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {String} fillRule Идентификатор алгоритма заливки.
+ * @return {ymaps.IPolygonGeometryAccess}
+ */
+ymaps.geometry.base.Polygon.prototype.setFillRule = function(fillRule) {};
+
+
+/**
+ * @see ymaps.IPolygonGeometryAccess
+ * 
+ * @param {number} index Индекс, начиная с которого производится удаление и добавление контуров.
+ * @param {number} number Количество удаляемых контуров.
+ * @return {Array.<ymaps.ILinearRingGeometryAccess>}
+ */
+ymaps.geometry.base.Polygon.prototype.splice = function(index, number) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Polygon.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Polygon.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Polygon.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий геометрии.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.geometry.base.Polygon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IBaseRectangleGeometry.
+ * 
+ * Базовая геометрия "Прямоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IBaseRectangleGeometry}
+ * 
+ * @param {Array.<Array.<Number>>|null=} coordinates Массив, содержащий координаты двух противоположных углов прямоугольника.
+ */
+ymaps.geometry.base.Rectangle = function(coordinates) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.base.Rectangle.prototype.getType = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.base.Rectangle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Rectangle.prototype.contains = function(position) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
+ * @return {Object}
+ */
+ymaps.geometry.base.Rectangle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.base.Rectangle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IRectangleGeometryAccess
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты углов.
+ * @return {ymaps.IRectangleGeometryAccess}
+ */
+ymaps.geometry.base.Rectangle.prototype.setCoordinates = function(coordinates) {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Rectangle.prototype.freeze = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {Boolean}
+ */
+ymaps.geometry.base.Rectangle.prototype.isFrozen = function() {};
+
+
+/**
+ * @see ymaps.IFreezable
+ * 
+ * @return {ymaps.IFreezable}
+ */
+ymaps.geometry.base.Rectangle.prototype.unfreeze = function() {};
+
+
+/**
+ * Менеджер событий геометрии.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.geometry.base.Rectangle.prototype.events;
+
+
+ymaps.geometry.json = {};
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryJson.
+ * 
+ * Объект, описывающий JSON-представление геометрии "Точка".
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryJson}
+ * 
+ */
+ymaps.geometry.json.Point = function() {};
+
+
+/**
+ * Идентификатор типа геометрии.
+ * 
+ * @type {String}
+ */
+ymaps.geometry.json.Point.prototype.type;
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryJson.
+ * 
+ * Объект, описывающий JSON-представление геометрии "Круг".
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryJson}
+ * 
+ */
+ymaps.geometry.json.circle = function() {};
+
+
+/**
+ * Координаты центра круга.
+ * 
+ * @type {Array.<Number>|null}
+ */
+ymaps.geometry.json.circle.prototype.coordinates;
+
+
+/**
+ * Радиус круга.
+ * 
+ * @type {Number}
+ */
+ymaps.geometry.json.circle.prototype.radius;
+
+
+/**
+ * Идентификатор типа геометрии "Круг".
+ * Всегда должен принимать значение "Circle".
+ * 
+ * @type {String}
+ */
+ymaps.geometry.json.circle.prototype.type;
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryJson.
+ * 
+ * Объект, описывающий JSON-представление геометрии "Ломаная линия".
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryJson}
+ * 
+ */
+ymaps.geometry.json.lineString = function() {};
+
+
+/**
+ * Координаты ломаной линии.
+ * 
+ * @type {Array.<Array.<Number>>}
+ */
+ymaps.geometry.json.lineString.prototype.coordinates;
+
+
+/**
+ * Идентификатор типа геометрии "Ломаная линия".
+ * Всегда должен принимать значение "LineString".
+ * 
+ * @type {String}
+ */
+ymaps.geometry.json.lineString.prototype.type;
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryJson.
+ * 
+ * Объект, описывающий JSON-представление геометрии "Многоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryJson}
+ * 
+ */
+ymaps.geometry.json.polygon = function() {};
+
+
+/**
+ * Координаты многоугольника.
+ * 
+ * @type {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.geometry.json.polygon.prototype.coordinates;
+
+
+/**
+ * Идентификатор алгоритма заливки многоугольника.
+ * Может принимать одно из двух значений:
+ * 
+ * evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *     до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
+ *     пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
+ *     nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *     до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
+ *     нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
+ *     раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
+ *     находится снаружи контура. В противном случае она находится внутри.
+ * 
+ * 
+ * @type {String}
+ */
+ymaps.geometry.json.polygon.prototype.fillRule;
+
+
+/**
+ * Идентификатор типа геометрии.
+ * 
+ * @type {String}
+ */
+ymaps.geometry.json.polygon.prototype.type;
+
+/**
+ * 
+ * Расширяет
+ *             IGeometryJson.
+ * 
+ * Объект, описывающий JSON-представление геометрии "Прямоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryJson}
+ * 
+ */
+ymaps.geometry.json.rectangle = function() {};
+
+
+/**
+ * Координаты двух противоположных углов прямоугольника.
+ * 
+ * @type {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.json.rectangle.prototype.coordinates;
+
+
+/**
+ * Идентификатор типа геометрии "Прямоугольник".
+ * Всегда должен принимать значение "Rectangle".
+ * 
+ * @type {String}
+ */
+ymaps.geometry.json.rectangle.prototype.type;
+
+
+ymaps.geometry.pixel = {};
+
+/**
+ * 
+ * Расширяет
+ *             IPixelCircleGeometry.
+ * 
+ * Пиксельная геометрия "Круг".
+ * 
+ * @constructor
+ * @implements {ymaps.IPixelCircleGeometry}
+ * 
+ * @param {Array.<Number>|null} coordinates Координаты центра круга.
+ * @param {Number|null} radius Радиус круга.
+ * @param {Object=} metaData Метаданные.
+ */
+ymaps.geometry.pixel.Circle = function(coordinates, radius, metaData) {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.pixel.Circle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.geometry.pixel.Circle.prototype.getRadius = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Circle.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Circle.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Circle.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Circle.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.Circle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.Circle.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.Circle.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IPixelLineStringGeometry.
+ * 
+ * Пиксельная геометрия "Ломаная линия".
+ * 
+ * @constructor
+ * @implements {ymaps.IPixelLineStringGeometry}
+ * 
+ * @param {Array.<Array.<Number>>} coordinates Координаты линии.
+ * @param {Object=} metaData Метаданные.
+ */
+ymaps.geometry.pixel.LineString = function(coordinates, metaData) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
+ * @return {Object}
+ */
+ymaps.geometry.pixel.LineString.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.pixel.LineString.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometry.pixel.LineString.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.LineString.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.LineString.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.LineString.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.LineString.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.LineString.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.LineString.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.LineString.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IPixelMultiPolygonGeometry.
+ * 
+ * Пиксельная геометрия "Многоугольник из нескольких фигур".
+ * 
+ * @constructor
+ * @implements {ymaps.IPixelMultiPolygonGeometry}
+ * 
+ * @param {Array.<Array.<Array.<Array.<Number>>>>} coordinates Координаты многоугольников.
+ * @param {String} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольников.
+ *                          Может принимать одно из двух значений:
+ *                          
+ *                              evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                              до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
+ *                              пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
+ *                              nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                              до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
+ *                              нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
+ *                              раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
+ *                              находится снаружи контура. В противном случае она находится внутри.
+ *                          
+ * @param {Object=} metaData Метаданные.
+ */
+ymaps.geometry.pixel.MultiPolygon = function(coordinates, fillRule, metaData) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.contains = function(position) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Array.<Array.<Number>>>>}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getFillRule = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.MultiPolygon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IPixelPointGeometry.
+ * 
+ * Пиксельная геометрия "Точка".
+ * 
+ * @constructor
+ * @implements {ymaps.IPixelPointGeometry}
+ * 
+ * @param {Array.<Number>|null} position Координаты точки.
+ * @param {Object=} metaData Метаданные.
+ */
+ymaps.geometry.pixel.Point = function(position, metaData) {};
+
+
+/**
+ * @return {Array.<Number>}
+ */
+ymaps.geometry.pixel.Point.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Point.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Point.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Point.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Point.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.Point.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.Point.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.Point.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IPixelPolygonGeometry.
+ * 
+ * Пиксельная геометрия "Многоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IPixelPolygonGeometry}
+ * 
+ * @param {Array.<Array.<Array.<Number>>>} coordinates Координаты многоугольника.
+ * @param {String} fillRule Строковый идентификатор, определяющий алгоритм заливки многоугольника.
+ *                          Может принимать одно из двух значений:
+ *                          
+ *                              evenOdd - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                              до бесконечности в любом направлении и подсчета количества сегментов контура в пределах заданной фигуры, которые
+ *                              пересекает этот луч. Если это число нечетное, точка находится внутри; если четное, точка находится снаружи.
+ *                              nonZero - алгоритм, определяющий, находится ли точка в области заполнения, путем рисования луча от этой точки
+ *                              до бесконечности в любом направлении и проверки точек, в которых сегмент фигуры пересекает этот луч. Начиная с
+ *                              нуля, добавляется единица каждый раз, когда сегмент пересекает луч слева направо, и вычитается единица каждый
+ *                              раз, когда сегмент пересекает луч справа налево. Если после подсчета пересечений результат равен нулю, точка
+ *                              находится снаружи контура. В противном случае она находится внутри.
+ *                          
+ * @param {Object=} metaData Метаданные.
+ */
+ymaps.geometry.pixel.Polygon = function(coordinates, fillRule, metaData) {};
+
+
+/**
+ * @param {Array.<Number>} position Координаты точки.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Polygon.prototype.contains = function(position) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на контуре многоугольника.
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Array.<Number>>>}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getCoordinates = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getFillRule = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getLength = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Polygon.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Polygon.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Polygon.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.Polygon.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.Polygon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IPixelRectangleGeometry.
+ * 
+ * Пиксельная геометрия "Прямоугольник".
+ * 
+ * @constructor
+ * @implements {ymaps.IPixelRectangleGeometry}
+ * 
+ * @param {Array.<Array.<Number>>|null=} coordinates Координаты двух противоположных углов прямоугольника.
+ * @param {Object=} metaData Метаданные.
+ */
+ymaps.geometry.pixel.Rectangle = function(coordinates, metaData) {};
+
+
+/**
+ * @param {Array.<Number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на прямоугольнике.
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getClosest = function(anchorPosition) {};
+
+
+/**
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getCoordinates = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {ymaps.IPixelGeometry} geometry Геометрия, с которой производится сравнение.
+ * @return {Boolean}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.equals = function(geometry) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @return {Object}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getMetaData = function() {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Number} factor Масштабный коэффициент.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.scale = function(factor) {};
+
+
+/**
+ * @see ymaps.IPixelGeometry
+ * 
+ * @param {Array.<Number>} offset Величина сдвига по осям.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.shift = function(offset) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getBounds = function() {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometry.pixel.Rectangle.prototype.events;
+
+
+ymaps.geometryEditor.model = {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.model.ChildLineString скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeometryEditorChildModel.
+ * 
+ * Модель дочерней ломаной линии. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditorChildModel}
+ * 
+ */
+ymaps.geometryEditor.model.ChildLineString = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.getAllVerticesNumber = function() {};
+
+
+/**
+ * @return {Array.<ymaps.geometryEditor.model.Edge>}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.getEdgeModels = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.getIndex = function() {};
+
+
+/**
+ * @return {Array.<ymaps.geometryEditor.model.ChildVertex>}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.getVertexModels = function() {};
+
+
+/**
+ * @param {number} index Индекс дочерней вершины.
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.setIndex = function(index) {};
+
+
+/**
+ * @param {number} start Индекс, начиная с которого производится удаление и добавление вершин.
+ * @param {number} deleteCount Количество удаляемых вершин.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.spliceVertices = function(start, deleteCount) {};
+
+
+/**
+ * @return {ymaps.IGeometryEditorModel}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.getParent = function() {};
+
+
+/**
+ * @param {Array.<Number>} pixels Пиксельные данные.
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.setPixels = function(pixels) {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.getPixels = function() {};
+
+
+/**
+ * Редактор геометрии.
+ * 
+ * @type {ymaps.IGeometryEditor}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.editor;
+
+
+/**
+ * Геометрия модели.
+ * 
+ * @type {ymaps.IBaseGeometry}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.geometry;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.ChildLineString.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.model.ChildLinearRing скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             geometryEditor.model.ChildLineString.
+ * 
+ * Модель дочернего замкнутого контура. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * @constructor
+ * @extends {ymaps.geometryEditor.model.ChildLineString}
+ * 
+ */
+ymaps.geometryEditor.model.ChildLinearRing = function() {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.model.ChildVertex скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeometryEditorChildModel.
+ * 
+ * Модель дочерней вершины. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditorChildModel}
+ * 
+ */
+ymaps.geometryEditor.model.ChildVertex = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.getAllVerticesNumber = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.getIndex = function() {};
+
+
+/**
+ * @return {ymaps.geometryEditor.model.ChildVertex|null}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.getNextVertex = function() {};
+
+
+/**
+ * @return {ymaps.geometryEditor.model.ChildVertex|null}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.getPrevVertex = function() {};
+
+
+/**
+ * @param {Array.<Number>} pixels Глобальные пиксельные координаты вершины.
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.setGlobalPixels = function(pixels) {};
+
+
+/**
+ * @param {number} index Индекс дочерней вершины.
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.setIndex = function(index) {};
+
+
+/**
+ * @param {ymaps.geometryEditor.model.ChildVertex|null} nextVertex Модель следующей вершины.
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.setNextVertex = function(nextVertex) {};
+
+
+/**
+ * @param {ymaps.geometryEditor.model.ChildVertex|null} prevVertex Модель предыдущей вершины.
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.setPrevVertex = function(prevVertex) {};
+
+
+/**
+ * @return {ymaps.IGeometryEditorModel}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.getParent = function() {};
+
+
+/**
+ * @param {Array.<Number>} pixels Пиксельные данные.
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.setPixels = function(pixels) {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.getPixels = function() {};
+
+
+/**
+ * Редактор геометрии.
+ * 
+ * @type {ymaps.IGeometryEditor}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.editor;
+
+
+/**
+ * Геометрия модели.
+ * 
+ * @type {ymaps.IBaseGeometry}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.geometry;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.ChildVertex.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.model.Edge скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeometryEditorRootModel.
+ * 
+ * Модель промежуточной метки. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditorRootModel}
+ * 
+ */
+ymaps.geometryEditor.model.Edge = function() {};
+
+
+/**
+ * @return {ymaps.geometryEditor.model.ChildVertex|null}
+ */
+ymaps.geometryEditor.model.Edge.prototype.getNextVertex = function() {};
+
+
+/**
+ * @return {ymaps.geometryEditor.model.ChildVertex|null}
+ */
+ymaps.geometryEditor.model.Edge.prototype.getPrevVertex = function() {};
+
+
+/**
+ * @param {ymaps.geometryEditor.model.ChildVertex|null} nextVertex Модель следующей вершины.
+ */
+ymaps.geometryEditor.model.Edge.prototype.setNextVertex = function(nextVertex) {};
+
+
+/**
+ * @param {ymaps.geometryEditor.model.ChildVertex|null} prevVertex Модель предыдущей вершины.
+ */
+ymaps.geometryEditor.model.Edge.prototype.setPrevVertex = function(prevVertex) {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.Edge.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.Edge.prototype.getPixels = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.Edge.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.model.EdgeGeometry скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeometry.
+ * 
+ * Геометрия промежуточной метки. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometry}
+ * 
+ */
+ymaps.geometryEditor.model.EdgeGeometry = function() {};
+
+
+/**
+ * @return {Array.<Array.<Number>>|null}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.getBounds = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.getMap = function() {};
+
+
+/**
+ * @param {Object=} options Хэш опций, позволяющий перекрыть часть текущих опций геометрии для данного расчета.
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.getPixelGeometry = function(options) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.setMap = function(map) {};
+
+
+/**
+ * @see ymaps.IBaseGeometry
+ * 
+ * @return {String}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.getType = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.geometryEditor.model.EdgeGeometry.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.model.RootLineString скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeometryEditorRootModel.
+ * 
+ * Модель корневой ломаной линии. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditorRootModel}
+ * 
+ */
+ymaps.geometryEditor.model.RootLineString = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometryEditor.model.RootLineString.prototype.getAllVerticesNumber = function() {};
+
+
+/**
+ * @return {Array.<ymaps.geometryEditor.model.ChildVertex>}
+ */
+ymaps.geometryEditor.model.RootLineString.prototype.getVertexModels = function() {};
+
+
+/**
+ * @param {number} start Индекс, начиная с которого производится удаление и добавление вершин.
+ * @param {number} deleteCount Количество удаляемых вершин.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometryEditor.model.RootLineString.prototype.spliceVertices = function(start, deleteCount) {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.RootLineString.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.RootLineString.prototype.getPixels = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.RootLineString.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.model.RootPolygon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeometryEditorRootModel.
+ * 
+ * Модель корневого полигона. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeometryEditorRootModel}
+ * 
+ */
+ymaps.geometryEditor.model.RootPolygon = function() {};
+
+
+/**
+ * @return {number}
+ */
+ymaps.geometryEditor.model.RootPolygon.prototype.getAllVerticesNumber = function() {};
+
+
+/**
+ * @return {Array.<ymaps.geometryEditor.model.ChildLinearRing>}
+ */
+ymaps.geometryEditor.model.RootPolygon.prototype.getPathModels = function() {};
+
+
+/**
+ * @param {number} start Индекс, начиная с которого производится удаление и добавление контуров.
+ * @param {number} deleteCount Количество удаляемых контуров.
+ * @return {Array.<Array.<Number>>}
+ */
+ymaps.geometryEditor.model.RootPolygon.prototype.splicePaths = function(start, deleteCount) {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ */
+ymaps.geometryEditor.model.RootPolygon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IGeometryEditorModel
+ * 
+ * @return {Array.<Number>}
+ */
+ymaps.geometryEditor.model.RootPolygon.prototype.getPixels = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.geometryEditor.model.RootPolygon.prototype.events;
+
+
+ymaps.geometryEditor.view = {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.view.Edge скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Отображение промежуточной метки. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ */
+ymaps.geometryEditor.view.Edge = {};
+
+
+/**
+ * @return {ymaps.GeoObject}
+ */
+ymaps.geometryEditor.view.Edge.getPlacemark = function() {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.view.MultiPath скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Отображение множества контуров. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ */
+ymaps.geometryEditor.view.MultiPath = {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.geometryEditor.view.MultiPath.getEdgePlacemarks = function() {};
+
+
+/**
+ * @return {Array.<ymaps.geometryEditor.view.Path>}
+ */
+ymaps.geometryEditor.view.MultiPath.getPathViews = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.geometryEditor.view.MultiPath.getVertexPlacemarks = function() {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.view.Path скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Отображение контура. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ */
+ymaps.geometryEditor.view.Path = {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.geometryEditor.view.Path.getEdgePlacemarks = function() {};
+
+
+/**
+ * @return {Array.<ymaps.geometryEditor.view.Edge>}
+ */
+ymaps.geometryEditor.view.Path.getEdgeViews = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.geometryEditor.view.Path.getVertexPlacemarks = function() {};
+
+
+/**
+ * @return {Array.<ymaps.geometryEditor.view.Vertex>}
+ */
+ymaps.geometryEditor.view.Path.getVertexViews = function() {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса geometryEditor.view.Vertex скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Отображение вершины. Конструктор недоступен в package.full (стандартный набор модулей).
+ * Данный модуль загружается по требованию.
+ * 
+ */
+ymaps.geometryEditor.view.Vertex = {};
+
+
+/**
+ * @return {ymaps.GeoObject}
+ */
+ymaps.geometryEditor.view.Vertex.getPlacemark = function() {};
+
+
+ymaps.graphics = {};
+
+
+ymaps.graphics.style = {};
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Задает цвет графической фигуры в форматах #RGB,#RGBA,#RRGGBB,#RRGGBBAA,rgb(r,b,a),rgba(r,g,b,a)
+ * 
+ */
+ymaps.graphics.style.color;
+
+/**
+ * 
+ * Статический объект.
+ * 
+ * Позволяет изменить стиль линии.
+ * Задавать значение можно как используя ключи описанные ниже, так и в формате массива.
+ * Следует учесть, что в режиме отображениея VML(IE&lt;9) могут быть использованны только ключи.
+ * Также в стиле линии можно указать смещение начала пунктира через поле offset.
+ * 
+ * Поля 
+ * 
+ */
+ymaps.graphics.style.stroke = {};
+
+
+/**
+ * Тире
+ * 
+ * @type {dash}
+ */
+ymaps.graphics.style.stroke.dash;
+
+
+/**
+ * Длинное тире-короткое тире
+ * 
+ * @type {dashdot}
+ */
+ymaps.graphics.style.stroke.dashdot;
+
+
+/**
+ * Точки
+ * 
+ * @type {dot}
+ */
+ymaps.graphics.style.stroke.dot;
+
+
+/**
+ * Длинные тире
+ * 
+ * @type {longdash}
+ */
+ymaps.graphics.style.stroke.longdash;
+
+
+/**
+ * Очень длинное тире - точка
+ * 
+ * @type {longdashdot}
+ */
+ymaps.graphics.style.stroke.longdashdot;
+
+
+/**
+ * Длинное тире-точка-точка
+ * 
+ * @type {longdashdotdot}
+ */
+ymaps.graphics.style.stroke.longdashdotdot;
+
+
+/**
+ * Короткие тире
+ * 
+ * @type {shortdash}
+ */
+ymaps.graphics.style.stroke.shortdash;
+
+
+/**
+ * Тире-точка
+ * 
+ * @type {shortdashdot}
+ */
+ymaps.graphics.style.stroke.shortdashdot;
+
+
+/**
+ * Тире-точка-точка
+ * 
+ * @type {shortdashdotdot}
+ */
+ymaps.graphics.style.stroke.shortdashdotdot;
+
+
+/**
+ * Точки через двойной интервал
+ * 
+ * @type {shortdot}
+ */
+ymaps.graphics.style.stroke.shortdot;
+
+
+/**
+ * Сплошная линия
+ * 
+ * @type {solid}
+ */
+ymaps.graphics.style.stroke.solid;
+
+
+ymaps.hotspot.layer = {};
+
+/**
+ * 
+ * Расширяет
+ *             IBalloonManager.
+ * 
+ * Менеджер балуна хотспотного слоя. Позволяет управлять балуном хотспотного слоя, открывать и скрывать его.
+ * Использует внутри себя менеджер балуна карты map.Balloon.
+ * Хотспотные слои содержат экземпляр этого класса, доступный как myHotspotLayer.balloon.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Balloon hotspot.Layer.balloon 
+ * 
+ * @constructor
+ * @implements {ymaps.IBalloonManager}
+ * 
+ * @param {Object} hotspotLayer Хотспотный слой.
+ */
+ymaps.hotspot.layer.Balloon = function(hotspotLayer) {};
+
+
+/**
+ * @param {Array.<Number>=} position Координаты открытия в глобальных пиксельных координатах.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.autoPan = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Balloon.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.hotspot.layer.Balloon.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.hotspot.layer.Balloon.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Balloon.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.hotspot.layer.Balloon.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Balloon.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.hotspot.layer.Balloon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IHintManager.
+ * 
+ * Менеджер хинта хотспотного слоя. Позволяет управлять хинтом хотспотного слоя, открывать и скрывать его.
+ * Использует внутри себя менеджер хинтов карты map.Hint.
+ * Хотспотные слои содержат экземпляр этого класса, доступный как myHotspotLayer.hint.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Hint hotspot.Layer.hint 
+ * 
+ * @constructor
+ * @implements {ymaps.IHintManager}
+ * 
+ * @param {Object} hotspotLayer Хотспотный слой.
+ */
+ymaps.hotspot.layer.Hint = function(hotspotLayer) {};
+
+
+/**
+ * @param {Array.<Number>=} position Координаты открытия в глобальных пиксельных координатах.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.open = function(position, data, options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Boolean=} force Мгновенное закрытие.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.close = function(force) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Hint.prototype.destroy = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Hint.prototype.getData = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOptionManager}
+ */
+ymaps.hotspot.layer.Hint.prototype.getOptions = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.getOverlay = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {ymaps.IOverlay}
+ */
+ymaps.hotspot.layer.Hint.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ */
+ymaps.hotspot.layer.Hint.prototype.getPosition = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @return {Boolean}
+ */
+ymaps.hotspot.layer.Hint.prototype.isOpen = function() {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object|String|HTMLElement} data Данные инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Object} options Опции инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.setOptions = function(options) {};
+
+
+/**
+ * @see ymaps.IPopupManager
+ * 
+ * @param {Array.<Number>} position Координаты инфо-объекта.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.hotspot.layer.Hint.prototype.setPosition = function(position) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.hotspot.layer.Hint.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IHotspotLayerObject.
+ * 
+ * Объект хотспотного слоя.
+ * 
+ * @constructor
+ * @implements {ymaps.IHotspotLayerObject}
+ * 
+ * @param {ymaps.IShape} shape Фигура активной области.
+ * @param {Object} feature Описание объекта {@see GeoObject}.
+ * @param {Object} options Опции объекта.
+ */
+ymaps.hotspot.layer.Object = function(shape, feature, options) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.hotspot.layer.Object.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.IHotspot}
+ */
+ymaps.hotspot.layer.Object.prototype.getHotspot = function() {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.hotspot.layer.Object.prototype.getId = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.hotspot.layer.Object.prototype.getProperties = function() {};
+
+
+/**
+ * @param {Object} geometry Реальная геометрия объекта.
+ */
+ymaps.hotspot.layer.Object.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {Number} id Идентификатор объекта.
+ */
+ymaps.hotspot.layer.Object.prototype.setId = function(id) {};
+
+
+/**
+ * @param {Object} properties Данные объекта.
+ */
+ymaps.hotspot.layer.Object.prototype.setProperties = function(properties) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.hotspot.layer.Object.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.hotspot.layer.Object.prototype.events;
+
+
+ymaps.layer.tile = {};
+
+/**
+ * 
+ * Расширяет
+ *             ICanvasTile.
+ * 
+ * Картиночный canvas-тайл. Умеет отрисовывать указанное изображение
+ * через метод drawImage у 2d контекста canvas-элемента.
+ * 
+ * @constructor
+ * @implements {ymaps.ICanvasTile}
+ * 
+ * @param {String} url URL изображения.
+ * @param {Object=} options Опции.
+ */
+ymaps.layer.tile.CanvasTile = function(url, options) {};
+
+
+/**
+ */
+ymaps.layer.tile.CanvasTile.prototype.destroy = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.layer.tile.CanvasTile.prototype.isReady = function() {};
+
+
+/**
+ * @param {Object} context 2d-контекст объекта canvas.
+ * @param {Array.<Number>} canvasSize размеры HTML-элемента canvas.
+ * @param {Array.<Array.<Number>>} bounds Область в клиентских координатах, в которой нужно отрисовать тайл.
+ * @param {Boolean=} animate true - анимировать рендеринг, false - нет.
+ */
+ymaps.layer.tile.CanvasTile.prototype.renderAt = function(context, canvasSize, bounds, animate) {};
+
+
+/**
+ * Менеджер событий тайла.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layer.tile.CanvasTile.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IDomTile.
+ * 
+ * Картиночный DOM-тайл. Умеет отрисовывать указанное изображение
+ * через css свойство background у DOM-элемента.
+ * 
+ * @constructor
+ * @implements {ymaps.IDomTile}
+ * 
+ * @param {String} url URL изображения.
+ * @param {Object=} options Опции.
+ */
+ymaps.layer.tile.DomTile = function(url, options) {};
+
+
+/**
+ */
+ymaps.layer.tile.DomTile.prototype.destroy = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.layer.tile.DomTile.prototype.isReady = function() {};
+
+
+/**
+ * @param {HTMLElement} context Родительский HTML-элемент
+ * @param {Array.<Array.<Number>>} clientBounds Область в клиентских координатах, которую должен занять тайл.
+ * @param {Boolean} animate true - анимировать рендеринг, false - нет.
+ */
+ymaps.layer.tile.DomTile.prototype.renderAt = function(context, clientBounds, animate) {};
+
+
+/**
+ * Менеджер событий тайла.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layer.tile.DomTile.prototype.events;
+
+
+ymaps.layer.tileContainer = {};
+
+/**
+ * 
+ * Расширяет
+ *             IChildOnMap.
+ * 
+ * Контейнер тайлов на canvas
+ * 
+ * @constructor
+ * @implements {ymaps.IChildOnMap}
+ * 
+ * @param {ymaps.ILayer} layer Слой.
+ * @param {Object=} options Опции контейнера.
+ */
+ymaps.layer.tileContainer.CanvasContainer = function(layer, options) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.layer.tileContainer.CanvasContainer.prototype.getMap = function() {};
+
+
+/**
+ * @param {Array.<Number>} tileNumber Номер тайла.
+ * @param {Number} tileZoom Масштаб тайла.
+ * @param {Number} priority Приоритет загрузки.
+ * @return {ymaps.ICanvasTile}
+ */
+ymaps.layer.tileContainer.CanvasContainer.prototype.getTile = function(tileNumber, tileZoom, priority) {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.layer.tileContainer.CanvasContainer.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.layer.tileContainer.CanvasContainer.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layer.tileContainer.CanvasContainer.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IChildOnMap.
+ * 
+ * Контейнер тайлов типа IDomTile
+ * 
+ * @constructor
+ * @implements {ymaps.IChildOnMap}
+ * 
+ * @param {ymaps.ILayer} layer Слой.
+ * @param {Object=} options Опции контейнера.
+ */
+ymaps.layer.tileContainer.DomContainer = function(layer, options) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.layer.tileContainer.DomContainer.prototype.getMap = function() {};
+
+
+/**
+ * @param {Array.<Number>} tileNumber Номер тайла.
+ * @param {Number} tileZoom Масштаб тайла.
+ * @param {Number} priority Приоритет загрузки.
+ * @return {ymaps.IDomTile}
+ */
+ymaps.layer.tileContainer.DomContainer.prototype.getTile = function(tileNumber, tileZoom, priority) {};
+
+
+/**
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.layer.tileContainer.DomContainer.prototype.getParent = function() {};
+
+
+/**
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.layer.tileContainer.DomContainer.prototype.setParent = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layer.tileContainer.DomContainer.prototype.events;
+
+
+ymaps.layout.templateBased = {};
+
+/**
+ * 
+ * Расширяет
+ *             ILayout.
+ * 
+ * Базовый класс макета на основе шаблонов. Этот класс
+ * используется фабрикой макетов как базовый для создания пользовательских макетов.
+ * 
+ * См.: templateLayoutFactory 
+ * 
+ * @constructor
+ * @implements {ymaps.ILayout}
+ * 
+ * @param {Object} data Набор разнородных данных, на основе которых строится макет.
+ */
+ymaps.layout.templateBased.Base = function(data) {};
+
+
+/**
+ */
+ymaps.layout.templateBased.Base.prototype.build = function() {};
+
+
+/**
+ */
+ymaps.layout.templateBased.Base.prototype.clear = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.layout.templateBased.Base.prototype.getShape = function() {};
+
+
+/**
+ */
+ymaps.layout.templateBased.Base.prototype.rebuild = function() {};
+
+
+/**
+ */
+ymaps.layout.templateBased.Base.prototype.destroy = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.layout.templateBased.Base.prototype.getData = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.layout.templateBased.Base.prototype.getParentElement = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.layout.templateBased.Base.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные макета.
+ */
+ymaps.layout.templateBased.Base.prototype.setData = function(data) {};
+
+
+/**
+ * @param {HTMLElement|null} parent Родительский html-элемент.
+ *                                  Родительский элемент должен быть добавлен в DOM-дерево.
+ *                                  Если передан null, то элемент удаляется из DOM-дерева.
+ */
+ymaps.layout.templateBased.Base.prototype.setParentElement = function(parent) {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.layout.templateBased.Base.prototype.events;
+
+
+ymaps.map.action = {};
+
+/**
+ * 
+ * Расширяет
+ *             IMapAction.
+ * 
+ * Движение карты, состоящее из одного или более шагов.
+ * Предназначено для реализации сложных движений карты.
+ * 
+ * @constructor
+ * @implements {ymaps.IMapAction}
+ * 
+ */
+ymaps.map.action.Continuous = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.map.action.Continuous.prototype.isActive = function() {};
+
+
+/**
+ * @param {Object} tick Параметры движения.
+ * @return {ymaps.map.action.Continuous}
+ */
+ymaps.map.action.Continuous.prototype.tick = function(tick) {};
+
+
+/**
+ * @param {ymaps.map.action.Manager} mapActionManager Менеджер действий карты, на которой исполняется движение.
+ */
+ymaps.map.action.Continuous.prototype.begin = function(mapActionManager) {};
+
+
+/**
+ */
+ymaps.map.action.Continuous.prototype.end = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.action.Continuous.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Менеджер действий карты. Позволяет выполнять сложные движения
+ * на карте и гарантирует, что сложные движения не наложатся друг на друга.
+ * У каждой карты уже есть собственный менеджер действий, доступный как
+ * Map.action. Не создавайте экземпляры этого класса без необходимости.
+ * 
+ * См.: Map.action 
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ * @param {ymaps.Map} map Карта.
+ */
+ymaps.map.action.Manager = function(map) {};
+
+
+/**
+ */
+ymaps.map.action.Manager.prototype.breakTick = function() {};
+
+
+/**
+ * @param {ymaps.IMapAction} action Действие.
+ */
+ymaps.map.action.Manager.prototype.execute = function(action) {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.map.action.Manager.prototype.getCurrentState = function() {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.map.action.Manager.prototype.getMap = function() {};
+
+
+/**
+ * @param {Function} userFunction Пользовательская функция коррекции шагов.
+ */
+ymaps.map.action.Manager.prototype.setCorrection = function(userFunction) {};
+
+
+/**
+ */
+ymaps.map.action.Manager.prototype.stop = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.action.Manager.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IMapAction.
+ * 
+ * Простое движение карты.
+ * Движение выполняется сразу после передачи его в map.action.Manager.
+ * 
+ * @constructor
+ * @implements {ymaps.IMapAction}
+ * 
+ * @param {Object} tick Параметры движения.
+ */
+ymaps.map.action.Single = function(tick) {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.map.action.Single.prototype.isActive = function() {};
+
+
+/**
+ * @param {ymaps.map.action.Manager} mapActionManager Менеджер действий карты, на которой исполняется движение.
+ */
+ymaps.map.action.Single.prototype.begin = function(mapActionManager) {};
+
+
+/**
+ */
+ymaps.map.action.Single.prototype.end = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.action.Single.prototype.events;
+
+
+ymaps.map.addon = {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса map.addon.balloon скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Статический объект.
+ * 
+ * Модуль, который предоставляет возможность использовать балун у карты.
+ * Добавляет карте (Map) интерфейс IBalloonOwner.
+ * При подключении package.full (стандартный набор модулей) доступен по умолчанию.
+ * Если Map подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
+ * Если map.addon.balloon подключается отдельно после создания Map,
+ * то интерфейс IBalloonOwner не будет добавлен. Тогда для инициализации менеджера балуна
+ * нужно будет использовать метод map.addon.balloon#get.
+ * 
+ * Методы 
+ * 
+ */
+ymaps.map.addon.balloon = {};
+
+
+/**
+ * @return {ymaps.IPopupManager}
+ */
+ymaps.map.addon.balloon.get = function() {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса map.addon.hint скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Статический объект.
+ * 
+ * Модуль, который предоставляет возможность использовать хинт у карты.
+ * Добавляет карте (Map) интерфейс IHintOwner.
+ * При подключении package.full (стандартный набор модулей) доступен по умолчанию.
+ * Если Map подключается отдельно, то необходимо явно указать этот модуль в загрузчике.
+ * Если map.addon.hint подключается отдельно после создания Map,
+ * то интерфейс IHintOwner не будет добавлен. Тогда для инициализации менеджера балуна
+ * нужно будет использовать метод map.addon.hint#get.
+ * 
+ * Методы 
+ * 
+ */
+ymaps.map.addon.hint = {};
+
+
+/**
+ * @return {ymaps.IPopupManager}
+ */
+ymaps.map.addon.hint.get = function() {};
+
+
+ymaps.map.behavior = {};
+
+/**
+ * 
+ * Расширяет
+ *             ICustomizable, IEventEmitter, IParentOnMap.
+ * 
+ * Менеджер поведений карты. Позволяет включать и отключать поведения.
+ * У каждой карты уже есть собственный менеджер поведений, доступный как map.behaviors.
+ * Не инстанцируйте экземпляры этого класса без необходимости
+ * 
+ * См.: Map.behaviors 
+ * 
+ * @constructor
+ * @implements {ymaps.ICustomizable}
+ * @implements {ymaps.IEventEmitter}
+ * @implements {ymaps.IParentOnMap}
+ * 
+ * @param {ymaps.Map} map Карта.
+ * @param {String|Array.<String>=} behaviors Список поведений карты, включенных
+ *                                           сразу при создании карты. По умолчанию - "drag", "dblClickZoom", "rightMouseButtonMagnifier" для настольных браузеров,
+ *                                           "drag", "dblClickZoom" и "multiTouch" - для мобильных.
+ *                                           
+ * @param {Object=} options Опции поведений. Можно задавать следующие опции:
+ *                          
+ *                              опции поведения behavior.Drag с префиксом drag;
+ *                              опции поведения behavior.ScrollZoom с префиксом scrollZoom;
+ *                              опции поведения behavior.DblClickZoom с префиксом dblClickZoom;
+ *                              опции поведения behavior.MultiTouch с префиксом multiTouch;
+ *                              опции поведения magnifier.RightMouseButtonMagnifier, с префиксом rightMouseButtonMagnifier;
+ *                              опции поведения behavior.LeftMouseButtonMagnifier, с префиксом leftMouseButtonMagnifier;
+ *                              опции поведения behavior.Ruler с префиксом ruler.
+ *                          
+ */
+ymaps.map.behavior.Manager = function(map, behaviors, options) {};
+
+
+/**
+ * @param {String|Array.<String>} behaviors Список отключаемых поведений.
+ * @return {ymaps.map.behavior.Manager}
+ */
+ymaps.map.behavior.Manager.prototype.disable = function(behaviors) {};
+
+
+/**
+ * @param {String|Array.<String>} behaviors Список подключаемых поведений.
+ * @return {ymaps.map.behavior.Manager}
+ */
+ymaps.map.behavior.Manager.prototype.enable = function(behaviors) {};
+
+
+/**
+ * @param {String} behaviorName Имя поведения.
+ * @return {ymaps.IBehavior}
+ */
+ymaps.map.behavior.Manager.prototype.get = function(behaviorName) {};
+
+
+/**
+ * @param {String} behaviorName Идентификатор поведения.
+ * @return {Boolean}
+ */
+ymaps.map.behavior.Manager.prototype.isEnabled = function(behaviorName) {};
+
+
+/**
+ * @return {ymaps.Map}
+ */
+ymaps.map.behavior.Manager.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.map.behavior.Manager.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.behavior.Manager.prototype.events;
+
+
+ymaps.map.layer = {};
+
+/**
+ * 
+ * Расширяет
+ *             ILayer, IMapObjectCollection.
+ * 
+ * Менеджер слоев карты.
+ * 
+ * См.: Map.layers 
+ * 
+ * @constructor
+ * @implements {ymaps.ILayer}
+ * @implements {ymaps.IMapObjectCollection}
+ * 
+ * @param {ymaps.Map} map Карта
+ * @param {Object=} options Опции слоев карты.
+ *                          Через опции map.layers можно задавать настройки слоев, добавленных на карту.
+ *                          Опции слоев хотспотов задаются с префиксом 'hotspotLayer'.
+ */
+ymaps.map.layer.Manager = function(map, options) {};
+
+
+/**
+ * @param {Function} callback Функция-обработчик.
+ * @param {Object=} context Контекст выполнения функции.
+ */
+ymaps.map.layer.Manager.prototype.each = function(callback, context) {};
+
+
+/**
+ * @return {Number}
+ */
+ymaps.map.layer.Manager.prototype.getBrightness = function() {};
+
+
+/**
+ * @param {Array.<Number>} coords Точка на карте, для которой запрашивается
+ *                                информация об авторских правах.
+ * @param {Number} zoom Уровень масштабирования, для которого запрашивается
+ *                      информация об авторских правах.
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.layer.Manager.prototype.getCopyrights = function(coords, zoom) {};
+
+
+/**
+ * @param {Array.<Number>} point Точка
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.map.layer.Manager.prototype.getZoomRange = function(point) {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.map.layer.Manager.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.map.layer.Manager.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.ICollection
+ * 
+ * @param {Object} object Добавляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.map.layer.Manager.prototype.add = function(object) {};
+
+
+/**
+ * @see ymaps.ICollection
+ * 
+ * @return {ymaps.IIterator}
+ */
+ymaps.map.layer.Manager.prototype.getIterator = function() {};
+
+
+/**
+ * @see ymaps.ICollection
+ * 
+ * @param {Object} object Удаляемый объект.
+ * @return {ymaps.ICollection}
+ */
+ymaps.map.layer.Manager.prototype.remove = function(object) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.map.layer.Manager.prototype.getMap = function() {};
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.map.layer.Manager.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.map.layer.Manager.prototype.options;
+
+
+ymaps.map.pane = {};
+
+/**
+ * 
+ * Менеджер пейнов карты.
+ * У каждой карты уже есть свой менеджер пейнов, доступный как map.panes.
+ * Не создавайте экземпляры этого класса без необходимости.
+ * Список ключей доступных по умолчанию пейнов карты и их zIndex'ы:
+ *         'ground': pane.MovablePane (zIndex: 100) - самый нижний пейн, предназначенный
+ *         для размещения подложки карты;
+ *         'areas': pane.MovablePane (zIndex: 200) - пейн площадных объектов, таких как
+ *         многоугольники;
+ *         'shadows': pane.MovablePane (zIndex: 300) - пейн теней объектов карты,
+ *         находящихся выше;
+ *         'places': pane.MovablePane (zIndex: 400) - пейн точечных объектов, таких как
+ *         метки;
+ *         'events': pane.EventsPane (zIndex: 500) - пейн, предназначенный для слушания
+ *         событий карты;
+ *         'overlaps': pane.MovablePane (zIndex: 600) - пейн для объектов не теребующих,
+ *         использования активных областей для реализации своей интерактивности;
+ *         'balloon': pane.MovablePane (zIndex: 700) - пейн балуна;
+ *         'outerBalloon': pane.MovablePane (zIndex: 800) - внешний пейн балуна;
+ *         'controls': pane.StaticPane (zIndex: 900) - пейн элементов управления карты;
+ *         'copyrights': pane.StaticPane (zIndex: 1000) - пейн копирайтов;
+ *         'hint': pane.StaticPane (zIndex: 1100) - пейн хинта;
+ *         'outerHint': pane.StaticPane (zIndex: 1200) - внешний пейн хинта.
+ * См.: Map.panes 
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.Map} map Карта.
+ */
+ymaps.map.pane.Manager = function(map) {};
+
+
+/**
+ * @param {String} key Ключ добавляемого пейна.
+ * @param {ymaps.IPane} pane Добавляемый пейн.
+ */
+ymaps.map.pane.Manager.prototype.append = function(key, pane) {};
+
+
+/**
+ */
+ymaps.map.pane.Manager.prototype.destroy = function() {};
+
+
+/**
+ * @param {String} key Ключ пейна.
+ * @return {ymaps.IPane|null}
+ */
+ymaps.map.pane.Manager.prototype.get = function(key) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.map.pane.Manager.prototype.getLower = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.map.pane.Manager.prototype.getUpper = function() {};
+
+
+/**
+ * @param {String} key Ключ добавляемого пейна.
+ * @param {ymaps.IPane} pane Добавляемый пейн.
+ * @param {String} referenceKey Ключ пейна, перед которым осуществляется вставка.
+ */
+ymaps.map.pane.Manager.prototype.insertBefore = function(key, pane, referenceKey) {};
+
+
+/**
+ * @param {ymaps.IPane} pane Удаляемый пейн.
+ */
+ymaps.map.pane.Manager.prototype.remove = function(pane) {};
+
+
+ymaps.multiRouter.driving = {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.driving.Path скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение пути автомобильного мультимаршрута. Единичный маршрут может содержать
+ * несколько путей, каждый путь соединяет две путевые точки.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.driving.Path = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.multiRouter.driving.Path.prototype.getSegments = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.driving.Path.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.driving.Path.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.driving.Path.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.driving.Path.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.driving.Path.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных пути мультимаршрута.
+ * 
+ * @type {ymaps.multiRouter.driving.PathModel}
+ */
+ymaps.multiRouter.driving.Path.prototype.model;
+
+
+/**
+ * Данные пути мультимаршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер пути в соответствующем маршруте
+ *     мультимаршрута;
+ *     type: String - идентификатор типа маршрута, принимающий значение "driving" для
+ *     автомобильных маршрутов;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     пути в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     пути в секундах;
+ *     durationInTraffic: Object - объект с полями text и value, описывающий время
+ *     проезда пути в секундах с учетом пробок;
+ *     coordinates: Number[][] - координаты всех точек пути;
+ *     encodedCoordinates: String - строка закодированных в base64 координат всех точек
+ *     пути.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.driving.Path.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.driving.Path.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.driving.Path.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.Path.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.driving.Path.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.driving.PathModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных пути автомобильного маршрута. Единичный маршрут может содержать
+ * несколько путей, каждый путь соединяет две путевые точки.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.driving.PathModel = function() {};
+
+
+/**
+ */
+ymaps.multiRouter.driving.PathModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<ymaps.multiRouter.driving.SegmentModel>}
+ */
+ymaps.multiRouter.driving.PathModel.prototype.getSegments = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.multiRouter.driving.PathModel.prototype.getType = function() {};
+
+
+/**
+ * @param {Object} pathJson JSON-данные.
+ */
+ymaps.multiRouter.driving.PathModel.prototype.update = function(pathJson) {};
+
+
+/**
+ * Данные пути мультимаршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер пути в соответствующем маршруте
+ *     мультимаршрута;
+ *     type: String - идентификатор типа маршрута, принимающий значение "driving" для
+ *     автомобильных маршрутов;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     пути в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     пути в секундах;
+ *     durationInTraffic: Object - объект с полями text и value, описывающий время
+ *     проезда пути в секундах с учетом пробок;
+ *     coordinates: Number[][] - координаты всех точек пути;
+ *     encodedCoordinates: String - строка закодированных в base64 координат всех точек
+ *     пути.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.driving.PathModel.prototype.properties;
+
+
+/**
+ * Ссылка на родительскую модель маршрута.
+ * 
+ * @type {ymaps.multiRouter.driving.RouteModel}
+ */
+ymaps.multiRouter.driving.PathModel.prototype.route;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.PathModel.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.driving.Route скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение единичного автомобильного маршрута. Мультимаршрут может состоять из
+ * нескольких единичных маршрутов.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.driving.Route = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.multiRouter.driving.Route.prototype.getPaths = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.driving.Route.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.driving.Route.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.driving.Route.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.driving.Route.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.driving.Route.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных единичного маршрута.
+ * 
+ * @type {ymaps.multiRouter.driving.RouteModel}
+ */
+ymaps.multiRouter.driving.Route.prototype.model;
+
+
+/**
+ * Данные маршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер маршрута в мультимаршруте;
+ *     type: String - идентификатор типа маршрута, принимающий значение "driving" для
+ *     автомобильных маршрутов;
+ *     blocked: Boolean - признак того, что маршрут содержит перекрытые участки;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     маршрута в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     маршрута в секундах;
+ *     durationInTraffic: Object - объект с полями text и value, описывающий время
+ *     проезда маршрута в секундах с учетом пробок;
+ *     boundedBy: Number[][] - координаты нижнего и верхнего углов прямоугольника,
+ *     ограничивающего данный маршрут.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.driving.Route.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.driving.Route.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.driving.Route.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.Route.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.driving.Route.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.driving.RouteModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных единичного автомобильного маршрута. Мультимаршрут может состоять из
+ * нескольких единичных маршрутов.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.driving.RouteModel = function() {};
+
+
+/**
+ */
+ymaps.multiRouter.driving.RouteModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<ymaps.multiRouter.driving.PathModel>}
+ */
+ymaps.multiRouter.driving.RouteModel.prototype.getPaths = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.multiRouter.driving.RouteModel.prototype.getType = function() {};
+
+
+/**
+ * @param {Object} routeJson JSON-данные.
+ */
+ymaps.multiRouter.driving.RouteModel.prototype.update = function(routeJson) {};
+
+
+/**
+ * Ссылка на родительскую модель мультимаршрута.
+ * 
+ * @type {ymaps.multiRouter.MultiRouteModel}
+ */
+ymaps.multiRouter.driving.RouteModel.prototype.multiRoute;
+
+
+/**
+ * Данные маршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер маршрута в мультимаршруте;
+ *     type: String - идентификатор типа маршрута, принимающий значение "driving" для
+ *     автомобильных маршрутов;
+ *     blocked: Boolean - признак того, что маршрут содержит перекрытые участки;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     маршрута в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     маршрута в секундах;
+ *     durationInTraffic: Object - объект с полями text и value, описывающий время
+ *     проезда маршрута в секундах с учетом пробок;
+ *     boundedBy: Number[][] - координаты нижнего и верхнего углов прямоугольника,
+ *     ограничивающего данный маршрут.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.driving.RouteModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.RouteModel.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.driving.Segment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение сегмента автомобильного маршрута.
+ * Сегментом автомобильного маршрута называется часть пути от одного манёвра до другого.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.driving.Segment = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.driving.Segment.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.driving.Segment.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.driving.Segment.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.driving.Segment.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.driving.Segment.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных сегмента.
+ * 
+ * @type {ymaps.multiRouter.driving.SegmentModel}
+ */
+ymaps.multiRouter.driving.Segment.prototype.model;
+
+
+/**
+ * Данные сегмента.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер сегмента во множестве сегментов
+ *     соответствующего пути маршрута;
+ *     type: String - идентификатор типа сегмента, принимающий значение "driving" для
+ *     автомобильных сегментов;
+ *     street: String - текстовое описание улицы, по которой проходит сегмент;
+ *     action: Object - объект с полями text и value, описывающий завершающий маневр
+ *     сегмента;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     сегмента в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     сегмента в секундах;
+ *     durationInTraffic: Object - объект с полями text и value, описывающий время
+ *     проезда сегмента в секундах с учетом пробок;
+ *     text: String - текстовое описание сегмента;
+ *     viaPoints: Integer[] - индексы транзитных точек, лежащих на данном сегменте;
+ *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
+ *     координат соответствующего ему пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.driving.Segment.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.driving.Segment.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.driving.Segment.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.Segment.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.driving.Segment.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.driving.SegmentModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных сегмента пути автомобильного маршрута.
+ * Сегментом автомобильного маршрута называется часть пути от одного манёвра до другого.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.driving.SegmentModel = function() {};
+
+
+/**
+ */
+ymaps.multiRouter.driving.SegmentModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.multiRouter.driving.SegmentModel.prototype.getType = function() {};
+
+
+/**
+ * @return {Array.<ymaps.multiRouter.ViaPointModel>}
+ */
+ymaps.multiRouter.driving.SegmentModel.prototype.getViaPoints = function() {};
+
+
+/**
+ * @param {Object} segmentJson JSON-данные.
+ */
+ymaps.multiRouter.driving.SegmentModel.prototype.update = function(segmentJson) {};
+
+
+/**
+ * Геометрия сегмента.
+ * 
+ * @type {ymaps.geometry.base.LineString}
+ */
+ymaps.multiRouter.driving.SegmentModel.prototype.geometry;
+
+
+/**
+ * Ссылка на родительскую модель пути.
+ * 
+ * @type {ymaps.multiRouter.driving.PathModel}
+ */
+ymaps.multiRouter.driving.SegmentModel.prototype.path;
+
+
+/**
+ * Данные сегмента.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер сегмента во множестве сегментов
+ *     соответствующего пути маршрута;
+ *     type: String - идентификатор типа сегмента, принимающий значение "driving" для
+ *     автомобильных сегментов;
+ *     street: String - текстовое описание улицы, по которой проходит сегмент;
+ *     action: Object - объект с полями text и value, описывающий завершающий маневр
+ *     сегмента;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     сегмента в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     сегмента в секундах;
+ *     durationInTraffic: Object - объект с полями text и value, описывающий время
+ *     проезда сегмента в секундах с учетом пробок;
+ *     text: String - текстовое описание сегмента;
+ *     viaPoints: Integer[] - индексы транзитных точек, лежащих на данном сегменте;
+ *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
+ *     координат соответствующего ему пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.driving.SegmentModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.driving.SegmentModel.prototype.events;
+
+
+ymaps.multiRouter.masstransit = {};
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.Path скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение пути мультимаршрута общественного транспорта. Единичный маршрут может 
+ * содержать несколько путей, каждый путь соединяет две путевые точки.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.masstransit.Path = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getSegmentMarkers = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getSegments = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных пути мультимаршрута.
+ * 
+ * @type {ymaps.multiRouter.masstransit.PathModel}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.model;
+
+
+/**
+ * Данные пути мультимаршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер пути в соответствующем маршруте
+ *     мультимаршрута;
+ *     type: String - идентификатор типа маршрута, принимающий значение "masstransit"
+ *     для маршрутов общественного транспорта;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     пути в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     пути в секундах;
+ *     coordinates: Number[][] - координаты всех точек пути;
+ *     encodedCoordinates: String - строка закодированных в base64 координат всех точек
+ *     пути.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.Path.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.PathModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных пути маршрута общественного транспорта. Единичный маршрут может
+ * содержать несколько путей, каждый путь соединяет две путевые точки.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.masstransit.PathModel = function() {};
+
+
+/**
+ */
+ymaps.multiRouter.masstransit.PathModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<multiRouter.masstransit.SegmentModel>}
+ */
+ymaps.multiRouter.masstransit.PathModel.prototype.getSegments = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.multiRouter.masstransit.PathModel.prototype.getType = function() {};
+
+
+/**
+ * @param {Object} pathJson JSON-данные.
+ */
+ymaps.multiRouter.masstransit.PathModel.prototype.update = function(pathJson) {};
+
+
+/**
+ * Данные пути мультимаршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер пути в соответствующем маршруте
+ *     мультимаршрута;
+ *     type: String - идентификатор типа маршрута, принимающий значение "masstransit"
+ *     для маршрутов общественного транспорта;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     пути в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     пути в секундах;
+ *     coordinates: Number[][] - координаты всех точек пути;
+ *     encodedCoordinates: String - строка закодированных в base64 координат всех точек
+ *     пути.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.PathModel.prototype.properties;
+
+
+/**
+ * Ссылка на родительскую модель маршрута.
+ * 
+ * @type {ymaps.multiRouter.masstransit.RouteModel}
+ */
+ymaps.multiRouter.masstransit.PathModel.prototype.route;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.PathModel.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.Route скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение единичного маршрута общественного транспорта. Мультимаршрут может состоять
+ * из нескольких единичных маршрутов.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.masstransit.Route = function() {};
+
+
+/**
+ * @return {ymaps.GeoObjectCollection}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.getPaths = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных единичного маршрута.
+ * 
+ * @type {ymaps.multiRouter.masstransit.RouteModel}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.model;
+
+
+/**
+ * Данные маршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер маршрута в мультимаршруте;
+ *     type: String - идентификатор типа маршрута, принимающий значение "masstransit"
+ *     для маршрутов общественного транспорта;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     маршрута в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     маршрута в секундах;
+ *     boundedBy: Number[][] - координаты нижнего и верхнего углов прямоугольника,
+ *     ограничивающего данный маршрут.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.Route.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.RouteModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных единичного маршрута общественного транспорта. Мультимаршрут может
+ * состоять из нескольких единичных маршрутов.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.masstransit.RouteModel = function() {};
+
+
+/**
+ */
+ymaps.multiRouter.masstransit.RouteModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<ymaps.multiRouter.masstransit.PathModel>}
+ */
+ymaps.multiRouter.masstransit.RouteModel.prototype.getPaths = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.multiRouter.masstransit.RouteModel.prototype.getType = function() {};
+
+
+/**
+ * @param {Object} routeJson JSON-данные.
+ */
+ymaps.multiRouter.masstransit.RouteModel.prototype.update = function(routeJson) {};
+
+
+/**
+ * Ссылка на родительскую модель мультимаршрута.
+ * 
+ * @type {ymaps.multiRouter.MultiRouteModel}
+ */
+ymaps.multiRouter.masstransit.RouteModel.prototype.multiRoute;
+
+
+/**
+ * Данные маршрута.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер маршрута в мультимаршруте;
+ *     type: String - идентификатор типа маршрута, принимающий значение "masstransit"
+ *     для маршрутов общественного транспорта;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     маршрута в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     маршрута в секундах;
+ *     boundedBy: Number[][] - координаты нижнего и верхнего углов прямоугольника,
+ *     ограничивающего данный маршрут.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.RouteModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.RouteModel.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.StopModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных остановки транспортного сегмента маршрута общественного транспорта.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.masstransit.StopModel = function() {};
+
+
+/**
+ * Геометрия остановки.
+ * 
+ * @type {ymaps.geometry.base.Point}
+ */
+ymaps.multiRouter.masstransit.StopModel.prototype.geometry;
+
+
+/**
+ * Данные остановки.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер остановки во множестве остановок
+ *     соответствующего транспортного сегмента;
+ *     id: String - идентификатор остановки;
+ *     name: String - название остановки;
+ *     lodIndex: Integer - порядковый номер точки остановки во множестве всех
+ *     координат соответствующего ей пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.StopModel.prototype.properties;
+
+
+/**
+ * Ссылка на родительскую модель транспортного сегмента.
+ * 
+ * @type {ymaps.multiRouter.masstransit.TransportSegmentModel}
+ */
+ymaps.multiRouter.masstransit.StopModel.prototype.segment;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.StopModel.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.TransferSegment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение сегмента перехода маршрута общественного транспорта.
+ * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
+ * другой.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.masstransit.TransferSegment = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных сегмента.
+ * 
+ * @type {ymaps.multiRouter.masstransit.TransferSegmentModel}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.model;
+
+
+/**
+ * Данные сегмента.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер сегмента во множестве сегментов
+ *     соответствующего пути маршрута;
+ *     type: String - идентификатор типа сегмента, принимающий значение "transfer" для
+ *     сегментов переходов;
+ *     text: String - текстовое описание сегмента;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     сегмента в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     сегмента в секундах;
+ *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
+ *     координат соответствующего ему пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.TransferSegment.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.TransferSegmentModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных сегмента перехода пути маршрута общественного транспорта.
+ * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
+ * другой.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.masstransit.TransferSegmentModel = function() {};
+
+
+/**
+ * @param {Object} segmentJson JSON-данные.
+ */
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.destroy = function(segmentJson) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.getType = function() {};
+
+
+/**
+ * Геометрия сегмента.
+ * 
+ * @type {ymaps.geometry.base.LineString}
+ */
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.geometry;
+
+
+/**
+ * Ссылка на родительскую модель пути.
+ * 
+ * @type {ymaps.multiRouter.masstransit.PathModel}
+ */
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.path;
+
+
+/**
+ * Данные сегмента.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер сегмента во множестве сегментов
+ *     соответствующего пути маршрута;
+ *     type: String - идентификатор типа сегмента, принимающий значение "transfer" для
+ *     сегментов переходов;
+ *     text: String - текстовое описание сегмента;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     сегмента в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     сегмента в секундах;
+ *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
+ *     координат соответствующего ему пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.events;
+
+/**
+ * 
+ * Данный класс не имеет конструктора и предназначен для описания объекта данных
+ * транспортного средства в транспортном сегменте маршрута общественного транспорта.
+ * 
+ * @constructor
+ * 
+ */
+ymaps.multiRouter.masstransit.TransportProperties = function() {};
+
+
+/**
+ * Идентификатор транспортного средства.
+ * 
+ * @type {String}
+ */
+ymaps.multiRouter.masstransit.TransportProperties.prototype.id;
+
+
+/**
+ * Название маршрута транспортного средства.
+ * 
+ * @type {String}
+ */
+ymaps.multiRouter.masstransit.TransportProperties.prototype.name;
+
+
+/**
+ * Идентификатор вида транспортного средства.
+ * Может принимать одно из следующих строковых значений:
+ * 
+ * "bus" - автобус;
+ *     "trolleybus" - троллейбус;
+ *     "tramway" - трамвай;
+ *     "minibus" - маршрутное такси;
+ *     "underground" - метро;
+ *     "suburban" - электричка.
+ * 
+ * 
+ * @type {String}
+ */
+ymaps.multiRouter.masstransit.TransportProperties.prototype.type;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.TransportSegment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение транспортного сегмента маршрута общественного транспорта.
+ * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
+ * другой.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.masstransit.TransportSegment = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных сегмента.
+ * 
+ * @type {ymaps.multiRouter.masstransit.TransportSegmentModel}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.model;
+
+
+/**
+ * Данные сегмента.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер сегмента во множестве сегментов
+ *     соответствующего пути маршрута;
+ *     type: String - идентификатор типа сегмента, принимающий значение "transport" для
+ *     транспортных сегментов;
+ *     text: String - текстовое описание сегмента;
+ *     transports: multiRouter.masstransit.TransportProperties[] - массив,
+ *     описывающий конкретные транспортные средства, с помощью которых возможно перемещение
+ *     по данному сегменту;
+ *     stops: Object - описание остановок в формате GeoJson:FeatureCollection;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     сегмента в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     сегмента в секундах;
+ *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
+ *     координат соответствующего ему пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.TransportSegment.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.TransportSegmentModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных транспортного сегмента пути маршрута общественного транспорта.
+ * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
+ * другой.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel = function() {};
+
+
+/**
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {Array.<ymaps.multiRouter.masstransit.StopModel>}
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.getStops = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.getType = function() {};
+
+
+/**
+ * @param {Object} segmentJson JSON-данные.
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.update = function(segmentJson) {};
+
+
+/**
+ * Геометрия сегмента.
+ * 
+ * @type {ymaps.geometry.base.LineString}
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.geometry;
+
+
+/**
+ * Ссылка на родительскую модель пути.
+ * 
+ * @type {ymaps.multiRouter.masstransit.PathModel}
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.path;
+
+
+/**
+ * Данные сегмента.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер сегмента во множестве сегментов
+ *     соответствующего пути маршрута;
+ *     type: String - идентификатор типа сегмента, принимающий значение "transport" для
+ *     транспортных сегментов;
+ *     text: String - текстовое описание сегмента;
+ *     transports: multiRouter.masstransit.TransportProperties[] - массив,
+ *     описывающий конкретные транспортные средства, с помощью которых возможно перемещение
+ *     по данному сегменту;
+ *     stops: Object - описание остановок в формате GeoJson:FeatureCollection;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     сегмента в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     сегмента в секундах;
+ *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
+ *     координат соответствующего ему пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.events;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.WalkSegment скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IGeoObject.
+ * 
+ * Отображение пешего сегмента маршрута общественного транспорта.
+ * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
+ * другой.
+ * 
+ * @constructor
+ * @implements {ymaps.IGeoObject}
+ * 
+ */
+ymaps.multiRouter.masstransit.WalkSegment = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.getOverlay = function() {};
+
+
+/**
+ * @return {ymaps.IOverlay|null}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.getOverlaySync = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @return {ymaps.IControlParent|null}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.getParent = function() {};
+
+
+/**
+ * @see ymaps.IChildOnMap
+ * 
+ * @param {ymaps.IControlParent|null} parent Родительский объект.
+ * @return {ymaps.IChildOnMap}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.setParent = function(parent) {};
+
+
+/**
+ * @see ymaps.IParentOnMap
+ * 
+ * @return {ymaps.Map}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.getMap = function() {};
+
+
+/**
+ * Модель данных сегмента.
+ * 
+ * @type {ymaps.multiRouter.masstransit.WalkSegmentModel}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.model;
+
+
+/**
+ * Данные сегмента.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер сегмента во множестве сегментов
+ *     соответствующего пути маршрута;
+ *     type: String - идентификатор типа сегмента, принимающий значение "walk" для
+ *     пеших сегментов;
+ *     text: String - текстовое описание сегмента;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     сегмента в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     сегмента в секундах;
+ *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
+ *     координат соответствующего ему пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.properties;
+
+
+/**
+ * Геометрия геообъекта.
+ * 
+ * @type {ymaps.IGeometry|null}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.geometry;
+
+
+/**
+ * Состояние геообъекта.
+ * 
+ * @type {ymaps.IDataManager}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.state;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.events;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.multiRouter.masstransit.WalkSegment.prototype.options;
+
+/**
+ * 
+ * Примечание.&nbsp;Конструктор класса multiRouter.masstransit.WalkSegmentModel скрыт, так как данный класс не предназначен для самостоятельной инициализации.
+ * 
+ * Расширяет
+ *             IEventEmitter.
+ * 
+ * Модель данных пешего сегмента пути маршрута общественного транспорта.
+ * Сегментом пути маршрута общественного транспорта называется часть пути от одной пересадки до
+ * другой.
+ * 
+ * @constructor
+ * @implements {ymaps.IEventEmitter}
+ * 
+ */
+ymaps.multiRouter.masstransit.WalkSegmentModel = function() {};
+
+
+/**
+ */
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.destroy = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.getType = function() {};
+
+
+/**
+ * Геометрия сегмента.
+ * 
+ * @type {ymaps.geometry.base.LineString}
+ */
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.geometry;
+
+
+/**
+ * Ссылка на родительскую модель пути.
+ * 
+ * @type {ymaps.multiRouter.masstransit.PathModel}
+ */
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.path;
+
+
+/**
+ * Данные сегмента.
+ * Доступны следующие поля:
+ * 
+ * index: Integer - порядковый номер сегмента во множестве сегментов
+ *     соответствующего пути маршрута;
+ *     type: String - идентификатор типа сегмента, принимающий значение "walk" для
+ *     пеших сегментов;
+ *     text: String - текстовое описание сегмента;
+ *     distance: Object - объект с полями text и value, описывающий протяженность
+ *     сегмента в метрах;
+ *     duration: Object - объект с полями text и value, описывающий время проезда
+ *     сегмента в секундах;
+ *     lodIndex: Integer - порядковый номер первой точки сегмента во множестве всех
+ *     координат соответствующего ему пути маршрута.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.properties;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.events;
+
+
+ymaps.overlay.hotspot = {};
+
+/**
+ * 
+ * Расширяет
+ *             overlay.hotspot.Base.
+ * 
+ * Оверлей круглой активной области.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.IPixelCircleGeometry} geometry Геометрия.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.hotspot.Circle = function(geometry, data, options) {};
+
+/**
+ * 
+ * Расширяет
+ *             overlay.hotspot.Base.
+ * 
+ * Оверлей точечной активной области.
+ * По умолчанию оверлеи не добавлены в package.full (стандартный набор модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.IPixelPointGeometry} geometry Пиксельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.hotspot.Placemark = function(geometry, data, options) {};
+
+/**
+ * 
+ * Расширяет
+ *             overlay.hotspot.Base.
+ * 
+ * Оверлей активной области в форме многоугольника.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.IPixelPolygonGeometry} geometry Геометрия.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.hotspot.Polygon = function(geometry, data, options) {};
+
+/**
+ * 
+ * Расширяет
+ *             overlay.hotspot.Base.
+ * 
+ * Оверлей активной области в форме ломаной линии.
+ * По умолчанию оверлеи не добавлены в package.full (стандартный набор модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.IPixelLineStringGeometry} geometry Пикcельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.hotspot.Polyline = function(geometry, data, options) {};
+
+/**
+ * 
+ * Расширяет
+ *             overlay.hotspot.Base.
+ * 
+ * Оверлей прямоугольной активной области.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * 
+ * @param {ymaps.IPixelRectangleGeometry} geometry Пиксельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.hotspot.Rectangle = function(geometry, data, options) {};
+
+
+ymaps.overlay.html = {};
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * HTML-оверлей балуна.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelPointGeometry} geometry Пиксельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.html.Balloon = function(geometry, data, options) {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.html.Balloon.prototype.getBalloonElement = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.html.Balloon.prototype.getBalloonLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout}
+ */
+ymaps.overlay.html.Balloon.prototype.getBalloonLayoutSync = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.html.Balloon.prototype.getElement = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.html.Balloon.prototype.getLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.html.Balloon.prototype.getLayoutSync = function() {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.overlay.html.Balloon.prototype.getMode = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.html.Balloon.prototype.getShadowElement = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.html.Balloon.prototype.getShadowLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.html.Balloon.prototype.getShadowLayoutSync = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.html.Balloon.prototype.isEmpty = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.html.Balloon.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.html.Balloon.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.html.Balloon.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.html.Balloon.prototype.getShape = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.html.Balloon.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.html.Balloon.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.html.Balloon.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.html.Balloon.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.html.Balloon.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * Простой HTML-оверлей.
+ * По умолчанию оверлеи не добавлены в package.full (стандартный набор модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelPointGeometry} geometry Пикcельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.html.Hint = function(geometry, data, options) {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.html.Hint.prototype.getElement = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.html.Hint.prototype.getLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.html.Hint.prototype.getLayoutSync = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.html.Hint.prototype.isEmpty = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.html.Hint.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.html.Hint.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.html.Hint.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.html.Hint.prototype.getShape = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.html.Hint.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.html.Hint.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.html.Hint.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.html.Hint.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.html.Hint.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * HTML-оверлей метки.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelPointGeometry} geometry Пикcельная геометрия.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции.
+ */
+ymaps.overlay.html.Placemark = function(geometry, data, options) {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.html.Placemark.prototype.getElement = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.html.Placemark.prototype.getIconElement = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.html.Placemark.prototype.getIconLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.html.Placemark.prototype.getIconLayoutSync = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.html.Placemark.prototype.getLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.html.Placemark.prototype.getLayoutSync = function() {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.html.Placemark.prototype.getShadowElement = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.html.Placemark.prototype.getShadowLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.html.Placemark.prototype.getShadowLayoutSync = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.html.Placemark.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.html.Placemark.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.html.Placemark.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.html.Placemark.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.html.Placemark.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.html.Placemark.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.html.Placemark.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.html.Placemark.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.html.Placemark.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.html.Placemark.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             IOverlay.
+ * 
+ * HTML-оверлей прямоугольника.
+ * По умолчанию оверлеи не добавлены в package.full (стандартного набора модулей).
+ * Для создания собственного экземпляра оверлея необходимо использовать overlay.storage.
+ * 
+ * @constructor
+ * @implements {ymaps.IOverlay}
+ * 
+ * @param {ymaps.IPixelRectangleGeometry} geometry Пикcельная геометрия фигуры.
+ * @param {Object=} data Данные.
+ * @param {Object=} options Опции оверлея. Используя этот параметр можно задавать как опции самого оверлея,
+ *                          так и опции его макета.
+ */
+ymaps.overlay.html.Rectangle = function(geometry, data, options) {};
+
+
+/**
+ * @return {HTMLElement}
+ */
+ymaps.overlay.html.Rectangle.prototype.getElement = function() {};
+
+
+/**
+ * @return {ymaps.vow.Promise}
+ */
+ymaps.overlay.html.Rectangle.prototype.getLayout = function() {};
+
+
+/**
+ * @return {ymaps.ILayout|null}
+ */
+ymaps.overlay.html.Rectangle.prototype.getLayoutSync = function() {};
+
+
+/**
+ * @return {Object}
+ */
+ymaps.overlay.html.Rectangle.prototype.getData = function() {};
+
+
+/**
+ * @return {ymaps.IPixelGeometry}
+ */
+ymaps.overlay.html.Rectangle.prototype.getGeometry = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.overlay.html.Rectangle.prototype.getMap = function() {};
+
+
+/**
+ * @return {ymaps.IShape|null}
+ */
+ymaps.overlay.html.Rectangle.prototype.getShape = function() {};
+
+
+/**
+ * @return {Boolean}
+ */
+ymaps.overlay.html.Rectangle.prototype.isEmpty = function() {};
+
+
+/**
+ * @param {Object} data Данные оверлея.
+ */
+ymaps.overlay.html.Rectangle.prototype.setData = function(data) {};
+
+
+/**
+ * @param {ymaps.IPixelGeometry} geometry Геометрия в глобальных пиксельных координатах.
+ */
+ymaps.overlay.html.Rectangle.prototype.setGeometry = function(geometry) {};
+
+
+/**
+ * @param {ymaps.Map|null} map Ссылка на карту.
+ */
+ymaps.overlay.html.Rectangle.prototype.setMap = function(map) {};
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.overlay.html.Rectangle.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IDomEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.overlay.html.Rectangle.prototype.events;
+
+
+ymaps.traffic = {};
+
+
+ymaps.traffic.provider = {};
+
+/**
+ * 
+ * Расширяет
+ *             ITrafficProvider.
+ * 
+ * Провайдер актуальных пробок. Доступен в хранилище провайдеров под ключом 'traffic#actual'.
+ * 
+ * @constructor
+ * @implements {ymaps.ITrafficProvider}
+ * 
+ * @param {Object=} options Опции провайдера. Опции для слоев провайдера задаются через
+ *                          опции глобальной коллекции слоев Map.layers.
+ *                          
+ *                              Опции для картиночного слоя Layer
+ *                              задаются с префиксом 'trafficImage';
+ *                              Опции для слоя хотспотов hotspot.Layer
+ *                              задаются с префиксом 'trafficJam';
+ *                              Опции для слоя инфоточек задаются с префиксом
+ *                              'trafficInfo'. Слой инфоточек является экземпляром класса
+ *                              hotspot.Layer.
+ *                          
+ * @param {Object=} state Состояние провайдера.
+ */
+ymaps.traffic.provider.Actual = function(options, state) {};
+
+
+/**
+ */
+ymaps.traffic.provider.Actual.prototype.update = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.traffic.provider.Actual.prototype.getMap = function() {};
+
+
+/**
+ * @param {ymaps.Map|null} Ссылка на карту.
+ */
+ymaps.traffic.provider.Actual.prototype.setMap = function(Ссылка) {};
+
+
+/**
+ * Состояние провайдера.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * isInited - признак, готов ли провайдер предоставлять данные;
+ *     infoLayerShown - признак, показан ли слой дорожных событий;
+ *     timestamp - текущее время во временной зоне UTC+0 в секундах;
+ *     localtime - локальное время, для которого сервер в текущий момент отдает данные,
+ *     в формате 'ЧЧ:ММ';
+ *     level - уровень загруженности дорог в баллах - от 0 до 10;
+ *     isotime - строка, содержащая текущую дату в формате "YYYY-MM-DDThh:mm:ss±hhmm".
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.traffic.provider.Actual.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.traffic.provider.Actual.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.traffic.provider.Actual.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             ITrafficProvider.
+ * 
+ * Провайдер архива пробок. Позволяет показывать состояние пробок,
+ * типичное для данного региона в конкретный день недели и конкретное время суток.
+ * 
+ * @constructor
+ * @implements {ymaps.ITrafficProvider}
+ * 
+ * @param {Object=} options Опции провайдера. Опции для слоев провайдера задаются через
+ *                          опции глобальной коллекции слоев Map.layers.
+ *                          
+ *                              Опции для картиночного слоя Layer
+ *                              задаются с префиксом 'trafficImage';
+ *                              Опции для слоя хотспотов hotspot.Layer
+ *                              задаются с префиксом 'trafficJam'.
+ *                          
+ * @param {Object=} state Состояние провайдера.
+ */
+ymaps.traffic.provider.Archive = function(options, state) {};
+
+
+/**
+ * @return {Object|null}
+ */
+ymaps.traffic.provider.Archive.prototype.getTime = function() {};
+
+
+/**
+ * @param {Object} time Объект с задаваемыми параметрами.
+ * @param {Function=} callback Функция, которая вызывается после того, как было выставлено время.
+ *                             Принимает на вход хэш с выставленными данными.
+ */
+ymaps.traffic.provider.Archive.prototype.setTime = function(time, callback) {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.traffic.provider.Archive.prototype.getMap = function() {};
+
+
+/**
+ * @param {ymaps.Map|null} Ссылка на карту.
+ */
+ymaps.traffic.provider.Archive.prototype.setMap = function(Ссылка) {};
+
+
+/**
+ * Состояние провайдера.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * isInited - признак, готов ли провайдер предоставлять данные;
+ *     timeZone - смещение по времени для текущего временного пояса относительно UTC+0.
+ *     Измеряется в секундах.;
+ *     dst - признак перехода на зимнее/летнее время. При dst='dst' время летнее;
+ *     timestamp - текущее время во временной зоне UTC+0 в секундах;
+ *     localtime - локальное время, которое возвращает в ответе сервер;
+ *     level - уровень загруженности дорог в баллах - от 0 до 10.
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.traffic.provider.Archive.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.traffic.provider.Archive.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.traffic.provider.Archive.prototype.events;
+
+/**
+ * 
+ * Расширяет
+ *             ITrafficProvider.
+ * 
+ * Провайдер прогноза пробок. Доступен в хранилище провайдеров под ключом 'traffic#forecast'.
+ * 
+ * @constructor
+ * @implements {ymaps.ITrafficProvider}
+ * 
+ * @param {Object=} options Опции провайдера. Опции для слоев провайдера задаются через
+ *                          опции глобальной коллекции слоев Map.layers.
+ *                          
+ *                              Опции для картиночного слоя Layer
+ *                              задаются с префиксом 'trafficImage';
+ *                              Опции для слоя хотспотов hotspot.Layer
+ *                              задаются с префиксом 'trafficJam'.
+ *                          
+ * @param {Object=} state Состояние провайдера.
+ */
+ymaps.traffic.provider.Forecast = function(options, state) {};
+
+
+/**
+ * @return {Object|null}
+ */
+ymaps.traffic.provider.Forecast.prototype.getTime = function() {};
+
+
+/**
+ * @return {ymaps.Map|null}
+ */
+ymaps.traffic.provider.Forecast.prototype.getMap = function() {};
+
+
+/**
+ * @param {ymaps.Map|null} Ссылка на карту.
+ */
+ymaps.traffic.provider.Forecast.prototype.setMap = function(Ссылка) {};
+
+
+/**
+ * Состояние провайдера.
+ * Имена полей, доступных через метод data.Manager.get:
+ * 
+ * isInited - признак, готов ли провайдер предоставлять данные;
+ *     timestamp - текущее время в формате unix timestamp в секундах;
+ *     localtime - локальное время, для которого сервер в текущий момент отдает данные,
+ *     в формате 'ЧЧ:ММ';
+ *     level - уровень загруженности дорог в баллах - от 0 до 10.
+ *     timeOffset - временной интервал между текущим временем и временем прогноза.
+ *     Измеряется в секундах и кратен 15 минутам (900 секундам)
+ *     isotime - строка, содержащая текущую дату в формате "YYYY-MM-DDThh:mm:ss±hhmm".
+ * 
+ * 
+ * @type {ymaps.data.Manager}
+ */
+ymaps.traffic.provider.Forecast.prototype.state;
+
+
+/**
+ * Менеджер опций.
+ * 
+ * @see ymaps.ICustomizable
+ * 
+ * @type {ymaps.IOptionManager}
+ */
+ymaps.traffic.provider.Forecast.prototype.options;
+
+
+/**
+ * Менеджер событий.
+ * 
+ * @see ymaps.IEventEmitter
+ * 
+ * @type {ymaps.IEventManager}
+ */
+ymaps.traffic.provider.Forecast.prototype.events;
+
+/**
+ * 
+ * Статический объект.
+ *             Экземпляр класса  util.Storage
+ * Хранилище провайдеров.
+ * 
+ * 
+ * @type {ymaps.util.Storage}
+ */
+ymaps.traffic.provider.storage;
+
+
+ymaps.util.cursor = {};
+
+/**
+ * 
+ * Объект, предоставляющий доступ к добавленному на карту курсору.
+ * 
+ * @constructor
+ * 
+ * @param {String} key Ключ, под которым хранится курсор в хранилище курсоров.
+ */
+ymaps.util.cursor.Accessor = function(key) {};
+
+
+/**
+ * @return {String}
+ */
+ymaps.util.cursor.Accessor.prototype.getKey = function() {};
+
+
+/**
+ */
+ymaps.util.cursor.Accessor.prototype.remove = function() {};
+
+
+/**
+ * @param {String} key 
+ */
+ymaps.util.cursor.Accessor.prototype.setKey = function(key) {};
+
+/**
+ * 
+ * Менеджер курсоров.
+ * 
+ * @constructor
+ * 
+ * @param {HTMLElement} element DOM-элемент, для которого выполняется установка курсоров.
+ */
+ymaps.util.cursor.Manager = function(element) {};
+
+
+/**
+ * @param {String} key Курсор. Допустимые значения:
+ *                     
+ *                         "arrow" - стрелка;
+ *                         "crosshair" - перекрестье;
+ *                         "grab" - "рука";
+ *                         "grabbing" - сжатая "рука"
+ *                         "help" - стрелка со знаком вопроса;
+ *                         "zoom" - лупа;
+ *                         "move" - курсор в виде четырех стрелок;
+ *                         "pointer" - "палец";
+ *                         "inherit" - унаследовать курсор от родителя.
+ *                     
+ * @return {ymaps.util.cursor.Accessor}
+ */
+ymaps.util.cursor.Manager.prototype.push = function(key) {};
+
+
+/**
+ * Менеджер событий менеджера курсоров.
+ * 
+ * @type {ymaps.event.Manager}
+ */
+ymaps.util.cursor.Manager.prototype.events;
+
+
+ymaps.util.math = {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Производит сравнение двух точек с допустимой погрешностью.
+ * 
+ * Возвращает:  Результат сравнения.
+ *         (тип Boolean).
+ * 
+ * @param {Array.<Number>} first Массив для сравнения.
+ * @param {Array.<Number>} second Массив, который будем сравнивать.
+ * @param {Number=} diff Точность сравнения.
+ * 
+ * @returns {Boolean}
+ */
+ymaps.util.math.areEqual = function(first, second, diff) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Приводит цифровое значение к заданному диапазону.
+ * Считается, что диапазон значений замкнут в кольцо. Если значение выходит
+ * за одну из границ диапазона, то излишек отсчитывается по кругу, со стороны
+ * другой границы.
+ * 
+ * Возвращает:  Ограниченное значение.
+ *         (тип Number).
+ * 
+ * @param {Number} value Ограничиваемое значение.
+ * @param {Number} min Минимальный предел.
+ * @param {Number} max Максимальный предел.
+ * 
+ * @returns {Number}
+ */
+ymaps.util.math.cycleRestrict = function(value, min, max) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Ограничивает цифровое значение на входе заданными минимальным и максимальным пределами.
+ * 
+ * Возвращает:  Ограниченное значение.
+ *         (тип Number).
+ * 
+ * @param {Number} value Ограничиваемое значение.
+ * @param {Number} min Минимальный предел.
+ * @param {Number} max Максимальный предел.
+ * 
+ * @returns {Number}
+ */
+ymaps.util.math.restrict = function(value, min, max) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Создает геометрию geometry.base.LineString на основе строки закодированных в Base64 координат.
+ * 
+ * Возвращает:  Геометрию.
+ *         (тип geometry.base.LineString).
+ * 
+ * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
+ * 
+ * @returns {ymaps.geometry.base.LineString}
+ */
+ymaps.geometry.base.LineString.fromEncodedCoordinates = function(encodedCoordinates) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
+ *         (тип String).
+ * 
+ * @param {ymaps.geometry.base.LineString} geometry Геометрия.
+ * 
+ * @returns {String}
+ */
+ymaps.geometry.base.LineString.toEncodedCoordinates = function(geometry) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Создает геометрию geometry.base.LinearRing на основе строки закодированных в Base64 координат.
+ * 
+ * Возвращает:  Геометрию.
+ *         (тип geometry.base.LinearRing).
+ * 
+ * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин контура.
+ * 
+ * @returns {ymaps.geometry.base.LinearRing}
+ */
+ymaps.geometry.base.LinearRing.fromEncodedCoordinates = function(encodedCoordinates) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
+ *         (тип String).
+ * 
+ * @param {ymaps.geometry.base.LinearRing} geometry Геометрия.
+ * 
+ * @returns {String}
+ */
+ymaps.geometry.base.LinearRing.toEncodedCoordinates = function(geometry) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Создает геометрию geometry.base.Polygon на основе строки закодированных в Base64 координат.
+ * 
+ * Возвращает:  Геометрию.
+ *         (тип geometry.base.Polygon).
+ * 
+ * @param {String} encodedCoordinates Закодированные в Base64 координаты вершин многоугольника.
+ * 
+ * @returns {ymaps.geometry.base.Polygon}
+ */
+ymaps.geometry.base.Polygon.fromEncodedCoordinates = function(encodedCoordinates) {};
+
+/**
+ * 
+ * Статическая функция.
+ * 
+ * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
+ *         (тип String).
+ * 
+ * @param {ymaps.geometry.base.Polygon} geometry Геометрия.
+ * 
+ * @returns {String}
+ */
+ymaps.geometry.base.Polygon.toEncodedCoordinates = function(geometry) {};
 
