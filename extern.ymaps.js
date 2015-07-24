@@ -9981,7 +9981,7 @@ ymaps.meta.version;
  * В модульную систему можно добавлять свои собственные модули.
  * 
  */
-ymaps.modules;
+ymaps.modules = {};
 
 /**
  * 
@@ -21512,7 +21512,7 @@ ymaps.graphics.style = {};
  * Задает цвет графической фигуры в форматах #RGB,#RGBA,#RRGGBB,#RRGGBBAA,rgb(r,b,a),rgba(r,g,b,a)
  * 
  */
-ymaps.graphics.style.color;
+ymaps.graphics.style.color = {};
 
 /**
  * 

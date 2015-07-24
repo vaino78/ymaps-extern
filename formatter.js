@@ -202,7 +202,7 @@ data.forEach(function(item) {
   var finish = '';
   if(prototypeSep !== '.' || ctorParamsList.length > 0 || item.def['return']) {
     finish = ' = function(' + ctorParamsList.join(', ') + ') {}';
-  } else if(item.def.methods || item.def.props) {
+  } else if(item.def.methods || item.def.props || !item.def['type']) {
     finish = ' = {}';
   }
 
