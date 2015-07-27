@@ -1722,7 +1722,7 @@ ymaps.ILineStringGeometryAccess.prototype.getLength = function() {};
 /**
  * @param {number} index Индекс точки.
  * @param {Array.<number>} coordinates Координаты точки.
- * @return {ymaps.ILinestringGeometryAccess}
+ * @return {ymaps.ILineStringGeometryAccess}
  */
 ymaps.ILineStringGeometryAccess.prototype.insert = function(index, coordinates) {};
 
@@ -1737,14 +1737,14 @@ ymaps.ILineStringGeometryAccess.prototype.remove = function(index) {};
 /**
  * @param {number} index Индекс точки.
  * @param {Array.<number>} coordinates Координаты точки.
- * @return {ymaps.ILinestringGeometryAccess}
+ * @return {ymaps.ILineStringGeometryAccess}
  */
 ymaps.ILineStringGeometryAccess.prototype.set = function(index, coordinates) {};
 
 
 /**
  * @param {Array.<Array.<number>>} coordinates Координаты геометрии.
- * @return {ymaps.ILinestringGeometryAccess}
+ * @return {ymaps.ILineStringGeometryAccess}
  */
 ymaps.ILineStringGeometryAccess.prototype.setCoordinates = function(coordinates) {};
 
@@ -4808,7 +4808,7 @@ ymaps.Polygon.prototype.geometry;
  * @constructor
  * @extends {ymaps.GeoObject}
  * 
- * @param {Array.<Array.<number>>|Object|ymaps.ILinestringGeometry} geometry Координаты вершин, хэш-объект с параметрами геометрии или ссылка на объект геометрии ломаной линии.
+ * @param {Array.<Array.<number>>|Object|ymaps.ILineStringGeometry} geometry Координаты вершин, хэш-объект с параметрами геометрии или ссылка на объект геометрии ломаной линии.
  * @param {Object|ymaps.IDataManager=} properties Данные ломаной. Могут задаваться как экземпляр класса,
  *                                                реализующего интерфейс IDataManager, либо в виде хэша.
  *                                                При значениях опций по умолчанию геообъектом трактуются следующие поля данных:
@@ -4838,7 +4838,7 @@ ymaps.Polyline = function(geometry, properties, options) {};
 /**
  * Редактор геометрии "Ломаная линия".
  * 
- * @type {ymaps.geometryEditor.Linestring}
+ * @type {ymaps.geometryEditor.LineString}
  */
 ymaps.Polyline.prototype.editor;
 
@@ -4846,7 +4846,7 @@ ymaps.Polyline.prototype.editor;
 /**
  * Геометрия типа "Ломаная линия".
  * 
- * @type {ymaps.geometry.Linestring}
+ * @type {ymaps.geometry.LineString}
  */
 ymaps.Polyline.prototype.geometry;
 
@@ -5481,7 +5481,7 @@ ymaps.behavior.Ruler.prototype.setParent = function(parent) {};
 /**
  * Геометрия поведения "Линейка".
  * 
- * @type {ymaps.geometry.Linestring}
+ * @type {ymaps.geometry.LineString}
  */
 ymaps.behavior.Ruler.prototype.geometry;
 
@@ -6943,7 +6943,7 @@ ymaps.geometry.LineString.prototype.setMap = function(map) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс точки.
@@ -6953,7 +6953,7 @@ ymaps.geometry.LineString.prototype.get = function(index) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс вершины.
@@ -6963,7 +6963,7 @@ ymaps.geometry.LineString.prototype.getChildGeometry = function(index) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {Array.<number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
@@ -6973,7 +6973,7 @@ ymaps.geometry.LineString.prototype.getClosest = function(anchorPosition) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @return {Array.<Array.<number>>}
@@ -6982,7 +6982,7 @@ ymaps.geometry.LineString.prototype.getCoordinates = function() {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @return {number}
@@ -6991,18 +6991,18 @@ ymaps.geometry.LineString.prototype.getLength = function() {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс точки.
  * @param {Array.<number>} coordinates Координаты точки.
- * @return {ymaps.ILinestringGeometryAccess}
+ * @return {ymaps.ILineStringGeometryAccess}
  */
 ymaps.geometry.LineString.prototype.insert = function(index, coordinates) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс точки.
@@ -7012,28 +7012,28 @@ ymaps.geometry.LineString.prototype.remove = function(index) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс точки.
  * @param {Array.<number>} coordinates Координаты точки.
- * @return {ymaps.ILinestringGeometryAccess}
+ * @return {ymaps.ILineStringGeometryAccess}
  */
 ymaps.geometry.LineString.prototype.set = function(index, coordinates) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {Array.<Array.<number>>} coordinates Координаты геометрии.
- * @return {ymaps.ILinestringGeometryAccess}
+ * @return {ymaps.ILineStringGeometryAccess}
  */
 ymaps.geometry.LineString.prototype.setCoordinates = function(coordinates) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
@@ -7597,7 +7597,7 @@ ymaps.geometryEditor = {};
  * @constructor
  * @implements {ymaps.IGeometryEditor}
  * 
- * @param {ymaps.ILinestringGeometry} geometry Геометрия "Ломаная линия".
+ * @param {ymaps.ILineStringGeometry} geometry Геометрия "Ломаная линия".
  * @param {Object=} options Опции редактора геометрии. Через опции редактора геометрии можно задавать как опции самого
  *                          редактора, так и опции его составных частей:
  *                          
@@ -7614,7 +7614,7 @@ ymaps.geometryEditor.LineString.prototype.getModel = function() {};
 
 
 /**
- * @return {ymaps.geometryEditor.model.RootLinestring|null}
+ * @return {ymaps.geometryEditor.model.RootLineString|null}
  */
 ymaps.geometryEditor.LineString.prototype.getModelSync = function() {};
 
@@ -10329,7 +10329,7 @@ ymaps.overlay.Polygon.prototype.events;
  * @constructor
  * @implements {ymaps.IOverlay}
  * 
- * @param {ymaps.IPixelLinestringGeometry} geometry Пикcельная геометрия фигуры.
+ * @param {ymaps.IPixelLineStringGeometry} geometry Пикcельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
  */
@@ -11179,7 +11179,7 @@ ymaps.shape.Circle.prototype.shift = function(offset) {};
  * @constructor
  * @implements {ymaps.IShape}
  * 
- * @param {ymaps.IPixelLinestringGeometry} pixelGeometry Пиксельная геометрия фигуры.
+ * @param {ymaps.IPixelLineStringGeometry} pixelGeometry Пиксельная геометрия фигуры.
  * @param {Object=} params Параметры фигуры.
  */
 ymaps.shape.LineString = function(pixelGeometry, params) {};
@@ -11667,7 +11667,7 @@ ymaps.geometry.base.LineString.prototype.getBounds = function() {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс точки.
@@ -11677,7 +11677,7 @@ ymaps.geometry.base.LineString.prototype.get = function(index) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс вершины.
@@ -11687,7 +11687,7 @@ ymaps.geometry.base.LineString.prototype.getChildGeometry = function(index) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {Array.<number>} anchorPosition Координаты точки, для которой расчитывается ближайшая точка на ломаной.
@@ -11697,7 +11697,7 @@ ymaps.geometry.base.LineString.prototype.getClosest = function(anchorPosition) {
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @return {Array.<Array.<number>>}
@@ -11706,7 +11706,7 @@ ymaps.geometry.base.LineString.prototype.getCoordinates = function() {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @return {number}
@@ -11715,18 +11715,18 @@ ymaps.geometry.base.LineString.prototype.getLength = function() {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс точки.
  * @param {Array.<number>} coordinates Координаты точки.
- * @return {ymaps.ILinestringGeometryAccess}
+ * @return {ymaps.ILineStringGeometryAccess}
  */
 ymaps.geometry.base.LineString.prototype.insert = function(index, coordinates) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс точки.
@@ -11736,28 +11736,28 @@ ymaps.geometry.base.LineString.prototype.remove = function(index) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс точки.
  * @param {Array.<number>} coordinates Координаты точки.
- * @return {ymaps.ILinestringGeometryAccess}
+ * @return {ymaps.ILineStringGeometryAccess}
  */
 ymaps.geometry.base.LineString.prototype.set = function(index, coordinates) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {Array.<Array.<number>>} coordinates Координаты геометрии.
- * @return {ymaps.ILinestringGeometryAccess}
+ * @return {ymaps.ILineStringGeometryAccess}
  */
 ymaps.geometry.base.LineString.prototype.setCoordinates = function(coordinates) {};
 
 
 /**
- * @see ymaps.ILinestringGeometryAccess
+ * @see ymaps.ILineStringGeometryAccess
  * @override
  * 
  * @param {number} index Индекс, начиная с которого производится удаление и добавление точек.
@@ -15292,7 +15292,7 @@ ymaps.multiRouter.driving.SegmentModel.prototype.update = function(segmentJson) 
 /**
  * Геометрия сегмента.
  * 
- * @type {ymaps.geometry.base.Linestring}
+ * @type {ymaps.geometry.base.LineString}
  */
 ymaps.multiRouter.driving.SegmentModel.prototype.geometry;
 
@@ -16357,14 +16357,14 @@ ymaps.mapType.storage;
  * 
  * @param {string} module Название модуля.
  * @param {Array.<string>=} depends Массив названий необходимых модулей. Этот аргумент может быть пропущен.
- * @param {Function} resolveCallback Функция, которая определяет модуль.
- *                                   Первым аргументом в resolveCallback поступит provide-функция, в которую нужно будет передать модуль. 
- *                                   Вызов provide-функции может быть отложен во времени.
- *                                   Последующие аргументы - это модули, указанные в зависимостях. Порядок модулей будет соответствовать порядку в массиве depends.
- *                                   В случае если модуль не может быть зарезолвен, то необходимо об этом уведомить модульную систему. 
- *                                   Это можно сделать передав в provide-функцию второй аргумент. 
- *                                   Второй аргумент будет передан в errorCallback и в promise как ошибка в запрос модуля.
- *                                   Впоследствии модуль можно будет запросить повторно.
+ * @param {Function=} resolveCallback Функция, которая определяет модуль.
+ *                                    Первым аргументом в resolveCallback поступит provide-функция, в которую нужно будет передать модуль. 
+ *                                    Вызов provide-функции может быть отложен во времени.
+ *                                    Последующие аргументы - это модули, указанные в зависимостях. Порядок модулей будет соответствовать порядку в массиве depends.
+ *                                    В случае если модуль не может быть зарезолвен, то необходимо об этом уведомить модульную систему. 
+ *                                    Это можно сделать передав в provide-функцию второй аргумент. 
+ *                                    Второй аргумент будет передан в errorCallback и в promise как ошибка в запрос модуля.
+ *                                    Впоследствии модуль можно будет запросить повторно.
  * @param {Object=} context Контекст исполнения функции.
  * 
  * @returns {ymaps.modules}
@@ -17204,7 +17204,7 @@ ymaps.geoObject.addon.hint.get = function(geoObject) {};
  * 
  * @param {string} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
  * 
- * @returns {ymaps.geometry.Linestring}
+ * @returns {ymaps.geometry.LineString}
  */
 ymaps.geometry.LineString.fromEncodedCoordinates = function(encodedCoordinates) {};
 
@@ -17215,7 +17215,7 @@ ymaps.geometry.LineString.fromEncodedCoordinates = function(encodedCoordinates) 
  * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
  *         (тип String).
  * 
- * @param {ymaps.geometry.Linestring} geometry Геометрия.
+ * @param {ymaps.geometry.LineString} geometry Геометрия.
  * 
  * @returns {string}
  */
@@ -18025,7 +18025,7 @@ ymaps.overlay.hotspot.Polygon = function(geometry, data, options) {};
  * 
  * @constructor
  * 
- * @param {ymaps.IPixelLinestringGeometry} geometry Пикcельная геометрия фигуры.
+ * @param {ymaps.IPixelLineStringGeometry} geometry Пикcельная геометрия фигуры.
  * @param {Object=} data Данные.
  * @param {Object=} options Опции.
  */
@@ -18199,7 +18199,7 @@ ymaps.util.math.restrict = function(value, min, max) {};
  * 
  * @param {string} encodedCoordinates Закодированные в Base64 координаты вершин ломаной линии.
  * 
- * @returns {ymaps.geometry.base.Linestring}
+ * @returns {ymaps.geometry.base.LineString}
  */
 ymaps.geometry.base.LineString.fromEncodedCoordinates = function(encodedCoordinates) {};
 
@@ -18210,7 +18210,7 @@ ymaps.geometry.base.LineString.fromEncodedCoordinates = function(encodedCoordina
  * Возвращает:  Строку закодированных в Base64 координат для заданного объекта геометрии.
  *         (тип String).
  * 
- * @param {ymaps.geometry.base.Linestring} geometry Геометрия.
+ * @param {ymaps.geometry.base.LineString} geometry Геометрия.
  * 
  * @returns {string}
  */
@@ -18883,7 +18883,7 @@ ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.getType = function(
 /**
  * Геометрия сегмента.
  * 
- * @type {ymaps.geometry.base.Linestring}
+ * @type {ymaps.geometry.base.LineString}
  */
 ymaps.multiRouter.masstransit.TransferSegmentModel.prototype.geometry;
 
@@ -19096,7 +19096,7 @@ ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.update = function(
 /**
  * Геометрия сегмента.
  * 
- * @type {ymaps.geometry.base.Linestring}
+ * @type {ymaps.geometry.base.LineString}
  */
 ymaps.multiRouter.masstransit.TransportSegmentModel.prototype.geometry;
 
@@ -19297,7 +19297,7 @@ ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.getType = function() {}
 /**
  * Геометрия сегмента.
  * 
- * @type {ymaps.geometry.base.Linestring}
+ * @type {ymaps.geometry.base.LineString}
  */
 ymaps.multiRouter.masstransit.WalkSegmentModel.prototype.geometry;
 

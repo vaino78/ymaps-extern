@@ -204,14 +204,17 @@ data.forEach(function(item) {
   //PARAMS
   var ctorParamsList = [];
   if ((item.def.ctorParams || item.def.params) && !rendered['__ctor__' + item.name]) {
+    var prevParamIsRequired = true;
     (item.def.ctorParams || item.def.params).forEach(function(p) {
       ctorParamsList.push(p.param);
-      var paramString = ('@param {' + normilizeType(p.type, p.isRequired) + '} ' + p.param + ' ');
+      var paramString = ('@param {' + normilizeType(p.type, 
+        (p.isRequired && prevParamIsRequired)) + '} ' + p.param + ' ');
       var paramDesc = '';
       if(p.description) {
         paramDesc =  parseDescription(p.description, paramString.length);
       }
       r.push(' * ' + paramString + paramDesc);
+      prevParamIsRequired = p.isRequired;
     });
     rendered['__ctor__' + item.name] = true;
   }
@@ -357,15 +360,16 @@ fs.writeFile("extern.ymaps.js", ret, function(err) {
  * @returns {string}
  */
 function normilizeType(str, isRequired) {
-  str = str.replace(namesRegex, NS_PREFIX + "$1")
-    .replace(/Integer/g, "number")
-    .replace(/Number/g, "number")
-    .replace(/String/g, "string")
-    .replace(/Boolean/g, "boolean")
-    .replace(/Null/g, "null");
+  str = str.replace(namesRegex, NS_PREFIX + "$1");
     
   var type = str.split('|');
   for (var i = 0, l = type.length; i < l; i++) {
+    type[i] = type[i].replace(/^Integer(?=($|\[))/g, "number")
+      .replace(/^Number(?=($|\[))/g, "number")
+      .replace(/^String(?=($|\[))/g, "string")
+      .replace(/^Boolean(?=($|\[))/g, "boolean")
+      .replace(/^Null(?=($|\[))/g, "null");
+    
     while ((/\[\]$/).test(type[i])) {
       type[i] = 'Array.<' + type[i].replace(/\[\]((\[\])*)$/, '>$1');
     }
