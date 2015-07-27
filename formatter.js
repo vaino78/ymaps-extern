@@ -2,6 +2,20 @@ var fs = require('fs');
 
 var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 data.sort(function(a, b) {
+  var aInt = isInterface(a.name),
+   bInt = isInterface(b.name);
+   
+  if(aInt != bInt) {
+    return (aInt) ? -1 : 1;
+  }
+  
+  var aInh = (a.def.inherits ? a.def.inherits.length : 0),
+    bInh = (b.def.inherits ? b.def.inherits.length : 0);
+    
+  if(aInh != bInh) {
+    return (aInh < bInt) ? -1 : 1;
+  }
+  
   var aParts = a.name.split('.'),
     bParts = b.name.split('.');
     
@@ -170,11 +184,15 @@ data.forEach(function(item) {
   
   if (item.def.inherits) {
     item.def.inherits.forEach(function(parentName) {
+      var prefix = '';
+      if(parentName.match(namesRegex)) {
+        prefix += NS_PREFIX;
+      }
       if (isInterface(parentName) && !isItemInterface) {
-        r.push(' * @implements {' + NS_PREFIX + parentName + '}');
+        r.push(' * @implements {' + prefix + parentName + '}');
         interfacesToPad.push(parentName);
       } else {
-        r.push(' * @extends {' + NS_PREFIX + parentName + '}');
+        r.push(' * @extends {' + prefix + parentName + '}');
       }
     });
   }
@@ -345,7 +363,7 @@ function normilizeType(str, isRequired) {
     .replace(/String/g, "string")
     .replace(/Boolean/g, "boolean")
     .replace(/Null/g, "null");
-
+    
   var type = str.split('|');
   for (var i = 0, l = type.length; i < l; i++) {
     while ((/\[\]$/).test(type[i])) {
